@@ -10,7 +10,7 @@ function createConnection() {
 		host: 'localhost',
 		user: 'root',
 		password: '',
-		database: 'lefengwang'
+		database: 'hotel'
 	});
 	return connection
 }
@@ -70,15 +70,13 @@ app.get('/list', function(req, res) {
 	//		数据返回前端
 			res.send(str)
 
-<<<<<<< HEAD
+
 		})
 	})
 
 })
 
 
-=======
->>>>>>> 5c0106be835ead72c6bba155babfe9a6ec471d4f
 //detail部分..............................................tangqiuping
 //详情页内容
 app.get('/detail', function(req, res) {
@@ -99,11 +97,41 @@ app.get('/detail', function(req, res) {
 		})
 	})
 
+
 })
+
 
 //buyCar部分..............................................zhangjunhua
 
 //登录注册部分..............................................zhangjunhua
+//注册
+app.get("/register", function(req, res) {
+	console.log(11111)
+	res.append('Access-Control-Allow-Origin', '*');
+	var connection = createConnection();
+	connection.connect();
+	var username = req.query.username;
+	var password = req.query.password;
+	//先查找手机似乎否已被注册
+	connection.query(`SELECT username from register where username = '${username}'`, function(err, data) {
+		//数据库中查不到手机号会返回空的数组
+		if(data.length == 0) {
+			connection.query(`INSERT into register (username,password)values('${username}','${password}')`, function(err, data) {
+
+				res.send('注册成功')
+			})
+			//关闭数据库要写进判断里面
+			connection.end();
+		} else {
+			res.send('该手机已注册')
+			//关闭数据库要写进判断里面
+			connection.end();
+		}
+
+
+	})
+})
+
 
 //监听该端口..............................................................................
 var server = app.listen(3000, function() {
