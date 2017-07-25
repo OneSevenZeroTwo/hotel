@@ -13,7 +13,9 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
 import $ from "jquery";
 window.$ = window.jQuery = $
-
+import com from "./js/common.js"
+window.com =com
+console.log(com.randomNum(1,10))
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
 Vue.use(Vuex);
@@ -39,8 +41,10 @@ import topics from "./components/routes/topics.vue"
 import good from "./components/routes/good.vue"
 import detail from "./components/routes/detail.vue"
 import muse from "./components/muse/test.vue"
-
-
+import xregister from "./components/routes/register.vue"
+import xlogin from "./components/routes/login.vue"
+import xbuyCar from "./components/routes/buyCar.vue"
+import xmySelf from "./components/routes/mySelf.vue"
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
 var routes = [{
@@ -73,6 +77,30 @@ var routes = [{
 		path: '/detail/:id',
 		//上面定义好的路由扔进来
 		component: detail
+	},
+	{
+		//路由名
+		path: '/register',
+		//上面定义好的路由扔进来
+		component: xregister
+	},
+	{
+		//路由名
+		path: '/login',
+		//上面定义好的路由扔进来
+		component: xlogin
+	},
+	{
+		//路由名
+		path: '/buyCar',
+		//上面定义好的路由扔进来
+		component: xbuyCar
+	},
+	{
+		//路由名
+		path: '/mySelf',
+		//上面定义好的路由扔进来
+		component: xmySelf
 	},
 	{
 		//路由名
