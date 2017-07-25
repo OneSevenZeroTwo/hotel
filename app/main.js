@@ -1,4 +1,5 @@
 import "./css/font_mdye6150zyyzaor/iconfont.css"
+// import "./css/hotel.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
@@ -39,6 +40,8 @@ import topics from "./components/routes/topics.vue"
 import good from "./components/routes/good.vue"
 import detail from "./components/routes/detail.vue"
 import muse from "./components/muse/test.vue"
+//详情页路由
+import list from "./components/list/router/list.vue"
 
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
@@ -80,6 +83,12 @@ var routes = [{
 		//上面定义好的路由扔进来
 		component: muse
 	},
+	//列表页开始
+	{
+		path:'/list',
+		component:list
+	},
+	//列表页结束
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
