@@ -1,4 +1,5 @@
 import "./css/font_mdye6150zyyzaor/iconfont.css"
+// import "./css/hotel.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"

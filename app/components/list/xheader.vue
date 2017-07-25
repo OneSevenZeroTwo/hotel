@@ -18,7 +18,3 @@
 <script>
 	
 </script>
-
-<style>
-	
-</style>
