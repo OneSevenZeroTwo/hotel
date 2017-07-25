@@ -83,7 +83,7 @@ var routes = [{
 	{
 		//重定向，没有路由时页面默认加载/index/topics路由
 		path: '/',
-		redirect: '/index/topics'
+		redirect: '/detail'
 	}
 ]
 
@@ -99,7 +99,7 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		new:""
+		news:""
 	},
 	getters: {
 		getCount(state) {
@@ -112,7 +112,7 @@ var store = new Vuex.Store({
 			state.title = data
 		},
 		setNews(state) {
-			axios.get('https://cnodejs.org/api/v1//topics')
+			axios.get('http://m.elong.com/hotel/api/otherdetail?_rt=1500975501941&hotelid=00101543&cityId=0101&lat=39.9589810220000032359166652895510196685791015625&lng=116.437257528000003503620973788201808929443359375')
 				.then((response) => {
 					state.news = response.data.data
 				})

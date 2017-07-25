@@ -1,134 +1,87 @@
 <template>
-	<div id="content">
-		<div class="panel">
-			<div class="header topic_header">
-				<span v-html="detailData.title" class="topic_full_title">        
-		      </span>
-				<div class="changes">
-					<span>
-		          发布于{{detailData.create_at}}
-		        </span>
-					<span>
-		          作者 <a href="/user/i5ting" v-html="detailData.author?detailData.author.loginname:''"></a>
-		        </span>
-					<span>
-		       {{detailData.visit_count}}次浏览
-		        </span>
-
-					<span> 来自 {{detailData.tab}}</span>
-
-				</div>
-
-			</div>
-			<div class="inner topic">
-
-				<div class="topic_content">
-					<div class="markdown-text" v-html="detailData.content">
-
-					</div>
-				</div>
-			</div>
+	<div>
+		<header class="bar ">
+			<a class="iconfont icon-arrowleft pull-left tjclick" data-rel="back" href="http://m.elong.com/hotel/0101/nlist/" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
+			<a class="iconfont icon-shoucang1  pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
+			<h1 class="title">酒店详情</h1>
+		</header>
+		<!--酒店信息-->
+		<div class="hotel-info">
+			<xswiper></xswiper>
 		</div>
-
-		<div class="panel">
-			<div class="header">
-				<span class="col_fade">{{detailData.reply_count}} 回复</span>
-			</div>
-			<div v-for="(items,$index) in detailData.replies" class="cell reply_area reply_item
-		  " :reply_id="items.id" reply_to_id="" :id="items.id">
-				<div class="author_content">
-					<a :href="'#!/user/'+items.author.loginname" class="user_avatar">
-						<img :src="items.author.avatar_url" title="Rwing"></a>
-
-					<div class="user_info">
-						<a v-html="items.author.loginname" class="dark reply_author" :href="'#!/user/'+items.author.loginname"></a>
-						<a class="reply_time" href="#59632b6610d696af07768b40">{{$index+1}}楼•{{items.create_at|xreply}}</a>
-					</div>
-					<div class="user_action">
-						<span>
-		        <i class="fa up_btn
-		          fa-thumbs-o-up
-		          invisible" title="喜欢"></i>
-		        <span class="up-count">
-		          
-		        </span>
-						</span>
-
-						<span>
-		        
-		      </span>
-					</div>
-				</div>
-				<div class="reply_content from-Rwing">
-					<div v-html="items.content" class="markdown-text">
-
-					</div>
-				</div>
-				<div class="clearfix">
-					<div class="reply2_area">
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-
 	</div>
 </template>
 
 <script>
+	import xswiper from "../xswiper.vue"
 	export default {
-		data() {
-			return {
-				id: '',
-				detailData: {}
-				//			detailData:{author:{loginname:111}}
+		methods:{
+			getData(){
+				this.$store.dispatch("setNews");
+//				this.$store.state.news = ;
 			}
 		},
-		methods: {
-
-		},
-		mounted() {
-			this.id = this.$route.params.id
-			var self = this;
-			this.$ajax({
-				url: "https://cnodejs.org/api/v1/topic/" + this.id
-			}).then(function(res) {
-				console.log(res.data.data)
-				self.detailData = res.data.data
-			})
-
-		},
-		filters: {
-			xreply: function(input) {
-				var now = Date.now()
-				var reply = Date.parse(input)
-				var intDiff = (now - reply) / 1000;
-
-				var year = Math.floor(intDiff  /  (60  *  60  *  24 * 30 * 12));
-				var month = Math.floor(intDiff  /  (60  *  60  *  24 * 30));
-				var day  =  Math.floor(intDiff  /  (60  *  60  *  24));        
-				var hour  =  Math.floor(intDiff  /  (60  *  60))  -  (day  *  24);        
-				var minute  =  Math.floor(intDiff  /  60)  -  (day  *  24  *  60)  -  (hour  *  60);        
-				var second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
-				if(year > 0) {
-					return year + '年前'
-				} else if(month > 0) {
-					return month + '月前'
-				} else if(day > 0) {
-					return day + '天前'
-				} else if(hour > 0) {
-					return hour + '小时前'
-				} else if(minute > 0) {
-					return minute + '分钟前'
-				} else if(second > 0) {
-					return second + '秒前'
-				}
-			},
+		components:{
+			xswiper,	
 		}
 	}
 </script>
 
 <style scoped>
-
+	.bar {
+		position: absolute;
+		z-index: 10000;
+		height: 44px;
+		padding-right: 10px;
+		padding-left: 10px;
+		background-color: #fff;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		left: 0;
+		right: 0;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	.tjclick{
+		border-radius: 50%;
+		background-color:  rgba(0,0,0,.5);
+	}
+	
+	.bar .iconfont {
+		position: relative;
+		z-index: 20;
+		width: 34px;
+		height: 37px;
+		display: inline-block;
+		line-height: 37px;
+		font-size: 24px;
+		color: #fff;
+		padding-left: 5px;
+		margin-top: 7px;
+	}
+	
+	.pull-left {
+		float: left;
+	}
+	
+	.pull-right {
+		float: right;
+	}
+	
+	
+	.title {
+		position: absolute;
+		display: none;
+		width: 100%;
+		padding: 0;
+		margin: 0 -10px;
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 44px;
+		text-align: center;
+		white-space: nowrap;
+	}
 </style>
