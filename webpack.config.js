@@ -30,10 +30,6 @@ module.exports = {
 			//ES6^=>ES5
 			test: /\.js$/,
 			loader: "babel-loader",
-			//加了这个以后不用新建.babelic文件
-			query: {
-				presets: ['es2015']
-			}
 		}, {
 			//vue=>js
 			test: /\.vue$/,
