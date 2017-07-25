@@ -1,0 +1,6 @@
+﻿node_modules
+#过滤压缩包
+*.gz
+*.zip
+*.rar
+
