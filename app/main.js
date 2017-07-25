@@ -81,7 +81,7 @@ var routes = [{
 		component: muse
 	},
 	{
-		//重定向，没有路由时页面默认加载/index/topics路由
+		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
 		redirect: '/detail'
 	}
