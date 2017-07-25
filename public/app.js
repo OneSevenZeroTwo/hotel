@@ -1,9 +1,8 @@
-
 //框架
 var express = require('express');
 var app = express();
 var http = require('http')
-//链接数据库模块
+	//链接数据库模块
 var mysql = require("mysql");
 //连接服务器配置.......................................................................
 function createConnection() {
@@ -27,7 +26,7 @@ app.get('/test', function(req, res) {
 			str += chunk
 		})
 		content.on('end', function() {
-	//		数据返回前端
+			//		数据返回前端
 			res.send(str)
 
 		})
@@ -48,14 +47,13 @@ app.get('/slideshow', function(req, res) {
 			str += chunk
 		})
 		content.on('end', function() {
-	//		数据返回前端
+			//		数据返回前端
 			res.send(str)
 
 		})
 	})
 
 })
-
 
 //list部分..............................................lianglixiong
 //
@@ -72,39 +70,40 @@ app.get('/list', function(req, res) {
 	//		数据返回前端
 			res.send(str)
 
+<<<<<<< HEAD
 		})
 	})
 
 })
 
 
+=======
+>>>>>>> 5c0106be835ead72c6bba155babfe9a6ec471d4f
 //detail部分..............................................tangqiuping
+//详情页内容
+app.get('/detail', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+//	console.log(1111)
+		//服务器代理
+	http.get('http://m.elong.com/hotel/api/otherdetail/?cityId=0101&hotelid=00101543&lng=116.437257528000003503620973788201808929443359375&_rt=1500975501941&lat=39.9589810220000032359166652895510196685791015625', function(content) {
+//		console.log(content)
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+//			console.log(str)
+			res.send(str)
+		})
+	})
 
-
-
+})
 
 //buyCar部分..............................................zhangjunhua
 
-
-
 //登录注册部分..............................................zhangjunhua
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //监听该端口..............................................................................
 var server = app.listen(3000, function() {
@@ -114,4 +113,3 @@ var server = app.listen(3000, function() {
 	var port = server.address().port
 	console.log("应用实例，访问地址为 http://%s:%s", host, port)
 })
-
