@@ -4,7 +4,7 @@
 			<xheader></xheader>
 			<xsearch></xsearch>
 			<xlist></xlist>
-			<xfooter></footer>
+			<xfooter></xfooter>
 		</div>
 	</div>
 </template>
