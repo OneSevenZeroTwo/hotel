@@ -1,4 +1,6 @@
 <template>
+	<!--<link rel="stylesheet" href="//m.elongstatic.com/static/webapp/hotel/2017/07/v18/mainV2.css">
+	<link rel="stylesheet" href="//m.elongstatic.com/static/webapp/hotel/2017/07/v18/idangerous.swiper.css">-->
 	<div>
 		<header class="bar ">
 			<a class="iconfont icon-arrowleft pull-left tjclick" data-rel="back" href="http://m.elong.com/hotel/0101/nlist/" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>

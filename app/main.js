@@ -1,4 +1,5 @@
 import "./css/font_mdye6150zyyzaor/iconfont.css"
+// import "./css/hotel.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
@@ -45,6 +46,9 @@ import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
+//详情页路由
+import list from "./components/list/router/list.vue"
+
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
 var routes = [{
@@ -108,8 +112,14 @@ var routes = [{
 		//上面定义好的路由扔进来
 		component: muse
 	},
+	//列表页开始
 	{
-		//重定向，没有路由时页面默认加载/index/topics路由
+		path:'/list',
+		component:list
+	},
+	//列表页结束
+	{
+		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
 		redirect: '/detail'
 	}
