@@ -4,7 +4,22 @@
 			<xheader></xheader>
 			<xsearch></xsearch>
 			<xlist></xlist>
-			<xfooter></footer>
+			<xfooter></xfooter>
 		</div>
 	</div>
 </template>
+
+<script>
+	import xheader from "../xheader.vue";
+	import xsearch from "../xsearch.vue";
+	import xlist from "../xlist.vue";
+	import xfooter from "../xfooter.vue";
+	export default{
+		components:{
+			xheader,
+			xsearch,
+			xlist,
+			xfooter
+		}
+	}
+</script>

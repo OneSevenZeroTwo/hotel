@@ -16077,11 +16077,11 @@ var _detail = __webpack_require__(97);
 
 var _detail2 = _interopRequireDefault(_detail);
 
-var _test = __webpack_require__(102);
+var _test = __webpack_require__(107);
 
 var _test2 = _interopRequireDefault(_test);
 
-var _list = __webpack_require__(107);
+var _list = __webpack_require__(112);
 
 var _list2 = _interopRequireDefault(_list);
 
@@ -16164,7 +16164,7 @@ var routes = [{
 {
 	//重定向，没有路由时页面默认加载/index/topics路由
 	path: '/',
-	redirect: '/index/topics'
+	redirect: '/detail'
 }];
 
 //实例化路由，然后扔进主模块中。
@@ -16179,7 +16179,7 @@ var store = new _vuex2.default.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		new: ""
+		news: ""
 	},
 	getters: {
 		getCount: function getCount(state) {
@@ -16192,7 +16192,7 @@ var store = new _vuex2.default.Store({
 			state.title = data;
 		},
 		setNews: function setNews(state) {
-			_axios2.default.get('https://cnodejs.org/api/v1//topics').then(function (response) {
+			_axios2.default.get('http://m.elong.com/hotel/api/otherdetail?_rt=1500975501941&hotelid=00101543&cityId=0101&lat=39.9589810220000032359166652895510196685791015625&lng=116.437257528000003503620973788201808929443359375').then(function (response) {
 				state.news = response.data.data;
 			}).catch(function (error) {
 				console.log(error);
@@ -37926,7 +37926,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(100),
   /* template */
-  __webpack_require__(101),
+  __webpack_require__(106),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -37992,13 +37992,139 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"detail.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.bar[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground-color: #fff;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-717dd598]{\n\tborder-radius: 50%;\n\tbackground-color:  rgba(0,0,0,.5);\n}\n.bar .iconfont[data-v-717dd598] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin-top: 7px;\n}\n.pull-left[data-v-717dd598] {\n\tfloat: left;\n}\n.pull-right[data-v-717dd598] {\n\tfloat: right;\n}\n.title[data-v-717dd598] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n", "", {"version":3,"sources":["D:/three_pratice/vue/project/hotel/app/components/routes/detail.vue?3af78dcd"],"names":[],"mappings":";AA8BA;CACA,mBAAA;CACA,eAAA;CACA,aAAA;CACA,oBAAA;CACA,mBAAA;CACA,uBAAA;CACA,oCAAA;CACA,4BAAA;CACA,QAAA;CACA,SAAA;CACA,0BAAA;CACA,uBAAA;CACA,sBAAA;CACA,kBAAA;CACA;AAEA;CACA,mBAAA;CACA,kCAAA;CACA;AAEA;CACA,mBAAA;CACA,YAAA;CACA,YAAA;CACA,aAAA;CACA,sBAAA;CACA,kBAAA;CACA,gBAAA;CACA,YAAA;CACA,kBAAA;CACA,gBAAA;CACA;AAEA;CACA,YAAA;CACA;AAEA;CACA,aAAA;CACA;AAGA;CACA,mBAAA;CACA,cAAA;CACA,YAAA;CACA,WAAA;CACA,gBAAA;CACA,kBAAA;CACA,iBAAA;CACA,kBAAA;CACA,mBAAA;CACA,oBAAA;CACA","file":"detail.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<header class=\"bar \">\r\n\t\t\t<a class=\"iconfont icon-arrowleft pull-left tjclick\" data-rel=\"back\" href=\"http://m.elong.com/hotel/0101/nlist/\" data-tj=\"{&quot;cspot&quot;:&quot;back&quot;}\"></a>\r\n\t\t\t<a class=\"iconfont icon-shoucang1  pull-right tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\r\n\t\t\t<h1 class=\"title\">酒店详情</h1>\r\n\t\t</header>\r\n\t\t<!--酒店信息-->\r\n\t\t<div class=\"hotel-info\">\r\n\t\t\t<xswiper></xswiper>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xswiper from \"../xswiper.vue\"\r\n\texport default {\r\n\t\tmethods:{\r\n\t\t\tgetData(){\r\n\t\t\t\tthis.$store.dispatch(\"setNews\");\r\n//\t\t\t\tthis.$store.state.news = ;\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomponents:{\r\n\t\t\txswiper,\t\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.bar {\r\n\t\tposition: absolute;\r\n\t\tz-index: 10000;\r\n\t\theight: 44px;\r\n\t\tpadding-right: 10px;\r\n\t\tpadding-left: 10px;\r\n\t\tbackground-color: #fff;\r\n\t\t-webkit-backface-visibility: hidden;\r\n\t\tbackface-visibility: hidden;\r\n\t\tleft: 0;\r\n\t\tright: 0;\r\n\t\t-webkit-user-select: none;\r\n\t\t-moz-user-select: none;\r\n\t\t-ms-user-select: none;\r\n\t\tuser-select: none;\r\n\t}\r\n\t\r\n\t.tjclick{\r\n\t\tborder-radius: 50%;\r\n\t\tbackground-color:  rgba(0,0,0,.5);\r\n\t}\r\n\t\r\n\t.bar .iconfont {\r\n\t\tposition: relative;\r\n\t\tz-index: 20;\r\n\t\twidth: 34px;\r\n\t\theight: 37px;\r\n\t\tdisplay: inline-block;\r\n\t\tline-height: 37px;\r\n\t\tfont-size: 24px;\r\n\t\tcolor: #fff;\r\n\t\tpadding-left: 5px;\r\n\t\tmargin-top: 7px;\r\n\t}\r\n\t\r\n\t.pull-left {\r\n\t\tfloat: left;\r\n\t}\r\n\t\r\n\t.pull-right {\r\n\t\tfloat: right;\r\n\t}\r\n\t\r\n\t\r\n\t.title {\r\n\t\tposition: absolute;\r\n\t\tdisplay: none;\r\n\t\twidth: 100%;\r\n\t\tpadding: 0;\r\n\t\tmargin: 0 -10px;\r\n\t\tfont-size: 1.2rem;\r\n\t\tfont-weight: 700;\r\n\t\tline-height: 44px;\r\n\t\ttext-align: center;\r\n\t\twhite-space: nowrap;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
 /* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _xswiper = __webpack_require__(101);
+
+var _xswiper2 = _interopRequireDefault(_xswiper);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+	methods: {
+		getData: function getData() {
+			this.$store.dispatch("setNews");
+			//				this.$store.state.news = ;
+		}
+	},
+	components: {
+		xswiper: _xswiper2.default
+	}
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(102)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(104),
+  /* template */
+  __webpack_require__(105),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\xswiper.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xswiper.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c601fe24", Component.options)
+  } else {
+    hotAPI.reload("data-v-c601fe24", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(103);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("853d4a60", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c601fe24\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xswiper.vue", function() {
+     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c601fe24\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xswiper.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 200px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", "", {"version":3,"sources":["D:/three_pratice/vue/project/hotel/app/components/xswiper.vue?8ef402bc"],"names":[],"mappings":";AA6CA;CACA,YAAA;CACA,aAAA;CACA,iBAAA;CACA;AAEA;CACA,mBAAA;CACA,gBAAA;CACA,iBAAA;CACA,kCAAA;CACA,qBAAA;CACA,qBAAA;CACA,sBAAA;CACA,cAAA;CACA,yBAAA;CACA,sBAAA;CACA,gCAAA;CACA,wBAAA;CACA,0BAAA;CACA,uBAAA;CACA,4BAAA;CACA,oBAAA;CACA;AAEA;CACA,YAAA;CACA,cAAA;CACA;AAEA;CACA,oBAAA;CACA,iBAAA;CACA","file":"xswiper.vue","sourcesContent":["<template>\r\n\t<div class=\"swiper-container\">\r\n\t\t<div class=\"swiper-wrapper\">\r\n\t\t\t<div @click=\"showPic(imgArr[0])\" class=\"swiper-slide\"><img :src=\"imgArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[1])\" class=\"swiper-slide\"><img :src=\"imgArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[2])\" class=\"swiper-slide\"><img :src=\"imgArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[3])\" class=\"swiper-slide\"><img :src=\"imgArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[4])\" class=\"swiper-slide\"><img :src=\"imgArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[5])\" class=\"swiper-slide\"><img :src=\"imgArr[5]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[6])\" class=\"swiper-slide\"><img :src=\"imgArr[6]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[7])\" class=\"swiper-slide\"><img :src=\"imgArr[7]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[8])\" class=\"swiper-slide\"><img :src=\"imgArr[8]\" alt=\"\" /></div>\r\n\t\t\t<div @click=\"showPic(imgArr[9])\" class=\"swiper-slide\"><img :src=\"imgArr[9]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\t\t<!-- Add Pagination -->\r\n\t\t<div class=\"swiper-pagination\"></div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\timgArr: [\"images/4.jpg\", \"images/5.jpg\", \"images/1.jpg\", \"images/2.jpg\", \"images/3.jpg\", \"images/6.jpg\", \"images/7.jpg\", \"images/8.jpg\", \"images/9.jpg\", \"images/10.jpg\"]\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tshowPic(imgUrl) {\r\n\t\t\t\tthis.$store.state.imgUrl = imgUrl\r\n\t\t\t\tthis.$store.state.galleryIsShow = true;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tautoplay: 2500,\r\n\t\t\t\tautoplayDisableOnInteraction: false\r\n\t\t\t});\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.swiper-container {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.swiper-slide {\r\n\t\ttext-align: center;\r\n\t\tfont-size: 18px;\r\n\t\tbackground: #fff;\r\n\t\t/* Center slide text vertically */\r\n\t\tdisplay: -webkit-box;\r\n\t\tdisplay: -ms-flexbox;\r\n\t\tdisplay: -webkit-flex;\r\n\t\tdisplay: flex;\r\n\t\t-webkit-box-pack: center;\r\n\t\t-ms-flex-pack: center;\r\n\t\t-webkit-justify-content: center;\r\n\t\tjustify-content: center;\r\n\t\t-webkit-box-align: center;\r\n\t\t-ms-flex-align: center;\r\n\t\t-webkit-align-items: center;\r\n\t\talign-items: center;\r\n\t}\r\n\t\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 200px;\r\n\t}\r\n\t\r\n\t.weui-panel__bd {\r\n\t\tmargin-bottom: 58px;\r\n\t\tbackground: #FFF;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38026,219 +38152,197 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 exports.default = {
 	data: function data() {
 		return {
-			id: '',
-			detailData: {}
-			//			detailData:{author:{loginname:111}}
+			imgArr: ["images/4.jpg", "images/5.jpg", "images/1.jpg", "images/2.jpg", "images/3.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg"]
+
 		};
 	},
-
-	methods: {},
-	mounted: function mounted() {
-		this.id = this.$route.params.id;
-		var self = this;
-		this.$ajax({
-			url: "https://cnodejs.org/api/v1/topic/" + this.id
-		}).then(function (res) {
-			console.log(res.data.data);
-			self.detailData = res.data.data;
-		});
-	},
-
-	filters: {
-		xreply: function xreply(input) {
-			var now = Date.now();
-			var reply = Date.parse(input);
-			var intDiff = (now - reply) / 1000;
-
-			var year = Math.floor(intDiff / (60 * 60 * 24 * 30 * 12));
-			var month = Math.floor(intDiff / (60 * 60 * 24 * 30));
-			var day = Math.floor(intDiff / (60 * 60 * 24));
-			var hour = Math.floor(intDiff / (60 * 60)) - day * 24;
-			var minute = Math.floor(intDiff / 60) - day * 24 * 60 - hour * 60;
-			var second = Math.floor(intDiff) - day * 24 * 60 * 60 - hour * 60 * 60 - minute * 60;
-			if (year > 0) {
-				return year + '年前';
-			} else if (month > 0) {
-				return month + '月前';
-			} else if (day > 0) {
-				return day + '天前';
-			} else if (hour > 0) {
-				return hour + '小时前';
-			} else if (minute > 0) {
-				return minute + '分钟前';
-			} else if (second > 0) {
-				return second + '秒前';
-			}
+	methods: {
+		showPic: function showPic(imgUrl) {
+			this.$store.state.imgUrl = imgUrl;
+			this.$store.state.galleryIsShow = true;
 		}
+	},
+	mounted: function mounted() {
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false
+		});
 	}
 };
 
 /***/ }),
-/* 101 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticClass: "swiper-container"
+  }, [_c('div', {
+    staticClass: "swiper-wrapper"
+  }, [_c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[0])
+      }
+    }
+  }, [_c('img', {
     attrs: {
-      "id": "content"
+      "src": _vm.imgArr[0],
+      "alt": ""
     }
-  }, [_c('div', {
-    staticClass: "panel"
-  }, [_c('div', {
-    staticClass: "header topic_header"
-  }, [_c('span', {
-    staticClass: "topic_full_title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.detailData.title)
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[1])
+      }
     }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "changes"
-  }, [_c('span', [_vm._v("\n\t          发布于" + _vm._s(_vm.detailData.create_at) + "\n\t        ")]), _vm._v(" "), _c('span', [_vm._v("\n\t          作者 "), _c('a', {
+  }, [_c('img', {
     attrs: {
-      "href": "/user/i5ting"
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.detailData.author ? _vm.detailData.author.loginname : '')
+      "src": _vm.imgArr[1],
+      "alt": ""
     }
-  })]), _vm._v(" "), _c('span', [_vm._v("\n\t       " + _vm._s(_vm.detailData.visit_count) + "次浏览\n\t        ")]), _vm._v(" "), _c('span', [_vm._v(" 来自 " + _vm._s(_vm.detailData.tab))])])]), _vm._v(" "), _c('div', {
-    staticClass: "inner topic"
-  }, [_c('div', {
-    staticClass: "topic_content"
-  }, [_c('div', {
-    staticClass: "markdown-text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.detailData.content)
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[2])
+      }
     }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "panel"
-  }, [_c('div', {
-    staticClass: "header"
-  }, [_c('span', {
-    staticClass: "col_fade"
-  }, [_vm._v(_vm._s(_vm.detailData.reply_count) + " 回复")])]), _vm._v(" "), _vm._l((_vm.detailData.replies), function(items, $index) {
-    return _c('div', {
-      staticClass: "cell reply_area reply_item\n\t  ",
-      attrs: {
-        "reply_id": items.id,
-        "reply_to_id": "",
-        "id": items.id
-      }
-    }, [_c('div', {
-      staticClass: "author_content"
-    }, [_c('a', {
-      staticClass: "user_avatar",
-      attrs: {
-        "href": '#!/user/' + items.author.loginname
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": items.author.avatar_url,
-        "title": "Rwing"
-      }
-    })]), _vm._v(" "), _c('div', {
-      staticClass: "user_info"
-    }, [_c('a', {
-      staticClass: "dark reply_author",
-      attrs: {
-        "href": '#!/user/' + items.author.loginname
-      },
-      domProps: {
-        "innerHTML": _vm._s(items.author.loginname)
-      }
-    }), _vm._v(" "), _c('a', {
-      staticClass: "reply_time",
-      attrs: {
-        "href": "#59632b6610d696af07768b40"
-      }
-    }, [_vm._v(_vm._s($index + 1) + "楼•" + _vm._s(_vm._f("xreply")(items.create_at)))])]), _vm._v(" "), _vm._m(0, true)]), _vm._v(" "), _c('div', {
-      staticClass: "reply_content from-Rwing"
-    }, [_c('div', {
-      staticClass: "markdown-text",
-      domProps: {
-        "innerHTML": _vm._s(items.content)
-      }
-    })]), _vm._v(" "), _vm._m(1, true)])
-  })], 2)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "user_action"
-  }, [_c('span', [_c('i', {
-    staticClass: "fa up_btn\n\t          fa-thumbs-o-up\n\t          invisible",
+  }, [_c('img', {
     attrs: {
-      "title": "喜欢"
+      "src": _vm.imgArr[2],
+      "alt": ""
     }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "up-count"
-  })]), _vm._v(" "), _c('span')])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "clearfix"
-  }, [_c('div', {
-    staticClass: "reply2_area"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[3])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[3],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[4])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[4],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[5])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[5],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[6])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[6],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[7])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[7],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[8])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[8],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    on: {
+      "click": function($event) {
+        _vm.showPic(_vm.imgArr[9])
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imgArr[9],
+      "alt": ""
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-pagination"
   })])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c601fe24", module.exports)
+  }
+}
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "hotel-info"
+  }, [_c('xswiper')], 1)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('header', {
+    staticClass: "bar "
+  }, [_c('a', {
+    staticClass: "iconfont icon-arrowleft pull-left tjclick",
+    attrs: {
+      "data-rel": "back",
+      "href": "http://m.elong.com/hotel/0101/nlist/",
+      "data-tj": "{\"cspot\":\"back\"}"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "iconfont icon-shoucang1  pull-right tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"mycollection\"}"
+    }
+  }), _vm._v(" "), _c('h1', {
+    staticClass: "title"
+  }, [_vm._v("酒店详情")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -38249,19 +38353,19 @@ if (false) {
 }
 
 /***/ }),
-/* 102 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(103)
+  __webpack_require__(108)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(105),
+  __webpack_require__(110),
   /* template */
-  __webpack_require__(106),
+  __webpack_require__(111),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38293,13 +38397,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 103 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(104);
+var content = __webpack_require__(109);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -38319,7 +38423,7 @@ if(false) {
 }
 
 /***/ }),
-/* 104 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -38333,7 +38437,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3
 
 
 /***/ }),
-/* 105 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38353,7 +38457,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3
 
 
 /***/ }),
-/* 106 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -38402,15 +38506,15 @@ if (false) {
 }
 
 /***/ }),
-/* 107 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  null,
+  __webpack_require__(113),
   /* template */
-  __webpack_require__(108),
+  __webpack_require__(121),
   /* styles */
   null,
   /* scopeId */
@@ -38442,10 +38546,442 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 108 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function(){},staticRenderFns:[]}
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _xheader = __webpack_require__(114);
+
+var _xheader2 = _interopRequireDefault(_xheader);
+
+var _xsearch = __webpack_require__(115);
+
+var _xsearch2 = _interopRequireDefault(_xsearch);
+
+var _xlist = __webpack_require__(118);
+
+var _xlist2 = _interopRequireDefault(_xlist);
+
+var _xfooter = __webpack_require__(119);
+
+var _xfooter2 = _interopRequireDefault(_xfooter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	components: {
+		xheader: _xheader2.default,
+		xsearch: _xsearch2.default,
+		xlist: _xlist2.default,
+		xfooter: _xfooter2.default
+	}
+};
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  null,
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xheader.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(116),
+  /* template */
+  __webpack_require__(117),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xsearch.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ad4a91be", Component.options)
+  } else {
+    hotAPI.reload("data-v-ad4a91be", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	data: function data() {},
+	computed: {},
+	mothods: {
+		automaticRequest: function automaticRequest() {
+			this.$ajax({
+				url: "http://localhost:3000/list",
+				params: {
+					// tab: this.message,
+					// limit: 10,
+					// page: this.page++
+				}
+			}).then(function (res) {
+				console.log(res);
+				// this.arr = this.arr.concat(res.data.data)
+				// this.isLoading = true
+			});
+		}
+	},
+	mounted: function mounted() {
+		this.automaticRequest();
+	}
+};
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "search-field showout"
+  }, [_c('div', {
+    staticClass: "header-search"
+  }, [_c('div', {
+    staticClass: "sea-date"
+  }, [_c('p', [_vm._v("入"), _c('span', [_vm._v("店")]), _vm._v("："), _c('b', {
+    staticClass: "indate",
+    attrs: {
+      "data-value": "2017-07-25"
+    }
+  }, [_vm._v("07-25")])]), _vm._v(" "), _c('p', [_vm._v("离"), _c('span', [_vm._v("店")]), _vm._v("："), _c('b', {
+    staticClass: "outdate",
+    attrs: {
+      "data-value": "2017-07-26"
+    }
+  }, [_vm._v("07-26")])]), _vm._v(" "), _c('span', {
+    staticClass: "total"
+  }, [_vm._v("1晚"), _c('i')])]), _vm._v(" "), _c('div', {
+    staticClass: "sea-box tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"searchbar\"}"
+    }
+  }, [_c('label', {
+    staticClass: "sea-mask"
+  }), _vm._v(" "), _c('i'), _vm._v(" "), _c('input', {
+    attrs: {
+      "type": "input",
+      "value": "",
+      "placeholder": "酒店名称/位置不限",
+      "readonly": "readonly"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "quick-search-box"
+  }, [_c('div', {
+    staticClass: "quick-search"
+  }, [_c('div', {
+    staticClass: "kslist"
+  }, [_c('div', {
+    staticClass: "commons room-title tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomtypeFilter\"}"
+    }
+  }, [_vm._v("房型筛选")]), _vm._v(" "), _c('div', {
+    staticClass: "commons sale-title tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"specialOffers\"}"
+    }
+  }, [_vm._v("优惠")])]), _vm._v(" "), _c('ul', {
+    staticClass: "quick-search-list"
+  }, [_c('li', {
+    staticClass: "quick-search-item tjclick ",
+    attrs: {
+      "data-id": "100000002",
+      "data-tid": "1100",
+      "data-uid": "30",
+      "data-tj": "{\"cspot\":\"paymentInHotel\"}",
+      "data-keyword": "到店付"
+    }
+  }, [_vm._v("到店付")]), _vm._v(" "), _c('li', {
+    staticClass: "quick-search-item tjclick ",
+    attrs: {
+      "data-id": "139",
+      "data-tid": "1100",
+      "data-uid": "101",
+      "data-tj": "{\"cspot\":\"freeCancellation\"}",
+      "data-keyword": "免费取消"
+    }
+  }, [_vm._v("免费取消")]), _vm._v(" "), _c('li', {
+    staticClass: "quick-search-item tjclick ",
+    attrs: {
+      "data-id": "141",
+      "data-tid": "1100",
+      "data-uid": "102",
+      "data-tj": "{\"cspot\":\"instantConfirm\"}",
+      "data-keyword": "立即确认"
+    }
+  }, [_vm._v("立即确认")])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-ad4a91be", module.exports)
+  }
+}
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  null,
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xlist.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__(120),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xfooter.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xfooter.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-285fd594", Component.options)
+  } else {
+    hotAPI.reload("data-v-285fd594", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "list-sider bar"
+  }, [_c('ul', {
+    staticClass: "filter-list"
+  }, [_c('li', {
+    staticClass: "filter-btn ",
+    attrs: {
+      "data-tj": "{\"cspot\":\"filter\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i1"
+  }), _vm._v("筛选")]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("条件不限")])]), _vm._v(" "), _c('li', {
+    staticClass: "area-btn ",
+    attrs: {
+      "data-tj": "{\"cspot\":\"hotelposition\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i2"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "title-pad"
+  }, [_vm._v("区域位置")]), _vm._v(" "), _c('span', {
+    staticClass: "title-phone"
+  }, [_vm._v("区域位置")])]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("位置不限")])]), _vm._v(" "), _c('li', {
+    staticClass: "price-star-btn ",
+    attrs: {
+      "data-tj": "{\"cspot\":\"priceandstar\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i3"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "title-pad"
+  }, [_vm._v("价格星级")]), _vm._v(" "), _c('span', {
+    staticClass: "title-phone"
+  }, [_vm._v("价格星级")])]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("价格不限、星级不限")])]), _vm._v(" "), _c('li', {
+    staticClass: "default-btn tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"sort\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i4"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "title-pad"
+  }, [_vm._v("排序")]), _vm._v(" "), _c('span', {
+    staticClass: "title-phone"
+  }, [_vm._v("排序")])]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("默认排序")])])]), _vm._v(" "), _c('a', {
+    staticClass: "filter-reset",
+    attrs: {
+      "href": ""
+    }
+  }, [_vm._v("重置所有选项")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-285fd594", module.exports)
+  }
+}
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages"
+  }, [_c('div', {
+    staticClass: "page page-on-center",
+    attrs: {
+      "data-blend": "layer",
+      "data-blend-id": "h5_list",
+      "data-url": "/hotel/beijing/",
+      "id": "uniq22",
+      "data-title": "【北京酒店】北京酒店宾馆预订_旅店住宿价格查询_艺龙网移动版",
+      "data-title-id": "h5_list"
+    }
+  }, [_c('xheader'), _vm._v(" "), _c('xsearch'), _vm._v(" "), _c('xlist'), _vm._v(" "), _c('xfooter')], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {

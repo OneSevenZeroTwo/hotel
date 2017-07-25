@@ -58,7 +58,24 @@ app.get('/slideshow', function(req, res) {
 
 
 //list部分..............................................lianglixiong
+//
+app.get('/list', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/hotel/api/list?_rt=1500994125828&indate=2017-07-25&outdate=2017-07-26&city=2001&pageindex=0&actionName=h5%3D%3Ebrand%3D%3EgetHotelList&esdnum=8957411', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+	//		数据返回前端
+			res.send(str)
 
+		})
+	})
+
+})
 
 
 //detail部分..............................................tangqiuping
