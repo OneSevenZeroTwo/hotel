@@ -16205,7 +16205,7 @@ var routes = [{
 {
 	//重定向，没有路由时页面默认加载/detail路由
 	path: '/',
-	redirect: '/detail'
+	redirect: '/detail/'
 }];
 
 //实例化路由，然后扔进主模块中。
@@ -16220,7 +16220,9 @@ var store = new _vuex2.default.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		news: ""
+		news: "",
+		detailNews: null,
+		imgArr: []
 	},
 	getters: {
 		getCount: function getCount(state) {
@@ -16232,12 +16234,8 @@ var store = new _vuex2.default.Store({
 		settitle: function settitle(state, data) {
 			state.title = data;
 		},
-		setNews: function setNews(state) {
-			_axios2.default.get('http://m.elong.com/hotel/api/otherdetail?_rt=1500975501941&hotelid=00101543&cityId=0101&lat=39.9589810220000032359166652895510196685791015625&lng=116.437257528000003503620973788201808929443359375').then(function (response) {
-				state.news = response.data.data;
-			}).catch(function (error) {
-				console.log(error);
-			});
+		detailNews: function detailNews(state, data) {
+			state.detailNews = data;
 		},
 		searchVal: function searchVal(state, val) {
 			console.log('mutations执行');
@@ -16248,8 +16246,8 @@ var store = new _vuex2.default.Store({
 		setChange: function setChange(context, data) {
 			context.commit('settitle', data);
 		},
-		setNews: function setNews(context, data) {
-			context.commit('setNews');
+		detailNews: function detailNews(context, data) {
+			context.commit('detailNews');
 		},
 		searchVal: function searchVal(context, val) {
 			console.log('actions执行');
@@ -38457,7 +38455,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.bar[data-v-72033688] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground-color: #fff;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-72033688]{\n\tborder-radius: 50%;\n\tbackground-color:  rgba(0,0,0,.5);\n}\n.bar .iconfont[data-v-72033688] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin-top: 7px;\n}\n.pull-left[data-v-72033688] {\n\tfloat: left;\n}\n.pull-right[data-v-72033688] {\n\tfloat: right;\n}\n.title[data-v-72033688] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n", ""]);
+exports.push([module.i, "\n.bar[data-v-72033688] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground: 0 0;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-72033688] {\n\tborder-radius: 50%;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.bar .iconfont[data-v-72033688] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin: 3px 5px;\n}\n.pull-left[data-v-72033688] {\n\tfloat: left;\n}\n.pull-right[data-v-72033688] {\n\tfloat: right;\n}\n.name[data-v-72033688]{\n\tposition: absolute;\n\ttop: 75px;\n\tleft: 0;\n\tpadding: 0 10px 10px;\n\tz-index: 10;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.name b[data-v-72033688]{\n\tfont-size: 0.7em;\n\tcolor: #fff;\n}\n.title[data-v-72033688] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n", ""]);
 
 // exports
 
@@ -38482,14 +38480,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
 	methods: {
 		getData: function getData() {
-			this.$store.dispatch("setNews");
-			//				this.$store.state.news = ;
+			//this.$store.dispatch("setNews");
+			//this.$store.state.news = ;
+			this.$ajax({
+				url: "http://localhost:3000/detail"
+			}).then(function (res) {
+				console.log(res);
+				this.$store.state.imgArr = res.data.pics;
+			}.bind(this));
 		}
 	},
 	components: {
 		xswiper: _xswiper2.default
+	},
+	mounted: function mounted() {
+		//后台请求数据动态生成列表
+		this.getData();
 	}
 }; //
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38585,7 +38601,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 200px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", ""]);
+exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 180px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", ""]);
 
 // exports
 
@@ -38614,24 +38630,20 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
 
 exports.default = {
 	data: function data() {
 		return {
-			imgArr: ["images/4.jpg", "images/5.jpg", "images/1.jpg", "images/2.jpg", "images/3.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg"]
+			////				this.$store.state.detailNews.pics
+			//				imgArr: [/*"http://pavo.elongstatic.com/i/hotel750_360/00050lJq.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDnN.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDnM.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDhO.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDhA.jpg"*/]
 
 		};
 	},
 	methods: {
-		showPic: function showPic(imgUrl) {
-			this.$store.state.imgUrl = imgUrl;
-			this.$store.state.galleryIsShow = true;
-		}
+		//			showPic(imgUrl) {
+		//				this.$store.state.imgUrl = this.$store.state.detailNews.pics
+		////				this.$store.state.galleryIsShow = true;
+		//			}
 	},
 	mounted: function mounted() {
 		var swiper = new Swiper('.swiper-container', {
@@ -38640,6 +38652,13 @@ exports.default = {
 			autoplay: 2500,
 			autoplayDisableOnInteraction: false
 		});
+		console.log(this.imgArr);
+	},
+	computed: {
+		imgArr: function imgArr() {
+			console.log(this.$store.state.imgArr);
+			return this.$store.state.imgArr;
+		}
 	}
 };
 
@@ -38653,128 +38672,41 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "swiper-wrapper"
   }, [_c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[0])
-      }
-    }
+    staticClass: "swiper-slide"
   }, [_c('img', {
     attrs: {
-      "src": _vm.imgArr[0],
+      "src": 'http:' + _vm.imgArr[0],
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[1])
-      }
-    }
+    staticClass: "swiper-slide"
   }, [_c('img', {
     attrs: {
-      "src": _vm.imgArr[1],
+      "src": 'http:' + _vm.imgArr[1],
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[2])
-      }
-    }
+    staticClass: "swiper-slide"
   }, [_c('img', {
     attrs: {
-      "src": _vm.imgArr[2],
+      "src": 'http:' + _vm.imgArr[2],
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[3])
-      }
-    }
+    staticClass: "swiper-slide"
   }, [_c('img', {
     attrs: {
-      "src": _vm.imgArr[3],
+      "src": 'http:' + _vm.imgArr[3],
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[4])
-      }
-    }
+    staticClass: "swiper-slide"
   }, [_c('img', {
     attrs: {
-      "src": _vm.imgArr[4],
+      "src": 'http:' + _vm.imgArr[4],
       "alt": ""
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[5])
-      }
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.imgArr[5],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[6])
-      }
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.imgArr[6],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[7])
-      }
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.imgArr[7],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[8])
-      }
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.imgArr[8],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    on: {
-      "click": function($event) {
-        _vm.showPic(_vm.imgArr[9])
-      }
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.imgArr[9],
-      "alt": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-pagination"
-  })])
+  })])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -38791,7 +38723,15 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "hotel-info"
-  }, [_c('xswiper')], 1)])
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }), _vm._v(" "), _c('i', {
+    staticClass: "picbg"
+  }), _vm._v(" "), _c('xswiper'), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  })], 1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('header', {
     staticClass: "bar "
@@ -38810,6 +38750,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('h1', {
     staticClass: "title"
   }, [_vm._v("酒店详情")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h1', {
+    staticClass: "name"
+  }, [_c('i', {
+    staticClass: "grade grade1"
+  }), _vm._v(" "), _c('b', [_vm._v("北京阳光温特莱酒店(国展店)(原速8国展柳芳店)")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

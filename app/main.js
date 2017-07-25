@@ -121,7 +121,7 @@ var routes = [{
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/detail'
+		redirect: '/detail/'
 	}
 ]
 
@@ -137,7 +137,9 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		news:""
+		news:"",
+		detailNews:null,
+		imgArr:[]
 	},
 	getters: {
 		getCount(state) {
@@ -149,14 +151,8 @@ var store = new Vuex.Store({
 		settitle(state, data) {
 			state.title = data
 		},
-		setNews(state) {
-			axios.get('http://m.elong.com/hotel/api/otherdetail?_rt=1500975501941&hotelid=00101543&cityId=0101&lat=39.9589810220000032359166652895510196685791015625&lng=116.437257528000003503620973788201808929443359375')
-				.then((response) => {
-					state.news = response.data.data
-				})
-				.catch((error) => {
-					console.log(error);
-				});
+		detailNews(state, data){
+			state.detailNews = data
 		},
 		searchVal(state, val) {
 			console.log('mutations执行')
@@ -167,8 +163,8 @@ var store = new Vuex.Store({
 		setChange(context, data) {
 			context.commit('settitle', data)
 		},
-		setNews(context, data) {
-			context.commit('setNews')
+		detailNews(context, data) {
+			context.commit('detailNews')
 		},
 		searchVal(context, val) {
 			console.log('actions执行')
