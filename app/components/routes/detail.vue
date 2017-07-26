@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<xmap></xmap>
+		
 		<header class="bar ">
 			<a class="iconfont icon-arrowleft pull-left tjclick" data-rel="back" href="http://m.elong.com/hotel/0101/nlist/" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
 			<a class="iconfont icon-shoucang1  pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
@@ -21,9 +21,10 @@
 			<div class="num">
 				<i class="iconfont icon-biaoqian"></i> 88
 			</div>
-
+			<!--地图组件-->
+			<xmap></xmap>
 			<div class="info">
-
+				<xcomment></xcomment>
 			</div>
 		</div>
 	</div>
@@ -32,6 +33,7 @@
 <script>
 	import xswiper from "../xswiper.vue"
 	import xmap from "../detail/xmap.vue"
+	import xcommont from "../detail/xcomment.vue"
 	export default {
 		methods: {
 			getData() {
@@ -48,7 +50,8 @@
 		},
 		components: {
 			xswiper,
-			xmap
+			xmap,
+			xcomment
 		},
 		mounted: function() {
 			//后台请求数据动态生成列表

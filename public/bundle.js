@@ -16081,13 +16081,13 @@ var _detail = __webpack_require__(98);
 
 var _detail2 = _interopRequireDefault(_detail);
 
-<<<<<<< HEAD
+
 var _test = __webpack_require__(112);
 
 var _test2 = _interopRequireDefault(_test);
 
 var _list = __webpack_require__(117);
-=======
+
 var _test = __webpack_require__(108);
 
 var _test2 = _interopRequireDefault(_test);
@@ -16109,7 +16109,6 @@ var _mySelf = __webpack_require__(128);
 var _mySelf2 = _interopRequireDefault(_mySelf);
 
 var _list = __webpack_require__(133);
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
 
 var _list2 = _interopRequireDefault(_list);
 
@@ -37210,13 +37209,11 @@ exports.default = {
 //
 //
 //
-<<<<<<< HEAD
 
 /***/ }),
 /* 61 */
-=======
 
-/***/ }),
+/***/ 
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38004,13 +38001,13 @@ if (false) {
 
 /***/ }),
 /* 83 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-<<<<<<< HEAD
+
   __webpack_require__(62)
 }
 var Component = __webpack_require__(2)(
@@ -38018,15 +38015,15 @@ var Component = __webpack_require__(2)(
   __webpack_require__(65),
   /* template */
   __webpack_require__(66),
-=======
-  __webpack_require__(84)
+
+  __webpack_require__(84))
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(86),
   /* template */
   __webpack_require__(87),
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38034,15 +38031,15 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-<<<<<<< HEAD
+
 Component.options.__file = "D:\\chuanyeniubi\\app\\components\\indexcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
-=======
+
 Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\job.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] job.vue: functional components are not supported with templates, they should use render functions.")}
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 
 /* hot reload */
 if (false) {(function () {
@@ -38051,15 +38048,15 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-<<<<<<< HEAD
+
     hotAPI.createRecord("data-v-1e27a00c", Component.options)
   } else {
     hotAPI.reload("data-v-1e27a00c", Component.options)
-=======
+
     hotAPI.createRecord("data-v-34718e2c", Component.options)
   } else {
     hotAPI.reload("data-v-34718e2c", Component.options)
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38070,40 +38067,40 @@ module.exports = Component.exports
 
 
 /***/ }),
-<<<<<<< HEAD
+
 /* 62 */
-=======
+
 /* 84 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-<<<<<<< HEAD
+
 var content = __webpack_require__(63);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(3)("f42b8f7c", content, false);
-=======
+
 var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(2)("ed28716c", content, false);
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-<<<<<<< HEAD
+
    module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e27a00c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
      var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e27a00c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
-=======
+
    module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-34718e2c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./job.vue", function() {
      var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-34718e2c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./job.vue");
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38113,11 +38110,10 @@ if(false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 63 */
-=======
+
+
 /* 85 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -38125,17 +38121,16 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-<<<<<<< HEAD
+
 exports.push([module.i, "\n.swiper-slide img {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xheader.vue?663da89d"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr[0].picUrl)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl, this.arr[4].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
-=======
+
 exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 
 // exports
 
 
 /***/ }),
-<<<<<<< HEAD
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38172,9 +38167,6 @@ module.exports = function listToStyles(parentId, list) {
 
 /***/ }),
 /* 65 */
-=======
-/* 86 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38183,7 +38175,6 @@ module.exports = function listToStyles(parentId, list) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-<<<<<<< HEAD
 //
 //
 //
@@ -38397,7 +38388,7 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('xheader')], 1)
-=======
+
 
 var _xlist = __webpack_require__(4);
 
@@ -38424,32 +38415,32 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "message": "job"
     }
   })
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-<<<<<<< HEAD
+
      require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b351219c", module.exports)
-=======
+
      require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-34718e2c", module.exports)
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
   }
 }
 
 /***/ }),
-<<<<<<< HEAD
+
 /* 68 */
-=======
+
 /* 88 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-<<<<<<< HEAD
+
   __webpack_require__(69)
 }
 var Component = __webpack_require__(2)(
@@ -38457,7 +38448,7 @@ var Component = __webpack_require__(2)(
   __webpack_require__(71),
   /* template */
   __webpack_require__(76),
-=======
+
   __webpack_require__(89)
 }
 var Component = __webpack_require__(0)(
@@ -38465,7 +38456,7 @@ var Component = __webpack_require__(0)(
   __webpack_require__(91),
   /* template */
   __webpack_require__(92),
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38473,11 +38464,11 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-<<<<<<< HEAD
+
 Component.options.__file = "D:\\chuanyeniubi\\app\\components\\routes\\share.vue"
-=======
+
 Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\topics.vue"
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] topics.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38488,15 +38479,15 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-<<<<<<< HEAD
+
     hotAPI.createRecord("data-v-4aa9931c", Component.options)
   } else {
     hotAPI.reload("data-v-4aa9931c", Component.options)
-=======
+
     hotAPI.createRecord("data-v-575196f2", Component.options)
   } else {
     hotAPI.reload("data-v-575196f2", Component.options)
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38507,40 +38498,37 @@ module.exports = Component.exports
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 69 */
-=======
-/* 89 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
+
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-<<<<<<< HEAD
+
 var content = __webpack_require__(70);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(3)("ea95725c", content, false);
-=======
+
 var content = __webpack_require__(90);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(2)("0448c1b7", content, false);
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-<<<<<<< HEAD
+
    module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4aa9931c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue", function() {
      var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4aa9931c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue");
-=======
+
    module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./topics.vue", function() {
      var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./topics.vue");
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38550,11 +38538,7 @@ if(false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 70 */
-=======
-/* 90 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -38568,11 +38552,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 71 */
-=======
-/* 91 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38701,11 +38681,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 74 */
-=======
-/* 96 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38762,11 +38738,11 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(101),
   /* template */
-<<<<<<< HEAD
+
   __webpack_require__(111),
-=======
+
   __webpack_require__(107),
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38832,11 +38808,11 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-<<<<<<< HEAD
+
 exports.push([module.i, "\nbody[data-v-717dd598],\nhtml[data-v-717dd598] {\n\theight: 100%;\n}\n*[data-v-717dd598] {\n\tpadding: 0;\n\tmargin: 0;\n}\nul li[data-v-717dd598] {\n\tlist-style: none;\n}\na[data-v-717dd598] {\n\ttext-decoration: none;\n}\n.bar[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground: 0 0;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-717dd598] {\n\tborder-radius: 50%;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.bar .iconfont[data-v-717dd598] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin: 3px 5px;\n}\n.pull-left[data-v-717dd598] {\n\tfloat: left;\n}\n.pull-right[data-v-717dd598] {\n\tfloat: right;\n}\n.name[data-v-717dd598] {\n\tfont-size: 20px;\n\tposition: absolute;\n\ttop: 90px;\n\tleft: 0;\n\tpadding: 0 10px;\n\tpadding-bottom: 10px;\n\tz-index: 3;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.detail-main .hotel-info .pic-wrap .name .grade[data-v-717dd598] {\n\tmargin-left: 0;\n\tmargin-right: 3px;\n}\n.grade1[data-v-717dd598] {\n\tbackground-position: -17px -18px;\n}\n.grade[data-v-717dd598] {\n\tdisplay: inline-block;\n\twidth: 16px;\n\theight: 14px;\n\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\tbackground-position: 0 -18px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: 96px 32px;\n\tmargin-left: 3px;\n\tmargin-bottom: 1px;\n}\n.name em[data-v-717dd598] {\n\tcolor: #fff;\n\tfont-style: normal;\n}\n.title[data-v-717dd598] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n.type-num[data-v-717dd598] {\n\tbackground-color: rgba(211, 225, 226, .6);\n\tposition: absolute;\n\ttop: 160px;\n\theight: 20px;\n\tz-index: 4;\n\twidth: 100%;\n}\n.hotel-type[data-v-717dd598],\n.num[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 4;\n\ttop: 150px;\n\tcolor: #fff;\n}\n.hotel-type[data-v-717dd598] {\n\tleft: 10px;\n}\n.num[data-v-717dd598] {\n\tright: 10px;\n}\n.info[data-v-717dd598] {\n\tmargin-top: 20px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/detail.vue?a8478cb8"],"names":[],"mappings":";AA4DA;;CAEA,aAAA;CACA;AAEA;CACA,WAAA;CACA,UAAA;CACA;AAEA;CACA,iBAAA;CACA;AAEA;CACA,sBAAA;CACA;AAEA;CACA,mBAAA;CACA,eAAA;CACA,aAAA;CACA,oBAAA;CACA,mBAAA;CACA,gBAAA;CACA,oCAAA;CACA,4BAAA;CACA,QAAA;CACA,SAAA;CACA,0BAAA;CACA,uBAAA;CACA,sBAAA;CACA,kBAAA;CACA;AAEA;CACA,mBAAA;CACA,oCAAA;CACA;AAEA;CACA,mBAAA;CACA,YAAA;CACA,YAAA;CACA,aAAA;CACA,sBAAA;CACA,kBAAA;CACA,gBAAA;CACA,YAAA;CACA,kBAAA;CACA,gBAAA;CACA;AAEA;CACA,YAAA;CACA;AAEA;CACA,aAAA;CACA;AAEA;CACA,gBAAA;CACA,mBAAA;CACA,UAAA;CACA,QAAA;CACA,gBAAA;CACA,qBAAA;CACA,WAAA;CACA,oCAAA;CACA;AAEA;CACA,eAAA;CACA,kBAAA;CACA;AAEA;CACA,iCAAA;CACA;AAEA;CACA,sBAAA;CACA,YAAA;CACA,aAAA;CACA,mGAAA;CACA,6BAAA;CACA,6BAAA;CACA,2BAAA;CACA,iBAAA;CACA,mBAAA;CACA;AAEA;CACA,YAAA;CACA,mBAAA;CACA;AAEA;CACA,mBAAA;CACA,cAAA;CACA,YAAA;CACA,WAAA;CACA,gBAAA;CACA,kBAAA;CACA,iBAAA;CACA,kBAAA;CACA,mBAAA;CACA,oBAAA;CACA;AAEA;CACA,0CAAA;CACA,mBAAA;CACA,WAAA;CACA,aAAA;CACA,WAAA;CACA,YAAA;CACA;AAEA;;CAEA,mBAAA;CACA,WAAA;CACA,WAAA;CACA,YAAA;CACA;AAEA;CACA,WAAA;CACA;AAEA;CACA,YAAA;CACA;AAEA;CACA,iBAAA;CACA","file":"detail.vue","sourcesContent":["<template>\n\t<div>\n\t\t<xmap></xmap>\n\t\t<header class=\"bar \">\n\t\t\t<a class=\"iconfont icon-arrowleft pull-left tjclick\" data-rel=\"back\" href=\"http://m.elong.com/hotel/0101/nlist/\" data-tj=\"{&quot;cspot&quot;:&quot;back&quot;}\"></a>\n\t\t\t<a class=\"iconfont icon-shoucang1  pull-right tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\n\t\t\t<h1 class=\"title\">酒店详情</h1>\n\t\t</header>\n\n\t\t<div class=\"hotel-info\">\n\t\t\t<a href=\"javascript:void(0)\"></a>\n\t\t\t<i class=\"picbg\"></i>\n\t\t\t<!--轮播图-->\n\t\t\t<xswiper></xswiper>\n\t\t\t<h1 class=\"name\">\n                <i class=\"grade grade1\"></i>\n                <em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>\n            </h1>\n\t\t\t<i class=\"type-num\"></i>\n\t\t\t<span class=\"hotel-type\">经济型</span>\n\t\t\t<div class=\"num\">\n\t\t\t\t<i class=\"iconfont icon-biaoqian\"></i> 88\n\t\t\t</div>\n\n\t\t\t<div class=\"info\">\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</template>\n\n<script>\n\timport xswiper from \"../xswiper.vue\"\n\timport xmap from \"../detail/xmap.vue\"\n\texport default {\n\t\tmethods: {\n\t\t\tgetData() {\n\t\t\t\t//this.$store.dispatch(\"setNews\");\n\t\t\t\t//this.$store.state.news = ;\n\t\t\t\tthis.$ajax({\n\t\t\t\t\turl: \"http://localhost:3000/detail\",\n\t\t\t\t}).then(function(res) {\n\t\t\t\t\tconsole.log(res)\n\t\t\t\t\tthis.$store.state.imgArr = res.data.pics;\n\n\t\t\t\t}.bind(this))\n\t\t\t}\n\t\t},\n\t\tcomponents: {\n\t\t\txswiper,\n\t\t\txmap\n\t\t},\n\t\tmounted: function() {\n\t\t\t//后台请求数据动态生成列表\n\t\t\tthis.getData()\n\t\t}\n\t}\n</script>\n\n<style scoped>\n\tbody,\n\thtml {\n\t\theight: 100%;\n\t}\n\t\n\t* {\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t}\n\t\n\tul li {\n\t\tlist-style: none;\n\t}\n\t\n\ta {\n\t\ttext-decoration: none;\n\t}\n\t\n\t.bar {\n\t\tposition: absolute;\n\t\tz-index: 10000;\n\t\theight: 44px;\n\t\tpadding-right: 10px;\n\t\tpadding-left: 10px;\n\t\tbackground: 0 0;\n\t\t-webkit-backface-visibility: hidden;\n\t\tbackface-visibility: hidden;\n\t\tleft: 0;\n\t\tright: 0;\n\t\t-webkit-user-select: none;\n\t\t-moz-user-select: none;\n\t\t-ms-user-select: none;\n\t\tuser-select: none;\n\t}\n\t\n\t.tjclick {\n\t\tborder-radius: 50%;\n\t\tbackground-color: rgba(0, 0, 0, .5);\n\t}\n\t\n\t.bar .iconfont {\n\t\tposition: relative;\n\t\tz-index: 20;\n\t\twidth: 34px;\n\t\theight: 37px;\n\t\tdisplay: inline-block;\n\t\tline-height: 37px;\n\t\tfont-size: 24px;\n\t\tcolor: #fff;\n\t\tpadding-left: 5px;\n\t\tmargin: 3px 5px;\n\t}\n\t\n\t.pull-left {\n\t\tfloat: left;\n\t}\n\t\n\t.pull-right {\n\t\tfloat: right;\n\t}\n\t\n\t.name {\n\t\tfont-size: 20px;\n\t\tposition: absolute;\n\t\ttop: 90px;\n\t\tleft: 0;\n\t\tpadding: 0 10px;\n\t\tpadding-bottom: 10px;\n\t\tz-index: 3;\n\t\tbackground-color: rgba(0, 0, 0, .5);\n\t}\n\t\n\t.detail-main .hotel-info .pic-wrap .name .grade {\n\t\tmargin-left: 0;\n\t\tmargin-right: 3px;\n\t}\n\t\n\t.grade1 {\n\t\tbackground-position: -17px -18px;\n\t}\n\t\n\t.grade {\n\t\tdisplay: inline-block;\n\t\twidth: 16px;\n\t\theight: 14px;\n\t\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\t\tbackground-position: 0 -18px;\n\t\tbackground-repeat: no-repeat;\n\t\tbackground-size: 96px 32px;\n\t\tmargin-left: 3px;\n\t\tmargin-bottom: 1px;\n\t}\n\t\n\t.name em {\n\t\tcolor: #fff;\n\t\tfont-style: normal;\n\t}\n\t\n\t.title {\n\t\tposition: absolute;\n\t\tdisplay: none;\n\t\twidth: 100%;\n\t\tpadding: 0;\n\t\tmargin: 0 -10px;\n\t\tfont-size: 1.2rem;\n\t\tfont-weight: 700;\n\t\tline-height: 44px;\n\t\ttext-align: center;\n\t\twhite-space: nowrap;\n\t}\n\t\n\t.type-num {\n\t\tbackground-color: rgba(211, 225, 226, .6);\n\t\tposition: absolute;\n\t\ttop: 160px;\n\t\theight: 20px;\n\t\tz-index: 4;\n\t\twidth: 100%;\n\t}\n\t\n\t.hotel-type,\n\t.num {\n\t\tposition: absolute;\n\t\tz-index: 4;\n\t\ttop: 150px;\n\t\tcolor: #fff;\n\t}\n\t\n\t.hotel-type {\n\t\tleft: 10px;\n\t}\n\t\n\t.num {\n\t\tright: 10px;\n\t}\n\t\n\t.info {\n\t\tmargin-top: 20px;\n\t}\n</style>"],"sourceRoot":""}]);
-=======
+
 exports.push([module.i, "\n.bar[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground: 0 0;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-717dd598] {\n\tborder-radius: 50%;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.bar .iconfont[data-v-717dd598] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin: 3px 5px;\n}\n.pull-left[data-v-717dd598] {\n\tfloat: left;\n}\n.pull-right[data-v-717dd598] {\n\tfloat: right;\n}\n.name[data-v-717dd598]{\n\tposition: absolute;\n\ttop: 75px;\n\tleft: 0;\n\tpadding: 0 10px 10px;\n\tz-index: 10;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.name b[data-v-717dd598]{\n\tfont-size: 0.7em;\n\tcolor: #fff;\n}\n.title[data-v-717dd598] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n", ""]);
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 
 // exports
 
@@ -38996,11 +38972,11 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-<<<<<<< HEAD
+
 exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 180px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/xswiper.vue?1508a9c9"],"names":[],"mappings":";AAmCA;CACA,YAAA;CACA,aAAA;CACA,iBAAA;CACA;AAEA;CACA,mBAAA;CACA,gBAAA;CACA,iBAAA;CACA,kCAAA;CACA,qBAAA;CACA,qBAAA;CACA,sBAAA;CACA,cAAA;CACA,yBAAA;CACA,sBAAA;CACA,gCAAA;CACA,wBAAA;CACA,0BAAA;CACA,uBAAA;CACA,4BAAA;CACA,oBAAA;CACA;AAEA;CACA,YAAA;CACA,cAAA;CACA;AAEA;CACA,oBAAA;CACA,iBAAA;CACA","file":"xswiper.vue","sourcesContent":["<template>\r\n\t<div class=\"swiper-container\">\r\n\t\t<div class=\"swiper-wrapper\">\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[4]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\t\t<!-- Add Pagination -->\r\n\t\t<!--<div class=\"swiper-pagination\"></div>-->\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmounted: function() {\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tautoplay: 2500,\r\n\t\t\t\tautoplayDisableOnInteraction: false\r\n\t\t\t});\r\n\t\t\tconsole.log(this.imgArr)\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\timgArr(){\r\n\t\t\t\tconsole.log(this.$store.state.imgArr)\r\n\t\t\t\treturn this.$store.state.imgArr\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.swiper-container {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.swiper-slide {\r\n\t\ttext-align: center;\r\n\t\tfont-size: 18px;\r\n\t\tbackground: #fff;\r\n\t\t/* Center slide text vertically */\r\n\t\tdisplay: -webkit-box;\r\n\t\tdisplay: -ms-flexbox;\r\n\t\tdisplay: -webkit-flex;\r\n\t\tdisplay: flex;\r\n\t\t-webkit-box-pack: center;\r\n\t\t-ms-flex-pack: center;\r\n\t\t-webkit-justify-content: center;\r\n\t\tjustify-content: center;\r\n\t\t-webkit-box-align: center;\r\n\t\t-ms-flex-align: center;\r\n\t\t-webkit-align-items: center;\r\n\t\talign-items: center;\r\n\t}\r\n\t\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 180px;\r\n\t}\r\n\t\r\n\t.weui-panel__bd {\r\n\t\tmargin-bottom: 58px;\r\n\t\tbackground: #FFF;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
-=======
+
 exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 180px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", ""]);
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 
 // exports
 
@@ -39326,17 +39302,13 @@ if (false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 112 */
-=======
-/* 108 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-<<<<<<< HEAD
+
   __webpack_require__(113)
 }
 var Component = __webpack_require__(0)(
@@ -39344,7 +39316,7 @@ var Component = __webpack_require__(0)(
   __webpack_require__(115),
   /* template */
   __webpack_require__(116),
-=======
+
   __webpack_require__(109)
 }
 var Component = __webpack_require__(0)(
@@ -39352,7 +39324,7 @@ var Component = __webpack_require__(0)(
   __webpack_require__(111),
   /* template */
   __webpack_require__(112),
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
   /* styles */
   injectStyle,
   /* scopeId */
@@ -39384,21 +39356,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 113 */
-=======
-/* 109 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-<<<<<<< HEAD
+
 var content = __webpack_require__(114);
-=======
+
 var content = __webpack_require__(110);
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -39418,11 +39386,7 @@ if(false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 114 */
-=======
-/* 110 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -39436,11 +39400,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 115 */
-=======
-/* 111 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39460,11 +39420,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 116 */
-=======
-/* 112 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39513,9 +39469,7 @@ if (false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 117 */
-=======
+
 /* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39600,11 +39554,7 @@ exports.push([module.i, "\n.content[data-v-961fa874] {\n\tposition: relative;\n\
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 80 */
-=======
-/* 116 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39931,11 +39881,7 @@ exports.push([module.i, "\n.content[data-v-2601e556]{\n\tposition: relative;\n\t
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 85 */
-=======
-/* 121 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40019,7 +39965,7 @@ if (false) {
 
 /***/ }),
 /* 123 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -40103,11 +40049,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 90 */
-=======
-/* 126 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40219,11 +40161,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 95 */
-=======
-/* 131 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40260,11 +40198,11 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(134),
   /* template */
-<<<<<<< HEAD
+
   __webpack_require__(118),
-=======
+
   __webpack_require__(142),
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
   /* styles */
   null,
   /* scopeId */
@@ -40296,9 +40234,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 118 */
-=======
+
 /* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40319,13 +40255,12 @@ var _xsearch2 = _interopRequireDefault(_xsearch);
 
 var _xlist = __webpack_require__(139);
 
-<<<<<<< HEAD
 /***/ }),
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
+
 var _xlist2 = _interopRequireDefault(_xlist);
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 
 var _xfooter = __webpack_require__(140);
 
@@ -40640,7 +40575,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-<<<<<<< HEAD
+
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40701,10 +40636,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3
 
 
 /***/ }),
-/* 106 */
-=======
-/* 141 */
->>>>>>> 1189da7d7cc3395303dd671a05388460e359b760
+
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40786,8 +40718,7 @@ if (false) {
 }
 
 /***/ }),
-/* 142 */
->>>>>>> 7bbf995659588b466d3a63dd96fef9fa897560d0
+
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
