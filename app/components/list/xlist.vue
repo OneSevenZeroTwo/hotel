@@ -1,4 +1,5 @@
-<div class="page-content page-list mvt_191" style="">
+<template>
+	<div class="page-content page-list mvt_191" style="">
 	<section class="page-list-con">
 		<div class="list-main">
 			<div class="hotel-list">
@@ -57,3 +58,4 @@
 		</div>
 	</section>
 </div>
+</template>

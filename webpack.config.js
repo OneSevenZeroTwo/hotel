@@ -4,6 +4,7 @@ module.exports = {
 	//报错显示在源代码中。
 //	devtool:"source-map",
 	//入口文件 相当于gulp.src 导入main.js
+	//__dirname相当于全局变量
 	entry: __dirname + "/app/main.js",
 	//出口文件
 	output: {
