@@ -73,7 +73,7 @@ var routes = [{
 	},
 	{
 		//路由名
-		path: '/detail/:id',
+		path: '/detail',
 		//上面定义好的路由扔进来
 		component: detail
 	},
