@@ -15,16 +15,15 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import $ from "jquery";
 window.$ = window.jQuery = $
 import com from "./js/common.js"
-window.com =com
-console.log(com.randomNum(1,10))
-//使用..................................................................
-//通过 Vue.use()明确地安装路由功能
+window.com = com
+console.log(com.randomNum(1, 10))
+	//使用..................................................................
+	//通过 Vue.use()明确地安装路由功能
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
-//挂载axios在Vue构造器下
+	//挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
-
 
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
 import MuseUI from 'muse-ui'
@@ -68,45 +67,38 @@ var routes = [{
 			}, {
 				path: 'good',
 				component: good,
-			},
-			{
+			}, {
 				path: 'topics',
 				component: topics,
 			},
 
 		]
-	},
-	{
+	}, {
 		//路由名
 		path: '/detail',
 		//上面定义好的路由扔进来
 		component: detail
-	},
-	{
+	}, {
 		//路由名
 		path: '/register',
 		//上面定义好的路由扔进来
 		component: xregister
-	},
-	{
+	}, {
 		//路由名
 		path: '/login',
 		//上面定义好的路由扔进来
 		component: xlogin
-	},
-	{
+	}, {
 		//路由名
 		path: '/buyCar',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	},
-	{
+	}, {
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来
 		component: xmySelf
-	},
-	{
+	}, {
 		//路由名
 		path: '/muse',
 		//上面定义好的路由扔进来
@@ -114,8 +106,8 @@ var routes = [{
 	},
 	//列表页开始
 	{
-		path:'/list',
-		component:list
+		path: '/list',
+		component: list
 	},
 	//列表页结束
 	{
@@ -137,9 +129,14 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		news:"",
-		detailNews:null,
-		imgArr:[]
+		news: "",
+		detailNews: null,
+		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
+		]
 	},
 	getters: {
 		getCount(state) {
@@ -151,7 +148,7 @@ var store = new Vuex.Store({
 		settitle(state, data) {
 			state.title = data
 		},
-		detailNews(state, data){
+		detailNews(state, data) {
 			state.detailNews = data
 		},
 		searchVal(state, val) {

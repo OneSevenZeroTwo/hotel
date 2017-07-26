@@ -44,23 +44,11 @@
 	}
 </script>
 <style scoped>
-	body,
-	html {
-		height: 100%;
-	}
-	
 	#l-map {
 		position: absolute;
 		width: 100%;
-		height: 20%;
+		height: 15%;
 		top: 195px;
-		z-index: 999999;
+		border: 1px solid #999;
 	}
-	
-	/*.qqqqqq {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		z-index: 9000;
-	}*/
 </style>
