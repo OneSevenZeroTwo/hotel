@@ -14,19 +14,6 @@
 
 <script>
 	export default {
-		data: function() {
-			return {
-////				this.$store.state.detailNews.pics
-//				imgArr: [/*"http://pavo.elongstatic.com/i/hotel750_360/00050lJq.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDnN.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDnM.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDhO.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDhA.jpg"*/]
-
-			}
-		},
-		methods: {
-//			showPic(imgUrl) {
-//				this.$store.state.imgUrl = this.$store.state.detailNews.pics
-////				this.$store.state.galleryIsShow = true;
-//			}
-		},
 		mounted: function() {
 			var swiper = new Swiper('.swiper-container', {
 				pagination: '.swiper-pagination',
