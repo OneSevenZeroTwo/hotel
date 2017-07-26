@@ -129,6 +129,7 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
+		isLogin:false,
 		news: "",
 		detailNews: null,
 		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
@@ -137,6 +138,7 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		]
+
 	},
 	getters: {
 		getCount(state) {
