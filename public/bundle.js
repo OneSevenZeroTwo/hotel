@@ -792,7 +792,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\xlist.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\xlist.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xlist.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -16081,34 +16081,27 @@ var _detail = __webpack_require__(98);
 
 var _detail2 = _interopRequireDefault(_detail);
 
-
-var _test = __webpack_require__(112);
-
-var _test2 = _interopRequireDefault(_test);
-
-var _list = __webpack_require__(117);
-
-var _test = __webpack_require__(108);
+var _test = __webpack_require__(103);
 
 var _test2 = _interopRequireDefault(_test);
 
-var _register = __webpack_require__(113);
+var _register = __webpack_require__(108);
 
 var _register2 = _interopRequireDefault(_register);
 
-var _login = __webpack_require__(118);
+var _login = __webpack_require__(113);
 
 var _login2 = _interopRequireDefault(_login);
 
-var _buyCar = __webpack_require__(123);
+var _buyCar = __webpack_require__(118);
 
 var _buyCar2 = _interopRequireDefault(_buyCar);
 
-var _mySelf = __webpack_require__(128);
+var _mySelf = __webpack_require__(123);
 
 var _mySelf2 = _interopRequireDefault(_mySelf);
 
-var _list = __webpack_require__(133);
+var _list = __webpack_require__(128);
 
 var _list2 = _interopRequireDefault(_list);
 
@@ -16229,7 +16222,7 @@ var store = new _vuex2.default.Store({
 		val: "",
 		news: "",
 		detailNews: null,
-		imgArr: []
+		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"]
 	},
 	getters: {
 		getCount: function getCount(state) {
@@ -16266,7 +16259,7 @@ var store = new _vuex2.default.Store({
 //新建一个实例，把定义好的router和store放进来注册...................................
 new _vue2.default({
 	el: "#demo",
-	template: "\n\t\t<div>\n\t\t\t<router-view></router-view>\n\t\t</div>\n\t",
+	template: "\n\t\t<div style=\"height:100%\">\n\t\t\t<router-view></router-view>\n\t\t</div>\n\t",
 	router: router,
 	store: store
 });
@@ -16292,8 +16285,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!./iconfont.css", function() {
-			var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!./iconfont.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./iconfont.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./iconfont.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -20526,7 +20519,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\node_modules\\_vue-awesome-swiper@2.5.4@vue-awesome-swiper\\swiper.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\node_modules\\vue-awesome-swiper\\swiper.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] swiper.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20537,9 +20530,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2593c2e9", Component.options)
+    hotAPI.createRecord("data-v-1800927c", Component.options)
   } else {
-    hotAPI.reload("data-v-2593c2e9", Component.options)
+    hotAPI.reload("data-v-1800927c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -20658,8 +20651,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../_css-loader@0.28.4@css-loader/index.js!./swiper.css", function() {
-			var newContent = require("!!../../../_css-loader@0.28.4@css-loader/index.js!./swiper.css");
+		module.hot.accept("!!../../../../../css-loader/index.js!./swiper.css", function() {
+			var newContent = require("!!../../../../../css-loader/index.js!./swiper.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -20697,7 +20690,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2593c2e9", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1800927c", module.exports)
   }
 }
 
@@ -20718,7 +20711,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\node_modules\\_vue-awesome-swiper@2.5.4@vue-awesome-swiper\\slide.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\node_modules\\vue-awesome-swiper\\slide.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] slide.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20729,9 +20722,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3c22ecd0", Component.options)
+    hotAPI.createRecord("data-v-7226cc52", Component.options)
   } else {
-    hotAPI.reload("data-v-3c22ecd0", Component.options)
+    hotAPI.reload("data-v-7226cc52", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -20806,7 +20799,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3c22ecd0", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7226cc52", module.exports)
   }
 }
 
@@ -37117,8 +37110,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../_css-loader@0.28.4@css-loader/index.js!./muse-ui.css", function() {
-			var newContent = require("!!../../_css-loader@0.28.4@css-loader/index.js!./muse-ui.css");
+		module.hot.accept("!!../../css-loader/index.js!./muse-ui.css", function() {
+			var newContent = require("!!../../css-loader/index.js!./muse-ui.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -37158,7 +37151,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\home.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37211,9 +37204,6 @@ exports.default = {
 //
 
 /***/ }),
-/* 61 */
-
-/***/ 
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37234,7 +37224,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\indexcomponents\\xheader.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37268,13 +37258,13 @@ var content = __webpack_require__(64);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("23b5ea9a", content, false);
+var update = __webpack_require__(2)("00b7944f", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37287,12 +37277,12 @@ if(false) {
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.swiper-slide img {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/xheader.vue?663da89d"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr[0].picUrl)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl, this.arr[4].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -37356,8 +37346,39 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
+	data: function data() {
+		return {
+			arr: [],
+			newArr: []
+		};
+	},
 	methods: {
 		loadMore: function loadMore() {
 			console.log("aaa");
@@ -37365,14 +37386,26 @@ exports.default = {
 				url: "http://localhost:3000/slideshow"
 			}).then(function (res) {
 				console.log(res);
-				//					this.arr = this.arr.concat(res.data.data)
+				this.arr = res.data.advList;
+				console.log(this.arr[0].picUrl);
+				this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl, this.arr[4].picUrl];
 			}.bind(this));
 		}
 	},
 	mounted: function mounted() {
-		console.log("mounted");
 		//后台请求数据动态生成列表
 		this.loadMore();
+
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			//				nextButton: '.swiper-button-next',
+			//				prevButton: '.swiper-button-prev',
+			slidesPerView: 1,
+			autoplay: 1000,
+			paginationClickable: true,
+			spaceBetween: 30,
+			loop: true
+		});
 	}
 
 };
@@ -37382,14 +37415,120 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
+  return _c('div', [_c('div', {
+    staticClass: "swiper-container swiper-container-horizontal"
+  }, [_c('div', {
+    staticClass: "swiper-wrapper",
+    staticStyle: {
+      "transform": "translate3d(0px, 0px, 0px)",
+      "transition-duration": "0ms"
+    }
+  }, [_c('div', {
+    staticClass: "swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev",
+    staticStyle: {
+      "width": "320px",
+      "margin-right": "30px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "9"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide swiper-slide-duplicate-active",
+    staticStyle: {
+      "width": "100%",
+      "background-image": "url('img/1.jpg')",
+      "margin-right": "30px",
+      "height": "119px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "0"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    staticStyle: {
+      "width": "320px",
+      "margin-right": "30px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "2"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.newArr[1],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    staticStyle: {
+      "width": "320px",
+      "margin-right": "30px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "3"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.newArr[2],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    staticStyle: {
+      "width": "320px",
+      "margin-right": "30px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "4"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.newArr[3],
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide swiper-slide-prev swiper-slide-duplicate-next",
+    staticStyle: {
+      "width": "100%",
+      "background-image": "url('img/2.jpg')",
+      "margin-right": "30px",
+      "height": "119px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "9"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide swiper-slide-duplicate swiper-slide-active",
+    staticStyle: {
+      "width": "320px",
+      "margin-right": "30px"
+    },
+    attrs: {
+      "data-swiper-slide-index": "0"
+    }
+  })]), _vm._v(" "), _vm._m(0)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "swiper-container"
-  }, [_c('div', {
-    staticClass: "swiper-wrapper"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-pagination"
+    staticClass: "swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+  }, [_c('span', {
+    staticClass: "swiper-pagination-bullet swiper-pagination-bullet-active"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
+  }), _c('span', {
+    staticClass: "swiper-pagination-bullet"
   })])
 }]}
 module.exports.render._withStripped = true
@@ -37436,7 +37575,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\share.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\share.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] share.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37470,13 +37609,13 @@ var content = __webpack_require__(71);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("f4d1c63e", content, false);
+var update = __webpack_require__(2)("ec013026", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2e301acc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2e301acc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2e301acc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./share.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2e301acc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./share.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37489,12 +37628,12 @@ if(false) {
 /* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"share.vue","sourceRoot":""}]);
 
 // exports
 
@@ -37536,13 +37675,13 @@ var content = __webpack_require__(74);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("dd3196e8", content, false);
+var update = __webpack_require__(2)("0ae3e50a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0b734d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue", function() {
-     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0b734d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue");
+   module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0b734d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0b734d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37555,12 +37694,12 @@ if(false) {
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*不想慢慢在base中提取*/\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*不想慢慢在base中提取*/\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/xlist.vue?5322a9ec"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiLA,gBAAA","file":"xlist.vue","sourcesContent":["<template>\r\n\t<div class=\"weui-panel__bd\">\r\n\t\t<p>{{searchVal}}</p>\r\n\t\t<a v-for=\"items in arr\" href=\"javascript:void(0);\" class=\"weui-media-box weui-media-box_appmsg\">\r\n\t\t\t<div class=\"weui-media-box__hd\">\r\n\t\t\t\t<img @click=\"showBigPic(items.author.avatar_url)\" class=\"weui-media-box__thumb\" :src=\"items.author.avatar_url\" alt=\"\">\r\n\t\t\t</div>\r\n\t\t\t<div class=\"channel\" v-html=\"channel(items.tab,items.good,items.top)\">\r\n\t\t\t</div>\r\n\r\n\t\t\t<div v-html=\"items.author.loginname\" class='autorName'>\r\n\r\n\t\t\t</div>\r\n\t\t\t<div class=\"weui-media-box__bd\">\r\n\t\t\t\t<h4 class=\"weui-media-box__title\" @click=\"toDetail(items.id)\">{{items.title|slice}}</h4>\r\n\t\t\t\t<p class=\"weui-media-box__desc repCount\">\r\n\t\t\t\t\t<span>查看/回复： </span>\r\n\t\t\t\t\t<span title=\"回复数\">{{items.reply_count}}</span>\r\n\t\t\t\t\t<span title=\"点击数\">{{\"/\"+items.visit_count}}</span>\r\n\t\t\t\t\t<span class=\"lastTime\" title=\"最后回复时间\">最后回复:{{items.last_reply_at|xreply}}</span>\r\n\r\n\t\t\t\t</p>\r\n\t\t\t</div>\r\n\t\t</a>\r\n\t\t<div class=\"weui-panel__ft\" @click='loadMore()' v-show=\"isLoading\">\r\n\t\t\t<a href=\"javascript:void(0);\" class=\"weui-cell weui-cell_access weui-cell_link\">\r\n\t\t\t\t<div class=\"weui-cell__bd\">查看更多</div>\r\n\t\t\t\t<span class=\"weui-cell__ft\"></span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div class=\"weui-loadmore\" v-show=\"!isLoading\">\r\n\t\t\t<i class=\"weui-loading\"></i>\r\n\t\t\t<span class=\"weui-loadmore__tips\">正在加载</span>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tprops: [\"message\", \"id\"],\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tpage: 1,\r\n\t\t\t\tarr: [],\r\n\t\t\t\tisLoading: true\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tsearchVal(){\r\n\t\t\t\treturn this.$store.state.val;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"list加载\")\r\n\r\n\t\t\t\tthis.isLoading = false\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"https://cnodejs.org/api/v1/topics\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\ttab: this.message,\r\n\t\t\t\t\t\tlimit: 10,\r\n\t\t\t\t\t\tpage: this.page++\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = this.arr.concat(res.data.data)\r\n\t\t\t\t\tthis.isLoading = true\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\t\t\thighLight() {\r\n\t\t\t\tswitch(true) {\r\n\t\t\t\t\tcase !this.message:\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 0\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"share\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 1\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"ask\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 2\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"job\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 3\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"good\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 4\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tchannel(input, good, top) {\r\n\t\t\t\tswitch(input) {\r\n\t\t\t\t\tcase \"share\":\r\n\t\t\t\t\t\tif(good && top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:green;\">精华</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:#e25454;\">置顶</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else if(good && !top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:green;\">精华</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else if(!good && top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:#e25454;\">置顶</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\tcase \"job\":\r\n\t\t\t\t\t\treturn `<span class=\"bg\">招聘</span>`;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase \"ask\":\r\n\t\t\t\t\t\treturn `<span class=\"bg\" >问答</span>`;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tdefault:\r\n\t\t\t\t\t\treturn \"\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tshowBigPic(imgUrl) {\r\n\t\t\t\tconsole.log(this.$store)\r\n\r\n\t\t\t\tthis.$store.state.galleryIsShow = true;\r\n\t\t\t\tthis.$store.state.imgUrl = imgUrl;\r\n\t\t\t},\r\n\t\t\ttoDetail(id) {\r\n\t\t\t\tlocation.href = \"#/detail/\" + id\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\tconsole.log(\"mounted\")\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\t\t\tthis.highLight()\r\n\r\n\t\t},\r\n\t\tfilters: {\r\n\t\t\txreply: function(input) {\r\n\t\t\t\tvar now = Date.now()\r\n\t\t\t\tvar reply = Date.parse(input)\r\n\t\t\t\tvar intDiff = (now - reply) / 1000;\r\n\r\n\t\t\t\tvar year = Math.floor(intDiff  /  (60  *  60  *  24 * 30 * 12));\r\n\t\t\t\tvar month = Math.floor(intDiff  /  (60  *  60  *  24 * 30));\r\n\t\t\t\tvar day  =  Math.floor(intDiff  /  (60  *  60  *  24));        \r\n\t\t\t\tvar hour  =  Math.floor(intDiff  /  (60  *  60))  -  (day  *  24);        \r\n\t\t\t\tvar minute  =  Math.floor(intDiff  /  60)  -  (day  *  24  *  60)  -  (hour  *  60);        \r\n\t\t\t\tvar second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);\r\n\t\t\t\tif(year > 0) {\r\n\t\t\t\t\treturn year + '年前'\r\n\t\t\t\t} else if(month > 0) {\r\n\t\t\t\t\treturn month + '月前'\r\n\t\t\t\t} else if(day > 0) {\r\n\t\t\t\t\treturn day + '天前'\r\n\t\t\t\t} else if(hour > 0) {\r\n\t\t\t\t\treturn hour + '小时前'\r\n\t\t\t\t} else if(minute > 0) {\r\n\t\t\t\t\treturn minute + '分钟前'\r\n\t\t\t\t} else if(second > 0) {\r\n\t\t\t\t\treturn second + '秒前'\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tslice(input) {\r\n\t\t\t\tif(input.length > 20) {\r\n\t\t\t\t\treturn input.slice(0, 18) + \"...\"\r\n\t\t\t\t} else {\r\n\t\t\t\t\treturn input\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t},\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t/*不想慢慢在base中提取*/\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -37891,7 +38030,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\ask.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\ask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37925,13 +38064,13 @@ var content = __webpack_require__(80);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("0bdc5e66", content, false);
+var update = __webpack_require__(2)("12c3a70d", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-110159a6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./ask.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-110159a6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./ask.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-110159a6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ask.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-110159a6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ask.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37944,12 +38083,12 @@ if(false) {
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"ask.vue","sourceRoot":""}]);
 
 // exports
 
@@ -38001,29 +38140,18 @@ if (false) {
 
 /***/ }),
 /* 83 */
-
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-
-  __webpack_require__(62)
-}
-var Component = __webpack_require__(2)(
-  /* script */
-  __webpack_require__(65),
-  /* template */
-  __webpack_require__(66),
-
-  __webpack_require__(84))
+  __webpack_require__(84)
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(86),
   /* template */
   __webpack_require__(87),
-
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38031,15 +38159,9 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-
-Component.options.__file = "D:\\chuanyeniubi\\app\\components\\indexcomponents\\xheader.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
-
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\job.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\job.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] job.vue: functional components are not supported with templates, they should use render functions.")}
-
 
 /* hot reload */
 if (false) {(function () {
@@ -38048,15 +38170,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-
-    hotAPI.createRecord("data-v-1e27a00c", Component.options)
-  } else {
-    hotAPI.reload("data-v-1e27a00c", Component.options)
-
     hotAPI.createRecord("data-v-34718e2c", Component.options)
   } else {
     hotAPI.reload("data-v-34718e2c", Component.options)
-
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38067,40 +38183,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-
-/* 62 */
-
 /* 84 */
-
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-
-var content = __webpack_require__(63);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("f42b8f7c", content, false);
-
 var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("ed28716c", content, false);
-
+var update = __webpack_require__(2)("20a050a8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e27a00c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1e27a00c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
-
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-34718e2c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./job.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-34718e2c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./job.vue");
-
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-34718e2c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./job.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-34718e2c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./job.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38110,63 +38209,21 @@ if(false) {
 }
 
 /***/ }),
-
-
 /* 85 */
-
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-
-exports.push([module.i, "\n.swiper-slide img {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xheader.vue?663da89d"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr[0].picUrl)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl, this.arr[4].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
-
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"job.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles(parentId, list) {
-  var styles = [];
-  var newStyles = {};
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i];
-    var id = item[0];
-    var css = item[1];
-    var media = item[2];
-    var sourceMap = item[3];
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    };
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] });
-    } else {
-      newStyles[id].parts.push(part);
-    }
-  }
-  return styles;
-};
-
-/***/ }),
-/* 65 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38175,220 +38232,6 @@ module.exports = function listToStyles(parentId, list) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-	data: function data() {
-		return {
-			arr: [],
-			newArr: []
-		};
-	},
-	methods: {
-		loadMore: function loadMore() {
-			console.log("aaa");
-			this.$ajax({
-				url: "http://localhost:3000/slideshow"
-			}).then(function (res) {
-				console.log(res);
-				this.arr = res.data.advList;
-				console.log(this.arr[0].picUrl);
-				this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl, this.arr[4].picUrl];
-			}.bind(this));
-		}
-	},
-	mounted: function mounted() {
-		//后台请求数据动态生成列表
-		this.loadMore();
-
-		var swiper = new Swiper('.swiper-container', {
-			pagination: '.swiper-pagination',
-			//				nextButton: '.swiper-button-next',
-			//				prevButton: '.swiper-button-prev',
-			slidesPerView: 1,
-			autoplay: 1000,
-			paginationClickable: true,
-			spaceBetween: 30,
-			loop: true
-		});
-	}
-
-};
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: "swiper-container swiper-container-horizontal"
-  }, [_c('div', {
-    staticClass: "swiper-wrapper",
-    staticStyle: {
-      "transform": "translate3d(0px, 0px, 0px)",
-      "transition-duration": "0ms"
-    }
-  }, [_c('div', {
-    staticClass: "swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "9"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide swiper-slide-duplicate-active",
-    staticStyle: {
-      "width": "100%",
-      "background-image": "url('img/1.jpg')",
-      "margin-right": "30px",
-      "height": "119px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "0"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "2"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.newArr[1],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "3"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.newArr[2],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "4"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.newArr[3],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide swiper-slide-prev swiper-slide-duplicate-next",
-    staticStyle: {
-      "width": "100%",
-      "background-image": "url('img/2.jpg')",
-      "margin-right": "30px",
-      "height": "119px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "9"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide swiper-slide-duplicate swiper-slide-active",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "0"
-    }
-  })]), _vm._v(" "), _vm._m(0)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
-  }, [_c('span', {
-    staticClass: "swiper-pagination-bullet swiper-pagination-bullet-active"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  }), _c('span', {
-    staticClass: "swiper-pagination-bullet"
-  })])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1e27a00c", module.exports)
-  }
-}
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('xheader')], 1)
-
 
 var _xlist = __webpack_require__(4);
 
@@ -38415,40 +38258,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "message": "job"
     }
   })
-
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b351219c", module.exports)
-
      require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-34718e2c", module.exports)
-
   }
 }
 
 /***/ }),
-
-/* 68 */
-
 /* 88 */
-
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-
-  __webpack_require__(69)
-}
-var Component = __webpack_require__(2)(
-  /* script */
-  __webpack_require__(71),
-  /* template */
-  __webpack_require__(76),
-
   __webpack_require__(89)
 }
 var Component = __webpack_require__(0)(
@@ -38456,7 +38281,6 @@ var Component = __webpack_require__(0)(
   __webpack_require__(91),
   /* template */
   __webpack_require__(92),
-
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38464,11 +38288,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-
-Component.options.__file = "D:\\chuanyeniubi\\app\\components\\routes\\share.vue"
-
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\topics.vue"
-
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\topics.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] topics.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38479,15 +38299,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-
-    hotAPI.createRecord("data-v-4aa9931c", Component.options)
-  } else {
-    hotAPI.reload("data-v-4aa9931c", Component.options)
-
     hotAPI.createRecord("data-v-575196f2", Component.options)
   } else {
     hotAPI.reload("data-v-575196f2", Component.options)
-
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38498,37 +38312,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-
-
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-
-var content = __webpack_require__(70);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("ea95725c", content, false);
-
 var content = __webpack_require__(90);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("0448c1b7", content, false);
-
+var update = __webpack_require__(2)("5f64f086", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4aa9931c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4aa9931c\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue");
-
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./topics.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./topics.vue");
-
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./topics.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./topics.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38538,21 +38338,21 @@ if(false) {
 }
 
 /***/ }),
-
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"topics.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38617,7 +38417,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\good.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\good.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] good.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38651,13 +38451,13 @@ var content = __webpack_require__(95);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("575fd31c", content, false);
+var update = __webpack_require__(2)("acda2ce0", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-96f8c340\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./good.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-96f8c340\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./good.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-96f8c340\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./good.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-96f8c340\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./good.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38670,18 +38470,18 @@ if(false) {
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"good.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38738,11 +38538,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(101),
   /* template */
-
-  __webpack_require__(111),
-
-  __webpack_require__(107),
-
+  __webpack_require__(102),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -38750,7 +38546,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\detail.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\detail.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] detail.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38784,13 +38580,13 @@ var content = __webpack_require__(100);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("4bcca672", content, false);
+var update = __webpack_require__(2)("a6caf59a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./detail.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./detail.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./detail.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./detail.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38803,16 +38599,12 @@ if(false) {
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-
-exports.push([module.i, "\nbody[data-v-717dd598],\nhtml[data-v-717dd598] {\n\theight: 100%;\n}\n*[data-v-717dd598] {\n\tpadding: 0;\n\tmargin: 0;\n}\nul li[data-v-717dd598] {\n\tlist-style: none;\n}\na[data-v-717dd598] {\n\ttext-decoration: none;\n}\n.bar[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground: 0 0;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-717dd598] {\n\tborder-radius: 50%;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.bar .iconfont[data-v-717dd598] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin: 3px 5px;\n}\n.pull-left[data-v-717dd598] {\n\tfloat: left;\n}\n.pull-right[data-v-717dd598] {\n\tfloat: right;\n}\n.name[data-v-717dd598] {\n\tfont-size: 20px;\n\tposition: absolute;\n\ttop: 90px;\n\tleft: 0;\n\tpadding: 0 10px;\n\tpadding-bottom: 10px;\n\tz-index: 3;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.detail-main .hotel-info .pic-wrap .name .grade[data-v-717dd598] {\n\tmargin-left: 0;\n\tmargin-right: 3px;\n}\n.grade1[data-v-717dd598] {\n\tbackground-position: -17px -18px;\n}\n.grade[data-v-717dd598] {\n\tdisplay: inline-block;\n\twidth: 16px;\n\theight: 14px;\n\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\tbackground-position: 0 -18px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: 96px 32px;\n\tmargin-left: 3px;\n\tmargin-bottom: 1px;\n}\n.name em[data-v-717dd598] {\n\tcolor: #fff;\n\tfont-style: normal;\n}\n.title[data-v-717dd598] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n.type-num[data-v-717dd598] {\n\tbackground-color: rgba(211, 225, 226, .6);\n\tposition: absolute;\n\ttop: 160px;\n\theight: 20px;\n\tz-index: 4;\n\twidth: 100%;\n}\n.hotel-type[data-v-717dd598],\n.num[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 4;\n\ttop: 150px;\n\tcolor: #fff;\n}\n.hotel-type[data-v-717dd598] {\n\tleft: 10px;\n}\n.num[data-v-717dd598] {\n\tright: 10px;\n}\n.info[data-v-717dd598] {\n\tmargin-top: 20px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/detail.vue?a8478cb8"],"names":[],"mappings":";AA4DA;;CAEA,aAAA;CACA;AAEA;CACA,WAAA;CACA,UAAA;CACA;AAEA;CACA,iBAAA;CACA;AAEA;CACA,sBAAA;CACA;AAEA;CACA,mBAAA;CACA,eAAA;CACA,aAAA;CACA,oBAAA;CACA,mBAAA;CACA,gBAAA;CACA,oCAAA;CACA,4BAAA;CACA,QAAA;CACA,SAAA;CACA,0BAAA;CACA,uBAAA;CACA,sBAAA;CACA,kBAAA;CACA;AAEA;CACA,mBAAA;CACA,oCAAA;CACA;AAEA;CACA,mBAAA;CACA,YAAA;CACA,YAAA;CACA,aAAA;CACA,sBAAA;CACA,kBAAA;CACA,gBAAA;CACA,YAAA;CACA,kBAAA;CACA,gBAAA;CACA;AAEA;CACA,YAAA;CACA;AAEA;CACA,aAAA;CACA;AAEA;CACA,gBAAA;CACA,mBAAA;CACA,UAAA;CACA,QAAA;CACA,gBAAA;CACA,qBAAA;CACA,WAAA;CACA,oCAAA;CACA;AAEA;CACA,eAAA;CACA,kBAAA;CACA;AAEA;CACA,iCAAA;CACA;AAEA;CACA,sBAAA;CACA,YAAA;CACA,aAAA;CACA,mGAAA;CACA,6BAAA;CACA,6BAAA;CACA,2BAAA;CACA,iBAAA;CACA,mBAAA;CACA;AAEA;CACA,YAAA;CACA,mBAAA;CACA;AAEA;CACA,mBAAA;CACA,cAAA;CACA,YAAA;CACA,WAAA;CACA,gBAAA;CACA,kBAAA;CACA,iBAAA;CACA,kBAAA;CACA,mBAAA;CACA,oBAAA;CACA;AAEA;CACA,0CAAA;CACA,mBAAA;CACA,WAAA;CACA,aAAA;CACA,WAAA;CACA,YAAA;CACA;AAEA;;CAEA,mBAAA;CACA,WAAA;CACA,WAAA;CACA,YAAA;CACA;AAEA;CACA,WAAA;CACA;AAEA;CACA,YAAA;CACA;AAEA;CACA,iBAAA;CACA","file":"detail.vue","sourcesContent":["<template>\n\t<div>\n\t\t<xmap></xmap>\n\t\t<header class=\"bar \">\n\t\t\t<a class=\"iconfont icon-arrowleft pull-left tjclick\" data-rel=\"back\" href=\"http://m.elong.com/hotel/0101/nlist/\" data-tj=\"{&quot;cspot&quot;:&quot;back&quot;}\"></a>\n\t\t\t<a class=\"iconfont icon-shoucang1  pull-right tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\n\t\t\t<h1 class=\"title\">酒店详情</h1>\n\t\t</header>\n\n\t\t<div class=\"hotel-info\">\n\t\t\t<a href=\"javascript:void(0)\"></a>\n\t\t\t<i class=\"picbg\"></i>\n\t\t\t<!--轮播图-->\n\t\t\t<xswiper></xswiper>\n\t\t\t<h1 class=\"name\">\n                <i class=\"grade grade1\"></i>\n                <em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>\n            </h1>\n\t\t\t<i class=\"type-num\"></i>\n\t\t\t<span class=\"hotel-type\">经济型</span>\n\t\t\t<div class=\"num\">\n\t\t\t\t<i class=\"iconfont icon-biaoqian\"></i> 88\n\t\t\t</div>\n\n\t\t\t<div class=\"info\">\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</template>\n\n<script>\n\timport xswiper from \"../xswiper.vue\"\n\timport xmap from \"../detail/xmap.vue\"\n\texport default {\n\t\tmethods: {\n\t\t\tgetData() {\n\t\t\t\t//this.$store.dispatch(\"setNews\");\n\t\t\t\t//this.$store.state.news = ;\n\t\t\t\tthis.$ajax({\n\t\t\t\t\turl: \"http://localhost:3000/detail\",\n\t\t\t\t}).then(function(res) {\n\t\t\t\t\tconsole.log(res)\n\t\t\t\t\tthis.$store.state.imgArr = res.data.pics;\n\n\t\t\t\t}.bind(this))\n\t\t\t}\n\t\t},\n\t\tcomponents: {\n\t\t\txswiper,\n\t\t\txmap\n\t\t},\n\t\tmounted: function() {\n\t\t\t//后台请求数据动态生成列表\n\t\t\tthis.getData()\n\t\t}\n\t}\n</script>\n\n<style scoped>\n\tbody,\n\thtml {\n\t\theight: 100%;\n\t}\n\t\n\t* {\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t}\n\t\n\tul li {\n\t\tlist-style: none;\n\t}\n\t\n\ta {\n\t\ttext-decoration: none;\n\t}\n\t\n\t.bar {\n\t\tposition: absolute;\n\t\tz-index: 10000;\n\t\theight: 44px;\n\t\tpadding-right: 10px;\n\t\tpadding-left: 10px;\n\t\tbackground: 0 0;\n\t\t-webkit-backface-visibility: hidden;\n\t\tbackface-visibility: hidden;\n\t\tleft: 0;\n\t\tright: 0;\n\t\t-webkit-user-select: none;\n\t\t-moz-user-select: none;\n\t\t-ms-user-select: none;\n\t\tuser-select: none;\n\t}\n\t\n\t.tjclick {\n\t\tborder-radius: 50%;\n\t\tbackground-color: rgba(0, 0, 0, .5);\n\t}\n\t\n\t.bar .iconfont {\n\t\tposition: relative;\n\t\tz-index: 20;\n\t\twidth: 34px;\n\t\theight: 37px;\n\t\tdisplay: inline-block;\n\t\tline-height: 37px;\n\t\tfont-size: 24px;\n\t\tcolor: #fff;\n\t\tpadding-left: 5px;\n\t\tmargin: 3px 5px;\n\t}\n\t\n\t.pull-left {\n\t\tfloat: left;\n\t}\n\t\n\t.pull-right {\n\t\tfloat: right;\n\t}\n\t\n\t.name {\n\t\tfont-size: 20px;\n\t\tposition: absolute;\n\t\ttop: 90px;\n\t\tleft: 0;\n\t\tpadding: 0 10px;\n\t\tpadding-bottom: 10px;\n\t\tz-index: 3;\n\t\tbackground-color: rgba(0, 0, 0, .5);\n\t}\n\t\n\t.detail-main .hotel-info .pic-wrap .name .grade {\n\t\tmargin-left: 0;\n\t\tmargin-right: 3px;\n\t}\n\t\n\t.grade1 {\n\t\tbackground-position: -17px -18px;\n\t}\n\t\n\t.grade {\n\t\tdisplay: inline-block;\n\t\twidth: 16px;\n\t\theight: 14px;\n\t\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\t\tbackground-position: 0 -18px;\n\t\tbackground-repeat: no-repeat;\n\t\tbackground-size: 96px 32px;\n\t\tmargin-left: 3px;\n\t\tmargin-bottom: 1px;\n\t}\n\t\n\t.name em {\n\t\tcolor: #fff;\n\t\tfont-style: normal;\n\t}\n\t\n\t.title {\n\t\tposition: absolute;\n\t\tdisplay: none;\n\t\twidth: 100%;\n\t\tpadding: 0;\n\t\tmargin: 0 -10px;\n\t\tfont-size: 1.2rem;\n\t\tfont-weight: 700;\n\t\tline-height: 44px;\n\t\ttext-align: center;\n\t\twhite-space: nowrap;\n\t}\n\t\n\t.type-num {\n\t\tbackground-color: rgba(211, 225, 226, .6);\n\t\tposition: absolute;\n\t\ttop: 160px;\n\t\theight: 20px;\n\t\tz-index: 4;\n\t\twidth: 100%;\n\t}\n\t\n\t.hotel-type,\n\t.num {\n\t\tposition: absolute;\n\t\tz-index: 4;\n\t\ttop: 150px;\n\t\tcolor: #fff;\n\t}\n\t\n\t.hotel-type {\n\t\tleft: 10px;\n\t}\n\t\n\t.num {\n\t\tright: 10px;\n\t}\n\t\n\t.info {\n\t\tmargin-top: 20px;\n\t}\n</style>"],"sourceRoot":""}]);
-
-exports.push([module.i, "\n.bar[data-v-717dd598] {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground: 0 0;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n.tjclick[data-v-717dd598] {\n\tborder-radius: 50%;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.bar .iconfont[data-v-717dd598] {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin: 3px 5px;\n}\n.pull-left[data-v-717dd598] {\n\tfloat: left;\n}\n.pull-right[data-v-717dd598] {\n\tfloat: right;\n}\n.name[data-v-717dd598]{\n\tposition: absolute;\n\ttop: 75px;\n\tleft: 0;\n\tpadding: 0 10px 10px;\n\tz-index: 10;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n.name b[data-v-717dd598]{\n\tfont-size: 0.7em;\n\tcolor: #fff;\n}\n.title[data-v-717dd598] {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n", ""]);
-
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.bar {\n\tposition: absolute;\n\tz-index: 10000;\n\theight: 44px;\n\tpadding-right: 10px;\n\tpadding-left: 10px;\n\tbackground: 0 0;\n\t-webkit-backface-visibility: hidden;\n\tbackface-visibility: hidden;\n\tleft: 0;\n\tright: 0;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n\n.tjclick {\n\tborder-radius: 50%;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n\n.bar .iconfont {\n\tposition: relative;\n\tz-index: 20;\n\twidth: 34px;\n\theight: 37px;\n\tdisplay: inline-block;\n\tline-height: 37px;\n\tfont-size: 24px;\n\tcolor: #fff;\n\tpadding-left: 5px;\n\tmargin: 3px 5px;\n}\n\n.pull-left {\n\tfloat: left;\n}\n\n.pull-right {\n\tfloat: right;\n}\n\n.name {\n\tfont-size: 20px;\n\tposition: absolute;\n\ttop: 90px;\n\tleft: 0;\n\tpadding: 0 10px;\n\tpadding-bottom: 10px;\n\tz-index: 3;\n\tbackground-color: rgba(0, 0, 0, .5);\n}\n\n.detail-main .hotel-info .pic-wrap .name .grade {\n\tmargin-left: 0;\n\tmargin-right: 3px;\n}\n\n.grade1 {\n\tbackground-position: -17px -18px;\n}\n\n.grade {\n\tdisplay: inline-block;\n\twidth: 16px;\n\theight: 14px;\n\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\tbackground-position: 0 -18px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: 96px 32px;\n\tmargin-left: 3px;\n\tmargin-bottom: 1px;\n}\n\n.name em {\n\tcolor: #fff;\n\tfont-style: normal;\n}\n\n.title {\n\tposition: absolute;\n\tdisplay: none;\n\twidth: 100%;\n\tpadding: 0;\n\tmargin: 0 -10px;\n\tfont-size: 1.2rem;\n\tfont-weight: 700;\n\tline-height: 44px;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n\n.type-num {\n\tbackground-color: rgba(211, 225, 226, .6);\n\tposition: absolute;\n\ttop: 160px;\n\theight: 20px;\n\tz-index: 4;\n\twidth: 100%;\n}\n\n.hotel-type,\n.num {\n\tposition: absolute;\n\tz-index: 4;\n\ttop: 150px;\n\tcolor: #fff;\n}\n\n.hotel-type {\n\tleft: 10px;\n}\n\n.num {\n\tright: 10px;\n}\n\n.info {\n\tmargin-top: 20px;\n}*/\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/detail.vue?11063b19"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAs8CA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAqIA","file":"detail.vue","sourcesContent":["<template>\n\t<!--<div>\n\t\t\n\t\t<header class=\"bar \">\n\t\t\t<a class=\"iconfont icon-arrowleft pull-left tjclick\" data-rel=\"back\" href=\"http://m.elong.com/hotel/0101/nlist/\" data-tj=\"{&quot;cspot&quot;:&quot;back&quot;}\"></a>\n\t\t\t<a class=\"iconfont icon-shoucang1  pull-right tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\n\t\t\t<h1 class=\"title\">酒店详情</h1>\n\t\t</header>\n\n\t\t<div class=\"hotel-info\">\n\t\t\t<a href=\"javascript:void(0)\"></a>\n\t\t\t<i class=\"picbg\"></i>\n\t\t\t\n\t\t\t<xswiper></xswiper>\n\t\t\t<h1 class=\"name\">\n                <i class=\"grade grade1\"></i>\n                <em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>\n            </h1>\n\t\t\t<i class=\"type-num\"></i>\n\t\t\t<span class=\"hotel-type\">经济型</span>\n\t\t\t<div class=\"num\">\n\t\t\t\t<i class=\"iconfont icon-biaoqian\"></i> 88\n\t\t\t</div>\n\t\t\t\n\t\t\t<xmap></xmap>\n\t\t\t<div class=\"info\">\n\t\t\t\t<xcommont></xcommont>\n\t\t\t</div>\n\t\t</div>\n\t</div>-->\n\n\t<div class=\"pages\">\n\t\t<div class=\"page page-on-center\" data-blend=\"layer\" data-blend-id=\"h5_detail\" data-url=\"/hotel/00101543/\" id=\"uniq22\" data-title=\"【北京阳光温特莱酒店(国展店)(原速8国展柳芳店)】地址:朝阳区柳芳北街6号(煤炭总医院正对面)_艺龙网移动版\" data-title-id=\"h5_detail\">\n\t\t\t<!-- 详情页优化，渠道定制去头 -->\n\t\t\t<header class=\"bar bar-nav flight-order-head none_backg\">\n\t\t\t\t<a class=\"icon icon-left-nav pull-left icon-back tjclick\" data-rel=\"back\" href=\"/hotel/0101/nlist/\" data-tj=\"{&quot;cspot&quot;:&quot;back&quot;}\"></a>\n\t\t\t\t<a class=\"icon    icon-collect  collect  pull-right tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\n\t\t\t\t<h1 class=\"title\">酒店详情</h1>\n\t\t\t</header>\n\t\t\t<div class=\"bar stickys indexnew\">\n\t\t\t\t<div class=\"hotel-info detail-date datefixed tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;time&quot;}\">\n\t\t\t\t\t<div class=\"getin_room_a\">\n\t\t\t\t\t\t<span>\n\t                        <em class=\"deepNightFlag\" style=\"display:none;\">深夜</em>\n\t                    入住\n\t                </span>\n\t\t\t\t\t\t<span class=\"ol_night\">共1晚</span>\n\t\t\t\t\t\t<span>离店</span>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"getin_room_b\">\n\t\t\t\t\t\t<span><em class=\"indate\" data=\"2017-07-26\">07月26日</em><em class=\"startweek\">今天</em></span>\n\t\t\t\t\t\t<span class=\"getin_fen\">|</span>\n\t\t\t\t\t\t<span><em class=\"outdate\" data=\"2017-07-27\">07月27日</em><em class=\"endweek\">明天</em></span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"fastchoose\">\n\t\t\t\t\t<div class=\"choice unon\" data-tj=\"{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}\">筛选<i class=\"getin\"></i></div>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"30\" data-tj=\"{&quot;cspot&quot;:&quot;paymentInHotel&quot;}\">到店付</li>\n\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"101\" data-tj=\"{&quot;cspot&quot;:&quot;freeCancellation&quot;}\">免费取消</li>\n\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"102\" data-tj=\"{&quot;cspot&quot;:&quot;instantConfirm&quot;}\">立即确认</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"page-content new_detailst mvt_161125\">\n\t\t\t\t<section class=\"detail-main detail-mainNew\" style=\"overflow: visible;\">\n\n\t\t\t\t\t<div class=\"hotel-info\">\n\t\t\t\t\t\t<div class=\"pic-wrap tjclick swiper-container-horizontal\" data-tj=\"{&quot;cspot&quot;:&quot;image&quot;}\">\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\"></a>\n\t\t\t\t\t\t\t<i class=\"picbg\"></i>\n\t\t\t\t\t\t\t<div class=\"swiper-wrapper focuspic\" style=\"background: url(&quot;//m.elongstatic.com/static/webapp/hotel/2015/06/v2/img/defuat_room_pic.png&quot;) 0% 0% / cover no-repeat; transition-duration: 300ms; transform: translate3d(-750px, 0px, 0px);\">\n\t\t\t\t\t\t\t\t<div class=\"swiper-slide\" style=\"width: 375px;\"><img src=\"//pavo.elongstatic.com/i/hotel750_360/00050lJq.jpg\"></div>\n\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-prev\" style=\"width: 375px;\"><img src=\"//pavo.elongstatic.com/i/hotel750_360/0000aDnN.jpg\"></div>\n\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-active\" style=\"width: 375px;\"><img src=\"//pavo.elongstatic.com/i/hotel750_360/0000aDnM.jpg\"></div>\n\t\t\t\t\t\t\t\t<div class=\"swiper-slide swiper-slide-next\" style=\"width: 375px;\"><img src=\"//pavo.elongstatic.com/i/hotel750_360/0000aDhO.jpg\"></div>\n\t\t\t\t\t\t\t\t<div class=\"swiper-slide\" style=\"width: 375px;\"><img src=\"//pavo.elongstatic.com/i/hotel750_360/0000aDhA.jpg\"></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<h1 class=\"name\">\n                        <i class=\"grade grade1\"></i>\n                <em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>\n            </h1>\n\n\t\t\t\t\t\t\t<span class=\"hotel-type\">\n\t\t\t\t经济型\n                \n                \n                \n\n                \n                \n                \n\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t<div class=\"num\"><i></i>88</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"info\">\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<!--酒店地址-->\n\t\t\t\t\t\t\t\t<li class=\"info_mn\">\n\t\t\t\t\t\t\t\t\t<div class=\"col_tb\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"posi\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"addr\">朝阳区柳芳北街6号(煤炭总医院正对面)</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"dis\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"disc\">距离柳芳地铁站0.4公里,步行至此0.8公里,约13分钟</span>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"map_bg\"></div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"map_c\">\n\t\t\t\t\t\t\t\t\t\t\t<img width=\"180\" height=\"180\" src=\"//apis.map.qq.com/ws/staticmap/v2/?center=39.958981,116.437258&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2\">\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"map_icons\"></i>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t<!--住客评价-->\n\t\t\t\t\t\t\t\t<li class=\"choose\">\n\t\t\t\t\t\t\t\t\t<div class=\"titles\">\n\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\" active \">住客评价</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"hoteldetail   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;hoteldetailchange&quot;}\">酒店详情</li>\n\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t<span class=\"line \"></span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"text1 tabcomment all-com tjclick text_comments\" data-tj=\"{&quot;cspot&quot;:&quot;comment&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"left_c\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"praise_nbm\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"u_nbm\"><b class=\"s_nbm\">4.2</b>分</span>\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"u_btn\">挺好哒</span>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"right_c\">\n\t\t\t\t\t\t\t\t\t\t\t<h1>帅帅的大橙子<span class=\"ping\"><span class=\"level3\">点评新人</span></span></h1>\n\t\t\t\t\t\t\t\t\t\t\t<p>服务态度很好，房间也不错，价格合适。可以暂时寄存行李，很好。</p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"more_p info-comments\">查看2396条住客评价<i></i></p>\n\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t<div class=\"text1 tabdetails tjclick\" style=\"display:none;\" data-tj=\"{&quot;cspot&quot;:&quot;hoteldetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"mid2\">\n\t\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-parking\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>停车场</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-wifi\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>无线wifi</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-luggage\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>行李寄存</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"no\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-bra\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>餐厅</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"more_p\">查看全部信息<i></i></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!-- mvt 20161125 日历控件dom start-->\n\t\t\t\t\t<div class=\"stickys indexnew sticky\" style=\"top: 42px;\">\n\t\t\t\t\t\t<div class=\"ht_day detail-date detail-hotel\">\n\t\t\t\t\t\t\t<div class=\"getin_room_a\">\n\t\t\t\t\t\t\t\t<span class=\"c8\">入住</span>\n\t\t\t\t\t\t\t\t<span class=\"indate\">07月26日</span>\n\t\t\t\t\t\t\t\t<span class=\"night\" style=\"display:none;\">深夜</span>\n\t\t\t\t\t\t\t\t<span class=\"c8\">离店</span>\n\t\t\t\t\t\t\t\t<span class=\"outdate\">07月27日</span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"getin_room_b\">\n\t\t\t\t\t\t\t\t<span class=\"count_day\">共<span class=\"count_nmb\">1</span>晚<i></i></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"fastchoose\">\n\t\t\t\t\t\t\t<div class=\"choice unon\" data-tj=\"{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}\">筛选<i class=\"getin\"></i></div>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"30\" data-tj=\"{&quot;cspot&quot;:&quot;paymentInHotel&quot;}\">到店付</li>\n\t\t\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"101\" data-tj=\"{&quot;cspot&quot;:&quot;freeCancellation&quot;}\">免费取消</li>\n\t\t\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"102\" data-tj=\"{&quot;cspot&quot;:&quot;instantConfirm&quot;}\">立即确认</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!-- mvt 20161125 日历控件dom end-->\n\n\t\t\t\t\t<div class=\"type\">\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0007aJgt.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">标准双床房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">294</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>294</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">318返24<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0007aLpO.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">标准大床房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">294</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>294</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">318返24<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0003z5FB.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">特惠标准间</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>双床1.1米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">294</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>294</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">318返24<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ng.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">商务大床房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">313</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>313</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">338返25<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">住哪</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>353</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>353</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ne.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">商务双床间</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">338</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>338</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">住哪</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>353</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>353</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/00050lPD.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">商务套房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>36平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">462</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>462</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">500返38<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>485</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"facilities\">\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>酒店设施</dt>\n\t\t\t\t\t\t\t<dd class=\"fac\">\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>酒店电话</dt>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"tel:010-51371060\" class=\"tel\">010-51371060</a>艺龙电话预订：\n\t\t\t\t\t\t\t\t<a href=\"tel:400-666-1166\" class=\"tel\">400-666-1166</a>\n\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>开业时间</dt>\n\t\t\t\t\t\t\t<dd>酒店开业时间 2011年05月19日年 </dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>酒店服务</dt>\n\t\t\t\t\t\t\t<dd>叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习</dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<a class=\"more\">更多酒店信息</a>\n\t\t\t\t\t</div>\n\t\t\t\t</section>\n\t\t\t\t<section class=\"detail-sider\">\n\t\t\t\t\t<div class=\"look\">\n\t\t\t\t\t\t<dl class=\"list\">\n\t\t\t\t\t\t\t<dt><i class=\"clock icon-clock\"></i>历史浏览</dt>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/00101543/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">688</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/00101366/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>速8酒店(北京马家堡店)</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">618</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/91244474/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>飘HOME连锁酒店(北京西客站店)</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">368</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!--\n            <div class=\"near\">\n                <dl class=\"list\">\n                    <dt><i class=\"mark icon-nearby\"></i>附近酒店</dt>\n                </dl>\n            </div>\n        -->\n\t\t\t\t</section>\n\t\t\t\t<!-- 高铁管家定制 -->\n\t\t\t\t<section class=\"tool\">\n\t\t\t\t\t<div class=\"ver\">\n\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"xq\"><i class=\" icon-collect  \"></i>我感兴趣</a><span>｜</span>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"ht\"><i class=\"icon-phone\"></i>联系电话</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"copy\">©2009-2017 艺龙无线</div>\n\t\t\t\t</section>\n\t\t\t</div>\n\n\t\t\t\n\t\t\t<div class=\"slide-selector plugin-inited\">\n\t\t\t\t<header class=\"bar-nav\">\n\t\t\t\t\t<div class=\"radio-title\"><span class=\"title\">客服电话</span><span class=\"cancel\">取消</span></div>\n\t\t\t\t</header>\n\t\t\t\t<ul class=\"page-content\">\n\t\t\t\t\t<li class=\"radio-item \" value=\"0\"><label class=\"label-radio clearfix\"><div class=\"radio-icon\"><span class=\"radio\"></span></div><div class=\"radio-text\"><a href=\"tel:400-666-1166\">艺龙电话：400-666-1166</a></div><div class=\"check\"></div></label></li>\n\t\t\t\t\t<li class=\"radio-item \" value=\"1\"><label class=\"label-radio clearfix\"><div class=\"radio-icon\"><span class=\"radio\"></span></div><div class=\"radio-text\"><a href=\"tel:010-51371060\">酒店电话：010-51371060</a></div><div class=\"check\"></div></label></li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"arrow up left\"></div>\n\t\t\t\t<div class=\"describe\" style=\"display: none;\"></div>\n\t\t\t</div>\n\t\t\t<div class=\"type-pop-box roomTypeInfo newdetailhsize plugin-inited\">\n\t\t\t\t<div class=\"toptitle\">\n\t\t\t\t\t<p><span class=\"htitle\"></span></p>\n\t\t\t\t\t<div class=\"htclose\"><i class=\"cancel-icon\"></i></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"wrap page-content\">\n\t\t\t\t\t<div class=\"swiper-container hpic_show swiper-container-horizontal\">\n\t\t\t\t\t\t<div class=\"swiper-wrapper\"></div>\n\t\t\t\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"type-list\">\n\t\t\t\t\t\t<p class=\"faclist\"></p>\n\t\t\t\t\t\t<p class=\"tip\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"discount u-bt discountRoomInfo\"></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"bottom_btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist2&quot;}\"><span>查看房型报价</span></div>\n\t\t\t</div>\n\t\t\t<div class=\"type-pop-box roomDetailInfo newdetailhsize plugin-inited\">\n\t\t\t\t<div class=\"head\"><span><i class=\"icon-cross\"></i></span></div>\n\t\t\t\t<div class=\"toptitle\">\n\t\t\t\t\t<p><span class=\"htitle\"></span><em><span class=\"rpName\"></span><span class=\"rpSubName\"></span></em></p>\n\t\t\t\t\t<div class=\"htclose\"><i></i></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"wrap page-content more\">\n\t\t\t\t\t<div class=\"pic\"><img src=\"\">\n\t\t\t\t\t\t<div class=\"swiper-lazy-preloader\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"info\">\n\t\t\t\t\t\t<p class=\"name\"></p>\n\t\t\t\t\t\t<p class=\"brackfast\"></p>\n\t\t\t\t\t\t<p class=\"canceltype\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"type-list\">\n\t\t\t\t\t\t<p class=\"faclist faclistOrigin\"></p>\n\t\t\t\t\t\t<p class=\"tip\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"discount bookNotes\">\n\t\t\t\t\t\t<div class=\"titletips\">预订须知</div>\n\t\t\t\t\t\t<div class=\"tips\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"discount u-bt reservationBooking\">\n\t\t\t\t\t\t<div class=\"titletips\">预订专享</div>\n\t\t\t\t\t\t<div class=\"tags\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"new_box\"></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"bd bottom_price\">\n\t\t\t\t\t<div class=\"left\">\n\t\t\t\t\t\t<div class=\"table-cell\">\n\t\t\t\t\t\t\t<div class=\"price\"><span class=\"ce65\">￥<span></span><span class=\"hour\"></span></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"back\"><span class=\"ce65 coupon\"></span> <span class=\"ce65 hongbao\"><span></span></span><span class=\"c999 officehours\"></span></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"right book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanbooking&quot;}\">立即预订</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"cld page-plugin plugin-inited\">\n\t\t\t\t<header class=\"bar bar-nav\">\n\t\t\t\t\t<h1 class=\"title\">选择日期</h1>\n\t\t\t\t\t<a class=\"icon icon-back pull-left hide-cln\"></a>\n\t\t\t\t\t<a class=\"cld-title-year pull-right icon\"></a>\n\t\t\t\t</header>\n\t\t\t\t<div class=\"page-content\">\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年07月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-01\" class=\"disabled\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">建党</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-02\" class=\"disabled\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-03\" class=\"disabled\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-04\" class=\"disabled\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-05\" class=\"disabled\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-06\" class=\"disabled\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-07\" class=\"disabled\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-08\" class=\"disabled\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-09\" class=\"disabled\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-10\" class=\"disabled\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-11\" class=\"disabled\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-12\" class=\"disabled\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-13\" class=\"disabled\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-14\" class=\"disabled\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-15\" class=\"disabled\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-16\" class=\"disabled\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-17\" class=\"disabled\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-18\" class=\"disabled\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-19\" class=\"disabled\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-20\" class=\"disabled\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-21\" class=\"disabled\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-22\" class=\"disabled\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-23\" class=\"disabled\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-24\" class=\"disabled\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-25\" class=\"disabled\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-26\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">26</span><span class=\"festivalText\">今天</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-31\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年08月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-01\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">建军</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-28\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">28</span><span class=\"festivalText\">七夕</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-31\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年09月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-01\"><span class=\"date-elem\">1</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-05\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">5</span><span class=\"festivalText\">中元节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-10\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">10</span><span class=\"festivalText\">教师节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-30\" class=\"work\"><span class=\"date-elem\">30</span><b class=\"work\">班</b></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年10月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li data-day=\"2017-10-01\" class=\"holiday\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">国庆</span></div><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-02\" class=\"holiday\"><span class=\"date-elem\">2</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-03\" class=\"holiday\"><span class=\"date-elem\">3</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-04\" class=\"holiday\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">4</span><span class=\"festivalText\">中秋节</span></div><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-05\" class=\"holiday\"><span class=\"date-elem\">5</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-06\" class=\"holiday\"><span class=\"date-elem\">6</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-07\" class=\"holiday\"><span class=\"date-elem\">7</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-08\" class=\"holiday\"><span class=\"date-elem\">8</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-28\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">28</span><span class=\"festivalText\">重阳节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-31\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">31</span><span class=\"festivalText\">万圣节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年11月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-01\"><span class=\"date-elem\">1</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-23\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">23</span><span class=\"festivalText\">感恩节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年12月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-01\"><span class=\"date-elem\">1</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-24\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">24</span><span class=\"festivalText\">平安夜</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-25\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">25</span><span class=\"festivalText\">圣诞节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-31\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2018年01月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-01\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">元旦</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-22\" class=\"disabled\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-23\" class=\"disabled\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-24\" class=\"disabled\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">24</span><span class=\"festivalText\">腊八</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-25\" class=\"disabled\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-26\" class=\"disabled\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-27\" class=\"disabled\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-28\" class=\"disabled\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-29\" class=\"disabled\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-30\" class=\"disabled\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-31\" class=\"disabled\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t</div>\n\t\t\t\t<ul class=\"cld-title bar\">\n\t\t\t\t\t<li>日</li>\n\t\t\t\t\t<li>一</li>\n\t\t\t\t\t<li>二</li>\n\t\t\t\t\t<li>三</li>\n\t\t\t\t\t<li>四</li>\n\t\t\t\t\t<li>五</li>\n\t\t\t\t\t<li>六</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<div class=\"detail-filter filter-sp newfilter-sp list-weixin-component filter-fastchoose plugin-inited detailks_show\"><span class=\"arrow\"></span>\n\t\t\t\t<div class=\"sp-content\">\n\t\t\t\t\t<div class=\"price breakfast\">\n\t\t\t\t\t\t<div class=\"sp-tit\">早餐</div>\n\t\t\t\t\t\t<ul class=\"price-list room-list\">\n\t\t\t\t\t\t\t<li class=\"on\" kw=\"kw1\" data-id=\"100\">不含早</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw1\" data-id=\"36\">含单早</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw1\" data-id=\"35\">含双早</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw1\" data-id=\"37\">含三早及以上</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"price pay-type\">\n\t\t\t\t\t\t<div class=\"sp-tit\">支付方式</div>\n\t\t\t\t\t\t<ul class=\"price-list room-list\">\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw2\" data-id=\"29\">预付</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw2\" data-id=\"30\">到店付</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"price second service\">\n\t\t\t\t\t\t<div class=\"sp-tit\">服务（可多选）</div>\n\t\t\t\t\t\t<ul class=\"price-list room-list\">\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"101\">免费取消</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"103\">艺龙直销</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"102\">立即确认</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"104\">含礼包</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"bot-btn bar\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li id=\"filter-reset\" class=\"tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;emptyRoomtypeFilter&quot;}\">重置</li>\n\t\t\t\t\t\t<li class=\"on tjclick\" id=\"starprice-submit\" data-tj=\"{&quot;cspot&quot;:&quot;submitRoomtypeFilter&quot;}\">确定</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"detail_singlepic plugin-inited page-plugin\">\n\t\t\t\t<section id=\"close_image\" class=\"detail-hotelpic\">\n\t\t\t\t\t<dl class=\"shpictop\"><dt class=\"picTitle\"></dt>\n\t\t\t\t\t\t<dd class=\"pic-process\">1/1</dd>\n\t\t\t\t\t\t<dd class=\"shpic_closed\"></dd>\n\t\t\t\t\t</dl>\n\t\t\t\t\t<div class=\"spic_img swiper-container\">\n\t\t\t\t\t\t<ul class=\"swiper-wrapper\"></ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div style=\"display:none\" class=\"spic_bottom\">\n\t\t\t\t\t\t<p>查看酒店VR</p>\n\t\t\t\t\t</div>\n\t\t\t\t</section>\n\t\t\t</div>\n\t\t\t<div class=\"hotel_info_facbox plugin-inited page-plugin\">\n\t\t\t\t<header class=\"bar bar-nav\">\n\t\t\t\t\t<a class=\"icon pull-left icon-back\"></a>\n\t\t\t\t\t<a class=\"icon icon-phone pull-right\"></a>\n\t\t\t\t\t<h1 class=\"title\">酒店详情</h1> </header>\n\t\t\t\t<div class=\"page-content\">\n\t\t\t\t\t<section class=\"info-pop-box\">\n\t\t\t\t\t\t<div class=\"na clearfix\">\n\t\t\t\t\t\t\t<div class=\"na_lf\">\n\t\t\t\t\t\t\t\t<div class=\"name\">北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</div>\n\t\t\t\t\t\t\t\t<div class=\"addr\"><i></i>朝阳区柳芳北街6号(煤炭总医院正对面)</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"facilities_con\">\n\t\t\t\t\t\t\t<dl class=\"facilities\"> <dt>酒店设施</dt>\n\t\t\t\t\t\t\t\t<dd class=\"\"> <i class=\"i1\"></i>\n\t\t\t\t\t\t\t\t\t<p> 停车 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"\"> <i class=\"i2\"></i>\n\t\t\t\t\t\t\t\t\t<p> 免费wifi </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i3\"></i>\n\t\t\t\t\t\t\t\t\t<p> 餐厅 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i7\"></i>\n\t\t\t\t\t\t\t\t\t<p> 健身房 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i5\"></i>\n\t\t\t\t\t\t\t\t\t<p> 游泳池 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i4\"></i>\n\t\t\t\t\t\t\t\t\t<p> 接机服务 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i6\"></i>\n\t\t\t\t\t\t\t\t\t<p> 会议室 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"\"> <i class=\"i8\"></i>\n\t\t\t\t\t\t\t\t\t<p> 免费行李寄存 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t\t<div class=\"fac_txt\">\n\t\t\t\t\t\t\t\t<div class=\"fac_txtc\">\n\t\t\t\t\t\t\t\t\t<div class=\"fac_txtc_h\">\n\t\t\t\t\t\t\t\t\t\t<p>叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"fac_more\">查看更多</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"other\">\n\t\t\t\t\t\t\t<dl> <dt>温馨提示</dt>\n\t\t\t\t\t\t\t\t<dd class=\"clearfix\"> <span class=\"dct_tit\">入离通知：</span> <span class=\"dct_txt\">  入住时间:12点以后,离店时间:14点以前   </span> </dd>\n\t\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"intro\">\n\t\t\t\t\t\t\t<div class=\"tit\">酒店简介</div>\n\t\t\t\t\t\t\t<div class=\"intro_con\">\n\t\t\t\t\t\t\t\t<div class=\"ht_txt clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"dct_con\"> <span class=\"dct_tit\">开业时间：</span> <span class=\"dct_txt\">2011-05-19</span> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"dct_con\"> <span class=\"dct_tit\">装修时间：</span> <span class=\"dct_txt\">2011-05-19</span> </div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"text_con_h\">\n\t\t\t\t\t\t\t\t\t<div class=\"text\"> 阳光温特莱酒店国展店（原速8酒店北京国展柳芳店）位于北京市朝阳区香河园地区（柳芳北街），地处东直门交通枢纽及朝阳区三环枢纽的三元桥附近，紧邻中国国际展览中心（步行约600米），东邻机场高速公路1公里，南距东直门交通枢纽2公里，东直门机场快轨到首都机场只需20分钟，西邻地铁13号线（步行约10分钟），地理位置优越，交通便利。打车到地铁2号、5号、10号、13号线仅需10元。酒店毗邻燕莎购物中心、使馆区、农展馆、机场高速路和东直门交通枢纽， 酒店门口多条公交线路直达东直门交通枢纽、新国展中心、多个奥运场馆、北京火车站、王府井、天安门、前门、颐和园等处。酒店拥有104间温馨、干净、舒适的客房、提供免费停车位，数字有线电视、免费宽带上网、电子门锁及独立空调。现代化的设施，优质、友好的服务是您在北京商务旅行的理想选择。 <br> 　　酒店开业时间2011年05月01日，主楼高5层，客房总数104间（套）。 <br> <br> 【温馨提示】 <br> 1、酒店提供一次性免费洗漱用具，需前台领取； <br> 2、酒店可以接待外宾； <br> 3、酒店提供免费停车场； <br> 4、前台免费领取一次性洗漱用品。 </div>\n\t\t\t\t\t\t\t\t\t<div class=\"ht_dct clearfix\"> <span class=\"dct_tit\">支持卡种：</span> <span class=\"dct_txt\">牡丹卡,金穗卡,长城卡,龙卡,太平洋卡,东方卡</span> </div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"fac_more\">查看更多</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"periphery\">\n\t\t\t\t\t\t\t<div class=\"tit\">酒店周边</div>\n\t\t\t\t\t\t\t<div class=\"preiphety_con\">\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"dt_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">柳芳(13号线)</span> <span class=\"dtc_txt\">直线距离501米</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"hcz_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京站</span> <span class=\"dtc_txt\">直线距离5.3公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京北站</span> <span class=\"dtc_txt\">直线距离6.7公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京东站</span> <span class=\"dtc_txt\">直线距离7.1公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京南站</span> <span class=\"dtc_txt\">直线距离10.7公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京西站</span> <span class=\"dtc_txt\">直线距离11.4公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"jc_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京南苑机场</span> <span class=\"dtc_txt\">直线距离18.0公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">首都机场T3航站楼</span> <span class=\"dtc_txt\">直线距离19.4公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">首都机场T1航站楼</span> <span class=\"dtc_txt\">直线距离19.5公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">首都机场T2航站楼</span> <span class=\"dtc_txt\">直线距离19.7公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"qcz_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">东直门长途汽车站</span> <span class=\"dtc_txt\">直线距离1.2公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"jd_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">地坛公园</span> <span class=\"dtc_txt\">直线距离1.4公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">雍和宫</span> <span class=\"dtc_txt\">直线距离1.5公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">五道营胡同</span> <span class=\"dtc_txt\">直线距离1.9公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"btn_con\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"btn\">返回并继续预订</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</section>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<nav class=\"bar record record-text\" style=\"display: none;\">48小时内有86人预订</nav>\n\t\t</div>\n\t</div>\n</template>\n\n<script>\n//\timport xswiper from \"../xswiper.vue\"\r\n//\timport xmap from \"../detail/xmap.vue\"\r\n//\timport xcommont from \"../detail/xcomment.vue\"\r\n//\texport default {\r\n//\t\tmethods: {\r\n//\t\t\tgetData() {\r\n//\t\t\t\t//this.$store.dispatch(\"setNews\");\r\n//\t\t\t\t//this.$store.state.news = ;\r\n//\t\t\t\tthis.$ajax({\r\n//\t\t\t\t\turl: \"http://localhost:3000/detail\",\r\n//\t\t\t\t}).then(function(res) {\r\n//\t\t\t\t\tconsole.log(res)\r\n//\t\t\t\t\tthis.$store.state.imgArr = res.data.pics;\r\n//\r\n//\t\t\t\t}.bind(this))\r\n//\t\t\t}\r\n//\t\t},\r\n//\t\tcomponents: {\r\n//\t\t\txswiper,\r\n//\t\t\txmap,\r\n//\t\t\txcommont\r\n//\t\t},\r\n//\t\tmounted: function() {\r\n//\t\t\t//后台请求数据动态生成列表\r\n//\t\t\tthis.getData()\r\n//\t\t}\r\n//\t}\n\n\t<script type=\"text/javascript\" id=\"cfp__script\" async=\"\" src=\"http://webresource.c-ctrip.com/resaresonline/risk/ubtrms/latest/default/mchlorofp.js?siteId=9b1ea5a517ad&amp;v=117-6-26\"></script>\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tvar $DATA_DETAIL = {\n\t\t\t\t\tdeepNightFlag: 0,\n\t\t\t\t\ttoday: '2017-07-26',\n\t\t\t\t\ttomorrow: '2017-07-27',\n\t\t\t\t\tyesterday: '2017-07-25',\n\t\t\t\t\tbaiduLatitude: '39.96',\n\t\t\t\t\tbaiduLongitude: '116.44',\n\t\t\t\t\tindate: '2017-07-26',\n\t\t\t\t\toutdate: '2017-07-27',\n\t\t\t\t\thotelid: '00101543',\n\t\t\t\t\tstarLevel: 2,\n\t\t\t\t\tloginFlag: 0,\n\t\t\t\t\tcompanyTel: '400-666-1166',\n\t\t\t\t\thotelTel: '010-51371060',\n\t\t\t\t\ttotalCommentNumber: '2396',\n\t\t\t\t\tfav: '0',\n\t\t\t\t\thotelDetailInfo: {\n\t\t\t\t\t\t\"decorateDate\": \"2011年05月19日\",\n\t\t\t\t\t\t\"facilityList\": [{\n\t\t\t\t\t\t\t\"hasFree\": 0,\n\t\t\t\t\t\t\t\"hasSupport\": 1,\n\t\t\t\t\t\t\t\"type\": 1\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 1,\n\t\t\t\t\t\t\t\"hasSupport\": 1,\n\t\t\t\t\t\t\t\"type\": 2\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 0,\n\t\t\t\t\t\t\t\"hasSupport\": 0,\n\t\t\t\t\t\t\t\"type\": 4\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 0,\n\t\t\t\t\t\t\t\"hasSupport\": 0,\n\t\t\t\t\t\t\t\"type\": 5\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 0,\n\t\t\t\t\t\t\t\"hasSupport\": 0,\n\t\t\t\t\t\t\t\"type\": 6\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 0,\n\t\t\t\t\t\t\t\"hasSupport\": 0,\n\t\t\t\t\t\t\t\"type\": 7\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 0,\n\t\t\t\t\t\t\t\"hasSupport\": 0,\n\t\t\t\t\t\t\t\"type\": 8\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"hasFree\": 1,\n\t\t\t\t\t\t\t\"hasSupport\": 1,\n\t\t\t\t\t\t\t\"type\": 10\n\t\t\t\t\t\t}],\n\t\t\t\t\t\t\"featureInfo\": \"阳光温特莱酒店国展店（原速8酒店北京国展柳芳店）位于北京市朝阳区香河园地区（柳芳北街），地处东直门交通枢纽及朝阳区三环枢纽的三元桥附近，紧邻中国国际展览中心（步行约600米），东邻机场高速公路1公里，南距东直门交通枢纽2公里，东直门机场快轨到首都机场只需20分钟，西邻地铁13号线（步行约10分钟），地理位置优越，交通便利。打车到地铁2号、5号、10号、13号线仅需10元。酒店毗邻燕莎购物中心、使馆区、农展馆、机场高速路和东直门交通枢纽， 酒店门口多条公交线路直达东直门交通枢纽、新国展中心、多个奥运场馆、北京火车站、王府井、天安门、前门、颐和园等处。酒店拥有104间温馨、干净、舒适的客房、提供免费停车位，数字有线电视、免费宽带上网、电子门锁及独立空调。现代化的设施，优质、友好的服务是您在北京商务旅行的理想选择。\\n　　酒店开业时间2011年05月01日，主楼高5层，客房总数104间（套）。\\n\\n【温馨提示】\\n1、酒店提供一次性免费洗漱用具，需前台领取；\\n2、酒店可以接待外宾；\\n3、酒店提供免费停车场；\\n4、前台免费领取一次性洗漱用品。\",\n\t\t\t\t\t\t\"generalAmenities\": \"叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习\",\n\t\t\t\t\t\t\"hotelAddress\": \"朝阳区柳芳北街6号(煤炭总医院正对面)\",\n\t\t\t\t\t\t\"hotelName\": \"北京阳光温特莱酒店(国展店)(原速8国展柳芳店)\",\n\t\t\t\t\t\t\"hotelPayCard\": \"牡丹卡,金穗卡,长城卡,龙卡,太平洋卡,东方卡\",\n\t\t\t\t\t\t\"hotelPolicies\": [{\n\t\t\t\t\t\t\t\"name\": \"入离通知\",\n\t\t\t\t\t\t\t\"value\": \"入住时间:12点以后,离店时间:14点以前\"\n\t\t\t\t\t\t}],\n\t\t\t\t\t\t\"hotelTel\": \"010-51371060\",\n\t\t\t\t\t\t\"openDate\": \"2011年05月19日\"\n\t\t\t\t\t},\n\t\t\t\t\tfavBackUrl: 'https://msecure.elong.com/login?RedirectUrl=http%3A%2F%2Fm.elong.com%2Fhotel%2F00101543%2F',\n\t\t\t\t\tgoodCommentRate: '92',\n\t\t\t\t\thotelMinAveragePrice: '0',\n\t\t\t\t\tbackFlag: 0,\n\t\t\t\t\tbackUrl: '/hotel/0101/nlist/',\n\t\t\t\t\troomInfo: '',\n\t\t\t\t\tproDownloadUrl: '',\n\t\t\t\t\thasPproDownload: '',\n\t\t\t\t\thotelWeiXinPro: '{\"channel\":\"\",\"dataSource\":\"CacheData\",\"state\":-1,\"weiXinProUrl\":\"\"}',\n\t\t\t\t\th5useapp: '0',\n\t\t\t\t\tpageid: '0101',\n\t\t\t\t\tchannel: '',\n\t\t\t\t\tcustomization: '{}',\n\t\t\t\t\tbannerPicUrl: '//pavo.elongstatic.com/i/Hotel70_70/00050lJq.jpg',\n\t\t\t\t\tcityId: '0101',\n\t\t\t\t\tlat: '39.9589810220000032359166652895510196685791015625',\n\t\t\t\t\tlng: '116.437257528000003503620973788201808929443359375',\n\t\t\t\t\tfastFilterInfo: [{\n\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\"Id\": 0,\n\t\t\t\t\t\t\"KeyWord_cn\": \"房型筛选\",\n\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\"hasSubNode\": true,\n\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\"subFastFilterIns\": [{\n\t\t\t\t\t\t\t\"Count\": 0,\n\t\t\t\t\t\t\t\"Id\": 0,\n\t\t\t\t\t\t\t\"KeyWord_cn\": \"早餐\",\n\t\t\t\t\t\t\t\"TypeId\": 0,\n\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\"hasSubNode\": true,\n\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\"selectMode\": true,\n\t\t\t\t\t\t\t\"subFastFilterIns\": [{\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 100000043,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"不含早\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 100\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 100000041,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"含单早\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 36\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 100000040,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"含双早\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 35\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 100000042,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"含三早及以上\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 37\n\t\t\t\t\t\t\t}],\n\t\t\t\t\t\t\t\"uniqueID\": 0\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"Count\": 0,\n\t\t\t\t\t\t\t\"Id\": 0,\n\t\t\t\t\t\t\t\"KeyWord_cn\": \"支付方式\",\n\t\t\t\t\t\t\t\"TypeId\": 0,\n\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\"hasSubNode\": true,\n\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\"selectMode\": true,\n\t\t\t\t\t\t\t\"subFastFilterIns\": [{\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 100000001,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"预付\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 29\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 100000002,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"到店付\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 30\n\t\t\t\t\t\t\t}],\n\t\t\t\t\t\t\t\"uniqueID\": 0\n\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\"Count\": 0,\n\t\t\t\t\t\t\t\"Id\": 0,\n\t\t\t\t\t\t\t\"KeyWord_cn\": \"服务(可多选)\",\n\t\t\t\t\t\t\t\"TypeId\": 0,\n\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\"hasSubNode\": true,\n\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\"subFastFilterIns\": [{\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 139,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"免费取消\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 101\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 138,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"艺龙直销\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 103\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 141,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"立即确认\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 102\n\t\t\t\t\t\t\t}, {\n\t\t\t\t\t\t\t\t\"Count\": 1,\n\t\t\t\t\t\t\t\t\"Id\": 140,\n\t\t\t\t\t\t\t\t\"KeyWord_cn\": \"含礼包\",\n\t\t\t\t\t\t\t\t\"TypeId\": 1100,\n\t\t\t\t\t\t\t\t\"checked\": false,\n\t\t\t\t\t\t\t\t\"hasSubNode\": false,\n\t\t\t\t\t\t\t\t\"priority\": -1,\n\t\t\t\t\t\t\t\t\"selectMode\": false,\n\t\t\t\t\t\t\t\t\"uniqueID\": 104\n\t\t\t\t\t\t\t}],\n\t\t\t\t\t\t\t\"uniqueID\": 0\n\t\t\t\t\t\t}],\n\t\t\t\t\t\t\"uniqueID\": 0\n\t\t\t\t\t}],\n\t\t\t\t\tnewFastFilterData4List: '',\n\t\t\t\t\tshowDistanceFlag: '',\n\t\t\t\t\tmapInfoMvt: '1',\n\t\t\t\t\tcallElongApp: {},\n\t\t\t\t\thotelBadge: 7,\n\t\t\t\t\tenableAjaxCall: 'true',\n\t\t\t\t\ttranSport: '',\n\t\t\t\t\tifImageMvtHotel: '0'\n\t\t\t\t};\n\t\t\t\twindow[\"pageInfo\"] = [{\n\t\t\t\t\t\"biz\": \"h5_hotel\",\n\t\t\t\t\t\"chid\": \"ewhtml5\",\n\t\t\t\t\t\"cno\": \"192928\",\n\t\t\t\t\t\"hid\": \"00101543\",\n\t\t\t\t\t\"hstr\": \"0\",\n\t\t\t\t\t\"idc\": \"1638840759\",\n\t\t\t\t\t\"innerFrom\": \"110000\",\n\t\t\t\t\t\"ocit\": \"1\",\n\t\t\t\t\t\"pt\": \"h5-hotel-detail\",\n\t\t\t\t\t\"showDistanceFlag\": false,\n\t\t\t\t\t\"subPath\": \"/hotel/\"\n\t\t\t\t}];\n\t\t\t\twindow[\"TJObject\"] = {\n\t\t\t\t\t\"mvt\": \"[{\\\"eid\\\":\\\"35\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"29\\\"},{\\\"eid\\\":\\\"36\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"30\\\"},{\\\"eid\\\":\\\"203\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"192\\\"},{\\\"eid\\\":\\\"204\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"193\\\"},{\\\"eid\\\":\\\"161\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"149\\\"},{\\\"eid\\\":\\\"212\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"200\\\"},{\\\"eid\\\":\\\"213\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"201\\\"},{\\\"eid\\\":\\\"219\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"207\\\"},{\\\"eid\\\":\\\"179\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"167\\\"},{\\\"eid\\\":\\\"217\\\",\\\"val\\\":\\\"2\\\",\\\"vid\\\":\\\"205\\\"},{\\\"eid\\\":\\\"218\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"206\\\"},{\\\"eid\\\":\\\"170\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"158\\\"},{\\\"eid\\\":\\\"174\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"162\\\"},{\\\"eid\\\":\\\"220\\\",\\\"val\\\":\\\"2\\\",\\\"vid\\\":\\\"208\\\"},{\\\"eid\\\":\\\"221\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"209\\\"},{\\\"eid\\\":\\\"227\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"214\\\"},{\\\"eid\\\":\\\"188\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"176\\\"},{\\\"eid\\\":\\\"229\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"216\\\"},{\\\"eid\\\":\\\"189\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"177\\\"},{\\\"eid\\\":\\\"180\\\",\\\"val\\\":\\\"5\\\",\\\"vid\\\":\\\"168\\\"},{\\\"eid\\\":\\\"116\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"103\\\"},{\\\"eid\\\":\\\"119\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"106\\\"},{\\\"eid\\\":\\\"127\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"115\\\"},{\\\"eid\\\":\\\"128\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"116\\\"},{\\\"eid\\\":\\\"129\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"117\\\"},{\\\"eid\\\":\\\"71\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"64\\\"},{\\\"eid\\\":\\\"72\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"63\\\"},{\\\"eid\\\":\\\"139\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"128\\\"},{\\\"eid\\\":\\\"52\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"45\\\"},{\\\"eid\\\":\\\"272\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"259\\\"},{\\\"eid\\\":\\\"275\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"262\\\"},{\\\"eid\\\":\\\"109\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"96\\\"},{\\\"eid\\\":\\\"97\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"84\\\"},{\\\"eid\\\":\\\"240\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"226\\\"},{\\\"eid\\\":\\\"195\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"184\\\"},{\\\"eid\\\":\\\"194\\\",\\\"val\\\":\\\"2\\\",\\\"vid\\\":\\\"183\\\"},{\\\"eid\\\":\\\"198\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"187\\\"},{\\\"eid\\\":\\\"245\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"232\\\"},{\\\"eid\\\":\\\"230\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"217\\\"},{\\\"eid\\\":\\\"234\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"221\\\"},{\\\"eid\\\":\\\"262\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"250\\\"},{\\\"eid\\\":\\\"263\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"251\\\"},{\\\"eid\\\":\\\"260\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"248\\\"},{\\\"eid\\\":\\\"269\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"256\\\"},{\\\"eid\\\":\\\"268\\\",\\\"val\\\":\\\"0\\\",\\\"vid\\\":\\\"255\\\"},{\\\"eid\\\":\\\"267\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"254\\\"},{\\\"eid\\\":\\\"250\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"237\\\"},{\\\"eid\\\":\\\"252\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"240\\\"},{\\\"eid\\\":\\\"257\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"245\\\"}]\",\n\t\t\t\t\t\"orderfrom\": \"50096\",\n\t\t\t\t\t\"bns\": 2,\n\t\t\t\t\t\"id\": \"a3fa3fe2-60ff-48d5-bfad-7e5b1093b569\",\n\t\t\t\t\t\"of\": \"1000000\",\n\t\t\t\t\t\"mvt2\": \"[{\\\"eid\\\":\\\"128\\\",\\\"val\\\":\\\"1\\\",\\\"vid\\\":\\\"116\\\"}]\",\n\t\t\t\t\t\"if\": \"110000\",\n\t\t\t\t\t\"st\": 1501068472134,\n\t\t\t\t\t\"cin\": 0,\n\t\t\t\t\t\"cip\": \"163.177.136.121\",\n\t\t\t\t\t\"sid\": \"F72125C58C83F504C75F326D5FB2BE0D\",\n\t\t\t\t\t\"elev\": 3,\n\t\t\t\t\t\"chid\": \"ewhtml5\",\n\t\t\t\t\t\"ecrd\": \"192928\",\n\t\t\t\t\t\"cid\": \"19f7976e-5c70-441f-9145-67574f4c708e\",\n\t\t\t\t\t\"ct\": 0,\n\t\t\t\t\t\"v\": \"1.0\",\n\t\t\t\t\t\"pturl\": \"http://m.elong.com/hotel/00101543/\",\n\t\t\t\t\t\"lg\": \"zh-CN\",\n\t\t\t\t\t\"idc\": \"2\",\n\t\t\t\t\t\"pt\": \"HotelDetailController$$EnhancerBySpringCGLIB$$e5a62e7a.detail\",\n\t\t\t\t\t\"ch\": \"h5_home\"\n\t\t\t\t};\n\t\t\t\tif(typeof TJObject == \"undefined\")\n\t\t\t\t\twindow[\"TJObject\"] = {};\n\t\t\t\tvar tjIgnore = {\n\t\t\t\t\t\"subPath\": 1,\n\t\t\t\t\t\"tsdScript\": 1\n\t\t\t\t};\n\t\t\t\tif(pageInfo.length > 0 && TJObject) {\n\t\t\t\t\tpageInfo = pageInfo[0];\n\t\t\t\t\tfor(var k in pageInfo) {\n\t\t\t\t\t\tif(tjIgnore[k] == 1) continue;\n\t\t\t\t\t\tTJObject[k] = pageInfo[k];\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tif(typeof s == \"undefined\")\n\t\t\t\t\twindow[\"s\"] = {};\n\t\t\t</script>\n</script>\n\n<style scoped>\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.bar {\r\n\t\tposition: absolute;\r\n\t\tz-index: 10000;\r\n\t\theight: 44px;\r\n\t\tpadding-right: 10px;\r\n\t\tpadding-left: 10px;\r\n\t\tbackground: 0 0;\r\n\t\t-webkit-backface-visibility: hidden;\r\n\t\tbackface-visibility: hidden;\r\n\t\tleft: 0;\r\n\t\tright: 0;\r\n\t\t-webkit-user-select: none;\r\n\t\t-moz-user-select: none;\r\n\t\t-ms-user-select: none;\r\n\t\tuser-select: none;\r\n\t}\r\n\t\r\n\t.tjclick {\r\n\t\tborder-radius: 50%;\r\n\t\tbackground-color: rgba(0, 0, 0, .5);\r\n\t}\r\n\t\r\n\t.bar .iconfont {\r\n\t\tposition: relative;\r\n\t\tz-index: 20;\r\n\t\twidth: 34px;\r\n\t\theight: 37px;\r\n\t\tdisplay: inline-block;\r\n\t\tline-height: 37px;\r\n\t\tfont-size: 24px;\r\n\t\tcolor: #fff;\r\n\t\tpadding-left: 5px;\r\n\t\tmargin: 3px 5px;\r\n\t}\r\n\t\r\n\t.pull-left {\r\n\t\tfloat: left;\r\n\t}\r\n\t\r\n\t.pull-right {\r\n\t\tfloat: right;\r\n\t}\r\n\t\r\n\t.name {\r\n\t\tfont-size: 20px;\r\n\t\tposition: absolute;\r\n\t\ttop: 90px;\r\n\t\tleft: 0;\r\n\t\tpadding: 0 10px;\r\n\t\tpadding-bottom: 10px;\r\n\t\tz-index: 3;\r\n\t\tbackground-color: rgba(0, 0, 0, .5);\r\n\t}\r\n\t\r\n\t.detail-main .hotel-info .pic-wrap .name .grade {\r\n\t\tmargin-left: 0;\r\n\t\tmargin-right: 3px;\r\n\t}\r\n\t\r\n\t.grade1 {\r\n\t\tbackground-position: -17px -18px;\r\n\t}\r\n\t\r\n\t.grade {\r\n\t\tdisplay: inline-block;\r\n\t\twidth: 16px;\r\n\t\theight: 14px;\r\n\t\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\r\n\t\tbackground-position: 0 -18px;\r\n\t\tbackground-repeat: no-repeat;\r\n\t\tbackground-size: 96px 32px;\r\n\t\tmargin-left: 3px;\r\n\t\tmargin-bottom: 1px;\r\n\t}\r\n\t\r\n\t.name em {\r\n\t\tcolor: #fff;\r\n\t\tfont-style: normal;\r\n\t}\r\n\t\r\n\t.title {\r\n\t\tposition: absolute;\r\n\t\tdisplay: none;\r\n\t\twidth: 100%;\r\n\t\tpadding: 0;\r\n\t\tmargin: 0 -10px;\r\n\t\tfont-size: 1.2rem;\r\n\t\tfont-weight: 700;\r\n\t\tline-height: 44px;\r\n\t\ttext-align: center;\r\n\t\twhite-space: nowrap;\r\n\t}\r\n\t\r\n\t.type-num {\r\n\t\tbackground-color: rgba(211, 225, 226, .6);\r\n\t\tposition: absolute;\r\n\t\ttop: 160px;\r\n\t\theight: 20px;\r\n\t\tz-index: 4;\r\n\t\twidth: 100%;\r\n\t}\r\n\t\r\n\t.hotel-type,\r\n\t.num {\r\n\t\tposition: absolute;\r\n\t\tz-index: 4;\r\n\t\ttop: 150px;\r\n\t\tcolor: #fff;\r\n\t}\r\n\t\r\n\t.hotel-type {\r\n\t\tleft: 10px;\r\n\t}\r\n\t\r\n\t.num {\r\n\t\tright: 10px;\r\n\t}\r\n\t\r\n\t.info {\r\n\t\tmargin-top: 20px;\r\n\t}*/\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -38824,474 +38616,4519 @@ exports.push([module.i, "\n.bar[data-v-717dd598] {\n\tposition: absolute;\n\tz-i
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-var _xswiper = __webpack_require__(102);
-
-var _xswiper2 = _interopRequireDefault(_xswiper);
-
-var _xmap = __webpack_require__(106);
-
-var _xmap2 = _interopRequireDefault(_xmap);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-	methods: {
-		getData: function getData() {
-			//this.$store.dispatch("setNews");
-			//this.$store.state.news = ;
-			this.$ajax({
-				url: "http://localhost:3000/detail"
-			}).then(function (res) {
-				console.log(res);
-				this.$store.state.imgArr = res.data.pics;
-			}.bind(this));
-		}
+var $DATA_DETAIL = {
+	deepNightFlag: 0,
+	today: '2017-07-26',
+	tomorrow: '2017-07-27',
+	yesterday: '2017-07-25',
+	baiduLatitude: '39.96',
+	baiduLongitude: '116.44',
+	indate: '2017-07-26',
+	outdate: '2017-07-27',
+	hotelid: '00101543',
+	starLevel: 2,
+	loginFlag: 0,
+	companyTel: '400-666-1166',
+	hotelTel: '010-51371060',
+	totalCommentNumber: '2396',
+	fav: '0',
+	hotelDetailInfo: {
+		"decorateDate": "2011年05月19日",
+		"facilityList": [{
+			"hasFree": 0,
+			"hasSupport": 1,
+			"type": 1
+		}, {
+			"hasFree": 1,
+			"hasSupport": 1,
+			"type": 2
+		}, {
+			"hasFree": 0,
+			"hasSupport": 0,
+			"type": 4
+		}, {
+			"hasFree": 0,
+			"hasSupport": 0,
+			"type": 5
+		}, {
+			"hasFree": 0,
+			"hasSupport": 0,
+			"type": 6
+		}, {
+			"hasFree": 0,
+			"hasSupport": 0,
+			"type": 7
+		}, {
+			"hasFree": 0,
+			"hasSupport": 0,
+			"type": 8
+		}, {
+			"hasFree": 1,
+			"hasSupport": 1,
+			"type": 10
+		}],
+		"featureInfo": "阳光温特莱酒店国展店（原速8酒店北京国展柳芳店）位于北京市朝阳区香河园地区（柳芳北街），地处东直门交通枢纽及朝阳区三环枢纽的三元桥附近，紧邻中国国际展览中心（步行约600米），东邻机场高速公路1公里，南距东直门交通枢纽2公里，东直门机场快轨到首都机场只需20分钟，西邻地铁13号线（步行约10分钟），地理位置优越，交通便利。打车到地铁2号、5号、10号、13号线仅需10元。酒店毗邻燕莎购物中心、使馆区、农展馆、机场高速路和东直门交通枢纽， 酒店门口多条公交线路直达东直门交通枢纽、新国展中心、多个奥运场馆、北京火车站、王府井、天安门、前门、颐和园等处。酒店拥有104间温馨、干净、舒适的客房、提供免费停车位，数字有线电视、免费宽带上网、电子门锁及独立空调。现代化的设施，优质、友好的服务是您在北京商务旅行的理想选择。\n　　酒店开业时间2011年05月01日，主楼高5层，客房总数104间（套）。\n\n【温馨提示】\n1、酒店提供一次性免费洗漱用具，需前台领取；\n2、酒店可以接待外宾；\n3、酒店提供免费停车场；\n4、前台免费领取一次性洗漱用品。",
+		"generalAmenities": "叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习",
+		"hotelAddress": "朝阳区柳芳北街6号(煤炭总医院正对面)",
+		"hotelName": "北京阳光温特莱酒店(国展店)(原速8国展柳芳店)",
+		"hotelPayCard": "牡丹卡,金穗卡,长城卡,龙卡,太平洋卡,东方卡",
+		"hotelPolicies": [{
+			"name": "入离通知",
+			"value": "入住时间:12点以后,离店时间:14点以前"
+		}],
+		"hotelTel": "010-51371060",
+		"openDate": "2011年05月19日"
 	},
-	components: {
-		xswiper: _xswiper2.default,
-		xmap: _xmap2.default
-	},
-	mounted: function mounted() {
-		//后台请求数据动态生成列表
-		this.getData();
-	}
+	favBackUrl: 'https://msecure.elong.com/login?RedirectUrl=http%3A%2F%2Fm.elong.com%2Fhotel%2F00101543%2F',
+	goodCommentRate: '92',
+	hotelMinAveragePrice: '0',
+	backFlag: 0,
+	backUrl: '/hotel/0101/nlist/',
+	roomInfo: '',
+	proDownloadUrl: '',
+	hasPproDownload: '',
+	hotelWeiXinPro: '{"channel":"","dataSource":"CacheData","state":-1,"weiXinProUrl":""}',
+	h5useapp: '0',
+	pageid: '0101',
+	channel: '',
+	customization: '{}',
+	bannerPicUrl: '//pavo.elongstatic.com/i/Hotel70_70/00050lJq.jpg',
+	cityId: '0101',
+	lat: '39.9589810220000032359166652895510196685791015625',
+	lng: '116.437257528000003503620973788201808929443359375',
+	fastFilterInfo: [{
+		"Count": 1,
+		"Id": 0,
+		"KeyWord_cn": "房型筛选",
+		"TypeId": 1100,
+		"checked": false,
+		"hasSubNode": true,
+		"priority": -1,
+		"selectMode": false,
+		"subFastFilterIns": [{
+			"Count": 0,
+			"Id": 0,
+			"KeyWord_cn": "早餐",
+			"TypeId": 0,
+			"checked": false,
+			"hasSubNode": true,
+			"priority": -1,
+			"selectMode": true,
+			"subFastFilterIns": [{
+				"Count": 1,
+				"Id": 100000043,
+				"KeyWord_cn": "不含早",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 100
+			}, {
+				"Count": 1,
+				"Id": 100000041,
+				"KeyWord_cn": "含单早",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 36
+			}, {
+				"Count": 1,
+				"Id": 100000040,
+				"KeyWord_cn": "含双早",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 35
+			}, {
+				"Count": 1,
+				"Id": 100000042,
+				"KeyWord_cn": "含三早及以上",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 37
+			}],
+			"uniqueID": 0
+		}, {
+			"Count": 0,
+			"Id": 0,
+			"KeyWord_cn": "支付方式",
+			"TypeId": 0,
+			"checked": false,
+			"hasSubNode": true,
+			"priority": -1,
+			"selectMode": true,
+			"subFastFilterIns": [{
+				"Count": 1,
+				"Id": 100000001,
+				"KeyWord_cn": "预付",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 29
+			}, {
+				"Count": 1,
+				"Id": 100000002,
+				"KeyWord_cn": "到店付",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 30
+			}],
+			"uniqueID": 0
+		}, {
+			"Count": 0,
+			"Id": 0,
+			"KeyWord_cn": "服务(可多选)",
+			"TypeId": 0,
+			"checked": false,
+			"hasSubNode": true,
+			"priority": -1,
+			"selectMode": false,
+			"subFastFilterIns": [{
+				"Count": 1,
+				"Id": 139,
+				"KeyWord_cn": "免费取消",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 101
+			}, {
+				"Count": 1,
+				"Id": 138,
+				"KeyWord_cn": "艺龙直销",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 103
+			}, {
+				"Count": 1,
+				"Id": 141,
+				"KeyWord_cn": "立即确认",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 102
+			}, {
+				"Count": 1,
+				"Id": 140,
+				"KeyWord_cn": "含礼包",
+				"TypeId": 1100,
+				"checked": false,
+				"hasSubNode": false,
+				"priority": -1,
+				"selectMode": false,
+				"uniqueID": 104
+			}],
+			"uniqueID": 0
+		}],
+		"uniqueID": 0
+	}],
+	newFastFilterData4List: '',
+	showDistanceFlag: '',
+	mapInfoMvt: '1',
+	callElongApp: {},
+	hotelBadge: 7,
+	enableAjaxCall: 'true',
+	tranSport: '',
+	ifImageMvtHotel: '0'
 };
+window["pageInfo"] = [{
+	"biz": "h5_hotel",
+	"chid": "ewhtml5",
+	"cno": "192928",
+	"hid": "00101543",
+	"hstr": "0",
+	"idc": "1638840759",
+	"innerFrom": "110000",
+	"ocit": "1",
+	"pt": "h5-hotel-detail",
+	"showDistanceFlag": false,
+	"subPath": "/hotel/"
+}];
+window["TJObject"] = {
+	"mvt": "[{\"eid\":\"35\",\"val\":\"0\",\"vid\":\"29\"},{\"eid\":\"36\",\"val\":\"1\",\"vid\":\"30\"},{\"eid\":\"203\",\"val\":\"0\",\"vid\":\"192\"},{\"eid\":\"204\",\"val\":\"1\",\"vid\":\"193\"},{\"eid\":\"161\",\"val\":\"0\",\"vid\":\"149\"},{\"eid\":\"212\",\"val\":\"0\",\"vid\":\"200\"},{\"eid\":\"213\",\"val\":\"0\",\"vid\":\"201\"},{\"eid\":\"219\",\"val\":\"1\",\"vid\":\"207\"},{\"eid\":\"179\",\"val\":\"0\",\"vid\":\"167\"},{\"eid\":\"217\",\"val\":\"2\",\"vid\":\"205\"},{\"eid\":\"218\",\"val\":\"1\",\"vid\":\"206\"},{\"eid\":\"170\",\"val\":\"1\",\"vid\":\"158\"},{\"eid\":\"174\",\"val\":\"1\",\"vid\":\"162\"},{\"eid\":\"220\",\"val\":\"2\",\"vid\":\"208\"},{\"eid\":\"221\",\"val\":\"1\",\"vid\":\"209\"},{\"eid\":\"227\",\"val\":\"0\",\"vid\":\"214\"},{\"eid\":\"188\",\"val\":\"0\",\"vid\":\"176\"},{\"eid\":\"229\",\"val\":\"1\",\"vid\":\"216\"},{\"eid\":\"189\",\"val\":\"1\",\"vid\":\"177\"},{\"eid\":\"180\",\"val\":\"5\",\"vid\":\"168\"},{\"eid\":\"116\",\"val\":\"0\",\"vid\":\"103\"},{\"eid\":\"119\",\"val\":\"1\",\"vid\":\"106\"},{\"eid\":\"127\",\"val\":\"1\",\"vid\":\"115\"},{\"eid\":\"128\",\"val\":\"1\",\"vid\":\"116\"},{\"eid\":\"129\",\"val\":\"1\",\"vid\":\"117\"},{\"eid\":\"71\",\"val\":\"0\",\"vid\":\"64\"},{\"eid\":\"72\",\"val\":\"1\",\"vid\":\"63\"},{\"eid\":\"139\",\"val\":\"0\",\"vid\":\"128\"},{\"eid\":\"52\",\"val\":\"1\",\"vid\":\"45\"},{\"eid\":\"272\",\"val\":\"1\",\"vid\":\"259\"},{\"eid\":\"275\",\"val\":\"0\",\"vid\":\"262\"},{\"eid\":\"109\",\"val\":\"1\",\"vid\":\"96\"},{\"eid\":\"97\",\"val\":\"0\",\"vid\":\"84\"},{\"eid\":\"240\",\"val\":\"0\",\"vid\":\"226\"},{\"eid\":\"195\",\"val\":\"1\",\"vid\":\"184\"},{\"eid\":\"194\",\"val\":\"2\",\"vid\":\"183\"},{\"eid\":\"198\",\"val\":\"0\",\"vid\":\"187\"},{\"eid\":\"245\",\"val\":\"1\",\"vid\":\"232\"},{\"eid\":\"230\",\"val\":\"1\",\"vid\":\"217\"},{\"eid\":\"234\",\"val\":\"1\",\"vid\":\"221\"},{\"eid\":\"262\",\"val\":\"0\",\"vid\":\"250\"},{\"eid\":\"263\",\"val\":\"1\",\"vid\":\"251\"},{\"eid\":\"260\",\"val\":\"0\",\"vid\":\"248\"},{\"eid\":\"269\",\"val\":\"1\",\"vid\":\"256\"},{\"eid\":\"268\",\"val\":\"0\",\"vid\":\"255\"},{\"eid\":\"267\",\"val\":\"1\",\"vid\":\"254\"},{\"eid\":\"250\",\"val\":\"1\",\"vid\":\"237\"},{\"eid\":\"252\",\"val\":\"1\",\"vid\":\"240\"},{\"eid\":\"257\",\"val\":\"1\",\"vid\":\"245\"}]",
+	"orderfrom": "50096",
+	"bns": 2,
+	"id": "a3fa3fe2-60ff-48d5-bfad-7e5b1093b569",
+	"of": "1000000",
+	"mvt2": "[{\"eid\":\"128\",\"val\":\"1\",\"vid\":\"116\"}]",
+	"if": "110000",
+	"st": 1501068472134,
+	"cin": 0,
+	"cip": "163.177.136.121",
+	"sid": "F72125C58C83F504C75F326D5FB2BE0D",
+	"elev": 3,
+	"chid": "ewhtml5",
+	"ecrd": "192928",
+	"cid": "19f7976e-5c70-441f-9145-67574f4c708e",
+	"ct": 0,
+	"v": "1.0",
+	"pturl": "http://m.elong.com/hotel/00101543/",
+	"lg": "zh-CN",
+	"idc": "2",
+	"pt": "HotelDetailController$$EnhancerBySpringCGLIB$$e5a62e7a.detail",
+	"ch": "h5_home"
+};
+if (typeof TJObject == "undefined") window["TJObject"] = {};
+var tjIgnore = {
+	"subPath": 1,
+	"tsdScript": 1
+};
+if (pageInfo.length > 0 && TJObject) {
+	pageInfo = pageInfo[0];
+	for (var k in pageInfo) {
+		if (tjIgnore[k] == 1) continue;
+		TJObject[k] = pageInfo[k];
+	}
+}
+if (typeof s == "undefined") window["s"] = {};
 
 /***/ }),
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(103)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(105),
-  /* template */
-  __webpack_require__(106),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\xswiper.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xswiper.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c601fe24", Component.options)
-  } else {
-    hotAPI.reload("data-v-c601fe24", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(104);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("42c9d024", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c601fe24\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xswiper.vue", function() {
-     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-c601fe24\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xswiper.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(undefined);
-// imports
-
-
-// module
-
-exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 180px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/xswiper.vue?1508a9c9"],"names":[],"mappings":";AAmCA;CACA,YAAA;CACA,aAAA;CACA,iBAAA;CACA;AAEA;CACA,mBAAA;CACA,gBAAA;CACA,iBAAA;CACA,kCAAA;CACA,qBAAA;CACA,qBAAA;CACA,sBAAA;CACA,cAAA;CACA,yBAAA;CACA,sBAAA;CACA,gCAAA;CACA,wBAAA;CACA,0BAAA;CACA,uBAAA;CACA,4BAAA;CACA,oBAAA;CACA;AAEA;CACA,YAAA;CACA,cAAA;CACA;AAEA;CACA,oBAAA;CACA,iBAAA;CACA","file":"xswiper.vue","sourcesContent":["<template>\r\n\t<div class=\"swiper-container\">\r\n\t\t<div class=\"swiper-wrapper\">\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div  class=\"swiper-slide\"><img :src=\"'http:'+imgArr[4]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\t\t<!-- Add Pagination -->\r\n\t\t<!--<div class=\"swiper-pagination\"></div>-->\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmounted: function() {\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tautoplay: 2500,\r\n\t\t\t\tautoplayDisableOnInteraction: false\r\n\t\t\t});\r\n\t\t\tconsole.log(this.imgArr)\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\timgArr(){\r\n\t\t\t\tconsole.log(this.$store.state.imgArr)\r\n\t\t\t\treturn this.$store.state.imgArr\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.swiper-container {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.swiper-slide {\r\n\t\ttext-align: center;\r\n\t\tfont-size: 18px;\r\n\t\tbackground: #fff;\r\n\t\t/* Center slide text vertically */\r\n\t\tdisplay: -webkit-box;\r\n\t\tdisplay: -ms-flexbox;\r\n\t\tdisplay: -webkit-flex;\r\n\t\tdisplay: flex;\r\n\t\t-webkit-box-pack: center;\r\n\t\t-ms-flex-pack: center;\r\n\t\t-webkit-justify-content: center;\r\n\t\tjustify-content: center;\r\n\t\t-webkit-box-align: center;\r\n\t\t-ms-flex-align: center;\r\n\t\t-webkit-align-items: center;\r\n\t\talign-items: center;\r\n\t}\r\n\t\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 180px;\r\n\t}\r\n\t\r\n\t.weui-panel__bd {\r\n\t\tmargin-bottom: 58px;\r\n\t\tbackground: #FFF;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
-
-exports.push([module.i, "\n.swiper-container {\n\twidth: 100%;\n\theight: 100%;\n\tbackground: #FFF;\n}\n.swiper-slide {\n\ttext-align: center;\n\tfont-size: 18px;\n\tbackground: #fff;\n\t/* Center slide text vertically */\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-box-pack: center;\n\t-ms-flex-pack: center;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-box-align: center;\n\t-ms-flex-align: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n}\n.swiper-slide img {\n\twidth: 100%;\n\theight: 180px;\n}\n.weui-panel__bd {\n\tmargin-bottom: 58px;\n\tbackground: #FFF;\n}\n", ""]);
-
-
-// exports
-
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-	mounted: function mounted() {
-		var swiper = new Swiper('.swiper-container', {
-			pagination: '.swiper-pagination',
-			paginationClickable: true,
-			autoplay: 2500,
-			autoplayDisableOnInteraction: false
-		});
-		console.log(this.imgArr);
-	},
-	computed: {
-		imgArr: function imgArr() {
-			console.log(this.$store.state.imgArr);
-			return this.$store.state.imgArr;
-		}
-	}
-};
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "swiper-container"
+    staticClass: "pages"
   }, [_c('div', {
-    staticClass: "swiper-wrapper"
+    staticClass: "page page-on-center",
+    attrs: {
+      "data-blend": "layer",
+      "data-blend-id": "h5_detail",
+      "data-url": "/hotel/00101543/",
+      "id": "uniq22",
+      "data-title": "【北京阳光温特莱酒店(国展店)(原速8国展柳芳店)】地址:朝阳区柳芳北街6号(煤炭总医院正对面)_艺龙网移动版",
+      "data-title-id": "h5_detail"
+    }
+  }, [_c('header', {
+    staticClass: "bar bar-nav flight-order-head none_backg"
+  }, [_c('a', {
+    staticClass: "icon icon-left-nav pull-left icon-back tjclick",
+    attrs: {
+      "data-rel": "back",
+      "href": "/hotel/0101/nlist/",
+      "data-tj": "{\"cspot\":\"back\"}"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "icon    icon-collect  collect  pull-right tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"mycollection\"}"
+    }
+  }), _vm._v(" "), _c('h1', {
+    staticClass: "title"
+  }, [_vm._v("酒店详情")])]), _vm._v(" "), _c('div', {
+    staticClass: "bar stickys indexnew"
   }, [_c('div', {
-    staticClass: "swiper-slide"
-  }, [_c('img', {
+    staticClass: "hotel-info detail-date datefixed tjclick",
     attrs: {
-      "src": 'http:' + _vm.imgArr[0],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide"
-  }, [_c('img', {
-    attrs: {
-      "src": 'http:' + _vm.imgArr[1],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide"
-  }, [_c('img', {
-    attrs: {
-      "src": 'http:' + _vm.imgArr[2],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide"
-  }, [_c('img', {
-    attrs: {
-      "src": 'http:' + _vm.imgArr[3],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide"
-  }, [_c('img', {
-    attrs: {
-      "src": 'http:' + _vm.imgArr[4],
-      "alt": ""
-    }
-  })])])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c601fe24", module.exports)
-  }
-}
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(107)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(109),
-  /* template */
-  __webpack_require__(110),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  "data-v-fcb5ca40",
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detail\\xmap.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xmap.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fcb5ca40", Component.options)
-  } else {
-    hotAPI.reload("data-v-fcb5ca40", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(108);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("68330eda", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fcb5ca40\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmap.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fcb5ca40\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmap.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(true);
-// imports
-
-
-// module
-exports.push([module.i, "\n#l-map[data-v-fcb5ca40] {\n\tposition: absolute;\n\twidth: 100%;\n\theight: 20%;\n\ttop: 250px;\n\tz-index: 1999;\n}\n.qqqqqq[data-v-fcb5ca40]{\n\theight: 100%;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/detail/xmap.vue?65edb04c"],"names":[],"mappings":";AA6CA;CACA,mBAAA;CACA,YAAA;CACA,YAAA;CACA,WAAA;CACA,cAAA;CACA;AACA;CACA,aAAA;CACA","file":"xmap.vue","sourcesContent":["<template>\n\t<div @click=\"test()\" class=\"qqqqqq\">\n\t\t<div id=\"l-map\" ></div>\n\n\t</div>\n\n</template>\n<script>\n\t// 百度地图API功能\n\texport default {\n\t\tmethods: {\n\t\t\ttest() {\n\t\t\t\tconsole.log(111111)\n\t\t\t\t$(\"#l-map\").css('height', \"600px\")\n\t\t\t}\n\t\t},\n\t\tmounted() {\n\t\t\t// 百度地图API功能\n\t\t\tvar map = new BMap.Map(\"l-map\");\n\t\t\tmap.centerAndZoom(new BMap.Point(116.404, 39.915), 10);\n\n\t\t\tvar start = \"百度大厦\";\n\t\t\tvar end = \"北京邮电大学西门\";\n\t\t\tvar routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME, BMAP_TRANSIT_POLICY_LEAST_TRANSFER, BMAP_TRANSIT_POLICY_LEAST_WALKING, BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];\n\t\t\tvar transit = new BMap.TransitRoute(map, {\n\t\t\t\trenderOptions: {\n\t\t\t\t\tmap: map\n\t\t\t\t},\n\t\t\t\tpolicy: 0\n\t\t\t});\n\t\t\t(function() {\n\t\t\t\tmap.clearOverlays();\n\t\t\t\t//\t\t\t\tvar i = $(\"#driving_way select\").val();\n\t\t\t\tvar i = \"最少时间\"\n\t\t\t\tsearch(start, end, routePolicy[i]);\n\n\t\t\t\tfunction search(start, end, route) {\n\t\t\t\t\ttransit.setPolicy(route);\n\t\t\t\t\ttransit.search(start, end);\n\t\t\t\t}\n\t\t\t})();\n\t\t}\n\t}\n</script>\n<style scoped>\n\t#l-map {\n\t\tposition: absolute;\n\t\twidth: 100%;\n\t\theight: 20%;\n\t\ttop: 250px;\n\t\tz-index: 1999;\n\t}\n\t.qqqqqq{\n\t\theight: 100%;\n\t}\n</style>"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-//
-//
-//
-//
-//
-//
-//
-
-// 百度地图API功能
-exports.default = {
-	methods: {
-		test: function test() {
-			console.log(111111);
-			$("#l-map").css('height', "600px");
-		}
-	},
-	mounted: function mounted() {
-		// 百度地图API功能
-		var map = new BMap.Map("l-map");
-		map.centerAndZoom(new BMap.Point(116.404, 39.915), 10);
-
-		var start = "百度大厦";
-		var end = "北京邮电大学西门";
-		var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME, BMAP_TRANSIT_POLICY_LEAST_TRANSFER, BMAP_TRANSIT_POLICY_LEAST_WALKING, BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
-		var transit = new BMap.TransitRoute(map, {
-			renderOptions: {
-				map: map
-			},
-			policy: 0
-		});
-		(function () {
-			map.clearOverlays();
-			//				var i = $("#driving_way select").val();
-			var i = "最少时间";
-			search(start, end, routePolicy[i]);
-
-			function search(start, end, route) {
-				transit.setPolicy(route);
-				transit.search(start, end);
-			}
-		})();
-	}
-};
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "qqqqqq",
-    on: {
-      "click": function($event) {
-        _vm.test()
-      }
+      "data-tj": "{\"cspot\":\"time\"}"
     }
   }, [_c('div', {
-    attrs: {
-      "id": "l-map"
+    staticClass: "getin_room_a"
+  }, [_c('span', [_c('em', {
+    staticClass: "deepNightFlag",
+    staticStyle: {
+      "display": "none"
     }
-  })])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-fcb5ca40", module.exports)
-  }
-}
-
-/***/ }),
-/* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('xmap'), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
+  }, [_vm._v("深夜")]), _vm._v("\n\t                    入住\n\t                ")]), _vm._v(" "), _c('span', {
+    staticClass: "ol_night"
+  }, [_vm._v("共1晚")]), _vm._v(" "), _c('span', [_vm._v("离店")])]), _vm._v(" "), _c('div', {
+    staticClass: "getin_room_b"
+  }, [_c('span', [_c('em', {
+    staticClass: "indate",
+    attrs: {
+      "data": "2017-07-26"
+    }
+  }, [_vm._v("07月26日")]), _c('em', {
+    staticClass: "startweek"
+  }, [_vm._v("今天")])]), _vm._v(" "), _c('span', {
+    staticClass: "getin_fen"
+  }, [_vm._v("|")]), _vm._v(" "), _c('span', [_c('em', {
+    staticClass: "outdate",
+    attrs: {
+      "data": "2017-07-27"
+    }
+  }, [_vm._v("07月27日")]), _c('em', {
+    staticClass: "endweek"
+  }, [_vm._v("明天")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "fastchoose"
+  }, [_c('div', {
+    staticClass: "choice unon",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomtypeFilter\"}"
+    }
+  }, [_vm._v("筛选"), _c('i', {
+    staticClass: "getin"
+  })]), _vm._v(" "), _c('ul', [_c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "kw": "kw0",
+      "data-id": "30",
+      "data-tj": "{\"cspot\":\"paymentInHotel\"}"
+    }
+  }, [_vm._v("到店付")]), _vm._v(" "), _c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "kw": "kw0",
+      "data-id": "101",
+      "data-tj": "{\"cspot\":\"freeCancellation\"}"
+    }
+  }, [_vm._v("免费取消")]), _vm._v(" "), _c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "kw": "kw0",
+      "data-id": "102",
+      "data-tj": "{\"cspot\":\"instantConfirm\"}"
+    }
+  }, [_vm._v("立即确认")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "page-content new_detailst mvt_161125"
+  }, [_c('section', {
+    staticClass: "detail-main detail-mainNew",
+    staticStyle: {
+      "overflow": "visible"
+    }
+  }, [_c('div', {
     staticClass: "hotel-info"
+  }, [_c('div', {
+    staticClass: "pic-wrap tjclick swiper-container-horizontal",
+    attrs: {
+      "data-tj": "{\"cspot\":\"image\"}"
+    }
   }, [_c('a', {
     attrs: {
       "href": "javascript:void(0)"
     }
   }), _vm._v(" "), _c('i', {
     staticClass: "picbg"
-  }), _vm._v(" "), _c('xswiper'), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('i', {
-    staticClass: "type-num"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "hotel-type"
-  }, [_vm._v("经济型")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "info"
-  })], 1)], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('header', {
-    staticClass: "bar "
-  }, [_c('a', {
-    staticClass: "iconfont icon-arrowleft pull-left tjclick",
-    attrs: {
-      "data-rel": "back",
-      "href": "http://m.elong.com/hotel/0101/nlist/",
-      "data-tj": "{\"cspot\":\"back\"}"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "swiper-wrapper focuspic",
+    staticStyle: {
+      "background": "url(\"//m.elongstatic.com/static/webapp/hotel/2015/06/v2/img/defuat_room_pic.png\") 0% 0% / cover no-repeat",
+      "transition-duration": "300ms",
+      "transform": "translate3d(-750px, 0px, 0px)"
     }
-  }), _vm._v(" "), _c('a', {
-    staticClass: "iconfont icon-shoucang1  pull-right tjclick",
-    attrs: {
-      "data-tj": "{\"cspot\":\"mycollection\"}"
+  }, [_c('div', {
+    staticClass: "swiper-slide",
+    staticStyle: {
+      "width": "375px"
     }
-  }), _vm._v(" "), _c('h1', {
-    staticClass: "title"
-  }, [_vm._v("酒店详情")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('h1', {
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/hotel750_360/00050lJq.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide swiper-slide-prev",
+    staticStyle: {
+      "width": "375px"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/hotel750_360/0000aDnN.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide swiper-slide-active",
+    staticStyle: {
+      "width": "375px"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/hotel750_360/0000aDnM.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide swiper-slide-next",
+    staticStyle: {
+      "width": "375px"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/hotel750_360/0000aDhO.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide",
+    staticStyle: {
+      "width": "375px"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/hotel750_360/0000aDhA.jpg"
+    }
+  })])]), _vm._v(" "), _c('h1', {
     staticClass: "name"
   }, [_c('i', {
     staticClass: "grade grade1"
-  }), _vm._v(" "), _c('em', [_vm._v("北京阳光温特莱酒店(国展店)(原速8国展柳芳店)")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }), _vm._v(" "), _c('em', [_vm._v("北京阳光温特莱酒店(国展店)(原速8国展柳芳店)")])]), _vm._v(" "), _c('span', {
+    staticClass: "hotel-type"
+  }, [_vm._v("\n\t\t\t\t经济型\n                \n                \n                \n\n                \n                \n                \n\t\t\t\t\t\t\t\t")]), _vm._v(" "), _c('div', {
     staticClass: "num"
+  }, [_c('i'), _vm._v("88")])]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('ul', [_c('li', {
+    staticClass: "info_mn"
+  }, [_c('div', {
+    staticClass: "col_tb"
+  }, [_c('div', {
+    staticClass: "posi"
+  }, [_c('div', {
+    staticClass: "addr"
+  }, [_vm._v("朝阳区柳芳北街6号(煤炭总医院正对面)")]), _vm._v(" "), _c('div', {
+    staticClass: "dis"
+  }, [_c('span', {
+    staticClass: "disc"
+  }, [_vm._v("距离柳芳地铁站0.4公里,步行至此0.8公里,约13分钟")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "map_bg"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "map_c"
+  }, [_c('img', {
+    attrs: {
+      "width": "180",
+      "height": "180",
+      "src": "//apis.map.qq.com/ws/staticmap/v2/?center=39.958981,116.437258&zoom=14&key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&size=500*250&scale=2"
+    }
+  }), _vm._v(" "), _c('i', {
+    staticClass: "map_icons"
+  })])])]), _vm._v(" "), _c('li', {
+    staticClass: "choose"
+  }, [_c('div', {
+    staticClass: "titles"
+  }, [_c('ul', [_c('li', {
+    staticClass: " active "
+  }, [_vm._v("住客评价")]), _vm._v(" "), _c('li', {
+    staticClass: "hoteldetail   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"hoteldetailchange\"}"
+    }
+  }, [_vm._v("酒店详情")])]), _vm._v(" "), _c('span', {
+    staticClass: "line "
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "text1 tabcomment all-com tjclick text_comments",
+    attrs: {
+      "data-tj": "{\"cspot\":\"comment\"}"
+    }
+  }, [_c('div', {
+    staticClass: "left_c"
+  }, [_c('div', {
+    staticClass: "praise_nbm"
+  }, [_c('span', {
+    staticClass: "u_nbm"
+  }, [_c('b', {
+    staticClass: "s_nbm"
+  }, [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "u_btn"
+  }, [_vm._v("挺好哒")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right_c"
+  }, [_c('h1', [_vm._v("帅帅的大橙子"), _c('span', {
+    staticClass: "ping"
+  }, [_c('span', {
+    staticClass: "level3"
+  }, [_vm._v("点评新人")])])]), _vm._v(" "), _c('p', [_vm._v("服务态度很好，房间也不错，价格合适。可以暂时寄存行李，很好。")])]), _vm._v(" "), _c('p', {
+    staticClass: "more_p info-comments"
+  }, [_vm._v("查看2396条住客评价"), _c('i')])]), _vm._v(" "), _c('div', {
+    staticClass: "text1 tabdetails tjclick",
+    staticStyle: {
+      "display": "none"
+    },
+    attrs: {
+      "data-tj": "{\"cspot\":\"hoteldetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "mid2"
+  }, [_c('ul', [_c('li', [_c('span', {
+    staticClass: "icon-parking"
+  }), _vm._v(" "), _c('span', [_vm._v("停车场")])]), _vm._v(" "), _c('li', [_c('span', {
+    staticClass: "icon-wifi"
+  }), _vm._v(" "), _c('span', [_vm._v("无线wifi")])]), _vm._v(" "), _c('li', [_c('span', {
+    staticClass: "icon-luggage"
+  }), _vm._v(" "), _c('span', [_vm._v("行李寄存")])]), _vm._v(" "), _c('li', {
+    staticClass: "no"
+  }, [_c('span', {
+    staticClass: "icon-bra"
+  }), _vm._v(" "), _c('span', [_vm._v("餐厅")])])])]), _vm._v(" "), _c('p', {
+    staticClass: "more_p"
+  }, [_vm._v("查看全部信息"), _c('i')])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "stickys indexnew sticky",
+    staticStyle: {
+      "top": "42px"
+    }
+  }, [_c('div', {
+    staticClass: "ht_day detail-date detail-hotel"
+  }, [_c('div', {
+    staticClass: "getin_room_a"
+  }, [_c('span', {
+    staticClass: "c8"
+  }, [_vm._v("入住")]), _vm._v(" "), _c('span', {
+    staticClass: "indate"
+  }, [_vm._v("07月26日")]), _vm._v(" "), _c('span', {
+    staticClass: "night",
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_vm._v("深夜")]), _vm._v(" "), _c('span', {
+    staticClass: "c8"
+  }, [_vm._v("离店")]), _vm._v(" "), _c('span', {
+    staticClass: "outdate"
+  }, [_vm._v("07月27日")])]), _vm._v(" "), _c('div', {
+    staticClass: "getin_room_b"
+  }, [_c('span', {
+    staticClass: "count_day"
+  }, [_vm._v("共"), _c('span', {
+    staticClass: "count_nmb"
+  }, [_vm._v("1")]), _vm._v("晚"), _c('i')])])]), _vm._v(" "), _c('div', {
+    staticClass: "fastchoose"
+  }, [_c('div', {
+    staticClass: "choice unon",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomtypeFilter\"}"
+    }
+  }, [_vm._v("筛选"), _c('i', {
+    staticClass: "getin"
+  })]), _vm._v(" "), _c('ul', [_c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "kw": "kw0",
+      "data-id": "30",
+      "data-tj": "{\"cspot\":\"paymentInHotel\"}"
+    }
+  }, [_vm._v("到店付")]), _vm._v(" "), _c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "kw": "kw0",
+      "data-id": "101",
+      "data-tj": "{\"cspot\":\"freeCancellation\"}"
+    }
+  }, [_vm._v("免费取消")]), _vm._v(" "), _c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "kw": "kw0",
+      "data-id": "102",
+      "data-tj": "{\"cspot\":\"instantConfirm\"}"
+    }
+  }, [_vm._v("立即确认")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "type"
+  }, [_c('ul', [_c('li', {
+    staticClass: "rooms  no "
+  }, [_c('div', {
+    staticClass: "wrap "
+  }, [_c('div', {
+    staticClass: "left   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomdetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "pic tjclick rpDetail",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomimage\"}"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile750_448/nw_0007aJgt.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "picroom-info"
+  }, [_c('div', {
+    staticClass: "room"
+  }, [_vm._v("标准双床房")]), _vm._v(" "), _c('div', {
+    staticClass: "room-info"
+  }, [_c('span', [_vm._v("18-20平米")]), _vm._v(" "), _c('span', [_vm._v("双床1.2米")]), _vm._v(" "), _c('span', [_vm._v("  有窗  ")])]), _vm._v(" "), _c('div', {
+    staticClass: "icon icon-hs"
+  }, [_c('span', {
+    staticClass: "clock_hb",
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px #FF5555 solid"
+    }
+  }, [_vm._v(" 返 ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', [_vm._v("￥")]), _c('span', {
+    staticClass: "num"
+  }, [_vm._v("294")]), _vm._v("起")])]), _vm._v(" "), _c('div', {
+    staticClass: "de-btn"
+  }, [_c('i')]), _vm._v(" "), _c('div', {
+    staticClass: "rigit_activebg tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist1\"}"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info-list"
+  }, [_c('ul', [_c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "f_c49f"
+  }, [_vm._v(" 免费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("294")])]), _vm._v(" "), _c('div', {
+    staticClass: "return"
+  }, [_vm._v("318返24"), _c('br')])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("320")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "rooms  no "
+  }, [_c('div', {
+    staticClass: "wrap "
+  }, [_c('div', {
+    staticClass: "left   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomdetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "pic tjclick rpDetail",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomimage\"}"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile750_448/nw_0007aLpO.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "picroom-info"
+  }, [_c('div', {
+    staticClass: "room"
+  }, [_vm._v("标准大床房")]), _vm._v(" "), _c('div', {
+    staticClass: "room-info"
+  }, [_c('span', [_vm._v("18-20平米")]), _vm._v(" "), _c('span', [_vm._v("大床1.8米")]), _vm._v(" "), _c('span', [_vm._v("  有窗  ")])]), _vm._v(" "), _c('div', {
+    staticClass: "icon icon-hs"
+  }, [_c('span', {
+    staticClass: "clock_hb",
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px #FF5555 solid"
+    }
+  }, [_vm._v(" 返 ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', [_vm._v("￥")]), _c('span', {
+    staticClass: "num"
+  }, [_vm._v("294")]), _vm._v("起")])]), _vm._v(" "), _c('div', {
+    staticClass: "de-btn"
+  }, [_c('i')]), _vm._v(" "), _c('div', {
+    staticClass: "rigit_activebg tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist1\"}"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info-list"
+  }, [_c('ul', [_c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "f_c49f"
+  }, [_vm._v(" 免费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("294")])]), _vm._v(" "), _c('div', {
+    staticClass: "return"
+  }, [_vm._v("318返24"), _c('br')])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("320")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "rooms  no "
+  }, [_c('div', {
+    staticClass: "wrap "
+  }, [_c('div', {
+    staticClass: "left   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomdetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "pic tjclick rpDetail",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomimage\"}"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile750_448/nw_0003z5FB.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "picroom-info"
+  }, [_c('div', {
+    staticClass: "room"
+  }, [_vm._v("特惠标准间")]), _vm._v(" "), _c('div', {
+    staticClass: "room-info"
+  }, [_c('span', [_vm._v("18-20平米")]), _vm._v(" "), _c('span', [_vm._v("双床1.1米")]), _vm._v(" "), _c('span', [_vm._v("  有窗  ")])]), _vm._v(" "), _c('div', {
+    staticClass: "icon icon-hs"
+  }, [_c('span', {
+    staticClass: "clock_hb",
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px #FF5555 solid"
+    }
+  }, [_vm._v(" 返 ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', [_vm._v("￥")]), _c('span', {
+    staticClass: "num"
+  }, [_vm._v("294")]), _vm._v("起")])]), _vm._v(" "), _c('div', {
+    staticClass: "de-btn"
+  }, [_c('i')]), _vm._v(" "), _c('div', {
+    staticClass: "rigit_activebg tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist1\"}"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info-list"
+  }, [_c('ul', [_c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "f_c49f"
+  }, [_vm._v(" 免费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("294")])]), _vm._v(" "), _c('div', {
+    staticClass: "return"
+  }, [_vm._v("318返24"), _c('br')])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("320")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "rooms  no "
+  }, [_c('div', {
+    staticClass: "wrap "
+  }, [_c('div', {
+    staticClass: "left   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomdetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "pic tjclick rpDetail",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomimage\"}"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ng.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "picroom-info"
+  }, [_c('div', {
+    staticClass: "room"
+  }, [_vm._v("商务大床房")]), _vm._v(" "), _c('div', {
+    staticClass: "room-info"
+  }, [_c('span', [_vm._v("18-20平米")]), _vm._v(" "), _c('span', [_vm._v("大床1.8米")]), _vm._v(" "), _c('span', [_vm._v("  有窗  ")])]), _vm._v(" "), _c('div', {
+    staticClass: "icon icon-hs"
+  }, [_c('span', {
+    staticClass: "clock_hb",
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px #FF5555 solid"
+    }
+  }, [_vm._v(" 返 ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', [_vm._v("￥")]), _c('span', {
+    staticClass: "num"
+  }, [_vm._v("313")]), _vm._v("起")])]), _vm._v(" "), _c('div', {
+    staticClass: "de-btn"
+  }, [_c('i')]), _vm._v(" "), _c('div', {
+    staticClass: "rigit_activebg tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist1\"}"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info-list"
+  }, [_c('ul', [_c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "f_c49f"
+  }, [_vm._v(" 免费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("313")])]), _vm._v(" "), _c('div', {
+    staticClass: "return"
+  }, [_vm._v("338返25"), _c('br')])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("住哪")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("353")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("353")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "rooms  no "
+  }, [_c('div', {
+    staticClass: "wrap "
+  }, [_c('div', {
+    staticClass: "left   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomdetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "pic tjclick rpDetail",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomimage\"}"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ne.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "picroom-info"
+  }, [_c('div', {
+    staticClass: "room"
+  }, [_vm._v("商务双床间")]), _vm._v(" "), _c('div', {
+    staticClass: "room-info"
+  }, [_c('span', [_vm._v("18-20平米")]), _vm._v(" "), _c('span', [_vm._v("双床1.2米")]), _vm._v(" "), _c('span', [_vm._v("  有窗  ")])]), _vm._v(" "), _c('div', {
+    staticClass: "icon icon-hs"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', [_vm._v("￥")]), _c('span', {
+    staticClass: "num"
+  }, [_vm._v("338")]), _vm._v("起")])]), _vm._v(" "), _c('div', {
+    staticClass: "de-btn"
+  }, [_c('i')]), _vm._v(" "), _c('div', {
+    staticClass: "rigit_activebg tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist1\"}"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info-list"
+  }, [_c('ul', [_c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "f_c49f"
+  }, [_vm._v(" 免费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("338")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("住哪")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("353")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("353")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "rooms  no "
+  }, [_c('div', {
+    staticClass: "wrap "
+  }, [_c('div', {
+    staticClass: "left   tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomdetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "pic tjclick rpDetail",
+    attrs: {
+      "data-tj": "{\"cspot\":\"roomimage\"}"
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile750_448/00050lPD.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "picroom-info"
+  }, [_c('div', {
+    staticClass: "room"
+  }, [_vm._v("商务套房")]), _vm._v(" "), _c('div', {
+    staticClass: "room-info"
+  }, [_c('span', [_vm._v("36平米")]), _vm._v(" "), _c('span', [_vm._v("大床1.8米")]), _vm._v(" "), _c('span', [_vm._v("  有窗  ")])]), _vm._v(" "), _c('div', {
+    staticClass: "icon icon-hs"
+  }, [_c('span', {
+    staticClass: "clock_hb",
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px #FF5555 solid"
+    }
+  }, [_vm._v(" 返 ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "right"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', [_vm._v("￥")]), _c('span', {
+    staticClass: "num"
+  }, [_vm._v("462")]), _vm._v("起")])]), _vm._v(" "), _c('div', {
+    staticClass: "de-btn"
+  }, [_c('i')]), _vm._v(" "), _c('div', {
+    staticClass: "rigit_activebg tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist1\"}"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info-list"
+  }, [_c('ul', [_c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "f_c49f"
+  }, [_vm._v(" 免费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("462")])]), _vm._v(" "), _c('div', {
+    staticClass: "return"
+  }, [_vm._v("500返38"), _c('br')])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])]), _vm._v(" "), _c('li', {
+    staticClass: "roomdetail no full_no"
+  }, [_c('div', {
+    staticClass: "left tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplandetail\"}"
+    }
+  }, [_c('div', {
+    staticClass: "bra clearfix"
+  }, [_vm._v(" 不含早 ")]), _vm._v(" "), _c('div', {
+    staticClass: "xstm"
+  }, [_c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v("艺龙")]), _vm._v(" "), _c('span', {
+    staticClass: "suppliername"
+  }, [_vm._v(" 付费取消 ")])]), _vm._v(" "), _c('div', {
+    staticClass: "act"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "value"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_vm._v("￥"), _c('span', [_vm._v("485")])])]), _vm._v(" "), _c('div', {
+    staticClass: "book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"booking\"}"
+    }
+  }, [_c('div', {
+    staticClass: "btn3 btn2_center"
+  }, [_vm._v("满")])])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "facilities"
+  }, [_c('dl', [_c('dt', [_vm._v("酒店设施")]), _vm._v(" "), _c('dd', {
+    staticClass: "fac"
+  }, [_c('ul')])]), _vm._v(" "), _c('dl', [_c('dt', [_vm._v("酒店电话")]), _vm._v(" "), _c('dd', [_c('a', {
+    staticClass: "tel",
+    attrs: {
+      "href": "tel:010-51371060"
+    }
+  }, [_vm._v("010-51371060")]), _vm._v("艺龙电话预订：\n\t\t\t\t\t\t\t\t"), _c('a', {
+    staticClass: "tel",
+    attrs: {
+      "href": "tel:400-666-1166"
+    }
+  }, [_vm._v("400-666-1166")])])]), _vm._v(" "), _c('dl', [_c('dt', [_vm._v("开业时间")]), _vm._v(" "), _c('dd', [_vm._v("酒店开业时间 2011年05月19日年 ")])]), _vm._v(" "), _c('dl', [_c('dt', [_vm._v("酒店服务")]), _vm._v(" "), _c('dd', [_vm._v("叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习")])]), _vm._v(" "), _c('a', {
+    staticClass: "more"
+  }, [_vm._v("更多酒店信息")])])]), _vm._v(" "), _c('section', {
+    staticClass: "detail-sider"
+  }, [_c('div', {
+    staticClass: "look"
+  }, [_c('dl', {
+    staticClass: "list"
+  }, [_c('dt', [_c('i', {
+    staticClass: "clock icon-clock"
+  }), _vm._v("历史浏览")]), _vm._v(" "), _c('dd', [_c('a', {
+    attrs: {
+      "href": "/hotel/00101543/"
+    }
   }, [_c('i', {
-    staticClass: "iconfont icon-biaoqian"
-  }), _vm._v(" 88\n\t\t\t")])
+    staticClass: "grade grade1"
+  }), _vm._v(" "), _c('em', [_vm._v("北京阳光温特莱酒店(国展店)(原速8国展柳芳店)")])]), _c('span', [_vm._v("￥"), _c('i', {
+    staticClass: "num"
+  }, [_vm._v("688")]), _c('i', {
+    staticClass: "up"
+  }, [_vm._v("起")])])]), _vm._v(" "), _c('dd', [_c('a', {
+    attrs: {
+      "href": "/hotel/00101366/"
+    }
+  }, [_c('i', {
+    staticClass: "grade grade1"
+  }), _vm._v(" "), _c('em', [_vm._v("速8酒店(北京马家堡店)")])]), _c('span', [_vm._v("￥"), _c('i', {
+    staticClass: "num"
+  }, [_vm._v("618")]), _c('i', {
+    staticClass: "up"
+  }, [_vm._v("起")])])]), _vm._v(" "), _c('dd', [_c('a', {
+    attrs: {
+      "href": "/hotel/91244474/"
+    }
+  }, [_c('i', {
+    staticClass: "grade grade1"
+  }), _vm._v(" "), _c('em', [_vm._v("飘HOME连锁酒店(北京西客站店)")])]), _c('span', [_vm._v("￥"), _c('i', {
+    staticClass: "num"
+  }, [_vm._v("368")]), _c('i', {
+    staticClass: "up"
+  }, [_vm._v("起")])])])])])]), _vm._v(" "), _c('section', {
+    staticClass: "tool"
+  }, [_c('div', {
+    staticClass: "ver"
+  }, [_c('a', {
+    staticClass: "xq",
+    attrs: {
+      "href": "javascript:void(0);"
+    }
+  }, [_c('i', {
+    staticClass: " icon-collect  "
+  }), _vm._v("我感兴趣")]), _c('span', [_vm._v("｜")]), _vm._v(" "), _c('a', {
+    staticClass: "ht",
+    attrs: {
+      "href": "javascript:void(0);"
+    }
+  }, [_c('i', {
+    staticClass: "icon-phone"
+  }), _vm._v("联系电话")])]), _vm._v(" "), _c('div', {
+    staticClass: "copy"
+  }, [_vm._v("©2009-2017 艺龙无线")])])]), _vm._v(" "), _c('div', {
+    staticClass: "slide-selector plugin-inited"
+  }, [_c('header', {
+    staticClass: "bar-nav"
+  }, [_c('div', {
+    staticClass: "radio-title"
+  }, [_c('span', {
+    staticClass: "title"
+  }, [_vm._v("客服电话")]), _c('span', {
+    staticClass: "cancel"
+  }, [_vm._v("取消")])])]), _vm._v(" "), _c('ul', {
+    staticClass: "page-content"
+  }, [_c('li', {
+    staticClass: "radio-item ",
+    attrs: {
+      "value": "0"
+    }
+  }, [_c('label', {
+    staticClass: "label-radio clearfix"
+  }, [_c('div', {
+    staticClass: "radio-icon"
+  }, [_c('span', {
+    staticClass: "radio"
+  })]), _c('div', {
+    staticClass: "radio-text"
+  }, [_c('a', {
+    attrs: {
+      "href": "tel:400-666-1166"
+    }
+  }, [_vm._v("艺龙电话：400-666-1166")])]), _c('div', {
+    staticClass: "check"
+  })])]), _vm._v(" "), _c('li', {
+    staticClass: "radio-item ",
+    attrs: {
+      "value": "1"
+    }
+  }, [_c('label', {
+    staticClass: "label-radio clearfix"
+  }, [_c('div', {
+    staticClass: "radio-icon"
+  }, [_c('span', {
+    staticClass: "radio"
+  })]), _c('div', {
+    staticClass: "radio-text"
+  }, [_c('a', {
+    attrs: {
+      "href": "tel:010-51371060"
+    }
+  }, [_vm._v("酒店电话：010-51371060")])]), _c('div', {
+    staticClass: "check"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "arrow up left"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "describe",
+    staticStyle: {
+      "display": "none"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "type-pop-box roomTypeInfo newdetailhsize plugin-inited"
+  }, [_c('div', {
+    staticClass: "toptitle"
+  }, [_c('p', [_c('span', {
+    staticClass: "htitle"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "htclose"
+  }, [_c('i', {
+    staticClass: "cancel-icon"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "wrap page-content"
+  }, [_c('div', {
+    staticClass: "swiper-container hpic_show swiper-container-horizontal"
+  }, [_c('div', {
+    staticClass: "swiper-wrapper"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "swiper-pagination swiper-pagination-clickable"
+  }, [_c('span', {
+    staticClass: "swiper-pagination-bullet swiper-pagination-bullet-active"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "type-list"
+  }, [_c('p', {
+    staticClass: "faclist"
+  }), _vm._v(" "), _c('p', {
+    staticClass: "tip"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "discount u-bt discountRoomInfo"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "bottom_btn tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanlist2\"}"
+    }
+  }, [_c('span', [_vm._v("查看房型报价")])])]), _vm._v(" "), _c('div', {
+    staticClass: "type-pop-box roomDetailInfo newdetailhsize plugin-inited"
+  }, [_c('div', {
+    staticClass: "head"
+  }, [_c('span', [_c('i', {
+    staticClass: "icon-cross"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "toptitle"
+  }, [_c('p', [_c('span', {
+    staticClass: "htitle"
+  }), _c('em', [_c('span', {
+    staticClass: "rpName"
+  }), _c('span', {
+    staticClass: "rpSubName"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "htclose"
+  }, [_c('i')])]), _vm._v(" "), _c('div', {
+    staticClass: "wrap page-content more"
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": ""
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "swiper-lazy-preloader"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }), _vm._v(" "), _c('p', {
+    staticClass: "brackfast"
+  }), _vm._v(" "), _c('p', {
+    staticClass: "canceltype"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "type-list"
+  }, [_c('p', {
+    staticClass: "faclist faclistOrigin"
+  }), _vm._v(" "), _c('p', {
+    staticClass: "tip"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "discount bookNotes"
+  }, [_c('div', {
+    staticClass: "titletips"
+  }, [_vm._v("预订须知")]), _vm._v(" "), _c('div', {
+    staticClass: "tips"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "discount u-bt reservationBooking"
+  }, [_c('div', {
+    staticClass: "titletips"
+  }, [_vm._v("预订专享")]), _vm._v(" "), _c('div', {
+    staticClass: "tags"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "new_box"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "bd bottom_price"
+  }, [_c('div', {
+    staticClass: "left"
+  }, [_c('div', {
+    staticClass: "table-cell"
+  }, [_c('div', {
+    staticClass: "price"
+  }, [_c('span', {
+    staticClass: "ce65"
+  }, [_vm._v("￥"), _c('span'), _c('span', {
+    staticClass: "hour"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "back"
+  }, [_c('span', {
+    staticClass: "ce65 coupon"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "ce65 hongbao"
+  }, [_c('span')]), _c('span', {
+    staticClass: "c999 officehours"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "right book tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"rateplanbooking\"}"
+    }
+  }, [_vm._v("立即预订")])])]), _vm._v(" "), _c('div', {
+    staticClass: "cld page-plugin plugin-inited"
+  }, [_c('header', {
+    staticClass: "bar bar-nav"
+  }, [_c('h1', {
+    staticClass: "title"
+  }, [_vm._v("选择日期")]), _vm._v(" "), _c('a', {
+    staticClass: "icon icon-back pull-left hide-cln"
+  }), _vm._v(" "), _c('a', {
+    staticClass: "cld-title-year pull-right icon"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "page-content"
+  }, [_c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2017年07月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-01"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("1")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("建党")])])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-04"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-05"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("5")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-10"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-23"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-24"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("24")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2017-07-25"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-07-26"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("26")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("今天")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-07-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-07-28"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("28")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-07-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-07-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-07-31"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("31")])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])]), _vm._v(" "), _c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2017年08月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-01"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("1")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("建军")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-04"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-05"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("5")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-10"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-23"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-24"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("24")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-25"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-26"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-28"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("28")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("七夕")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-08-31"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("31")])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])]), _vm._v(" "), _c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2017年09月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-01"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-04"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-05"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("5")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("中元节")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-10"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("10")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("教师节")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-23"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-24"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("24")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-25"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-26"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-28"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("28")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-09-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    staticClass: "work",
+    attrs: {
+      "data-day": "2017-09-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")]), _c('b', {
+    staticClass: "work"
+  }, [_vm._v("班")])])])]), _vm._v(" "), _c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2017年10月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-01"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("1")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("国庆")])]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-04"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("4")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("中秋节")])]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-05"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("5")]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    staticClass: "holiday",
+    attrs: {
+      "data-day": "2017-10-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")]), _c('b', {
+    staticClass: "holiday"
+  }, [_vm._v("休")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-10"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-23"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-24"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("24")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-25"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-26"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-28"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("28")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("重阳节")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-10-31"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("31")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("万圣节")])])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])]), _vm._v(" "), _c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2017年11月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-01"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-04"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-05"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("5")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-10"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-23"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("23")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("感恩节")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-24"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("24")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-25"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-26"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-28"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("28")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-11-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])]), _vm._v(" "), _c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2017年12月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-01"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-04"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-05"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("5")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-10"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-23"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-24"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("24")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("平安夜")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-25"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("25")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("圣诞节")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-26"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-28"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("28")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2017-12-31"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("31")])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])]), _vm._v(" "), _c('section', {
+    staticClass: "cld-item"
+  }, [_c('h1', {
+    staticClass: "cld-titleDate"
+  }, [_vm._v("2018年01月")]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-day"
+  }, [_c('li'), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-01"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("1")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("元旦")])])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-02"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-03"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-04"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-05"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("5")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-06"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("6")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-07"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("7")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-08"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-09"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-10"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-11"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-12"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-13"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-14"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-15"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-16"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-17"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-18"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-19"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-20"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
+    attrs: {
+      "data-day": "2018-01-21"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-22"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-23"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-24"
+    }
+  }, [_c('div', [_c('span', {
+    staticClass: "festival"
+  }, [_vm._v("24")]), _c('span', {
+    staticClass: "festivalText"
+  }, [_vm._v("腊八")])])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-25"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-26"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-27"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-28"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("28")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-29"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-30"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("30")])]), _vm._v(" "), _c('li', {
+    staticClass: "disabled",
+    attrs: {
+      "data-day": "2018-01-31"
+    }
+  }, [_c('span', {
+    staticClass: "date-elem"
+  }, [_vm._v("31")])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])])]), _vm._v(" "), _c('ul', {
+    staticClass: "cld-title bar"
+  }, [_c('li', [_vm._v("日")]), _vm._v(" "), _c('li', [_vm._v("一")]), _vm._v(" "), _c('li', [_vm._v("二")]), _vm._v(" "), _c('li', [_vm._v("三")]), _vm._v(" "), _c('li', [_vm._v("四")]), _vm._v(" "), _c('li', [_vm._v("五")]), _vm._v(" "), _c('li', [_vm._v("六")])])]), _vm._v(" "), _c('div', {
+    staticClass: "detail-filter filter-sp newfilter-sp list-weixin-component filter-fastchoose plugin-inited detailks_show"
+  }, [_c('span', {
+    staticClass: "arrow"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "sp-content"
+  }, [_c('div', {
+    staticClass: "price breakfast"
+  }, [_c('div', {
+    staticClass: "sp-tit"
+  }, [_vm._v("早餐")]), _vm._v(" "), _c('ul', {
+    staticClass: "price-list room-list"
+  }, [_c('li', {
+    staticClass: "on",
+    attrs: {
+      "kw": "kw1",
+      "data-id": "100"
+    }
+  }, [_vm._v("不含早")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw1",
+      "data-id": "36"
+    }
+  }, [_vm._v("含单早")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw1",
+      "data-id": "35"
+    }
+  }, [_vm._v("含双早")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw1",
+      "data-id": "37"
+    }
+  }, [_vm._v("含三早及以上")])])]), _vm._v(" "), _c('div', {
+    staticClass: "price pay-type"
+  }, [_c('div', {
+    staticClass: "sp-tit"
+  }, [_vm._v("支付方式")]), _vm._v(" "), _c('ul', {
+    staticClass: "price-list room-list"
+  }, [_c('li', {
+    attrs: {
+      "kw": "kw2",
+      "data-id": "29"
+    }
+  }, [_vm._v("预付")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw2",
+      "data-id": "30"
+    }
+  }, [_vm._v("到店付")])])]), _vm._v(" "), _c('div', {
+    staticClass: "price second service"
+  }, [_c('div', {
+    staticClass: "sp-tit"
+  }, [_vm._v("服务（可多选）")]), _vm._v(" "), _c('ul', {
+    staticClass: "price-list room-list"
+  }, [_c('li', {
+    attrs: {
+      "kw": "kw3",
+      "data-id": "101"
+    }
+  }, [_vm._v("免费取消")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw3",
+      "data-id": "103"
+    }
+  }, [_vm._v("艺龙直销")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw3",
+      "data-id": "102"
+    }
+  }, [_vm._v("立即确认")]), _vm._v(" "), _c('li', {
+    attrs: {
+      "kw": "kw3",
+      "data-id": "104"
+    }
+  }, [_vm._v("含礼包")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "bot-btn bar"
+  }, [_c('ul', [_c('li', {
+    staticClass: "tjclick",
+    attrs: {
+      "id": "filter-reset",
+      "data-tj": "{\"cspot\":\"emptyRoomtypeFilter\"}"
+    }
+  }, [_vm._v("重置")]), _vm._v(" "), _c('li', {
+    staticClass: "on tjclick",
+    attrs: {
+      "id": "starprice-submit",
+      "data-tj": "{\"cspot\":\"submitRoomtypeFilter\"}"
+    }
+  }, [_vm._v("确定")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "detail_singlepic plugin-inited page-plugin"
+  }, [_c('section', {
+    staticClass: "detail-hotelpic",
+    attrs: {
+      "id": "close_image"
+    }
+  }, [_c('dl', {
+    staticClass: "shpictop"
+  }, [_c('dt', {
+    staticClass: "picTitle"
+  }), _vm._v(" "), _c('dd', {
+    staticClass: "pic-process"
+  }, [_vm._v("1/1")]), _vm._v(" "), _c('dd', {
+    staticClass: "shpic_closed"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "spic_img swiper-container"
+  }, [_c('ul', {
+    staticClass: "swiper-wrapper"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "spic_bottom",
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('p', [_vm._v("查看酒店VR")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "hotel_info_facbox plugin-inited page-plugin"
+  }, [_c('header', {
+    staticClass: "bar bar-nav"
+  }, [_c('a', {
+    staticClass: "icon pull-left icon-back"
+  }), _vm._v(" "), _c('a', {
+    staticClass: "icon icon-phone pull-right"
+  }), _vm._v(" "), _c('h1', {
+    staticClass: "title"
+  }, [_vm._v("酒店详情")])]), _vm._v(" "), _c('div', {
+    staticClass: "page-content"
+  }, [_c('section', {
+    staticClass: "info-pop-box"
+  }, [_c('div', {
+    staticClass: "na clearfix"
+  }, [_c('div', {
+    staticClass: "na_lf"
+  }, [_c('div', {
+    staticClass: "name"
+  }, [_vm._v("北京阳光温特莱酒店(国展店)(原速8国展柳芳店)")]), _vm._v(" "), _c('div', {
+    staticClass: "addr"
+  }, [_c('i'), _vm._v("朝阳区柳芳北街6号(煤炭总医院正对面)")])])]), _vm._v(" "), _c('div', {
+    staticClass: "facilities_con"
+  }, [_c('dl', {
+    staticClass: "facilities"
+  }, [_c('dt', [_vm._v("酒店设施")]), _vm._v(" "), _c('dd', {}, [_c('i', {
+    staticClass: "i1"
+  }), _vm._v(" "), _c('p', [_vm._v(" 停车 ")])]), _vm._v(" "), _c('dd', {}, [_c('i', {
+    staticClass: "i2"
+  }), _vm._v(" "), _c('p', [_vm._v(" 免费wifi ")])]), _vm._v(" "), _c('dd', {
+    staticClass: "no"
+  }, [_c('i', {
+    staticClass: "i3"
+  }), _vm._v(" "), _c('p', [_vm._v(" 餐厅 ")])]), _vm._v(" "), _c('dd', {
+    staticClass: "no"
+  }, [_c('i', {
+    staticClass: "i7"
+  }), _vm._v(" "), _c('p', [_vm._v(" 健身房 ")])]), _vm._v(" "), _c('dd', {
+    staticClass: "no"
+  }, [_c('i', {
+    staticClass: "i5"
+  }), _vm._v(" "), _c('p', [_vm._v(" 游泳池 ")])]), _vm._v(" "), _c('dd', {
+    staticClass: "no"
+  }, [_c('i', {
+    staticClass: "i4"
+  }), _vm._v(" "), _c('p', [_vm._v(" 接机服务 ")])]), _vm._v(" "), _c('dd', {
+    staticClass: "no"
+  }, [_c('i', {
+    staticClass: "i6"
+  }), _vm._v(" "), _c('p', [_vm._v(" 会议室 ")])]), _vm._v(" "), _c('dd', {}, [_c('i', {
+    staticClass: "i8"
+  }), _vm._v(" "), _c('p', [_vm._v(" 免费行李寄存 ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "fac_txt"
+  }, [_c('div', {
+    staticClass: "fac_txtc"
+  }, [_c('div', {
+    staticClass: "fac_txtc_h"
+  }, [_c('p', [_vm._v("叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习")])])]), _vm._v(" "), _c('div', {
+    staticClass: "fac_more"
+  }, [_vm._v("查看更多")])])]), _vm._v(" "), _c('div', {
+    staticClass: "other"
+  }, [_c('dl', [_c('dt', [_vm._v("温馨提示")]), _vm._v(" "), _c('dd', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "dct_tit"
+  }, [_vm._v("入离通知：")]), _vm._v(" "), _c('span', {
+    staticClass: "dct_txt"
+  }, [_vm._v("  入住时间:12点以后,离店时间:14点以前   ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "intro"
+  }, [_c('div', {
+    staticClass: "tit"
+  }, [_vm._v("酒店简介")]), _vm._v(" "), _c('div', {
+    staticClass: "intro_con"
+  }, [_c('div', {
+    staticClass: "ht_txt clearfix"
+  }, [_c('div', {
+    staticClass: "dct_con"
+  }, [_c('span', {
+    staticClass: "dct_tit"
+  }, [_vm._v("开业时间：")]), _vm._v(" "), _c('span', {
+    staticClass: "dct_txt"
+  }, [_vm._v("2011-05-19")])]), _vm._v(" "), _c('div', {
+    staticClass: "dct_con"
+  }, [_c('span', {
+    staticClass: "dct_tit"
+  }, [_vm._v("装修时间：")]), _vm._v(" "), _c('span', {
+    staticClass: "dct_txt"
+  }, [_vm._v("2011-05-19")])])]), _vm._v(" "), _c('div', {
+    staticClass: "text_con_h"
+  }, [_c('div', {
+    staticClass: "text"
+  }, [_vm._v(" 阳光温特莱酒店国展店（原速8酒店北京国展柳芳店）位于北京市朝阳区香河园地区（柳芳北街），地处东直门交通枢纽及朝阳区三环枢纽的三元桥附近，紧邻中国国际展览中心（步行约600米），东邻机场高速公路1公里，南距东直门交通枢纽2公里，东直门机场快轨到首都机场只需20分钟，西邻地铁13号线（步行约10分钟），地理位置优越，交通便利。打车到地铁2号、5号、10号、13号线仅需10元。酒店毗邻燕莎购物中心、使馆区、农展馆、机场高速路和东直门交通枢纽， 酒店门口多条公交线路直达东直门交通枢纽、新国展中心、多个奥运场馆、北京火车站、王府井、天安门、前门、颐和园等处。酒店拥有104间温馨、干净、舒适的客房、提供免费停车位，数字有线电视、免费宽带上网、电子门锁及独立空调。现代化的设施，优质、友好的服务是您在北京商务旅行的理想选择。 "), _c('br'), _vm._v(" 　　酒店开业时间2011年05月01日，主楼高5层，客房总数104间（套）。 "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" 【温馨提示】 "), _c('br'), _vm._v(" 1、酒店提供一次性免费洗漱用具，需前台领取； "), _c('br'), _vm._v(" 2、酒店可以接待外宾； "), _c('br'), _vm._v(" 3、酒店提供免费停车场； "), _c('br'), _vm._v(" 4、前台免费领取一次性洗漱用品。 ")]), _vm._v(" "), _c('div', {
+    staticClass: "ht_dct clearfix"
+  }, [_c('span', {
+    staticClass: "dct_tit"
+  }, [_vm._v("支持卡种：")]), _vm._v(" "), _c('span', {
+    staticClass: "dct_txt"
+  }, [_vm._v("牡丹卡,金穗卡,长城卡,龙卡,太平洋卡,东方卡")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "fac_more"
+  }, [_vm._v("查看更多")])]), _vm._v(" "), _c('div', {
+    staticClass: "periphery"
+  }, [_c('div', {
+    staticClass: "tit"
+  }, [_vm._v("酒店周边")]), _vm._v(" "), _c('div', {
+    staticClass: "preiphety_con"
+  }, [_c('div', {
+    staticClass: "distance_lst clearfix"
+  }, [_c('div', {
+    staticClass: "prpy_icon"
+  }, [_c('i', {
+    staticClass: "dt_icons"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "prpy_distance"
+  }, [_c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("柳芳(13号线)")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离501米")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "distance_lst clearfix"
+  }, [_c('div', {
+    staticClass: "prpy_icon"
+  }, [_c('i', {
+    staticClass: "hcz_icons"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "prpy_distance"
+  }, [_c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("北京站")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离5.3公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("北京北站")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离6.7公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("北京东站")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离7.1公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("北京南站")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离10.7公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("北京西站")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离11.4公里")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "distance_lst clearfix"
+  }, [_c('div', {
+    staticClass: "prpy_icon"
+  }, [_c('i', {
+    staticClass: "jc_icons"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "prpy_distance"
+  }, [_c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("北京南苑机场")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离18.0公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("首都机场T3航站楼")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离19.4公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("首都机场T1航站楼")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离19.5公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("首都机场T2航站楼")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离19.7公里")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "distance_lst clearfix"
+  }, [_c('div', {
+    staticClass: "prpy_icon"
+  }, [_c('i', {
+    staticClass: "qcz_icons"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "prpy_distance"
+  }, [_c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("东直门长途汽车站")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离1.2公里")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "distance_lst clearfix"
+  }, [_c('div', {
+    staticClass: "prpy_icon"
+  }, [_c('i', {
+    staticClass: "jd_icons"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "prpy_distance"
+  }, [_c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("地坛公园")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离1.4公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("雍和宫")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离1.5公里")])]), _vm._v(" "), _c('p', {
+    staticClass: "clearfix"
+  }, [_c('span', {
+    staticClass: "ads_txt"
+  }, [_vm._v("五道营胡同")]), _vm._v(" "), _c('span', {
+    staticClass: "dtc_txt"
+  }, [_vm._v("直线距离1.9公里")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "btn_con"
+  }, [_c('a', {
+    staticClass: "btn",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("返回并继续预订")])])])])]), _vm._v(" "), _c('nav', {
+    staticClass: "bar record record-text",
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_vm._v("48小时内有86人预订")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -39302,29 +43139,19 @@ if (false) {
 }
 
 /***/ }),
-
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-
-  __webpack_require__(113)
+  __webpack_require__(104)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(115),
+  __webpack_require__(106),
   /* template */
-  __webpack_require__(116),
-
-  __webpack_require__(109)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(111),
-  /* template */
-  __webpack_require__(112),
-
+  __webpack_require__(107),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -39332,7 +43159,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\muse\\test.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\muse\\test.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] test.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -39356,27 +43183,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-
-var content = __webpack_require__(114);
-
-var content = __webpack_require__(110);
-
+var content = __webpack_require__(105);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("b08e4bd2", content, false);
+var update = __webpack_require__(2)("c31dda7e", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3aee9c85\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./test.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3aee9c85\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./test.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3aee9c85\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./test.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3aee9c85\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./test.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39386,21 +43209,21 @@ if(false) {
 }
 
 /***/ }),
-
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"test.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39420,7 +43243,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39469,20 +43292,19 @@ if (false) {
 }
 
 /***/ }),
-
-/* 113 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(114)
+  __webpack_require__(109)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(116),
+  __webpack_require__(111),
   /* template */
-  __webpack_require__(117),
+  __webpack_require__(112),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -39490,7 +43312,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\register.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\register.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -39514,23 +43336,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 114 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(115);
+var content = __webpack_require__(110);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("9b8a8334", content, false);
+var update = __webpack_require__(2)("5ef3af10", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./register.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./register.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./register.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./register.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39540,21 +43362,21 @@ if(false) {
 }
 
 /***/ }),
-/* 115 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n.content[data-v-961fa874] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-961fa874] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.col[data-v-961fa874] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-961fa874] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 70px;\n\tfont-size: 12px;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-961fa874] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-961fa874] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.col[data-v-961fa874] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-961fa874] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 70px;\n\tfont-size: 12px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/register.vue?ec2684aa"],"names":[],"mappings":";AA6EA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA,gBAAA;CACA","file":"register.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<h2>注册艺龙会员</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-raised-button @click=\"register()\" label=\"注册并登录\" class=\"demo-raised-button\" :disabled=\"!isChecking\" primary/>\r\n\t\t<p class=\"bottom\">\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" v-model=\"isChecking\" :value=\"!isChecking\"> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">同意艺龙旅行网服务条款</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" checked> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">授权艺龙发送优惠促销短信</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\r\n\t\t\t<!--<mu-checkbox label=\"授权艺龙发送优惠促销短信\" class=\"demo-checkbox\" /> <br/>-->\r\n\t\t</p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tisChecking: true,\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tregister() {\r\n\t\t\t\tconsole.log(this.username, this.password, this.$ajax)\r\n\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/register\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tif(res.data=\"注册成功\"){\r\n\t\t\t\t\t\tconsole.log(111)\r\n\t\t\t\t\t\t//明天这里继续\r\n\t\t\t\t\t\tcom.setCookie('login',\"true\")\r\n\t\t\t\t\t}\r\n\t\t\t\t\t\r\n\t\t\t\t})\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\t\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 70px;\r\n\t\tfont-size: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39639,7 +43461,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 117 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39797,19 +43619,19 @@ if (false) {
 }
 
 /***/ }),
-/* 118 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(119)
+  __webpack_require__(114)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(121),
+  __webpack_require__(116),
   /* template */
-  __webpack_require__(122),
+  __webpack_require__(117),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -39817,7 +43639,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\login.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -39841,23 +43663,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 119 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(120);
+var content = __webpack_require__(115);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("c5d30bdc", content, false);
+var update = __webpack_require__(2)("1a89fef0", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39867,21 +43689,21 @@ if(false) {
 }
 
 /***/ }),
-/* 120 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n.content[data-v-2601e556]{\n\tposition: relative;\n\tpadding-top:100px;\n\ttext-align: center;\n}\nh2[data-v-2601e556]{\n\tcolor:#7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-2601e556]{\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-2601e556]{\n\tcolor:#7e57c2;\n}\n.bottom[data-v-2601e556]{\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 40px;\n}\n", ""]);
+exports.push([module.i, "\n.content[data-v-2601e556]{\n\tposition: relative;\n\tpadding-top:100px;\n\ttext-align: center;\n}\nh2[data-v-2601e556]{\n\tcolor:#7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-2601e556]{\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-2601e556]{\n\tcolor:#7e57c2;\n}\n.bottom[data-v-2601e556]{\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 40px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/login.vue?7f3c287c"],"names":[],"mappings":";AAuBA;CACA,mBAAA;CACA,kBAAA;CACA,mBAAA;CACA;AACA;CACA,cAAA;CACA,oBAAA;CACA;AACA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AACA;CACA,cAAA;CACA;AACA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA","file":"login.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<a href=\"#/register\" class=\"register\">  <mu-flat-button label=\"注册\" class=\"demo-flat-button\" primary/></a>\r\n\t\t<h2>欢迎来到艺龙旅行</h2>\r\n\t\t<mu-text-field label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-raised-button label=\"登录\" class=\"demo-raised-button\" primary/>\r\n\t\t<p class = \"bottom\">注册登录代表你已同意 <span class=\"col\">《艺龙旅行网服务条款》</span></p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tvalue: '默认文字'\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content{\r\n\t\tposition: relative;\r\n\t\tpadding-top:100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\th2{\r\n\t\tcolor:#7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t.register{\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t.col{\r\n\t\tcolor:#7e57c2;\r\n\t}\r\n\t.bottom{\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 40px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39912,7 +43734,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 122 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39964,20 +43786,19 @@ if (false) {
 }
 
 /***/ }),
-/* 123 */
-
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(124)
+  __webpack_require__(119)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(126),
+  __webpack_require__(121),
   /* template */
-  __webpack_require__(127),
+  __webpack_require__(122),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -39985,7 +43806,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\buyCar.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\buyCar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] buyCar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40009,23 +43830,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 124 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(125);
+var content = __webpack_require__(120);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("db3839b8", content, false);
+var update = __webpack_require__(2)("a33fa8c8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2be44c5e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./buyCar.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2be44c5e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./buyCar.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2be44c5e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./buyCar.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2be44c5e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./buyCar.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40035,21 +43856,21 @@ if(false) {
 }
 
 /***/ }),
-/* 125 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"buyCar.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40062,7 +43883,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 127 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40077,19 +43898,19 @@ if (false) {
 }
 
 /***/ }),
-/* 128 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(129)
+  __webpack_require__(124)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(131),
+  __webpack_require__(126),
   /* template */
-  __webpack_require__(132),
+  __webpack_require__(127),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -40097,7 +43918,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\routes\\mySelf.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\mySelf.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mySelf.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40121,23 +43942,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 129 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(130);
+var content = __webpack_require__(125);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("28a76e10", content, false);
+var update = __webpack_require__(2)("a1cfacc8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40147,21 +43968,21 @@ if(false) {
 }
 
 /***/ }),
-/* 130 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(1)(true);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"mySelf.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40175,7 +43996,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 
 /***/ }),
-/* 132 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40190,19 +44011,15 @@ if (false) {
 }
 
 /***/ }),
-/* 133 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(134),
+  __webpack_require__(129),
   /* template */
-
-  __webpack_require__(118),
-
-  __webpack_require__(142),
-
+  __webpack_require__(137),
   /* styles */
   null,
   /* scopeId */
@@ -40210,7 +44027,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\router\\list.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\router\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40234,8 +44051,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-
-/* 134 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40245,24 +44061,19 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xheader = __webpack_require__(135);
+var _xheader = __webpack_require__(130);
 
 var _xheader2 = _interopRequireDefault(_xheader);
 
-var _xsearch = __webpack_require__(136);
+var _xsearch = __webpack_require__(131);
 
 var _xsearch2 = _interopRequireDefault(_xsearch);
 
-var _xlist = __webpack_require__(139);
-
-/***/ }),
-/* 100 */
-/***/ (function(module, exports, __webpack_require__) {
+var _xlist = __webpack_require__(134);
 
 var _xlist2 = _interopRequireDefault(_xlist);
 
-
-var _xfooter = __webpack_require__(140);
+var _xfooter = __webpack_require__(135);
 
 var _xfooter2 = _interopRequireDefault(_xfooter);
 
@@ -40290,7 +44101,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 135 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
@@ -40305,7 +44116,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xheader.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 
@@ -40313,15 +44124,15 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 136 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(137),
+  __webpack_require__(132),
   /* template */
-  __webpack_require__(138),
+  __webpack_require__(133),
   /* styles */
   null,
   /* scopeId */
@@ -40329,7 +44140,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xsearch.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xsearch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40353,7 +44164,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 137 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40418,7 +44229,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 138 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40512,7 +44323,7 @@ if (false) {
 }
 
 /***/ }),
-/* 139 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
@@ -40527,7 +44338,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xlist.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xlist.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 
@@ -40535,7 +44346,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 140 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -40543,7 +44354,7 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(141),
+  __webpack_require__(136),
   /* styles */
   null,
   /* scopeId */
@@ -40551,7 +44362,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xfooter.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xfooter.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfooter.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40575,68 +44386,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(104);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("a4921ace", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ddef396\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./test.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6ddef396\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./test.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(true);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"test.vue","sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/***/ }),
-
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40718,7 +44468,7 @@ if (false) {
 }
 
 /***/ }),
-
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40746,3 +44496,4 @@ if (false) {
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=bundle.js.map

@@ -175,7 +175,7 @@ var store = new Vuex.Store({
 new Vue({
 	el: "#demo",
 	template: `
-		<div>
+		<div style="height:100%">
 			<router-view></router-view>
 		</div>
 	`,
