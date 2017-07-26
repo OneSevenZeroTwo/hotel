@@ -1,19 +1,14 @@
 <template>
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
-			<div @click="showPic(imgArr[0])" class="swiper-slide"><img :src="imgArr[0]" alt="" /></div>
-			<div @click="showPic(imgArr[1])" class="swiper-slide"><img :src="imgArr[1]" alt="" /></div>
-			<div @click="showPic(imgArr[2])" class="swiper-slide"><img :src="imgArr[2]" alt="" /></div>
-			<div @click="showPic(imgArr[3])" class="swiper-slide"><img :src="imgArr[3]" alt="" /></div>
-			<div @click="showPic(imgArr[4])" class="swiper-slide"><img :src="imgArr[4]" alt="" /></div>
-			<div @click="showPic(imgArr[5])" class="swiper-slide"><img :src="imgArr[5]" alt="" /></div>
-			<div @click="showPic(imgArr[6])" class="swiper-slide"><img :src="imgArr[6]" alt="" /></div>
-			<div @click="showPic(imgArr[7])" class="swiper-slide"><img :src="imgArr[7]" alt="" /></div>
-			<div @click="showPic(imgArr[8])" class="swiper-slide"><img :src="imgArr[8]" alt="" /></div>
-			<div @click="showPic(imgArr[9])" class="swiper-slide"><img :src="imgArr[9]" alt="" /></div>
+			<div  class="swiper-slide"><img :src="'http:'+imgArr[0]" alt="" /></div>
+			<div  class="swiper-slide"><img :src="'http:'+imgArr[1]" alt="" /></div>
+			<div  class="swiper-slide"><img :src="'http:'+imgArr[2]" alt="" /></div>
+			<div  class="swiper-slide"><img :src="'http:'+imgArr[3]" alt="" /></div>
+			<div  class="swiper-slide"><img :src="'http:'+imgArr[4]" alt="" /></div>
 		</div>
 		<!-- Add Pagination -->
-		<div class="swiper-pagination"></div>
+		<!--<div class="swiper-pagination"></div>-->
 	</div>
 </template>
 
@@ -21,15 +16,16 @@
 	export default {
 		data: function() {
 			return {
-				imgArr: ["images/4.jpg", "images/5.jpg", "images/1.jpg", "images/2.jpg", "images/3.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg"]
+////				this.$store.state.detailNews.pics
+//				imgArr: [/*"http://pavo.elongstatic.com/i/hotel750_360/00050lJq.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDnN.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDnM.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDhO.jpg", "http://pavo.elongstatic.com/i/hotel750_360/0000aDhA.jpg"*/]
 
 			}
 		},
 		methods: {
-			showPic(imgUrl) {
-				this.$store.state.imgUrl = imgUrl
-				this.$store.state.galleryIsShow = true;
-			}
+//			showPic(imgUrl) {
+//				this.$store.state.imgUrl = this.$store.state.detailNews.pics
+////				this.$store.state.galleryIsShow = true;
+//			}
 		},
 		mounted: function() {
 			var swiper = new Swiper('.swiper-container', {
@@ -38,6 +34,13 @@
 				autoplay: 2500,
 				autoplayDisableOnInteraction: false
 			});
+			console.log(this.imgArr)
+		},
+		computed:{
+			imgArr(){
+				console.log(this.$store.state.imgArr)
+				return this.$store.state.imgArr
+			}
 		}
 	}
 </script>
@@ -70,7 +73,7 @@
 	
 	.swiper-slide img {
 		width: 100%;
-		height: 200px;
+		height: 180px;
 	}
 	
 	.weui-panel__bd {

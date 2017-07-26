@@ -1,4 +1,5 @@
 import "./css/font_mdye6150zyyzaor/iconfont.css"
+// import "./css/hotel.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
@@ -13,7 +14,9 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
 import $ from "jquery";
 window.$ = window.jQuery = $
-
+import com from "./js/common.js"
+window.com =com
+console.log(com.randomNum(1,10))
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
 Vue.use(Vuex);
@@ -39,7 +42,12 @@ import topics from "./components/routes/topics.vue"
 import good from "./components/routes/good.vue"
 import detail from "./components/routes/detail.vue"
 import muse from "./components/muse/test.vue"
-
+import xregister from "./components/routes/register.vue"
+import xlogin from "./components/routes/login.vue"
+import xbuyCar from "./components/routes/buyCar.vue"
+import xmySelf from "./components/routes/mySelf.vue"
+//详情页路由
+import list from "./components/list/router/list.vue"
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -76,14 +84,44 @@ var routes = [{
 	},
 	{
 		//路由名
+		path: '/register',
+		//上面定义好的路由扔进来
+		component: xregister
+	},
+	{
+		//路由名
+		path: '/login',
+		//上面定义好的路由扔进来
+		component: xlogin
+	},
+	{
+		//路由名
+		path: '/buyCar',
+		//上面定义好的路由扔进来
+		component: xbuyCar
+	},
+	{
+		//路由名
+		path: '/mySelf',
+		//上面定义好的路由扔进来
+		component: xmySelf
+	},
+	{
+		//路由名
 		path: '/muse',
 		//上面定义好的路由扔进来
 		component: muse
 	},
+	//列表页开始
 	{
-		//重定向，没有路由时页面默认加载/index/topics路由
+		path:'/list',
+		component:list
+	},
+	//列表页结束
+	{
+		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/index/topics'
+		redirect: '/detail/'
 	}
 ]
 
@@ -99,7 +137,9 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		new:""
+		news:"",
+		detailNews:null,
+		imgArr:[]
 	},
 	getters: {
 		getCount(state) {
@@ -111,14 +151,8 @@ var store = new Vuex.Store({
 		settitle(state, data) {
 			state.title = data
 		},
-		setNews(state) {
-			axios.get('https://cnodejs.org/api/v1//topics')
-				.then((response) => {
-					state.news = response.data.data
-				})
-				.catch((error) => {
-					console.log(error);
-				});
+		detailNews(state, data){
+			state.detailNews = data
 		},
 		searchVal(state, val) {
 			console.log('mutations执行')
@@ -129,8 +163,8 @@ var store = new Vuex.Store({
 		setChange(context, data) {
 			context.commit('settitle', data)
 		},
-		setNews(context, data) {
-			context.commit('setNews')
+		detailNews(context, data) {
+			context.commit('detailNews')
 		},
 		searchVal(context, val) {
 			console.log('actions执行')
