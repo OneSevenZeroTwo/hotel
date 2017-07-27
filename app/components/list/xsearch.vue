@@ -2,8 +2,8 @@
 	<div class="search-field showout">
 		<div class="header-search">
 			<div class="sea-date">
-				<p>入<span>店</span>：<b class="indate" data-value="2017-07-25">07-25</b></p>
-				<p>离<span>店</span>：<b class="outdate" data-value="2017-07-26">07-26</b></p>
+				<p>入<span>店</span>：<b class="indate" data-value="2017-07-26">07-26</b></p>
+				<p>离<span>店</span>：<b class="outdate" data-value="2017-07-27">07-27</b></p>
 				<span class="total">1晚<i></i></span>
 			</div>
 			<div class="sea-box tjclick" data-tj="{&quot;cspot&quot;:&quot;searchbar&quot;}">
@@ -14,15 +14,15 @@
 		</div>
 		<div class="quick-search-box">
 			<div class="quick-search">
-			<div class="kslist">
-				<div class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">房型筛选</div>
-				<div class="commons sale-title tjclick" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">优惠</div>
-			</div>
-			<ul class="quick-search-list">
-				<li class="quick-search-item tjclick " data-id="100000002" data-tid="1100" data-uid="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}" data-keyword="到店付">到店付</li>
-				<li class="quick-search-item tjclick " data-id="139" data-tid="1100" data-uid="101" data-tj="{&quot;cspot&quot;:&quot;freeCancellation&quot;}" data-keyword="免费取消">免费取消</li>
-				<li class="quick-search-item tjclick " data-id="141" data-tid="1100" data-uid="102" data-tj="{&quot;cspot&quot;:&quot;instantConfirm&quot;}" data-keyword="立即确认">立即确认</li>
-			</ul>
+				<div class="kslist">
+					<div class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">房型筛选</div>
+					<div class="commons sale-title tjclick unon" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">优惠</div>
+				</div>
+				<ul class="quick-search-list">
+					<li class="quick-search-item tjclick " data-id="100000002" data-tid="1100" data-uid="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}" data-keyword="到店付">到店付</li>
+					<li class="quick-search-item tjclick " data-id="139" data-tid="1100" data-uid="101" data-tj="{&quot;cspot&quot;:&quot;freeCancellation&quot;}" data-keyword="免费取消">免费取消</li>
+					<li class="quick-search-item tjclick " data-id="141" data-tid="1100" data-uid="102" data-tj="{&quot;cspot&quot;:&quot;instantConfirm&quot;}" data-keyword="立即确认">立即确认</li>
+				</ul>
 			</div>
 		</div>
 	</div>
