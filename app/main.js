@@ -1,5 +1,5 @@
-import "./css/font_mdye6150zyyzaor/iconfont.css"
-// import "./css/hotel.css"
+import "../public/css/font_mdye6150zyyzaor/iconfont.css"
+
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"

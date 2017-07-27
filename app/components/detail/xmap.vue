@@ -1,6 +1,6 @@
 <template>
 	<div class="qqqqqq">
-		
+
 		<!--酒店地址-->
 		<li class="info_mn">
 			<div class="col_tb">
@@ -15,7 +15,7 @@
 			<div class="right">
 				<div class="map_c">
 					<div id="l-map"></div>
-					<img @click="maps()" width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=39.889966,116.269147&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
+					<img width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=39.889966,116.269147&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
 					<i class="map_icons"></i>
 				</div>
 			</div>
@@ -26,7 +26,7 @@
 <script>
 	// 百度地图API功能
 	export default {
-		methods: {
+		/*methods: {
 			test() {
 				console.log(111111)
 				$("#l-map").css('height', "100%")
@@ -61,15 +61,15 @@
 					transit.search(start, end);
 				}
 			})();
-		}
+		}*/
 	}
 </script>
 <style scoped>
-	#l-map {
+	/*#l-map {
 		position: absolute;
 		width: 100%;
 		height: 15%;
 		top: 195px;
 		border: 1px solid #999;
-	}
+	}*/
 </style>
