@@ -17,12 +17,14 @@ window.$ = window.jQuery = $
 import com from "./js/common.js"
 window.com = com
 console.log(com.randomNum(1, 10))
+
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
+
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
-//挂载axios在Vue构造器下
+	//挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
 
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
@@ -69,45 +71,38 @@ var routes = [{
 			}, {
 				path: 'good',
 				component: good,
-			},
-			{
+			}, {
 				path: 'topics',
 				component: topics,
 			},
 
 		]
-	},
-	{
+	}, {
 		//路由名
-		path: '/detail/:id',
+		path: '/detail',
 		//上面定义好的路由扔进来
 		component: detail
-	},
-	{
+	}, {
 		//路由名
 		path: '/register',
 		//上面定义好的路由扔进来
 		component: xregister
-	},
-	{
+	}, {
 		//路由名
 		path: '/login',
 		//上面定义好的路由扔进来
 		component: xlogin
-	},
-	{
+	}, {
 		//路由名
 		path: '/buyCar',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	},
-	{
+	}, {
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来
 		component: xmySelf
-	},
-	{
+	}, {
 		//路由名
 		path: '/muse',
 		//上面定义好的路由扔进来
@@ -138,11 +133,17 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
+		isLogin:false,
+		direction: 'left',
 		news: "",
 		detailNews: null,
-		direction: 'left',
+		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
+			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
+		]
 
-		imgArr: []
 	},
 	getters: {
 		getCount(state) {

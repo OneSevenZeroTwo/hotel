@@ -31,13 +31,15 @@
 <script>
 	export default {
 		data:function(){
+			return {
 
+			}
 		},
 		computed:{
 
 		},
 		mothods:{
-			automaticRequest:function(){
+			automaticrequest:function(){
 				this.$ajax({
 					url:"http://localhost:3000/list",
 					params: {
@@ -49,12 +51,12 @@
 					console.log(res)
 					// this.arr = this.arr.concat(res.data.data)
 					// this.isLoading = true
-				})
+				}).bind(this)
 
 			}
 		},
 		mounted:function(){
-			this.automaticRequest()
+			// this.automaticrequest()
 		}
 	}
 </script>
