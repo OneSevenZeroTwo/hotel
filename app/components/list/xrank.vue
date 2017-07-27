@@ -1,6 +1,6 @@
 //排序
 <template>
-	<div class="slide-selector plugin-inited">
+	<div :class="['slide-selector','plugin-inited',{'selector-active':defaultbtn},{'plugin-show':defaultbtn}]">
 		<header class="bar-nav" style="display: none;">
 			<div class="radio-title">
 				<span class="title">排序</span>
@@ -66,3 +66,21 @@
 		<div class="describe" style="display: none;"></div>
 	</div>
 </template>
+
+<script>
+	export default {
+		data:function(){
+			return {
+
+			}
+		},
+		methods:{
+
+		},
+		computed:{
+			defaultbtn:function(){
+				return this.$store.state.defaultbtn
+			}
+		}
+	}
+</script>

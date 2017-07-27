@@ -1,7 +1,7 @@
 //筛选侧边栏
 <template>
-	<div class="list-pop-fliter shaixuan plugin-inited page-plugin page-on-right">
-		<header class="bar bar-nav flight-order-head">
+	<div :class="['list-pop-fliter','shaixuan','plugin-inited','page-plugin',{'page-on-center':tit},{'page-on-right':!tit},{'plugin-show':tit}]">
+		<header @click="iconbackclick()" class="bar bar-nav flight-order-head">
 			<a class="icon pull-left icon-back"></a>
 			<div class="title">筛选</div>
 		</header>
@@ -100,3 +100,27 @@
 		</div>
 	</div>
 </template>
+
+<script>
+	export default {
+		data:function(){
+			return {
+
+			}
+		},
+		methods:{
+			//点击header返回
+			iconbackclick:function(){
+				this.$store.state.tit = false;
+			}
+		},
+		computed:{
+			tit:function(){
+				return this.$store.state.tit
+			}
+		},
+		mounted:function(){
+
+		}
+	}
+</script>
