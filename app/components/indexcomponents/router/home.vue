@@ -3,7 +3,7 @@
 		<xheader></xheader>
 		<xsearch></xsearch>
 		<xoption></xoption>
-		<!--<xsidebar></xsidebar>-->
+		<xsidebar></xsidebar>
 		<!--<baidu></baidu>-->
 	</div>
 </template>
@@ -12,7 +12,7 @@
 	import xheader from "../xheader.vue";
 	import xsearch from "../xsearch.vue";
 	import xoption from "../xoption.vue";
-//	import xsidebar from "../xsidebar.vue";
+	import xsidebar from "../xsidebar.vue";
 	
 	
 //	import baidu from "../baidu.vue";
@@ -23,7 +23,7 @@
 			xheader,
 			xsearch,
 			xoption,
-//			xsidebar
+			xsidebar
 //			baidu
 		}
 		

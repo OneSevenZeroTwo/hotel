@@ -16079,6 +16079,10 @@ var _axios = __webpack_require__(28);
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _animate = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"animate\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _animate2 = _interopRequireDefault(_animate);
+
 var _vueAwesomeSwiper = __webpack_require__(47);
 
 var _vueAwesomeSwiper2 = _interopRequireDefault(_vueAwesomeSwiper);
@@ -16145,7 +16149,7 @@ var _home = __webpack_require__(178);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _list = __webpack_require__(196);
+var _list = __webpack_require__(201);
 
 var _list2 = _interopRequireDefault(_list);
 
@@ -16153,17 +16157,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //轮播图
 
+//axios的ajax封装库
+
+//引入路由
+window.$ = window.jQuery = _jquery2.default;
+//可以引入jquery，但是要把它设置为全局变量。
+
+//动画
+
 //引入vuex状态管理
 
 // import "./css/hotel.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
-window.$ = window.jQuery = _jquery2.default;
-//可以引入jquery，但是要把它设置为全局变量。
-
-//axios的ajax封装库
-
-//引入路由
 
 window.com = _common2.default;
 console.log(_common2.default.randomNum(1, 10));
@@ -16266,6 +16272,7 @@ var router = new _vueRouter2.default({
 var store = new _vuex2.default.Store({
 	state: {
 		imgUrl: null,
+		aaa: '广州市',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
@@ -46807,7 +46814,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(179),
   /* template */
-  __webpack_require__(195),
+  __webpack_require__(200),
   /* styles */
   null,
   /* scopeId */
@@ -46861,33 +46868,36 @@ var _xoption = __webpack_require__(190);
 
 var _xoption2 = _interopRequireDefault(_xoption);
 
+var _xsidebar = __webpack_require__(195);
+
+var _xsidebar2 = _interopRequireDefault(_xsidebar);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//	import xsidebar from "../xsidebar.vue";
-
 
 //	import baidu from "../baidu.vue";
 
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
 	components: {
 		xheader: _xheader2.default,
 		xsearch: _xsearch2.default,
-		xoption: _xoption2.default
-		//			xsidebar
+		xoption: _xoption2.default,
+		xsidebar: _xsidebar2.default
 		//			baidu
 	}
 
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 /* 180 */
@@ -46968,7 +46978,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.swiper-slide img[data-v-1e27a00c] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xheader.vue?4c156164"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.swiper-slide img[data-v-1e27a00c] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xheader.vue?6ad04517"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>-->\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -47123,20 +47133,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "4"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.newArr[3],
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('div', {
     staticClass: "swiper-slide swiper-slide-prev swiper-slide-duplicate-next",
     staticStyle: {
       "width": "100%",
@@ -47269,7 +47265,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*@import \"css/header.css\";\n@import \"css/header2.css\";*/\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.validate-code-by-intercept {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 50%;\n\tmargin-top: -120px;\n\tmargin-left: -153px;\n\tpadding-top: 10px;\n\theight: 220px;\n\twidth: 306px;\n\tz-index: 15000;\n\tbackground-color: #fff;\n\ttext-align: center;\n\tfont-size: 16px;\n\tfont-weight: 700;\n\tcolor: #353535\n}\n\n.validate-code-by-intercept .form-li {\n\tclear: both;\n\theight: 44px;\n\tline-height: 44px;\n\tmargin: 3px 12px\n}\n\n.validate-code-by-intercept .form-li2 {\n\toverflow: hidden;\n\tborder-radius: 5px;\n\tborder: 1px solid #ddd;\n\tbackground-clip: padding-box;\n\tmargin-bottom: 10px\n}\n\n.validate-code-by-intercept input.txt {\n\twidth: 100%;\n\tpadding: 11px 10px 11px 13px;\n\tdisplay: block;\n\tmargin: 0;\n\tborder: 0;\n\tbackground: 0;\n\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\n}\n\n.validate-code-by-intercept .submit {\n\tfont-size: 1.1rem;\n\twidth: 100%;\n\theight: 40px;\n\tline-height: 40px;\n\ttext-align: center;\n\tcolor: #fff;\n\tborder-radius: 5px;\n\tborder-width: 0;\n\tbackground-color: #e65749;\n\tmargin: 0 0 10px\n}\n\n.search-wrap {\n\tmargin-bottom: 12px;\n\tborder: 1px solid #DDD;\n\tbackground: #FFF;\n}\n\n.search-wrap .search-list {\n\tpadding: 0 12px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-list li {\n\tpadding: 6px 0;\n\tborder-bottom: 1px solid #DDD;\n\tposition: relative;\n\tmin-height: 26px;\n}\n\n.search-wrap .search-list li.addr {\n\tmargin-top: 12px;\n}\n\n.search-wrap .search-list li.date {\n\tfont-size: .688rem;\n\tline-height: 16px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-btn {\n\twidth: 100%;\n\tmargin: 0 auto;\n\tbackground: #49f;\n\theight: 36px;\n\tline-height: 36px;\n\tfont-size: 10px;\n\tcolor: #FFF;\n\ttext-align: center;\n\tborder-radius: 4px;\n}\n\n.search-wrap .search-btn i {\n\tposition: relative;\n\ttop: 7px;\n\tleft: -6px;\n}\n\n.search-wrap .search-list li i:first-child {\n\twidth: 16px;\n\theight: 16px;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 50%;\n\tmargin-top: -10px;\n\tfont-size: .9rem;\n\tmargin-left: 8px;\n\tline-height: 21px;\n\tcolor: #999;\n}\n\n.search-wrap .search-list li.addr p {\n\tline-height: 21px;\n\toverflow: hidden;\n\tpadding-right: 20px;\n\tmargin-left: 30px;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\tfont-size: -0.937rem;\n}\n\n.search-wrap .search-list li.addr .right {\n\tposition: absolute;\n\tright: 10px;\n\ttext-align: center;\n\tcolor: #49f;\n\ttop: 50%;\n\tfont-size: .7rem;\n\tfont-weight: normal;\n\tline-height: 1;\n\tmargin-top: -8px;\n}\n\n.search-wrap .search-list li.addr .right i {\n\twidth: 14px;\n\theight: 16px;\n\tdisplay: inline-block;\n\tposition: relative;\n\tmargin: 0;\n\tvertical-align: -3px;\n}*/\nbody[data-v-7df01da7],\nhtml[data-v-7df01da7],\n#allmap[data-v-7df01da7] {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n\tmargin: 0;\n\tbackground-color: #F2F2F2;\n\tfont-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xsearch.vue?248e94c7"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmMA;4BACA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4JA;AAEA;;;CAGA,YAAA;CACA,aAAA;CACA,iBAAA;CACA,UAAA;CACA,0BAAA;CACA,oCAAA;CACA","file":"xsearch.vue","sourcesContent":["<template>\r\n\r\n\t<div class=\"page-content page-search\" style=\"\">\r\n\t\t<div class=\"search-wrap\">\r\n\t\t\t<div class=\"search-lb\">\r\n\t\t\t\t<ul class=\"search-list\">\r\n\t\t\t\t\t<li class=\"addr\">\r\n\t\t\t\t\t\t<i class=\"addr\"></i>\r\n\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"toggle()\">{{aa}}</p>\r\n\t\t\t\t\t\t<mu-drawer :open=\"open\" :docked=\"docked\" @close=\"toggle()\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<mu-list @itemClick=\"docked ? '' : toggle()\">\r\n\t\t\t\t\t\t\t\t<div class=\"advance-city plugin-inited page-plugin plugin-show page-on-center\" style=\"position: fixed;\">\r\n\t\t\t\t\t\t\t\t\t<header class=\"bar bar-nav flight-order-head\">\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"icon pull-left icon-back\"></a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-input\"><i class=\"icon-search\"></i><input type=\"input\" value=\"\" placeholder=\"请输入城市名、行政区或景区\"></div>\r\n\t\t\t\t\t\t\t\t\t</header>\r\n\t\t\t\t\t\t\t\t\t<div class=\"page-content page-select\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"current-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\"></div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"get-city\"><i class=\"icon-position\"></i>点击获取当前城市</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-history\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">搜索历史</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>北京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0539\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>曹妃甸区</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>上海</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"hot-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">热门城市</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"on\"><span>北京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>上海</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2001\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>广州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>杭州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2003\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>深圳</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1801\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>武汉</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>成都</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2701\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>西安</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>南京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0401\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>重庆</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1901\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>长沙</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1401\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>厦门</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>天津</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"3201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>香港</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1001\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>哈尔滨</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1701\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>郑州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1102\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>苏州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>合肥</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1602\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>济南</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>三亚</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"all-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">全部城市</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"letter-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li >A</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>B</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>C</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>D</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>E</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">F</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>G</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>H</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>J</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>K</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>L</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">M</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>N</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>P</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Q</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>R</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>S</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">T</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>W</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>X</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Y</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Z</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mu-list-item v-if=\"docked\" @click.native=\"open = false\" title=\"Close\"/>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"city-list-ul\"></ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"page-content page-search\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<ul></ul>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"inner-mask\"></div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<!--<mu-list-item v-if=\"docked\" @click.native=\"open = false\" title=\"Close\" />-->\r\n\t\t\t\t\t\t\t</mu-list>\r\n\t\t\t\t\t\t</mu-drawer>\r\n\r\n\t\t\t\t\t\t<i class=\"icon-left\" style=\"right:92px\"></i>\r\n\t\t\t\t\t\t<b class=\"right isnearby tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}\" @click=\"baidu\"><i class=\"icon-nearby\" ></i><span>我的位置</span></b>\r\n\t\t\t\t\t\t<div id=\"allmap\"></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"date\">\r\n\t\t\t\t\t\t<i class=\"icon-time\"></i>\r\n\t\t\t\t\t\t<div class=\"d1 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">入住<span class=\"night\" style=\"display: none;\">深夜</span></p>\r\n\t\t\t\t\t\t\t<p><span class=\"indate\" data-value=\"2017-07-27\">07月27日</span><span class=\"startweek\">明天</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d2\"></div>\r\n\t\t\t\t\t\t<div class=\"d3 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkoutdate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">离店</p>\r\n\t\t\t\t\t\t\t<p><span class=\"outdate\" data-value=\"2017-07-30\">07月30日</span><span class=\"endweek\">周日</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d4 total\">3晚</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"name\">\r\n\t\t\t\t\t\t<!--输入内容添加on-->\r\n\t\t\t\t\t\t<div class=\"sea-box\">\r\n\t\t\t\t\t\t\t<i class=\"name\"></i>\r\n\t\t\t\t\t\t\t<input type=\"input\" value=\"\" placeholder=\"酒店名称/位置不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"pri\">\r\n\t\t\t\t\t\t<div class=\"price-star-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<i class=\"pri\"></i>\r\n\t\t\t\t\t\t\t<input class=\"title-phone\" type=\"input\" value=\"\" placeholder=\"价格星级不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"search-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\"><i></i>搜索</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tbottomNav: 'recents',\r\n\t\t\t\taa: '北京市',\r\n\t\t\t\topen: false,\r\n\t\t\t\tdocked: true\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\thandleChange(val) {\r\n\t\t\t\tthis.bottomNav = val\r\n\t\t\t},\r\n\t\t\tbaidu() {\r\n\t\t\t\t// 百度地图API功能\r\n\r\n\t\t\t\tvar baidis = this\r\n\t\t\t\tvar map = new BMap.Map(\"allmap\");\r\n\t\t\t\tvar point = new BMap.Point(116.331398, 39.897445);\r\n\t\t\t\tmap.centerAndZoom(point, 12);\r\n\r\n\t\t\t\tfunction myFun(result) {\r\n\t\t\t\t\tvar cityName = result.name;\r\n\t\t\t\t\tmap.setCenter(cityName);\r\n\t\t\t\t\tconsole.log(baidis)\r\n\t\t\t\t\t//\t\t\t\t \talert(\"当前定位城市:\" + cityName);\r\n\t\t\t\t\tbaidis.aa = cityName\r\n\r\n\t\t\t\t}\r\n\t\t\t\tvar myCity = new BMap.LocalCity();\r\n\t\t\t\tmyCity.get(myFun);\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t},\r\n\t\t\ttoggle(flag) {\r\n\t\t\t\tthis.open = !this.open\r\n\t\t\t\tthis.docked = !flag\r\n\t\t\t}\r\n\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//\t\t\t\t\tthis.baidu()\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped=\"\">\r\n\t/*@import \"css/header.css\";\r\n\t@import \"css/header2.css\";*/\r\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept {\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\tmargin-top: -120px;\r\n\t\tmargin-left: -153px;\r\n\t\tpadding-top: 10px;\r\n\t\theight: 220px;\r\n\t\twidth: 306px;\r\n\t\tz-index: 15000;\r\n\t\tbackground-color: #fff;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 16px;\r\n\t\tfont-weight: 700;\r\n\t\tcolor: #353535\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li {\r\n\t\tclear: both;\r\n\t\theight: 44px;\r\n\t\tline-height: 44px;\r\n\t\tmargin: 3px 12px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li2 {\r\n\t\toverflow: hidden;\r\n\t\tborder-radius: 5px;\r\n\t\tborder: 1px solid #ddd;\r\n\t\tbackground-clip: padding-box;\r\n\t\tmargin-bottom: 10px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept input.txt {\r\n\t\twidth: 100%;\r\n\t\tpadding: 11px 10px 11px 13px;\r\n\t\tdisplay: block;\r\n\t\tmargin: 0;\r\n\t\tborder: 0;\r\n\t\tbackground: 0;\r\n\t\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .submit {\r\n\t\tfont-size: 1.1rem;\r\n\t\twidth: 100%;\r\n\t\theight: 40px;\r\n\t\tline-height: 40px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #fff;\r\n\t\tborder-radius: 5px;\r\n\t\tborder-width: 0;\r\n\t\tbackground-color: #e65749;\r\n\t\tmargin: 0 0 10px\r\n\t}\r\n\t\r\n\t.search-wrap {\r\n\t\tmargin-bottom: 12px;\r\n\t\tborder: 1px solid #DDD;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list {\r\n\t\tpadding: 0 12px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li {\r\n\t\tpadding: 6px 0;\r\n\t\tborder-bottom: 1px solid #DDD;\r\n\t\tposition: relative;\r\n\t\tmin-height: 26px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.date {\r\n\t\tfont-size: .688rem;\r\n\t\tline-height: 16px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn {\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t\tbackground: #49f;\r\n\t\theight: 36px;\r\n\t\tline-height: 36px;\r\n\t\tfont-size: 10px;\r\n\t\tcolor: #FFF;\r\n\t\ttext-align: center;\r\n\t\tborder-radius: 4px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn i {\r\n\t\tposition: relative;\r\n\t\ttop: 7px;\r\n\t\tleft: -6px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li i:first-child {\r\n\t\twidth: 16px;\r\n\t\theight: 16px;\r\n\t\tdisplay: block;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tmargin-top: -10px;\r\n\t\tfont-size: .9rem;\r\n\t\tmargin-left: 8px;\r\n\t\tline-height: 21px;\r\n\t\tcolor: #999;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr p {\r\n\t\tline-height: 21px;\r\n\t\toverflow: hidden;\r\n\t\tpadding-right: 20px;\r\n\t\tmargin-left: 30px;\r\n\t\twhite-space: nowrap;\r\n\t\ttext-overflow: ellipsis;\r\n\t\tfont-size: -0.937rem;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right {\r\n\t\tposition: absolute;\r\n\t\tright: 10px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #49f;\r\n\t\ttop: 50%;\r\n\t\tfont-size: .7rem;\r\n\t\tfont-weight: normal;\r\n\t\tline-height: 1;\r\n\t\tmargin-top: -8px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right i {\r\n\t\twidth: 14px;\r\n\t\theight: 16px;\r\n\t\tdisplay: inline-block;\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tvertical-align: -3px;\r\n\t}*/\r\n\t\r\n\tbody,\r\n\thtml,\r\n\t#allmap {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\toverflow: hidden;\r\n\t\tmargin: 0;\r\n\t\tbackground-color: #F2F2F2;\r\n\t\tfont-family: \"微软雅黑\";\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*@import \"css/header.css\";\n@import \"css/header2.css\";*/\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.validate-code-by-intercept {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 50%;\n\tmargin-top: -120px;\n\tmargin-left: -153px;\n\tpadding-top: 10px;\n\theight: 220px;\n\twidth: 306px;\n\tz-index: 15000;\n\tbackground-color: #fff;\n\ttext-align: center;\n\tfont-size: 16px;\n\tfont-weight: 700;\n\tcolor: #353535\n}\n\n.validate-code-by-intercept .form-li {\n\tclear: both;\n\theight: 44px;\n\tline-height: 44px;\n\tmargin: 3px 12px\n}\n\n.validate-code-by-intercept .form-li2 {\n\toverflow: hidden;\n\tborder-radius: 5px;\n\tborder: 1px solid #ddd;\n\tbackground-clip: padding-box;\n\tmargin-bottom: 10px\n}\n\n.validate-code-by-intercept input.txt {\n\twidth: 100%;\n\tpadding: 11px 10px 11px 13px;\n\tdisplay: block;\n\tmargin: 0;\n\tborder: 0;\n\tbackground: 0;\n\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\n}\n\n.validate-code-by-intercept .submit {\n\tfont-size: 1.1rem;\n\twidth: 100%;\n\theight: 40px;\n\tline-height: 40px;\n\ttext-align: center;\n\tcolor: #fff;\n\tborder-radius: 5px;\n\tborder-width: 0;\n\tbackground-color: #e65749;\n\tmargin: 0 0 10px\n}\n\n.search-wrap {\n\tmargin-bottom: 12px;\n\tborder: 1px solid #DDD;\n\tbackground: #FFF;\n}\n\n.search-wrap .search-list {\n\tpadding: 0 12px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-list li {\n\tpadding: 6px 0;\n\tborder-bottom: 1px solid #DDD;\n\tposition: relative;\n\tmin-height: 26px;\n}\n\n.search-wrap .search-list li.addr {\n\tmargin-top: 12px;\n}\n\n.search-wrap .search-list li.date {\n\tfont-size: .688rem;\n\tline-height: 16px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-btn {\n\twidth: 100%;\n\tmargin: 0 auto;\n\tbackground: #49f;\n\theight: 36px;\n\tline-height: 36px;\n\tfont-size: 10px;\n\tcolor: #FFF;\n\ttext-align: center;\n\tborder-radius: 4px;\n}\n\n.search-wrap .search-btn i {\n\tposition: relative;\n\ttop: 7px;\n\tleft: -6px;\n}\n\n.search-wrap .search-list li i:first-child {\n\twidth: 16px;\n\theight: 16px;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 50%;\n\tmargin-top: -10px;\n\tfont-size: .9rem;\n\tmargin-left: 8px;\n\tline-height: 21px;\n\tcolor: #999;\n}\n\n.search-wrap .search-list li.addr p {\n\tline-height: 21px;\n\toverflow: hidden;\n\tpadding-right: 20px;\n\tmargin-left: 30px;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\tfont-size: -0.937rem;\n}\n\n.search-wrap .search-list li.addr .right {\n\tposition: absolute;\n\tright: 10px;\n\ttext-align: center;\n\tcolor: #49f;\n\ttop: 50%;\n\tfont-size: .7rem;\n\tfont-weight: normal;\n\tline-height: 1;\n\tmargin-top: -8px;\n}\n\n.search-wrap .search-list li.addr .right i {\n\twidth: 14px;\n\theight: 16px;\n\tdisplay: inline-block;\n\tposition: relative;\n\tmargin: 0;\n\tvertical-align: -3px;\n}*/\nbody[data-v-7df01da7],\nhtml[data-v-7df01da7],\n#allmap[data-v-7df01da7] {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n\tmargin: 0;\n\tbackground-color: #F2F2F2;\n\tfont-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xsearch.vue?032f0e61"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4GA;4BACA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4JA;AAEA;;;CAGA,YAAA;CACA,aAAA;CACA,iBAAA;CACA,UAAA;CACA,0BAAA;CACA,oCAAA;CACA","file":"xsearch.vue","sourcesContent":["<template>\r\n\r\n\t<div class=\"page-content page-search\" style=\"\">\r\n\t\t<div class=\"search-wrap\">\r\n\t\t\t<div class=\"search-lb\">\r\n\t\t\t\t<ul class=\"search-list\">\r\n\t\t\t\t\t<li class=\"addr\">\r\n\t\t\t\t\t\t<i class=\"addr\"></i>\r\n\t\t\t\t\t\t<div v-if=\"not==true\">\r\n\t\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"changetion()\">{{search}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div v-else>\r\n\t\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"changetion()\">{{aa}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\" style=\"right:92px\"></i>\r\n\t\t\t\t\t\t<b class=\"right isnearby tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}\" @click=\"baidu\"><i class=\"icon-nearby\" ></i><span>我的位置</span></b>\r\n\t\t\t\t\t\t<div id=\"allmap\"></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"date\">\r\n\t\t\t\t\t\t<i class=\"icon-time\"></i>\r\n\t\t\t\t\t\t<div class=\"d1 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">入住<span class=\"night\" style=\"display: none;\">深夜</span></p>\r\n\t\t\t\t\t\t\t<p><span class=\"indate\" data-value=\"2017-07-27\">07月27日</span><span class=\"startweek\">明天</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d2\"></div>\r\n\t\t\t\t\t\t<div class=\"d3 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkoutdate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">离店</p>\r\n\t\t\t\t\t\t\t<p><span class=\"outdate\" data-value=\"2017-07-30\">07月30日</span><span class=\"endweek\">周日</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d4 total\">3晚</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"name\">\r\n\t\t\t\t\t\t<!--输入内容添加on-->\r\n\t\t\t\t\t\t<div class=\"sea-box\">\r\n\t\t\t\t\t\t\t<i class=\"name\"></i>\r\n\t\t\t\t\t\t\t<input type=\"input\" value=\"\" placeholder=\"酒店名称/位置不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"pri\">\r\n\t\t\t\t\t\t<div class=\"price-star-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<i class=\"pri\"></i>\r\n\t\t\t\t\t\t\t<input class=\"title-phone\" type=\"input\" value=\"\" placeholder=\"价格星级不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"search-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\"><i></i>搜索</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tbottomNav: 'recents',\r\n\t\t\t\taa: '广州市',\r\n\t\t\t\topen: false,\r\n\t\t\t\tdocked: true,\r\n\t\t\t\tnot: false\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\thandleChange(val) {\r\n\t\t\t\tthis.bottomNav = val\r\n\t\t\t},\r\n\t\t\tbaidu() {\r\n\t\t\t\t// 百度地图API功能\r\n\t\t\t\tthis.not = false\r\n\t\t\t\tvar baidis = this\r\n\t\t\t\tvar map = new BMap.Map(\"allmap\");\r\n\t\t\t\tvar point = new BMap.Point(116.331398, 39.897445);\r\n\t\t\t\tmap.centerAndZoom(point, 12);\r\n\r\n\t\t\t\tfunction myFun(result) {\r\n\t\t\t\t\tvar cityName = result.name;\r\n\t\t\t\t\tmap.setCenter(cityName);\r\n\t\t\t\t\tconsole.log(baidis)\r\n\t\t\t\t\t//\t\t\t\t \talert(\"当前定位城市:\" + cityName);\r\n\t\t\t\t\tbaidis.aa = cityName\r\n\r\n\t\t\t\t}\r\n\t\t\t\tvar myCity = new BMap.LocalCity();\r\n\t\t\t\tmyCity.get(myFun);\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t\tthis.not = true\r\n\r\n\t\t\t},\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//\t\t\t\t\tthis.baidu()\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tsearch() {\r\n\t\t\t\treturn this.$store.state.aaa\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped=\"\">\r\n\t/*@import \"css/header.css\";\r\n\t@import \"css/header2.css\";*/\r\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept {\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\tmargin-top: -120px;\r\n\t\tmargin-left: -153px;\r\n\t\tpadding-top: 10px;\r\n\t\theight: 220px;\r\n\t\twidth: 306px;\r\n\t\tz-index: 15000;\r\n\t\tbackground-color: #fff;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 16px;\r\n\t\tfont-weight: 700;\r\n\t\tcolor: #353535\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li {\r\n\t\tclear: both;\r\n\t\theight: 44px;\r\n\t\tline-height: 44px;\r\n\t\tmargin: 3px 12px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li2 {\r\n\t\toverflow: hidden;\r\n\t\tborder-radius: 5px;\r\n\t\tborder: 1px solid #ddd;\r\n\t\tbackground-clip: padding-box;\r\n\t\tmargin-bottom: 10px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept input.txt {\r\n\t\twidth: 100%;\r\n\t\tpadding: 11px 10px 11px 13px;\r\n\t\tdisplay: block;\r\n\t\tmargin: 0;\r\n\t\tborder: 0;\r\n\t\tbackground: 0;\r\n\t\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .submit {\r\n\t\tfont-size: 1.1rem;\r\n\t\twidth: 100%;\r\n\t\theight: 40px;\r\n\t\tline-height: 40px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #fff;\r\n\t\tborder-radius: 5px;\r\n\t\tborder-width: 0;\r\n\t\tbackground-color: #e65749;\r\n\t\tmargin: 0 0 10px\r\n\t}\r\n\t\r\n\t.search-wrap {\r\n\t\tmargin-bottom: 12px;\r\n\t\tborder: 1px solid #DDD;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list {\r\n\t\tpadding: 0 12px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li {\r\n\t\tpadding: 6px 0;\r\n\t\tborder-bottom: 1px solid #DDD;\r\n\t\tposition: relative;\r\n\t\tmin-height: 26px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.date {\r\n\t\tfont-size: .688rem;\r\n\t\tline-height: 16px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn {\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t\tbackground: #49f;\r\n\t\theight: 36px;\r\n\t\tline-height: 36px;\r\n\t\tfont-size: 10px;\r\n\t\tcolor: #FFF;\r\n\t\ttext-align: center;\r\n\t\tborder-radius: 4px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn i {\r\n\t\tposition: relative;\r\n\t\ttop: 7px;\r\n\t\tleft: -6px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li i:first-child {\r\n\t\twidth: 16px;\r\n\t\theight: 16px;\r\n\t\tdisplay: block;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tmargin-top: -10px;\r\n\t\tfont-size: .9rem;\r\n\t\tmargin-left: 8px;\r\n\t\tline-height: 21px;\r\n\t\tcolor: #999;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr p {\r\n\t\tline-height: 21px;\r\n\t\toverflow: hidden;\r\n\t\tpadding-right: 20px;\r\n\t\tmargin-left: 30px;\r\n\t\twhite-space: nowrap;\r\n\t\ttext-overflow: ellipsis;\r\n\t\tfont-size: -0.937rem;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right {\r\n\t\tposition: absolute;\r\n\t\tright: 10px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #49f;\r\n\t\ttop: 50%;\r\n\t\tfont-size: .7rem;\r\n\t\tfont-weight: normal;\r\n\t\tline-height: 1;\r\n\t\tmargin-top: -8px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right i {\r\n\t\twidth: 14px;\r\n\t\theight: 16px;\r\n\t\tdisplay: inline-block;\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tvertical-align: -3px;\r\n\t}*/\r\n\t\r\n\tbody,\r\n\thtml,\r\n\t#allmap {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\toverflow: hidden;\r\n\t\tmargin: 0;\r\n\t\tbackground-color: #F2F2F2;\r\n\t\tfont-family: \"微软雅黑\";\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -47340,104 +47336,15 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 exports.default = {
 	data: function data() {
 		return {
 			bottomNav: 'recents',
-			aa: '北京市',
+			aa: '广州市',
 			open: false,
-			docked: true
+			docked: true,
+			not: false
 		};
 	},
 
@@ -47447,7 +47354,7 @@ exports.default = {
 		},
 		baidu: function baidu() {
 			// 百度地图API功能
-
+			this.not = false;
 			var baidis = this;
 			var map = new BMap.Map("allmap");
 			var point = new BMap.Point(116.331398, 39.897445);
@@ -47465,14 +47372,16 @@ exports.default = {
 		},
 		changetion: function changetion() {
 			this.$store.state.direction = 'right';
-		},
-		toggle: function toggle(flag) {
-			this.open = !this.open;
-			this.docked = !flag;
+			this.not = true;
 		}
 	},
 	mounted: function mounted() {
 		//					this.baidu()
+	},
+	computed: {
+		search: function search() {
+			return this.$store.state.aaa;
+		}
 	}
 };
 
@@ -47493,271 +47402,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "addr"
   }, [_c('i', {
     staticClass: "addr"
-  }), _vm._v(" "), _c('p', {
+  }), _vm._v(" "), (_vm.not == true) ? _c('div', [_c('p', {
     staticClass: "cityname tjclick",
     attrs: {
       "city-id": "0539"
     },
     on: {
       "click": function($event) {
-        _vm.toggle()
+        _vm.changetion()
       }
     }
-  }, [_vm._v(_vm._s(_vm.aa))]), _vm._v(" "), _c('mu-drawer', {
-    staticStyle: {
-      "width": "100%"
-    },
+  }, [_vm._v(_vm._s(_vm.search))])]) : _c('div', [_c('p', {
+    staticClass: "cityname tjclick",
     attrs: {
-      "open": _vm.open,
-      "docked": _vm.docked
+      "city-id": "0539"
     },
     on: {
-      "close": function($event) {
-        _vm.toggle()
-      }
-    }
-  }, [_c('mu-list', {
-    on: {
-      "itemClick": function($event) {
-        _vm.docked ? '' : _vm.toggle()
-      }
-    }
-  }, [_c('div', {
-    staticClass: "advance-city plugin-inited page-plugin plugin-show page-on-center",
-    staticStyle: {
-      "position": "fixed"
-    }
-  }, [_c('header', {
-    staticClass: "bar bar-nav flight-order-head"
-  }, [_c('a', {
-    staticClass: "icon pull-left icon-back"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "search-input"
-  }, [_c('i', {
-    staticClass: "icon-search"
-  }), _c('input', {
-    attrs: {
-      "type": "input",
-      "value": "",
-      "placeholder": "请输入城市名、行政区或景区"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "page-content page-select"
-  }, [_c('div', {
-    staticClass: "current-city"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "get-city"
-  }, [_c('i', {
-    staticClass: "icon-position"
-  }), _vm._v("点击获取当前城市")])]), _vm._v(" "), _c('div', {
-    staticClass: "search-history"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("搜索历史")]), _vm._v(" "), _c('div', {
-    staticClass: "city-list"
-  }, [_c('ul', [_c('li', {
-    attrs: {
-      "city-id": "0101",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("北京")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0539",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("曹妃甸区")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("上海")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "hot-city"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("热门城市")]), _vm._v(" "), _c('div', {
-    staticClass: "city-list"
-  }, [_c('ul', [_c('li', {
-    staticClass: "on",
-    attrs: {
-      "city-id": "0101",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("北京")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("上海")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2001",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("广州")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("杭州")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2003",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("深圳")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1801",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("武汉")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2301",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("成都")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2701",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("西安")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1101",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("南京")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0401",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("重庆")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1901",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("长沙")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1401",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("厦门")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0301",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("天津")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "3201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("香港")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1001",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("哈尔滨")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1701",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("郑州")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1102",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("苏州")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1301",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("合肥")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1602",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("济南")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("三亚")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "all-city"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("全部城市")]), _vm._v(" "), _c('div', {
-    staticClass: "letter-list"
-  }, [_c('ul', [_c('li', [_vm._v("A")]), _vm._v(" "), _c('li', [_vm._v("B")]), _vm._v(" "), _c('li', [_vm._v("C")]), _vm._v(" "), _c('li', [_vm._v("D")]), _vm._v(" "), _c('li', [_vm._v("E")]), _vm._v(" "), _c('li', {
-    staticClass: "mr0"
-  }, [_vm._v("F")]), _vm._v(" "), _c('li', [_vm._v("G")]), _vm._v(" "), _c('li', [_vm._v("H")]), _vm._v(" "), _c('li', [_vm._v("J")]), _vm._v(" "), _c('li', [_vm._v("K")]), _vm._v(" "), _c('li', [_vm._v("L")]), _vm._v(" "), _c('li', {
-    staticClass: "mr0"
-  }, [_vm._v("M")]), _vm._v(" "), _c('li', [_vm._v("N")]), _vm._v(" "), _c('li', [_vm._v("P")]), _vm._v(" "), _c('li', [_vm._v("Q")]), _vm._v(" "), _c('li', [_vm._v("R")]), _vm._v(" "), _c('li', [_vm._v("S")]), _vm._v(" "), _c('li', {
-    staticClass: "mr0"
-  }, [_vm._v("T")]), _vm._v(" "), _c('li', [_vm._v("W")]), _vm._v(" "), _c('li', [_vm._v("X")]), _vm._v(" "), _c('li', [_vm._v("Y")]), _vm._v(" "), _c('li', [_vm._v("Z")])]), _vm._v(" "), (_vm.docked) ? _c('mu-list-item', {
-    attrs: {
-      "title": "Close"
-    },
-    nativeOn: {
       "click": function($event) {
-        _vm.open = false
+        _vm.changetion()
       }
     }
-  }) : _vm._e()], 1), _vm._v(" "), _c('div', {
-    staticClass: "city-list"
-  }, [_c('ul', {
-    staticClass: "city-list-ul"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "page-content page-search",
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('ul')]), _vm._v(" "), _c('div', {
-    staticClass: "inner-mask"
-  })])])], 1), _vm._v(" "), _c('i', {
+  }, [_vm._v(_vm._s(_vm.aa))])]), _vm._v(" "), _c('i', {
     staticClass: "icon-left",
     staticStyle: {
       "right": "92px"
@@ -47776,7 +47441,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "allmap"
     }
-  })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _vm._m(3)])])])
+  })]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _vm._m(3)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('li', {
     staticClass: "date"
@@ -48038,7 +47703,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "search-nav"
   }, [_c('ul', {
-    staticClass: "search-nav-list"
+    staticClass: "search-nav-list animated hinge"
   }, [_c('li', {
     staticClass: "isnearby tjclick",
     attrs: {
@@ -48161,8 +47826,351 @@ if (false) {
 /* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(196)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(198),
+  /* template */
+  __webpack_require__(199),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-4a5cc36d",
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\chuanyeniubi\\app\\components\\indexcomponents\\xsidebar.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xsidebar.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4a5cc36d", Component.options)
+  } else {
+    hotAPI.reload("data-v-4a5cc36d", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 196 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(197);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("47c76834", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a5cc36d\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsidebar.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4a5cc36d\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsidebar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 197 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*全局样式*/\n*[data-v-4a5cc36d] {\n\tmargin: 0;\n\tpadding: 0;\n}\n.left-button[data-v-4a5cc36d] {\n\tfloat: right;\n}\n/*组件的样式*/\n/*向左滑动的动画*/\n@keyframes moveLeft-data-v-4a5cc36d {\nfrom {\n\t\ttransform: translateX(320px);\n}\nto {\n}\n}\n.sidebar-move-left[data-v-4a5cc36d] {\n\tanimation: moveLeft-data-v-4a5cc36d;\n\t/*持续时间*/\n\tanimation-duration: 0.5s;\n\t/*动画播放次数*/\n\tanimation-iteration-count: 1;\n\t/*执行方向，动画执行结束时保持在它结束时的状态*/\n\tanimation-fill-mode: forwards;\n}\n/*向右边滑动的动画*/\n@keyframes moveRight-data-v-4a5cc36d {\nfrom {\n}\nto {\n\t\ttransform: translateX(320px);\n}\n}\n.sidebar-move-right[data-v-4a5cc36d] {\n\tanimation: moveRight-data-v-4a5cc36d;\n\t/*持续时间*/\n\tanimation-duration: 0.5s;\n\t/*动画播放次数*/\n\tanimation-iteration-count: 1;\n\t/*执行方向，动画执行结束时保持在它结束时的状态*/\n\tanimation-fill-mode: forwards;\n}\n.nav-content[data-v-4a5cc36d] {\n\twidth: 320px;\n\tposition: fixed;\n\tmin-height: 100%;\n\ttop: 0;\n\tleft: -320px;\n\tbackground-color: #e1e1e1;\n\t/*调试代码时经常使用border，帮我们定位到div的一个区域*/\n\t/*border: 1px solid black;*/\n\tz-index: 10000;\n\t/*使用透明度为0来隐藏元素*/\n\topacity: 1;\n}\n", "", {"version":3,"sources":["D:/chuanyeniubi/app/components/indexcomponents/xsidebar.vue?4c3f8bbf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAwHA,QAAA;AAEA;CACA,UAAA;CACA,WAAA;CACA;AAEA;CACA,aAAA;CACA;AACA,SAAA;AACA,WAAA;AAEA;AACA;EACA,6BAAA;CACA;AACA;CAAA;CACA;AAEA;CACA,oCAAA;CACA,QAAA;CACA,yBAAA;CACA,UAAA;CACA,6BAAA;CACA,0BAAA;CACA,8BAAA;CACA;AACA,YAAA;AAEA;AACA;CAAA;AACA;EACA,6BAAA;CACA;CACA;AAEA;CACA,qCAAA;CACA,QAAA;CACA,yBAAA;CACA,UAAA;CACA,6BAAA;CACA,0BAAA;CACA,8BAAA;CACA;AAEA;CACA,aAAA;CACA,gBAAA;CACA,iBAAA;CACA,OAAA;CACA,aAAA;CACA,0BAAA;CACA,kCAAA;CACA,4BAAA;CACA,eAAA;CACA,gBAAA;CACA,WAAA;CACA","file":"xsidebar.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<div :class=\"{'silde-right':direction=='right','silde-left':direction=='left'}\">\r\n\t\t\t<div ng-transclude class=\"nav-content\" :class=\"{'sidebar-move-left':direction=='left','sidebar-move-right':direction=='right'}\">\r\n\t\t\t\t<!--<button class=\"left-button\" ng-click=\"directionTo('left')\">left</button>-->\r\n\t\t\t\t<div class=\"advance-city plugin-inited page-plugin plugin-show page-on-center\">\r\n\t\t\t\t\t<header class=\"bar bar-nav flight-order-head\">\r\n\r\n\t\t\t\t\t\t<a @click=\"changetion()\" class=\" pull-left\" style=\"margin-top: 7px\"><i class=\"material-icons\" style=\"font-size: 32px;\">&#xE314;</i></a>\r\n\r\n\t\t\t\t\t\t<div class=\"search-input\" style=\"margin-right:4px ;\"><i class=\"icon-search\"></i><input type=\"input\" value=\"\" placeholder=\"请输入城市名、行政区或景区\"></div>\r\n\t\t\t\t\t</header>\r\n\t\t\t\t\t<div class=\"page-content page-select\" style=\"\">\r\n\t\t\t\t\t\t<div class=\"hot-city\">\r\n\t\t\t\t\t\t\t<div class=\"page-title\">热门城市</div>\r\n\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t<!--class加个on高亮-->\r\n\t\t\t\t\t\t\t\t\t<li @click=\"changetion()\" v-for=\"(item,index) in newArr\" city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" v-on:click=\"addClassFun(index)\" v-bind:class='{on:index==idx}'>\r\n\t\t\t\t\t\t\t\t\t\t<span @click=\"test($event)\">{{item.cityName}}</span>\r\n\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"all-city\">\r\n\t\t\t\t\t\t\t<div class=\"page-title\">全部城市</div>\r\n\t\t\t\t\t\t\t<div class=\"letter-list\">\r\n\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t<li v-for=\"(a,index) in letter\" v-on:click=\"addClassletter(a,index)\" v-bind:class='{on:index==idxs}'>{{a}}</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t<ul class=\"city-list-ul\">\r\n\t\t\t\t\t\t\t\t\t<li city-id=\"1988\" area-type=\"\" area-id=\"\" sug-origin=\"\" v-for=\"(a,index) in Arrs\" @click=\"test($event)\"><span @click=\"test($event)\">{{a.cityName}}</span></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tnewArr: [],\r\n\t\t\t\tidx: 0,\r\n\t\t\t\tidxs:0,\r\n\t\t\t\tArrs:[],\r\n\t\t\t\tletter: [\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tdirection() {\r\n\t\t\t\treturn this.$store.state.direction;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\ttest(e){\r\n\t\t\t\tconsole.log(11111)\r\n\t\t\t\tconsole.log(e.target.innerHTML)\r\n\t\t\t\tthis.$store.state.aaa=e.target.innerHTML\r\n\t\t\t\tthis.changetion()\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'left'\r\n\t\t\t},\r\n\t\t\tleftfence: function() {\r\n//\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/leftfence\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\t//\t\t\t\t\tconsole.log(JSON.parse(res))\r\n\t\t\t\t\tthis.newArr = JSON.parse(res.data.hotCitys)\r\n\t\t\t\t\tconsole.log(this.newArr)\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\t\t\tletterfence: function(letter) {\r\n\t\t\t\tconsole.log(\"bbb\")\r\n\t\t\t\t\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/letterfence\",\r\n\t\t\t\t\tparams:{\r\n\t\t\t\t\t\tletter:letter\r\n\t\t\t\t\t},\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.Arrs = res.data\r\n\t\t\t\t\tconsole.log(this.Arrs)\r\n\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\r\n\t\t\taddClassFun: function(index) {\r\n\t\t\t\tthis.idx = index;\r\n\t\t\t},\r\n\t\t\taddClassletter: function(letter,index) {\r\n\t\t\t\tthis.idxs = index;\r\n   \t\t\t\tthis.letterfence(letter)\r\n\t\t\t\t\r\n\t\t\t},\r\n\t\t\t\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.leftfence()\r\n//\t\t\tthis.letterfence()\r\n\t\t\t\r\n\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t/*全局样式*/\r\n\t\r\n\t* {\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t}\r\n\t\r\n\t.left-button {\r\n\t\tfloat: right;\r\n\t}\r\n\t/*组件的样式*/\r\n\t/*向左滑动的动画*/\r\n\t\r\n\t@keyframes moveLeft {\r\n\t\tfrom {\r\n\t\t\ttransform: translateX(320px);\r\n\t\t}\r\n\t\tto {}\r\n\t}\r\n\t\r\n\t.sidebar-move-left {\r\n\t\tanimation: moveLeft;\r\n\t\t/*持续时间*/\r\n\t\tanimation-duration: 0.5s;\r\n\t\t/*动画播放次数*/\r\n\t\tanimation-iteration-count: 1;\r\n\t\t/*执行方向，动画执行结束时保持在它结束时的状态*/\r\n\t\tanimation-fill-mode: forwards;\r\n\t}\r\n\t/*向右边滑动的动画*/\r\n\t\r\n\t@keyframes moveRight {\r\n\t\tfrom {}\r\n\t\tto {\r\n\t\t\ttransform: translateX(320px);\r\n\t\t}\r\n\t}\r\n\t\r\n\t.sidebar-move-right {\r\n\t\tanimation: moveRight;\r\n\t\t/*持续时间*/\r\n\t\tanimation-duration: 0.5s;\r\n\t\t/*动画播放次数*/\r\n\t\tanimation-iteration-count: 1;\r\n\t\t/*执行方向，动画执行结束时保持在它结束时的状态*/\r\n\t\tanimation-fill-mode: forwards;\r\n\t}\r\n\t\r\n\t.nav-content {\r\n\t\twidth: 320px;\r\n\t\tposition: fixed;\r\n\t\tmin-height: 100%;\r\n\t\ttop: 0;\r\n\t\tleft: -320px;\r\n\t\tbackground-color: #e1e1e1;\r\n\t\t/*调试代码时经常使用border，帮我们定位到div的一个区域*/\r\n\t\t/*border: 1px solid black;*/\r\n\t\tz-index: 10000;\r\n\t\t/*使用透明度为0来隐藏元素*/\r\n\t\topacity: 1;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	data: function data() {
+		return {
+			newArr: [],
+			idx: 0,
+			idxs: 0,
+			Arrs: [],
+			letter: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+		};
+	},
+	computed: {
+		direction: function direction() {
+			return this.$store.state.direction;
+		}
+	},
+	methods: {
+		test: function test(e) {
+			console.log(11111);
+			console.log(e.target.innerHTML);
+			this.$store.state.aaa = e.target.innerHTML;
+			this.changetion();
+		},
+		changetion: function changetion() {
+			this.$store.state.direction = 'left';
+		},
+
+		leftfence: function leftfence() {
+			//				console.log("aaa")
+			this.$ajax({
+				url: "http://localhost:3000/leftfence"
+			}).then(function (res) {
+				//					console.log(JSON.parse(res))
+				this.newArr = JSON.parse(res.data.hotCitys);
+				console.log(this.newArr);
+			}.bind(this));
+		},
+		letterfence: function letterfence(letter) {
+			console.log("bbb");
+
+			this.$ajax({
+				url: "http://localhost:3000/letterfence",
+				params: {
+					letter: letter
+				}
+			}).then(function (res) {
+				console.log(res);
+				this.Arrs = res.data;
+				console.log(this.Arrs);
+			}.bind(this));
+		},
+
+		addClassFun: function addClassFun(index) {
+			this.idx = index;
+		},
+		addClassletter: function addClassletter(letter, index) {
+			this.idxs = index;
+			this.letterfence(letter);
+		}
+
+	},
+	mounted: function mounted() {
+		//后台请求数据动态生成列表
+		this.leftfence();
+		//			this.letterfence()
+
+	}
+};
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('xheader'), _vm._v(" "), _c('xsearch'), _vm._v(" "), _c('xoption')], 1)
+  return _c('div', [_c('div', {
+    class: {
+      'silde-right': _vm.direction == 'right', 'silde-left': _vm.direction == 'left'
+    }
+  }, [_c('div', {
+    staticClass: "nav-content",
+    class: {
+      'sidebar-move-left': _vm.direction == 'left', 'sidebar-move-right': _vm.direction == 'right'
+    },
+    attrs: {
+      "ng-transclude": ""
+    }
+  }, [_c('div', {
+    staticClass: "advance-city plugin-inited page-plugin plugin-show page-on-center"
+  }, [_c('header', {
+    staticClass: "bar bar-nav flight-order-head"
+  }, [_c('a', {
+    staticClass: " pull-left",
+    staticStyle: {
+      "margin-top": "7px"
+    },
+    on: {
+      "click": function($event) {
+        _vm.changetion()
+      }
+    }
+  }, [_c('i', {
+    staticClass: "material-icons",
+    staticStyle: {
+      "font-size": "32px"
+    }
+  }, [_vm._v("")])]), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c('div', {
+    staticClass: "page-content page-select"
+  }, [_c('div', {
+    staticClass: "hot-city"
+  }, [_c('div', {
+    staticClass: "page-title"
+  }, [_vm._v("热门城市")]), _vm._v(" "), _c('div', {
+    staticClass: "city-list"
+  }, [_c('ul', _vm._l((_vm.newArr), function(item, index) {
+    return _c('li', {
+      class: {
+        on: index == _vm.idx
+      },
+      attrs: {
+        "city-id": "0101",
+        "area-type": "",
+        "area-id": "",
+        "sug-origin": ""
+      },
+      on: {
+        "click": [function($event) {
+          _vm.changetion()
+        }, function($event) {
+          _vm.addClassFun(index)
+        }]
+      }
+    }, [_c('span', {
+      on: {
+        "click": function($event) {
+          _vm.test($event)
+        }
+      }
+    }, [_vm._v(_vm._s(item.cityName))])])
+  }))])]), _vm._v(" "), _c('div', {
+    staticClass: "all-city"
+  }, [_c('div', {
+    staticClass: "page-title"
+  }, [_vm._v("全部城市")]), _vm._v(" "), _c('div', {
+    staticClass: "letter-list"
+  }, [_c('ul', _vm._l((_vm.letter), function(a, index) {
+    return _c('li', {
+      class: {
+        on: index == _vm.idxs
+      },
+      on: {
+        "click": function($event) {
+          _vm.addClassletter(a, index)
+        }
+      }
+    }, [_vm._v(_vm._s(a))])
+  }))]), _vm._v(" "), _c('div', {
+    staticClass: "city-list"
+  }, [_c('ul', {
+    staticClass: "city-list-ul"
+  }, _vm._l((_vm.Arrs), function(a, index) {
+    return _c('li', {
+      attrs: {
+        "city-id": "1988",
+        "area-type": "",
+        "area-id": "",
+        "sug-origin": ""
+      },
+      on: {
+        "click": function($event) {
+          _vm.test($event)
+        }
+      }
+    }, [_c('span', {
+      on: {
+        "click": function($event) {
+          _vm.test($event)
+        }
+      }
+    }, [_vm._v(_vm._s(a.cityName))])])
+  }))])])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "search-input",
+    staticStyle: {
+      "margin-right": "4px"
+    }
+  }, [_c('i', {
+    staticClass: "icon-search"
+  }), _c('input', {
+    attrs: {
+      "type": "input",
+      "value": "",
+      "placeholder": "请输入城市名、行政区或景区"
+    }
+  })])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4a5cc36d", module.exports)
+  }
+}
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('xheader'), _vm._v(" "), _c('xsearch'), _vm._v(" "), _c('xoption'), _vm._v(" "), _c('xsidebar')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -48173,19 +48181,19 @@ if (false) {
 }
 
 /***/ }),
-/* 196 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(197)
+  __webpack_require__(202)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(199),
+  __webpack_require__(204),
   /* template */
-  __webpack_require__(210),
+  __webpack_require__(215),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -48217,13 +48225,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 197 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(198);
+var content = __webpack_require__(203);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -48243,7 +48251,7 @@ if(false) {
 }
 
 /***/ }),
-/* 198 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -48257,7 +48265,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 199 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48267,19 +48275,19 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xheader = __webpack_require__(200);
+var _xheader = __webpack_require__(205);
 
 var _xheader2 = _interopRequireDefault(_xheader);
 
-var _xsearch = __webpack_require__(203);
+var _xsearch = __webpack_require__(208);
 
 var _xsearch2 = _interopRequireDefault(_xsearch);
 
-var _xlist = __webpack_require__(206);
+var _xlist = __webpack_require__(211);
 
 var _xlist2 = _interopRequireDefault(_xlist);
 
-var _xfooter = __webpack_require__(208);
+var _xfooter = __webpack_require__(213);
 
 var _xfooter2 = _interopRequireDefault(_xfooter);
 
@@ -49495,15 +49503,15 @@ exports.default = {
 };
 
 /***/ }),
-/* 200 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(201),
+  __webpack_require__(206),
   /* template */
-  __webpack_require__(202),
+  __webpack_require__(207),
   /* styles */
   null,
   /* scopeId */
@@ -49535,7 +49543,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 201 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49570,7 +49578,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 202 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49620,15 +49628,15 @@ if (false) {
 }
 
 /***/ }),
-/* 203 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(204),
+  __webpack_require__(209),
   /* template */
-  __webpack_require__(205),
+  __webpack_require__(210),
   /* styles */
   null,
   /* scopeId */
@@ -49660,7 +49668,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 204 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49727,7 +49735,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 205 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49821,7 +49829,7 @@ if (false) {
 }
 
 /***/ }),
-/* 206 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -49829,7 +49837,7 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(207),
+  __webpack_require__(212),
   /* styles */
   null,
   /* scopeId */
@@ -49861,7 +49869,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 207 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49956,7 +49964,7 @@ if (false) {
 }
 
 /***/ }),
-/* 208 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -49964,7 +49972,7 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(209),
+  __webpack_require__(214),
   /* styles */
   null,
   /* scopeId */
@@ -49996,7 +50004,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 209 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -50078,7 +50086,7 @@ if (false) {
 }
 
 /***/ }),
-/* 210 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

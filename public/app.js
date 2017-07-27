@@ -54,7 +54,44 @@ app.get('/slideshow', function(req, res) {
 	})
 
 })
+//left侧边栏
+app.get('/leftfence', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/hotel/api/gethomehotcitys/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
 
+		})
+	})
+
+})
+//字母侧边栏
+app.get('/letterfence', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	console.log(req.query.letter)
+	var letter = req.query.letter
+	http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter='+letter, function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+
+		})
+	})
+
+})
 //list部分..............................................lianglixiong
 //
 app.get('/list', function(req, res) {

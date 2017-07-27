@@ -9,6 +9,8 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 //axios的ajax封装库
 import axios from "axios";
+//动画
+import animate from "animate";
 //轮播图
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
@@ -24,7 +26,7 @@ console.log(com.randomNum(1, 10))
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
-	//挂载axios在Vue构造器下
+//挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
 
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
@@ -130,10 +132,11 @@ var router = new VueRouter({
 var store = new Vuex.Store({
 	state: {
 		imgUrl: null,
+		aaa: '广州市',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		isLogin:false,
+		isLogin: false,
 		direction: 'left',
 		news: "",
 		detailNews: null,

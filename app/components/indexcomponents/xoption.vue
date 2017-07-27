@@ -1,8 +1,8 @@
 <template>
 	<div class="page-content page-search" style="">
 		<div class="search-nav">
-			<ul class="search-nav-list">
-				<li class="isnearby tjclick" data-tj="{&quot;cspot&quot;:&quot;nearby&quot;}">
+			<ul class="search-nav-list animated hinge" >
+				<li class="isnearby tjclick" data-tj="{&quot;cspot&quot;:&quot;nearby&quot;}" >
 					<a href="javascript:void 0"><i class="icon-nav1"></i><span>附近</span></a>
 				</li>
 				<li class="tjclick" data-tj="{&quot;cspot&quot;:&quot;offprice&quot;,&quot;if&quot;:&quot;12579&quot;,&quot;ch&quot;:&quot;h5offprice&quot;}">
@@ -30,7 +30,7 @@
 					<a href="//m.elong.com/flight/"><i class="icon-nav9"></i><span>机票</span></a>
 				</li>
 				<li class="tjclick" data-tj="{&quot;cspot&quot;:&quot;bus&quot;}">
-					<a href="//m.elong.com/bus/"><i class="icon-nav10"></i><span>汽车票</span></a>
+					<a href="//m.elong.com/bus/" ><i class="icon-nav10"></i><span>汽车票</span></a>
 				</li>
 			</ul>
 		</div>
