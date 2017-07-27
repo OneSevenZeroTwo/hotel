@@ -1,14 +1,11 @@
 <template>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[0]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[1]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[2]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[3]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[4]" alt="" /></div>
+	<div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div v-for="(img,index) in imgArr" class="swiper-slide"><img :src="'http:'+img" alt="" /></div>
+				<!--<div  class="swiper-slide"><img :src="'http:'+imgArr[1]" alt="" /></div>-->
+			</div>
 		</div>
-		<!-- Add Pagination -->
-		<!--<div class="swiper-pagination"></div>-->
 	</div>
 </template>
 
@@ -21,7 +18,7 @@
 				autoplay: 2500,
 				autoplayDisableOnInteraction: false
 			});
-			console.log(this.imgArr)
+//			console.log(this.imgArr)
 		},
 		computed:{
 			imgArr(){

@@ -1,7 +1,24 @@
 <template>
-	<div  class="qqqqqq">
-		<div @click="test()" id="l-map"></div>
-
+	<div class="qqqqqq">
+		
+		<!--酒店地址-->
+		<li class="info_mn">
+			<div class="col_tb">
+				<div class="posi">
+					<div class="addr">朝阳区柳芳北街6号(煤炭总医院正对面)</div>
+					<div class="dis">
+						<span class="disc">距离柳芳地铁站0.4公里,步行至此0.8公里,约13分钟</span>
+					</div>
+				</div>
+			</div>
+			<div class="map_bg"></div>
+			<div class="right">
+				<div class="map_c">
+					<div id="l-map"></div>
+					<i class="map_icons"></i>
+				</div>
+			</div>
+		</li>
 	</div>
 
 </template>
