@@ -2,7 +2,7 @@
 	<div class="pages">
 		<div class="page page-on-center" data-blend="layer" data-blend-id="index" data-url="/my/account/index/" id="uniq22" data-title="个人中心">
 			<header class="bar bar-nav train-order-head none_backg">
-				<a class="icon icon-left-nav pull-left" data-rel="" href="https://m.elong.com/"></a>
+				<a class="icon icon-left-nav pull-left" data-rel="" href=""></a>
 				<h1 class="title">个人中心</h1>
 			</header>
 			<div class="page-content myelong">

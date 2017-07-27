@@ -19,13 +19,10 @@
 </script>
 
 <style>
-	mu-icon-button {
-		font-size: 20px;
-	}
-	
+
 	.back {
 		position: fixed;
-		top: 5px;
-		left: 5px;
+		top: 0px;
+		left: 0px;
 	}
 </style>

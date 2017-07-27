@@ -26,8 +26,8 @@
 		padding: 0;
 	}
 	header {
-		height: 55px;
-		line-height: 55px;
+		height: 48px;
+		line-height: 48px;
 		background-color: #f4f4f4;
 		color: #555;
 		box-shadow: 0px 1px 2px #ddd;
@@ -36,5 +36,6 @@
 	}
 	h1{
 		font-size: 20px;
+		line-height: 48px;
 	}
 </style>

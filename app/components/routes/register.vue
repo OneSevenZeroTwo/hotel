@@ -118,7 +118,7 @@
 		padding-top: 100px;
 		text-align: center;
 	}
-	
+
 	h2 {
 		color: #7e57c2;
 		letter-spacing: 5px;
