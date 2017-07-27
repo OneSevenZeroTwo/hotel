@@ -23,7 +23,7 @@
 				<!--<div class="swiper-slide" data-swiper-slide-index="1" style="width: 320px; margin-right: 30px;"><img :src="newArr[0]" alt="" /></div>-->
 				<div class="swiper-slide" data-swiper-slide-index="2" style="width: 320px; margin-right: 30px;"><img :src="newArr[1]" alt="" /></div>
 				<div class="swiper-slide" data-swiper-slide-index="3" style="width: 320px; margin-right: 30px;"><img :src="newArr[2]" alt="" /></div>
-				<div class="swiper-slide" data-swiper-slide-index="4" style="width: 320px; margin-right: 30px;"><img :src="newArr[3]" alt="" /></div>
+				<!--<div class="swiper-slide" data-swiper-slide-index="4" style="width: 320px; margin-right: 30px;"><img :src="newArr[3]" alt="" /></div>-->
 				<!--<div class="swiper-slide" data-swiper-slide-index="5" style="width: 320px; margin-right: 30px;"><img :src="newArr[4]" alt="" /></div>-->
 				<div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="9" style="width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;"></div>
 				<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 320px; margin-right: 30px;"></div>

@@ -24,10 +24,12 @@
 						<xorderRebackMoney></xorderRebackMoney>
 
 						<div class="invoice-elong">
-							如需发票请到酒店前台咨询 </div>
+							如需发票请到酒店前台咨询 
+						</div>
 						<div class="search">
 							<button id="padsubmit" class="btn btn-primary btn-block">
-提交订单		                        </button>
+								提交订单		                        
+							</button>
 						</div>
 					</section>
 				</article>
@@ -35,86 +37,26 @@
 			<input type="hidden" class="createorder" name="arrivetimeearly" id="hidarriveTimeEarly" value="2017-07-26 16:00:00">
 			<input type="hidden" class="createorder" name="arrivetimelate" id="hidarriveTimeLate" value="2017-07-26 19:00:00">
 			<input type="hidden" class="createorder" name="stayhours" id="hidstayhours" vlaue="" value="4">
-
+				
+			<!--选择房间数量-->
+			<xroomNum></xroomNum>
+			<!--选择保留时间-->
+			<xtimeNum></xtimeNum>
 			<div class="slide-selector plugin-inited">
-				<header class="bar-nav">
-					<div class="radio-title"><span class="title">选择房间数量</span><span class="cancel">取消</span></div>
-				</header>
-				<ul class="page-content">
-					<li class="radio-item  selected" value="1"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio selected"></span></div><div class="radio-text">1间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="2"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">2间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="3"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">3间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="4"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">4间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="5"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">5间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="6"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">6间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="7"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">7间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="8"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">8间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="9"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">9间</div><div class="check"></div></label></li>
-					<li class="radio-item " value="10"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">10间</div><div class="check"></div></label></li>
-				</ul>
-				<div class="arrow up left"></div>
-				<div class="describe" style="display: none;"></div>
+				
+				<!--选择到店时间-->
+				<xinTime></xinTime>
 			</div>
 			<div class="slide-selector plugin-inited">
-				<header class="bar-nav">
-					<div class="radio-title"><span class="title">最晚到店时间</span><span class="cancel">取消</span></div>
-				</header>
-				<ul class="page-content">
-					<li class="radio-item  selected" value="2017-07-26 16:00:00,2017-07-26 19:00:00"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio selected"></span></div><div class="radio-text">19:00</div><div class="check"></div></label></li>
-					<li class="radio-item " value="2017-07-26 17:00:00,2017-07-26 20:00:00"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">20:00</div><div class="check"></div></label></li>
-					<li class="radio-item " value="2017-07-26 18:00:00,2017-07-26 21:00:00"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">21:00</div><div class="check"></div></label></li>
-				</ul>
-				<div class="arrow up left"></div>
-				<div class="describe" style="display: none;"></div>
+				
+				<!--填写个人联系信息-->
+				<xconnection></xconnection>
 			</div>
-			<div class="slide-selector plugin-inited">
-				<header class="bar-nav">
-					<div class="radio-title"><span class="title">选择手机号地区</span><span class="cancel">取消</span></div>
-				</header>
-				<ul class="page-content">
-					<li class="radio-item  selected" value=""><label class="label-radio clearfix"><div class="radio-icon"><span class="radio selected"></span></div><div class="radio-text">中国大陆(+86)</div><div class="check"></div></label></li>
-					<li class="radio-item " value="852"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">中国香港(+852)</div><div class="check"></div></label></li>
-					<li class="radio-item " value="853"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">中国澳门(+853)</div><div class="check"></div></label></li>
-					<li class="radio-item " value="886"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">中国台湾(+886)</div><div class="check"></div></label></li>
-				</ul>
-				<div class="arrow up left"></div>
-				<div class="describe" style="display: none;"></div>
-			</div>
-			<div class="slide-selector plugin-inited">
-				<header class="bar-nav">
-					<div class="radio-title"><span class="title">选择手机号地区</span><span class="cancel">取消</span></div>
-				</header>
-				<ul class="page-content">
-					<li class="radio-item  selected" value=""><label class="label-radio clearfix"><div class="radio-icon"><span class="radio selected"></span></div><div class="radio-text">中国大陆(+86)</div><div class="check"></div></label></li>
-					<li class="radio-item " value="852"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">中国香港(+852)</div><div class="check"></div></label></li>
-					<li class="radio-item " value="853"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">中国澳门(+853)</div><div class="check"></div></label></li>
-					<li class="radio-item " value="886"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text">中国台湾(+886)</div><div class="check"></div></label></li>
-				</ul>
-				<div class="arrow up left"></div>
-				<div class="describe" style="display: none;"></div>
-			</div>
+			
 			<div class="select-people page-plugin page-on-right plugin-inited">
-				<header class="bar bar-nav">
-					<a class="icon icon-back pull-left"></a>
-					<h1 class="title">选择入住人</h1></header>
-				<div class="page-content">
-					<div class="person-box">
-						<p class="tip">请选择真实入住人，以保证后续正常审核、返现。</p>
-						<div class="add"><b>+</b> 新增常用入住人<span><i class="cert"></i></span></div>
-						<div class="to-input"><input id="inputaddcusname" name="addcusname" type="text" placeholder="请输入入住人姓名" maxlength="30" data-validate="{&quot;rq&quot;:true,&quot;regex&quot;:&quot;^[一-龥]{2,50}|[a-zA-Z][a-zA-Z/]+[a-zA-Z]$&quot;,&quot;msg&quot;:&quot;姓名格式有误&quot;}">
-							<div class="confirm">增加</div>
-						</div>
-						<div class="error">每个房间只需选择一位入住人</div>
-						<div class="still"><span class="t2">每个房间只需选择一位入住人</span></div>
-						<div class="btnwrap"><button class="cancel">取消</button><button class="submit">确定</button></div>
-					</div>
-				</div>
-				<ul class="per-list">
-					<li>
-						<div class="checkbox"></div><span>张君华<span></span></span>
-					</li>
-
-				</ul>
+				<!--填写入住者个人信息-->
+				<xperson></xperson>
+				
 			</div>
 			<xreBackMoneyDirective></xreBackMoneyDirective>
 			
@@ -146,11 +88,24 @@
 	import xmask from "../buyCarcomponents/xmask.vue"
 	//选择使用那个红包
 	import xuseHongBao from "../buyCarcomponents/xuseHongBao.vue"
+	//选择房间数量
+	import xroomNum from "../buyCarcomponents/xroomNum.vue"
+	//选择保留时间
+	import xtimeNum from "../buyCarcomponents/xtimeNum.vue"
+	//选择最晚到店时间
+	import xinTime from "../buyCarcomponents/xinTime.vue"
+	//填写个人联系方式
+	import xconnection from "../buyCarcomponents/xconnection.vue"
+	//填写入住者个人信息
+	import xperson from "../buyCarcomponents/xperson.vue"
 	export default {
 		data() {
 			return {
 
 			}
+		},
+		methods:{
+
 		},
 		mounted() {
 			console.log(111)
@@ -166,8 +121,11 @@
 			xreBackMoneyDirective,
 			xmask,
 			xuseHongBao,
-			
-			
+			xroomNum,
+			xtimeNum,
+			xinTime,
+			xconnection,
+			xperson,
 			
 		}
 	}

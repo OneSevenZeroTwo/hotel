@@ -1,10 +1,11 @@
 <template>
-	<div class="order-contact">
-		<h1>联系资料</h1>
+	<div class="order-contact" @click="test()">
+		<h1 >联系资料</h1>
 		<div class="contact-person">
 			<ul>
-				<li> <label for="cusname1"></label>
-					<div class="label">入住人(房间1)</div>
+				<li v-for='n in aaaa'> 
+					<label for="cusname1"></label>
+					<div class="label" >入住人(房间{{n}})</div>
 					<div class="content list-input">
 						<input type="text" class="createorder" name="customernames" id="cusname1" placeholder="姓名，每间填1人" value="">
 					</div>
@@ -35,8 +36,30 @@
 </template>
 
 <script>
-</script>
+export default{
+		data() {
+				return {
+					RoomsNum: [1],
+				}
 
+			},
+		computed:{
+			aaaa(){
+				return this.$store.state.roomsNum
+			}
+		},
+		methods:{
+			test(){
+				console.log(1111111111)
+				console.log(this.$store.state)
+			}
+		},
+		mounted(){
+			console.log(1111111111)
+		}
+	}
+</script>
+	
 <style>
 
 </style>

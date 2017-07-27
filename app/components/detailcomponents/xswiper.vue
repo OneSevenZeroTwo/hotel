@@ -5,6 +5,30 @@
 				<div v-for="(img,index) in imgArr" class="swiper-slide"><img :src="'http:'+img" alt="" /></div>
 			</div>
 
+			<!--<h1 data-v-717dd598="" class="name">
+					<i data-v-717dd598="" class="grade grade1"></i> 
+					<em data-v-717dd598="">
+						北京阳光温特莱酒店(国展店)(原速8国展柳芳店)
+					</em>
+				</h1>
+			<span data-v-717dd598="" class="hotel-type">
+					经济型
+				</span>
+		<!--<div data-v-717dd598="" class="hotel-info">
+			<div data-v-717dd598="" data-tj="{&quot;cspot&quot;:&quot;image&quot;}" class="pic-wrap tjclick swiper-container-horizontal">
+				<div>
+					<h1 data-v-717dd598="" class="name">
+					<i data-v-717dd598="" class="grade grade1"></i> 
+					<em data-v-717dd598="">
+						北京阳光温特莱酒店(国展店)(原速8国展柳芳店)
+					</em>
+				</h1>
+					<span data-v-717dd598="" class="hotel-type">
+					经济型
+				</span>
+					<div data-v-717dd598="" class="num"><i data-v-717dd598=""></i>88</div>
+				</div>
+			</div>-->
 		</div>
 
 	</div>

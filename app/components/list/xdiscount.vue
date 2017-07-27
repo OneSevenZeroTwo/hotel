@@ -1,6 +1,6 @@
 //优惠
 <template>
-	<div class="filter-sp plugin-inited ks_show sale-filter" style="display: none;">
+	<div class="filter-sp plugin-inited ks_show sale-filter" v-show="saletitle">
 		<div class="sp-content">
 			<div class="price">
 				<div class="sp-tit sale-tit">特价优惠(可多选)</div>
@@ -20,3 +20,21 @@
 		</div>
 	</div>
 </template>
+
+<script>
+	export default {
+		data:function(){
+			return {
+				
+			}
+		},
+		methods:{
+
+		},
+		computed:{
+			saletitle:function(){
+				return this.$store.state.saletitle
+			}
+		},
+	}
+</script>

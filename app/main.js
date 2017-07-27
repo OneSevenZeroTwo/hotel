@@ -1,4 +1,5 @@
 import "../public/css/font_mdye6150zyyzaor/iconfont.css"
+import "../public/css/animate.css"
 
 
 //引入js文件，jquery,Vue全家桶...............................................
@@ -25,7 +26,7 @@ console.log(com.randomNum(1, 10))
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
-	//挂载axios在Vue构造器下
+//挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
 
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
@@ -42,7 +43,7 @@ import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
-import home from "./components/indexcomponents/router/home.vue"
+import home from "./components/home.vue"
 //详情页路由
 import list from "./components/list/router/list.vue"
 
@@ -100,11 +101,22 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
+		//列表页数据开始
+		roomtitle:false,
+		saletitle:false,
+		tit:false,
+		areabtn:false,
+		pricestarbtn:false,
+		defaultbtn:false,
+		//遮罩层
+		masklayer:false,
+		//列表页数据结束
 		imgUrl: null,
+		aaa: '广州市',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		isLogin:false,
+		isLogin: false,
 		direction: 'left',
 		news: "",
 		detailNews: null,
@@ -113,7 +125,10 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
-		]
+		],
+		isShowMask:false,
+		roomsNum:null,
+		timesNum:null,
 
 	},
 	getters: {
@@ -144,7 +159,7 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
-		},
+		}, 
 
 	}
 })
