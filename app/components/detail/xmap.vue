@@ -26,42 +26,42 @@
 <script>
 	// 百度地图API功能
 	export default {
-		methods: {
-			test() {
-				console.log(111111)
-				$("#l-map").css('height', "100%")
-				$("#l-map").css('top', "0")
-			},
-			maps(){
-				location.href = "http://api.map.baidu.com/api?v=2.0&ak=ow6H0on6VR7Thq3dfdSRHbsAnERdW4L7"
-			}
-		},
-		mounted() {
-			// 百度地图API功能
-			var map = new BMap.Map("l-map");
-			map.centerAndZoom(new BMap.Point(116.404, 39.915), 30);
-
-			var start = "百度大厦";
-			var end = "北京邮电大学西门";
-			var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME, BMAP_TRANSIT_POLICY_LEAST_TRANSFER, BMAP_TRANSIT_POLICY_LEAST_WALKING, BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
-			var transit = new BMap.TransitRoute(map, {
-				renderOptions: {
-					map: map
-				},
-				policy: 0
-			});
-			(function() {
-				map.clearOverlays();
-				//				var i = $("#driving_way select").val();
-				var i = "最少时间"
-				search(start, end, routePolicy[i]);
-
-				function search(start, end, route) {
-					transit.setPolicy(route);
-					transit.search(start, end);
-				}
-			})();
-		}
+//		methods: {
+//			test() {
+//				console.log(111111)
+//				$("#l-map").css('height', "100%")
+//				$("#l-map").css('top', "0")
+//			},
+//			maps(){
+//				location.href = "http://api.map.baidu.com/api?v=2.0&ak=ow6H0on6VR7Thq3dfdSRHbsAnERdW4L7"
+//			}
+//		},
+//		mounted() {
+//			// 百度地图API功能
+//			var map = new BMap.Map("l-map");
+//			map.centerAndZoom(new BMap.Point(116.404, 39.915), 30);
+//
+//			var start = "百度大厦";
+//			var end = "北京邮电大学西门";
+//			var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME, BMAP_TRANSIT_POLICY_LEAST_TRANSFER, BMAP_TRANSIT_POLICY_LEAST_WALKING, BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+//			var transit = new BMap.TransitRoute(map, {
+//				renderOptions: {
+//					map: map
+//				},
+//				policy: 0
+//			});
+//			(function() {
+//				map.clearOverlays();
+//				//				var i = $("#driving_way select").val();
+//				var i = "最少时间"
+//				search(start, end, routePolicy[i]);
+//
+//				function search(start, end, route) {
+//					transit.setPolicy(route);
+//					transit.search(start, end);
+//				}
+//			})();
+//		}
 	}
 </script>
 <style scoped>
