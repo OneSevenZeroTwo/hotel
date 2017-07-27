@@ -15,8 +15,6 @@
 			<span data-v-717dd598="" class="hotel-type">
 					经济型
 				</span>
-			<div data-v-717dd598="" class="num"><i data-v-717dd598=""></i>88</div>-->
-		</div>
 		<!--<div data-v-717dd598="" class="hotel-info">
 			<div data-v-717dd598="" data-tj="{&quot;cspot&quot;:&quot;image&quot;}" class="pic-wrap tjclick swiper-container-horizontal">
 				<div>
@@ -31,8 +29,8 @@
 				</span>
 					<div data-v-717dd598="" class="num"><i data-v-717dd598=""></i>88</div>
 				</div>
-			</div>
-		</div>-->
+			</div>-->
+		</div>
 	</div>
 </template>
 

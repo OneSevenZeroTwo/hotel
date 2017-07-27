@@ -115,7 +115,10 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
-		]
+		],
+		isShowMask:false,
+		roomsNum:null,
+		timesNum:null,
 
 	},
 	getters: {
