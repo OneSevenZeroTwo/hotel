@@ -1,6 +1,6 @@
 //星级价格
 <template>
-	<div class="filter-sp plugin-inited" style="">
+	<div :class="['filter-sp','plugin-inited',{'filter-sp-active':pricestarbtn},{'plugin-show':pricestarbtn}]" style="">
 		<span class="arrow"></span>
 		<div class="sp-content">
 			<div class="star">
@@ -31,3 +31,24 @@
 		</div>
 	</div>
 </template>
+
+<script>
+	export default {
+		data:function(){
+			return {
+				
+			}
+		},
+		methods:{
+
+		},
+		computed:{
+			pricestarbtn:function(){
+				return this.$store.state.pricestarbtn
+			}
+		},
+		mounted:function(){
+
+		}
+	}
+</script>

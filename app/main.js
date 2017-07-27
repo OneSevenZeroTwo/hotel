@@ -129,6 +129,16 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
+		//列表页数据开始
+		roomtitle:false,
+		saletitle:false,
+		tit:false,
+		areabtn:false,
+		pricestarbtn:false,
+		defaultbtn:false,
+		//遮罩层
+		masklayer:false,
+		//列表页数据结束
 		imgUrl: null,
 		galleryIsShow: false,
 		activingNav: 0,
@@ -173,7 +183,7 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
-		},
+		}, 
 
 	}
 })

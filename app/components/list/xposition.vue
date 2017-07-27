@@ -1,7 +1,7 @@
 区域位置//
 <template>
-	<div class="list-pop-fliter list-pop-area plugin-inited page-plugin page-on-right">
-		<header class="bar bar-nav flight-order-head">
+	<div :class="['list-pop-fliter','list-pop-area','plugin-inited','page-plugin',{'plugin-show':areabtn},{'page-on-right':!areabtn},{'page-on-center':areabtn}]">
+		<header @click="iconback()" class="bar bar-nav flight-order-head">
 			<a class="icon pull-left icon-back"></a>
 			<div class="title">区域位置</div>
 		</header>
@@ -129,3 +129,27 @@
 		</div>
 	</div>
 </template>
+
+<script>
+	export default {
+		data:function(){
+			return {
+
+			}
+		},
+		methods:{
+			//点击返回
+			iconback:function(){
+				this.$store.state.areabtn = false;
+			}
+		},
+		computed:{
+			areabtn:function(){
+				return this.$store.state.areabtn
+			}
+		},
+		mounted:function(){
+
+		}
+	}
+</script>
