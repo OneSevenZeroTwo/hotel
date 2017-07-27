@@ -16,7 +16,7 @@
 							<span class="ol_night">共1晚</span>
 							<span>离店</span>
 						</div>
-						<div class="getin_room_b">
+						< div class="getin_room_b">
 							<span><em class="indate" data="2017-07-26">07月26日</em><em class="startweek">今天</em></span>
 							<span class="getin_fen">|</span>
 							<span><em class="outdate" data="2017-07-27">07月27日</em><em class="endweek">明天</em></span>

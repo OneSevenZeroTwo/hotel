@@ -15,6 +15,7 @@
 			<div class="right">
 				<div class="map_c">
 					<div id="l-map"></div>
+					<img @click="maps()" width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=39.889966,116.269147&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
 					<i class="map_icons"></i>
 				</div>
 			</div>
@@ -30,6 +31,9 @@
 				console.log(111111)
 				$("#l-map").css('height', "100%")
 				$("#l-map").css('top', "0")
+			},
+			maps(){
+				location.href = "http://api.map.baidu.com/api?v=2.0&ak=ow6H0on6VR7Thq3dfdSRHbsAnERdW4L7"
 			}
 		},
 		mounted() {
