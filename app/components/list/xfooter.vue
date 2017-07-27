@@ -26,7 +26,7 @@
 					<i class="list-filter-i4"></i>
 					<span class="title-pad">排序</span>
 					<span class="title-phone">排序</span>
-					</p>
+				</p>
 				<p class="opt">默认排序</p>
 			</li>
 		</ul>
