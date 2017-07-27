@@ -1,7 +1,25 @@
 <template>
-	<div  class="qqqqqq">
-		<div @click="test()" id="l-map"></div>
-
+	<div class="qqqqqq">
+		
+		<!--酒店地址-->
+		<li class="info_mn">
+			<div class="col_tb">
+				<div class="posi">
+					<div class="addr">朝阳区柳芳北街6号(煤炭总医院正对面)</div>
+					<div class="dis">
+						<span class="disc">距离柳芳地铁站0.4公里,步行至此0.8公里,约13分钟</span>
+					</div>
+				</div>
+			</div>
+			<div class="map_bg"></div>
+			<div class="right">
+				<div class="map_c">
+					<div id="l-map"></div>
+					<img @click="maps()" width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=39.889966,116.269147&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
+					<i class="map_icons"></i>
+				</div>
+			</div>
+		</li>
 	</div>
 
 </template>
@@ -13,6 +31,9 @@
 				console.log(111111)
 				$("#l-map").css('height', "100%")
 				$("#l-map").css('top', "0")
+			},
+			maps(){
+				location.href = "http://api.map.baidu.com/api?v=2.0&ak=ow6H0on6VR7Thq3dfdSRHbsAnERdW4L7"
 			}
 		},
 		mounted() {
