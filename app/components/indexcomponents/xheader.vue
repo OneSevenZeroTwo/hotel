@@ -53,8 +53,8 @@
 				}).then(function(res) {
 					console.log(res)
 					this.arr = res.data.advList
-					console.log(this.arr[0].picUrl)
-					this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl, this.arr[4].picUrl]
+					console.log(this.arr)
+					this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]
 				}.bind(this))
 
 			}
@@ -79,7 +79,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.swiper-slide img {
 		width: 100%;
 		height: 119px;

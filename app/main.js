@@ -15,8 +15,8 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import $ from "jquery";
 window.$ = window.jQuery = $
 import com from "./js/common.js"
-window.com =com
-console.log(com.randomNum(1,10))
+window.com = com
+console.log(com.randomNum(1, 10))
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
 Vue.use(Vuex);
@@ -24,7 +24,6 @@ Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
 //挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
-
 
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
 import MuseUI from 'muse-ui'
@@ -34,7 +33,7 @@ Vue.use(MuseUI)
 //router路由部分.........................................................
 
 //引入定义好的路由。(所有级别的路由)
-import home from "./components/routes/home.vue"
+//import home from "./components/routes/home.vue"
 import share from "./components/routes/share.vue"
 import ask from "./components/routes/ask.vue"
 import job from "./components/routes/job.vue"
@@ -46,6 +45,8 @@ import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
+//首页路由 chuanye
+import home from "./components/indexcomponents/router/home.vue"
 //详情页路由
 import list from "./components/list/router/list.vue"
 
@@ -114,8 +115,8 @@ var routes = [{
 	},
 	//列表页开始
 	{
-		path:'/list',
-		component:list
+		path: '/list',
+		component: list
 	},
 	//列表页结束
 	{
@@ -137,9 +138,11 @@ var store = new Vuex.Store({
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		news:"",
-		detailNews:null,
-		imgArr:[]
+		news: "",
+		detailNews: null,
+		direction: 'left',
+
+		imgArr: []
 	},
 	getters: {
 		getCount(state) {
@@ -151,7 +154,7 @@ var store = new Vuex.Store({
 		settitle(state, data) {
 			state.title = data
 		},
-		detailNews(state, data){
+		detailNews(state, data) {
 			state.detailNews = data
 		},
 		searchVal(state, val) {
@@ -178,7 +181,7 @@ var store = new Vuex.Store({
 new Vue({
 	el: "#demo",
 	template: `
-		<div>
+		<div style="height:100%">
 			<router-view></router-view>
 		</div>
 	`,
