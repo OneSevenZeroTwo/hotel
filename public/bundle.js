@@ -792,7 +792,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\xlist.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\xlist.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xlist.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -803,9 +803,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-a0b734d8", Component.options)
+    hotAPI.createRecord("data-v-43771ae8", Component.options)
   } else {
-    hotAPI.reload("data-v-a0b734d8", Component.options)
+    hotAPI.reload("data-v-43771ae8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -822,6 +822,7 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(101)
 }
 var Component = __webpack_require__(0)(
@@ -829,6 +830,15 @@ var Component = __webpack_require__(0)(
   __webpack_require__(103),
   /* template */
   __webpack_require__(104),
+=======
+  __webpack_require__(105)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(107),
+  /* template */
+  __webpack_require__(108),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
@@ -836,7 +846,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\xback.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\xback.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xback.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -847,9 +857,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-444b2546", Component.options)
+    hotAPI.createRecord("data-v-71ad22b1", Component.options)
   } else {
-    hotAPI.reload("data-v-444b2546", Component.options)
+    hotAPI.reload("data-v-71ad22b1", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -16165,6 +16175,7 @@ var _detail = __webpack_require__(92);
 
 var _detail2 = _interopRequireDefault(_detail);
 
+<<<<<<< HEAD
 var _test = __webpack_require__(129);
 
 var _test2 = _interopRequireDefault(_test);
@@ -16190,6 +16201,33 @@ var _home = __webpack_require__(204);
 var _home2 = _interopRequireDefault(_home);
 
 var _list = __webpack_require__(222);
+=======
+var _test = __webpack_require__(96);
+
+var _test2 = _interopRequireDefault(_test);
+
+var _register = __webpack_require__(101);
+
+var _register2 = _interopRequireDefault(_register);
+
+var _login = __webpack_require__(110);
+
+var _login2 = _interopRequireDefault(_login);
+
+var _buyCar = __webpack_require__(115);
+
+var _buyCar2 = _interopRequireDefault(_buyCar);
+
+var _mySelf = __webpack_require__(173);
+
+var _mySelf2 = _interopRequireDefault(_mySelf);
+
+var _home = __webpack_require__(178);
+
+var _home2 = _interopRequireDefault(_home);
+
+var _list = __webpack_require__(196);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 var _list2 = _interopRequireDefault(_list);
 
@@ -16380,8 +16418,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./iconfont.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./iconfont.css");
+		module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!./iconfont.css", function() {
+			var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!./iconfont.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -20614,7 +20652,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\node_modules\\vue-awesome-swiper\\swiper.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\node_modules\\_vue-awesome-swiper@2.5.4@vue-awesome-swiper\\swiper.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] swiper.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20625,9 +20663,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1800927c", Component.options)
+    hotAPI.createRecord("data-v-2caaca3d", Component.options)
   } else {
-    hotAPI.reload("data-v-1800927c", Component.options)
+    hotAPI.reload("data-v-2caaca3d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -20746,8 +20784,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../../../css-loader/index.js!./swiper.css", function() {
-			var newContent = require("!!../../../../../css-loader/index.js!./swiper.css");
+		module.hot.accept("!!../../../_css-loader@0.28.4@css-loader/index.js!./swiper.css", function() {
+			var newContent = require("!!../../../_css-loader@0.28.4@css-loader/index.js!./swiper.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -20785,7 +20823,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1800927c", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2caaca3d", module.exports)
   }
 }
 
@@ -20806,7 +20844,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\node_modules\\vue-awesome-swiper\\slide.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\node_modules\\_vue-awesome-swiper@2.5.4@vue-awesome-swiper\\slide.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] slide.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20817,9 +20855,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7226cc52", Component.options)
+    hotAPI.createRecord("data-v-5523aafc", Component.options)
   } else {
-    hotAPI.reload("data-v-7226cc52", Component.options)
+    hotAPI.reload("data-v-5523aafc", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -20894,7 +20932,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7226cc52", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5523aafc", module.exports)
   }
 }
 
@@ -37205,8 +37243,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../css-loader/index.js!./muse-ui.css", function() {
-			var newContent = require("!!../../css-loader/index.js!./muse-ui.css");
+		module.hot.accept("!!../../_css-loader@0.28.4@css-loader/index.js!./muse-ui.css", function() {
+			var newContent = require("!!../../_css-loader@0.28.4@css-loader/index.js!./muse-ui.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -37250,7 +37288,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\share.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\share.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] share.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37261,9 +37299,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2e301acc", Component.options)
+    hotAPI.createRecord("data-v-54ba7ef8", Component.options)
   } else {
-    hotAPI.reload("data-v-2e301acc", Component.options)
+    hotAPI.reload("data-v-54ba7ef8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -37284,13 +37322,13 @@ var content = __webpack_require__(64);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("ec013026", content, false);
+var update = __webpack_require__(2)("30de3d45", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2e301acc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./share.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2e301acc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./share.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-54ba7ef8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-54ba7ef8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./share.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37385,13 +37423,13 @@ var content = __webpack_require__(68);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("0ae3e50a", content, false);
+var update = __webpack_require__(2)("a95a1bd2", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0b734d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a0b734d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue");
+   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-43771ae8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue", function() {
+     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-43771ae8\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xlist.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37409,7 +37447,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*不想慢慢在base中提取*/\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/xlist.vue?5322a9ec"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiLA,gBAAA","file":"xlist.vue","sourcesContent":["<template>\r\n\t<div class=\"weui-panel__bd\">\r\n\t\t<p>{{searchVal}}</p>\r\n\t\t<a v-for=\"items in arr\" href=\"javascript:void(0);\" class=\"weui-media-box weui-media-box_appmsg\">\r\n\t\t\t<div class=\"weui-media-box__hd\">\r\n\t\t\t\t<img @click=\"showBigPic(items.author.avatar_url)\" class=\"weui-media-box__thumb\" :src=\"items.author.avatar_url\" alt=\"\">\r\n\t\t\t</div>\r\n\t\t\t<div class=\"channel\" v-html=\"channel(items.tab,items.good,items.top)\">\r\n\t\t\t</div>\r\n\r\n\t\t\t<div v-html=\"items.author.loginname\" class='autorName'>\r\n\r\n\t\t\t</div>\r\n\t\t\t<div class=\"weui-media-box__bd\">\r\n\t\t\t\t<h4 class=\"weui-media-box__title\" @click=\"toDetail(items.id)\">{{items.title|slice}}</h4>\r\n\t\t\t\t<p class=\"weui-media-box__desc repCount\">\r\n\t\t\t\t\t<span>查看/回复： </span>\r\n\t\t\t\t\t<span title=\"回复数\">{{items.reply_count}}</span>\r\n\t\t\t\t\t<span title=\"点击数\">{{\"/\"+items.visit_count}}</span>\r\n\t\t\t\t\t<span class=\"lastTime\" title=\"最后回复时间\">最后回复:{{items.last_reply_at|xreply}}</span>\r\n\r\n\t\t\t\t</p>\r\n\t\t\t</div>\r\n\t\t</a>\r\n\t\t<div class=\"weui-panel__ft\" @click='loadMore()' v-show=\"isLoading\">\r\n\t\t\t<a href=\"javascript:void(0);\" class=\"weui-cell weui-cell_access weui-cell_link\">\r\n\t\t\t\t<div class=\"weui-cell__bd\">查看更多</div>\r\n\t\t\t\t<span class=\"weui-cell__ft\"></span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div class=\"weui-loadmore\" v-show=\"!isLoading\">\r\n\t\t\t<i class=\"weui-loading\"></i>\r\n\t\t\t<span class=\"weui-loadmore__tips\">正在加载</span>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tprops: [\"message\", \"id\"],\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tpage: 1,\r\n\t\t\t\tarr: [],\r\n\t\t\t\tisLoading: true\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tsearchVal(){\r\n\t\t\t\treturn this.$store.state.val;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"list加载\")\r\n\r\n\t\t\t\tthis.isLoading = false\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"https://cnodejs.org/api/v1/topics\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\ttab: this.message,\r\n\t\t\t\t\t\tlimit: 10,\r\n\t\t\t\t\t\tpage: this.page++\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = this.arr.concat(res.data.data)\r\n\t\t\t\t\tthis.isLoading = true\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\t\t\thighLight() {\r\n\t\t\t\tswitch(true) {\r\n\t\t\t\t\tcase !this.message:\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 0\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"share\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 1\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"ask\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 2\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"job\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 3\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"good\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 4\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tchannel(input, good, top) {\r\n\t\t\t\tswitch(input) {\r\n\t\t\t\t\tcase \"share\":\r\n\t\t\t\t\t\tif(good && top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:green;\">精华</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:#e25454;\">置顶</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else if(good && !top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:green;\">精华</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else if(!good && top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:#e25454;\">置顶</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\tcase \"job\":\r\n\t\t\t\t\t\treturn `<span class=\"bg\">招聘</span>`;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase \"ask\":\r\n\t\t\t\t\t\treturn `<span class=\"bg\" >问答</span>`;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tdefault:\r\n\t\t\t\t\t\treturn \"\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tshowBigPic(imgUrl) {\r\n\t\t\t\tconsole.log(this.$store)\r\n\r\n\t\t\t\tthis.$store.state.galleryIsShow = true;\r\n\t\t\t\tthis.$store.state.imgUrl = imgUrl;\r\n\t\t\t},\r\n\t\t\ttoDetail(id) {\r\n\t\t\t\tlocation.href = \"#/detail/\" + id\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\tconsole.log(\"mounted\")\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\t\t\tthis.highLight()\r\n\r\n\t\t},\r\n\t\tfilters: {\r\n\t\t\txreply: function(input) {\r\n\t\t\t\tvar now = Date.now()\r\n\t\t\t\tvar reply = Date.parse(input)\r\n\t\t\t\tvar intDiff = (now - reply) / 1000;\r\n\r\n\t\t\t\tvar year = Math.floor(intDiff  /  (60  *  60  *  24 * 30 * 12));\r\n\t\t\t\tvar month = Math.floor(intDiff  /  (60  *  60  *  24 * 30));\r\n\t\t\t\tvar day  =  Math.floor(intDiff  /  (60  *  60  *  24));        \r\n\t\t\t\tvar hour  =  Math.floor(intDiff  /  (60  *  60))  -  (day  *  24);        \r\n\t\t\t\tvar minute  =  Math.floor(intDiff  /  60)  -  (day  *  24  *  60)  -  (hour  *  60);        \r\n\t\t\t\tvar second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);\r\n\t\t\t\tif(year > 0) {\r\n\t\t\t\t\treturn year + '年前'\r\n\t\t\t\t} else if(month > 0) {\r\n\t\t\t\t\treturn month + '月前'\r\n\t\t\t\t} else if(day > 0) {\r\n\t\t\t\t\treturn day + '天前'\r\n\t\t\t\t} else if(hour > 0) {\r\n\t\t\t\t\treturn hour + '小时前'\r\n\t\t\t\t} else if(minute > 0) {\r\n\t\t\t\t\treturn minute + '分钟前'\r\n\t\t\t\t} else if(second > 0) {\r\n\t\t\t\t\treturn second + '秒前'\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tslice(input) {\r\n\t\t\t\tif(input.length > 20) {\r\n\t\t\t\t\treturn input.slice(0, 18) + \"...\"\r\n\t\t\t\t} else {\r\n\t\t\t\t\treturn input\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t},\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t/*不想慢慢在base中提取*/\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*不想慢慢在base中提取*/\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/xlist.vue?5322a9ec"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiLA,gBAAA","file":"xlist.vue","sourcesContent":["<template>\r\n\t<div class=\"weui-panel__bd\">\r\n\t\t<p>{{searchVal}}</p>\r\n\t\t<a v-for=\"items in arr\" href=\"javascript:void(0);\" class=\"weui-media-box weui-media-box_appmsg\">\r\n\t\t\t<div class=\"weui-media-box__hd\">\r\n\t\t\t\t<img @click=\"showBigPic(items.author.avatar_url)\" class=\"weui-media-box__thumb\" :src=\"items.author.avatar_url\" alt=\"\">\r\n\t\t\t</div>\r\n\t\t\t<div class=\"channel\" v-html=\"channel(items.tab,items.good,items.top)\">\r\n\t\t\t</div>\r\n\r\n\t\t\t<div v-html=\"items.author.loginname\" class='autorName'>\r\n\r\n\t\t\t</div>\r\n\t\t\t<div class=\"weui-media-box__bd\">\r\n\t\t\t\t<h4 class=\"weui-media-box__title\" @click=\"toDetail(items.id)\">{{items.title|slice}}</h4>\r\n\t\t\t\t<p class=\"weui-media-box__desc repCount\">\r\n\t\t\t\t\t<span>查看/回复： </span>\r\n\t\t\t\t\t<span title=\"回复数\">{{items.reply_count}}</span>\r\n\t\t\t\t\t<span title=\"点击数\">{{\"/\"+items.visit_count}}</span>\r\n\t\t\t\t\t<span class=\"lastTime\" title=\"最后回复时间\">最后回复:{{items.last_reply_at|xreply}}</span>\r\n\r\n\t\t\t\t</p>\r\n\t\t\t</div>\r\n\t\t</a>\r\n\t\t<div class=\"weui-panel__ft\" @click='loadMore()' v-show=\"isLoading\">\r\n\t\t\t<a href=\"javascript:void(0);\" class=\"weui-cell weui-cell_access weui-cell_link\">\r\n\t\t\t\t<div class=\"weui-cell__bd\">查看更多</div>\r\n\t\t\t\t<span class=\"weui-cell__ft\"></span>\r\n\t\t\t</a>\r\n\t\t</div>\r\n\t\t<div class=\"weui-loadmore\" v-show=\"!isLoading\">\r\n\t\t\t<i class=\"weui-loading\"></i>\r\n\t\t\t<span class=\"weui-loadmore__tips\">正在加载</span>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tprops: [\"message\", \"id\"],\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tpage: 1,\r\n\t\t\t\tarr: [],\r\n\t\t\t\tisLoading: true\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tsearchVal(){\r\n\t\t\t\treturn this.$store.state.val;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"list加载\")\r\n\r\n\t\t\t\tthis.isLoading = false\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"https://cnodejs.org/api/v1/topics\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\ttab: this.message,\r\n\t\t\t\t\t\tlimit: 10,\r\n\t\t\t\t\t\tpage: this.page++\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = this.arr.concat(res.data.data)\r\n\t\t\t\t\tthis.isLoading = true\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\t\t\thighLight() {\r\n\t\t\t\tswitch(true) {\r\n\t\t\t\t\tcase !this.message:\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 0\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"share\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 1\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"ask\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 2\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"job\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 3\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase this.message == \"good\":\r\n\t\t\t\t\t\tthis.$store.state.activingNav = 4\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tchannel(input, good, top) {\r\n\t\t\t\tswitch(input) {\r\n\t\t\t\t\tcase \"share\":\r\n\t\t\t\t\t\tif(good && top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:green;\">精华</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:#e25454;\">置顶</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else if(good && !top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:green;\">精华</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else if(!good && top) {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>\r\n\t\t\t\t\t\t<span class=\"bg\" style=\"color:#fff;background:#e25454;\">置顶</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\treturn `<span class=\"bg\">分享</span>`;\r\n\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\tcase \"job\":\r\n\t\t\t\t\t\treturn `<span class=\"bg\">招聘</span>`;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tcase \"ask\":\r\n\t\t\t\t\t\treturn `<span class=\"bg\" >问答</span>`;\r\n\t\t\t\t\t\tbreak;\r\n\t\t\t\t\tdefault:\r\n\t\t\t\t\t\treturn \"\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tshowBigPic(imgUrl) {\r\n\t\t\t\tconsole.log(this.$store)\r\n\r\n\t\t\t\tthis.$store.state.galleryIsShow = true;\r\n\t\t\t\tthis.$store.state.imgUrl = imgUrl;\r\n\t\t\t},\r\n\t\t\ttoDetail(id) {\r\n\t\t\t\tlocation.href = \"#/detail/\" + id\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\tconsole.log(\"mounted\")\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\t\t\tthis.highLight()\r\n\r\n\t\t},\r\n\t\tfilters: {\r\n\t\t\txreply: function(input) {\r\n\t\t\t\tvar now = Date.now()\r\n\t\t\t\tvar reply = Date.parse(input)\r\n\t\t\t\tvar intDiff = (now - reply) / 1000;\r\n\r\n\t\t\t\tvar year = Math.floor(intDiff  /  (60  *  60  *  24 * 30 * 12));\r\n\t\t\t\tvar month = Math.floor(intDiff  /  (60  *  60  *  24 * 30));\r\n\t\t\t\tvar day  =  Math.floor(intDiff  /  (60  *  60  *  24));        \r\n\t\t\t\tvar hour  =  Math.floor(intDiff  /  (60  *  60))  -  (day  *  24);        \r\n\t\t\t\tvar minute  =  Math.floor(intDiff  /  60)  -  (day  *  24  *  60)  -  (hour  *  60);        \r\n\t\t\t\tvar second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);\r\n\t\t\t\tif(year > 0) {\r\n\t\t\t\t\treturn year + '年前'\r\n\t\t\t\t} else if(month > 0) {\r\n\t\t\t\t\treturn month + '月前'\r\n\t\t\t\t} else if(day > 0) {\r\n\t\t\t\t\treturn day + '天前'\r\n\t\t\t\t} else if(hour > 0) {\r\n\t\t\t\t\treturn hour + '小时前'\r\n\t\t\t\t} else if(minute > 0) {\r\n\t\t\t\t\treturn minute + '分钟前'\r\n\t\t\t\t} else if(second > 0) {\r\n\t\t\t\t\treturn second + '秒前'\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\tslice(input) {\r\n\t\t\t\tif(input.length > 20) {\r\n\t\t\t\t\treturn input.slice(0, 18) + \"...\"\r\n\t\t\t\t} else {\r\n\t\t\t\t\treturn input\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t},\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t/*不想慢慢在base中提取*/\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -37696,7 +37734,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-a0b734d8", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-43771ae8", module.exports)
   }
 }
 
@@ -37715,7 +37753,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2e301acc", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-54ba7ef8", module.exports)
   }
 }
 
@@ -37740,7 +37778,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\ask.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\ask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37751,9 +37789,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-110159a6", Component.options)
+    hotAPI.createRecord("data-v-7ceed8d2", Component.options)
   } else {
-    hotAPI.reload("data-v-110159a6", Component.options)
+    hotAPI.reload("data-v-7ceed8d2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -37774,13 +37812,13 @@ var content = __webpack_require__(74);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("12c3a70d", content, false);
+var update = __webpack_require__(2)("61469d5b", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-110159a6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ask.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-110159a6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ask.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ceed8d2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./ask.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7ceed8d2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./ask.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37807,6 +37845,112 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"source
 /* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
+=======
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('xlist', {
+    attrs: {
+      "message": "ask"
+    }
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7ceed8d2", module.exports)
+  }
+}
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(77)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(79),
+  /* template */
+  __webpack_require__(80),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\job.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] job.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-51b4b816", Component.options)
+  } else {
+    hotAPI.reload("data-v-51b4b816", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(78);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("edc91648", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-51b4b816\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./job.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-51b4b816\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./job.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"job.vue","sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 "use strict";
 
 
@@ -37973,7 +38117,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-34718e2c", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-51b4b816", module.exports)
   }
 }
 
@@ -37998,7 +38142,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\topics.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\topics.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] topics.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38009,9 +38153,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-575196f2", Component.options)
+    hotAPI.createRecord("data-v-7f1955db", Component.options)
   } else {
-    hotAPI.reload("data-v-575196f2", Component.options)
+    hotAPI.reload("data-v-7f1955db", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38032,13 +38176,13 @@ var content = __webpack_require__(84);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5f64f086", content, false);
+var update = __webpack_require__(2)("6fb1d17a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./topics.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-575196f2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./topics.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7f1955db\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./topics.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7f1955db\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./topics.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38102,7 +38246,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-575196f2", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7f1955db", module.exports)
   }
 }
 
@@ -38127,7 +38271,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\good.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\good.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] good.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38138,9 +38282,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-96f8c340", Component.options)
+    hotAPI.createRecord("data-v-7373f698", Component.options)
   } else {
-    hotAPI.reload("data-v-96f8c340", Component.options)
+    hotAPI.reload("data-v-7373f698", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38161,13 +38305,13 @@ var content = __webpack_require__(89);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("acda2ce0", content, false);
+var update = __webpack_require__(2)("7577e75c", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-96f8c340\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./good.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-96f8c340\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./good.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7373f698\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./good.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7373f698\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./good.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38231,7 +38375,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-96f8c340", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7373f698", module.exports)
   }
 }
 
@@ -38248,15 +38392,19 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(95),
   /* template */
+<<<<<<< HEAD
   __webpack_require__(128),
+=======
+  __webpack_require__(95),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-717dd598",
+  null,
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\detail.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\detail.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] detail.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38267,9 +38415,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-717dd598", Component.options)
+    hotAPI.createRecord("data-v-72033688", Component.options)
   } else {
-    hotAPI.reload("data-v-717dd598", Component.options)
+    hotAPI.reload("data-v-72033688", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38290,13 +38438,13 @@ var content = __webpack_require__(94);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a6caf59a", content, false);
+var update = __webpack_require__(2)("f02bb63c", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./detail.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./detail.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72033688\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./detail.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72033688\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./detail.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38314,7 +38462,11 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "\n{\n\tpadding: 0;\n\tmargin: 0;\n}\nul li[data-v-717dd598] {\n\tlist-style: none;\n}\na[data-v-717dd598] {\n\ttext-decoration: none;\n}\n/*\n.grade {\n\tdisplay: inline-block;\n\twidth: 16px;\n\theight: 14px;\n\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\tbackground-position: 0 -18px;\n\tbackground-repeat: no-repeat;\n\tbackground-size: 96px 32px;\n\tmargin-left: 3px;\n\tmargin-bottom: 1px;\n}\n\n.name em {\n\tcolor: #fff;\n\tfont-style: normal;\n}\n*/\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/detail.vue?07685cdd"],"names":[],"mappings":";AA4pCA;CACA,WAAA;CACA,UAAA;CACA;AAEA;CACA,iBAAA;CACA;AAEA;CACA,sBAAA;CACA;AACA;;;;;;;;;;;;;;;;;EAiBA","file":"detail.vue","sourcesContent":["<template>\n\t<div class=\"pages\">\n\t\t<xback></xback>\n\t\t<xtoHome></xtoHome>\n\t\t<div class=\"page page-on-center\" data-blend=\"layer\" data-blend-id=\"h5_detail\" data-url=\"/hotel/00101543/\" id=\"uniq22\" data-title=\"【北京阳光温特莱酒店(国展店)(原速8国展柳芳店)】地址:朝阳区柳芳北街6号(煤炭总医院正对面)_艺龙网移动版\" data-title-id=\"h5_detail\">\n\t\t\t<!-- 详情页优化，渠道定制去头 -->\n\t\t\t<xheader></xheader>\n\t\t\t<div class=\"bar stickys indexnew\">\n\t\t\t\t<div class=\"hotel-info detail-date datefixed tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;time&quot;}\">\n\t\t\t\t\t<div class=\"getin_room_a\">\n\t\t\t\t\t\t<span>\n\t                        <em class=\"deepNightFlag\" style=\"display:none;\">深夜</em>\n\t                    入住\n\t                </span>\n\t\t\t\t\t\t<span class=\"ol_night\">共1晚</span>\n\t\t\t\t\t\t<span>离店</span>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"getin_room_b\">\n\t\t\t\t\t\t<span><em class=\"indate\" data=\"2017-07-27\">07月27日</em><em class=\"startweek\">今天</em></span>\n\t\t\t\t\t\t<span class=\"getin_fen\">|</span>\n\t\t\t\t\t\t<span><em class=\"outdate\" data=\"2017-07-28\">07月28日</em><em class=\"endweek\">明天</em></span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"fastchoose\">\n\t\t\t\t\t<div class=\"choice unon\" data-tj=\"{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}\">筛选<i class=\"getin\"></i></div>\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"30\" data-tj=\"{&quot;cspot&quot;:&quot;paymentInHotel&quot;}\">到店付</li>\n\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"101\" data-tj=\"{&quot;cspot&quot;:&quot;freeCancellation&quot;}\">免费取消</li>\n\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"102\" data-tj=\"{&quot;cspot&quot;:&quot;instantConfirm&quot;}\">立即确认</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"page-content new_detailst mvt_161125\">\n\t\t\t\t<section class=\"detail-main detail-mainNew\" style=\"overflow: visible;\">\n\n\t\t\t\t\t<div class=\"hotel-info\">\n\t\t\t\t\t\t<div style=\"height:100%\" data-v-717dd598=\"\" data-tj=\"{&quot;cspot&quot;:&quot;image&quot;}\" class=\"pic-wrap tjclick swiper-container-horizontal\">\n\t\t\t\t\t\t\t<xswiper></xswiper>\n\t\t\t\t\t\t\t<h1 data-v-717dd598=\"\" class=\"name\">\n\t\t\t\t\t<i data-v-717dd598=\"\" class=\"grade grade1\"></i> \n\t\t\t\t\t<em data-v-717dd598=\"\">\n\t\t\t\t\t\t北京阳光温特莱酒店(国展店)(原速8国展柳芳店)\n\t\t\t\t\t</em>\n\t\t\t\t</h1>\n\t\t\t\t\t\t\t<span data-v-717dd598=\"\" class=\"hotel-type\">\n\t\t\t\t\t经济型\n\t\t\t\t</span>\n\t\t\t\t\t\t\t<div data-v-717dd598=\"\" class=\"num\"><i data-v-717dd598=\"\"></i>88</div>\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"info\">\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<!--酒店地址-->\n\t\t\t\t\t\t\t\t<li class=\"info_mn\">\n\t\t\t\t\t\t\t\t\t<div class=\"col_tb\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"posi\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"addr\">朝阳区柳芳北街6号(煤炭总医院正对面)</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"dis\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"disc\">距离柳芳地铁站0.4公里,步行至此0.8公里,约13分钟</span>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"map_bg\"></div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"map_c\">\n\t\t\t\t\t\t\t\t\t\t\t<img width=\"180\" height=\"180\" src=\"//apis.map.qq.com/ws/staticmap/v2/?center=39.958981,116.437258&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2\">\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"map_icons\"></i>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t\t\t<!--住客评价-->\n\t\t\t\t\t\t\t\t<li class=\"choose\">\n\t\t\t\t\t\t\t\t\t<div class=\"titles\">\n\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\" active \">住客评价</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"hoteldetail   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;hoteldetailchange&quot;}\">酒店详情</li>\n\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t<span class=\"line \"></span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"text1 tabcomment all-com tjclick text_comments\" data-tj=\"{&quot;cspot&quot;:&quot;comment&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"left_c\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"praise_nbm\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"u_nbm\"><b class=\"s_nbm\">4.2</b>分</span>\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"u_btn\">挺好哒</span>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"right_c\">\n\t\t\t\t\t\t\t\t\t\t\t<h1>帅帅的大橙子<span class=\"ping\"><span class=\"level3\">点评新人</span></span></h1>\n\t\t\t\t\t\t\t\t\t\t\t<p>服务态度很好，房间也不错，价格合适。可以暂时寄存行李，很好。</p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"more_p info-comments\">查看2396条住客评价<i></i></p>\n\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t<div class=\"text1 tabdetails tjclick\" style=\"display:none;\" data-tj=\"{&quot;cspot&quot;:&quot;hoteldetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"mid2\">\n\t\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-parking\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>停车场</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-wifi\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>无线wifi</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-luggage\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>行李寄存</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"no\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"icon-bra\"></span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span>餐厅</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"more_p\">查看全部信息<i></i></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!-- mvt 20161125 日历控件dom start-->\n\t\t\t\t\t<div class=\"stickys indexnew sticky\" style=\"top: 42px;\">\n\t\t\t\t\t\t<div class=\"ht_day detail-date detail-hotel\">\n\t\t\t\t\t\t\t<div class=\"getin_room_a\">\n\t\t\t\t\t\t\t\t<span class=\"c8\">入住</span>\n\t\t\t\t\t\t\t\t<span class=\"indate\">07月27日</span>\n\t\t\t\t\t\t\t\t<span class=\"night\" style=\"display:none;\">深夜</span>\n\t\t\t\t\t\t\t\t<span class=\"c8\">离店</span>\n\t\t\t\t\t\t\t\t<span class=\"outdate\">07月28日</span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"getin_room_b\">\n\t\t\t\t\t\t\t\t<span class=\"count_day\">共<span class=\"count_nmb\">1</span>晚<i></i></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"fastchoose\">\n\t\t\t\t\t\t\t<div class=\"choice unon\" data-tj=\"{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}\">筛选<i class=\"getin\"></i></div>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"30\" data-tj=\"{&quot;cspot&quot;:&quot;paymentInHotel&quot;}\">到店付</li>\n\t\t\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"101\" data-tj=\"{&quot;cspot&quot;:&quot;freeCancellation&quot;}\">免费取消</li>\n\t\t\t\t\t\t\t\t<li class=\"tjclick\" kw=\"kw0\" data-id=\"102\" data-tj=\"{&quot;cspot&quot;:&quot;instantConfirm&quot;}\">立即确认</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!-- mvt 20161125 日历控件dom end-->\n\n\t\t\t\t\t<div class=\"type\">\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0007aJgt.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">标准双床房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">294</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>294</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">318返24<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0007aLpO.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">标准大床房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">294</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>294</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">318返24<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0003z5FB.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">特惠标准间</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>双床1.1米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">294</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>294</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">318返24<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ng.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">商务大床房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">313</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>313</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">338返25<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>353</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ne.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">商务双床间</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>18-20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">313</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>313</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">338返25<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>353</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap \">\n\t\t\t\t\t\t\t\t\t<div class=\"left   tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pic tjclick rpDetail\" data-tj=\"{&quot;cspot&quot;:&quot;roomimage&quot;}\"> <img src=\"//pavo.elongstatic.com/i/mobile750_448/00050lPD.jpg\"> </div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"picroom-info\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room\">商务套房</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"room-info\"> <span>36平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"icon icon-hs\"> <span class=\"clock_hb\" style=\"color:#FF5555;border: 1px #FF5555 solid;\"> 返 </span> </div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">462</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"f_c49f\"> 免费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>462</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"return\">500返38<br></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no full_no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplandetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra clearfix\"> 不含早 </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"> <span class=\"suppliername\">艺龙</span> <span class=\"suppliername\"> 付费取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>485</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"rooms  no \">\n\t\t\t\t\t\t\t\t<div class=\"wrap  rp \">\n\t\t\t\t\t\t\t\t\t<div class=\"left  tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;roomdetail&quot;}\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"room rpDetail\">钟点房</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"right\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"price\"><span>￥</span><span class=\"num\">133</span>起</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"de-btn\"> <i></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"rigit_activebg tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist1&quot;}\"></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"info-list\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra\">标准大床房(钟点房4小时)</div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"><span>18-20平米</span><span>大床1.8米</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"><span>入住：8:00-20:00</span> <span class=\"suppliername\"> 不可取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>133</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"roomdetail no\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"left\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"bra\">标准双床房(钟点房4小时)</div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"><span>18-20平米</span><span>双床1.2米</span></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"xstm\"><span>入住：8:00-20:00</span> <span class=\"suppliername\"> 不可取消 </span> </div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"act\"> </div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"value\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"price\">￥<span>320</span></div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;booking&quot;}\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"btn3 btn2_center\">满</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"facilities\">\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>酒店设施</dt>\n\t\t\t\t\t\t\t<dd class=\"fac\">\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>酒店电话</dt>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"tel:010-51371060\" class=\"tel\">010-51371060</a>艺龙电话预订：\n\t\t\t\t\t\t\t\t<a href=\"tel:400-666-1166\" class=\"tel\">400-666-1166</a>\n\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>开业时间</dt>\n\t\t\t\t\t\t\t<dd>酒店开业时间 2011年05月19日年 </dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<dl>\n\t\t\t\t\t\t\t<dt>酒店服务</dt>\n\t\t\t\t\t\t\t<dd>叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习</dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t<a class=\"more\">更多酒店信息</a>\n\t\t\t\t\t</div>\n\t\t\t\t</section>\n\t\t\t\t<section class=\"detail-sider\">\n\t\t\t\t\t<div class=\"look\">\n\t\t\t\t\t\t<dl class=\"list\">\n\t\t\t\t\t\t\t<dt><i class=\"clock icon-clock\"></i>历史浏览</dt>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/40301046/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>北京大成路九号</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">630</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/00101543/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">0</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/00101366/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>速8酒店(北京马家堡店)</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">618</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t\t<dd>\n\t\t\t\t\t\t\t\t<a href=\"/hotel/91244474/\">\n\t\t\t\t\t\t\t\t\t<i class=\"grade grade1\"></i>\n\t\t\t\t\t\t\t\t\t<em>飘HOME连锁酒店(北京西客站店)</em>\n\t\t\t\t\t\t\t\t</a><span>￥<i class=\"num\">368</i><i class=\"up\">起</i></span></dd>\n\t\t\t\t\t\t</dl>\n\t\t\t\t\t</div>\n\t\t\t\t\t<!--\n            <div class=\"near\">\n                <dl class=\"list\">\n                    <dt><i class=\"mark icon-nearby\"></i>附近酒店</dt>\n                </dl>\n            </div>\n        -->\n\t\t\t\t</section>\n\t\t\t\t<!-- 高铁管家定制 -->\n\t\t\t\t<section class=\"tool\">\n\t\t\t\t\t<div class=\"ver\">\n\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"xq\"><i class=\" icon-collect  \"></i>我感兴趣</a><span>｜</span>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"ht\"><i class=\"icon-phone\"></i>联系电话</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"copy\">©2009-2017 艺龙无线</div>\n\t\t\t\t</section>\n\t\t\t</div>\n\n\t\t\t<div class=\"slide-selector plugin-inited\">\n\t\t\t\t<header class=\"bar-nav\">\n\t\t\t\t\t<div class=\"radio-title\"><span class=\"title\">客服电话</span><span class=\"cancel\">取消</span></div>\n\t\t\t\t</header>\n\t\t\t\t<ul class=\"page-content\">\n\t\t\t\t\t<li class=\"radio-item \" value=\"0\"><label class=\"label-radio clearfix\"><div class=\"radio-icon\"><span class=\"radio\"></span></div><div class=\"radio-text\"><a href=\"tel:400-666-1166\">艺龙电话：400-666-1166</a></div><div class=\"check\"></div></label></li>\n\t\t\t\t\t<li class=\"radio-item \" value=\"1\"><label class=\"label-radio clearfix\"><div class=\"radio-icon\"><span class=\"radio\"></span></div><div class=\"radio-text\"><a href=\"tel:010-51371060\">酒店电话：010-51371060</a></div><div class=\"check\"></div></label></li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"arrow up left\"></div>\n\t\t\t\t<div class=\"describe\" style=\"display: none;\"></div>\n\t\t\t</div>\n\t\t\t<div class=\"type-pop-box roomTypeInfo newdetailhsize plugin-inited\">\n\t\t\t\t<div class=\"toptitle\">\n\t\t\t\t\t<p><span class=\"htitle\"></span></p>\n\t\t\t\t\t<div class=\"htclose\"><i class=\"cancel-icon\"></i></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"wrap page-content\">\n\t\t\t\t\t<div class=\"swiper-container hpic_show swiper-container-horizontal\">\n\t\t\t\t\t\t<div class=\"swiper-wrapper\"></div>\n\t\t\t\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"type-list\">\n\t\t\t\t\t\t<p class=\"faclist\"></p>\n\t\t\t\t\t\t<p class=\"tip\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"discount u-bt discountRoomInfo\"></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"bottom_btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanlist2&quot;}\"><span>查看房型报价</span></div>\n\t\t\t</div>\n\t\t\t<div class=\"type-pop-box roomDetailInfo newdetailhsize plugin-inited\">\n\t\t\t\t<div class=\"head\"><span><i class=\"icon-cross\"></i></span></div>\n\t\t\t\t<div class=\"toptitle\">\n\t\t\t\t\t<p><span class=\"htitle\"></span><em><span class=\"rpName\"></span><span class=\"rpSubName\"></span></em></p>\n\t\t\t\t\t<div class=\"htclose\"><i></i></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"wrap page-content more\">\n\t\t\t\t\t<div class=\"pic\"><img src=\"\">\n\t\t\t\t\t\t<div class=\"swiper-lazy-preloader\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"info\">\n\t\t\t\t\t\t<p class=\"name\"></p>\n\t\t\t\t\t\t<p class=\"brackfast\"></p>\n\t\t\t\t\t\t<p class=\"canceltype\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"type-list\">\n\t\t\t\t\t\t<p class=\"faclist faclistOrigin\"></p>\n\t\t\t\t\t\t<p class=\"tip\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"discount bookNotes\">\n\t\t\t\t\t\t<div class=\"titletips\">预订须知</div>\n\t\t\t\t\t\t<div class=\"tips\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"discount u-bt reservationBooking\">\n\t\t\t\t\t\t<div class=\"titletips\">预订专享</div>\n\t\t\t\t\t\t<div class=\"tags\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"new_box\"></div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"bd bottom_price\">\n\t\t\t\t\t<div class=\"left\">\n\t\t\t\t\t\t<div class=\"table-cell\">\n\t\t\t\t\t\t\t<div class=\"price\"><span class=\"ce65\">￥<span></span><span class=\"hour\"></span></span>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"back\"><span class=\"ce65 coupon\"></span> <span class=\"ce65 hongbao\"><span></span></span><span class=\"c999 officehours\"></span></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"right book tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;rateplanbooking&quot;}\">立即预订</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"cld page-plugin plugin-inited\">\n\t\t\t\t<header class=\"bar bar-nav\">\n\t\t\t\t\t<h1 class=\"title\">选择日期</h1>\n\t\t\t\t\t<a class=\"icon icon-back pull-left hide-cln\"></a>\n\t\t\t\t\t<a class=\"cld-title-year pull-right icon\"></a>\n\t\t\t\t</header>\n\t\t\t\t<div class=\"page-content\">\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年07月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-01\" class=\"disabled\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">建党</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-02\" class=\"disabled\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-03\" class=\"disabled\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-04\" class=\"disabled\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-05\" class=\"disabled\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-06\" class=\"disabled\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-07\" class=\"disabled\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-08\" class=\"disabled\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-09\" class=\"disabled\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-10\" class=\"disabled\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-11\" class=\"disabled\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-12\" class=\"disabled\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-13\" class=\"disabled\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-14\" class=\"disabled\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-15\" class=\"disabled\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-16\" class=\"disabled\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-17\" class=\"disabled\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-18\" class=\"disabled\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-19\" class=\"disabled\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-20\" class=\"disabled\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-21\" class=\"disabled\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-22\" class=\"disabled\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-23\" class=\"disabled\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-24\" class=\"disabled\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-25\" class=\"disabled\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-26\" class=\"disabled\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-27\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">27</span><span class=\"festivalText\">今天</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-07-31\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年08月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-01\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">建军</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-28\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">28</span><span class=\"festivalText\">七夕</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-08-31\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年09月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-01\"><span class=\"date-elem\">1</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-05\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">5</span><span class=\"festivalText\">中元节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-10\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">10</span><span class=\"festivalText\">教师节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-09-30\" class=\"work\"><span class=\"date-elem\">30</span><b class=\"work\">班</b></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年10月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li data-day=\"2017-10-01\" class=\"holiday\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">国庆</span></div><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-02\" class=\"holiday\"><span class=\"date-elem\">2</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-03\" class=\"holiday\"><span class=\"date-elem\">3</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-04\" class=\"holiday\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">4</span><span class=\"festivalText\">中秋节</span></div><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-05\" class=\"holiday\"><span class=\"date-elem\">5</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-06\" class=\"holiday\"><span class=\"date-elem\">6</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-07\" class=\"holiday\"><span class=\"date-elem\">7</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-08\" class=\"holiday\"><span class=\"date-elem\">8</span><b class=\"holiday\">休</b></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-28\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">28</span><span class=\"festivalText\">重阳节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-10-31\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">31</span><span class=\"festivalText\">万圣节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年11月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-01\"><span class=\"date-elem\">1</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-23\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">23</span><span class=\"festivalText\">感恩节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-24\"><span class=\"date-elem\">24</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-25\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-11-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2017年12月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-01\"><span class=\"date-elem\">1</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-23\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-24\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">24</span><span class=\"festivalText\">平安夜</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-25\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">25</span><span class=\"festivalText\">圣诞节</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-26\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-27\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-28\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-29\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-30\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2017-12-31\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t\t<section class=\"cld-item\">\n\t\t\t\t\t\t<h1 class=\"cld-titleDate\">2018年01月</h1>\n\t\t\t\t\t\t<ul class=\"cld-day\">\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-01\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">1</span><span class=\"festivalText\">元旦</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-02\"><span class=\"date-elem\">2</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-03\"><span class=\"date-elem\">3</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-04\"><span class=\"date-elem\">4</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-05\"><span class=\"date-elem\">5</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-06\"><span class=\"date-elem\">6</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-07\"><span class=\"date-elem\">7</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-08\"><span class=\"date-elem\">8</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-09\"><span class=\"date-elem\">9</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-10\"><span class=\"date-elem\">10</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-11\"><span class=\"date-elem\">11</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-12\"><span class=\"date-elem\">12</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-13\"><span class=\"date-elem\">13</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-14\"><span class=\"date-elem\">14</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-15\"><span class=\"date-elem\">15</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-16\"><span class=\"date-elem\">16</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-17\"><span class=\"date-elem\">17</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-18\"><span class=\"date-elem\">18</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-19\"><span class=\"date-elem\">19</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-20\"><span class=\"date-elem\">20</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-21\"><span class=\"date-elem\">21</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-22\"><span class=\"date-elem\">22</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-23\" class=\"disabled\"><span class=\"date-elem\">23</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-24\" class=\"disabled\">\n\t\t\t\t\t\t\t\t<div><span class=\"festival\">24</span><span class=\"festivalText\">腊八</span></div>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-25\" class=\"disabled\"><span class=\"date-elem\">25</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-26\" class=\"disabled\"><span class=\"date-elem\">26</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-27\" class=\"disabled\"><span class=\"date-elem\">27</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-28\" class=\"disabled\"><span class=\"date-elem\">28</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-29\" class=\"disabled\"><span class=\"date-elem\">29</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-30\" class=\"disabled\"><span class=\"date-elem\">30</span></li>\n\t\t\t\t\t\t\t<li data-day=\"2018-01-31\" class=\"disabled\"><span class=\"date-elem\">31</span></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t\t<li></li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</section>\n\t\t\t\t</div>\n\t\t\t\t<ul class=\"cld-title bar\">\n\t\t\t\t\t<li>日</li>\n\t\t\t\t\t<li>一</li>\n\t\t\t\t\t<li>二</li>\n\t\t\t\t\t<li>三</li>\n\t\t\t\t\t<li>四</li>\n\t\t\t\t\t<li>五</li>\n\t\t\t\t\t<li>六</li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t\t<div class=\"detail-filter filter-sp newfilter-sp list-weixin-component filter-fastchoose plugin-inited detailks_show\"><span class=\"arrow\"></span>\n\t\t\t\t<div class=\"sp-content\">\n\t\t\t\t\t<div class=\"price breakfast\">\n\t\t\t\t\t\t<div class=\"sp-tit\">早餐</div>\n\t\t\t\t\t\t<ul class=\"price-list room-list\">\n\t\t\t\t\t\t\t<li class=\"on\" kw=\"kw1\" data-id=\"100\">不含早</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw1\" data-id=\"36\">含单早</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw1\" data-id=\"35\">含双早</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw1\" data-id=\"37\">含三早及以上</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"price pay-type\">\n\t\t\t\t\t\t<div class=\"sp-tit\">支付方式</div>\n\t\t\t\t\t\t<ul class=\"price-list room-list\">\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw2\" data-id=\"29\">预付</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw2\" data-id=\"30\">到店付</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"price second service\">\n\t\t\t\t\t\t<div class=\"sp-tit\">服务（可多选）</div>\n\t\t\t\t\t\t<ul class=\"price-list room-list\">\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"101\">免费取消</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"103\">艺龙直销</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"102\">立即确认</li>\n\t\t\t\t\t\t\t<li class=\"\" kw=\"kw3\" data-id=\"104\">含礼包</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"bot-btn bar\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li id=\"filter-reset\" class=\"tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;emptyRoomtypeFilter&quot;}\">重置</li>\n\t\t\t\t\t\t<li class=\"on tjclick\" id=\"starprice-submit\" data-tj=\"{&quot;cspot&quot;:&quot;submitRoomtypeFilter&quot;}\">确定</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"detail_singlepic plugin-inited page-plugin\">\n\t\t\t\t<section id=\"close_image\" class=\"detail-hotelpic\">\n\t\t\t\t\t<dl class=\"shpictop\"><dt class=\"picTitle\"></dt>\n\t\t\t\t\t\t<dd class=\"pic-process\">1/1</dd>\n\t\t\t\t\t\t<dd class=\"shpic_closed\"></dd>\n\t\t\t\t\t</dl>\n\t\t\t\t\t<div class=\"spic_img swiper-container\">\n\t\t\t\t\t\t<ul class=\"swiper-wrapper\"></ul>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div style=\"display:none\" class=\"spic_bottom\">\n\t\t\t\t\t\t<p>查看酒店VR</p>\n\t\t\t\t\t</div>\n\t\t\t\t</section>\n\t\t\t</div>\n\t\t\t<div class=\"hotel_info_facbox plugin-inited page-plugin\">\n\t\t\t\t<header class=\"bar bar-nav\">\n\t\t\t\t\t<a class=\"icon pull-left icon-back\"></a>\n\t\t\t\t\t<a class=\"icon icon-phone pull-right\"></a>\n\t\t\t\t\t<h1 class=\"title\">酒店详情</h1> </header>\n\t\t\t\t<div class=\"page-content\">\n\t\t\t\t\t<section class=\"info-pop-box\">\n\t\t\t\t\t\t<div class=\"na clearfix\">\n\t\t\t\t\t\t\t<div class=\"na_lf\">\n\t\t\t\t\t\t\t\t<div class=\"name\">北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</div>\n\t\t\t\t\t\t\t\t<div class=\"addr\"><i></i>朝阳区柳芳北街6号(煤炭总医院正对面)</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"facilities_con\">\n\t\t\t\t\t\t\t<dl class=\"facilities\"> <dt>酒店设施</dt>\n\t\t\t\t\t\t\t\t<dd class=\"\"> <i class=\"i1\"></i>\n\t\t\t\t\t\t\t\t\t<p> 停车 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"\"> <i class=\"i2\"></i>\n\t\t\t\t\t\t\t\t\t<p> 免费wifi </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i3\"></i>\n\t\t\t\t\t\t\t\t\t<p> 餐厅 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i7\"></i>\n\t\t\t\t\t\t\t\t\t<p> 健身房 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i5\"></i>\n\t\t\t\t\t\t\t\t\t<p> 游泳池 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i4\"></i>\n\t\t\t\t\t\t\t\t\t<p> 接机服务 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"no\"> <i class=\"i6\"></i>\n\t\t\t\t\t\t\t\t\t<p> 会议室 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t\t<dd class=\"\"> <i class=\"i8\"></i>\n\t\t\t\t\t\t\t\t\t<p> 免费行李寄存 </p>\n\t\t\t\t\t\t\t\t</dd>\n\t\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t\t<div class=\"fac_txt\">\n\t\t\t\t\t\t\t\t<div class=\"fac_txtc\">\n\t\t\t\t\t\t\t\t\t<div class=\"fac_txtc_h\">\n\t\t\t\t\t\t\t\t\t\t<p>叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"fac_more\">查看更多</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"other\">\n\t\t\t\t\t\t\t<dl> <dt>温馨提示</dt>\n\t\t\t\t\t\t\t\t<dd class=\"clearfix\"> <span class=\"dct_tit\">入离通知：</span> <span class=\"dct_txt\">  入住时间:12点以后,离店时间:14点以前   </span> </dd>\n\t\t\t\t\t\t\t</dl>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"intro\">\n\t\t\t\t\t\t\t<div class=\"tit\">酒店简介</div>\n\t\t\t\t\t\t\t<div class=\"intro_con\">\n\t\t\t\t\t\t\t\t<div class=\"ht_txt clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"dct_con\"> <span class=\"dct_tit\">开业时间：</span> <span class=\"dct_txt\">2011-05-19</span> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"dct_con\"> <span class=\"dct_tit\">装修时间：</span> <span class=\"dct_txt\">2011-05-19</span> </div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"text_con_h\">\n\t\t\t\t\t\t\t\t\t<div class=\"text\"> 阳光温特莱酒店国展店（原速8酒店北京国展柳芳店）位于北京市朝阳区香河园地区（柳芳北街），地处东直门交通枢纽及朝阳区三环枢纽的三元桥附近，紧邻中国国际展览中心（步行约600米），东邻机场高速公路1公里，南距东直门交通枢纽2公里，东直门机场快轨到首都机场只需20分钟，西邻地铁13号线（步行约10分钟），地理位置优越，交通便利。打车到地铁2号、5号、10号、13号线仅需10元。酒店毗邻燕莎购物中心、使馆区、农展馆、机场高速路和东直门交通枢纽， 酒店门口多条公交线路直达东直门交通枢纽、新国展中心、多个奥运场馆、北京火车站、王府井、天安门、前门、颐和园等处。酒店拥有104间温馨、干净、舒适的客房、提供免费停车位，数字有线电视、免费宽带上网、电子门锁及独立空调。现代化的设施，优质、友好的服务是您在北京商务旅行的理想选择。 <br> 　　酒店开业时间2011年05月01日，主楼高5层，客房总数104间（套）。 <br> <br> 【温馨提示】 <br> 1、酒店提供一次性免费洗漱用具，需前台领取； <br> 2、酒店可以接待外宾； <br> 3、酒店提供免费停车场； <br> 4、前台免费领取一次性洗漱用品。 </div>\n\t\t\t\t\t\t\t\t\t<div class=\"ht_dct clearfix\"> <span class=\"dct_tit\">支持卡种：</span> <span class=\"dct_txt\">牡丹卡,金穗卡,长城卡,龙卡,太平洋卡,东方卡</span> </div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"fac_more\">查看更多</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"periphery\">\n\t\t\t\t\t\t\t<div class=\"tit\">酒店周边</div>\n\t\t\t\t\t\t\t<div class=\"preiphety_con\">\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"dt_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">柳芳(13号线)</span> <span class=\"dtc_txt\">直线距离501米</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"hcz_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京站</span> <span class=\"dtc_txt\">直线距离5.3公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京北站</span> <span class=\"dtc_txt\">直线距离6.7公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京东站</span> <span class=\"dtc_txt\">直线距离7.1公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京南站</span> <span class=\"dtc_txt\">直线距离10.7公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京西站</span> <span class=\"dtc_txt\">直线距离11.4公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"jc_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">北京南苑机场</span> <span class=\"dtc_txt\">直线距离18.0公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">首都机场T3航站楼</span> <span class=\"dtc_txt\">直线距离19.4公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">首都机场T1航站楼</span> <span class=\"dtc_txt\">直线距离19.5公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">首都机场T2航站楼</span> <span class=\"dtc_txt\">直线距离19.7公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"qcz_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">东直门长途汽车站</span> <span class=\"dtc_txt\">直线距离1.2公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"distance_lst clearfix\">\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_icon\"> <i class=\"jd_icons\"></i> </div>\n\t\t\t\t\t\t\t\t\t<div class=\"prpy_distance\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">地坛公园</span> <span class=\"dtc_txt\">直线距离1.4公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">雍和宫</span> <span class=\"dtc_txt\">直线距离1.5公里</span> </p>\n\t\t\t\t\t\t\t\t\t\t<p class=\"clearfix\"> <span class=\"ads_txt\">五道营胡同</span> <span class=\"dtc_txt\">直线距离1.9公里</span> </p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"btn_con\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"btn\">返回并继续预订</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</section>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<nav class=\"bar record record-text\" style=\"display: none;\">48小时内有78人预订</nav>\n\t\t</div>\n\t</div>\n\n</template>\n\n<script>\n\t/*挺入组件*/\n\timport xswiper from \"../xswiper.vue\";\n\timport xback from \"../xback.vue\";\n\timport xtoHome from \"../toHome.vue\";\n\timport xheader from \"../detail/xheader.vue\";\n\timport xmap from \"../detail/xmap.vue\";\n\timport xcomment from \"../detail/xcomment.vue\";\n\timport xdate from \"../detail/xdate.vue\";\n\timport xchosehouse from \"../detail/xchosehouse.vue\";\n\texport default {\n\t\tmethods: {\n\t\t\tgetData() {\n\t\t\t\t//this.$store.dispatch(\"setNews\");\n\t\t\t\t//this.$store.state.news = ;\n\t\t\t\t/*this.$ajax({\n//\t\t\t\t\turl: \"http://localhost:3000/detail\",\n\t\t\t\t}).then(function(res) {\n//\t\t\t\t\tconsole.log(res)\n\t\t\t\t\tthis.$store.state.imgArr = res.data.pics;\n\n\t\t\t\t}.bind(this))*/\n\t\t\t\t//\t\t\t\tthis.$store.state.imgArr = res.data.pics;\n\t\t\t}\n\t\t},\n\t\t//注册组件\n\t\tcomponents: {\n\t\t\txheader,\n\t\t\txback,\n\t\t\txtoHome,\n\t\t\txswiper,\n\t\t\txmap,\n\t\t\txcomment,\n\t\t\txdate,\n\t\t\txchosehouse\n\t\t},\n\t\tmounted() {\n\t\t\t//后台请求数据动态生成列表\n\t\t\t//\t\t\tthis.getData()\n\t\t}\n\t}\n</script>\n\n<style scoped>\n\t{\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t}\n\t\n\tul li {\n\t\tlist-style: none;\n\t}\n\t\n\ta {\n\t\ttext-decoration: none;\n\t}\n\t/*\n\t.grade {\n\t\tdisplay: inline-block;\n\t\twidth: 16px;\n\t\theight: 14px;\n\t\tbackground-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);\n\t\tbackground-position: 0 -18px;\n\t\tbackground-repeat: no-repeat;\n\t\tbackground-size: 96px 32px;\n\t\tmargin-left: 3px;\n\t\tmargin-bottom: 1px;\n\t}\n\t\n\t.name em {\n\t\tcolor: #fff;\n\t\tfont-style: normal;\n\t}\n\t*/\n</style>"],"sourceRoot":""}]);
+=======
+exports.push([module.i, "\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"detail.vue","sourceRoot":""}]);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 // exports
 
@@ -38324,12 +38476,17 @@ exports.push([module.i, "\n{\n\tpadding: 0;\n\tmargin: 0;\n}\nul li[data-v-717dd
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+//
+//
+//
+//
 
 
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 var _xswiper = __webpack_require__(96);
 
 var _xswiper2 = _interopRequireDefault(_xswiper);
@@ -38343,27 +38500,125 @@ var _toHome = __webpack_require__(18);
 var _toHome2 = _interopRequireDefault(_toHome);
 
 var _xheader = __webpack_require__(109);
+=======
+module.exports={render:function(){},staticRenderFns:[]}
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-72033688", module.exports)
+  }
+}
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
-var _xheader2 = _interopRequireDefault(_xheader);
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(97)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(99),
+  /* template */
+  __webpack_require__(100),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\muse\\test.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] test.vue: functional components are not supported with templates, they should use render functions.")}
+
+<<<<<<< HEAD
 var _xmap = __webpack_require__(114);
+=======
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-de02f04e", Component.options)
+  } else {
+    hotAPI.reload("data-v-de02f04e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
-var _xmap2 = _interopRequireDefault(_xmap);
+module.exports = Component.exports
 
+<<<<<<< HEAD
 var _xcomment = __webpack_require__(119);
+=======
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
-var _xcomment2 = _interopRequireDefault(_xcomment);
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
 
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(98);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("754b9804", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-de02f04e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./test.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-de02f04e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./test.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+<<<<<<< HEAD
 var _xdate = __webpack_require__(124);
+=======
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
-var _xdate2 = _interopRequireDefault(_xdate);
+exports = module.exports = __webpack_require__(1)(true);
+// imports
 
+<<<<<<< HEAD
 var _xchosehouse = __webpack_require__(126);
+=======
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
-var _xchosehouse2 = _interopRequireDefault(_xchosehouse);
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"test.vue","sourceRoot":""}]);
 
+<<<<<<< HEAD
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+=======
+// exports
 
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
+
+"use strict";
 //
 //
 //
@@ -38377,6 +38632,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+<<<<<<< HEAD
 //
 //
 //
@@ -43777,6 +44033,12 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3
 
 /***/ }),
 /* 133 */
+=======
+
+
+/***/ }),
+/* 100 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43820,17 +44082,26 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
+<<<<<<< HEAD
      require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3aee9c85", module.exports)
+=======
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-de02f04e", module.exports)
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 134 */
+=======
+/* 101 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(135)
 }
 var Component = __webpack_require__(0)(
@@ -43846,6 +44117,23 @@ var Component = __webpack_require__(0)(
   null
 )
 Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\register.vue"
+=======
+  __webpack_require__(102)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(104),
+  /* template */
+  __webpack_require__(109),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-90a16fcc",
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\register.vue"
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43856,9 +44144,15 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
+<<<<<<< HEAD
     hotAPI.createRecord("data-v-961fa874", Component.options)
   } else {
     hotAPI.reload("data-v-961fa874", Component.options)
+=======
+    hotAPI.createRecord("data-v-90a16fcc", Component.options)
+  } else {
+    hotAPI.reload("data-v-90a16fcc", Component.options)
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43869,23 +44163,40 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 135 */
+=======
+/* 102 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(136);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(2)("5ef3af10", content, false);
+=======
+var content = __webpack_require__(103);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("faf83b52", content, false);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
+<<<<<<< HEAD
    module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./register.vue", function() {
      var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./register.vue");
+=======
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-90a16fcc\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./register.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-90a16fcc\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./register.vue");
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -43895,7 +44206,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 136 */
+=======
+/* 103 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -43903,13 +44218,21 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "\n.content[data-v-961fa874] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-961fa874] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-961fa874]{\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-961fa874] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-961fa874] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 70px;\n\tfont-size: 12px;\n}\n.demo-snackbar-button[data-v-961fa874] {\n\tmargin: 12px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/register.vue?415f7fd6"],"names":[],"mappings":";AAmHA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AACA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA,gBAAA;CACA;AACA;CACA,aAAA;CACA","file":"register.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<h2>注册艺龙会员</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='注册成功'?'注册成功':'用户名已被注册'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<mu-raised-button @click=\"register()\" label=\"注册并登录\" class=\"demo-raised-button\" :disabled=\"!isChecking\" primary/>\r\n\t\t<a href=\"#/login\" class=\"register\">  <mu-flat-button label=\"登录\" class=\"demo-flat-button\" primary/></a>\r\n\t\t\r\n\t\t<p class=\"bottom\">\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" v-model=\"isChecking\" :value=\"!isChecking\"> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">同意艺龙旅行网服务条款</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" checked> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">授权艺龙发送优惠促销短信</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\r\n\t\t\t\r\n\t\t</p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from\"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tisChecking: true,\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tregister() {\r\n\t\t\t\tconsole.log(this.username, this.password, this.$ajax)\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/register\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tthis.data=res.data\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\tif(res.data == \"注册成功\") {\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t//用户信息\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tisLogin(){\r\n\t\t\t\treturn this.$store.state.isLogin\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomponents:{\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t.register{\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 70px;\r\n\t\tfont-size: 12px;\r\n\t}\r\n\t.demo-snackbar-button {\r\n\t\tmargin: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+=======
+exports.push([module.i, "\n.content[data-v-90a16fcc] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-90a16fcc] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-90a16fcc]{\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-90a16fcc] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-90a16fcc] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 70px;\n\tfont-size: 12px;\n}\n.demo-snackbar-button[data-v-90a16fcc] {\n\tmargin: 12px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/routes/register.vue?415f7fd6"],"names":[],"mappings":";AAmHA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AACA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA,gBAAA;CACA;AACA;CACA,aAAA;CACA","file":"register.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<h2>注册艺龙会员</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='注册成功'?'注册成功':'用户名已被注册'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<mu-raised-button @click=\"register()\" label=\"注册并登录\" class=\"demo-raised-button\" :disabled=\"!isChecking\" primary/>\r\n\t\t<a href=\"#/login\" class=\"register\">  <mu-flat-button label=\"登录\" class=\"demo-flat-button\" primary/></a>\r\n\t\t\r\n\t\t<p class=\"bottom\">\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" v-model=\"isChecking\" :value=\"!isChecking\"> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">同意艺龙旅行网服务条款</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" checked> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">授权艺龙发送优惠促销短信</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\r\n\t\t\t\r\n\t\t</p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from\"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tisChecking: true,\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tregister() {\r\n\t\t\t\tconsole.log(this.username, this.password, this.$ajax)\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/register\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tthis.data=res.data\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\tif(res.data == \"注册成功\") {\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t//用户信息\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tisLogin(){\r\n\t\t\t\treturn this.$store.state.isLogin\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomponents:{\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t.register{\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 70px;\r\n\t\tfont-size: 12px;\r\n\t}\r\n\t.demo-snackbar-button {\r\n\t\tmargin: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 // exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 137 */
+=======
+/* 104 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44038,7 +44361,105 @@ exports.default = {
 //
 
 /***/ }),
+<<<<<<< HEAD
 /* 138 */
+=======
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(106);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("6ab1aed8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-71ad22b1\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xback.vue", function() {
+     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-71ad22b1\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xback.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.back {\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n\tz-index: 99999;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/xback.vue?1f69e3ee"],"names":[],"mappings":";AAsBA;CACA,gBAAA;CACA,SAAA;CACA,UAAA;CACA,eAAA;CACA","file":"xback.vue","sourcesContent":["<template>\r\n\t<div class=\"back\">\r\n\t\t<mu-icon-button @click=\"back()\" icon=\"keyboard_arrow_left\" />\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmethods: {\r\n\t\t\tback() {\r\n\t\t\t\tsetTimeout(()=>{\r\n\t\t\t\t\tconsole.log('返回')\r\n\t\t\t\t\twindow.history.back()\r\n\t\t\t\t\t\r\n\t\t\t\t},300)\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\r\n\t.back {\r\n\t\tposition: fixed;\r\n\t\ttop: 0px;\r\n\t\tleft: 0px;\r\n\t\tz-index: 99999;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	methods: {
+		back: function back() {
+			setTimeout(function () {
+				console.log('返回');
+				window.history.back();
+			}, 300);
+		}
+	}
+};
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "back"
+  }, [_c('mu-icon-button', {
+    attrs: {
+      "icon": "keyboard_arrow_left"
+    },
+    on: {
+      "click": function($event) {
+        _vm.back()
+      }
+    }
+  })], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-71ad22b1", module.exports)
+  }
+}
+
+/***/ }),
+/* 109 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44211,17 +44632,22 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-961fa874", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-90a16fcc", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 139 */
+=======
+/* 110 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(140)
 }
 var Component = __webpack_require__(0)(
@@ -44229,14 +44655,23 @@ var Component = __webpack_require__(0)(
   __webpack_require__(142),
   /* template */
   __webpack_require__(143),
+=======
+  __webpack_require__(111)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(113),
+  /* template */
+  __webpack_require__(114),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-2601e556",
+  "data-v-4c8c4982",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\login.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44247,9 +44682,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2601e556", Component.options)
+    hotAPI.createRecord("data-v-4c8c4982", Component.options)
   } else {
-    hotAPI.reload("data-v-2601e556", Component.options)
+    hotAPI.reload("data-v-4c8c4982", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44260,23 +44695,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 140 */
+=======
+/* 111 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(141);
+=======
+var content = __webpack_require__(112);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("1a89fef0", content, false);
+var update = __webpack_require__(2)("7eb801f3", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4c8c4982\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4c8c4982\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -44286,7 +44729,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 141 */
+=======
+/* 112 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -44294,13 +44741,17 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-2601e556] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-2601e556] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-2601e556] {\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-2601e556] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-2601e556] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 40px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/login.vue?2d6c5c85"],"names":[],"mappings":";AA8EA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AAEA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA","file":"login.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<a href=\"#/register\" class=\"register\">\r\n\t\t\t<mu-flat-button label=\"注册\" class=\"demo-flat-button\" primary/>\r\n\t\t</a>\r\n\t\t<h2>欢迎来到艺龙旅行</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-raised-button @click=\"login()\" label=\"登录\" class=\"demo-raised-button\" primary/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='登录成功'?'登录成功':'登录失败'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<p class=\"bottom\">注册登录代表你已同意 <span class=\"col\">《艺龙旅行网服务条款》</span></p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from \"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tlogin() {\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/login\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.data= res.data\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\t\r\n\t\t\t\t\tif(res.data == \"登录成功\") {\r\n\t\t\t\t\t\t//用户信息，存进cookies,其他路由以isLogin作为判断是否已登录的\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomponents: {\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\t\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t\r\n\t.register {\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 40px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.content[data-v-4c8c4982] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-4c8c4982] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-4c8c4982] {\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-4c8c4982] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-4c8c4982] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 40px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/routes/login.vue?2d6c5c85"],"names":[],"mappings":";AA8EA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AAEA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA","file":"login.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<a href=\"#/register\" class=\"register\">\r\n\t\t\t<mu-flat-button label=\"注册\" class=\"demo-flat-button\" primary/>\r\n\t\t</a>\r\n\t\t<h2>欢迎来到艺龙旅行</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-raised-button @click=\"login()\" label=\"登录\" class=\"demo-raised-button\" primary/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='登录成功'?'登录成功':'登录失败'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<p class=\"bottom\">注册登录代表你已同意 <span class=\"col\">《艺龙旅行网服务条款》</span></p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from \"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tlogin() {\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/login\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.data= res.data\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\t\r\n\t\t\t\t\tif(res.data == \"登录成功\") {\r\n\t\t\t\t\t\t//用户信息，存进cookies,其他路由以isLogin作为判断是否已登录的\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomponents: {\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\t\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t\r\n\t.register {\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 40px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 142 */
+=======
+/* 113 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44391,7 +44842,11 @@ exports.default = {
 //
 
 /***/ }),
+<<<<<<< HEAD
 /* 143 */
+=======
+/* 114 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44466,20 +44921,30 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2601e556", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4c8c4982", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 144 */
+=======
+/* 115 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
+<<<<<<< HEAD
   __webpack_require__(145),
   /* template */
   __webpack_require__(198),
+=======
+  __webpack_require__(116),
+  /* template */
+  __webpack_require__(172),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   null,
   /* scopeId */
@@ -44487,7 +44952,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\buyCar.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\buyCar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] buyCar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44498,9 +44963,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2be44c5e", Component.options)
+    hotAPI.createRecord("data-v-d66009b6", Component.options)
   } else {
-    hotAPI.reload("data-v-2be44c5e", Component.options)
+    hotAPI.reload("data-v-d66009b6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44511,7 +44976,11 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 145 */
+=======
+/* 116 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44521,43 +44990,47 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+<<<<<<< HEAD
 var _xheader = __webpack_require__(146);
+=======
+var _xheader = __webpack_require__(117);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 var _xheader2 = _interopRequireDefault(_xheader);
 
-var _xorderInfo = __webpack_require__(151);
+var _xorderInfo = __webpack_require__(127);
 
 var _xorderInfo2 = _interopRequireDefault(_xorderInfo);
 
-var _xoccupancy = __webpack_require__(156);
+var _xoccupancy = __webpack_require__(132);
 
 var _xoccupancy2 = _interopRequireDefault(_xoccupancy);
 
-var _xorderContact = __webpack_require__(161);
+var _xorderContact = __webpack_require__(137);
 
 var _xorderContact2 = _interopRequireDefault(_xorderContact);
 
-var _xorderRebackMoney = __webpack_require__(166);
+var _xorderRebackMoney = __webpack_require__(142);
 
 var _xorderRebackMoney2 = _interopRequireDefault(_xorderRebackMoney);
 
-var _xfooterBar = __webpack_require__(171);
+var _xfooterBar = __webpack_require__(147);
 
 var _xfooterBar2 = _interopRequireDefault(_xfooterBar);
 
-var _xreBackMoneyHelp = __webpack_require__(176);
+var _xreBackMoneyHelp = __webpack_require__(152);
 
 var _xreBackMoneyHelp2 = _interopRequireDefault(_xreBackMoneyHelp);
 
-var _xreBackMoneyDirective = __webpack_require__(181);
+var _xreBackMoneyDirective = __webpack_require__(157);
 
 var _xreBackMoneyDirective2 = _interopRequireDefault(_xreBackMoneyDirective);
 
-var _xmask = __webpack_require__(186);
+var _xmask = __webpack_require__(162);
 
 var _xmask2 = _interopRequireDefault(_xmask);
 
-var _xuseHongBao = __webpack_require__(191);
+var _xuseHongBao = __webpack_require__(167);
 
 var _xuseHongBao2 = _interopRequireDefault(_xuseHongBao);
 
@@ -44743,27 +45216,39 @@ exports.default = {
 //头部
 
 /***/ }),
+<<<<<<< HEAD
 /* 146 */
+=======
+/* 117 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(147)
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(149),
+=======
+  __webpack_require__(118)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(120),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* template */
-  __webpack_require__(150),
+  __webpack_require__(126),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-479badec",
+  "data-v-1c353018",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xheader.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44774,9 +45259,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-479badec", Component.options)
+    hotAPI.createRecord("data-v-1c353018", Component.options)
   } else {
-    hotAPI.reload("data-v-479badec", Component.options)
+    hotAPI.reload("data-v-1c353018", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44787,23 +45272,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 147 */
+=======
+/* 118 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(148);
+=======
+var content = __webpack_require__(119);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("686b5255", content, false);
+var update = __webpack_require__(2)("f20dc414", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-479badec\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-479badec\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c353018\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c353018\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -44813,7 +45306,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 148 */
+=======
+/* 119 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -44821,13 +45318,17 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n*[data-v-479badec]{\n\tmargin: 0;\n\tpadding: 0;\n}\nheader[data-v-479badec] {\n\theight: 48px;\n\tline-height: 48px;\n\tbackground-color: #f4f4f4;\n\tcolor: #555;\n\tbox-shadow: 0px 1px 2px #ddd;\n\ttext-align: center;\n\tfont-size: 14px;\n}\nh1[data-v-479badec]{\n\tfont-size: 20px;\n\tline-height: 48px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xheader.vue?7ee93f7a"],"names":[],"mappings":";AAuBA;CACA,UAAA;CACA,WAAA;CACA;AACA;CACA,aAAA;CACA,kBAAA;CACA,0BAAA;CACA,YAAA;CACA,6BAAA;CACA,mBAAA;CACA,gBAAA;CACA;AACA;CACA,gBAAA;CACA,kBAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<header>\r\n\t\t\t<xback></xback>\r\n\t\t\t<xtohome></xtohome>\r\n\t\t\t<h1>订单详情</h1>\r\n\r\n\t\t</header>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from '../xback.vue';\r\n\timport xtohome from '../toHome.vue';\r\n\texport default {\r\n\t\tcomponents: {\r\n\t\t\txback,\r\n\t\t\txtohome\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t*{\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t}\r\n\theader {\r\n\t\theight: 48px;\r\n\t\tline-height: 48px;\r\n\t\tbackground-color: #f4f4f4;\r\n\t\tcolor: #555;\r\n\t\tbox-shadow: 0px 1px 2px #ddd;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 14px;\r\n\t}\r\n\th1{\r\n\t\tfont-size: 20px;\r\n\t\tline-height: 48px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n*[data-v-1c353018]{\n\tmargin: 0;\n\tpadding: 0;\n}\nheader[data-v-1c353018] {\n\theight: 48px;\n\tline-height: 48px;\n\tbackground-color: #f4f4f4;\n\tcolor: #555;\n\tbox-shadow: 0px 1px 2px #ddd;\n\ttext-align: center;\n\tfont-size: 14px;\n}\nh1[data-v-1c353018]{\n\tfont-size: 20px;\n\tline-height: 48px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xheader.vue?7ee93f7a"],"names":[],"mappings":";AAuBA;CACA,UAAA;CACA,WAAA;CACA;AACA;CACA,aAAA;CACA,kBAAA;CACA,0BAAA;CACA,YAAA;CACA,6BAAA;CACA,mBAAA;CACA,gBAAA;CACA;AACA;CACA,gBAAA;CACA,kBAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<header>\r\n\t\t\t<xback></xback>\r\n\t\t\t<xtohome></xtohome>\r\n\t\t\t<h1>订单详情</h1>\r\n\r\n\t\t</header>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from '../xback.vue';\r\n\timport xtohome from '../toHome.vue';\r\n\texport default {\r\n\t\tcomponents: {\r\n\t\t\txback,\r\n\t\t\txtohome\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t*{\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t}\r\n\theader {\r\n\t\theight: 48px;\r\n\t\tline-height: 48px;\r\n\t\tbackground-color: #f4f4f4;\r\n\t\tcolor: #555;\r\n\t\tbox-shadow: 0px 1px 2px #ddd;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 14px;\r\n\t}\r\n\th1{\r\n\t\tfont-size: 20px;\r\n\t\tline-height: 48px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 149 */
+=======
+/* 120 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44841,7 +45342,11 @@ var _xback = __webpack_require__(5);
 
 var _xback2 = _interopRequireDefault(_xback);
 
+<<<<<<< HEAD
 var _toHome = __webpack_require__(18);
+=======
+var _toHome = __webpack_require__(121);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 var _toHome2 = _interopRequireDefault(_toHome);
 
@@ -44867,44 +45372,32 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 150 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('header', [_c('xback'), _vm._v(" "), _c('xtohome'), _vm._v(" "), _c('h1', [_vm._v("订单详情")])], 1)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-479badec", module.exports)
-  }
-}
-
-/***/ }),
-/* 151 */
+=======
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(152)
+  __webpack_require__(122)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(154),
+  __webpack_require__(124),
   /* template */
-  __webpack_require__(155),
+  __webpack_require__(125),
   /* styles */
   injectStyle,
   /* scopeId */
-  null,
+  "data-v-532efed0",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xorderInfo.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\toHome.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xorderInfo.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] toHome.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -44913,9 +45406,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8734e5e6", Component.options)
+    hotAPI.createRecord("data-v-532efed0", Component.options)
   } else {
-    hotAPI.reload("data-v-8734e5e6", Component.options)
+    hotAPI.reload("data-v-532efed0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44926,23 +45419,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 152 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(153);
+var content = __webpack_require__(123);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("e68564ba", content, false);
+var update = __webpack_require__(2)("0c3f9fd8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8734e5e6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8734e5e6\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue");
+   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-532efed0\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./toHome.vue", function() {
+     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-532efed0\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./toHome.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -44952,7 +45445,161 @@ if(false) {
 }
 
 /***/ }),
-/* 153 */
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.toHome[data-v-532efed0] {\n\tposition: fixed;\n\ttop: 0px;\n\tright: 0px;\n\tz-index: 99999;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/toHome.vue?69ffc515"],"names":[],"mappings":";AAqBA;CACA,gBAAA;CACA,SAAA;CACA,WAAA;CACA,eAAA;CACA","file":"toHome.vue","sourcesContent":["<template>\r\n\t<div class=\"toHome\">\r\n\t\t<mu-icon-button @click=\"toHome()\" icon=\"home\" />\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmethods: {\r\n\t\t\ttoHome() {\r\n\t\t\t\tsetTimeout(()=>{\r\n\t\t\t\t\tconsole.log('toHome')\r\n\t\t\t\t\twindow.location.href=\"#/index\"\r\n\t\t\t\t\t\r\n\t\t\t\t},300)\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\t\r\n\t.toHome {\r\n\t\tposition: fixed;\r\n\t\ttop: 0px;\r\n\t\tright: 0px;\r\n\t\tz-index: 99999;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	methods: {
+		toHome: function toHome() {
+			setTimeout(function () {
+				console.log('toHome');
+				window.location.href = "#/index";
+			}, 300);
+		}
+	}
+};
+
+/***/ }),
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "toHome"
+  }, [_c('mu-icon-button', {
+    attrs: {
+      "icon": "home"
+    },
+    on: {
+      "click": function($event) {
+        _vm.toHome()
+      }
+    }
+  })], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-532efed0", module.exports)
+  }
+}
+
+/***/ }),
+/* 126 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('header', [_c('xback'), _vm._v(" "), _c('xtohome'), _vm._v(" "), _c('h1', [_vm._v("订单详情")])], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1c353018", module.exports)
+  }
+}
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(128)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(130),
+  /* template */
+  __webpack_require__(131),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xorderInfo.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xorderInfo.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3058cb61", Component.options)
+  } else {
+    hotAPI.reload("data-v-3058cb61", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 128 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(129);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("93f26170", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3058cb61\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3058cb61\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -44966,7 +45613,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 154 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45015,7 +45662,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 155 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45094,24 +45741,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8734e5e6", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3058cb61", module.exports)
   }
 }
 
 /***/ }),
-/* 156 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(157)
+  __webpack_require__(133)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(159),
+  __webpack_require__(135),
   /* template */
-  __webpack_require__(160),
+  __webpack_require__(136),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45119,7 +45766,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xoccupancy.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xoccupancy.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xoccupancy.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45130,9 +45777,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ee9e1884", Component.options)
+    hotAPI.createRecord("data-v-06b79bdc", Component.options)
   } else {
-    hotAPI.reload("data-v-ee9e1884", Component.options)
+    hotAPI.reload("data-v-06b79bdc", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45143,23 +45790,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 157 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(158);
+var content = __webpack_require__(134);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("faf1a1f8", content, false);
+var update = __webpack_require__(2)("3294a980", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ee9e1884\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ee9e1884\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-06b79bdc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-06b79bdc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45169,7 +45816,7 @@ if(false) {
 }
 
 /***/ }),
-/* 158 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45183,7 +45830,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 159 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45223,7 +45870,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 160 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45287,24 +45934,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-ee9e1884", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-06b79bdc", module.exports)
   }
 }
 
 /***/ }),
-/* 161 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(162)
+  __webpack_require__(138)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(164),
+  __webpack_require__(140),
   /* template */
-  __webpack_require__(165),
+  __webpack_require__(141),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45312,7 +45959,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xorderContact.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xorderContact.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xorderContact.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45323,9 +45970,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-775c4091", Component.options)
+    hotAPI.createRecord("data-v-92431c86", Component.options)
   } else {
-    hotAPI.reload("data-v-775c4091", Component.options)
+    hotAPI.reload("data-v-92431c86", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45336,23 +45983,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 162 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(163);
+var content = __webpack_require__(139);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("772e4078", content, false);
+var update = __webpack_require__(2)("cb7bdb20", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-775c4091\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-775c4091\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-92431c86\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-92431c86\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45362,7 +46009,7 @@ if(false) {
 }
 
 /***/ }),
-/* 163 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45376,7 +46023,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 164 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45419,7 +46066,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 165 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45505,24 +46152,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-775c4091", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-92431c86", module.exports)
   }
 }
 
 /***/ }),
-/* 166 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(167)
+  __webpack_require__(143)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(169),
+  __webpack_require__(145),
   /* template */
-  __webpack_require__(170),
+  __webpack_require__(146),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45530,7 +46177,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xorderRebackMoney.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xorderRebackMoney.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xorderRebackMoney.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45541,9 +46188,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7c9ae437", Component.options)
+    hotAPI.createRecord("data-v-3feec13a", Component.options)
   } else {
-    hotAPI.reload("data-v-7c9ae437", Component.options)
+    hotAPI.reload("data-v-3feec13a", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45554,23 +46201,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 167 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(168);
+var content = __webpack_require__(144);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("01e94703", content, false);
+var update = __webpack_require__(2)("969ed9ba", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c9ae437\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c9ae437\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3feec13a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3feec13a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45580,7 +46227,7 @@ if(false) {
 }
 
 /***/ }),
-/* 168 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45594,7 +46241,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""
 
 
 /***/ }),
-/* 169 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45621,7 +46268,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""
 
 
 /***/ }),
-/* 170 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45651,24 +46298,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7c9ae437", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3feec13a", module.exports)
   }
 }
 
 /***/ }),
-/* 171 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(172)
+  __webpack_require__(148)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(174),
+  __webpack_require__(150),
   /* template */
-  __webpack_require__(175),
+  __webpack_require__(151),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45676,7 +46323,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xfooterBar.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xfooterBar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfooterBar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45687,9 +46334,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1705cb2e", Component.options)
+    hotAPI.createRecord("data-v-687058bd", Component.options)
   } else {
-    hotAPI.reload("data-v-1705cb2e", Component.options)
+    hotAPI.reload("data-v-687058bd", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45700,23 +46347,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 172 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(173);
+var content = __webpack_require__(149);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("468158ea", content, false);
+var update = __webpack_require__(2)("1d415fdc", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1705cb2e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1705cb2e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-687058bd\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-687058bd\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45726,7 +46373,7 @@ if(false) {
 }
 
 /***/ }),
-/* 173 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45734,13 +46381,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.bar-tab .total .orderprice.return {\n\tmargin-top: 12px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xfooterBar.vue?ba57f27a"],"names":[],"mappings":";AAuBA;CACA,iBAAA;CACA","file":"xfooterBar.vue","sourcesContent":["<template>\r\n\t<nav class=\"bar bar-tab\">\r\n\t\t<div class=\"total\">\r\n\t\t\t<div class=\"orderprice return\">¥<span id=\"wborderprice\">90<b style=\"font-size:14px;display:none;\">RMB90</b></span>\r\n\t\t\t\t<span class=\"roomschip\">1间/4小时</span></div>\r\n\t\t\t<div class=\"returnprice\">\r\n\t\t\t\t<div class=\"coupontext\">\r\n\t\t\t\t\t返￥5\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div id=\"mobilesubmit\" class=\"next commit\">\r\n\t\t\t<span>\r\n提交订单                    </span>\r\n\t\t\t<span class=\"preloader preloader-white button-loader\"></span>\r\n\t\t</div>\r\n\t</nav>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.bar-tab .total .orderprice.return {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.bar-tab .total .orderprice.return {\n\tmargin-top: 12px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xfooterBar.vue?ba57f27a"],"names":[],"mappings":";AAuBA;CACA,iBAAA;CACA","file":"xfooterBar.vue","sourcesContent":["<template>\r\n\t<nav class=\"bar bar-tab\">\r\n\t\t<div class=\"total\">\r\n\t\t\t<div class=\"orderprice return\">¥<span id=\"wborderprice\">90<b style=\"font-size:14px;display:none;\">RMB90</b></span>\r\n\t\t\t\t<span class=\"roomschip\">1间/4小时</span></div>\r\n\t\t\t<div class=\"returnprice\">\r\n\t\t\t\t<div class=\"coupontext\">\r\n\t\t\t\t\t返￥5\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div id=\"mobilesubmit\" class=\"next commit\">\r\n\t\t\t<span>\r\n提交订单                    </span>\r\n\t\t\t<span class=\"preloader preloader-white button-loader\"></span>\r\n\t\t</div>\r\n\t</nav>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.bar-tab .total .orderprice.return {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 174 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45766,7 +46413,7 @@ exports.push([module.i, "\n.bar-tab .total .orderprice.return {\n\tmargin-top: 1
 
 
 /***/ }),
-/* 175 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45806,24 +46453,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1705cb2e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-687058bd", module.exports)
   }
 }
 
 /***/ }),
-/* 176 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(177)
+  __webpack_require__(153)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(179),
+  __webpack_require__(155),
   /* template */
-  __webpack_require__(180),
+  __webpack_require__(156),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45831,7 +46478,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xreBackMoneyHelp.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xreBackMoneyHelp.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xreBackMoneyHelp.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45842,9 +46489,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2d546f38", Component.options)
+    hotAPI.createRecord("data-v-8626c2e8", Component.options)
   } else {
-    hotAPI.reload("data-v-2d546f38", Component.options)
+    hotAPI.reload("data-v-8626c2e8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45855,23 +46502,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 177 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(178);
+var content = __webpack_require__(154);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a93b3b5a", content, false);
+var update = __webpack_require__(2)("a5c63172", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2d546f38\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2d546f38\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8626c2e8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8626c2e8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45881,7 +46528,7 @@ if(false) {
 }
 
 /***/ }),
-/* 178 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45895,7 +46542,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"
 
 
 /***/ }),
-/* 179 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45917,7 +46564,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 180 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45935,24 +46582,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2d546f38", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8626c2e8", module.exports)
   }
 }
 
 /***/ }),
-/* 181 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(182)
+  __webpack_require__(158)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(184),
+  __webpack_require__(160),
   /* template */
-  __webpack_require__(185),
+  __webpack_require__(161),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45960,7 +46607,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xreBackMoneyDirective.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xreBackMoneyDirective.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xreBackMoneyDirective.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45971,9 +46618,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-84454e30", Component.options)
+    hotAPI.createRecord("data-v-1f3cc3d8", Component.options)
   } else {
-    hotAPI.reload("data-v-84454e30", Component.options)
+    hotAPI.reload("data-v-1f3cc3d8", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45984,23 +46631,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 182 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(183);
+var content = __webpack_require__(159);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("602b7cd6", content, false);
+var update = __webpack_require__(2)("0ceff0d8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-84454e30\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-84454e30\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1f3cc3d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1f3cc3d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -46010,7 +46657,7 @@ if(false) {
 }
 
 /***/ }),
-/* 183 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -46024,7 +46671,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 184 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46070,7 +46717,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 185 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -46094,24 +46741,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-84454e30", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1f3cc3d8", module.exports)
   }
 }
 
 /***/ }),
-/* 186 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(187)
+  __webpack_require__(163)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(189),
+  __webpack_require__(165),
   /* template */
-  __webpack_require__(190),
+  __webpack_require__(166),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -46119,7 +46766,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xmask.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xmask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xmask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46130,9 +46777,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2841b08b", Component.options)
+    hotAPI.createRecord("data-v-176dcdb7", Component.options)
   } else {
-    hotAPI.reload("data-v-2841b08b", Component.options)
+    hotAPI.reload("data-v-176dcdb7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46143,23 +46790,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 187 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(188);
+var content = __webpack_require__(164);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("123d137a", content, false);
+var update = __webpack_require__(2)("715dc3d4", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2841b08b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2841b08b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-176dcdb7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-176dcdb7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -46169,7 +46816,7 @@ if(false) {
 }
 
 /***/ }),
-/* 188 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -46177,13 +46824,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.advanced-mask-layer{\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xmask.vue?45360d52"],"names":[],"mappings":";AAQA;CACA,cAAA;CACA","file":"xmask.vue","sourcesContent":["<template>\r\n\t<div class=\"advanced-mask-layer\"></div>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.advanced-mask-layer{\r\n\t\tdisplay: none;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.advanced-mask-layer{\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xmask.vue?45360d52"],"names":[],"mappings":";AAQA;CACA,cAAA;CACA","file":"xmask.vue","sourcesContent":["<template>\r\n\t<div class=\"advanced-mask-layer\"></div>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.advanced-mask-layer{\r\n\t\tdisplay: none;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 189 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46194,7 +46841,7 @@ exports.push([module.i, "\n.advanced-mask-layer{\n\tdisplay: none;\n}\n", "", {"
 
 
 /***/ }),
-/* 190 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -46206,24 +46853,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2841b08b", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-176dcdb7", module.exports)
   }
 }
 
 /***/ }),
-/* 191 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(192)
+  __webpack_require__(168)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(194),
+  __webpack_require__(170),
   /* template */
-  __webpack_require__(195),
+  __webpack_require__(171),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -46231,7 +46878,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xuseHongBao.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xuseHongBao.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xuseHongBao.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46242,9 +46889,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-68d9cd48", Component.options)
+    hotAPI.createRecord("data-v-734e5974", Component.options)
   } else {
-    hotAPI.reload("data-v-68d9cd48", Component.options)
+    hotAPI.reload("data-v-734e5974", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46255,23 +46902,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 192 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(193);
+var content = __webpack_require__(169);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("8249f0b2", content, false);
+var update = __webpack_require__(2)("432eda9a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-68d9cd48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-68d9cd48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-734e5974\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-734e5974\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -46281,7 +46928,7 @@ if(false) {
 }
 
 /***/ }),
-/* 193 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -46289,13 +46936,17 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "\n.page .usehb{\n\tpadding-top: 0 !important;\n}\n.unhb{\n\tmargin-left: -4px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xuseHongBao.vue?2b4fe816"],"names":[],"mappings":";AAsEA;CACA,0BAAA;CACA;AACA;CACA,kBAAA;CACA","file":"xuseHongBao.vue","sourcesContent":["<template>\r\n\t<div class=\"plugin-inited page-plugin page-on-center\">\r\n\t\t<div class=\"page-content usehb\" style=\"\">\r\n\t\t\t<section>\r\n\t\t\t\t<div class=\"hb_expl\">\r\n\t\t\t\t\t<p><span class=\"unhb\" data-incomeid=\"\"><i class=\"chkbox\"><em></em></i>暂不使用红包</span>\r\n\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"hbsrc\"><i></i>使用说明</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"hb_container\">\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1369786069\" data-trueuseamount=\"10\" data-facevalue=\"50\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox on\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期出游红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-07-27</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>50</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1407828651\" data-trueuseamount=\"10\" data-facevalue=\"66\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期酒店特惠红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-08-09</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>66</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.page .usehb{\r\n\t\tpadding-top: 0 !important;\r\n\t}\r\n\t.unhb{\r\n\t\tmargin-left: -4px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+=======
+exports.push([module.i, "\n.page .usehb{\n\tpadding-top: 0 !important;\n}\n.unhb{\n\tmargin-left: -4px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xuseHongBao.vue?2b4fe816"],"names":[],"mappings":";AAsEA;CACA,0BAAA;CACA;AACA;CACA,kBAAA;CACA","file":"xuseHongBao.vue","sourcesContent":["<template>\r\n\t<div class=\"plugin-inited page-plugin page-on-center\">\r\n\t\t<div class=\"page-content usehb\" style=\"\">\r\n\t\t\t<section>\r\n\t\t\t\t<div class=\"hb_expl\">\r\n\t\t\t\t\t<p><span class=\"unhb\" data-incomeid=\"\"><i class=\"chkbox\"><em></em></i>暂不使用红包</span>\r\n\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"hbsrc\"><i></i>使用说明</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"hb_container\">\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1369786069\" data-trueuseamount=\"10\" data-facevalue=\"50\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox on\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期出游红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-07-27</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>50</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1407828651\" data-trueuseamount=\"10\" data-facevalue=\"66\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期酒店特惠红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-08-09</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>66</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.page .usehb{\r\n\t\tpadding-top: 0 !important;\r\n\t}\r\n\t.unhb{\r\n\t\tmargin-left: -4px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 // exports
 
 
 /***/ }),
-/* 194 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46368,7 +47019,7 @@ exports.push([module.i, "\n.page .usehb{\n\tpadding-top: 0 !important;\n}\n.unhb
 
 
 /***/ }),
-/* 195 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -46458,12 +47109,12 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-68d9cd48", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-734e5974", module.exports)
   }
 }
 
 /***/ }),
-/* 196 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -47037,17 +47688,22 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2be44c5e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-d66009b6", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 199 */
+=======
+/* 173 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(200)
 }
 var Component = __webpack_require__(0)(
@@ -47055,6 +47711,15 @@ var Component = __webpack_require__(0)(
   __webpack_require__(202),
   /* template */
   __webpack_require__(203),
+=======
+  __webpack_require__(174)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(176),
+  /* template */
+  __webpack_require__(177),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
@@ -47062,7 +47727,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\mySelf.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\mySelf.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mySelf.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -47073,9 +47738,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-678adc7b", Component.options)
+    hotAPI.createRecord("data-v-124cfdcf", Component.options)
   } else {
-    hotAPI.reload("data-v-678adc7b", Component.options)
+    hotAPI.reload("data-v-124cfdcf", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47086,23 +47751,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 200 */
+=======
+/* 174 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(201);
+=======
+var content = __webpack_require__(175);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("a1cfacc8", content, false);
+var update = __webpack_require__(2)("0ebb4ceb", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-124cfdcf\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-124cfdcf\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -47112,7 +47785,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 201 */
+=======
+/* 175 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -47126,7 +47803,11 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 202 */
+=======
+/* 176 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47223,7 +47904,11 @@ exports.default = {
 //
 
 /***/ }),
+<<<<<<< HEAD
 /* 203 */
+=======
+/* 177 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -47494,20 +48179,30 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-678adc7b", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-124cfdcf", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 204 */
+=======
+/* 178 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
+<<<<<<< HEAD
   __webpack_require__(205),
   /* template */
   __webpack_require__(221),
+=======
+  __webpack_require__(179),
+  /* template */
+  __webpack_require__(195),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   null,
   /* scopeId */
@@ -47515,7 +48210,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\router\\home.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\router\\home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -47526,9 +48221,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-262e6dbc", Component.options)
+    hotAPI.createRecord("data-v-cbbca7e0", Component.options)
   } else {
-    hotAPI.reload("data-v-262e6dbc", Component.options)
+    hotAPI.reload("data-v-cbbca7e0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47539,7 +48234,11 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 205 */
+=======
+/* 179 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47549,6 +48248,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+<<<<<<< HEAD
 var _xheader = __webpack_require__(206);
 
 var _xheader2 = _interopRequireDefault(_xheader);
@@ -47558,6 +48258,17 @@ var _xsearch = __webpack_require__(211);
 var _xsearch2 = _interopRequireDefault(_xsearch);
 
 var _xoption = __webpack_require__(216);
+=======
+var _xheader = __webpack_require__(180);
+
+var _xheader2 = _interopRequireDefault(_xheader);
+
+var _xsearch = __webpack_require__(185);
+
+var _xsearch2 = _interopRequireDefault(_xsearch);
+
+var _xoption = __webpack_require__(190);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 var _xoption2 = _interopRequireDefault(_xoption);
 
@@ -47590,12 +48301,17 @@ exports.default = {
 //
 
 /***/ }),
+<<<<<<< HEAD
 /* 206 */
+=======
+/* 180 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(207)
 }
 var Component = __webpack_require__(0)(
@@ -47603,14 +48319,23 @@ var Component = __webpack_require__(0)(
   __webpack_require__(209),
   /* template */
   __webpack_require__(210),
+=======
+  __webpack_require__(181)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(183),
+  /* template */
+  __webpack_require__(184),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-398f2b48",
+  "data-v-4ce01aa0",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xheader.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -47621,9 +48346,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-398f2b48", Component.options)
+    hotAPI.createRecord("data-v-4ce01aa0", Component.options)
   } else {
-    hotAPI.reload("data-v-398f2b48", Component.options)
+    hotAPI.reload("data-v-4ce01aa0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47634,23 +48359,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 207 */
+=======
+/* 181 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(208);
+=======
+var content = __webpack_require__(182);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("40e31dba", content, false);
+var update = __webpack_require__(2)("27af2ed2", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4ce01aa0\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4ce01aa0\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -47660,7 +48393,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 208 */
+=======
+/* 182 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -47668,13 +48405,17 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.swiper-slide img[data-v-398f2b48] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/xheader.vue?4c156164"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.swiper-slide img[data-v-4ce01aa0] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xheader.vue?4c156164"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 209 */
+=======
+/* 183 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47762,7 +48503,11 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 210 */
+=======
+/* 184 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -47886,17 +48631,22 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-398f2b48", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4ce01aa0", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 211 */
+=======
+/* 185 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(212)
 }
 var Component = __webpack_require__(0)(
@@ -47904,14 +48654,23 @@ var Component = __webpack_require__(0)(
   __webpack_require__(214),
   /* template */
   __webpack_require__(215),
+=======
+  __webpack_require__(186)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(188),
+  /* template */
+  __webpack_require__(189),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-4300e7f7",
+  "data-v-3958704b",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xsearch.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xsearch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -47922,9 +48681,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4300e7f7", Component.options)
+    hotAPI.createRecord("data-v-3958704b", Component.options)
   } else {
-    hotAPI.reload("data-v-4300e7f7", Component.options)
+    hotAPI.reload("data-v-3958704b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47935,23 +48694,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 212 */
+=======
+/* 186 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(213);
+=======
+var content = __webpack_require__(187);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("653da805", content, false);
+var update = __webpack_require__(2)("51c36293", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4300e7f7\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4300e7f7\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3958704b\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3958704b\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -47961,7 +48728,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 213 */
+=======
+/* 187 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -47969,13 +48740,17 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*@import \"css/header.css\";\n@import \"css/header2.css\";*/\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.validate-code-by-intercept {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 50%;\n\tmargin-top: -120px;\n\tmargin-left: -153px;\n\tpadding-top: 10px;\n\theight: 220px;\n\twidth: 306px;\n\tz-index: 15000;\n\tbackground-color: #fff;\n\ttext-align: center;\n\tfont-size: 16px;\n\tfont-weight: 700;\n\tcolor: #353535\n}\n\n.validate-code-by-intercept .form-li {\n\tclear: both;\n\theight: 44px;\n\tline-height: 44px;\n\tmargin: 3px 12px\n}\n\n.validate-code-by-intercept .form-li2 {\n\toverflow: hidden;\n\tborder-radius: 5px;\n\tborder: 1px solid #ddd;\n\tbackground-clip: padding-box;\n\tmargin-bottom: 10px\n}\n\n.validate-code-by-intercept input.txt {\n\twidth: 100%;\n\tpadding: 11px 10px 11px 13px;\n\tdisplay: block;\n\tmargin: 0;\n\tborder: 0;\n\tbackground: 0;\n\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\n}\n\n.validate-code-by-intercept .submit {\n\tfont-size: 1.1rem;\n\twidth: 100%;\n\theight: 40px;\n\tline-height: 40px;\n\ttext-align: center;\n\tcolor: #fff;\n\tborder-radius: 5px;\n\tborder-width: 0;\n\tbackground-color: #e65749;\n\tmargin: 0 0 10px\n}\n\n.search-wrap {\n\tmargin-bottom: 12px;\n\tborder: 1px solid #DDD;\n\tbackground: #FFF;\n}\n\n.search-wrap .search-list {\n\tpadding: 0 12px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-list li {\n\tpadding: 6px 0;\n\tborder-bottom: 1px solid #DDD;\n\tposition: relative;\n\tmin-height: 26px;\n}\n\n.search-wrap .search-list li.addr {\n\tmargin-top: 12px;\n}\n\n.search-wrap .search-list li.date {\n\tfont-size: .688rem;\n\tline-height: 16px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-btn {\n\twidth: 100%;\n\tmargin: 0 auto;\n\tbackground: #49f;\n\theight: 36px;\n\tline-height: 36px;\n\tfont-size: 10px;\n\tcolor: #FFF;\n\ttext-align: center;\n\tborder-radius: 4px;\n}\n\n.search-wrap .search-btn i {\n\tposition: relative;\n\ttop: 7px;\n\tleft: -6px;\n}\n\n.search-wrap .search-list li i:first-child {\n\twidth: 16px;\n\theight: 16px;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 50%;\n\tmargin-top: -10px;\n\tfont-size: .9rem;\n\tmargin-left: 8px;\n\tline-height: 21px;\n\tcolor: #999;\n}\n\n.search-wrap .search-list li.addr p {\n\tline-height: 21px;\n\toverflow: hidden;\n\tpadding-right: 20px;\n\tmargin-left: 30px;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\tfont-size: -0.937rem;\n}\n\n.search-wrap .search-list li.addr .right {\n\tposition: absolute;\n\tright: 10px;\n\ttext-align: center;\n\tcolor: #49f;\n\ttop: 50%;\n\tfont-size: .7rem;\n\tfont-weight: normal;\n\tline-height: 1;\n\tmargin-top: -8px;\n}\n\n.search-wrap .search-list li.addr .right i {\n\twidth: 14px;\n\theight: 16px;\n\tdisplay: inline-block;\n\tposition: relative;\n\tmargin: 0;\n\tvertical-align: -3px;\n}*/\nbody[data-v-4300e7f7],\nhtml[data-v-4300e7f7],\n#allmap[data-v-4300e7f7] {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n\tmargin: 0;\n\tbackground-color: #F2F2F2;\n\tfont-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/xsearch.vue?248e94c7"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmMA;4BACA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4JA;AAEA;;;CAGA,YAAA;CACA,aAAA;CACA,iBAAA;CACA,UAAA;CACA,0BAAA;CACA,oCAAA;CACA","file":"xsearch.vue","sourcesContent":["<template>\r\n\r\n\t<div class=\"page-content page-search\" style=\"\">\r\n\t\t<div class=\"search-wrap\">\r\n\t\t\t<div class=\"search-lb\">\r\n\t\t\t\t<ul class=\"search-list\">\r\n\t\t\t\t\t<li class=\"addr\">\r\n\t\t\t\t\t\t<i class=\"addr\"></i>\r\n\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"toggle()\">{{aa}}</p>\r\n\t\t\t\t\t\t<mu-drawer :open=\"open\" :docked=\"docked\" @close=\"toggle()\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<mu-list @itemClick=\"docked ? '' : toggle()\">\r\n\t\t\t\t\t\t\t\t<div class=\"advance-city plugin-inited page-plugin plugin-show page-on-center\" style=\"position: fixed;\">\r\n\t\t\t\t\t\t\t\t\t<header class=\"bar bar-nav flight-order-head\">\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"icon pull-left icon-back\"></a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-input\"><i class=\"icon-search\"></i><input type=\"input\" value=\"\" placeholder=\"请输入城市名、行政区或景区\"></div>\r\n\t\t\t\t\t\t\t\t\t</header>\r\n\t\t\t\t\t\t\t\t\t<div class=\"page-content page-select\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"current-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\"></div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"get-city\"><i class=\"icon-position\"></i>点击获取当前城市</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-history\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">搜索历史</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>北京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0539\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>曹妃甸区</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>上海</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"hot-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">热门城市</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"on\"><span>北京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>上海</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2001\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>广州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>杭州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2003\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>深圳</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1801\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>武汉</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>成都</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2701\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>西安</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>南京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0401\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>重庆</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1901\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>长沙</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1401\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>厦门</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>天津</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"3201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>香港</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1001\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>哈尔滨</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1701\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>郑州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1102\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>苏州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>合肥</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1602\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>济南</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>三亚</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"all-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">全部城市</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"letter-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li >A</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>B</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>C</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>D</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>E</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">F</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>G</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>H</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>J</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>K</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>L</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">M</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>N</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>P</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Q</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>R</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>S</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">T</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>W</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>X</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Y</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Z</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mu-list-item v-if=\"docked\" @click.native=\"open = false\" title=\"Close\"/>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"city-list-ul\"></ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"page-content page-search\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<ul></ul>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"inner-mask\"></div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<!--<mu-list-item v-if=\"docked\" @click.native=\"open = false\" title=\"Close\" />-->\r\n\t\t\t\t\t\t\t</mu-list>\r\n\t\t\t\t\t\t</mu-drawer>\r\n\r\n\t\t\t\t\t\t<i class=\"icon-left\" style=\"right:92px\"></i>\r\n\t\t\t\t\t\t<b class=\"right isnearby tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}\" @click=\"baidu\"><i class=\"icon-nearby\" ></i><span>我的位置</span></b>\r\n\t\t\t\t\t\t<div id=\"allmap\"></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"date\">\r\n\t\t\t\t\t\t<i class=\"icon-time\"></i>\r\n\t\t\t\t\t\t<div class=\"d1 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">入住<span class=\"night\" style=\"display: none;\">深夜</span></p>\r\n\t\t\t\t\t\t\t<p><span class=\"indate\" data-value=\"2017-07-27\">07月27日</span><span class=\"startweek\">明天</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d2\"></div>\r\n\t\t\t\t\t\t<div class=\"d3 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkoutdate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">离店</p>\r\n\t\t\t\t\t\t\t<p><span class=\"outdate\" data-value=\"2017-07-30\">07月30日</span><span class=\"endweek\">周日</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d4 total\">3晚</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"name\">\r\n\t\t\t\t\t\t<!--输入内容添加on-->\r\n\t\t\t\t\t\t<div class=\"sea-box\">\r\n\t\t\t\t\t\t\t<i class=\"name\"></i>\r\n\t\t\t\t\t\t\t<input type=\"input\" value=\"\" placeholder=\"酒店名称/位置不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"pri\">\r\n\t\t\t\t\t\t<div class=\"price-star-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<i class=\"pri\"></i>\r\n\t\t\t\t\t\t\t<input class=\"title-phone\" type=\"input\" value=\"\" placeholder=\"价格星级不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"search-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\"><i></i>搜索</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tbottomNav: 'recents',\r\n\t\t\t\taa: '北京市',\r\n\t\t\t\topen: false,\r\n\t\t\t\tdocked: true\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\thandleChange(val) {\r\n\t\t\t\tthis.bottomNav = val\r\n\t\t\t},\r\n\t\t\tbaidu() {\r\n\t\t\t\t// 百度地图API功能\r\n\r\n\t\t\t\tvar baidis = this\r\n\t\t\t\tvar map = new BMap.Map(\"allmap\");\r\n\t\t\t\tvar point = new BMap.Point(116.331398, 39.897445);\r\n\t\t\t\tmap.centerAndZoom(point, 12);\r\n\r\n\t\t\t\tfunction myFun(result) {\r\n\t\t\t\t\tvar cityName = result.name;\r\n\t\t\t\t\tmap.setCenter(cityName);\r\n\t\t\t\t\tconsole.log(baidis)\r\n\t\t\t\t\t//\t\t\t\t \talert(\"当前定位城市:\" + cityName);\r\n\t\t\t\t\tbaidis.aa = cityName\r\n\r\n\t\t\t\t}\r\n\t\t\t\tvar myCity = new BMap.LocalCity();\r\n\t\t\t\tmyCity.get(myFun);\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t},\r\n\t\t\ttoggle(flag) {\r\n\t\t\t\tthis.open = !this.open\r\n\t\t\t\tthis.docked = !flag\r\n\t\t\t}\r\n\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//\t\t\t\t\tthis.baidu()\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped=\"\">\r\n\t/*@import \"css/header.css\";\r\n\t@import \"css/header2.css\";*/\r\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept {\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\tmargin-top: -120px;\r\n\t\tmargin-left: -153px;\r\n\t\tpadding-top: 10px;\r\n\t\theight: 220px;\r\n\t\twidth: 306px;\r\n\t\tz-index: 15000;\r\n\t\tbackground-color: #fff;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 16px;\r\n\t\tfont-weight: 700;\r\n\t\tcolor: #353535\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li {\r\n\t\tclear: both;\r\n\t\theight: 44px;\r\n\t\tline-height: 44px;\r\n\t\tmargin: 3px 12px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li2 {\r\n\t\toverflow: hidden;\r\n\t\tborder-radius: 5px;\r\n\t\tborder: 1px solid #ddd;\r\n\t\tbackground-clip: padding-box;\r\n\t\tmargin-bottom: 10px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept input.txt {\r\n\t\twidth: 100%;\r\n\t\tpadding: 11px 10px 11px 13px;\r\n\t\tdisplay: block;\r\n\t\tmargin: 0;\r\n\t\tborder: 0;\r\n\t\tbackground: 0;\r\n\t\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .submit {\r\n\t\tfont-size: 1.1rem;\r\n\t\twidth: 100%;\r\n\t\theight: 40px;\r\n\t\tline-height: 40px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #fff;\r\n\t\tborder-radius: 5px;\r\n\t\tborder-width: 0;\r\n\t\tbackground-color: #e65749;\r\n\t\tmargin: 0 0 10px\r\n\t}\r\n\t\r\n\t.search-wrap {\r\n\t\tmargin-bottom: 12px;\r\n\t\tborder: 1px solid #DDD;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list {\r\n\t\tpadding: 0 12px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li {\r\n\t\tpadding: 6px 0;\r\n\t\tborder-bottom: 1px solid #DDD;\r\n\t\tposition: relative;\r\n\t\tmin-height: 26px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.date {\r\n\t\tfont-size: .688rem;\r\n\t\tline-height: 16px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn {\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t\tbackground: #49f;\r\n\t\theight: 36px;\r\n\t\tline-height: 36px;\r\n\t\tfont-size: 10px;\r\n\t\tcolor: #FFF;\r\n\t\ttext-align: center;\r\n\t\tborder-radius: 4px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn i {\r\n\t\tposition: relative;\r\n\t\ttop: 7px;\r\n\t\tleft: -6px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li i:first-child {\r\n\t\twidth: 16px;\r\n\t\theight: 16px;\r\n\t\tdisplay: block;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tmargin-top: -10px;\r\n\t\tfont-size: .9rem;\r\n\t\tmargin-left: 8px;\r\n\t\tline-height: 21px;\r\n\t\tcolor: #999;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr p {\r\n\t\tline-height: 21px;\r\n\t\toverflow: hidden;\r\n\t\tpadding-right: 20px;\r\n\t\tmargin-left: 30px;\r\n\t\twhite-space: nowrap;\r\n\t\ttext-overflow: ellipsis;\r\n\t\tfont-size: -0.937rem;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right {\r\n\t\tposition: absolute;\r\n\t\tright: 10px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #49f;\r\n\t\ttop: 50%;\r\n\t\tfont-size: .7rem;\r\n\t\tfont-weight: normal;\r\n\t\tline-height: 1;\r\n\t\tmargin-top: -8px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right i {\r\n\t\twidth: 14px;\r\n\t\theight: 16px;\r\n\t\tdisplay: inline-block;\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tvertical-align: -3px;\r\n\t}*/\r\n\t\r\n\tbody,\r\n\thtml,\r\n\t#allmap {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\toverflow: hidden;\r\n\t\tmargin: 0;\r\n\t\tbackground-color: #F2F2F2;\r\n\t\tfont-family: \"微软雅黑\";\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*@import \"css/header.css\";\n@import \"css/header2.css\";*/\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.validate-code-by-intercept {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 50%;\n\tmargin-top: -120px;\n\tmargin-left: -153px;\n\tpadding-top: 10px;\n\theight: 220px;\n\twidth: 306px;\n\tz-index: 15000;\n\tbackground-color: #fff;\n\ttext-align: center;\n\tfont-size: 16px;\n\tfont-weight: 700;\n\tcolor: #353535\n}\n\n.validate-code-by-intercept .form-li {\n\tclear: both;\n\theight: 44px;\n\tline-height: 44px;\n\tmargin: 3px 12px\n}\n\n.validate-code-by-intercept .form-li2 {\n\toverflow: hidden;\n\tborder-radius: 5px;\n\tborder: 1px solid #ddd;\n\tbackground-clip: padding-box;\n\tmargin-bottom: 10px\n}\n\n.validate-code-by-intercept input.txt {\n\twidth: 100%;\n\tpadding: 11px 10px 11px 13px;\n\tdisplay: block;\n\tmargin: 0;\n\tborder: 0;\n\tbackground: 0;\n\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\n}\n\n.validate-code-by-intercept .submit {\n\tfont-size: 1.1rem;\n\twidth: 100%;\n\theight: 40px;\n\tline-height: 40px;\n\ttext-align: center;\n\tcolor: #fff;\n\tborder-radius: 5px;\n\tborder-width: 0;\n\tbackground-color: #e65749;\n\tmargin: 0 0 10px\n}\n\n.search-wrap {\n\tmargin-bottom: 12px;\n\tborder: 1px solid #DDD;\n\tbackground: #FFF;\n}\n\n.search-wrap .search-list {\n\tpadding: 0 12px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-list li {\n\tpadding: 6px 0;\n\tborder-bottom: 1px solid #DDD;\n\tposition: relative;\n\tmin-height: 26px;\n}\n\n.search-wrap .search-list li.addr {\n\tmargin-top: 12px;\n}\n\n.search-wrap .search-list li.date {\n\tfont-size: .688rem;\n\tline-height: 16px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-btn {\n\twidth: 100%;\n\tmargin: 0 auto;\n\tbackground: #49f;\n\theight: 36px;\n\tline-height: 36px;\n\tfont-size: 10px;\n\tcolor: #FFF;\n\ttext-align: center;\n\tborder-radius: 4px;\n}\n\n.search-wrap .search-btn i {\n\tposition: relative;\n\ttop: 7px;\n\tleft: -6px;\n}\n\n.search-wrap .search-list li i:first-child {\n\twidth: 16px;\n\theight: 16px;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 50%;\n\tmargin-top: -10px;\n\tfont-size: .9rem;\n\tmargin-left: 8px;\n\tline-height: 21px;\n\tcolor: #999;\n}\n\n.search-wrap .search-list li.addr p {\n\tline-height: 21px;\n\toverflow: hidden;\n\tpadding-right: 20px;\n\tmargin-left: 30px;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\tfont-size: -0.937rem;\n}\n\n.search-wrap .search-list li.addr .right {\n\tposition: absolute;\n\tright: 10px;\n\ttext-align: center;\n\tcolor: #49f;\n\ttop: 50%;\n\tfont-size: .7rem;\n\tfont-weight: normal;\n\tline-height: 1;\n\tmargin-top: -8px;\n}\n\n.search-wrap .search-list li.addr .right i {\n\twidth: 14px;\n\theight: 16px;\n\tdisplay: inline-block;\n\tposition: relative;\n\tmargin: 0;\n\tvertical-align: -3px;\n}*/\nbody[data-v-3958704b],\nhtml[data-v-3958704b],\n#allmap[data-v-3958704b] {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n\tmargin: 0;\n\tbackground-color: #F2F2F2;\n\tfont-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xsearch.vue?248e94c7"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmMA;4BACA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4JA;AAEA;;;CAGA,YAAA;CACA,aAAA;CACA,iBAAA;CACA,UAAA;CACA,0BAAA;CACA,oCAAA;CACA","file":"xsearch.vue","sourcesContent":["<template>\r\n\r\n\t<div class=\"page-content page-search\" style=\"\">\r\n\t\t<div class=\"search-wrap\">\r\n\t\t\t<div class=\"search-lb\">\r\n\t\t\t\t<ul class=\"search-list\">\r\n\t\t\t\t\t<li class=\"addr\">\r\n\t\t\t\t\t\t<i class=\"addr\"></i>\r\n\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"toggle()\">{{aa}}</p>\r\n\t\t\t\t\t\t<mu-drawer :open=\"open\" :docked=\"docked\" @close=\"toggle()\" style=\"width: 100%;\">\r\n\t\t\t\t\t\t\t<mu-list @itemClick=\"docked ? '' : toggle()\">\r\n\t\t\t\t\t\t\t\t<div class=\"advance-city plugin-inited page-plugin plugin-show page-on-center\" style=\"position: fixed;\">\r\n\t\t\t\t\t\t\t\t\t<header class=\"bar bar-nav flight-order-head\">\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"icon pull-left icon-back\"></a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-input\"><i class=\"icon-search\"></i><input type=\"input\" value=\"\" placeholder=\"请输入城市名、行政区或景区\"></div>\r\n\t\t\t\t\t\t\t\t\t</header>\r\n\t\t\t\t\t\t\t\t\t<div class=\"page-content page-select\" style=\"\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"current-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\"></div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"get-city\"><i class=\"icon-position\"></i>点击获取当前城市</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"search-history\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">搜索历史</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>北京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0539\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>曹妃甸区</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>上海</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"hot-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">热门城市</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"on\"><span>北京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>上海</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2001\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>广州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>杭州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2003\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>深圳</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1801\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>武汉</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>成都</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2701\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>西安</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1101\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>南京</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0401\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>重庆</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1901\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>长沙</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1401\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>厦门</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"0301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>天津</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"3201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>香港</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1001\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>哈尔滨</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1701\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>郑州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1102\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>苏州</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1301\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>合肥</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"1602\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>济南</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li city-id=\"2201\" area-type=\"\" area-id=\"\" sug-origin=\"\" class=\"\"><span>三亚</span></li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"all-city\">\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"page-title\">全部城市</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"letter-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li >A</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>B</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>C</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>D</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>E</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">F</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>G</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>H</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>J</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>K</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>L</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">M</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>N</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>P</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Q</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>R</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>S</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"mr0\">T</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>W</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>X</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Y</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Z</li>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<mu-list-item v-if=\"docked\" @click.native=\"open = false\" title=\"Close\"/>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"city-list-ul\"></ul>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"page-content page-search\" style=\"display: none;\">\r\n\t\t\t\t\t\t\t\t\t\t<ul></ul>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"inner-mask\"></div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t\t<!--<mu-list-item v-if=\"docked\" @click.native=\"open = false\" title=\"Close\" />-->\r\n\t\t\t\t\t\t\t</mu-list>\r\n\t\t\t\t\t\t</mu-drawer>\r\n\r\n\t\t\t\t\t\t<i class=\"icon-left\" style=\"right:92px\"></i>\r\n\t\t\t\t\t\t<b class=\"right isnearby tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}\" @click=\"baidu\"><i class=\"icon-nearby\" ></i><span>我的位置</span></b>\r\n\t\t\t\t\t\t<div id=\"allmap\"></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"date\">\r\n\t\t\t\t\t\t<i class=\"icon-time\"></i>\r\n\t\t\t\t\t\t<div class=\"d1 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">入住<span class=\"night\" style=\"display: none;\">深夜</span></p>\r\n\t\t\t\t\t\t\t<p><span class=\"indate\" data-value=\"2017-07-27\">07月27日</span><span class=\"startweek\">明天</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d2\"></div>\r\n\t\t\t\t\t\t<div class=\"d3 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkoutdate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">离店</p>\r\n\t\t\t\t\t\t\t<p><span class=\"outdate\" data-value=\"2017-07-30\">07月30日</span><span class=\"endweek\">周日</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d4 total\">3晚</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"name\">\r\n\t\t\t\t\t\t<!--输入内容添加on-->\r\n\t\t\t\t\t\t<div class=\"sea-box\">\r\n\t\t\t\t\t\t\t<i class=\"name\"></i>\r\n\t\t\t\t\t\t\t<input type=\"input\" value=\"\" placeholder=\"酒店名称/位置不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"pri\">\r\n\t\t\t\t\t\t<div class=\"price-star-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<i class=\"pri\"></i>\r\n\t\t\t\t\t\t\t<input class=\"title-phone\" type=\"input\" value=\"\" placeholder=\"价格星级不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"search-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\"><i></i>搜索</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tbottomNav: 'recents',\r\n\t\t\t\taa: '北京市',\r\n\t\t\t\topen: false,\r\n\t\t\t\tdocked: true\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\thandleChange(val) {\r\n\t\t\t\tthis.bottomNav = val\r\n\t\t\t},\r\n\t\t\tbaidu() {\r\n\t\t\t\t// 百度地图API功能\r\n\r\n\t\t\t\tvar baidis = this\r\n\t\t\t\tvar map = new BMap.Map(\"allmap\");\r\n\t\t\t\tvar point = new BMap.Point(116.331398, 39.897445);\r\n\t\t\t\tmap.centerAndZoom(point, 12);\r\n\r\n\t\t\t\tfunction myFun(result) {\r\n\t\t\t\t\tvar cityName = result.name;\r\n\t\t\t\t\tmap.setCenter(cityName);\r\n\t\t\t\t\tconsole.log(baidis)\r\n\t\t\t\t\t//\t\t\t\t \talert(\"当前定位城市:\" + cityName);\r\n\t\t\t\t\tbaidis.aa = cityName\r\n\r\n\t\t\t\t}\r\n\t\t\t\tvar myCity = new BMap.LocalCity();\r\n\t\t\t\tmyCity.get(myFun);\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t},\r\n\t\t\ttoggle(flag) {\r\n\t\t\t\tthis.open = !this.open\r\n\t\t\t\tthis.docked = !flag\r\n\t\t\t}\r\n\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//\t\t\t\t\tthis.baidu()\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped=\"\">\r\n\t/*@import \"css/header.css\";\r\n\t@import \"css/header2.css\";*/\r\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept {\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\tmargin-top: -120px;\r\n\t\tmargin-left: -153px;\r\n\t\tpadding-top: 10px;\r\n\t\theight: 220px;\r\n\t\twidth: 306px;\r\n\t\tz-index: 15000;\r\n\t\tbackground-color: #fff;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 16px;\r\n\t\tfont-weight: 700;\r\n\t\tcolor: #353535\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li {\r\n\t\tclear: both;\r\n\t\theight: 44px;\r\n\t\tline-height: 44px;\r\n\t\tmargin: 3px 12px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li2 {\r\n\t\toverflow: hidden;\r\n\t\tborder-radius: 5px;\r\n\t\tborder: 1px solid #ddd;\r\n\t\tbackground-clip: padding-box;\r\n\t\tmargin-bottom: 10px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept input.txt {\r\n\t\twidth: 100%;\r\n\t\tpadding: 11px 10px 11px 13px;\r\n\t\tdisplay: block;\r\n\t\tmargin: 0;\r\n\t\tborder: 0;\r\n\t\tbackground: 0;\r\n\t\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .submit {\r\n\t\tfont-size: 1.1rem;\r\n\t\twidth: 100%;\r\n\t\theight: 40px;\r\n\t\tline-height: 40px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #fff;\r\n\t\tborder-radius: 5px;\r\n\t\tborder-width: 0;\r\n\t\tbackground-color: #e65749;\r\n\t\tmargin: 0 0 10px\r\n\t}\r\n\t\r\n\t.search-wrap {\r\n\t\tmargin-bottom: 12px;\r\n\t\tborder: 1px solid #DDD;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list {\r\n\t\tpadding: 0 12px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li {\r\n\t\tpadding: 6px 0;\r\n\t\tborder-bottom: 1px solid #DDD;\r\n\t\tposition: relative;\r\n\t\tmin-height: 26px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.date {\r\n\t\tfont-size: .688rem;\r\n\t\tline-height: 16px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn {\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t\tbackground: #49f;\r\n\t\theight: 36px;\r\n\t\tline-height: 36px;\r\n\t\tfont-size: 10px;\r\n\t\tcolor: #FFF;\r\n\t\ttext-align: center;\r\n\t\tborder-radius: 4px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn i {\r\n\t\tposition: relative;\r\n\t\ttop: 7px;\r\n\t\tleft: -6px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li i:first-child {\r\n\t\twidth: 16px;\r\n\t\theight: 16px;\r\n\t\tdisplay: block;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tmargin-top: -10px;\r\n\t\tfont-size: .9rem;\r\n\t\tmargin-left: 8px;\r\n\t\tline-height: 21px;\r\n\t\tcolor: #999;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr p {\r\n\t\tline-height: 21px;\r\n\t\toverflow: hidden;\r\n\t\tpadding-right: 20px;\r\n\t\tmargin-left: 30px;\r\n\t\twhite-space: nowrap;\r\n\t\ttext-overflow: ellipsis;\r\n\t\tfont-size: -0.937rem;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right {\r\n\t\tposition: absolute;\r\n\t\tright: 10px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #49f;\r\n\t\ttop: 50%;\r\n\t\tfont-size: .7rem;\r\n\t\tfont-weight: normal;\r\n\t\tline-height: 1;\r\n\t\tmargin-top: -8px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right i {\r\n\t\twidth: 14px;\r\n\t\theight: 16px;\r\n\t\tdisplay: inline-block;\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tvertical-align: -3px;\r\n\t}*/\r\n\t\r\n\tbody,\r\n\thtml,\r\n\t#allmap {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\toverflow: hidden;\r\n\t\tmargin: 0;\r\n\t\tbackground-color: #F2F2F2;\r\n\t\tfont-family: \"微软雅黑\";\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 214 */
+=======
+/* 188 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48177,7 +48952,11 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 215 */
+=======
+/* 189 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -48580,17 +49359,22 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4300e7f7", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3958704b", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 216 */
+=======
+/* 190 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(217)
 }
 var Component = __webpack_require__(0)(
@@ -48598,6 +49382,15 @@ var Component = __webpack_require__(0)(
   __webpack_require__(219),
   /* template */
   __webpack_require__(220),
+=======
+  __webpack_require__(191)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(193),
+  /* template */
+  __webpack_require__(194),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
@@ -48605,7 +49398,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xoption.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xoption.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xoption.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48616,9 +49409,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-818e4778", Component.options)
+    hotAPI.createRecord("data-v-94df36d0", Component.options)
   } else {
-    hotAPI.reload("data-v-818e4778", Component.options)
+    hotAPI.reload("data-v-94df36d0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48629,23 +49422,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 217 */
+=======
+/* 191 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(218);
+=======
+var content = __webpack_require__(192);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("13d5dd69", content, false);
+var update = __webpack_require__(2)("54cecd29", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-818e4778\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-818e4778\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue");
+   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-94df36d0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-94df36d0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -48655,7 +49456,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 218 */
+=======
+/* 192 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -48669,7 +49474,11 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 219 */
+=======
+/* 193 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48727,7 +49536,11 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 220 */
+=======
+/* 194 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -48853,12 +49666,16 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-818e4778", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-94df36d0", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 221 */
+=======
+/* 195 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -48868,17 +49685,22 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-262e6dbc", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-cbbca7e0", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 222 */
+=======
+/* 196 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+<<<<<<< HEAD
   __webpack_require__(223)
 }
 var Component = __webpack_require__(0)(
@@ -48886,14 +49708,23 @@ var Component = __webpack_require__(0)(
   __webpack_require__(225),
   /* template */
   __webpack_require__(236),
+=======
+  __webpack_require__(197)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(199),
+  /* template */
+  __webpack_require__(210),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-e6ef47b6",
+  "data-v-3ca66b5e",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\router\\list.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\router\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48904,9 +49735,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-e6ef47b6", Component.options)
+    hotAPI.createRecord("data-v-3ca66b5e", Component.options)
   } else {
-    hotAPI.reload("data-v-e6ef47b6", Component.options)
+    hotAPI.reload("data-v-3ca66b5e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48917,23 +49748,31 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 223 */
+=======
+/* 197 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
+<<<<<<< HEAD
 var content = __webpack_require__(224);
+=======
+var content = __webpack_require__(198);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("41652692", content, false);
+var update = __webpack_require__(2)("6c2d24f9", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e6ef47b6\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./list.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e6ef47b6\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./list.vue");
+   module.hot.accept("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ca66b5e\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./list.vue", function() {
+     var newContent = require("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ca66b5e\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./list.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -48943,7 +49782,11 @@ if(false) {
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 224 */
+=======
+/* 198 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -48957,7 +49800,11 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 225 */
+=======
+/* 199 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48967,6 +49814,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+<<<<<<< HEAD
 var _xheader = __webpack_require__(226);
 
 var _xheader2 = _interopRequireDefault(_xheader);
@@ -48980,6 +49828,21 @@ var _xpagecontent = __webpack_require__(232);
 var _xpagecontent2 = _interopRequireDefault(_xpagecontent);
 
 var _xfooter = __webpack_require__(234);
+=======
+var _xheader = __webpack_require__(200);
+
+var _xheader2 = _interopRequireDefault(_xheader);
+
+var _xsearch = __webpack_require__(203);
+
+var _xsearch2 = _interopRequireDefault(_xsearch);
+
+var _xpagecontent = __webpack_require__(206);
+
+var _xpagecontent2 = _interopRequireDefault(_xpagecontent);
+
+var _xfooter = __webpack_require__(208);
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 
 var _xfooter2 = _interopRequireDefault(_xfooter);
 
@@ -49022,15 +49885,25 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 226 */
+=======
+/* 200 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
+<<<<<<< HEAD
   __webpack_require__(227),
   /* template */
   __webpack_require__(228),
+=======
+  __webpack_require__(201),
+  /* template */
+  __webpack_require__(202),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   null,
   /* scopeId */
@@ -49038,7 +49911,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xheader.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49049,9 +49922,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-49923986", Component.options)
+    hotAPI.createRecord("data-v-701c9db2", Component.options)
   } else {
-    hotAPI.reload("data-v-49923986", Component.options)
+    hotAPI.reload("data-v-701c9db2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49062,7 +49935,11 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 227 */
+=======
+/* 201 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49097,7 +49974,11 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 228 */
+=======
+/* 202 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49142,20 +50023,30 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-49923986", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-701c9db2", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 229 */
+=======
+/* 203 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
+<<<<<<< HEAD
   __webpack_require__(230),
   /* template */
   __webpack_require__(231),
+=======
+  __webpack_require__(204),
+  /* template */
+  __webpack_require__(205),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   null,
   /* scopeId */
@@ -49163,7 +50054,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xsearch.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xsearch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49174,9 +50065,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ad4a91be", Component.options)
+    hotAPI.createRecord("data-v-6035c966", Component.options)
   } else {
-    hotAPI.reload("data-v-ad4a91be", Component.options)
+    hotAPI.reload("data-v-6035c966", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49187,7 +50078,11 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 230 */
+=======
+/* 204 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49254,7 +50149,11 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 231 */
+=======
+/* 205 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49343,12 +50242,16 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-ad4a91be", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6035c966", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 232 */
+=======
+/* 206 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -49356,7 +50259,11 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
+<<<<<<< HEAD
   __webpack_require__(233),
+=======
+  __webpack_require__(207),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   null,
   /* scopeId */
@@ -49364,7 +50271,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xpagecontent.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xpagecontent.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xpagecontent.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49375,9 +50282,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1a409b3e", Component.options)
+    hotAPI.createRecord("data-v-424909b5", Component.options)
   } else {
-    hotAPI.reload("data-v-1a409b3e", Component.options)
+    hotAPI.reload("data-v-424909b5", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49388,7 +50295,11 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 233 */
+=======
+/* 207 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49718,12 +50629,16 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1a409b3e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-424909b5", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 234 */
+=======
+/* 208 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -49731,7 +50646,11 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
+<<<<<<< HEAD
   __webpack_require__(235),
+=======
+  __webpack_require__(209),
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
   /* styles */
   null,
   /* scopeId */
@@ -49739,7 +50658,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xfooter.vue"
+Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xfooter.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfooter.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49750,9 +50669,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-285fd594", Component.options)
+    hotAPI.createRecord("data-v-4eea39c0", Component.options)
   } else {
-    hotAPI.reload("data-v-285fd594", Component.options)
+    hotAPI.reload("data-v-4eea39c0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49763,7 +50682,11 @@ module.exports = Component.exports
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 235 */
+=======
+/* 209 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49840,12 +50763,16 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-285fd594", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4eea39c0", module.exports)
   }
 }
 
 /***/ }),
+<<<<<<< HEAD
 /* 236 */
+=======
+/* 210 */
+>>>>>>> be6c7126b008da14402f43bdb134f1382b38ef6d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49867,7 +50794,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-e6ef47b6", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3ca66b5e", module.exports)
   }
 }
 

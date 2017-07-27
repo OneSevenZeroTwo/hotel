@@ -35,14 +35,7 @@ Vue.use(MuseUI)
 //router路由部分.........................................................
 
 //引入定义好的路由。(所有级别的路由)
-//import home from "./components/routes/home.vue"
-import share from "./components/routes/share.vue"
-import ask from "./components/routes/ask.vue"
-import job from "./components/routes/job.vue"
-import topics from "./components/routes/topics.vue"
-import good from "./components/routes/good.vue"
 import detail from "./components/routes/detail.vue"
-import muse from "./components/muse/test.vue"
 import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
@@ -59,24 +52,6 @@ var routes = [{
 		path: '/index',
 		//上面定义好的路由扔进来
 		component: home,
-		children: [{
-				path: 'share',
-				component: share,
-			}, {
-				path: 'job',
-				component: job,
-			}, {
-				path: 'ask',
-				component: ask,
-			}, {
-				path: 'good',
-				component: good,
-			}, {
-				path: 'topics',
-				component: topics,
-			},
-
-		]
 	}, {
 		//路由名
 		path: '/detail',
@@ -102,11 +77,6 @@ var routes = [{
 		path: '/mySelf',
 		//上面定义好的路由扔进来
 		component: xmySelf
-	}, {
-		//路由名
-		path: '/muse',
-		//上面定义好的路由扔进来
-		component: muse
 	},
 	//列表页开始
 	{

@@ -1,10 +1,433 @@
 <template>
 	<div class="pages">
-		<xback></xback>
-		<xtoHome></xtoHome>
-		<div class="page page-on-center" data-blend="layer" data-blend-id="h5_detail" data-url="/hotel/00101543/" id="uniq22" data-title="【北京阳光温特莱酒店(国展店)(原速8国展柳芳店)】地址:朝阳区柳芳北街6号(煤炭总医院正对面)_艺龙网移动版" data-title-id="h5_detail">
-			<!-- 详情页优化，渠道定制去头 -->
-			<xheader></xheader>
+		<div class="page page-on-left" data-blend="layer" data-blend-id="h5_list" data-url="/hotel/2001/nlist/" id="uniq22" data-title="【广州酒店】广州酒店宾馆预订_旅店住宿价格查询_艺龙网移动版" data-title-id="h5_list">
+			<header class="bar bar-nav hotel-list-header">
+				<a class="icon pull-left icon-back tjclick" data-rel="back" data-href="https://m.elong.com/?t=1501134865326" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
+				<a class="icon icon-nearby pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;map&quot;}"></a>
+				<a class="icon icon-collectlist  collect pull-right tjclick" href="//m.elong.com/my/hotel/favorites/" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
+				<h1 class="title">
+	                	<span class="city-area">
+	                		<span class="city">
+	                			广州市
+	                		</span>
+	                		<span class="num" style="display:none;"></span>
+	                		<i class="icon-bottom"></i>
+	                	</span>
+	                </h1>
+			</header>
+			<div class="search-field showout">
+				<div class="header-search">
+					<div class="sea-date">
+						<p>入<span>店</span>：<b class="indate" data-value="2017-07-27">07-27</b></p>
+						<p>离<span>店</span>：<b class="outdate" data-value="2017-07-28">07-28</b></p>
+						<span class="total">1晚<i></i></span>
+					</div>
+					<div class="sea-box tjclick" data-tj="{&quot;cspot&quot;:&quot;searchbar&quot;}">
+						<label class="sea-mask"></label>
+						<i></i>
+						<input type="input" value="" placeholder="酒店名称/位置不限" readonly="readonly">
+					</div>
+				</div>
+				<div class="quick-search-box">
+					<div class="quick-search">
+						<div class="kslist">
+							<div class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">房型筛选</div>
+							<div class="commons sale-title tjclick" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">优惠</div>
+						</div>
+						<ul class="quick-search-list">
+							<li class="quick-search-item tjclick " data-id="100000002" data-tid="1100" data-uid="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}" data-keyword="到店付">到店付</li>
+							<li class="quick-search-item tjclick " data-id="139" data-tid="1100" data-uid="101" data-tj="{&quot;cspot&quot;:&quot;freeCancellation&quot;}" data-keyword="免费取消">免费取消</li>
+							<li class="quick-search-item tjclick " data-id="141" data-tid="1100" data-uid="102" data-tj="{&quot;cspot&quot;:&quot;instantConfirm&quot;}" data-keyword="立即确认">立即确认</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="page-content page-list mvt_191">
+				<section class="page-list-con">
+					<div class="list-main">
+
+						<ul class="hotel-list">
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/91054672/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0009hgjI.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州鱼珠湾酒店(琶洲会展店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.4</b>分</span> <span class="comt_nmb">1124条点评</span> </p>
+									<p class="fac"> <span>高档型</span> </p>
+									<p class="district"> <span class="d4">天河软件园（近琶洲）...  |  靠近鱼珠地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>267</span> </p>
+										<p class="tags"> <span style="color:#4499ff;border:1px solid #4499ff">促销</span> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90889993/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0005PpTb.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>空客酒店(广州白云机场店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.2</b>分</span> <span class="comt_nmb">2154条点评</span> </p>
+									<p class="fac"> <span>经济型</span> </p>
+									<p class="district"> <span class="d4">新白云国际机场  |  靠近机场南地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>70</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#4499ff;border:1px solid #4499ff">促销</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/02001382/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0003BgPY.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>百凯航空酒店(白云机场店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.4</b>分</span> <span class="comt_nmb">7812条点评</span> </p>
+									<p class="fac"> <span>经济型</span> </p>
+									<p class="district"> <span class="d4">新白云国际机场  |  靠近机场南地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>87</span> </p>
+										<p class="tags"> <span style="color:#4499ff;border:1px solid #4499ff">促销</span> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90995412/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0003QYsl.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>速8(新白云国际机场一店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.6</b>分</span> <span class="comt_nmb">1784条点评</span> </p>
+									<p class="fac"> <span>舒适型</span> </p>
+									<p class="district"> <span class="d4">新白云国际机场  |  靠近机场南地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>176</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/91664334/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/nw_00057Dpu.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>长隆童话王国公寓(易成酒店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.5</b>分</span> <span class="comt_nmb">859条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d4">长隆旅游景区  |  靠近汉溪长隆地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>298</span> </p>
+										<p class="tags"> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90893577/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0003SfpD.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>迎商方豪(珠江新城赛马场店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.6</b>分</span> <span class="comt_nmb">2251条点评</span> </p>
+									<p class="fac"> <span>舒适型</span> </p>
+									<p class="district"> <span class="d4">珠江新城/五羊新城  |  靠近暨南大学</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>44</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90823326/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0004oSDF.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>双禧酒店公寓(琶洲展馆店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.4</b>分</span> <span class="comt_nmb">1670条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d4">琶洲展馆  |  靠近万胜围地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>173</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#4499ff;border:1px solid #4499ff">今夜甩卖</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/42001196/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/00005bAW.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州华威达商务大酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.2</b>分</span> <span class="comt_nmb">3132条点评</span> </p>
+									<p class="fac"> <span>四星级</span> </p>
+									<p class="district"> <span class="d4">珠江新城/五羊新城  |  靠近潭村地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>329</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/91100997/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0007ZLPL.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>丽枫酒店(白云国际机场店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.7</b>分</span> <span class="comt_nmb">3095条点评</span> </p>
+									<p class="fac"> <span>高档型</span> </p>
+									<p class="district"> <span class="d4">新白云国际机场  |  靠近人和地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>296</span> </p>
+										<p class="tags"> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90817741/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/0000zXtg.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>艺龙国际公寓(会展中心店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.2</b>分</span> <span class="comt_nmb">935条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d4">琶洲展馆  |  靠近万胜围地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>266</span> </p>
+										<p class="tags"> <span style="color:#4499ff;border:1px solid #4499ff">促销</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/02001535/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img src="//pavo.elongstatic.com/i/mobile220_220/00008Epo.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州临江上品公寓酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.3</b>分</span> <span class="comt_nmb">2311条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d4">琶洲展馆  |  靠近红专厂创意园</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>309</span> </p>
+										<p class="tags"> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90870555/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/0005gvkA.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>长隆她他会公寓(番禺万达店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.6</b>分</span> <span class="comt_nmb">837条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d1">番禺区</span> <span class="d3">市中心</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>188</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/02001590/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/nw_0007qhxn.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州天域国际公寓(昌岗店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.2</b>分</span> <span class="comt_nmb">1448条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d4">江南西/昌岗/市二宫...  |  靠近昌岗地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>300</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#4499ff;border:1px solid #4499ff">促销</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90668567/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/0003GZvW.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州碧桂园空港凤凰酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.7</b>分</span> <span class="comt_nmb">8278条点评</span> </p>
+									<p class="fac"> <span>豪华型</span> </p>
+									<p class="district"> <span class="d4">新白云国际机场</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>377</span> </p>
+										<p class="tags"> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/42001501/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/0004TkxV.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州木棉花语酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.3</b>分</span> <span class="comt_nmb">2817条点评</span> </p>
+									<p class="fac"> <span>舒适型</span> </p>
+									<p class="district"> <span class="d4">广州东站/天河北/天...  |  靠近天平架地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>139</span> </p>
+										<p class="tags"> <span style="color:#3bc29e;border:1px solid #3bc29e">钟点房</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/91251563/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/0004sydg.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州伊莲萨维尔国际酒店公寓</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.5</b>分</span> <span class="comt_nmb">1424条点评</span> </p>
+									<p class="fac"> <span>高档公寓</span> </p>
+									<p class="district"> <span class="d4">珠江新城/五羊新城  |  靠近潭村地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>446</span> </p>
+										<p class="tags"> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/02001378/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/nw_0005msGG.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州昊银凯莱酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.4</b>分</span> <span class="comt_nmb">2394条点评</span> </p>
+									<p class="fac"> <span>高档型</span> </p>
+									<p class="district"> <span class="d4">新白云国际机场</span> <span class="lastroom">仅剩1间</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>398</span> </p>
+										<p class="tags"> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/90979426/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/nw_0005iAZX.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>港润双城公寓(美国领事馆店)</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.1</b>分</span> <span class="comt_nmb">1019条点评</span> </p>
+									<p class="fac"> <span>舒适公寓</span> </p>
+									<p class="district"> <span class="d4">珠江新城/五羊新城  |  靠近珠江新城地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>325</span> </p>
+										<p class="tags"> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/91277038/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/nw_0005sVrp.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州云都国际大酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.4</b>分</span> <span class="comt_nmb">463条点评</span> </p>
+									<p class="fac"> <span>高档型</span> </p>
+									<p class="district"> <span class="d4">白云万达/白云山/广州体育馆</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>364</span> </p>
+										<p class="tags"> <span style="color:#ff5555;border:1px solid #ff5555">APP新客折扣</span> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+							<li class="hotel-item" data-url="https://m.elong.com/hotel/42001210/#indate=2017-07-27&amp;outdate=2017-07-28">
+								<div class="pic"> <img srcset="//pavo.elongstatic.com/i/mobile220_220/0004od8b.jpg"> </div>
+								<div class="info">
+									<p class="name"> <em>广州威力斯酒店</em> <i class="grade grade1"></i> </p>
+									<p class="comt"> <span class="comt_no"><b>4.1</b>分</span> <span class="comt_nmb">2354条点评</span> </p>
+									<p class="fac"> <span>舒适型</span> </p>
+									<p class="district"> <span class="d4">北京路/海珠广场  |  靠近一德路地铁站</span> </p>
+								</div>
+								<div class="right-wrap">
+									<div class="r-tab">
+										<p class="pri"> <b>  </b> <span><i>￥</i>268</span> </p>
+										<p class="tags"> <span style="color:#FF5555;border:1px solid #FF5555">返</span> </p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="nomore">
+							<p class="">点击加载更多酒店</p>
+						</div>
+						<!----------------------------------------搜索无结果start------------------------------------------>
+						<div class="list-noresult" style="display: none;">
+							<i class="icon-noresult"></i>
+							<p>抱歉，未找到符合您条件的酒店</p>
+						</div>
+						<!----------------------------------------搜索无结果 end ------------------------------------------>
+
+					</div>
+					<div class="tool">
+						<div class="ver">
+							<a href="//m.elong.com/my/account/index/">个人中心</a><span>｜</span>
+							<a href="//d.elong.cn/h5_ewhtml5" class="sp">下载客户端</a><span>｜</span>
+							<a href="https://m.elong.com/?t=1501134865326">返回首页</a>
+						</div>
+						<div class="copy">©2009-2017 艺龙无线</div>
+					</div>
+				</section>
+			</div>
+			<div class="list-sider bar">
+				<ul class="filter-list">
+					<li class="filter-btn " data-tj="{&quot;cspot&quot;:&quot;filter&quot;}">
+						<p class="tit"><i class="list-filter-i1"></i>筛选</p>
+						<p class="opt">条件不限</p>
+					</li>
+					<li class="area-btn " data-tj="{&quot;cspot&quot;:&quot;hotelposition&quot;}">
+						<p class="tit">
+							<i class="list-filter-i2"></i>
+							<span class="title-pad">区域位置</span>
+							<span class="title-phone">区域位置</span>
+						</p>
+						<p class="opt">位置不限</p>
+					</li>
+					<li class="price-star-btn " data-tj="{&quot;cspot&quot;:&quot;priceandstar&quot;}">
+						<p class="tit">
+							<i class="list-filter-i3"></i>
+							<span class="title-pad">价格星级</span>
+							<span class="title-phone">价格星级</span>
+						</p>
+						<p class="opt">价格不限、星级不限</p>
+					</li>
+					<li class="default-btn tjclick" data-tj="{&quot;cspot&quot;:&quot;sort&quot;}">
+						<p class="tit">
+							<i class="list-filter-i4"></i>
+							<span class="title-pad">排序</span>
+							<span class="title-phone">排序</span>
+						</p>
+						<p class="opt">默认排序</p>
+					</li>
+				</ul>
+				<a href="" class="filter-reset">重置所有选项</a>
+			</div>
+			<div class="list-top" style="display: none;">
+				<div class="backtop"><i class="icon-top"></i></div>
+			</div>
+			<div class="list-ctrlbtn">
+				<!--list-ctrlbtn-on选中list-ctrlbtn-active按下-->
+				<i class="icon-ctrlbtn"></i>
+				<div class="ctrl-txt"><span><i class="icon-order"></i>订单</span><span><i class="icon-collect"></i>收藏</span><span><i class="icon-history"></i>历史</span></div>
+			</div>
+
+			<div class="filter-sp plugin-inited ks_show" style="display: none;">
+				<div class="sp-content"></div>
+				<div class="bot-btn bar sp-title">
+					<ul>
+						<li class="tjclick" id="qs-reset">重置</li>
+						<li class="on tjclick" id="qs-submit">确定</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-blend="layer" data-blend-id="h5_detail" data-url="https://m.elong.com/hotel/90889993/#indate=2017-07-27&amp;outdate=2017-07-28" id="uniq23" class="page page-on-center" data-title="【空客酒店AIRBUSHOTEL(广州白云机场人和店)】地址:机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)_艺龙网移动版" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
+			<header class="bar bar-nav flight-order-head none_backg">
+				<a class="icon icon-left-nav pull-left icon-back tjclick" data-rel="back" href="/hotel/0101/nlist/" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
+				<a class="icon    icon-collect  collect  pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
+				<h1 class="title">酒店详情</h1>
+			</header>
 			<div class="bar stickys indexnew">
 				<div class="hotel-info detail-date datefixed tjclick" data-tj="{&quot;cspot&quot;:&quot;time&quot;}">
 					<div class="getin_room_a">
@@ -22,7 +445,7 @@
 					</div>
 				</div>
 				<div class="fastchoose">
-					<div class="choice unon" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">筛选<i class="getin"></i></div>
+					<div class="choice " data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">筛选<i class="getin"></i></div>
 					<ul>
 						<li class="tjclick" kw="kw0" data-id="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}">到店付</li>
 						<li class="tjclick" kw="kw0" data-id="101" data-tj="{&quot;cspot&quot;:&quot;freeCancellation&quot;}">免费取消</li>
@@ -34,19 +457,32 @@
 				<section class="detail-main detail-mainNew" style="overflow: visible;">
 
 					<div class="hotel-info">
-						<div style="height:100%" data-v-717dd598="" data-tj="{&quot;cspot&quot;:&quot;image&quot;}" class="pic-wrap tjclick swiper-container-horizontal">
-							<xswiper></xswiper>
-							<h1 data-v-717dd598="" class="name">
-					<i data-v-717dd598="" class="grade grade1"></i> 
-					<em data-v-717dd598="">
-						北京阳光温特莱酒店(国展店)(原速8国展柳芳店)
-					</em>
-				</h1>
-							<span data-v-717dd598="" class="hotel-type">
-					经济型
-				</span>
-							<div data-v-717dd598="" class="num"><i data-v-717dd598=""></i>88</div>
+						<div class="pic-wrap tjclick swiper-container-horizontal" data-tj="{&quot;cspot&quot;:&quot;image&quot;}">
+							<a href="javascript:void(0)"></a>
+							<i class="picbg"></i>
+							<div class="swiper-wrapper focuspic" style="background: url(&quot;//m.elongstatic.com/static/webapp/hotel/2015/06/v2/img/defuat_room_pic.png&quot;) 0% 0% / cover no-repeat; transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+								<div class="swiper-slide swiper-slide-active" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005PpTb.jpg"></div>
+								<div class="swiper-slide swiper-slide-next" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OGBA.jpg"></div>
+								<div class="swiper-slide" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OIf4.jpg"></div>
+								<div class="swiper-slide" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OGBe.jpg"></div>
+								<div class="swiper-slide" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OIgD.jpg"></div>
+							</div>
+							<h1 class="name">
+                        <i class="grade grade1"></i>
+                <em>空客酒店AIRBUSHOTEL(广州白云机场人和店)</em>
+            </h1>
 
+							<span class="hotel-type">
+				经济型
+                
+                
+                
+
+                
+                
+                
+								</span>
+							<div class="num"><i></i>102</div>
 						</div>
 						<div class="info">
 							<ul>
@@ -54,16 +490,16 @@
 								<li class="info_mn">
 									<div class="col_tb">
 										<div class="posi">
-											<div class="addr">朝阳区柳芳北街6号(煤炭总医院正对面)</div>
+											<div class="addr">机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)</div>
 											<div class="dis">
-												<span class="disc">距离柳芳地铁站0.4公里,步行至此0.8公里,约13分钟</span>
+												<span class="disc">距离机场南地铁站0.2公里,步行至此0.7公里,约12分钟</span>
 											</div>
 										</div>
 									</div>
 									<div class="map_bg"></div>
 									<div class="right">
 										<div class="map_c">
-											<img width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=39.958981,116.437258&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
+											<img width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=23.385337,113.303861&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
 											<i class="map_icons"></i>
 										</div>
 									</div>
@@ -86,10 +522,10 @@
 											</div>
 										</div>
 										<div class="right_c">
-											<h1>帅帅的大橙子<span class="ping"><span class="level3">点评新人</span></span></h1>
-											<p>服务态度很好，房间也不错，价格合适。可以暂时寄存行李，很好。</p>
+											<h1>云彩<span class="ping"><span class="level3">点评新人</span></span></h1>
+											<p>干净、卫生、整洁，服务超级好。还到地铁囗来接，大清早送到机场，全是免费。太让我们省心了。</p>
 										</div>
-										<p class="more_p info-comments">查看2396条住客评价<i></i></p>
+										<p class="more_p info-comments">查看2154条住客评价<i></i></p>
 									</div>
 
 									<div class="text1 tabdetails tjclick" style="display:none;" data-tj="{&quot;cspot&quot;:&quot;hoteldetail&quot;}">
@@ -104,12 +540,12 @@
 													<span>无线wifi</span>
 												</li>
 												<li>
+													<span class="icon-apus"></span>
+													<span>接机</span>
+												</li>
+												<li>
 													<span class="icon-luggage"></span>
 													<span>行李寄存</span>
-												</li>
-												<li class="no">
-													<span class="icon-bra"></span>
-													<span>餐厅</span>
 												</li>
 											</ul>
 										</div>
@@ -135,7 +571,7 @@
 						</div>
 
 						<div class="fastchoose">
-							<div class="choice unon" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">筛选<i class="getin"></i></div>
+							<div class="choice " data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">筛选<i class="getin"></i></div>
 							<ul>
 								<li class="tjclick" kw="kw0" data-id="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}">到店付</li>
 								<li class="tjclick" kw="kw0" data-id="101" data-tj="{&quot;cspot&quot;:&quot;freeCancellation&quot;}">免费取消</li>
@@ -147,94 +583,169 @@
 
 					<div class="type">
 						<ul>
-							<li class="rooms  no ">
-								<div class="wrap ">
-									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
-										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/nw_0007aJgt.jpg"> </div>
+							<li class="rooms rec_hotel">
+								<div class="wrap">
+									<div class="left roomdetail">
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}">
+											<div> <img src="//pavo.elongstatic.com/i/mobile216_216/0005OGyS.jpg"> </div> <span class="pic_tags bookedicdet">新客专享</span> </div>
 										<div class="picroom-info">
-											<div class="room">标准双床房</div>
-											<div class="room-info"> <span>18-20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>
-											<div class="icon icon-hs"> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+											<div class="room">标准大床房（不含早）</div>
+											<div class="room-info"> <span>13平米</span> <span>大床1.5米</span> <span>无窗</span> </div>
+											<div class="room-choose"> <span>不可取消</span> <span>在线支付</span> </div>
+											<div class="icon">新用户专享，优惠69元</div>
 										</div>
 									</div>
 									<div class="right">
-										<div class="price"><span>￥</span><span class="num">294</span>起</div>
+										<div class="price"> <span>¥</span> <span class="num">70</span> </div>
+										<div class="icon">139返69<br></div>
+										<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+											<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+												<p>APP</p>
+											</div>
+										</div>
 									</div>
-									<div class="de-btn"> <i></i> </div>
-									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
-								</div>
-								<div class="info-list">
-									<ul>
-										<li class="roomdetail no full_no">
-											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
-												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
-												<div class="act"> </div>
-											</div>
-											<div class="value">
-												<div class="price">￥<span>294</span></div>
-												<div class="return">318返24<br></div>
-											</div>
-											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
-											</div>
-										</li>
-										<li class="roomdetail no full_no">
-											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
-												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-												<div class="act"> </div>
-											</div>
-											<div class="value">
-												<div class="price">￥<span>320</span></div>
-											</div>
-											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
-											</div>
-										</li>
-									</ul>
 								</div>
 							</li>
-							<li class="rooms  no ">
+							<li class="rooms ">
 								<div class="wrap ">
 									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
-										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/nw_0007aLpO.jpg"> </div>
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg"> </div>
 										<div class="picroom-info">
 											<div class="room">标准大床房</div>
-											<div class="room-info"> <span>18-20平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>
-											<div class="icon icon-hs"> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+											<div class="room-info"> <span>13平米</span> <span>大床1.5米</span> <span>  无窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#4499ff;border: 1px #4499ff solid;"> 促销 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
 										</div>
 									</div>
 									<div class="right">
-										<div class="price"><span>￥</span><span class="num">294</span>起</div>
+										<div class="price"><span>￥</span><span class="num">70</span>起</div>
 									</div>
 									<div class="de-btn"> <i></i> </div>
 									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
 								</div>
 								<div class="info-list">
 									<ul>
-										<li class="roomdetail no full_no">
+										<li class="roomdetail  ">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> <span class="roomslv">仅剩5间</span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>70</span></div>
+												<div class="return">139返69<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> <span class="roomslv">仅剩5间</span> </div>
 												<div class="act"> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>294</span></div>
-												<div class="return">318返24<br></div>
+												<div class="price">￥<span>139</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0065%3A11179095%3Anull%3A1&amp;roomid=0065&amp;rateplanid=11179095&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0005&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>138</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0036%3A6404055%3Anull%3A1&amp;roomid=0036&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0005&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>97</span></div>
+												<div class="return">167返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>178</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0014%3A1436724%3Anull%3A1&amp;roomid=0014&amp;rateplanid=1436724&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0005&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>137</span></div>
+												<div class="return">157返20<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0036%3A6404055%3A811_0_116_00%2300%3A1&amp;roomid=0036&amp;rateplanid=6404055&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0005&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="more">
+											<a>查看更多报价<i class="icon-left icon-bottom"></i></a>
+										</li>
+										<li class="roomdetail no full_no hide">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>130</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
 												<div class="btn3 btn2_center">满</div>
 											</div>
 										</li>
-										<li class="roomdetail no full_no">
+										<li class="roomdetail no full_no hide">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-												<div class="act"> </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>320</span></div>
+												<div class="price">￥<span>148</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
 												<div class="btn3 btn2_center">满</div>
@@ -243,46 +754,146 @@
 									</ul>
 								</div>
 							</li>
-							<li class="rooms  no ">
+							<li class="rooms">
 								<div class="wrap ">
 									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
-										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/nw_0003z5FB.jpg"> </div>
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005ONNW.jpg"> </div>
 										<div class="picroom-info">
-											<div class="room">特惠标准间</div>
-											<div class="room-info"> <span>18-20平米</span> <span>双床1.1米</span> <span>  有窗  </span> </div>
-											<div class="icon icon-hs"> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+											<div class="room">豪华大床房</div>
+											<div class="room-info"> <span>20平米</span> <span>大床2米</span> <span>  有窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#4499ff;border: 1px #4499ff solid;"> 促销 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
 										</div>
 									</div>
 									<div class="right">
-										<div class="price"><span>￥</span><span class="num">294</span>起</div>
+										<div class="price"><span>￥</span><span class="num">101</span>起</div>
 									</div>
 									<div class="de-btn"> <i></i> </div>
 									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
 								</div>
 								<div class="info-list">
 									<ul>
-										<li class="roomdetail no full_no">
+										<li class="roomdetail  ">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>101</span></div>
+												<div class="return">171返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
 												<div class="act"> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>294</span></div>
-												<div class="return">318返24<br></div>
+												<div class="price">￥<span>171</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0067%3A11664220%3Anull%3A1&amp;roomid=0067&amp;rateplanid=11664220&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0003&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>168</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0039%3A6404055%3Anull%3A1&amp;roomid=0039&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0003&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>189</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0003%3A1436724%3Anull%3A1&amp;roomid=0003&amp;rateplanid=1436724&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0003&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>108</span></div>
+												<div class="return">178返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>176</span></div>
+												<div class="return">201返25<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0003%3A2603577%3A811_0_116_00%2300%3A1&amp;roomid=0003&amp;rateplanid=2603577&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0003&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="more">
+											<a>查看更多报价<i class="icon-left icon-bottom"></i></a>
+										</li>
+										<li class="roomdetail no full_no hide">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>150</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
 												<div class="btn3 btn2_center">满</div>
 											</div>
 										</li>
-										<li class="roomdetail no full_no">
+										<li class="roomdetail no full_no hide">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-												<div class="act"> </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>320</span></div>
+												<div class="price">￥<span>168</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
 												<div class="btn3 btn2_center">满</div>
@@ -291,49 +902,507 @@
 									</ul>
 								</div>
 							</li>
-							<li class="rooms  no ">
+							<li class="rooms ">
 								<div class="wrap ">
 									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
-										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ng.jpg"> </div>
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg"> </div>
+										<div class="picroom-info">
+											<div class="room">标准双床房</div>
+											<div class="room-info"> <span>18平米</span> <span>双床</span> <span>  有窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#4499ff;border: 1px #4499ff solid;"> 促销 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+										</div>
+									</div>
+									<div class="right">
+										<div class="price"><span>￥</span><span class="num">102</span>起</div>
+									</div>
+									<div class="de-btn"> <i></i> </div>
+									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
+								</div>
+								<div class="info-list">
+									<ul>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>138</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0037%3A6404055%3Anull%3A1&amp;roomid=0037&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0002&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>165</span></div>
+												<div class="return">178返13<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0002%3A1436724%3Anull%3A1&amp;roomid=0002&amp;rateplanid=1436724&amp;promotionid=_1&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0002&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>102</span></div>
+												<div class="return">172返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">住哪</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>134</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0037%3A6404055%3A1_0_239_00%2300%3A1&amp;roomid=0037&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=1&amp;policyid=1_0_239_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0002&amp;drvtype=1"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>137</span></div>
+												<div class="return">157返20<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0037%3A6404055%3A811_0_116_00%2300%3A1&amp;roomid=0037&amp;rateplanid=6404055&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0002&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail no full_no">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>124</span></div>
+												<div class="return">148返24<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn3 btn2_center">满</div>
+											</div>
+										</li>
+										<li class="more">
+											<a>查看更多报价<i class="icon-left icon-bottom"></i></a>
+										</li>
+										<li class="roomdetail no full_no hide">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>135</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn3 btn2_center">满</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="rooms ">
+								<div class="wrap ">
+									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005OMbr.jpg"> </div>
+										<div class="picroom-info">
+											<div class="room">豪华双床房</div>
+											<div class="room-info"> <span>20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#4499ff;border: 1px #4499ff solid;"> 促销 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+										</div>
+									</div>
+									<div class="right">
+										<div class="price"><span>￥</span><span class="num">108</span>起</div>
+									</div>
+									<div class="de-btn"> <i></i> </div>
+									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
+								</div>
+								<div class="info-list">
+									<ul>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>168</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0040%3A6404055%3Anull%3A1&amp;roomid=0040&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0004&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>108</span></div>
+												<div class="return">178返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>189</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0004%3A1436724%3Anull%3A1&amp;roomid=0004&amp;rateplanid=1436724&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0004&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>176</span></div>
+												<div class="return">201返25<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0004%3A2603577%3A811_0_116_00%2300%3A1&amp;roomid=0004&amp;rateplanid=2603577&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0004&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail no full_no">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>148</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn3 btn2_center">满</div>
+											</div>
+										</li>
+										<li class="roomdetail no full_no">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>168</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn3 btn2_center">满</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="rooms ">
+								<div class="wrap ">
+									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005OMd5.jpg"> </div>
+										<div class="picroom-info">
+											<div class="room">商务双床房</div>
+											<div class="room-info"> <span>25平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+										</div>
+									</div>
+									<div class="right">
+										<div class="price"><span>￥</span><span class="num">128</span>起</div>
+									</div>
+									<div class="de-btn"> <i></i> </div>
+									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
+								</div>
+								<div class="info-list">
+									<ul>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>178</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0042%3A6404055%3Anull%3A1&amp;roomid=0042&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0008&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>192</span></div>
+												<div class="return">208返16<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0034%3A1436724%3Anull%3A1&amp;roomid=0034&amp;rateplanid=1436724&amp;promotionid=_1&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0008&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>128</span></div>
+												<div class="return">198返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>186</span></div>
+												<div class="return">212返26<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0034%3A2603577%3A811_0_116_00%2300%3A1&amp;roomid=0034&amp;rateplanid=2603577&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0008&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="rooms ">
+								<div class="wrap ">
+									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005OMc1.jpg"> </div>
 										<div class="picroom-info">
 											<div class="room">商务大床房</div>
-											<div class="room-info"> <span>18-20平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>
-											<div class="icon icon-hs"> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+											<div class="room-info"> <span>25平米</span> <span>大床2米</span> <span>  有窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
 										</div>
 									</div>
 									<div class="right">
-										<div class="price"><span>￥</span><span class="num">313</span>起</div>
+										<div class="price"><span>￥</span><span class="num">128</span>起</div>
 									</div>
 									<div class="de-btn"> <i></i> </div>
 									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
 								</div>
 								<div class="info-list">
 									<ul>
-										<li class="roomdetail no full_no">
+										<li class="roomdetail  ">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
-												<div class="act"> </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>313</span></div>
-												<div class="return">338返25<br></div>
+												<div class="price">￥<span>178</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0041%3A6404055%3Anull%3A1&amp;roomid=0041&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0006&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
 											</div>
 										</li>
-										<li class="roomdetail no full_no">
+										<li class="roomdetail  ">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-												<div class="act"> </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>353</span></div>
+												<div class="price">￥<span>128</span></div>
+												<div class="return">198返70<br></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>208</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0032%3A1436724%3Anull%3A1&amp;roomid=0032&amp;rateplanid=1436724&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0006&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>186</span></div>
+												<div class="return">212返26<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0032%3A2603577%3A811_0_116_00%2300%3A1&amp;roomid=0032&amp;rateplanid=2603577&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0006&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="rooms ">
+								<div class="wrap ">
+									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005ONNc.jpg"> </div>
+										<div class="picroom-info">
+											<div class="room">高级大床房</div>
+											<div class="room-info"> <span>28平米</span> <span>大床2米</span> <span>  有窗  </span> </div>
+											<div class="icon icon-hs"> <span class="clock_hb" style="color:#ff5555;border: 1px #ff5555 solid;"> APP新客折扣 </span> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+										</div>
+									</div>
+									<div class="right">
+										<div class="price"><span>￥</span><span class="num">161</span>起</div>
+									</div>
+									<div class="de-btn"> <i></i> </div>
+									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
+								</div>
+								<div class="info-list">
+									<ul>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>206</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0038%3A6404055%3Anull%3A1&amp;roomid=0038&amp;rateplanid=6404055&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0007&amp;drvtype=0"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>248</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0033%3A1436724%3Anull%3A1&amp;roomid=0033&amp;rateplanid=1436724&amp;promotionid=_&amp;ismj=0&amp;policyid=&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0007&amp;drvtype=0"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="xstm"> <span class="suppliername">代理</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#ff5555;border: 1px solid #ff5555;"> APP新客折扣 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>161</span></div>
+												<div class="return">231返70<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-27,2017-07-28,90889993"><span>订</span>
+													<p>APP</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail  ">
+											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
+												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
+												<div class="xstm"> <span class="suppliername">返现嘉年华</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>204</span></div>
+												<div class="return">234返30<br></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="https://m.elong.com/hotel/createorder/?hotelid=90889993&amp;uniqueid=90889993%3A0038%3A6404055%3A811_0_116_00%2300%3A1&amp;roomid=0038&amp;rateplanid=6404055&amp;promotionid=_1&amp;ismj=1&amp;policyid=811_0_116_00%2300_f8c283866a47f3dc3a60b1242aa5fdf6%2613%3A56%3A17&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;roomtype=0&amp;mroomid=0007&amp;drvtype=811"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
 											</div>
 										</li>
 									</ul>
@@ -342,15 +1411,15 @@
 							<li class="rooms  no ">
 								<div class="wrap ">
 									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
-										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/nw_0003z7Ne.jpg"> </div>
+										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg"> </div>
 										<div class="picroom-info">
-											<div class="room">商务双床间</div>
-											<div class="room-info"> <span>18-20平米</span> <span>双床1.2米</span> <span>  有窗  </span> </div>
-											<div class="icon icon-hs"> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
+											<div class="room">特惠大床房</div>
+											<div class="room-info"> <span>13平米</span> <span>大床1.5米</span> <span>  无窗  </span> </div>
+											<div class="icon icon-hs"> </div>
 										</div>
 									</div>
 									<div class="right">
-										<div class="price"><span>￥</span><span class="num">313</span>起</div>
+										<div class="price"><span>￥</span><span class="num">145</span>起</div>
 									</div>
 									<div class="de-btn"> <i></i> </div>
 									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
@@ -360,25 +1429,12 @@
 										<li class="roomdetail no full_no">
 											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
 												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
-												<div class="act"> </div>
-											</div>
-											<div class="value">
-												<div class="price">￥<span>313</span></div>
-												<div class="return">338返25<br></div>
-											</div>
-											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
-											</div>
-										</li>
-										<li class="roomdetail no full_no">
-											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
-												<div class="bra clearfix"> 不含早 </div>
+												<div class="sale_txt"><span>含交通优惠</span></div>
 												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-												<div class="act"> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>353</span></div>
+												<div class="price">￥<span>145</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
 												<div class="btn3 btn2_center">满</div>
@@ -387,93 +1443,114 @@
 									</ul>
 								</div>
 							</li>
-							<li class="rooms  no ">
-								<div class="wrap ">
-									<div class="left   tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
-										<div class="pic tjclick rpDetail" data-tj="{&quot;cspot&quot;:&quot;roomimage&quot;}"> <img src="//pavo.elongstatic.com/i/mobile750_448/00050lPD.jpg"> </div>
-										<div class="picroom-info">
-											<div class="room">商务套房</div>
-											<div class="room-info"> <span>36平米</span> <span>大床1.8米</span> <span>  有窗  </span> </div>
-											<div class="icon icon-hs"> <span class="clock_hb" style="color:#FF5555;border: 1px #FF5555 solid;"> 返 </span> </div>
-										</div>
-									</div>
-									<div class="right">
-										<div class="price"><span>￥</span><span class="num">462</span>起</div>
-									</div>
-									<div class="de-btn"> <i></i> </div>
-									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
-								</div>
-								<div class="info-list">
-									<ul>
-										<li class="roomdetail no full_no">
-											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
-												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
-												<div class="act"> </div>
-											</div>
-											<div class="value">
-												<div class="price">￥<span>462</span></div>
-												<div class="return">500返38<br></div>
-											</div>
-											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
-											</div>
-										</li>
-										<li class="roomdetail no full_no">
-											<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
-												<div class="bra clearfix"> 不含早 </div>
-												<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-												<div class="act"> </div>
-											</div>
-											<div class="value">
-												<div class="price">￥<span>485</span></div>
-											</div>
-											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="rooms  no ">
+							<li class="rooms ">
 								<div class="wrap  rp ">
 									<div class="left  tjclick" data-tj="{&quot;cspot&quot;:&quot;roomdetail&quot;}">
 										<div class="room rpDetail">钟点房</div>
 									</div>
 									<div class="right">
-										<div class="price"><span>￥</span><span class="num">133</span>起</div>
+										<div class="price"><span>￥</span><span class="num">85</span>起</div>
 									</div>
 									<div class="de-btn"> <i></i> </div>
 									<div class="rigit_activebg tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplanlist1&quot;}"></div>
 								</div>
 								<div class="info-list">
 									<ul>
-										<li class="roomdetail no">
+										<li class="roomdetail ">
 											<div class="left">
-												<div class="bra">标准大床房(钟点房4小时)</div>
-												<div class="xstm"><span>18-20平米</span><span>大床1.8米</span></div>
-												<div class="xstm"><span>入住：8:00-20:00</span> <span class="suppliername"> 不可取消 </span> </div>
-												<div class="act"> </div>
+												<div class="bra">特惠大床房(钟点房4小时)</div>
+												<div class="xstm"><span>13平米</span><span>大床1.5米</span></div>
+												<div class="xstm"><span>入住：8:00-22:00</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>133</span></div>
+												<div class="price">￥<span>85</span></div>
+												<div class="return">90返5<br></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
+												<div class="btn2 btn2_center" url="//m.elong.com/clockhotel/createorder/?hotelid=90889993&amp;roomid=0044&amp;rateplanid=7843615&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;productid=90889993_0044_7843615&amp;from=h5hotel"><span>订</span>
+													<p>到店付</p>
+												</div>
 											</div>
 										</li>
-										<li class="roomdetail no">
+										<li class="roomdetail ">
 											<div class="left">
-												<div class="bra">标准双床房(钟点房4小时)</div>
-												<div class="xstm"><span>18-20平米</span><span>双床1.2米</span></div>
-												<div class="xstm"><span>入住：8:00-20:00</span> <span class="suppliername"> 不可取消 </span> </div>
+												<div class="bra">标准大床房(钟点房3小时)</div>
+												<div class="xstm"><span>13平米</span><span>大床1.5米</span></div>
+												<div class="xstm"><span>入住：8:00-21:00</span> <span class="suppliername"> 付费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>100</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="//m.elong.com/clockhotel/createorder/?hotelid=90889993&amp;roomid=0015&amp;rateplanid=2110543&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;productid=90889993_0015_2110543&amp;from=h5hotel"><span>订</span>
+													<p class="btn2_yf">预付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail ">
+											<div class="left">
+												<div class="bra">标准大床房(钟点房4小时)</div>
+												<div class="xstm"><span>13平米</span><span>大床1.5米</span></div>
+												<div class="xstm"><span>入住：14:00-3:59</span> <span class="f_c49f"> 免费取消 </span> </div>
 												<div class="act"> </div>
 											</div>
 											<div class="value">
-												<div class="price">￥<span>320</span></div>
+												<div class="price">￥<span>100</span></div>
 											</div>
 											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
-												<div class="btn3 btn2_center">满</div>
+												<div class="btn2 btn2_center" url="//m.elong.com/clockhotel/createorder/?hotelid=90889993&amp;roomid=0042&amp;rateplanid=6542392&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;productid=90889993_0042_6542392&amp;from=h5hotel"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail ">
+											<div class="left">
+												<div class="bra">标准大床房(钟点房3小时)</div>
+												<div class="xstm"><span>13平米</span><span>大床1.5米</span></div>
+												<div class="xstm"><span>入住：8:00-21:00</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>100</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="//m.elong.com/clockhotel/createorder/?hotelid=90889993&amp;roomid=0015&amp;rateplanid=6958924&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;productid=90889993_0015_6958924&amp;from=h5hotel"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail ">
+											<div class="left">
+												<div class="bra">豪华双床房(钟点房4小时)</div>
+												<div class="xstm"><span>20平米</span><span>双床1.2米</span></div>
+												<div class="xstm"><span>入住：14:00-3:59</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>100</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="//m.elong.com/clockhotel/createorder/?hotelid=90889993&amp;roomid=0039&amp;rateplanid=6542389&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;productid=90889993_0039_6542389&amp;from=h5hotel"><span>订</span>
+													<p>到店付</p>
+												</div>
+											</div>
+										</li>
+										<li class="roomdetail ">
+											<div class="left">
+												<div class="bra">豪华双床房(钟点房3小时)</div>
+												<div class="xstm"><span>20平米</span><span>双床1.2米</span></div>
+												<div class="xstm"><span>入住：8:00-21:00</span> <span class="f_c49f"> 免费取消 </span> </div>
+												<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 立即确认 </span> </div>
+											</div>
+											<div class="value">
+												<div class="price">￥<span>100</span></div>
+											</div>
+											<div class="book tjclick" data-tj="{&quot;cspot&quot;:&quot;booking&quot;}">
+												<div class="btn2 btn2_center" url="//m.elong.com/clockhotel/createorder/?hotelid=90889993&amp;roomid=0043&amp;rateplanid=6958924&amp;checkindate=2017-07-27&amp;checkoutdate=2017-07-28&amp;productid=90889993_0043_6958924&amp;from=h5hotel"><span>订</span>
+													<p>到店付</p>
+												</div>
 											</div>
 										</li>
 									</ul>
@@ -493,17 +1570,17 @@
 						<dl>
 							<dt>酒店电话</dt>
 							<dd>
-								<a href="tel:010-51371060" class="tel">010-51371060</a>艺龙电话预订：
+								<a href="tel:020-62933313" class="tel">020-62933313</a>艺龙电话预订：
 								<a href="tel:400-666-1166" class="tel">400-666-1166</a>
 							</dd>
 						</dl>
 						<dl>
 							<dt>开业时间</dt>
-							<dd>酒店开业时间 2011年05月19日年 </dd>
+							<dd>酒店开业时间 2015年08月20日年 </dd>
 						</dl>
 						<dl>
 							<dt>酒店服务</dt>
-							<dd>叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习</dd>
+							<dd>叫车服务,房间消毒,免费接机服务,叫醒服务,送餐服务,旅游服务,行李寄存,票务服务,商品部,安全消防系统,公共区域闭路电视监控系统,大堂报纸,24小时热水,棋牌室,卡拉OK厅,免费停车,有电梯,免费wifi,酒店,入住时间,离店时间,收费接机服务,旅游交通图,大堂吧,电子结账系统,自助咖啡机（投币）,商旅之家,培训学习,预定须知_其他(中文),情侣酒店</dd>
 						</dl>
 						<a class="more">更多酒店信息</a>
 					</div>
@@ -513,20 +1590,10 @@
 						<dl class="list">
 							<dt><i class="clock icon-clock"></i>历史浏览</dt>
 							<dd>
-								<a href="/hotel/40301046/">
+								<a href="/hotel/20101391/">
 									<i class="grade grade1"></i>
-									<em>北京大成路九号</em>
-								</a><span>￥<i class="num">630</i><i class="up">起</i></span></dd>
-							<dd>
-								<a href="/hotel/00101543/">
-									<i class="grade grade1"></i>
-									<em>北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</em>
-								</a><span>￥<i class="num">0</i><i class="up">起</i></span></dd>
-							<dd>
-								<a href="/hotel/00101366/">
-									<i class="grade grade1"></i>
-									<em>速8酒店(北京马家堡店)</em>
-								</a><span>￥<i class="num">618</i><i class="up">起</i></span></dd>
+									<em>金泰之家(北京劲松店)</em>
+								</a><span>￥<i class="num">280</i><i class="up">起</i></span></dd>
 							<dd>
 								<a href="/hotel/91244474/">
 									<i class="grade grade1"></i>
@@ -551,14 +1618,14 @@
 					<div class="copy">©2009-2017 艺龙无线</div>
 				</section>
 			</div>
-
+			
 			<div class="slide-selector plugin-inited">
 				<header class="bar-nav">
 					<div class="radio-title"><span class="title">客服电话</span><span class="cancel">取消</span></div>
 				</header>
 				<ul class="page-content">
 					<li class="radio-item " value="0"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text"><a href="tel:400-666-1166">艺龙电话：400-666-1166</a></div><div class="check"></div></label></li>
-					<li class="radio-item " value="1"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text"><a href="tel:010-51371060">酒店电话：010-51371060</a></div><div class="check"></div></label></li>
+					<li class="radio-item " value="1"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio"></span></div><div class="radio-text"><a href="tel:020-62933313">酒店电话：020-62933313</a></div><div class="check"></div></label></li>
 				</ul>
 				<div class="arrow up left"></div>
 				<div class="describe" style="display: none;"></div>
@@ -966,7 +2033,7 @@
 					<div class="price breakfast">
 						<div class="sp-tit">早餐</div>
 						<ul class="price-list room-list">
-							<li class="on" kw="kw1" data-id="100">不含早</li>
+							<li class="" kw="kw1" data-id="100">不含早</li>
 							<li class="" kw="kw1" data-id="36">含单早</li>
 							<li class="" kw="kw1" data-id="35">含双早</li>
 							<li class="" kw="kw1" data-id="37">含三早及以上</li>
@@ -1019,14 +2086,14 @@
 					<section class="info-pop-box">
 						<div class="na clearfix">
 							<div class="na_lf">
-								<div class="name">北京阳光温特莱酒店(国展店)(原速8国展柳芳店)</div>
-								<div class="addr"><i></i>朝阳区柳芳北街6号(煤炭总医院正对面)</div>
+								<div class="name">空客酒店AIRBUSHOTEL(广州白云机场人和店)</div>
+								<div class="addr"><i></i>机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)</div>
 							</div>
 						</div>
 						<div class="facilities_con">
 							<dl class="facilities"> <dt>酒店设施</dt>
 								<dd class=""> <i class="i1"></i>
-									<p> 停车 </p>
+									<p> 免费停车 </p>
 								</dd>
 								<dd class=""> <i class="i2"></i>
 									<p> 免费wifi </p>
@@ -1040,8 +2107,8 @@
 								<dd class="no"> <i class="i5"></i>
 									<p> 游泳池 </p>
 								</dd>
-								<dd class="no"> <i class="i4"></i>
-									<p> 接机服务 </p>
+								<dd class=""> <i class="i4"></i>
+									<p> 免费接机服务 </p>
 								</dd>
 								<dd class="no"> <i class="i6"></i>
 									<p> 会议室 </p>
@@ -1053,7 +2120,7 @@
 							<div class="fac_txt">
 								<div class="fac_txtc">
 									<div class="fac_txtc_h">
-										<p>叫醒服务,旅游服务,棋牌室,免费wifi,叫车服务,行李寄存,旅游交通图,商品部,安全消防系统,电子结账系统,大堂报纸,24小时热水,有电梯,酒店,电视,大床1.8米,免费无线,免费提供一次性洗漱用品,入住时间,离店时间,收费接机服务,公共区域闭路电视监控系统,收费停车,商旅之家,看病就医,培训学习</p>
+										<p>叫车服务,房间消毒,免费接机服务,叫醒服务,送餐服务,旅游服务,行李寄存,票务服务,商品部,安全消防系统,公共区域闭路电视监控系统,大堂报纸,24小时热水,棋牌室,卡拉OK厅,免费停车,有电梯,免费wifi,酒店,入住时间,离店时间,收费接机服务,旅游交通图,大堂吧,电子结账系统,自助咖啡机（投币）,商旅之家,培训学习,预定须知_其他(中文),情侣酒店</p>
 									</div>
 								</div>
 								<div class="fac_more">查看更多</div>
@@ -1061,18 +2128,19 @@
 						</div>
 						<div class="other">
 							<dl> <dt>温馨提示</dt>
-								<dd class="clearfix"> <span class="dct_tit">入离通知：</span> <span class="dct_txt">  入住时间:12点以后,离店时间:14点以前   </span> </dd>
+								<dd class="clearfix"> <span class="dct_tit">预订须知：</span> <span class="dct_txt">  温馨提示：  <br>   1.酒店提供24小时免费车接送新白云国际机场和人和地铁站；  <br>   2.酒店只能刷房费，不能刷预授权   </span> </dd>
+								<dd class="clearfix"> <span class="dct_tit">入离通知：</span> <span class="dct_txt">  入住时间:12点以后,离店时间:12点以前   </span> </dd>
 							</dl>
 						</div>
 						<div class="intro">
 							<div class="tit">酒店简介</div>
 							<div class="intro_con">
 								<div class="ht_txt clearfix">
-									<div class="dct_con"> <span class="dct_tit">开业时间：</span> <span class="dct_txt">2011-05-19</span> </div>
-									<div class="dct_con"> <span class="dct_tit">装修时间：</span> <span class="dct_txt">2011-05-19</span> </div>
+									<div class="dct_con"> <span class="dct_tit">开业时间：</span> <span class="dct_txt">2015-08-20</span> </div>
+									<div class="dct_con"> <span class="dct_tit">装修时间：</span> <span class="dct_txt">2014-10-01</span> </div>
 								</div>
 								<div class="text_con_h">
-									<div class="text"> 阳光温特莱酒店国展店（原速8酒店北京国展柳芳店）位于北京市朝阳区香河园地区（柳芳北街），地处东直门交通枢纽及朝阳区三环枢纽的三元桥附近，紧邻中国国际展览中心（步行约600米），东邻机场高速公路1公里，南距东直门交通枢纽2公里，东直门机场快轨到首都机场只需20分钟，西邻地铁13号线（步行约10分钟），地理位置优越，交通便利。打车到地铁2号、5号、10号、13号线仅需10元。酒店毗邻燕莎购物中心、使馆区、农展馆、机场高速路和东直门交通枢纽， 酒店门口多条公交线路直达东直门交通枢纽、新国展中心、多个奥运场馆、北京火车站、王府井、天安门、前门、颐和园等处。酒店拥有104间温馨、干净、舒适的客房、提供免费停车位，数字有线电视、免费宽带上网、电子门锁及独立空调。现代化的设施，优质、友好的服务是您在北京商务旅行的理想选择。 <br> 　　酒店开业时间2011年05月01日，主楼高5层，客房总数104间（套）。 <br> <br> 【温馨提示】 <br> 1、酒店提供一次性免费洗漱用具，需前台领取； <br> 2、酒店可以接待外宾； <br> 3、酒店提供免费停车场； <br> 4、前台免费领取一次性洗漱用品。 </div>
+									<div class="text"> 空客酒店AIRBUSHOTEL(广州白云机场店)位于广州白云区机场大道东自编138号，距离新白云国际机场约5分钟车程。距人和地铁口800米，距天河体育中心、琶洲会展中心和火车站仅需30分钟车程，交通非常便利。酒店有大型免费停车场,酒店二楼有沐足休闲会所，周边有大型超市“好又多”，星美影城，多家银行，药店，游乐场，路边是美食一条街，包含甜品店、粤菜、湘菜、东北菜、火锅、夜宵、烧烤等，种类繁多，环境卫生。酒店每日定时有免费机场和地铁口接送服务，另外广交会期间提供接送服务。酒店走廊香薰相伴，房间洁净雅致，闹中取静，通风舒适，提供24小时热水、冷暖空调、有线网络口、高速WIFI，免费洗漱用品、电吹风、复印传真打印等服务,舒适、贴心、满意是我们的宗旨，希望阁下在酒店入住愉快。 <br> <br> 温馨提示： <br> 1.酒店提供24小时免费车接送新白云国际机场和人和地铁站； <br> 2.酒店只能刷房费，不能刷预授权 </div>
 									<div class="ht_dct clearfix"> <span class="dct_tit">支持卡种：</span> <span class="dct_txt">牡丹卡,金穗卡,长城卡,龙卡,太平洋卡,东方卡</span> </div>
 								</div>
 							</div>
@@ -1082,42 +2150,19 @@
 							<div class="tit">酒店周边</div>
 							<div class="preiphety_con">
 								<div class="distance_lst clearfix">
-									<div class="prpy_icon"> <i class="dt_icons"></i> </div>
-									<div class="prpy_distance">
-										<p class="clearfix"> <span class="ads_txt">柳芳(13号线)</span> <span class="dtc_txt">直线距离501米</span> </p>
-									</div>
-								</div>
-								<div class="distance_lst clearfix">
 									<div class="prpy_icon"> <i class="hcz_icons"></i> </div>
 									<div class="prpy_distance">
-										<p class="clearfix"> <span class="ads_txt">北京站</span> <span class="dtc_txt">直线距离5.3公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">北京北站</span> <span class="dtc_txt">直线距离6.7公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">北京东站</span> <span class="dtc_txt">直线距离7.1公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">北京南站</span> <span class="dtc_txt">直线距离10.7公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">北京西站</span> <span class="dtc_txt">直线距离11.4公里</span> </p>
+										<p class="clearfix"> <span class="ads_txt">广州北站</span> <span class="dtc_txt">直线距离9.6公里</span> </p>
+										<p class="clearfix"> <span class="ads_txt">广州东站</span> <span class="dtc_txt">直线距离25.7公里</span> </p>
+										<p class="clearfix"> <span class="ads_txt">广州站</span> <span class="dtc_txt">直线距离26.2公里</span> </p>
+										<p class="clearfix"> <span class="ads_txt">广州西站</span> <span class="dtc_txt">直线距离27.3公里</span> </p>
+										<p class="clearfix"> <span class="ads_txt">广州南站</span> <span class="dtc_txt">直线距离43.5公里</span> </p>
 									</div>
 								</div>
 								<div class="distance_lst clearfix">
 									<div class="prpy_icon"> <i class="jc_icons"></i> </div>
 									<div class="prpy_distance">
-										<p class="clearfix"> <span class="ads_txt">北京南苑机场</span> <span class="dtc_txt">直线距离18.0公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">首都机场T3航站楼</span> <span class="dtc_txt">直线距离19.4公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">首都机场T1航站楼</span> <span class="dtc_txt">直线距离19.5公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">首都机场T2航站楼</span> <span class="dtc_txt">直线距离19.7公里</span> </p>
-									</div>
-								</div>
-								<div class="distance_lst clearfix">
-									<div class="prpy_icon"> <i class="qcz_icons"></i> </div>
-									<div class="prpy_distance">
-										<p class="clearfix"> <span class="ads_txt">东直门长途汽车站</span> <span class="dtc_txt">直线距离1.2公里</span> </p>
-									</div>
-								</div>
-								<div class="distance_lst clearfix">
-									<div class="prpy_icon"> <i class="jd_icons"></i> </div>
-									<div class="prpy_distance">
-										<p class="clearfix"> <span class="ads_txt">地坛公园</span> <span class="dtc_txt">直线距离1.4公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">雍和宫</span> <span class="dtc_txt">直线距离1.5公里</span> </p>
-										<p class="clearfix"> <span class="ads_txt">五道营胡同</span> <span class="dtc_txt">直线距离1.9公里</span> </p>
+										<p class="clearfix"> <span class="ads_txt">新白云机场</span> <span class="dtc_txt">直线距离965米</span> </p>
 									</div>
 								</div>
 							</div>
@@ -1128,84 +2173,14 @@
 					</section>
 				</div>
 			</div>
-			<nav class="bar record record-text" style="display: none;">48小时内有78人预订</nav>
+			<nav class="bar record record-text" style="display: none;">48小时内有184人预订</nav>
 		</div>
 	</div>
-
 </template>
 
 <script>
-	/*挺入组件*/
-	import xswiper from "../xswiper.vue";
-	import xback from "../xback.vue";
-	import xtoHome from "../toHome.vue";
-	import xheader from "../detail/xheader.vue";
-	import xmap from "../detail/xmap.vue";
-	import xcomment from "../detail/xcomment.vue";
-	import xdate from "../detail/xdate.vue";
-	import xchosehouse from "../detail/xchosehouse.vue";
-	export default {
-		methods: {
-			getData() {
-				//this.$store.dispatch("setNews");
-				//this.$store.state.news = ;
-				/*this.$ajax({
-//					url: "http://localhost:3000/detail",
-				}).then(function(res) {
-//					console.log(res)
-					this.$store.state.imgArr = res.data.pics;
-
-				}.bind(this))*/
-				//				this.$store.state.imgArr = res.data.pics;
-			}
-		},
-		//注册组件
-		components: {
-			xheader,
-			xback,
-			xtoHome,
-			xswiper,
-			xmap,
-			xcomment,
-			xdate,
-			xchosehouse
-		},
-		mounted() {
-			//后台请求数据动态生成列表
-			//			this.getData()
-		}
-	}
 </script>
 
-<style scoped>
-	{
-		padding: 0;
-		margin: 0;
-	}
-	
-	ul li {
-		list-style: none;
-	}
-	
-	a {
-		text-decoration: none;
-	}
-	/*
-	.grade {
-		display: inline-block;
-		width: 16px;
-		height: 14px;
-		background-image: url(https://m.elongstatic.com/static/webapp/hotel/2017/07/v18/img/icon-list.png);
-		background-position: 0 -18px;
-		background-repeat: no-repeat;
-		background-size: 96px 32px;
-		margin-left: 3px;
-		margin-bottom: 1px;
-	}
-	
-	.name em {
-		color: #fff;
-		font-style: normal;
-	}
-	*/
+<style>
+
 </style>
