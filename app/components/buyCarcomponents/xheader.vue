@@ -1,31 +1,30 @@
 <template>
 	<div>
-		<header>
-			<xback></xback>
-			<xtohome></xtohome>
-			<h1>订单详情</h1>
-
+		<header class="bar bar-nav flight-order-head none_backg">
+			<a class="icon icon-left-nav pull-left icon-back tjclick" data-rel="back" href="/hotel/0101/nlist/" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
+			<a class="icon    icon-collect  collect  pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
+			<h1 class="title">酒店详情</h1>
 		</header>
 	</div>
 </template>
 
 <script>
-	import xback from '../xback.vue';
-	import xtohome from '../toHome.vue';
+
 	export default {
 		components: {
-			xback,
-			xtohome
+
 		}
 	}
 </script>
 
 <style scoped>
-	*{
+	* {
 		margin: 0;
 		padding: 0;
 	}
+	
 	header {
+		position: fixed;
 		height: 48px;
 		line-height: 48px;
 		background-color: #f4f4f4;
@@ -34,8 +33,12 @@
 		text-align: center;
 		font-size: 14px;
 	}
-	h1{
+	
+	h1 {
 		font-size: 20px;
 		line-height: 48px;
+	}
+	.bar{
+		height: 48px;
 	}
 </style>

@@ -9,6 +9,7 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 //axios的ajax封装库
 import axios from "axios";
+
 //轮播图
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
@@ -147,6 +148,7 @@ var store = new Vuex.Store({
 
 	}
 })
+
 
 //新建一个实例，把定义好的router和store放进来注册...................................
 new Vue({

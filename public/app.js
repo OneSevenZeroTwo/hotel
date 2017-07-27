@@ -97,6 +97,16 @@ app.get('/detail', function(req, res) {
 
 })
 
+
+//详情页   房间类型
+app.get('/roomType', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+		console.log(33333)
+	
+
+})
+
+
 //buyCar部分..............................................zhangjunhua
 
 //登录注册部分..............................................zhangjunhua
