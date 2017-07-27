@@ -48251,7 +48251,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"list.vue","sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"list.vue","sourceRoot":""}]);
 
 // exports
 
@@ -48275,9 +48275,13 @@ var _xsearch = __webpack_require__(203);
 
 var _xsearch2 = _interopRequireDefault(_xsearch);
 
+<<<<<<< HEAD
+var _xpagecontent = __webpack_require__(151);
+=======
 var _xlist = __webpack_require__(206);
+>>>>>>> ee9057dabba3d404935c699b000f199996a7ece5
 
-var _xlist2 = _interopRequireDefault(_xlist);
+var _xpagecontent2 = _interopRequireDefault(_xpagecontent);
 
 var _xfooter = __webpack_require__(208);
 
@@ -48308,6 +48312,195 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+
+exports.default = {
+	data: function data() {
+		return {};
+	},
+	components: {
+		xheader: _xheader2.default,
+		xsearch: _xsearch2.default,
+		xpagecontent: _xpagecontent2.default,
+		xfooter: _xfooter2.default
+	},
+	methods: {}
+};
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(146),
+  /* template */
+  __webpack_require__(147),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xheader.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-49923986", Component.options)
+  } else {
+    hotAPI.reload("data-v-49923986", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    data: function data() {
+        return {};
+    },
+    methods: {}
+};
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('header', {
+    staticClass: "bar bar-nav hotel-list-header"
+  }, [_c('a', {
+    staticClass: "icon pull-left icon-back tjclick",
+    attrs: {
+      "data-rel": "back",
+      "data-href": "http://m.elong.com/?t=1501070002922",
+      "data-tj": "{\"cspot\":\"back\"}"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "icon icon-nearby pull-right tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"map\"}"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "icon icon-collectlist  collect pull-right tjclick",
+    attrs: {
+      "href": "//m.elong.com/my/hotel/favorites/",
+      "data-tj": "{\"cspot\":\"mycollection\"}"
+    }
+  }), _vm._v(" "), _c('h1', {
+    staticClass: "title"
+  }, [_c('span', {
+    staticClass: "city-area"
+  }, [_c('span', {
+    staticClass: "city"
+  }, [_vm._v("\n                        北京市\n                    ")]), _vm._v(" "), _c('span', {
+    staticClass: "num",
+    staticStyle: {
+      "display": "none"
+    }
+  }), _vm._v(" "), _c('i', {
+    staticClass: "icon-bottom"
+  })])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-49923986", module.exports)
+  }
+}
+
+/***/ }),
+/* 148 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(149),
+  /* template */
+  __webpack_require__(150),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xsearch.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ad4a91be", Component.options)
+  } else {
+    hotAPI.reload("data-v-ad4a91be", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 //
 //
 //
@@ -48338,23 +48531,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+<<<<<<< HEAD
+=======
 //
 //
 //
@@ -49699,6 +49877,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+>>>>>>> ee9057dabba3d404935c699b000f199996a7ece5
 
 exports.default = {
 	data: function data() {
@@ -49727,6 +49906,9 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
+/* 150 */
+=======
 /* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -50079,12 +50261,15 @@ if (false) {
 
 /***/ }),
 /* 210 */
+>>>>>>> ee9057dabba3d404935c699b000f199996a7ece5
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+<<<<<<< HEAD
+=======
     staticClass: "pages"
   }, [_c('div', {
     staticClass: "page page-on-center",
@@ -50130,6 +50315,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('i', {
     staticClass: "icon-bottom"
   })])])]), _vm._v(" "), _c('div', {
+>>>>>>> ee9057dabba3d404935c699b000f199996a7ece5
     staticClass: "search-field showout"
   }, [_c('div', {
     staticClass: "header-search"
@@ -50137,6 +50323,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "sea-date"
   }, [_c('p', [_vm._v("入"), _c('span', [_vm._v("店")]), _vm._v("："), _c('b', {
     staticClass: "indate",
+<<<<<<< HEAD
+=======
     attrs: {
       "data-value": "2017-07-26"
     }
@@ -53808,1276 +53996,602 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('span', {
     staticClass: "date-elem"
   }, [_vm._v("8")])]), _vm._v(" "), _c('li', {
+>>>>>>> ee9057dabba3d404935c699b000f199996a7ece5
     attrs: {
-      "data-day": "2018-01-09"
+      "data-value": "2017-07-26"
     }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("9")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("07-26")])]), _vm._v(" "), _c('p', [_vm._v("离"), _c('span', [_vm._v("店")]), _vm._v("："), _c('b', {
+    staticClass: "outdate",
     attrs: {
-      "data-day": "2018-01-10"
+      "data-value": "2017-07-27"
     }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("10")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("07-27")])]), _vm._v(" "), _c('span', {
+    staticClass: "total"
+  }, [_vm._v("1晚"), _c('i')])]), _vm._v(" "), _c('div', {
+    staticClass: "sea-box tjclick",
     attrs: {
-      "data-day": "2018-01-11"
+      "data-tj": "{\"cspot\":\"searchbar\"}"
     }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("11")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-12"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("12")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-13"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("13")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-14"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("14")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-15"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("15")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-16"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("16")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-17"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("17")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-18"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("18")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-19"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("19")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-20"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("20")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "data-day": "2018-01-21"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("21")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-22"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("22")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-23"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("23")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-24"
-    }
-  }, [_c('div', [_c('span', {
-    staticClass: "festival"
-  }, [_vm._v("24")]), _c('span', {
-    staticClass: "festivalText"
-  }, [_vm._v("腊八")])])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-25"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("25")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-26"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("26")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-27"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("27")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-28"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("28")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-29"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("29")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-30"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("30")])]), _vm._v(" "), _c('li', {
-    staticClass: "disabled",
-    attrs: {
-      "data-day": "2018-01-31"
-    }
-  }, [_c('span', {
-    staticClass: "date-elem"
-  }, [_vm._v("31")])]), _vm._v(" "), _c('li'), _vm._v(" "), _c('li'), _vm._v(" "), _c('li')])])]), _vm._v(" "), _c('ul', {
-    staticClass: "cld-title bar"
-  }, [_c('li', [_vm._v("日")]), _vm._v(" "), _c('li', [_vm._v("一")]), _vm._v(" "), _c('li', [_vm._v("二")]), _vm._v(" "), _c('li', [_vm._v("三")]), _vm._v(" "), _c('li', [_vm._v("四")]), _vm._v(" "), _c('li', [_vm._v("五")]), _vm._v(" "), _c('li', [_vm._v("六")])])]), _vm._v(" "), _c('div', {
-    staticClass: "advance-city plugin-inited page-plugin"
-  }, [_c('header', {
-    staticClass: "bar bar-nav flight-order-head"
-  }, [_c('a', {
-    staticClass: "icon pull-left icon-back"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "search-input"
-  }, [_c('i', {
-    staticClass: "icon-search"
-  }), _c('input', {
+  }, [_c('label', {
+    staticClass: "sea-mask"
+  }), _vm._v(" "), _c('i'), _vm._v(" "), _c('input', {
     attrs: {
       "type": "input",
       "value": "",
-      "placeholder": "请输入城市名、行政区或景区"
+      "placeholder": "酒店名称/位置不限",
+      "readonly": "readonly"
     }
   })])]), _vm._v(" "), _c('div', {
-    staticClass: "page-content page-select"
+    staticClass: "quick-search-box"
   }, [_c('div', {
-    staticClass: "current-city"
+    staticClass: "quick-search"
   }, [_c('div', {
-    staticClass: "page-title"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "get-city"
-  }, [_c('i', {
-    staticClass: "icon-position"
-  }), _vm._v("点击获取当前城市")])]), _vm._v(" "), _c('div', {
-    staticClass: "search-history",
-    staticStyle: {
-      "display": "none"
-    }
+    staticClass: "kslist"
   }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("搜索历史")]), _vm._v(" "), _c('div', {
-    staticClass: "city-list"
-  }, [_c('ul')])]), _vm._v(" "), _c('div', {
-    staticClass: "hot-city"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("热门城市")]), _vm._v(" "), _c('div', {
-    staticClass: "city-list"
-  }, [_c('ul', [_c('li', {
-    staticClass: "on",
+    staticClass: "commons room-title tjclick",
     attrs: {
-      "city-id": "0101",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
+      "data-tj": "{\"cspot\":\"roomtypeFilter\"}"
     }
-  }, [_c('span', [_vm._v("北京")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("房型筛选")]), _vm._v(" "), _c('div', {
+    staticClass: "commons sale-title tjclick unon",
     attrs: {
-      "city-id": "0201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
+      "data-tj": "{\"cspot\":\"specialOffers\"}"
     }
-  }, [_c('span', [_vm._v("上海")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("优惠")])]), _vm._v(" "), _c('ul', {
+    staticClass: "quick-search-list"
+  }, [_c('li', {
+    staticClass: "quick-search-item tjclick ",
     attrs: {
-      "city-id": "2001",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
+      "data-id": "100000002",
+      "data-tid": "1100",
+      "data-uid": "30",
+      "data-tj": "{\"cspot\":\"paymentInHotel\"}",
+      "data-keyword": "到店付"
     }
-  }, [_c('span', [_vm._v("广州")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("到店付")]), _vm._v(" "), _c('li', {
+    staticClass: "quick-search-item tjclick ",
     attrs: {
-      "city-id": "1201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
+      "data-id": "139",
+      "data-tid": "1100",
+      "data-uid": "101",
+      "data-tj": "{\"cspot\":\"freeCancellation\"}",
+      "data-keyword": "免费取消"
     }
-  }, [_c('span', [_vm._v("杭州")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("免费取消")]), _vm._v(" "), _c('li', {
+    staticClass: "quick-search-item tjclick ",
     attrs: {
-      "city-id": "2003",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
+      "data-id": "141",
+      "data-tid": "1100",
+      "data-uid": "102",
+      "data-tj": "{\"cspot\":\"instantConfirm\"}",
+      "data-keyword": "立即确认"
     }
-  }, [_c('span', [_vm._v("深圳")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1801",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("武汉")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2301",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("成都")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2701",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("西安")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1101",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("南京")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0401",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("重庆")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1901",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("长沙")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1401",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("厦门")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "0301",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("天津")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "3201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("香港")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1001",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("哈尔滨")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1701",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("郑州")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1102",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("苏州")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1301",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("合肥")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "1602",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("济南")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "city-id": "2201",
-      "area-type": "",
-      "area-id": "",
-      "sug-origin": ""
-    }
-  }, [_c('span', [_vm._v("三亚")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "all-city"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("全部城市")]), _vm._v(" "), _c('div', {
-    staticClass: "letter-list"
-  }, [_c('ul', [_c('li', [_vm._v("A")]), _vm._v(" "), _c('li', [_vm._v("B")]), _vm._v(" "), _c('li', [_vm._v("C")]), _vm._v(" "), _c('li', [_vm._v("D")]), _vm._v(" "), _c('li', [_vm._v("E")]), _vm._v(" "), _c('li', {
-    staticClass: "mr0"
-  }, [_vm._v("F")]), _vm._v(" "), _c('li', [_vm._v("G")]), _vm._v(" "), _c('li', [_vm._v("H")]), _vm._v(" "), _c('li', [_vm._v("J")]), _vm._v(" "), _c('li', [_vm._v("K")]), _vm._v(" "), _c('li', [_vm._v("L")]), _vm._v(" "), _c('li', {
-    staticClass: "mr0"
-  }, [_vm._v("M")]), _vm._v(" "), _c('li', [_vm._v("N")]), _vm._v(" "), _c('li', [_vm._v("P")]), _vm._v(" "), _c('li', [_vm._v("Q")]), _vm._v(" "), _c('li', [_vm._v("R")]), _vm._v(" "), _c('li', [_vm._v("S")]), _vm._v(" "), _c('li', {
-    staticClass: "mr0"
-  }, [_vm._v("T")]), _vm._v(" "), _c('li', [_vm._v("W")]), _vm._v(" "), _c('li', [_vm._v("X")]), _vm._v(" "), _c('li', [_vm._v("Y")]), _vm._v(" "), _c('li', [_vm._v("Z")])])]), _vm._v(" "), _c('div', {
-    staticClass: "city-list"
-  }, [_c('ul', {
-    staticClass: "city-list-ul"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "page-content page-search"
-  }, [_c('ul')]), _vm._v(" "), _c('div', {
-    staticClass: "inner-mask"
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "list-pop-city list-pop-search plugin-inited page-plugin page-on-right",
-    staticStyle: {
-      "position": "absolute"
-    }
-  }, [_c('header', {
-    staticClass: "bar bar-nav flight-order-head"
-  }, [_c('a', {
-    staticClass: "icon pull-left icon-back"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "search-input"
-  }, [_c('i'), _c('input', {
-    attrs: {
-      "type": "input",
-      "value": "",
-      "placeholder": "输入酒店名、地址等"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "search-btn"
-  }, [_vm._v("搜索")])]), _vm._v(" "), _c('div', {
-    staticClass: "page-select page-content"
-  }, [_c('div', {
-    staticClass: "current-city"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }), _vm._v(" "), _c('div', {
-    staticClass: "get-city"
-  }, [_c('i', {
-    staticClass: "icon-nearby"
-  }), _vm._v("查看我附近的酒店"), _c('b')])]), _vm._v(" "), _c('div', {
-    staticClass: "search-history",
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("搜索历史"), _c('span', {
-    staticClass: "sea-clear"
-  }, [_vm._v("清除历史")])]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-list"
-  }, [_c('ul')])]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-group"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("商圈")]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-list"
-  }, [_c('ul', [_c('li', {
-    attrs: {
-      "keyword-id": "n668512291742670_100755228",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "天安门/王府井商业区",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "天安门/王府井商业区",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("天安门/王府井商业区")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n668512291742670_100756968",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "前门/大栅栏",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "前门/大栅栏",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("前门/大栅栏")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n668512291742670_100755226",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "鼓楼/后海/新街口",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "鼓楼/后海/新街口",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("鼓楼/后海/新街口")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n668512291742670_100755269",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北大/清华/学院路",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北大/清华/学院路",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北大/清华/学院路")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n668512291742670_100755236",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "鸟巢/国家会议中心",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "鸟巢/国家会议中心",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("鸟巢/国家会议中心")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100755225",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "西单商业区",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "西单商业区",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("西单商业区")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100755264",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "中关村/人民大学",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "中关村/人民大学",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("中关村/人民大学")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100759841",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "古北水镇景区/司马台",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "古北水镇景区/司马台",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("古北水镇景区/司马台")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100755244",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "工体/三里屯",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "工体/三里屯",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("工体/三里屯")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100755232",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "国贸CBD",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "国贸CBD",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("国贸CBD")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100755234",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "东直门/簋街/雍和宫",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "东直门/簋街/雍和宫",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("东直门/簋街/雍和宫")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100755247",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "望京",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "望京",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("望京")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100757511",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "首都机场/新国展",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "首都机场/新国展",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("首都机场/新国展")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n668512291742670_100757506",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京南站/永定门",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京南站/永定门",
-      "type-id": "5",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京南站/永定门")])]), _vm._v(" "), _c('li', {
-    staticClass: "icon-bottom"
-  }), _vm._v(" "), _c('li', {
-    staticClass: "icon-top hide"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-group"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("品牌")]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-list"
-  }, [_c('ul', [_c('li', {
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "如家",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_32",
-      "brandname": "如家"
-    }
-  }, [_c('span', [_vm._v("如家")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "汉庭",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_56",
-      "brandname": "汉庭"
-    }
-  }, [_c('span', [_vm._v("汉庭")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "7天",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_53",
-      "brandname": "7天"
-    }
-  }, [_c('span', [_vm._v("7天")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "速8",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_41",
-      "brandname": "速8"
-    }
-  }, [_c('span', [_vm._v("速8")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "锦江之星",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_34",
-      "brandname": "锦江之星"
-    }
-  }, [_c('span', [_vm._v("锦江之星")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "格林豪泰",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_44",
-      "brandname": "格林豪泰"
-    }
-  }, [_c('span', [_vm._v("格林豪泰")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "布丁",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_111",
-      "brandname": "布丁"
-    }
-  }, [_c('span', [_vm._v("布丁")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "欣燕都",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_33",
-      "brandname": "欣燕都"
-    }
-  }, [_c('span', [_vm._v("欣燕都")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "首旅建国",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_12959604081339591_6",
-      "brandname": "首旅建国"
-    }
-  }, [_c('span', [_vm._v("首旅建国")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "锦江",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_12959604081339591_7",
-      "brandname": "锦江"
-    }
-  }, [_c('span', [_vm._v("锦江")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "易佰连锁",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_7468709921099261_29305",
-      "brandname": "易佰连锁"
-    }
-  }, [_c('span', [_vm._v("易佰连锁")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "假日",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_12959604081339591_29154",
-      "brandname": "假日"
-    }
-  }, [_c('span', [_vm._v("假日")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "戴斯",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_12959604081339591_47",
-      "brandname": "戴斯"
-    }
-  }, [_c('span', [_vm._v("戴斯")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "智选假日",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "",
-      "type-id": "3",
-      "hotel-brand-id": "n167033088745261_1355182931135700_330",
-      "brandname": "智选假日"
-    }
-  }, [_c('span', [_vm._v("智选假日")])]), _vm._v(" "), _c('li', {
-    staticClass: "icon-bottom"
-  }), _vm._v(" "), _c('li', {
-    staticClass: "icon-top hide"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-group"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("机场/车站")]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-list"
-  }, [_c('ul', [_c('li', {
-    attrs: {
-      "keyword-id": "n8589076672078144546_2126438645894388_154926",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "首都机场T1航站楼",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "首都机场T1航站楼",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("首都机场T1航站楼")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n8589076672078144546_2126438645894388_154931",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "首都机场T2航站楼",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "首都机场T2航站楼",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("首都机场T2航站楼")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n8589076672078144546_2126438645894388_60517104",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "首都机场T3航站楼",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "首都机场T3航站楼",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("首都机场T3航站楼")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n8589076672078144546_2126438645894388_228622",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京南苑机场",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京南苑机场",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京南苑机场")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n8589076672078144546_152296103132583210_128174",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_152296103132583210_60000259",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京西站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京西站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京西站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_152296103132583210_60000003",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京北站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京北站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京北站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_152296103132583210_60000177",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京南站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京南站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京南站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_152296103132583210_60000002",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京东站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京东站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京东站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_4817958912070368622_299179",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "东直门长途汽车站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "东直门长途汽车站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("东直门长途汽车站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_4817958912070368622_51035824",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "天桥长途汽车站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "天桥长途汽车站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("天桥长途汽车站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_4817958912070368622_300001",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "德胜门长途汽车站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "德胜门长途汽车站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("德胜门长途汽车站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_4817958912070368622_297140",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "丽泽桥长途汽车站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "丽泽桥长途汽车站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("丽泽桥长途汽车站")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n8589076672078144546_4817958912070368622_60517116",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "西直门汽车客运站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "西直门汽车客运站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("西直门汽车客运站")])]), _vm._v(" "), _c('li', {
-    staticClass: "icon-bottom"
-  }), _vm._v(" "), _c('li', {
-    staticClass: "icon-top hide"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-group"
-  }, [_c('div', {
-    staticClass: "page-title"
-  }, [_vm._v("地铁站")]), _vm._v(" "), _c('div', {
-    staticClass: "keyword-list"
-  }, [_c('ul', [_c('li', {
-    attrs: {
-      "keyword-id": "n137425165725594602_1917039291796232_60000158",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京站",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京站",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京站")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n137425165725594602_1350222404801677_60000006",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "北京西站(可换乘+9号线)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "北京西站(可换乘+9号线)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("北京西站(可换乘+…")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n137425165725594602_1802754169798410_60000196",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "魏公村",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "魏公村",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("魏公村")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n137425165725594602_1917039291796232_60000157",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "前门",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "前门",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("前门")])]), _vm._v(" "), _c('li', {
-    attrs: {
-      "keyword-id": "n137425165725594602_1021980285802766_60000224",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "南锣鼓巷(可换乘+8号线)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "南锣鼓巷(可换乘+8号线)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("南锣鼓巷(可换乘+…")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_1021980285802766_60000224",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "南锣鼓巷(可换乘+6号线)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "南锣鼓巷(可换乘+6号线)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("南锣鼓巷(可换乘+…")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_1339710284477655_60000126",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "望京(可换乘+15号线)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "望京(可换乘+15号线)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("望京(可换乘+15…")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_1339710284477655_60000126",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "望京(可换乘+14号线东)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "望京(可换乘+14号线东)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("望京(可换乘+14…")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_1802754169798410_60000173",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "中关村",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "中关村",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("中关村")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_796787658795143_60000134",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "五棵松",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "五棵松",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("五棵松")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_796787658795143_500000126",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "1号线全线",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "1号线全线",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("1号线全线")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_796787658795143_60000017",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "四惠东(可换乘+八通线)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "四惠东(可换乘+八通线)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("四惠东(可换乘+八…")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_39556729323947844_60000016",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "四惠(可换乘+八通线)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "四惠(可换乘+八通线)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("四惠(可换乘+八通…")])]), _vm._v(" "), _c('li', {
-    staticClass: "hide",
-    attrs: {
-      "keyword-id": "n137425165725594602_796787658795143_60000145",
-      "city-id": "0101",
-      "iskeyword": "",
-      "name-cn": "大望路(可换乘+14号线东)",
-      "lat": "",
-      "lng": "",
-      "hotelname": "",
-      "placename": "大望路(可换乘+14号线东)",
-      "type-id": "6",
-      "hotel-brand-id": "",
-      "brandname": ""
-    }
-  }, [_c('span', [_vm._v("大望路(可换乘+1…")])]), _vm._v(" "), _c('li', {
-    staticClass: "icon-bottom"
-  }), _vm._v(" "), _c('li', {
-    staticClass: "icon-top hide"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "page-content page-search",
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('ul', [_vm._v("${suggestion-list}")])]), _vm._v(" "), _c('div', {
-    staticClass: "inner-mask",
-    staticStyle: {
-      "display": "none"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "weixin-custom-mask",
-    staticStyle: {
-      "display": "none"
-    }
-  })])])
+  }, [_vm._v("立即确认")])])])])])
 }]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-ad4a91be", module.exports)
+  }
+}
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__(152),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xpagecontent.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xpagecontent.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1a409b3e", Component.options)
+  } else {
+    hotAPI.reload("data-v-1a409b3e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-content page-list mvt_191"
+  }, [_c('section', {
+    staticClass: "page-list-con"
+  }, [_c('div', {
+    staticClass: "list-main"
+  }, [_c('ul', {
+    staticClass: "hotel-list"
+  }, [_c('li', {
+    staticClass: "hotel-item",
+    attrs: {
+      "data-url": "http://m.elong.com/hotel/00101366/#indate=2017-07-26&outdate=2017-07-27"
+    }
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile220_220/0000cmLJ.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }, [_c('em', [_vm._v("速8酒店(北京马家堡店)")]), _vm._v(" "), _c('i', {
+    staticClass: "grade grade1"
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "comt"
+  }, [_c('span', {
+    staticClass: "comt_no"
+  }, [_c('b', [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "comt_nmb"
+  }, [_vm._v("1506条点评")])]), _vm._v(" "), _c('p', {
+    staticClass: "fac"
+  }, [_c('span', [_vm._v("经济型")])]), _vm._v(" "), _c('p', {
+    staticClass: "district"
+  }, [_c('span', {
+    staticClass: "d4"
+  }, [_vm._v("北京南站/永定门  |  靠近公益西桥地铁站")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right-wrap"
+  }, [_c('div', {
+    staticClass: "r-tab"
+  }, [_c('p', {
+    staticClass: "pri"
+  }, [_c('b'), _vm._v(" "), _c('span', [_c('i', [_vm._v("￥")]), _vm._v("609")])]), _vm._v(" "), _c('p', {
+    staticClass: "tags"
+  }, [_c('span', {
+    staticStyle: {
+      "color": "#3bc29e",
+      "border": "1px solid #3bc29e"
+    }
+  }, [_vm._v("钟点房")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px solid #FF5555"
+    }
+  }, [_vm._v("返")])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "hotel-item",
+    attrs: {
+      "data-url": "http://m.elong.com/hotel/00101366/#indate=2017-07-26&outdate=2017-07-27"
+    }
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile220_220/0000cmLJ.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }, [_c('em', [_vm._v("速8酒店(北京马家堡店)")]), _vm._v(" "), _c('i', {
+    staticClass: "grade grade1"
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "comt"
+  }, [_c('span', {
+    staticClass: "comt_no"
+  }, [_c('b', [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "comt_nmb"
+  }, [_vm._v("1506条点评")])]), _vm._v(" "), _c('p', {
+    staticClass: "fac"
+  }, [_c('span', [_vm._v("经济型")])]), _vm._v(" "), _c('p', {
+    staticClass: "district"
+  }, [_c('span', {
+    staticClass: "d4"
+  }, [_vm._v("北京南站/永定门  |  靠近公益西桥地铁站")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right-wrap"
+  }, [_c('div', {
+    staticClass: "r-tab"
+  }, [_c('p', {
+    staticClass: "pri"
+  }, [_c('b'), _vm._v(" "), _c('span', [_c('i', [_vm._v("￥")]), _vm._v("609")])]), _vm._v(" "), _c('p', {
+    staticClass: "tags"
+  }, [_c('span', {
+    staticStyle: {
+      "color": "#3bc29e",
+      "border": "1px solid #3bc29e"
+    }
+  }, [_vm._v("钟点房")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px solid #FF5555"
+    }
+  }, [_vm._v("返")])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "hotel-item",
+    attrs: {
+      "data-url": "http://m.elong.com/hotel/00101366/#indate=2017-07-26&outdate=2017-07-27"
+    }
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile220_220/0000cmLJ.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }, [_c('em', [_vm._v("速8酒店(北京马家堡店)")]), _vm._v(" "), _c('i', {
+    staticClass: "grade grade1"
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "comt"
+  }, [_c('span', {
+    staticClass: "comt_no"
+  }, [_c('b', [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "comt_nmb"
+  }, [_vm._v("1506条点评")])]), _vm._v(" "), _c('p', {
+    staticClass: "fac"
+  }, [_c('span', [_vm._v("经济型")])]), _vm._v(" "), _c('p', {
+    staticClass: "district"
+  }, [_c('span', {
+    staticClass: "d4"
+  }, [_vm._v("北京南站/永定门  |  靠近公益西桥地铁站")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right-wrap"
+  }, [_c('div', {
+    staticClass: "r-tab"
+  }, [_c('p', {
+    staticClass: "pri"
+  }, [_c('b'), _vm._v(" "), _c('span', [_c('i', [_vm._v("￥")]), _vm._v("609")])]), _vm._v(" "), _c('p', {
+    staticClass: "tags"
+  }, [_c('span', {
+    staticStyle: {
+      "color": "#3bc29e",
+      "border": "1px solid #3bc29e"
+    }
+  }, [_vm._v("钟点房")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px solid #FF5555"
+    }
+  }, [_vm._v("返")])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "hotel-item",
+    attrs: {
+      "data-url": "http://m.elong.com/hotel/00101366/#indate=2017-07-26&outdate=2017-07-27"
+    }
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile220_220/0000cmLJ.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }, [_c('em', [_vm._v("速8酒店(北京马家堡店)")]), _vm._v(" "), _c('i', {
+    staticClass: "grade grade1"
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "comt"
+  }, [_c('span', {
+    staticClass: "comt_no"
+  }, [_c('b', [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "comt_nmb"
+  }, [_vm._v("1506条点评")])]), _vm._v(" "), _c('p', {
+    staticClass: "fac"
+  }, [_c('span', [_vm._v("经济型")])]), _vm._v(" "), _c('p', {
+    staticClass: "district"
+  }, [_c('span', {
+    staticClass: "d4"
+  }, [_vm._v("北京南站/永定门  |  靠近公益西桥地铁站")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right-wrap"
+  }, [_c('div', {
+    staticClass: "r-tab"
+  }, [_c('p', {
+    staticClass: "pri"
+  }, [_c('b'), _vm._v(" "), _c('span', [_c('i', [_vm._v("￥")]), _vm._v("609")])]), _vm._v(" "), _c('p', {
+    staticClass: "tags"
+  }, [_c('span', {
+    staticStyle: {
+      "color": "#3bc29e",
+      "border": "1px solid #3bc29e"
+    }
+  }, [_vm._v("钟点房")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px solid #FF5555"
+    }
+  }, [_vm._v("返")])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "hotel-item",
+    attrs: {
+      "data-url": "http://m.elong.com/hotel/00101366/#indate=2017-07-26&outdate=2017-07-27"
+    }
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile220_220/0000cmLJ.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }, [_c('em', [_vm._v("速8酒店(北京马家堡店)")]), _vm._v(" "), _c('i', {
+    staticClass: "grade grade1"
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "comt"
+  }, [_c('span', {
+    staticClass: "comt_no"
+  }, [_c('b', [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "comt_nmb"
+  }, [_vm._v("1506条点评")])]), _vm._v(" "), _c('p', {
+    staticClass: "fac"
+  }, [_c('span', [_vm._v("经济型")])]), _vm._v(" "), _c('p', {
+    staticClass: "district"
+  }, [_c('span', {
+    staticClass: "d4"
+  }, [_vm._v("北京南站/永定门  |  靠近公益西桥地铁站")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right-wrap"
+  }, [_c('div', {
+    staticClass: "r-tab"
+  }, [_c('p', {
+    staticClass: "pri"
+  }, [_c('b'), _vm._v(" "), _c('span', [_c('i', [_vm._v("￥")]), _vm._v("609")])]), _vm._v(" "), _c('p', {
+    staticClass: "tags"
+  }, [_c('span', {
+    staticStyle: {
+      "color": "#3bc29e",
+      "border": "1px solid #3bc29e"
+    }
+  }, [_vm._v("钟点房")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px solid #FF5555"
+    }
+  }, [_vm._v("返")])])])])]), _vm._v(" "), _c('li', {
+    staticClass: "hotel-item",
+    attrs: {
+      "data-url": "http://m.elong.com/hotel/00101366/#indate=2017-07-26&outdate=2017-07-27"
+    }
+  }, [_c('div', {
+    staticClass: "pic"
+  }, [_c('img', {
+    attrs: {
+      "src": "//pavo.elongstatic.com/i/mobile220_220/0000cmLJ.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "info"
+  }, [_c('p', {
+    staticClass: "name"
+  }, [_c('em', [_vm._v("速8酒店(北京马家堡店)")]), _vm._v(" "), _c('i', {
+    staticClass: "grade grade1"
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "comt"
+  }, [_c('span', {
+    staticClass: "comt_no"
+  }, [_c('b', [_vm._v("4.2")]), _vm._v("分")]), _vm._v(" "), _c('span', {
+    staticClass: "comt_nmb"
+  }, [_vm._v("1506条点评")])]), _vm._v(" "), _c('p', {
+    staticClass: "fac"
+  }, [_c('span', [_vm._v("经济型")])]), _vm._v(" "), _c('p', {
+    staticClass: "district"
+  }, [_c('span', {
+    staticClass: "d4"
+  }, [_vm._v("北京南站/永定门  |  靠近公益西桥地铁站")])])]), _vm._v(" "), _c('div', {
+    staticClass: "right-wrap"
+  }, [_c('div', {
+    staticClass: "r-tab"
+  }, [_c('p', {
+    staticClass: "pri"
+  }, [_c('b'), _vm._v(" "), _c('span', [_c('i', [_vm._v("￥")]), _vm._v("609")])]), _vm._v(" "), _c('p', {
+    staticClass: "tags"
+  }, [_c('span', {
+    staticStyle: {
+      "color": "#3bc29e",
+      "border": "1px solid #3bc29e"
+    }
+  }, [_vm._v("钟点房")]), _vm._v(" "), _c('span', {
+    staticStyle: {
+      "color": "#FF5555",
+      "border": "1px solid #FF5555"
+    }
+  }, [_vm._v("返")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "nomore"
+  }, [_c('p', {}, [_vm._v("点击加载更多酒店")])]), _vm._v(" "), _c('div', {
+    staticClass: "list-noresult",
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('i', {
+    staticClass: "icon-noresult"
+  }), _vm._v(" "), _c('p', [_vm._v("抱歉，未找到符合您条件的酒店")])])]), _vm._v(" "), _c('div', {
+    staticClass: "tool"
+  }, [_c('div', {
+    staticClass: "ver"
+  }, [_c('a', {
+    attrs: {
+      "href": "//m.elong.com/my/account/index/"
+    }
+  }, [_vm._v("个人中心")]), _c('span', [_vm._v("｜")]), _vm._v(" "), _c('a', {
+    staticClass: "sp",
+    attrs: {
+      "href": "//d.elong.cn/h5_mnoreferseo"
+    }
+  }, [_vm._v("下载客户端")]), _c('span', [_vm._v("｜")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "http://m.elong.com/?t=1501070002922"
+    }
+  }, [_vm._v("返回首页")])]), _vm._v(" "), _c('div', {
+    staticClass: "copy"
+  }, [_vm._v("©2009-2017 艺龙无线")])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1a409b3e", module.exports)
+  }
+}
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__(154),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\three_pratice\\vue\\project\\hotel\\app\\components\\list\\xfooter.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xfooter.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-285fd594", Component.options)
+  } else {
+    hotAPI.reload("data-v-285fd594", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "list-sider bar"
+  }, [_c('ul', {
+    staticClass: "filter-list"
+  }, [_c('li', {
+    staticClass: "filter-btn ",
+    attrs: {
+      "data-tj": "{\"cspot\":\"filter\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i1"
+  }), _vm._v("筛选")]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("条件不限")])]), _vm._v(" "), _c('li', {
+    staticClass: "area-btn ",
+    attrs: {
+      "data-tj": "{\"cspot\":\"hotelposition\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i2"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "title-pad"
+  }, [_vm._v("区域位置")]), _vm._v(" "), _c('span', {
+    staticClass: "title-phone"
+  }, [_vm._v("区域位置")])]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("位置不限")])]), _vm._v(" "), _c('li', {
+    staticClass: "price-star-btn ",
+    attrs: {
+      "data-tj": "{\"cspot\":\"priceandstar\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i3"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "title-pad"
+  }, [_vm._v("价格星级")]), _vm._v(" "), _c('span', {
+    staticClass: "title-phone"
+  }, [_vm._v("价格星级")])]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("价格不限、星级不限")])]), _vm._v(" "), _c('li', {
+    staticClass: "default-btn tjclick",
+    attrs: {
+      "data-tj": "{\"cspot\":\"sort\"}"
+    }
+  }, [_c('p', {
+    staticClass: "tit"
+  }, [_c('i', {
+    staticClass: "list-filter-i4"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "title-pad"
+  }, [_vm._v("排序")]), _vm._v(" "), _c('span', {
+    staticClass: "title-phone"
+  }, [_vm._v("排序")])]), _vm._v(" "), _c('p', {
+    staticClass: "opt"
+  }, [_vm._v("默认排序")])])]), _vm._v(" "), _c('a', {
+    staticClass: "filter-reset",
+    attrs: {
+      "href": ""
+    }
+  }, [_vm._v("重置所有选项")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-285fd594", module.exports)
+  }
+}
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages"
+  }, [_c('div', {
+    staticClass: "page page-on-center",
+    attrs: {
+      "data-blend": "layer",
+      "data-blend-id": "h5_list",
+      "data-url": "/hotel/beijing/",
+      "id": "uniq22",
+      "data-title": "【北京酒店】北京酒店宾馆预订_旅店住宿价格查询_艺龙网移动版",
+      "data-title-id": "h5_list"
+    }
+  }, [_c('xheader'), _vm._v(" "), _c('xsearch'), _vm._v(" "), _c('xpagecontent'), _vm._v(" "), _c('xfooter')], 1)])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
