@@ -1,5 +1,6 @@
-import "./css/font_mdye6150zyyzaor/iconfont.css"
-// import "./css/hotel.css"
+import "../public/css/font_mdye6150zyyzaor/iconfont.css"
+import "../public/css/animate.css"
+
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
@@ -9,8 +10,7 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 //axios的ajax封装库
 import axios from "axios";
-//动画
-import animate from "animate";
+
 //轮播图
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
@@ -37,20 +37,13 @@ Vue.use(MuseUI)
 //router路由部分.........................................................
 
 //引入定义好的路由。(所有级别的路由)
-//import home from "./components/routes/home.vue"
-import share from "./components/routes/share.vue"
-import ask from "./components/routes/ask.vue"
-import job from "./components/routes/job.vue"
-import topics from "./components/routes/topics.vue"
-import good from "./components/routes/good.vue"
 import detail from "./components/routes/detail.vue"
-import muse from "./components/muse/test.vue"
 import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
-import home from "./components/indexcomponents/router/home.vue"
+import home from "./components/home.vue"
 //详情页路由
 import list from "./components/list/router/list.vue"
 
@@ -61,24 +54,6 @@ var routes = [{
 		path: '/index',
 		//上面定义好的路由扔进来
 		component: home,
-		children: [{
-				path: 'share',
-				component: share,
-			}, {
-				path: 'job',
-				component: job,
-			}, {
-				path: 'ask',
-				component: ask,
-			}, {
-				path: 'good',
-				component: good,
-			}, {
-				path: 'topics',
-				component: topics,
-			},
-
-		]
 	}, {
 		//路由名
 		path: '/detail',
@@ -104,11 +79,6 @@ var routes = [{
 		path: '/mySelf',
 		//上面定义好的路由扔进来
 		component: xmySelf
-	}, {
-		//路由名
-		path: '/muse',
-		//上面定义好的路由扔进来
-		component: muse
 	},
 	//列表页开始
 	{

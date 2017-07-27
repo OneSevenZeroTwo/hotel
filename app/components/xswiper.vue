@@ -1,14 +1,38 @@
 <template>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[0]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[1]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[2]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[3]" alt="" /></div>
-			<div  class="swiper-slide"><img :src="'http:'+imgArr[4]" alt="" /></div>
+	<div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div v-for="(img,index) in imgArr" class="swiper-slide"><img :src="'http:'+img" alt="" /></div>
+
+				<!--<div  class="swiper-slide"><img :src="'http:'+imgArr[1]" alt="" /></div>-->
+			</div>
+			<!--<h1 data-v-717dd598="" class="name">
+					<i data-v-717dd598="" class="grade grade1"></i> 
+					<em data-v-717dd598="">
+						北京阳光温特莱酒店(国展店)(原速8国展柳芳店)
+					</em>
+				</h1>
+			<span data-v-717dd598="" class="hotel-type">
+					经济型
+				</span>
+			<div data-v-717dd598="" class="num"><i data-v-717dd598=""></i>88</div>-->
 		</div>
-		<!-- Add Pagination -->
-		<!--<div class="swiper-pagination"></div>-->
+		<!--<div data-v-717dd598="" class="hotel-info">
+			<div data-v-717dd598="" data-tj="{&quot;cspot&quot;:&quot;image&quot;}" class="pic-wrap tjclick swiper-container-horizontal">
+				<div>
+					<h1 data-v-717dd598="" class="name">
+					<i data-v-717dd598="" class="grade grade1"></i> 
+					<em data-v-717dd598="">
+						北京阳光温特莱酒店(国展店)(原速8国展柳芳店)
+					</em>
+				</h1>
+					<span data-v-717dd598="" class="hotel-type">
+					经济型
+				</span>
+					<div data-v-717dd598="" class="num"><i data-v-717dd598=""></i>88</div>
+				</div>
+			</div>
+		</div>-->
 	</div>
 </template>
 
@@ -21,10 +45,10 @@
 				autoplay: 2500,
 				autoplayDisableOnInteraction: false
 			});
-			console.log(this.imgArr)
+			//			console.log(this.imgArr)
 		},
-		computed:{
-			imgArr(){
+		computed: {
+			imgArr() {
 				console.log(this.$store.state.imgArr)
 				return this.$store.state.imgArr
 			}
