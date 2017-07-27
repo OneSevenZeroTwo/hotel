@@ -21,7 +21,7 @@
 <style scoped>	
 	.toHome {
 		position: fixed;
-		top: 5px;
-		right: 5px;
+		top: 0px;
+		right: 0px;
 	}
 </style>

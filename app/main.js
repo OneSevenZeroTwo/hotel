@@ -17,8 +17,10 @@ window.$ = window.jQuery = $
 import com from "./js/common.js"
 window.com = com
 console.log(com.randomNum(1, 10))
-	//使用..................................................................
-	//通过 Vue.use()明确地安装路由功能
+
+//使用..................................................................
+//通过 Vue.use()明确地安装路由功能
+
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
@@ -33,7 +35,7 @@ Vue.use(MuseUI)
 //router路由部分.........................................................
 
 //引入定义好的路由。(所有级别的路由)
-import home from "./components/routes/home.vue"
+//import home from "./components/routes/home.vue"
 import share from "./components/routes/share.vue"
 import ask from "./components/routes/ask.vue"
 import job from "./components/routes/job.vue"
@@ -45,6 +47,8 @@ import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
+//首页路由 chuanye
+import home from "./components/indexcomponents/router/home.vue"
 //详情页路由
 import list from "./components/list/router/list.vue"
 
@@ -130,6 +134,7 @@ var store = new Vuex.Store({
 		activingNav: 0,
 		val: "",
 		isLogin:false,
+		direction: 'left',
 		news: "",
 		detailNews: null,
 		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
