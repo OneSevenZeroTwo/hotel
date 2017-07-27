@@ -1,5 +1,5 @@
 <template>
-	<div class="plugin-inited page-plugin plugin-show page-on-center">
+	<div class="plugin-inited page-plugin page-on-center">
 		<div class="page-content usehb" style="">
 			<section>
 				<div class="hb_expl">
