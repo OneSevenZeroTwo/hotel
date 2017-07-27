@@ -1,0 +1,57 @@
+<template>
+  <div class="gridlist-demo-container">
+    <mu-grid-list class="gridlist-inline-demo">
+      <mu-grid-tile v-for="tile, index in list" :key="index">
+        <img :src="tile.image"/>
+        <span slot="title">{{tile.title}}</span>
+        <span slot="subTitle">by <b>{{tile.author}}</b></span>
+        <mu-icon-button icon="star_border" slot="action"/>
+      </mu-grid-tile>
+    </mu-grid-list>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      list: [{
+        image: 'img/008.jpg',
+        title: 'Breakfast',
+        author: 'Myron',
+        featured: true
+      }, {
+        image: 'img/1.jpg',
+        title: 'Morning',
+        author: 'mokayi',
+        featured: true
+      }, {
+        image: 'img/1.jpg',
+        title: 'Vegetables',
+        author: 'NUyyyyyyy'
+      }, {
+        image: 'img/1.jpg',
+        title: 'water',
+        author: 'TDDyyyyyyy'
+      }]
+    }
+  }
+}
+</script>
+
+<style>
+.gridlist-demo-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gridlist-inline-demo{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.mu-grid-tile {
+	height: 80%;
+}
+</style>

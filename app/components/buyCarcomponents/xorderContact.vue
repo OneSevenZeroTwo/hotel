@@ -3,8 +3,9 @@
 		<h1>联系资料</h1>
 		<div class="contact-person">
 			<ul>
-				<li> <label for="cusname1"></label>
-					<div class="label">入住人(房间1)</div>
+				<li v-for="(n,index) in roomsNum"> 
+					<label for="cusname1"></label>
+					<div class="label">入住人(房间{{index+1}})</div>
 					<div class="content list-input">
 						<input type="text" class="createorder" name="customernames" id="cusname1" placeholder="姓名，每间填1人" value="">
 					</div>
@@ -35,8 +36,26 @@
 </template>
 
 <script>
-</script>
+export default{
+		data() {
+				return {
+					roomsNum: [1],
+				}
 
+			},
+		computed:{
+			roomsNum(){
+				var num = this.$store.state.roomsNum;
+				for(var i=1;i++;i<num){
+					roomsNum.push(i)
+				}
+				return roomsNum
+			}
+		},
+		
+	}
+</script>
+	
 <style>
 
 </style>

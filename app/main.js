@@ -1,5 +1,6 @@
-import "./css/font_mdye6150zyyzaor/iconfont.css"
-// import "./css/hotel.css"
+import "../public/css/font_mdye6150zyyzaor/iconfont.css"
+import "../public/css/animate.css"
+
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
@@ -9,6 +10,7 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 //axios的ajax封装库
 import axios from "axios";
+
 //轮播图
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
@@ -24,7 +26,7 @@ console.log(com.randomNum(1, 10))
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
-	//挂载axios在Vue构造器下
+//挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
 
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
@@ -35,20 +37,13 @@ Vue.use(MuseUI)
 //router路由部分.........................................................
 
 //引入定义好的路由。(所有级别的路由)
-//import home from "./components/routes/home.vue"
-import share from "./components/routes/share.vue"
-import ask from "./components/routes/ask.vue"
-import job from "./components/routes/job.vue"
-import topics from "./components/routes/topics.vue"
-import good from "./components/routes/good.vue"
 import detail from "./components/routes/detail.vue"
-import muse from "./components/muse/test.vue"
 import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
-import home from "./components/indexcomponents/router/home.vue"
+import home from "./components/home.vue"
 //详情页路由
 import list from "./components/list/router/list.vue"
 
@@ -59,24 +54,6 @@ var routes = [{
 		path: '/index',
 		//上面定义好的路由扔进来
 		component: home,
-		children: [{
-				path: 'share',
-				component: share,
-			}, {
-				path: 'job',
-				component: job,
-			}, {
-				path: 'ask',
-				component: ask,
-			}, {
-				path: 'good',
-				component: good,
-			}, {
-				path: 'topics',
-				component: topics,
-			},
-
-		]
 	}, {
 		//路由名
 		path: '/detail',
@@ -102,11 +79,6 @@ var routes = [{
 		path: '/mySelf',
 		//上面定义好的路由扔进来
 		component: xmySelf
-	}, {
-		//路由名
-		path: '/muse',
-		//上面定义好的路由扔进来
-		component: muse
 	},
 	//列表页开始
 	{
@@ -140,10 +112,11 @@ var store = new Vuex.Store({
 		masklayer:false,
 		//列表页数据结束
 		imgUrl: null,
+		aaa: '广州市',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
-		isLogin:false,
+		isLogin: false,
 		direction: 'left',
 		news: "",
 		detailNews: null,
@@ -152,7 +125,10 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
-		]
+		],
+		isShowMask:false,
+		roomsNum:null,
+		timesNum:null,
 
 	},
 	getters: {
