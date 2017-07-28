@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="p-info">
+		<div class="p-info" style="padding-top: 50px;">
 			<p class="name">空客酒店AIRBUSHOTEL(广州白云机场人和店)</p>
 			<p class="type">特惠大床房
 			</p>
@@ -43,6 +43,6 @@
 <script>
 </script>
 
-<style>
-
+<style scoped>
+	
 </style>

@@ -16,6 +16,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
 import $ from "jquery";
 window.$ = window.jQuery = $
+
 import com from "./js/common.js"
 window.com = com
 console.log(com.randomNum(1, 10))
@@ -127,8 +128,10 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
 		isShowMask:false,
+		nameNum:null,
 		roomsNum:null,
 		timesNum:null,
+		telNum:null,
 
 	},
 	getters: {

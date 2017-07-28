@@ -9,7 +9,7 @@
 			<!--  登录结束  -->
 
 			<div class="page-content ">
-				
+
 				<xorderInfo></xorderInfo>
 				<article class="order-content">
 					<section class="order-fill">
@@ -24,7 +24,7 @@
 						<xorderRebackMoney></xorderRebackMoney>
 
 						<div class="invoice-elong">
-							如需发票请到酒店前台咨询 
+							如需发票请到酒店前台咨询
 						</div>
 						<div class="search">
 							<button id="padsubmit" class="btn btn-primary btn-block">
@@ -37,32 +37,31 @@
 			<input type="hidden" class="createorder" name="arrivetimeearly" id="hidarriveTimeEarly" value="2017-07-26 16:00:00">
 			<input type="hidden" class="createorder" name="arrivetimelate" id="hidarriveTimeLate" value="2017-07-26 19:00:00">
 			<input type="hidden" class="createorder" name="stayhours" id="hidstayhours" vlaue="" value="4">
-				
+
 			<!--选择房间数量-->
 			<xroomNum></xroomNum>
 			<!--选择保留时间-->
 			<xtimeNum></xtimeNum>
-			<div class="slide-selector plugin-inited">
-				
-				<!--选择到店时间-->
-				<xinTime></xinTime>
-			</div>
-			<div class="slide-selector plugin-inited">
-				
-				<!--填写个人联系信息-->
-				<xconnection></xconnection>
-			</div>
-			
-			<div class="select-people page-plugin page-on-right plugin-inited">
-				<!--填写入住者个人信息-->
-				<xperson></xperson>
-				
-			</div>
-			<xreBackMoneyDirective></xreBackMoneyDirective>
-			
+			<!--选择手机归属地-->
+			<xtelNum></xtelNum>
+			<!--遮罩-->
 			<xmask></xmask>
-			<xuseHongBao></xuseHongBao>
+
+			<!--选择到店时间-->
+			<xinTime></xinTime>
+
+			<!--填写个人联系信息-->
+			<xconnection></xconnection>
+
+			<!--填写入住者个人信息-->
+			<xperson></xperson>
+
 		</div>
+		
+		<xreBackMoneyDirective></xreBackMoneyDirective>
+		
+		<xuseHongBao></xuseHongBao>
+	</div>
 	</div>
 
 </template>
@@ -92,6 +91,8 @@
 	import xroomNum from "../buyCarcomponents/xroomNum.vue"
 	//选择保留时间
 	import xtimeNum from "../buyCarcomponents/xtimeNum.vue"
+	//选择手机号属地
+	import xtelNum from "../buyCarcomponents/xtelNum.vue"
 	//选择最晚到店时间
 	import xinTime from "../buyCarcomponents/xinTime.vue"
 	//填写个人联系方式
@@ -100,33 +101,34 @@
 	import xperson from "../buyCarcomponents/xperson.vue"
 	export default {
 		data() {
-			return {
+				return {
+
+				}
+			},
+			methods: {
+
+			},
+			mounted() {
+				console.log(111)
+			},
+			components: {
+				xheader,
+				xorderInfo,
+				xoccupancy,
+				orderContact,
+				xorderRebackMoney,
+				xfooterBar,
+				xreBackMoneyHelp,
+				xreBackMoneyDirective,
+				xmask,
+				xuseHongBao,
+				xroomNum,
+				xtimeNum,
+				xtelNum,
+				xinTime,
+				xconnection,
+				xperson,
 
 			}
-		},
-		methods:{
-
-		},
-		mounted() {
-			console.log(111)
-		},
-		components: {
-			xheader,
-			xorderInfo,
-			xoccupancy,
-			orderContact,
-			xorderRebackMoney,
-			xfooterBar,
-			xreBackMoneyHelp,
-			xreBackMoneyDirective,
-			xmask,
-			xuseHongBao,
-			xroomNum,
-			xtimeNum,
-			xinTime,
-			xconnection,
-			xperson,
-			
-		}
 	}
 </script>

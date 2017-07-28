@@ -1,20 +1,24 @@
 <template>
-	<div class="advanced-mask-layer" @click="closeMask(false)"></div>
+	<div class="advanced-mask-layer" @click="closeMask()"></div>
 </template>
 
 <script>
 export default{
 	methods:{
-		closeMask(bool){
-			this.$store.state.isShowMask = bool;
-			$('.advanced-mask-layer').css('display','none');
-			$('.plugin-inited').removeClass('plugin-show');
-			$('.plugin-inited').removeClass('selector-active');
-		}
+		closeMask(){
+			this.$store.state.isShowMask = false;
+				
+				$('.advanced-mask-layer').css('display','none');
+				$('.slide-selector').removeClass('plugin-show');
+				$('.slide-selector').removeClass('selector-active');
+				$('.sure').removeClass('plugin-show');
+//			}
+		},
+		
 	}
 }
 </script>
-
+ 
 <style>
 	.advanced-mask-layer{
 		display: none;
