@@ -71,7 +71,7 @@ var routes = [{
 		component: xlogin
 	}, {
 		//路由名
-		path: '/buyCar',
+		path: '/buyCar/:id',
 		//上面定义好的路由扔进来
 		component: xbuyCar
 	}, {
