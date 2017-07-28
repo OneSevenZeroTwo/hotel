@@ -72,7 +72,7 @@ var routes = [{
 		component: xlogin
 	}, {
 		//路由名
-		path: '/buyCar',
+		path: '/buyCar/:id',
 		//上面定义好的路由扔进来
 		component: xbuyCar
 	}, {
@@ -132,6 +132,10 @@ var store = new Vuex.Store({
 		roomsNum:null,
 		timesNum:null,
 		telNum:null,
+		showBuy:false,
+		Mask:false,
+		buyContent:{},
+		roomInfoName:'',
 
 	},
 	getters: {
@@ -178,4 +182,9 @@ new Vue({
 	`,
 	router,
 	store,
+	created(){
+		window.scope=this.$store.state
+	}
+
+
 })
