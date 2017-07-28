@@ -57,9 +57,9 @@
 			<xperson></xperson>
 
 		</div>
-		
+
 		<xreBackMoneyDirective></xreBackMoneyDirective>
-		
+
 		<xuseHongBao></xuseHongBao>
 	</div>
 	</div>
@@ -102,14 +102,27 @@
 	export default {
 		data() {
 				return {
-
+					roomType:''
 				}
 			},
 			methods: {
 
 			},
 			mounted() {
-				console.log(111)
+				console.log(this.$route.params.id)
+
+				//进入页面，请求房间数据
+				this.$ajax({
+					url: "./json/roomType.json"
+				}).then(function(res) {
+					this.roomType = res.data[0]
+					console.log(this.roomType)
+					
+						
+
+
+				}.bind(this))
+
 			},
 			components: {
 				xheader,

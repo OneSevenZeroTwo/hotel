@@ -128,10 +128,10 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
 		isShowMask:false,
-		nameNum:null,
+		nameNum:["姓名，每间填1人"],
 		roomsNum:null,
 		timesNum:null,
-		telNum:null,
+		telNum:"中国大陆：+86",
 		showBuy:false,
 		Mask:false,
 		buyContent:{},

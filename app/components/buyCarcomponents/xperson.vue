@@ -82,18 +82,21 @@
 				},
 				Sure(){					
 					this.txtArr=[]
+					//遍历有checked属性的元素，获取值插入数组
 					$.map($(':checked'),function(items){
 						var text = $(items).next().text()
 						this.txtArr.push(text)
 					}.bind(this))
-					console.log(this.txtArr)
-					
-					
-					
+//					console.log(this.txtArr)
+					$('.select-people').removeClass('plugin-show');
+					$('.select-people').addClass('page-on-right');
+					$('.select-people').addClass('page-on-center');
+					this.$store.state.nameNum = this.txtArr;
+					console.log(this.$store.state.nameNum)
 				},
 				hide() {
 					$('#inputaddcusname').focus;
-					//console.log(this.$store.state.isShowMask)
+					//console.log(this.$store.state.nameNum)
 					$('.sure').removeClass('plugin-show');
 					$('.advanced-mask-layer').css('display', 'none');
 					$('#inputaddcusname').focus();
