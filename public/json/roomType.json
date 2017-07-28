@@ -22104,5 +22104,6308 @@
 			"//pavo.elongstatic.com/i/mobile750_448/nw_0006nclt.jpg"
 		],
 		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/nw_0006ndjE.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "标准大床房",
+		"minAveragePriceSubTotal": 70,
+		"minCouponValue": 20,
+		"area": "13平米",
+		"bed": "大床1.5米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBb.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc8.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBa.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc7.jpg"
+		],
+		"imageListSize": 9,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": 5,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 139,
+				"averagePriceSubTotal": 70,
+				"hongBaoVal": 0,
+				"couponVal": 69,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": false,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 11179095,
+				"advantageousText": [
+					"不可取消",
+					"在线支付"
+				],
+				"recommendText": "新用户专享，优惠69元",
+				"recommendTag": {
+					"id": 8,
+					"name": "新客专享",
+					"description": "",
+					"colorIndex": 0,
+					"available": false,
+					"color": "#FF5555"
+				},
+				"productRecommendType": 2,
+				"roomId": "0065",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": 5,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 139,
+				"averagePriceSubTotal": 139,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0065%3A11179095%3Anull%3A1&roomid=0065&rateplanid=11179095&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0005&drvtype=0",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可取消或变更；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [],
+				"productSubName": "",
+				"ratePlanId": 11179095,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0065",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 138,
+				"averagePriceSubTotal": 138,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0036%3A6404055%3Anull%3A1&roomid=0036&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0005&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0036",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 167,
+				"averagePriceSubTotal": 97,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": false,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 3512664,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0003",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 178,
+				"averagePriceSubTotal": 178,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0014%3A1436724%3Anull%3A1&roomid=0014&rateplanid=1436724&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0005&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0014",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 157,
+				"averagePriceSubTotal": 137,
+				"hongBaoVal": 0,
+				"couponVal": 20,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0036%3A6404055%3A811_0_116_00%2300%3A1&roomid=0036&rateplanid=6404055&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0005&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0036",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 178,
+				"averagePrice": 130,
+				"averagePriceSubTotal": 130,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0016%3A1345501%3Anull%3A1&roomid=0016&rateplanid=1345501&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0005&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1345501,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0016",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 178,
+				"averagePrice": 148,
+				"averagePriceSubTotal": 148,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0016%3A1437178%3Anull%3A1&roomid=0016&rateplanid=1437178&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0005&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": "由于房量紧张，该房型0点后到店可能需要您提供担保!",
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1437178,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0016",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": 5,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 139,
+				"averagePriceSubTotal": 70,
+				"hongBaoVal": 0,
+				"couponVal": 69,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": false,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 11179095,
+				"advantageousText": [
+					"不可取消",
+					"在线支付"
+				],
+				"recommendText": "新用户专享，优惠69元",
+				"recommendTag": {
+					"id": 8,
+					"name": "新客专享",
+					"description": "",
+					"colorIndex": 0,
+					"available": false,
+					"color": "#FF5555"
+				},
+				"productRecommendType": 2,
+				"roomId": "0065",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 14,
+				"name": "促销",
+				"description": "此产品正在参加促销活动，预订享受活动价",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#4499ff"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0016",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调,无烟房,可做无烟处理"
+			}, {
+				"tipName": "浴室",
+				"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": "电热水壶,瓶装水,餐具"
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": "电视,传真机"
+			}, {
+				"tipName": "其他信息",
+				"tipContent": "部分房间无窗"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBb.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc8.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBa.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB9.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OGyS.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "豪华大床房",
+		"minAveragePriceSubTotal": 101,
+		"minCouponValue": 25,
+		"area": "20平米",
+		"bed": "大床2米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNW.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNX.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNV.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB8.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB7.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc5.jpg"
+		],
+		"imageListSize": 11,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 171,
+				"averagePriceSubTotal": 101,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 11664220,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0067",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 171,
+				"averagePriceSubTotal": 171,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0067%3A11664220%3Anull%3A1&roomid=0067&rateplanid=11664220&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0003&drvtype=0",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可取消或变更；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [],
+				"productSubName": "",
+				"ratePlanId": 11664220,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0067",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 168,
+				"averagePriceSubTotal": 168,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0039%3A6404055%3Anull%3A1&roomid=0039&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0003&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0039",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 189,
+				"averagePriceSubTotal": 189,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0003%3A1436724%3Anull%3A1&roomid=0003&rateplanid=1436724&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0003&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0003",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 178,
+				"averagePriceSubTotal": 108,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 3512663,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0002",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 201,
+				"averagePriceSubTotal": 176,
+				"hongBaoVal": 0,
+				"couponVal": 25,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0003%3A2603577%3A811_0_116_00%2300%3A1&roomid=0003&rateplanid=2603577&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0003&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 2603577,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0003",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 189,
+				"averagePrice": 150,
+				"averagePriceSubTotal": 150,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0007%3A1345501%3Anull%3A1&roomid=0007&rateplanid=1345501&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0003&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1345501,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0007",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 189,
+				"averagePrice": 168,
+				"averagePriceSubTotal": 168,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0007%3A1437178%3Anull%3A1&roomid=0007&rateplanid=1437178&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0003&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": "由于房量紧张，该房型0点后到店可能需要您提供担保!",
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1437178,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0007",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 14,
+				"name": "促销",
+				"description": "此产品正在参加促销活动，预订享受活动价",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#4499ff"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0007",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+			}, {
+				"tipName": "浴室",
+				"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": "电热水壶,瓶装水,餐具"
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": "电视,卫星频道,传真机"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNW.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNX.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNV.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB8.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005ONNW.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "标准双床房",
+		"minAveragePriceSubTotal": 102,
+		"minCouponValue": 13,
+		"area": "18平米",
+		"bed": "双床",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOA.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOz.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc2.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc1.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB3.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwAX.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XybT.jpg"
+		],
+		"imageListSize": 10,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 138,
+				"averagePriceSubTotal": 138,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "18平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "双床1米"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0037%3A6404055%3Anull%3A1&roomid=0037&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0002&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "双床1米"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0037",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 178,
+				"averagePriceSubTotal": 165,
+				"hongBaoVal": 0,
+				"couponVal": 13,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "18平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "双床1米"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0002%3A1436724%3Anull%3A1&roomid=0002&rateplanid=1436724&promotionid=_1&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0002&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "双床1米"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0002",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 172,
+				"averagePriceSubTotal": 102,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "18平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "双床1米"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "双床1米"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 4324252,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0004",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 157,
+				"averagePriceSubTotal": 137,
+				"hongBaoVal": 0,
+				"couponVal": 20,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "18平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "双床1米"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0037%3A6404055%3A811_0_116_00%2300%3A1&roomid=0037&rateplanid=6404055&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0002&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "双床1米"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0037",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 0,
+				"showAvourableType": 3,
+				"originalPriceRmb": 178,
+				"averagePrice": 148,
+				"averagePriceSubTotal": 124,
+				"hongBaoVal": 0,
+				"couponVal": 24,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "18平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "双床1米"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0006%3A1437178%3Anull%3A1&roomid=0006&rateplanid=1437178&promotionid=_1&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0002&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "双床1米"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": "由于房量紧张，该房型0点后到店可能需要您提供担保!",
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1437178,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0006",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 178,
+				"averagePrice": 135,
+				"averagePriceSubTotal": 135,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "18平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "双床1米"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0006%3A1345501%3Anull%3A1&roomid=0006&rateplanid=1345501&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0002&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "双床1米"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1345501,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0006",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 14,
+				"name": "促销",
+				"description": "此产品正在参加促销活动，预订享受活动价",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#4499ff"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0035",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+			}, {
+				"tipName": "浴室",
+				"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": "电热水壶,瓶装水,咖啡机/茶具,餐具"
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": "电视,卫星频道,传真机"
+			}, {
+				"tipName": "其他信息",
+				"tipContent": "双床1米"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOA.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOz.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc2.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc1.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB3.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB0.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OGzp.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "豪华双床房",
+		"minAveragePriceSubTotal": 108,
+		"minCouponValue": 25,
+		"area": "20平米",
+		"bed": "双床1.2米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMbr.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOY.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOX.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB5.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB4.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc1.jpg"
+		],
+		"imageListSize": 10,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 168,
+				"averagePriceSubTotal": 168,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0040%3A6404055%3Anull%3A1&roomid=0040&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0004&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0040",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 178,
+				"averagePriceSubTotal": 108,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 3512662,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0001",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 189,
+				"averagePriceSubTotal": 189,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0004%3A1436724%3Anull%3A1&roomid=0004&rateplanid=1436724&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0004&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0004",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 201,
+				"averagePriceSubTotal": 176,
+				"hongBaoVal": 0,
+				"couponVal": 25,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0004%3A2603577%3A811_0_116_00%2300%3A1&roomid=0004&rateplanid=2603577&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0004&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 2603577,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0004",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 189,
+				"averagePrice": 148,
+				"averagePriceSubTotal": 148,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0008%3A1345501%3Anull%3A1&roomid=0008&rateplanid=1345501&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0004&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1345501,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0008",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 189,
+				"averagePrice": 168,
+				"averagePriceSubTotal": 168,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0008%3A1437178%3Anull%3A1&roomid=0008&rateplanid=1437178&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0004&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": "由于房量紧张，该房型0点后到店可能需要您提供担保!",
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 14,
+						"name": "促销",
+						"description": "此产品正在参加促销活动，预订享受活动价",
+						"colorIndex": 1,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1437178,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0008",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 14,
+				"name": "促销",
+				"description": "此产品正在参加促销活动，预订享受活动价",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#4499ff"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0008",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+			}, {
+				"tipName": "浴室",
+				"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": "电热水壶,瓶装水,餐具"
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": "电视,卫星频道,传真机"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMbr.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOY.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOX.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB5.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OMbr.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "商务双床房",
+		"minAveragePriceSubTotal": 128,
+		"minCouponValue": 16,
+		"area": "25平米",
+		"bed": "双床1.2米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMd5.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGBy.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIfl.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIgy.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMd8.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONQG.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONQC.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMd4.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBi.jpg"
+		],
+		"imageListSize": 10,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 178,
+				"averagePriceSubTotal": 178,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0042%3A6404055%3Anull%3A1&roomid=0042&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0008&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0042",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 208,
+				"averagePriceSubTotal": 192,
+				"hongBaoVal": 0,
+				"couponVal": 16,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0034%3A1436724%3Anull%3A1&roomid=0034&rateplanid=1436724&promotionid=_1&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0008&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0034",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 198,
+				"averagePriceSubTotal": 128,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 6316093,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0036",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 212,
+				"averagePriceSubTotal": 186,
+				"hongBaoVal": 0,
+				"couponVal": 26,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0034%3A2603577%3A811_0_116_00%2300%3A1&roomid=0034&rateplanid=2603577&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0008&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 2603577,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0034",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0035",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调"
+			}, {
+				"tipName": "浴室",
+				"tipContent": ""
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": ""
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": ""
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMd5.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGBy.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIfl.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIgy.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMd8.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONQG.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONQC.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OMd5.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "商务大床房",
+		"minAveragePriceSubTotal": 128,
+		"minCouponValue": 26,
+		"area": "25平米",
+		"bed": "大床2米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMc1.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMc3.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMc2.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONPy.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xycf.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xycd.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBe.jpg"
+		],
+		"imageListSize": 7,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 178,
+				"averagePriceSubTotal": 178,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0041%3A6404055%3Anull%3A1&roomid=0041&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0006&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0041",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 198,
+				"averagePriceSubTotal": 128,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 6316090,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0033",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 208,
+				"averagePriceSubTotal": 208,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0032%3A1436724%3Anull%3A1&roomid=0032&rateplanid=1436724&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0006&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0032",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 212,
+				"averagePriceSubTotal": 186,
+				"hongBaoVal": 0,
+				"couponVal": 26,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "25平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0032%3A2603577%3A811_0_116_00%2300%3A1&roomid=0032&rateplanid=2603577&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0006&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "【住哪儿长住产品】布草每天更换一次"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 2603577,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0032",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0032",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调"
+			}, {
+				"tipName": "浴室",
+				"tipContent": ""
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": ""
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": ""
+			}, {
+				"tipName": "其他信息",
+				"tipContent": "【住哪儿长住产品】布草每天更换一次"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMc1.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMc3.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMc2.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONPy.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xycf.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xycd.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBe.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OMc1.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "高级大床房",
+		"minAveragePriceSubTotal": 161,
+		"minCouponValue": 30,
+		"area": "28平米",
+		"bed": "大床2米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNc.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005PpTb.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIgB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIgw.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIfo.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNh.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNf.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OM9x.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNe.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OM9s.jpg"
+		],
+		"imageListSize": 10,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 206,
+				"averagePriceSubTotal": 206,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "28平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0038%3A6404055%3Anull%3A1&roomid=0038&rateplanid=6404055&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0007&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0038",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 248,
+				"averagePriceSubTotal": 248,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "28平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0033%3A1436724%3Anull%3A1&roomid=0033&rateplanid=1436724&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0007&drvtype=0",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 1436724,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0033",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 2,
+				"originalPriceRmb": 0,
+				"averagePrice": 231,
+				"averagePriceSubTotal": 161,
+				"hongBaoVal": 0,
+				"couponVal": 70,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": true,
+				"appPromotionUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "28平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//mhuodong.elong.com/C/A.htm?b=true&f=h5_5zxz&r=0101,2017-07-28,2017-07-29,90889993",
+				"cancelType": 2,
+				"cancelMsg": "订单一经预订，不可变更或取消；如未能如约入住，您的预付房费将不予退还。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 2,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "不可取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 23,
+						"name": "APP新客折扣",
+						"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+						"colorIndex": 0,
+						"available": true,
+						"color": "#ff5555"
+					}
+				],
+				"productSubName": "",
+				"ratePlanId": 6316095,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0038",
+				"promotionId": "_18",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 234,
+				"averagePriceSubTotal": 204,
+				"hongBaoVal": 0,
+				"couponVal": 30,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "28平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(普通楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0038%3A6404055%3A811_0_116_00%2300%3A1&roomid=0038&rateplanid=6404055&promotionid=_1&ismj=1&policyid=811_0_116_00%2300_073e103dfa47e7cd2bd49aab050ff469%2609%3A01%3A07&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0007&drvtype=811",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "返现嘉年华",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调"
+					}, {
+						"tipName": "浴室",
+						"tipContent": ""
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": ""
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": ""
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6404055,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0038",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 0,
+		"tags": [
+			{
+				"id": 23,
+				"name": "APP新客折扣",
+				"description": "APP新用户专享，下载APP注册后首次预订国内酒店，可享受该产品折扣优惠！",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#ff5555"
+			}, {
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0037",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调"
+			}, {
+				"tipName": "浴室",
+				"tipContent": ""
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": ""
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": ""
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNc.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005PpTb.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIgB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIgw.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIfo.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNh.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONNf.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OM9x.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005ONNc.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "特惠大床房",
+		"minAveragePriceSubTotal": 145,
+		"minCouponValue": 0,
+		"area": "13平米",
+		"bed": "大床1.5米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 0,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIeW.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGz6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGys.jpg"
+		],
+		"imageListSize": 4,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "不含早",
+				"minStocks": -1,
+				"available": 0,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 145,
+				"averagePriceSubTotal": 145,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "https://m.elong.com/hotel/createorder/?hotelid=90889993&uniqueid=90889993%3A0001%3A5332909%3Anull%3A1&roomid=0001&rateplanid=5332909&promotionid=_&ismj=0&policyid=&checkindate=2017-07-28&checkoutdate=2017-07-29&roomtype=0&mroomid=0001&drvtype=0",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 0,
+				"stayTime": "",
+				"officeHours": "",
+				"area": null,
+				"bed": null,
+				"nRoom": -1,
+				"specialRoomName": null,
+				"specialRateplanName": null,
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": null,
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 5332909,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0001",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": true,
+		"roomType": 0,
+		"tags": [],
+		"roomId": "0001",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调,无烟房,可做无烟处理"
+			}, {
+				"tipName": "浴室",
+				"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": "电热水壶,瓶装水,餐具"
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": "电视,传真机"
+			}, {
+				"tipName": "其他信息",
+				"tipContent": "无窗"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIeW.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGz6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGys.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OIf9.jpg"
+	}, {
+		"activityTags": [],
+		"roomInfoName": "钟点房",
+		"minAveragePriceSubTotal": 85,
+		"minCouponValue": 5,
+		"area": "20平米",
+		"bed": "双床1.2米",
+		"hasHongBao": 0,
+		"hasReduce": 0,
+		"hasCoupon": 1,
+		"showPayType": 0,
+		"imageList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIeW.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGz6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGys.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBb.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc8.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBa.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc7.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OMbr.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOY.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOX.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB5.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB4.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc1.jpg"
+		],
+		"imageListSize": 23,
+		"windowFlag": false,
+		"rpList": [
+			{
+				"activityTags": [],
+				"productName": "特惠大床房(钟点房4小时)",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 3,
+				"originalPriceRmb": 0,
+				"averagePrice": 90,
+				"averagePriceSubTotal": 85,
+				"hongBaoVal": 0,
+				"couponVal": 5,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "//m.elong.com/clockhotel/createorder/?hotelid=90889993&roomid=0044&rateplanid=7843615&checkindate=2017-07-28&checkoutdate=2017-07-29&productid=90889993_0044_7843615&from=h5hotel",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 1,
+				"stayTime": "4",
+				"officeHours": "入住：8:00-22:00",
+				"area": "13平米",
+				"bed": "大床1.5米",
+				"nRoom": -1,
+				"specialRoomName": "特惠大床房",
+				"specialRateplanName": "不含早（钟点房3小时）",
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": [
+					"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OIeW.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGz6.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGys.jpg"
+				],
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 7843615,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0044",
+				"promotionId": "_1",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "标准大床房(钟点房3小时)",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 2,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 100,
+				"averagePriceSubTotal": 100,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "//m.elong.com/clockhotel/createorder/?hotelid=90889993&roomid=0015&rateplanid=2110543&checkindate=2017-07-28&checkoutdate=2017-07-29&productid=90889993_0015_2110543&from=h5hotel",
+				"cancelType": 1,
+				"cancelMsg": "您在17年7月28日23:59前取消或变更订单，艺龙将扣取您首晚房费作为违约费用；如果您在17年7月28日23:59之后取消或变更，艺龙将收取全额房费作为违约费用。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 1,
+				"stayTime": "3",
+				"officeHours": "入住：8:00-21:00",
+				"area": "13平米",
+				"bed": "大床1.5米",
+				"nRoom": -1,
+				"specialRoomName": "标准大床房",
+				"specialRateplanName": "不含早-钟点房3小时",
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "付费取消",
+				"imgList": [
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBb.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc8.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBa.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB9.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc7.jpg"
+				],
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 2110543,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0015",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "标准大床房(钟点房4小时)",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 100,
+				"averagePriceSubTotal": 100,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//m.elong.com/clockhotel/createorder/?hotelid=90889993&roomid=0042&rateplanid=6542392&checkindate=2017-07-28&checkoutdate=2017-07-29&productid=90889993_0042_6542392&from=h5hotel",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 1,
+				"stayTime": "4",
+				"officeHours": "入住：14:00-3:59",
+				"area": "13平米",
+				"bed": "大床1.5米",
+				"nRoom": -1,
+				"specialRoomName": "标准大床房",
+				"specialRateplanName": "标准价",
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": [
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBb.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc8.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBa.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB9.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc7.jpg"
+				],
+				"tags": [],
+				"productSubName": "",
+				"ratePlanId": 6542392,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0042",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "标准大床房(钟点房3小时)",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 100,
+				"averagePriceSubTotal": 100,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": false,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "13平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "大床1.5米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}, {
+						"key": "other",
+						"desp": "其他信息",
+						"content": "部分房间无窗"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "//m.elong.com/clockhotel/createorder/?hotelid=90889993&roomid=0015&rateplanid=6958924&checkindate=2017-07-28&checkoutdate=2017-07-29&productid=90889993_0015_6958924&from=h5hotel",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,传真机"
+					}, {
+						"tipName": "其他信息",
+						"tipContent": "部分房间无窗"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 1,
+				"stayTime": "3",
+				"officeHours": "入住：8:00-21:00",
+				"area": "13平米",
+				"bed": "大床1.5米",
+				"nRoom": -1,
+				"specialRoomName": "标准大床房",
+				"specialRateplanName": "不含早（钟点房3小时）1",
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": [
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBb.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc8.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwBa.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB9.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc7.jpg"
+				],
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6958924,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0015",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "豪华双床房(钟点房4小时)",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 100,
+				"averagePriceSubTotal": 100,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 2,
+				"bookUrl": "//m.elong.com/clockhotel/createorder/?hotelid=90889993&roomid=0039&rateplanid=6542389&checkindate=2017-07-28&checkoutdate=2017-07-29&productid=90889993_0039_6542389&from=h5hotel",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 2,
+				"supplierName": "代理",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 1,
+				"stayTime": "4",
+				"officeHours": "入住：14:00-3:59",
+				"area": "20平米",
+				"bed": "双床1.2米",
+				"nRoom": -1,
+				"specialRoomName": "豪华双床房",
+				"specialRateplanName": "标准价",
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": [
+					"//pavo.elongstatic.com/i/mobile750_448/0005OMbr.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005ONOY.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005ONOX.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB6.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB5.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB4.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc1.jpg"
+				],
+				"tags": [],
+				"productSubName": "",
+				"ratePlanId": 6542389,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0039",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}, {
+				"activityTags": [],
+				"productName": "豪华双床房(钟点房3小时)",
+				"minStocks": -1,
+				"available": 1,
+				"showPayType": 0,
+				"showAvourableType": 0,
+				"originalPriceRmb": 0,
+				"averagePrice": 100,
+				"averagePriceSubTotal": 100,
+				"hongBaoVal": 0,
+				"couponVal": 0,
+				"fullAmount": 0,
+				"cutAmount": 0,
+				"hongbaoFlag": 0,
+				"fullCutFlag": 0,
+				"appPromotionFlag": false,
+				"appPromotionUrl": null,
+				"windowFlag": true,
+				"giftDesc": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+				"additionInfoList": [
+					{
+						"key": "area",
+						"desp": "房间面积",
+						"content": "20平米"
+					}, {
+						"key": "bed",
+						"desp": "床型",
+						"content": "双床1.2米"
+					}, {
+						"key": "network",
+						"desp": "上网方式",
+						"content": "免费无线免费有线"
+					}, {
+						"key": "floor",
+						"desp": "楼层",
+						"content": "4-5层(商务楼层)"
+					}, {
+						"key": "personnum",
+						"desp": "可入住人数",
+						"content": "可入住2人"
+					}, {
+						"key": "psnnum",
+						"desp": "可入住人数",
+						"content": "2"
+					}, {
+						"key": "breakfast",
+						"desp": "早餐",
+						"content": "无早"
+					}
+				],
+				"guestType": 1,
+				"bookUrl": "//m.elong.com/clockhotel/createorder/?hotelid=90889993&roomid=0043&rateplanid=6958924&checkindate=2017-07-28&checkoutdate=2017-07-29&productid=90889993_0043_6958924&from=h5hotel",
+				"cancelType": 0,
+				"cancelMsg": "订单提交后可随时变更或免费取消。",
+				"supplierType": 1,
+				"supplierName": "艺龙",
+				"hbtag": 0,
+				"extraBedInfo": "不可加床",
+				"tipsList": [
+					{
+						"tipName": "客房设施",
+						"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+					}, {
+						"tipName": "浴室",
+						"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+					}, {
+						"tipName": "食品饮品",
+						"tipContent": "电热水壶,瓶装水,餐具"
+					}, {
+						"tipName": "媒体科技",
+						"tipContent": "电视,卫星频道,传真机"
+					}
+				],
+				"appHalfCount": 0,
+				"productType": 1,
+				"roomType": 1,
+				"stayTime": "3",
+				"officeHours": "入住：8:00-21:00",
+				"area": "20平米",
+				"bed": "双床1.2米",
+				"nRoom": -1,
+				"specialRoomName": "豪华双床房",
+				"specialRateplanName": "不含早（钟点房3小时）1",
+				"describe": null,
+				"hongBaoType": 0,
+				"cancelTag": "免费取消",
+				"imgList": [
+					"//pavo.elongstatic.com/i/mobile750_448/0005OMbr.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGzp.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005OGCU.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005ONOY.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005ONOX.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/0005ONOB.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB6.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB5.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005XwB4.jpg",
+					"//pavo.elongstatic.com/i/mobile750_448/nw_0005Xyc1.jpg"
+				],
+				"tags": [
+					{
+						"id": 15,
+						"name": "礼包",
+						"description": "2015年09月02日至2017年12月31日期间入住，每间房每日包含：\r\n酒店有专车24小时接送酒店至白云机场和人和地铁站，请致电前台预约。（详情请咨询商家，接送信息以前台为准！）",
+						"colorIndex": 5,
+						"available": true,
+						"color": "#4499ff"
+					}, {
+						"id": 7,
+						"name": "立即确认",
+						"description": "订单提交后，酒店将第一时间确认您的订单",
+						"colorIndex": 6,
+						"available": true,
+						"color": "#4499ff"
+					}
+				],
+				"productSubName": "含交通优惠",
+				"ratePlanId": 6958924,
+				"advantageousText": null,
+				"recommendText": null,
+				"recommendTag": null,
+				"productRecommendType": 0,
+				"roomId": "0043",
+				"promotionId": "_",
+				"boTaoRpDescription": null,
+				"boTaoRP": false
+			}
+		],
+		"recRpList": null,
+		"allFull": false,
+		"roomType": 1,
+		"tags": [
+			{
+				"id": 17,
+				"name": "返",
+				"description": "返现",
+				"colorIndex": 0,
+				"available": true,
+				"color": "#FF5555"
+			}
+		],
+		"roomId": "0043",
+		"newTipsList": [
+			{
+				"tipName": "客房设施",
+				"tipContent": "空调,国内长途电话,无烟房,可做无烟处理"
+			}, {
+				"tipName": "浴室",
+				"tipContent": "电热水器,室内卫生间,室内洗浴间,免费提供一次性洗漱用品,浴室放大化妆镜,座椅,淋浴"
+			}, {
+				"tipName": "食品饮品",
+				"tipContent": "电热水壶,瓶装水,餐具"
+			}, {
+				"tipName": "媒体科技",
+				"tipContent": "电视,卫星频道,传真机"
+			}
+		],
+		"newImgList": [
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIf9.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIeW.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGz6.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGys.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGyS.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGB0.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OGzm.jpg",
+			"//pavo.elongstatic.com/i/mobile750_448/0005OIcg.jpg"
+		],
+		"coverImageUrl": "//pavo.elongstatic.com/i/mobile216_216/0005OMbr.jpg"
 	}
 ]

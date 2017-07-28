@@ -1,6 +1,6 @@
 <template>
 	<div class="pages">
-		<div data-blend="layer" data-blend-id="h5_detail" data-url="https://m.elong.com/hotel/90889993/#indate=2017-07-27&amp;outdate=2017-07-28" id="uniq23" class="page page-on-center" data-title="【空客酒店AIRBUSHOTEL(广州白云机场人和店)】地址:机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)_艺龙网移动版" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
+		<div data-blend="layer" class="page page-on-center"  style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
 			<xheader></xheader>
 
 			<div class="page-content new_detailst mvt_161125">
@@ -22,6 +22,9 @@
 				<!--footer-->
 				<xfooter></xfooter>
 			</div>
+			
+			<xbuy></xbuy>
+			<xmask></xmask>
 		</div>
 	</div>				
 </template>
@@ -34,6 +37,8 @@
 	import xfacilities from "../detailcomponents/xfacilities.vue"
 	import xhistory from "../detailcomponents/xhistory.vue"
 	import xfooter from "../detailcomponents/xfooter.vue"
+	import xbuy from "../detailcomponents/xbuy.vue"
+	import xmask from "../detailcomponents/xmask.vue"
 	export default {
 		components: {
 			xheader,
@@ -43,11 +48,19 @@
 			xfacilities,
 			xhistory,	
 			xfooter,
+			xbuy,
+			xmask
 			
 		}
 	}
 </script>
 
 <style>
-
+	.pages .page .page-content{
+		background: #fff;
+	}
+	..newdetailhsize .toptitle{
+		border-bottom: none;
+	}
+	
 </style>

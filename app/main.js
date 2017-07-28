@@ -129,7 +129,11 @@ var store = new Vuex.Store({
 		isShowMask:false,
 		roomsNum:null,
 		timesNum:null,
-
+		showBuy:false,
+		Mask:false,
+		buyContent:{},
+		roomInfoName:'',
+		
 	},
 	getters: {
 		getCount(state) {
@@ -175,4 +179,9 @@ new Vue({
 	`,
 	router,
 	store,
+	created(){
+		window.scope=this.$store.state
+	}
+
+
 })
