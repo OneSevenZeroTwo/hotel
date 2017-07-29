@@ -1,11 +1,9 @@
 <template>
   <div class="gridlist-demo-container">
-    <mu-grid-list class="gridlist-inline-demo">
+    <mu-grid-list class="gridlist-inline-demo" :cellHeight=100>
       <mu-grid-tile v-for="tile, index in list" :key="index">
         <img :src="tile.image"/>
-        <span slot="title">{{tile.title}}</span>
-        <span slot="subTitle">by <b>{{tile.author}}</b></span>
-        <mu-icon-button icon="star_border" slot="action"/>
+      
       </mu-grid-tile>
     </mu-grid-list>
   </div>
@@ -53,5 +51,8 @@ export default {
 }
 .mu-grid-tile {
 	height: 80%;
+}
+.mu-grid-tile-titlebar{
+	display: none;
 }
 </style>
