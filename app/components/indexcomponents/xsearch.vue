@@ -12,13 +12,14 @@
 						<div v-else>
 							<p class="cityname tjclick" city-id="0539" @click="changetion()">{{aa}}</p>
 						</div>
-						<i class="icon-left" style="right:92px"></i>
+							<i class="material-icons" id="material-icons">&#xE315;</i>
+						
 						<b class="right isnearby tjclick" data-tj="{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}" @click="baidu"><i class="icon-nearby" ></i><span>我的位置</span></b>
 						<div id="allmap"></div>
 					</li>
 					<li class="date">
 						<i class="icon-time"></i>
-						
+
 						<!--<div class="d1 tjclick" data-tj="{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}">
 							<p class="type">入住<span class="night" style="display: none;">深夜</span></p>
 							<p><span class="indate" data-value="2017-07-27">07月27日</span><span class="startweek">明天</span></p>
@@ -29,22 +30,22 @@
 							<p><span class="outdate" data-value="2017-07-30">07月30日</span><span class="endweek">周日</span></p>
 						</div>
 						<div class="d4 total">3晚</div>-->
-						<i class="icon-left"></i>
+						<i class="material-icons">&#xE315;</i>
 					</li>
 					<li class="name">
 						<!--输入内容添加on-->
 						<div class="sea-box">
 							<i class="name"></i>
 							<input type="input" value="" placeholder="酒店名称/位置不限" readonly="readonly">
-							<i class="icon-left"></i>
+							<i class="material-icons">&#xE315;</i>
 						</div>
 						<span class="close"><i class="icon-cross"></i></span>
 					</li>
 					<li class="pri">
-						<div class="price-star-btn tjclick" data-tj="{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}">
+						<div class="price-star-btn tjclick">
 							<i class="pri"></i>
 							<input class="title-phone" type="input" value="" placeholder="价格星级不限" readonly="readonly">
-							<i class="icon-left"></i>
+							<i class="material-icons">&#xE315;</i>
 						</div>
 						<span class="close"><i class="icon-cross"></i></span></li>
 				</ul>
@@ -64,7 +65,7 @@
 				open: false,
 				docked: true,
 				not: false,
-				cId:''
+				cId: ''
 			}
 		},
 		methods: {
@@ -95,10 +96,10 @@
 				this.not = true
 
 			},
-			cityId(){
-				this.cId=this.$store.state.cityId
+			cityId() {
+				this.cId = this.$store.state.cityId
 				console.log(this.cId)
-				location.href="#/list/"+this.cId
+				location.href = "#/list/" + this.cId
 			}
 		},
 		mounted: function() {
@@ -112,7 +113,20 @@
 	}
 </script>
 
-<style scoped="">
+<style scoped>
+	.material-icons {
+		position: absolute;
+		left: 300px;
+		font-size: 30px;
+	}
+	#material-icons {
+		position: absolute;
+		left: 200px;
+		font-size: 30px;
+	}
+	.page-search .search-wrap .search-list li i{
+		
+	}
 	/*@import "css/header.css";
 	@import "css/header2.css";*/
 	/** {

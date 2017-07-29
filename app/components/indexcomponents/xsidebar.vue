@@ -31,7 +31,7 @@
 							</div>
 							<div class="city-list">
 								<ul class="city-list-ul">
-									<li city-id="1988" area-type="" area-id="" sug-origin="" v-for="(a,index) in Arrs" @click="test($event)"><span @click="test($event)">{{a.cityName}}</span></li>
+									<li city-id="1988" area-type="" area-id="" sug-origin="" v-for="(a,index) in Arrs"><span @click="test($event,a.cityId)">{{a.cityName}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -62,9 +62,9 @@
 		methods: {
 			test(e,cityId){
 				console.log(11111)
-				console.log(e.target.innerHTML)
+				console.log(e.target.innerHTML,cityId)
 				this.$store.state.aaa=e.target.innerHTML
-				this.$store.state.cityId=cityId
+				scope.listParams.cityId=cityId
 				
 				this.changetion()
 			},

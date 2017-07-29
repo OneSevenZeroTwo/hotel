@@ -152,6 +152,9 @@ var store = new Vuex.Store({
 		Mask:false,
 		buyContent:{},
 		roomInfoName:'',
+		listParams:{
+			
+		}
 
 
 	},

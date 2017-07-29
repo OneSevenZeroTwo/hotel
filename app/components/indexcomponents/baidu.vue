@@ -21,7 +21,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	body,
 	html {
 		width: 100%;
