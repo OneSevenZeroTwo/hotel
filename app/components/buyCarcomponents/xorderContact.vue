@@ -25,7 +25,7 @@
 					<input type="text" readonly="readonly" id="area-code" class="area-code createorder" name="areacodeconnect" :value="telAddress" :title="telAddress" data-value="">
 					<span><i class="icon-bottom"></i></span>
 				</div>
-				<input type="tel" maxlength="20" class="area-number createorder" name="connectormobile" placeholder="用于客服" id="contactormobile" value="13172386158">
+				<input type="tel" maxlength="20" class="area-number createorder" name="connectormobile" placeholder="用于客服" id="contactormobile" value="">
 			</div>
 			<div class="tel-choose" style="color: rgb(220, 220, 220);">
 				<div class="icon-choose">

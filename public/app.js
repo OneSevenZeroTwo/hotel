@@ -2,6 +2,7 @@
 var express = require('express');
 var app = express();
 var http = require('http')
+
 //链接数据库模块
 var mysql = require("mysql");
 //连接服务器配置.......................................................................
@@ -19,7 +20,13 @@ function createConnection() {
 app.get('/test', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter=J&_rt=1500966828847', function(content) {
+//	tag
+	//http://m.elong.com/minsu/suggest/searchsuggest/?req=%7B%22CityId%22%3A%2267157%22%7D
+	
+	//position
+//	http://m.elong.com/minsu/house/getlocationfilterlist/?req=%7B%22CityInfo%22%3A%7B%22ItemId%22%3A%2267157%22%2C%22Name%22%3A%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22%7D%7D
+	//city
+	http.get('http://m.elong.com/minsu/house/getlocationfilterlist/?req=%7B%22CityInfo%22%3A%7B%22ItemId%22%3A%2267157%22%2C%22Name%22%3A%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22%7D%7D', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -33,6 +40,8 @@ app.get('/test', function(req, res) {
 	})
 
 })
+
+
 
 //index部分...............................................chenjiangchuan
 
@@ -129,6 +138,7 @@ app.get('/list', function(req, res) {
 	})
 
 })
+
 
 //detail部分..............................................tangqiuping
 //详情页内容
