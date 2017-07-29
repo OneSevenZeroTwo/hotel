@@ -1,11 +1,13 @@
 <template>
-	<div>
+	<div style="position: relative;">
 		<xheader></xheader>
+		<shijian></shijian>
 		<xsearch></xsearch>
 		<xoption></xoption>
 		<xsidebar></xsidebar>
 		<xtool></xtool>
 		<ximages></ximages>
+		<xlists></xlists>
 		<!--<baidu></baidu>-->
 	</div>
 </template>
@@ -17,6 +19,13 @@
 	import xsidebar from "./indexcomponents/xsidebar.vue";
 	import xtool from "./indexcomponents/xtool.vue";
 	import ximages from "./indexcomponents/ximages.vue";
+	import xlists from "./indexcomponents/xlists.vue";
+	import xstars from "./indexcomponents/xstars.vue";
+	import shijian from "./indexcomponents/shijian.vue";
+	
+	
+	
+	
 	
 	
 	
@@ -31,7 +40,10 @@
 			xoption,
 			xsidebar,
 			xtool,
-			ximages
+			ximages,
+			xlists,
+			xstars,
+			shijian
 //			baidu
 		}
 		

@@ -92,6 +92,24 @@ app.get('/letterfence', function(req, res) {
 	})
 
 })
+//首页列表
+app.get('/indexlist', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/list/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+
+		})
+	})
+
+})
 //list部分..............................................lianglixiong
 //
 app.get('/list', function(req, res) {

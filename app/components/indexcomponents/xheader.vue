@@ -54,7 +54,7 @@
 					console.log(res)
 					this.arr = res.data.advList
 					console.log(this.arr)
-					this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]
+					this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl]
 				}.bind(this))
 
 			}

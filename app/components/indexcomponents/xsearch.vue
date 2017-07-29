@@ -18,7 +18,8 @@
 					</li>
 					<li class="date">
 						<i class="icon-time"></i>
-						<div class="d1 tjclick" data-tj="{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}">
+						
+						<!--<div class="d1 tjclick" data-tj="{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}">
 							<p class="type">入住<span class="night" style="display: none;">深夜</span></p>
 							<p><span class="indate" data-value="2017-07-27">07月27日</span><span class="startweek">明天</span></p>
 						</div>
@@ -27,7 +28,7 @@
 							<p class="type">离店</p>
 							<p><span class="outdate" data-value="2017-07-30">07月30日</span><span class="endweek">周日</span></p>
 						</div>
-						<div class="d4 total">3晚</div>
+						<div class="d4 total">3晚</div>-->
 						<i class="icon-left"></i>
 					</li>
 					<li class="name">
@@ -47,7 +48,7 @@
 						</div>
 						<span class="close"><i class="icon-cross"></i></span></li>
 				</ul>
-				<div class="search-btn tjclick" data-tj="{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}"><i></i>搜索</div>
+				<div class="search-btn tjclick" @click="cityId()"><i></i>搜索</div>
 			</div>
 		</div>
 	</div>
@@ -62,7 +63,8 @@
 				aa: '广州市',
 				open: false,
 				docked: true,
-				not: false
+				not: false,
+				cId:''
 			}
 		},
 		methods: {
@@ -93,6 +95,11 @@
 				this.not = true
 
 			},
+			cityId(){
+				this.cId=this.$store.state.cityId
+				console.log(this.cId)
+				location.href="#/list/"+this.cId
+			}
 		},
 		mounted: function() {
 			//					this.baidu()

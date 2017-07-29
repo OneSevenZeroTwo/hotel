@@ -17,7 +17,7 @@
 								<ul>
 									<!--class加个on高亮-->
 									<li @click="changetion()" v-for="(item,index) in newArr" city-id="0101" area-type="" area-id="" sug-origin="" v-on:click="addClassFun(index)" v-bind:class='{on:index==idx}'>
-										<span @click="test($event)">{{item.cityName}}</span>
+										<span @click="test($event,item.cityId)">{{item.cityName}}</span>
 									</li>
 								</ul>
 							</div>
@@ -60,10 +60,12 @@
 			}
 		},
 		methods: {
-			test(e){
+			test(e,cityId){
 				console.log(11111)
 				console.log(e.target.innerHTML)
 				this.$store.state.aaa=e.target.innerHTML
+				this.$store.state.cityId=cityId
+				
 				this.changetion()
 			},
 			changetion() {
