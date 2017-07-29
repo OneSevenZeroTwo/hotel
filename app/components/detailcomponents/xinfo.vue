@@ -29,24 +29,8 @@
 		</div>
 		<div class="info">
 			<ul>
-				<!--酒店地址-->
-				<li class="info_mn">
-					<div class="col_tb">
-						<div class="posi">
-							<div class="addr">机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)</div>
-							<div class="dis">
-								<span class="disc">距离机场南地铁站0.2公里,步行至此0.7公里,约12分钟</span>
-							</div>
-						</div>
-					</div>
-					<div class="map_bg"></div>
-					<div class="right">
-						<div class="map_c">
-							<img width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=23.385337,113.303861&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
-							<i class="map_icons"></i>
-						</div>
-					</div>
-				</li>
+				<!--地图-->
+				<xmap></xmap>
 
 				<!--住客评价-->
 				<li class="choose">
@@ -57,7 +41,7 @@
 						</ul>
 						<span class="line "></span>
 					</div>
-					<div class="text1 tabcomment all-com tjclick text_comments" data-tj="{&quot;cspot&quot;:&quot;comment&quot;}">
+					<div @click="showCommom()" class="text1 tabcomment all-com tjclick text_comments" data-tj="{&quot;cspot&quot;:&quot;comment&quot;}">
 						<div class="left_c">
 							<div class="praise_nbm">
 								<span class="u_nbm"><b class="s_nbm">4.2</b>分</span>
@@ -101,6 +85,59 @@
 </template>
 
 <script>
+	import xmap from "./xmap.vue"
+	export default {
+		data() {
+			return {
+				hotelId: ""
+			}
+		},
+		methods: {
+			//获取列表页传过来的酒店id
+			getId() {
+				this.hotelId = this.$route.params.id
+				//				console.log(this.hotelId)
+			},
+			//加载轮播图图片
+			swiper() {
+				this.$ajax({
+					url: "http://localhost:3000/getInfo",
+					params: {
+						hotelId: this.hotelId
+					}
+				}).then(function(res) {
+					//					console.log(res)
+				})
+			},
+			//			common(){
+			//				this.$ajax({
+			//					url:"http://localhost:3000/commom",
+			//					
+			//				}).then(function(res){
+			//					console.log(res)
+			//				})
+			//			},
+			showCommom() {
+				scope.showCommom = !scope.showCommom
+			}
+
+		},
+		mounted() {
+			this.getId()
+			this.swiper()
+			//			this.common()
+			window.navigator.geolocation.getCurrentPosition(function(data) {
+				console.log(data)
+				
+			}, function(err) {
+
+			})
+
+		},
+		components:{
+			xmap,
+		}
+	}
 </script>
 
 <style>

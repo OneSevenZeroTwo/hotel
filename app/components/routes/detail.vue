@@ -1,6 +1,6 @@
 <template>
 	<div class="pages">
-		<div data-blend="layer" class="page page-on-center"  style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
+		<div data-blend="layer" :class="['page',{'page-on-center':!showCommom},{'page-on-left':showCommom}]"  style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
 			<xheader></xheader>
 
 			<div class="page-content new_detailst mvt_161125">
@@ -26,6 +26,7 @@
 			<xbuy></xbuy>
 			<xmask></xmask>
 		</div>
+		<xcommom></xcommom>
 	</div>				
 </template>
 
@@ -39,6 +40,7 @@
 	import xfooter from "../detailcomponents/xfooter.vue"
 	import xbuy from "../detailcomponents/xbuy.vue"
 	import xmask from "../detailcomponents/xmask.vue"
+	import xcommom from "../detailcomponents/xcommom.vue"
 	export default {
 		components: {
 			xheader,
@@ -49,8 +51,15 @@
 			xhistory,	
 			xfooter,
 			xbuy,
-			xmask
+			xmask,
+			xcommom,
 			
+			
+		},
+		computed:{
+			showCommom(){
+				return scope.showCommom
+			}
 		}
 	}
 </script>

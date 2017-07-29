@@ -57,7 +57,7 @@ var routes = [{
 		component: home,
 	}, {
 		//路由名
-		path: '/detail',
+		path: '/detail/:id',
 		//上面定义好的路由扔进来
 		component: detail
 	}, {
@@ -90,7 +90,7 @@ var routes = [{
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/detail/'
+		redirect: '/detail/90702017'
 	}
 ]
 
@@ -136,6 +136,8 @@ var store = new Vuex.Store({
 		Mask:false,
 		buyContent:{},
 		roomInfoName:'',
+		showCommom:false,
+		
 
 	},
 	getters: {

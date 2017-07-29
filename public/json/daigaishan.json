@@ -1,0 +1,1534 @@
+{
+	"errorCode": null,
+	"errorMessage": null,
+	"errorArgs": null,
+	"pager": null,
+	"pageID": null,
+	"orderFrom": null,
+	"pageTile": null,
+	"pageKeywords": null,
+	"pageDescription": null,
+	"comments": [
+		{
+			"userName": "WP",
+			"userRank": 3,
+			"content": "有酒店接送服务很好，距离机场比较近，其它方面也无所谓了。",
+			"commentDateTime": "2017-07-22",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 4
+		}, {
+			"userName": "会员334447",
+			"userRank": 1,
+			"content": "来接个人用了差不多一个钟，我取消订单才来，坑了120吊",
+			"commentDateTime": "2017-07-05",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-07-07"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 2
+		}, {
+			"userName": "一粒沙，一个世界！",
+			"userRank": 1,
+			"content": "还可以，比较旧，早餐东西少",
+			"commentDateTime": "2017-07-03",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施.期待您的下次光临!",
+					"createTime": "2017-07-04"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 4
+		}, {
+			"userName": "AWoo",
+			"userRank": 1,
+			"content": "房间居然没有独立卫浴，出于安全考虑，对女生来说不推荐。房间被子和枕头有明显污迹，免费接送机场这点很方便",
+			"commentDateTime": "2017-07-03",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-07-04"
+				}
+			],
+			"commentScoreTotal": 2.8,
+			"travelType": 0
+		}, {
+			"userName": "pen'lin",
+			"userRank": 3,
+			"content": "一般，就交通好，出行方便",
+			"commentDateTime": "2017-06-30",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-07-04"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 4
+		}, {
+			"userName": "朽木",
+			"userRank": 1,
+			"content": "这次住的房间没有独立浴室，不太好，还有一个大蜘蛛\uD83D\uDE31",
+			"commentDateTime": "2017-06-22",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-06-23"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 1
+		}, {
+			"userName": "会员648271",
+			"userRank": 1,
+			"content": "\n广告写的位置距机场有0.7公里，实际距机场好几公里，坐车都要二十分钟。写的离地铁站0.3公里，实际更远不坐车根本到不了。酒店有专车接送，服务态度极差。提前了十分钟打电话。就要到门口了都不愿意等，直接挂电话了。还要我们等一个小时。中途打电话给他好几次，话没说完就挂了。凌晨三点半在机场门口提着行李站着等，等到五点。直接等到天亮。这种酒店就不要去了。花钱也住不着，还找罪受。\n",
+			"commentDateTime": "2017-06-22",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-07-16"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 1
+		}, {
+			"userName": "会员5399",
+			"userRank": 1,
+			"content": "差劲的很，不会再去。",
+			"commentDateTime": "2017-06-21",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-06-22"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 4
+		}, {
+			"userName": "会员297922",
+			"userRank": 1,
+			"content": "不是很满意，希望可以改善。",
+			"commentDateTime": "2017-06-20",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-06-20"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "会员714668",
+			"userRank": 1,
+			"content": "顶定的地理位置与酒店不附，房间没有侧所与实际不符，有欺骗的嫌疑。",
+			"commentDateTime": "2017-06-16",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-06-17"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 5
+		}, {
+			"userName": "嗯。",
+			"userRank": 1,
+			"content": "这里显示距离机场南0.5公里。实际上距离机场南6，5公里，虽然有车来接但是如果不是看在距离机场南那么近我不会订这个的。",
+			"commentDateTime": "2017-06-06",
+			"largeImagePath": [],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-06-07"
+				}
+			],
+			"commentScoreTotal": 2.6,
+			"travelType": 3
+		}, {
+			"userName": "杰米",
+			"userRank": 2,
+			"content": "价格就是硬道理。。。。",
+			"commentDateTime": "2017-06-02",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 4
+		}, {
+			"userName": "会员320805",
+			"userRank": 1,
+			"content": "4.3的评分是怎么来的不知道，太差了！连家庭旅馆都不如",
+			"commentDateTime": "2017-05-27",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-30"
+				}
+			],
+			"commentScoreTotal": 1.6,
+			"travelType": 5
+		}, {
+			"userName": "会员1599",
+			"userRank": 1,
+			"content": "性价比高，接送服务挺好，设施一般，床有点硬",
+			"commentDateTime": "2017-05-26",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-30"
+				}
+			],
+			"commentScoreTotal": 2.0,
+			"travelType": 4
+		}, {
+			"userName": "会员202258",
+			"userRank": 1,
+			"content": "服务差，说谎话从机场到酒店说10分钟我等了一个小时",
+			"commentDateTime": "2017-05-23",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-05-23"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 5
+		}, {
+			"userName": "会员0411",
+			"userRank": 3,
+			"content": "说是离机场几百米，谁知道是几千米，害我在机场周围转了几圈也没有找到，最后迫不得已打电话才接到。。。可提供接送服务。价格低廉。",
+			"commentDateTime": "2017-05-22",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-05-23"
+				}
+			],
+			"commentScoreTotal": 2.8,
+			"travelType": 4
+		}, {
+			"userName": "会员4459",
+			"userRank": 1,
+			"content": "有车接送 方便早机 卫生间防水密封差 渗水到地面",
+			"commentDateTime": "2017-05-19",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-22"
+				}
+			],
+			"commentScoreTotal": 2.6,
+			"travelType": 0
+		}, {
+			"userName": "会员667076",
+			"userRank": 1,
+			"content": "我也是无语啊，前天订了大床房，第二天到酒店要办手续时跟我说没有房间了，说要给我退款，让我自己在去找酒店，不然就给我换双人房，说价格一样的。这不是坑吗？都提前定房了，到了酒店，就说没有房间了，这什么酒店啊，那还要提前定房间有什么用啊。大家评评理",
+			"commentDateTime": "2017-05-18",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，.因部分单人房里面都有加床.给您带来的不便深感抱歉.期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-22"
+				}
+			],
+			"commentScoreTotal": 2.2,
+			"travelType": 1
+		}, {
+			"userName": "会员091243",
+			"userRank": 1,
+			"content": "连洗澡水都没有",
+			"commentDateTime": "2017-05-17",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，给您带来的不便深感抱歉，房间内为独立电热水器，进入客房后需要15分钟左右供热水器烧水，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-17"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 0
+		}, {
+			"userName": "乘风伊蓝",
+			"userRank": 1,
+			"content": "垃圾的不能在垃圾了，已列入黑名单，态度很恶劣，特别是洗澡洗的很火大，一会大水，一会小水",
+			"commentDateTime": "2017-05-16",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-17"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 2
+		}, {
+			"userName": "会员281257",
+			"userRank": 1,
+			"content": "服务态度差，退房退了40分钟",
+			"commentDateTime": "2017-05-14",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 5
+		}, {
+			"userName": "会员9612",
+			"userRank": 1,
+			"content": "巨差，凌晨两点到机场，等了一个钟才等到司机过来载人。就住了三个钟，而且酒店靠路的，很吵的，休息一点都不好，离机场还远，过去都要二十分钟。拿钱来受罪",
+			"commentDateTime": "2017-05-11",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-05-13"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "会员841075",
+			"userRank": 1,
+			"content": "除了有接送其他都不好 床单不干净 吹风机坏的 房间连抽纸都没有 还是质量差的卷纸 冲凉房淋浴头不好\n水小还一冲不想洗头都跟洗头了一样！最讨厌的是早上还停电 有一点 好的是接送师傅还不错！",
+			"commentDateTime": "2017-05-07",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-08"
+				}
+			],
+			"commentScoreTotal": 2.0,
+			"travelType": 5
+		}, {
+			"userName": "会员046313",
+			"userRank": 1,
+			"content": "还可以!下次来还住这里!",
+			"commentDateTime": "2017-05-02",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临!",
+					"createTime": "2017-05-04"
+				}
+			],
+			"commentScoreTotal": 2.8,
+			"travelType": 0
+		}, {
+			"userName": "会员510619",
+			"userRank": 1,
+			"content": "说离机场近，实际根本不近，晚上洗澡头发洗澡，就没热水了，前台客服说要等20分钟加热，什么破地方，以后别出现在前面了，破地方还那么贵，坑人",
+			"commentDateTime": "2017-04-30",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-04-30"
+				}
+			],
+			"commentScoreTotal": 1.6,
+			"travelType": 4
+		}, {
+			"userName": "沪云光电",
+			"userRank": 1,
+			"content": "一般，比较偏，吃饭都找不到地方。",
+			"commentDateTime": "2017-04-26",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-29"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 5
+		}, {
+			"userName": "会员443985",
+			"userRank": 1,
+			"content": "酒店存在欺骗之嫌，位置定位和实际位置差了十万八千里！从机场去该酒店需要近10-15分钟车程，如果接其他旅客，估计至少得一个钟到达酒店。",
+			"commentDateTime": "2017-04-24",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-04-25"
+				}
+			],
+			"commentScoreTotal": 1.4,
+			"travelType": 4
+		}, {
+			"userName": "会员201317",
+			"userRank": 1,
+			"content": "骗子，骗子，骗子，骗子",
+			"commentDateTime": "2017-04-23",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-25"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 4
+		}, {
+			"userName": "会员1796",
+			"userRank": 3,
+			"content": "不知道怎么形容，总之我穿一套完整的运动装才算可以上床，不是太迟及一早还要上机，我会换....\uD83D\uDE31\uD83D\uDE31\uD83D\uDE31",
+			"commentDateTime": "2017-04-22",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-25"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 2
+		}, {
+			"userName": "会员913810",
+			"userRank": 1,
+			"content": "服务还可以，设施差，冷水很小，墙壁脏",
+			"commentDateTime": "2017-04-21",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-22"
+				}
+			],
+			"commentScoreTotal": 2.8,
+			"travelType": 0
+		}, {
+			"userName": "猫肉罐头没有肉",
+			"userRank": 3,
+			"content": "一般，半夜飞机到，说有车来接，结果需要等好几班机凑够一车人才走，凌晨一点四十上车，快到三点才给送去酒店。",
+			"commentDateTime": "2017-04-21",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-04-22"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 0
+		}, {
+			"userName": "流浪的风",
+			"userRank": 3,
+			"content": "整体条件还行，被子有点潮",
+			"commentDateTime": "2017-04-20",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-22"
+				}
+			],
+			"commentScoreTotal": 3.0,
+			"travelType": 4
+		}, {
+			"userName": "会员2196",
+			"userRank": 3,
+			"content": "在酒店前台等了快一个小时办理入住，又在机场等了半个多小时接送，不仅我一个人在等，当时晚上十二点多 还有三四个人一起等着办入住。  房间真的很破，机场附近100多的酒店很多，不建议选这家。（之前给评价经常被酒店打电话来叫我删除，麻烦这一次请勿骚扰）",
+			"commentDateTime": "2017-04-20",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.6,
+			"travelType": 5
+		}, {
+			"userName": "会员190138",
+			"userRank": 1,
+			"content": "服务太差了，给百凯酒店打电话预订好了房间，服务员说马上去机场接，到了酒店坐地就涨价了，没办法呀，很偏僻的地方，离机场坐车还得20分钟，反正感觉很不爽，下次再到广州绝不选择这家酒店了！",
+			"commentDateTime": "2017-04-19",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，如到店升级房型，需补回差价，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-19"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 4
+		}, {
+			"userName": "会员069071",
+			"userRank": 1,
+			"content": "机场等了40分钟等到接车，司机师傅态度挺好！到了酒店卫生间公用，洗漱公用，当时傻眼，洗澡太不方便了！要在公用卫生间里，蚊子好多啊，墙上好多文字尸体，房间就2个插座，床头的还是坏的！1公里以外有市场，可以吃饭买水果，好难熬的一晚啊！",
+			"commentDateTime": "2017-04-17",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.2,
+			"travelType": 5
+		}, {
+			"userName": "大海",
+			"userRank": 3,
+			"content": "机场旁边 条件一般 睡的也一次般",
+			"commentDateTime": "2017-04-08",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.0,
+			"travelType": 4
+		}, {
+			"userName": "会员5581",
+			"userRank": 1,
+			"content": "我认为广州百凯航空酒店不错",
+			"commentDateTime": "2017-04-07",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.4,
+			"travelType": 3
+		}, {
+			"userName": "会员1071",
+			"userRank": 1,
+			"content": "地点错误 设施极差 价格还特别贵 亲身体验 真的真的离机场很远 千万不要订 不要被骗啦",
+			"commentDateTime": "2017-04-07",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "方舟",
+			"userRank": 1,
+			"content": "网上订的是机场店，结束到达机场后，电话询问才知道所谓的机场店装修，要到7公里开外大路边的白凯航空公寓，车流量大，噪音太大。没法休息，吃饭都不方便。下次再也不用艺龙了。",
+			"commentDateTime": "2017-04-05",
+			"largeImagePath": [],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 0
+		}, {
+			"userName": "会员5597",
+			"userRank": 3,
+			"content": "大马路边上，前不挨村，后不着店，不方便。到机场还好，房门关不上",
+			"commentDateTime": "2017-04-05",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.0,
+			"travelType": 1
+		}, {
+			"userName": "会员1870",
+			"userRank": 1,
+			"content": "酒店洗澡供水不足，洗一下停一下水，无语了，最无语的是水龙头还一直发出闷响，断断续续的声音根本无法忍受，吵死了，然后说好的时间送机，结果提前了一个钟，还说什么机场那边有顾客接机叫我们早点…说的好像我们不是顾客一样！！！！有待改善！",
+			"commentDateTime": "2017-04-04",
+			"largeImagePath": [],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "隔壁老王",
+			"userRank": 1,
+			"content": "服务卫生一般，很多蚊子。",
+			"commentDateTime": "2017-04-02",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.4,
+			"travelType": 2
+		}, {
+			"userName": "会员808878",
+			"userRank": 1,
+			"content": "只此一次！！！！！！！",
+			"commentDateTime": "2017-03-31",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 4
+		}, {
+			"userName": "会员8344",
+			"userRank": 1,
+			"content": "一点都不好！床单不是新换的，而且网上订的没有卫生间！",
+			"commentDateTime": "2017-03-29",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.0,
+			"travelType": 4
+		}, {
+			"userName": "OK",
+			"userRank": 1,
+			"content": "挺好的………………………………………………………………",
+			"commentDateTime": "2017-03-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007QVT1.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.0,
+			"travelType": 4
+		}, {
+			"userName": "会员3124",
+			"userRank": 3,
+			"content": "不推荐，房间里一股霉味根本无法入睡，床睡后发痒",
+			"commentDateTime": "2017-03-28",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "会员423100",
+			"userRank": 1,
+			"content": "酒店除了接送机的服务好，其它全不好，1、地点偏远，没有餐厅找不到吃饭的地方;2、设施不旧，床软的孩子说像蹦床;3，最接受不了的是，极潮，穿衣服躺在床上都能感到床和被是湿的，我们不午2点入住刚擦过地的样子18点地都不干;4，卫生间反味，弄的满屋都是味，害得我鼻子旁一直闻橘子皮;5，太潮了，屋里有好几只蚊子，咬了好几个包，也没驱蚊设。终上所诉，害得我根本没法睡，",
+			"commentDateTime": "2017-03-27",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.8,
+			"travelType": 1
+		}, {
+			"userName": "会员854153",
+			"userRank": 1,
+			"content": "接機服務超差，態度不好，距離機場10分鐘不到的路程，竟然等了30分鐘后酒店打電話來說車子有問題，然後還要等30分鐘他們送客人過機場的時候再接。坑爹呀。",
+			"commentDateTime": "2017-03-27",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 4
+		}, {
+			"userName": "会员7044",
+			"userRank": 2,
+			"content": "和图片严重不符，卫生差，房间破旧",
+			"commentDateTime": "2017-03-23",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 5
+		}, {
+			"userName": "会员6417",
+			"userRank": 1,
+			"content": "我就想知道艺龙是凭什么推荐的。首先位置离机场车程五分钟。白云机场这么大，离机场最角落的地方五分钟没毛病，但是离旅客出来的地方要超过六公里！感觉已经到什么镇上了。一定一定要叫酒店接。自己是来不到这个地方的。其次，一进房间就一股浓浓的怪味，枕头矮得像没有，就几张桌子椅子，使用淋浴头的时候一直发出怪声，水压大到离谱，还有床垫，不算软，还好我喜欢睡硬床，不点评。再来隔音，酒店就在大马路旁，经过的全是大货车什么的，呼呼车来车往一晚上没消停过，房门就一个普通三合门，连个锁链都没有，外面经过的人轻声说话都能听得一清二楚，哎我去。我也算能吃苦的了，真心话火车站附近的私人小旅馆环境设施都比这好。住那么多酒店很少评论这个我是真无力吐槽",
+			"commentDateTime": "2017-03-21",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007N4VR.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007N7at.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 2
+		}, {
+			"userName": "yl",
+			"userRank": 1,
+			"content": "周围偏僻，离机场挺远的，有免费接送机，但是艺龙上地理位置在机场铂尔曼酒店旁边，严重不符合实际情况！隔音很差",
+			"commentDateTime": "2017-03-15",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-03-15"
+				}
+			],
+			"commentScoreTotal": 2.4,
+			"travelType": 5
+		}, {
+			"userName": "会员932476",
+			"userRank": 1,
+			"content": "太吵        太冷",
+			"commentDateTime": "2017-03-13",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 4
+		}, {
+			"userName": "会员681180",
+			"userRank": 1,
+			"content": "服务态度很差，在机场里等了一个多小时还没来接，下次一定不要再定这家酒店了",
+			"commentDateTime": "2017-03-13",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.8,
+			"travelType": 4
+		}, {
+			"userName": "会员5827",
+			"userRank": 1,
+			"content": "不好，还不让开发票。",
+			"commentDateTime": "2017-03-07",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，如您订单为预付订单发票是由网站提供，订房页面有提示，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-03-08"
+				}
+			],
+			"commentScoreTotal": 2.0,
+			"travelType": 5
+		}, {
+			"userName": "会员3419",
+			"userRank": 1,
+			"content": "还可以，一般吧！有些旧了",
+			"commentDateTime": "2017-03-05",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-03-06"
+				}
+			],
+			"commentScoreTotal": 2.4,
+			"travelType": 5
+		}, {
+			"userName": "会员044876",
+			"userRank": 1,
+			"content": "艺龙推荐的这家酒店，给了我史上最差酒店体验！！！酒店就在很多大货车来往的公路边，定的豪华大床房，前台告知大床房全是最外面的。房间很旧跟图片不符，床很硬，厕所花洒和水龙头像神经病一样时断时出。隔音极差极差！更讨厌的是座机！！夺命连环炮弹一样，几次把人从梦中吓醒！吓醒！很响亮！",
+			"commentDateTime": "2017-03-05",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 2
+		}, {
+			"userName": "会员800727",
+			"userRank": 1,
+			"content": "坑爹货。去的时候住了一天还行，回来又入驻价钱翻一倍。",
+			"commentDateTime": "2017-02-27",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，酒店房型不同、价格不同，同一房型由于房费支付方式原因价格也有所不同，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 5
+		}, {
+			"userName": "会员3544",
+			"userRank": 1,
+			"content": "应该不会再去了，没有厕所，房间一股发霉的味道，更好笑的是房间电话还是坏的，差点误了飞机，去前台退房时候说电话坏了，前台还很诧异说那你是怎么起来的，当人傻了吗，也是呵呵了",
+			"commentDateTime": "2017-02-27",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.6,
+			"travelType": 5
+		}, {
+			"userName": "李天下",
+			"userRank": 1,
+			"content": "没入住就不给退房，气死我了",
+			"commentDateTime": "2017-02-26",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，由于您选择是预付房费，此支付方式酒店是24小时保留房间，预付订单需提前24小时才能取消订单，望您谅解，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 2
+		}, {
+			"userName": "会员526349",
+			"userRank": 1,
+			"content": "水龙头没水，不能洗脸。房间里没有独立卫生间，外面大厕所里面没有热水不能洗澡，而且房间还不怎么干净被子床单什么都感觉不是新的。总之很垃圾。",
+			"commentDateTime": "2017-02-26",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 2.0,
+			"travelType": 5
+		}, {
+			"userName": "会员656748",
+			"userRank": 1,
+			"content": "预定成功了没有入住，没办法退了",
+			"commentDateTime": "2017-02-25",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，由于您选择是预付房费，此支付方式酒店是24小时保留房间，预付订单需提前24小时才能取消订单，望您谅解，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "会员807189",
+			"userRank": 1,
+			"content": "便宜但是挺便宜了，第一次入住感受，洗澡是最大的麻烦，洗澡间的水大概两三分钟断一次，就是洗个澡都要分开几次，一开始水全是冷水，开三分钟直接没水，等几分钟又有水，洗几分钟又没水了，最气的是说好的包机场接送，害我在机场等了一个小时，打了五次电话去，最后一次还说司机去了，说我关机了，司机回来了，不知道是谁的智商低了，就算没信号，之后也会收到短信的呀，我完全没收过短信，不接直接告诉我，不用我等了一个小时。",
+			"commentDateTime": "2017-02-25",
+			"largeImagePath": [],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 2.2,
+			"travelType": 4
+		}, {
+			"userName": "良心评价",
+			"userRank": 3,
+			"content": "这是我住过的酒店最差的，明明网上写的酒店，实际写的大厦，让找好久才找到1、位置根本不是网上说的五分钟，至少开车15分钟；2、设施设备一般般，墙上发霉了，味道很大；3、周边环境就是农村，飞机噪音凌晨三点还有；4、服务态度很不好，订的豪华双人房，就是一般双人间，和图片严重不符，问为什么，回答就这样！太恶劣。总之不能看宣传，我都怀疑里边的很多好评是拖。不会住第二次",
+			"commentDateTime": "2017-02-25",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007oUAP.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007oWPe.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007oWPb.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007oUAS.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 4
+		}, {
+			"userName": "yocabe",
+			"userRank": 1,
+			"content": "差\n设施不行 周边荒凉 冲凉只有花洒 床上还有毛发…还吵 …不会住了",
+			"commentDateTime": "2017-02-25",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 2.2,
+			"travelType": 0
+		}, {
+			"userName": "好 好",
+			"userRank": 1,
+			"content": "卫生间都没。 这样的酒店有什么用",
+			"commentDateTime": "2017-02-23",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 3
+		}, {
+			"userName": "会员5393",
+			"userRank": 1,
+			"content": "没有洗手间，房间旧，水压低，没暖气",
+			"commentDateTime": "2017-02-23",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 2
+		}, {
+			"userName": "会员362124",
+			"userRank": 1,
+			"content": "那床又硬又有包  比木板还难睡   超级坑",
+			"commentDateTime": "2017-02-20",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 2
+		}, {
+			"userName": "会员811080",
+			"userRank": 1,
+			"content": "没有卫生间，难过难过难过",
+			"commentDateTime": "2017-02-18",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，您预订的房型是不带独立洗手间，网站房型信息有备注，给您带来的不便深感抱歉，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.0,
+			"travelType": 4
+		}, {
+			"userName": "会员7819",
+			"userRank": 1,
+			"content": "还行，酒店有机场专车接送，就是晚上热水不热",
+			"commentDateTime": "2017-02-18",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 2.8,
+			"travelType": 2
+		}, {
+			"userName": "会员0436",
+			"userRank": 3,
+			"content": "1，机场接机的姐姐，司机师傅人都很好，态度也很好，这里重点说下前台那个男服务员，态度真的超级差，而且业务能力也有点考究，几个人办理入住折腾了快一个小时，打电话要拖鞋什么的，都各种借口，说晚上都下班了，酒店没人，就他一个，然后对于各种问题就说就这样，没空之类的，一幅很嚣张的样子，估计是老板吧；\n2，订房的要注意，有的房间没有独立卫生间，事先根本不说清楚，你去了就会喊你加50块才会有独立卫生间的房间；\n3，房间设施一般，插头特别少，特别是床头居然没有插头。。。",
+			"commentDateTime": "2017-02-16",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.4,
+			"travelType": 5
+		}, {
+			"userName": "苏麻喇姑",
+			"userRank": 1,
+			"content": "正对大马路，车子吵死了",
+			"commentDateTime": "2017-02-15",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 2.6,
+			"travelType": 4
+		}, {
+			"userName": "会员2206",
+			"userRank": 3,
+			"content": "卫生工作有待提高，服务员与司机沟通能力一般",
+			"commentDateTime": "2017-02-14",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.4,
+			"travelType": 1
+		}, {
+			"userName": "会员7498",
+			"userRank": 3,
+			"content": "无语......................！",
+			"commentDateTime": "2017-02-14",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.2,
+			"travelType": 1
+		}, {
+			"userName": "会员138199",
+			"userRank": 1,
+			"content": "酒店明明没有入住却被确认入住了，也没有人打电话过来询问。无语…。态度问题。看评价住应该也好不到哪里去，谨慎选择",
+			"commentDateTime": "2017-02-14",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "会员0347",
+			"userRank": 1,
+			"content": "挨着公路，很吵，休息不好。热水器是即热的，很难满足两个人的洗浴。床硬且设施陈旧。性价比较低。唯一的好处是离机场近，接送服务还好。赶早班飞机是一个不错的选择",
+			"commentDateTime": "2017-02-13",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 2
+		}, {
+			"userName": "tom",
+			"userRank": 2,
+			"content": "Don't you know so if you Gabby has a quieter so see you by four will be out of",
+			"commentDateTime": "2017-02-13",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.4,
+			"travelType": 4
+		}, {
+			"userName": "会员0580",
+			"userRank": 2,
+			"content": "床单很脏，非常不满意，艺龙忽悠人 把这个酒店设为精选 一定要曝光",
+			"commentDateTime": "2017-02-12",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 3
+		}, {
+			"userName": "花花",
+			"userRank": 1,
+			"content": "真是最差的一次体验没有之一；1、多次电话确认接机服务均告之到达后10分钟内到，但是当天半夜让等了40分钟；2、设施很差，热水不热，几度的天气空调不开，吹风机坏的；3、服务很差，前台的人个个像**。真**坑",
+			"commentDateTime": "2017-02-11",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 1
+		}, {
+			"userName": "会员677479",
+			"userRank": 1,
+			"content": "不要捡便宜 空调空调坏的前台告诉我能开冷空调 这种天开冷空调？ 单人房变双床房 床头充电头都没有 床上还有头发丝 真是受不了 大半夜入住的 不然就退了",
+			"commentDateTime": "2017-02-11",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.2,
+			"travelType": 4
+		}, {
+			"userName": "会员121891",
+			"userRank": 1,
+			"content": "差到极点，卫生差，热水没有，连空调都没有，是我住过最差的垃圾酒店，只能一个字，差，两个字，极差，三个字，无极差，",
+			"commentDateTime": "2017-02-10",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 1
+		}, {
+			"userName": "会员698060",
+			"userRank": 1,
+			"content": "充电插座就一个，而且不在床边。淋浴水时而凉时而热的，",
+			"commentDateTime": "2017-02-10",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.8,
+			"travelType": 5
+		}, {
+			"userName": "会员989930",
+			"userRank": 1,
+			"content": "好差的服务，扣170当服务费。当天为什么不告诉我。操",
+			"commentDateTime": "2017-02-06",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 3
+		}, {
+			"userName": "会员1145",
+			"userRank": 1,
+			"content": "服了这个酒店了 现在有什么酒店不带洗手间 空调坏的 还说有洗手间的房间要加钱 真的是欺负人没住过酒店么？",
+			"commentDateTime": "2017-02-05",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 3
+		}, {
+			"userName": "残剑",
+			"userRank": 1,
+			"content": "这家酒店说是距离机场几百米，其实有好几公里，坑爹啊，然后接送车比较慢，不过据说是因为过年只有一个司机，也可以理解吧，前台办事效率太低了，搞了半天才办好入住，最后发现，明明订的是大床房，结果是个双床房，这办事真的是无语了。卫生还可以，除此之外好像没什么可说的，就那样吧，幸好有接送，不然根本没法找到酒店",
+			"commentDateTime": "2017-02-05",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.6,
+			"travelType": 2
+		}, {
+			"userName": "会员0517",
+			"userRank": 1,
+			"content": "可以接送机场这点很方便",
+			"commentDateTime": "2017-02-05",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.8,
+			"travelType": 1
+		}, {
+			"userName": "会员588744",
+			"userRank": 1,
+			"content": "这个酒店并不是网上显示的地点，要坐车走一段距离，说是专车接送，其实是一辆中巴等凑够人想才走，房间小，下水不好，配套设施少，全房竟然只有两个电源接口，其中一只还在卫生间，而且位置极其隐蔽，总之，这酒店不值得入住，给十星差评！",
+			"commentDateTime": "2017-02-03",
+			"largeImagePath": [],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.2,
+			"travelType": 1
+		}, {
+			"userName": "顽石",
+			"userRank": 1,
+			"content": "订酒店时显示的是可以免费取消，写明最晚入住时间是31号晚上12点左右，由于道路坍塌，31号的飞机赶不上中午就申请取消了。但酒店和艺龙网站都不予退款，全额收取房费。。。差评！！！",
+			"commentDateTime": "2017-02-03",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 5
+		}, {
+			"userName": "顽石",
+			"userRank": 1,
+			"content": "冬天里，酒店空调是坏的，也没有热水。还不接受退房。差评！！！",
+			"commentDateTime": "2017-02-03",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 5
+		}, {
+			"userName": "叶鹏",
+			"userRank": 1,
+			"content": "接机等太久，无线网络太差劲了",
+			"commentDateTime": "2017-02-02",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.0,
+			"travelType": 5
+		}, {
+			"userName": "hippo",
+			"userRank": 3,
+			"content": "还可以还可以还可以还可以",
+			"commentDateTime": "2017-02-02",
+			"largeImagePath": [],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 3
+		}, {
+			"userName": "会员733347",
+			"userRank": 1,
+			"content": "垃圾死了，收费还贵，人品还不行。",
+			"commentDateTime": "2017-02-02",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 5
+		}, {
+			"userName": "会员7958",
+			"userRank": 1,
+			"content": "酒店卫生间的抽水马桶响了一整夜，热水小得可怜。",
+			"commentDateTime": "2017-02-01",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 5
+		}, {
+			"userName": "rain",
+			"userRank": 3,
+			"content": "不是太好，虽有接送但设施，位置，特别是床太差",
+			"commentDateTime": "2017-02-01",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.6,
+			"travelType": 1
+		}, {
+			"userName": "长春飞哥",
+			"userRank": 2,
+			"content": "免费接机车来得太慢，打了若干电话，等待近一个小时，免费接机的车才到。机场到宾馆的车程在12分钟左右。",
+			"commentDateTime": "2017-01-30",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.8,
+			"travelType": 2
+		}, {
+			"userName": "会员4095",
+			"userRank": 1,
+			"content": "离机场5.2公里 艺龙地图有问题 8点不到去吃早饭 只有一点粥了 也没有在做的意思 \uD83D\uDE02\uD83D\uDE02\uD83D\uDE02再也不想来了",
+			"commentDateTime": "2017-01-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00077uR0.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.6,
+			"travelType": 5
+		}, {
+			"userName": "会员0039",
+			"userRank": 1,
+			"content": "到店后被要求加钱，可怕",
+			"commentDateTime": "2017-01-28",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 0
+		}, {
+			"userName": "stellaq",
+			"userRank": 3,
+			"content": "住了一次就不想住了。",
+			"commentDateTime": "2017-01-26",
+			"largeImagePath": [],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.2,
+			"travelType": 1
+		}, {
+			"userName": "会员3376",
+			"userRank": 1,
+			"content": "没有洗手间的，艺龙上没有标明啊，坑人啊！",
+			"commentDateTime": "2017-01-26",
+			"largeImagePath": [],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.2,
+			"travelType": 2
+		}, {
+			"userName": "会员9626",
+			"userRank": 1,
+			"content": "蚊子 隔音差 被子不干净",
+			"commentDateTime": "2017-01-26",
+			"largeImagePath": [],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.8,
+			"travelType": 5
+		}, {
+			"userName": "会员201454",
+			"userRank": 1,
+			"content": "效率还好，房间一般，服务也还行",
+			"commentDateTime": "2017-01-24",
+			"largeImagePath": [],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.8,
+			"travelType": 4
+		}
+	],
+	"commentScore": null,
+	"commentTags": null,
+	"commentCount": 1029,
+	"hotelId": null,
+	"commentType": null,
+	"goodCount": 0,
+	"badCount": 0,
+	"goodRate": null,
+	"channId": null,
+	"cardno": null,
+	"tjSwitch": 0,
+	"enableAjaxCall": null,
+	"orderNumber": 0,
+	"browseNumber": 0,
+	"customization": null,
+	"customizationStr": null,
+	"pageInfo": null,
+	"hiddenPhone": false,
+	"tsdScript": null,
+	"error": false
+}

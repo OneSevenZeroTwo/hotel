@@ -68,7 +68,7 @@
 				return scope.showBuy
 			},
 			buyContent(){
-				console.log(scope.buyContent)
+//				console.log(scope.buyContent)
 				return scope.buyContent
 			},
 			roomInfoName(){
@@ -81,7 +81,7 @@
 				scope.showBuy = false
 			},
 			book(){
-				console.log(111)
+				
 				location.href="#/buyCar/"+this.hotelId
 			}
 		},
