@@ -75,7 +75,8 @@ var routes = [{
 		path: '/buyCar/:id',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	}, {
+	},
+	{
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来
@@ -128,14 +129,14 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
 		isShowMask:false,
-		nameNum:["姓名，每间填1人"],
+		nameNum:[],
 		roomsNum:null,
 		timesNum:null,
 		telNum:"中国大陆：+86",
 		showBuy:false,
 		Mask:false,
 		buyContent:{},
-		roomInfoName:'',
+		roomInfoName:'7天连锁酒店(广州天河客运站二店)',
 
 	},
 	getters: {

@@ -1134,6 +1134,50 @@ function updateLink (link, options, obj) {
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(117)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(119),
+  /* template */
+  __webpack_require__(120),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\xback.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xback.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-444b2546", Component.options)
+  } else {
+    hotAPI.reload("data-v-444b2546", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
@@ -10306,7 +10350,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10499,7 +10543,7 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10589,51 +10633,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 });
 
 module.exports = defaults;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(117)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(119),
-  /* template */
-  __webpack_require__(120),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\xback.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xback.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-71ad22b1", Component.options)
-  } else {
-    hotAPI.reload("data-v-71ad22b1", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
 /* 9 */
@@ -10837,7 +10837,7 @@ module.exports = function xhrAdapter(config) {
     request.send(requestData);
   });
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
 /* 12 */
@@ -16021,7 +16021,7 @@ __webpack_require__(18);
 
 __webpack_require__(24);
 
-var _vue = __webpack_require__(5);
+var _vue = __webpack_require__(6);
 
 var _vue2 = _interopRequireDefault(_vue);
 
@@ -16071,15 +16071,15 @@ var _buyCar = __webpack_require__(127);
 
 var _buyCar2 = _interopRequireDefault(_buyCar);
 
-var _mySelf = __webpack_require__(192);
+var _mySelf = __webpack_require__(203);
 
 var _mySelf2 = _interopRequireDefault(_mySelf);
 
-var _home = __webpack_require__(197);
+var _home = __webpack_require__(208);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _list = __webpack_require__(230);
+var _list = __webpack_require__(241);
 
 var _list2 = _interopRequireDefault(_list);
 
@@ -16197,8 +16197,10 @@ var store = new _vuex2.default.Store({
 		detailNews: null,
 		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg", "//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"],
 		isShowMask: false,
+		nameNum: [],
 		roomsNum: null,
 		timesNum: null,
+		telNum: "中国大陆：+86",
 		showBuy: false,
 		Mask: false,
 		buyContent: {},
@@ -16269,8 +16271,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!./iconfont.css", function() {
-			var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js!./iconfont.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./iconfont.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./iconfont.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -16427,8 +16429,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js!./animate.css", function() {
-			var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js!./animate.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!./animate.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!./animate.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -18825,7 +18827,7 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
 /* 28 */
@@ -19688,7 +19690,7 @@ module.exports = __webpack_require__(30);
 var utils = __webpack_require__(3);
 var bind = __webpack_require__(10);
 var Axios = __webpack_require__(32);
-var defaults = __webpack_require__(7);
+var defaults = __webpack_require__(8);
 
 /**
  * Create an instance of Axios
@@ -19772,7 +19774,7 @@ function isSlowBuffer(obj) {
 "use strict";
 
 
-var defaults = __webpack_require__(7);
+var defaults = __webpack_require__(8);
 var utils = __webpack_require__(3);
 var InterceptorManager = __webpack_require__(41);
 var dispatchRequest = __webpack_require__(42);
@@ -20278,7 +20280,7 @@ module.exports = InterceptorManager;
 var utils = __webpack_require__(3);
 var transformData = __webpack_require__(43);
 var isCancel = __webpack_require__(13);
-var defaults = __webpack_require__(7);
+var defaults = __webpack_require__(8);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -20548,7 +20550,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\node_modules\\_vue-awesome-swiper@2.5.4@vue-awesome-swiper\\swiper.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\node_modules\\vue-awesome-swiper\\swiper.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] swiper.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20559,9 +20561,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2caaca3d", Component.options)
+    hotAPI.createRecord("data-v-1800927c", Component.options)
   } else {
-    hotAPI.reload("data-v-2caaca3d", Component.options)
+    hotAPI.reload("data-v-1800927c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -20680,8 +20682,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../_css-loader@0.28.4@css-loader/index.js!./swiper.css", function() {
-			var newContent = require("!!../../../_css-loader@0.28.4@css-loader/index.js!./swiper.css");
+		module.hot.accept("!!../../../../../css-loader/index.js!./swiper.css", function() {
+			var newContent = require("!!../../../../../css-loader/index.js!./swiper.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -20719,7 +20721,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2caaca3d", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1800927c", module.exports)
   }
 }
 
@@ -20740,7 +20742,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\node_modules\\_vue-awesome-swiper@2.5.4@vue-awesome-swiper\\slide.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\node_modules\\vue-awesome-swiper\\slide.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] slide.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20751,9 +20753,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5523aafc", Component.options)
+    hotAPI.createRecord("data-v-7226cc52", Component.options)
   } else {
-    hotAPI.reload("data-v-5523aafc", Component.options)
+    hotAPI.reload("data-v-7226cc52", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -20828,7 +20830,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5523aafc", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7226cc52", module.exports)
   }
 }
 
@@ -31109,7 +31111,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * Released under the MIT License.
  */
 !function (t, e) {
-  "object" == ( false ? "undefined" : _typeof(exports)) && "object" == ( false ? "undefined" : _typeof(module)) ? module.exports = e(__webpack_require__(5)) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(5)], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+  "object" == ( false ? "undefined" : _typeof(exports)) && "object" == ( false ? "undefined" : _typeof(module)) ? module.exports = e(__webpack_require__(6)) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(6)], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : "object" == (typeof exports === "undefined" ? "undefined" : _typeof(exports)) ? exports.MuseUI = e(require("vue")) : t.MuseUI = e(t.Vue);
@@ -37139,8 +37141,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../_css-loader@0.28.4@css-loader/index.js!./muse-ui.css", function() {
-			var newContent = require("!!../../_css-loader@0.28.4@css-loader/index.js!./muse-ui.css");
+		module.hot.accept("!!../../css-loader/index.js!./muse-ui.css", function() {
+			var newContent = require("!!../../css-loader/index.js!./muse-ui.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -37184,7 +37186,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\detail.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\detail.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] detail.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37195,9 +37197,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-72033688", Component.options)
+    hotAPI.createRecord("data-v-717dd598", Component.options)
   } else {
-    hotAPI.reload("data-v-72033688", Component.options)
+    hotAPI.reload("data-v-717dd598", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -37218,13 +37220,13 @@ var content = __webpack_require__(64);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("f02bb63c", content, false);
+var update = __webpack_require__(2)("49b101c0", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72033688\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./detail.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-72033688\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./detail.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./detail.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-717dd598\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./detail.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37242,7 +37244,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.pages .page .page-content{\n\tbackground: #fff;\n}\n..newdetailhsize .toptitle{\n\tborder-bottom: none;\n}\n\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/routes/detail.vue?616d3982"],"names":[],"mappings":";AA0DA;CACA,iBAAA;CACA;AACA;CACA,oBAAA;CACA","file":"detail.vue","sourcesContent":["<template>\r\n\t<div class=\"pages\">\r\n\t\t<div data-blend=\"layer\" class=\"page page-on-center\"  style=\"top: 0px; left: 0px; right: 0px; bottom: 0px;\">\r\n\t\t\t<xheader></xheader>\r\n\r\n\t\t\t<div class=\"page-content new_detailst mvt_161125\">\r\n\t\t\t\t<section class=\"detail-main detail-mainNew\" style=\"overflow: visible;\">\r\n\t\t\t\t\t<!--轮播，地图，评论-->\r\n\t\t\t\t\t<xinfo></xinfo>\r\n\t\t\t\t\t<!--日期-->\r\n\t\t\t\t\t<xdate></xdate>\r\n\t\t\t\t\t<!--房间类型-->\r\n\t\t\t\t\t<xroomtype></xroomtype>\r\n\t\t\t\t\t<!--酒店设施，隐藏的-->\r\n\t\t\t\t\t<xfacilities></xfacilities>\r\n\t\t\t\t\t\r\n\t\t\t\t</section>\r\n\t\t\t\t\r\n\t\t\t\t<!--历史浏览记录-->\r\n\t\t\t\t<xhistory></xhistory>\r\n\t\t\t\t\r\n\t\t\t\t<!--footer-->\r\n\t\t\t\t<xfooter></xfooter>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<xbuy></xbuy>\r\n\t\t\t<xmask></xmask>\r\n\t\t</div>\r\n\t</div>\t\t\t\t\r\n</template>\r\n\r\n<script>\r\n\timport xheader from \"../detailcomponents/xheader.vue\"\r\n\timport xinfo from \"../detailcomponents/xinfo.vue\"\r\n\timport xdate from \"../detailcomponents/xdate.vue\"\r\n\timport xroomtype from \"../detailcomponents/xroomtype.vue\"\r\n\timport xfacilities from \"../detailcomponents/xfacilities.vue\"\r\n\timport xhistory from \"../detailcomponents/xhistory.vue\"\r\n\timport xfooter from \"../detailcomponents/xfooter.vue\"\r\n\timport xbuy from \"../detailcomponents/xbuy.vue\"\r\n\timport xmask from \"../detailcomponents/xmask.vue\"\r\n\texport default {\r\n\t\tcomponents: {\r\n\t\t\txheader,\r\n\t\t\txinfo,\r\n\t\t\txdate,\r\n\t\t\txroomtype,\r\n\t\t\txfacilities,\r\n\t\t\txhistory,\t\r\n\t\t\txfooter,\r\n\t\t\txbuy,\r\n\t\t\txmask\r\n\t\t\t\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.pages .page .page-content{\r\n\t\tbackground: #fff;\r\n\t}\r\n\t..newdetailhsize .toptitle{\r\n\t\tborder-bottom: none;\r\n\t}\r\n\t\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.pages .page .page-content{\n\tbackground: #fff;\n}\n..newdetailhsize .toptitle{\n\tborder-bottom: none;\n}\n\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/detail.vue?616d3982"],"names":[],"mappings":";AA0DA;CACA,iBAAA;CACA;AACA;CACA,oBAAA;CACA","file":"detail.vue","sourcesContent":["<template>\r\n\t<div class=\"pages\">\r\n\t\t<div data-blend=\"layer\" class=\"page page-on-center\"  style=\"top: 0px; left: 0px; right: 0px; bottom: 0px;\">\r\n\t\t\t<xheader></xheader>\r\n\r\n\t\t\t<div class=\"page-content new_detailst mvt_161125\">\r\n\t\t\t\t<section class=\"detail-main detail-mainNew\" style=\"overflow: visible;\">\r\n\t\t\t\t\t<!--轮播，地图，评论-->\r\n\t\t\t\t\t<xinfo></xinfo>\r\n\t\t\t\t\t<!--日期-->\r\n\t\t\t\t\t<xdate></xdate>\r\n\t\t\t\t\t<!--房间类型-->\r\n\t\t\t\t\t<xroomtype></xroomtype>\r\n\t\t\t\t\t<!--酒店设施，隐藏的-->\r\n\t\t\t\t\t<xfacilities></xfacilities>\r\n\t\t\t\t\t\r\n\t\t\t\t</section>\r\n\t\t\t\t\r\n\t\t\t\t<!--历史浏览记录-->\r\n\t\t\t\t<xhistory></xhistory>\r\n\t\t\t\t\r\n\t\t\t\t<!--footer-->\r\n\t\t\t\t<xfooter></xfooter>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t\t<xbuy></xbuy>\r\n\t\t\t<xmask></xmask>\r\n\t\t</div>\r\n\t</div>\t\t\t\t\r\n</template>\r\n\r\n<script>\r\n\timport xheader from \"../detailcomponents/xheader.vue\"\r\n\timport xinfo from \"../detailcomponents/xinfo.vue\"\r\n\timport xdate from \"../detailcomponents/xdate.vue\"\r\n\timport xroomtype from \"../detailcomponents/xroomtype.vue\"\r\n\timport xfacilities from \"../detailcomponents/xfacilities.vue\"\r\n\timport xhistory from \"../detailcomponents/xhistory.vue\"\r\n\timport xfooter from \"../detailcomponents/xfooter.vue\"\r\n\timport xbuy from \"../detailcomponents/xbuy.vue\"\r\n\timport xmask from \"../detailcomponents/xmask.vue\"\r\n\texport default {\r\n\t\tcomponents: {\r\n\t\t\txheader,\r\n\t\t\txinfo,\r\n\t\t\txdate,\r\n\t\t\txroomtype,\r\n\t\t\txfacilities,\r\n\t\t\txhistory,\t\r\n\t\t\txfooter,\r\n\t\t\txbuy,\r\n\t\t\txmask\r\n\t\t\t\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\t.pages .page .page-content{\r\n\t\tbackground: #fff;\r\n\t}\r\n\t..newdetailhsize .toptitle{\r\n\t\tborder-bottom: none;\r\n\t}\r\n\t\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -37397,7 +37399,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xheader.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37408,9 +37410,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-001378bb", Component.options)
+    hotAPI.createRecord("data-v-2b79f68f", Component.options)
   } else {
-    hotAPI.reload("data-v-001378bb", Component.options)
+    hotAPI.reload("data-v-2b79f68f", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -37431,13 +37433,13 @@ var content = __webpack_require__(69);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("1567f8ba", content, false);
+var update = __webpack_require__(2)("45244757", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-001378bb\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-001378bb\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2b79f68f\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2b79f68f\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37513,7 +37515,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-001378bb", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2b79f68f", module.exports)
   }
 }
 
@@ -37538,7 +37540,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xinfo.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xinfo.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xinfo.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37549,9 +37551,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fe9ce048", Component.options)
+    hotAPI.createRecord("data-v-dcf51aa0", Component.options)
   } else {
-    hotAPI.reload("data-v-fe9ce048", Component.options)
+    hotAPI.reload("data-v-dcf51aa0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -37572,13 +37574,13 @@ var content = __webpack_require__(74);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("aa435b38", content, false);
+var update = __webpack_require__(2)("703a1cd3", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fe9ce048\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xinfo.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fe9ce048\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xinfo.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dcf51aa0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xinfo.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dcf51aa0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xinfo.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -37880,7 +37882,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-fe9ce048", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-dcf51aa0", module.exports)
   }
 }
 
@@ -37905,7 +37907,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xdate.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xdate.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xdate.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -37916,9 +37918,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3e1cca48", Component.options)
+    hotAPI.createRecord("data-v-1c7504a0", Component.options)
   } else {
-    hotAPI.reload("data-v-3e1cca48", Component.options)
+    hotAPI.reload("data-v-1c7504a0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -37939,13 +37941,13 @@ var content = __webpack_require__(79);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("08c34ed6", content, false);
+var update = __webpack_require__(2)("48833ee9", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e1cca48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xdate.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e1cca48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xdate.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c7504a0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xdate.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c7504a0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xdate.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38072,7 +38074,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3e1cca48", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1c7504a0", module.exports)
   }
 }
 
@@ -38097,7 +38099,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xroomtype.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xroomtype.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xroomtype.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38108,9 +38110,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1d1d617a", Component.options)
+    hotAPI.createRecord("data-v-45a0afd2", Component.options)
   } else {
-    hotAPI.reload("data-v-1d1d617a", Component.options)
+    hotAPI.reload("data-v-45a0afd2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38131,13 +38133,13 @@ var content = __webpack_require__(84);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("b5ec08ec", content, false);
+var update = __webpack_require__(2)("78bb65a2", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d1d617a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xroomtype.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1d1d617a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xroomtype.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-45a0afd2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xroomtype.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-45a0afd2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xroomtype.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38560,7 +38562,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1d1d617a", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-45a0afd2", module.exports)
   }
 }
 
@@ -38585,7 +38587,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xfacilities.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xfacilities.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfacilities.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38596,9 +38598,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1a00b8a2", Component.options)
+    hotAPI.createRecord("data-v-2ee9d0fa", Component.options)
   } else {
-    hotAPI.reload("data-v-1a00b8a2", Component.options)
+    hotAPI.reload("data-v-2ee9d0fa", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38619,13 +38621,13 @@ var content = __webpack_require__(89);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("75f3bf1c", content, false);
+var update = __webpack_require__(2)("5155edfe", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1a00b8a2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfacilities.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1a00b8a2\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfacilities.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2ee9d0fa\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfacilities.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2ee9d0fa\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfacilities.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38723,7 +38725,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1a00b8a2", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2ee9d0fa", module.exports)
   }
 }
 
@@ -38748,7 +38750,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xhistory.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xhistory.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xhistory.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38759,9 +38761,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-593b0454", Component.options)
+    hotAPI.createRecord("data-v-14cbba82", Component.options)
   } else {
-    hotAPI.reload("data-v-593b0454", Component.options)
+    hotAPI.reload("data-v-14cbba82", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38782,13 +38784,13 @@ var content = __webpack_require__(94);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("f7af54e8", content, false);
+var update = __webpack_require__(2)("2f716671", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-593b0454\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xhistory.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-593b0454\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xhistory.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-14cbba82\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xhistory.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-14cbba82\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xhistory.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -38901,7 +38903,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-593b0454", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-14cbba82", module.exports)
   }
 }
 
@@ -38926,7 +38928,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xfooter.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xfooter.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfooter.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -38937,9 +38939,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-423dd66e", Component.options)
+    hotAPI.createRecord("data-v-0a47929d", Component.options)
   } else {
-    hotAPI.reload("data-v-423dd66e", Component.options)
+    hotAPI.reload("data-v-0a47929d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -38960,13 +38962,13 @@ var content = __webpack_require__(99);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("f630c482", content, false);
+var update = __webpack_require__(2)("891f4cde", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-423dd66e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfooter.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-423dd66e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfooter.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0a47929d\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfooter.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0a47929d\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfooter.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39039,7 +39041,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-423dd66e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0a47929d", module.exports)
   }
 }
 
@@ -39064,7 +39066,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xbuy.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xbuy.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xbuy.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -39075,9 +39077,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5f6e9870", Component.options)
+    hotAPI.createRecord("data-v-e279b318", Component.options)
   } else {
-    hotAPI.reload("data-v-5f6e9870", Component.options)
+    hotAPI.reload("data-v-e279b318", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -39098,13 +39100,13 @@ var content = __webpack_require__(104);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("19018abc", content, false);
+var update = __webpack_require__(2)("6d41b573", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5f6e9870\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xbuy.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5f6e9870\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xbuy.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e279b318\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xbuy.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e279b318\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xbuy.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39122,7 +39124,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\nscrollbar{\n\t/*隐藏滚轮*/\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/detailcomponents/xbuy.vue?059ad084"],"names":[],"mappings":";AA4FA;CACA,QAAA;CACA,cAAA;CACA","file":"xbuy.vue","sourcesContent":["<template>\r\n\t<div :class=\"['type-pop-box','roomDetailInfo','newdetailhsize','plugin-inited',{'box-active':showBuying},{'plugin-show':showBuying}]\">\r\n\t\t<div class=\"head\"><span><i class=\"icon-cross\"></i></span></div>\r\n\t\t<div class=\"toptitle\">\r\n\t\t\t<p><span class=\"htitle\">{{roomInfoName}}</span><em><span class=\"rpName\">不含早</span><span class=\"rpSubName\" style=\"display: inline-block;\">含交通优惠</span></em></p>\r\n\t\t\t<div class=\"htclose\"><i @click=\"close()\"></i></div>\r\n\t\t</div>\r\n\t\t<div class=\"wrap page-content more\" style=\"\">\r\n\t\t\t<div class=\"pic\"><img src=\"//m.elongstatic.com/static/webapp/hotel/2015/06/v2/img/room_type_default.png\" defuat-pic=\"true\">\r\n\t\t\t\t<div class=\"swiper-lazy-preloader\" style=\"display: none;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"info\">\r\n\t\t\t\t<p class=\"name\">商务大床房(有窗)</p>\r\n\t\t\t\t<p class=\"brackfast\">不含早</p>\r\n\t\t\t\t<p class=\"canceltype\">付费取消</p>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"type-list\">\r\n\t\t\t\t<p class=\"faclist faclistOrigin\"> \r\n\t\t\t\t\t<span v-for=\"(n,idx) in buyContent.additionInfoList\">\r\n\t\t\t\t\t\t<i :class=\"'detail_fac_v'+idx\"></i>\r\n\t\t\t\t\t\t{{n.content}}\r\n\t\t\t\t\t</span>\r\n\t\t\t\t</p>\r\n\t\t\t\t<!--<p class=\"tip\">\r\n\t\t\t\t\t<p class=\"clearfix \"><span class=\"dct_tit\">内宾：</span><span class=\"dct_txt\">须持大陆身份证入住。</span></p>\r\n\t\t\t\t</p>-->\r\n\t\t\t</div>\r\n\t\t\t<div class=\"discount bookNotes\">\r\n\t\t\t\t<div class=\"titletips\">预订须知</div>\r\n\t\t\t\t<div class=\"tips\">\r\n\t\t\t\t\t<p class=\"clearfix \"><span class=\"dct_tit\">预付：</span><span class=\"dct_txt\">预订酒店后立即向艺龙在线支付房费。</span></p>\r\n\t\t\t\t\t<p class=\"clearfix canceltype\"><span class=\"dct_tit\">付费取消：</span><span class=\"dct_txt\">{{buyContent.cancelMsg}}</span></p>\r\n\t\t\t\t\t<p class=\"clearfix \"><span class=\"dct_tit\">加床：</span><span class=\"dct_txt\">{{buyContent.extraBedInfo}}</span></p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"discount u-bt reservationBooking\">\r\n\t\t\t\t<div class=\"titletips\">预订专享</div>\r\n\t\t\t\t<div class=\"tags\">\r\n\t\t\t\t\t<p class=\"clearfix \" v-for=\"a in buyContent.tags\"><span class=\"dct_tit\" :style=\"{color:'#ff5555',borderColor:'#ff5555'}\">{{a.name}}</span><span class=\"dct_txt\" v-html=\"a.description\"></span></p>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"new_box\"></div>\r\n\t\t</div>\r\n\t\t<div class=\"bd bottom_price\">\r\n\t\t\t<div class=\"left\">\r\n\t\t\t\t<div class=\"table-cell\">\r\n\t\t\t\t\t<div class=\"price\"><span class=\"ce65\">￥<span>{{buyContent.averagePriceSubTotal}}</span><span class=\"hour\" style=\"display: none;\">178</span></span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"back\"><span class=\"ce65 coupon\" style=\"display: none;\"></span> <span class=\"ce65 hongbao\" style=\"display: none;\"></span><span class=\"c999 officehours\" style=\"display: none;\"></span></div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"right book tjclick\" @click=\"book()\">立即预订</div>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata(){\r\n\t\t\treturn{\r\n\t\t\t\t//模拟调试id\r\n\t\t\t\thotelId:90893577\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tshowBuying() {\r\n\t\t\t\treturn scope.showBuy\r\n\t\t\t},\r\n\t\t\tbuyContent(){\r\n\t\t\t\tconsole.log(scope.buyContent)\r\n\t\t\t\treturn scope.buyContent\r\n\t\t\t},\r\n\t\t\troomInfoName(){\r\n\t\t\t\treturn scope.roomInfoName\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tclose() {\r\n\t\t\t\tscope.Mask = false\r\n\t\t\t\tscope.showBuy = false\r\n\t\t\t},\r\n\t\t\tbook(){\r\n\t\t\t\tconsole.log(111)\r\n\t\t\t\tlocation.href=\"#/buyCar/\"+this.hotelId\r\n\t\t\t}\r\n\t\t},\r\n\t\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\tscrollbar{\r\n\t\t/*隐藏滚轮*/\r\n\t\tdisplay: none;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\nscrollbar{\n\t/*隐藏滚轮*/\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/detailcomponents/xbuy.vue?059ad084"],"names":[],"mappings":";AA4FA;CACA,QAAA;CACA,cAAA;CACA","file":"xbuy.vue","sourcesContent":["<template>\r\n\t<div :class=\"['type-pop-box','roomDetailInfo','newdetailhsize','plugin-inited',{'box-active':showBuying},{'plugin-show':showBuying}]\">\r\n\t\t<div class=\"head\"><span><i class=\"icon-cross\"></i></span></div>\r\n\t\t<div class=\"toptitle\">\r\n\t\t\t<p><span class=\"htitle\">{{roomInfoName}}</span><em><span class=\"rpName\">不含早</span><span class=\"rpSubName\" style=\"display: inline-block;\">含交通优惠</span></em></p>\r\n\t\t\t<div class=\"htclose\"><i @click=\"close()\"></i></div>\r\n\t\t</div>\r\n\t\t<div class=\"wrap page-content more\" style=\"\">\r\n\t\t\t<div class=\"pic\"><img src=\"//m.elongstatic.com/static/webapp/hotel/2015/06/v2/img/room_type_default.png\" defuat-pic=\"true\">\r\n\t\t\t\t<div class=\"swiper-lazy-preloader\" style=\"display: none;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"info\">\r\n\t\t\t\t<p class=\"name\">商务大床房(有窗)</p>\r\n\t\t\t\t<p class=\"brackfast\">不含早</p>\r\n\t\t\t\t<p class=\"canceltype\">付费取消</p>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"type-list\">\r\n\t\t\t\t<p class=\"faclist faclistOrigin\"> \r\n\t\t\t\t\t<span v-for=\"(n,idx) in buyContent.additionInfoList\">\r\n\t\t\t\t\t\t<i :class=\"'detail_fac_v'+idx\"></i>\r\n\t\t\t\t\t\t{{n.content}}\r\n\t\t\t\t\t</span>\r\n\t\t\t\t</p>\r\n\t\t\t\t<!--<p class=\"tip\">\r\n\t\t\t\t\t<p class=\"clearfix \"><span class=\"dct_tit\">内宾：</span><span class=\"dct_txt\">须持大陆身份证入住。</span></p>\r\n\t\t\t\t</p>-->\r\n\t\t\t</div>\r\n\t\t\t<div class=\"discount bookNotes\">\r\n\t\t\t\t<div class=\"titletips\">预订须知</div>\r\n\t\t\t\t<div class=\"tips\">\r\n\t\t\t\t\t<p class=\"clearfix \"><span class=\"dct_tit\">预付：</span><span class=\"dct_txt\">预订酒店后立即向艺龙在线支付房费。</span></p>\r\n\t\t\t\t\t<p class=\"clearfix canceltype\"><span class=\"dct_tit\">付费取消：</span><span class=\"dct_txt\">{{buyContent.cancelMsg}}</span></p>\r\n\t\t\t\t\t<p class=\"clearfix \"><span class=\"dct_tit\">加床：</span><span class=\"dct_txt\">{{buyContent.extraBedInfo}}</span></p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"discount u-bt reservationBooking\">\r\n\t\t\t\t<div class=\"titletips\">预订专享</div>\r\n\t\t\t\t<div class=\"tags\">\r\n\t\t\t\t\t<p class=\"clearfix \" v-for=\"a in buyContent.tags\"><span class=\"dct_tit\" :style=\"{color:'#ff5555',borderColor:'#ff5555'}\">{{a.name}}</span><span class=\"dct_txt\" v-html=\"a.description\"></span></p>\r\n\t\t\t\t\t\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"new_box\"></div>\r\n\t\t</div>\r\n\t\t<div class=\"bd bottom_price\">\r\n\t\t\t<div class=\"left\">\r\n\t\t\t\t<div class=\"table-cell\">\r\n\t\t\t\t\t<div class=\"price\"><span class=\"ce65\">￥<span>{{buyContent.averagePriceSubTotal}}</span><span class=\"hour\" style=\"display: none;\">178</span></span>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"back\"><span class=\"ce65 coupon\" style=\"display: none;\"></span> <span class=\"ce65 hongbao\" style=\"display: none;\"></span><span class=\"c999 officehours\" style=\"display: none;\"></span></div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"right book tjclick\" @click=\"book()\">立即预订</div>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata(){\r\n\t\t\treturn{\r\n\t\t\t\t//模拟调试id\r\n\t\t\t\thotelId:90893577\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tshowBuying() {\r\n\t\t\t\treturn scope.showBuy\r\n\t\t\t},\r\n\t\t\tbuyContent(){\r\n\t\t\t\tconsole.log(scope.buyContent)\r\n\t\t\t\treturn scope.buyContent\r\n\t\t\t},\r\n\t\t\troomInfoName(){\r\n\t\t\t\treturn scope.roomInfoName\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tclose() {\r\n\t\t\t\tscope.Mask = false\r\n\t\t\t\tscope.showBuy = false\r\n\t\t\t},\r\n\t\t\tbook(){\r\n\t\t\t\tconsole.log(111)\r\n\t\t\t\tlocation.href=\"#/buyCar/\"+this.hotelId\r\n\t\t\t}\r\n\t\t},\r\n\t\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\tscrollbar{\r\n\t\t/*隐藏滚轮*/\r\n\t\tdisplay: none;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -39396,7 +39398,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5f6e9870", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-e279b318", module.exports)
   }
 }
 
@@ -39421,7 +39423,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\detailcomponents\\xmask.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\detailcomponents\\xmask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xmask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -39432,9 +39434,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-f30839cc", Component.options)
+    hotAPI.createRecord("data-v-d1607424", Component.options)
   } else {
-    hotAPI.reload("data-v-f30839cc", Component.options)
+    hotAPI.reload("data-v-d1607424", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -39455,13 +39457,13 @@ var content = __webpack_require__(109);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5e9d483a", content, false);
+var update = __webpack_require__(2)("3e6306ee", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f30839cc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f30839cc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d1607424\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d1607424\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39540,7 +39542,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f30839cc", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-d1607424", module.exports)
   }
 }
 
@@ -39575,7 +39577,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-72033688", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-717dd598", module.exports)
   }
 }
 
@@ -39596,11 +39598,11 @@ var Component = __webpack_require__(0)(
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-90a16fcc",
+  "data-v-961fa874",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\register.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\register.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -39611,9 +39613,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-90a16fcc", Component.options)
+    hotAPI.createRecord("data-v-961fa874", Component.options)
   } else {
-    hotAPI.reload("data-v-90a16fcc", Component.options)
+    hotAPI.reload("data-v-961fa874", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -39634,13 +39636,13 @@ var content = __webpack_require__(115);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("faf83b52", content, false);
+var update = __webpack_require__(2)("5ef3af10", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-90a16fcc\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./register.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-90a16fcc\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./register.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./register.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-961fa874\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./register.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39658,7 +39660,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-90a16fcc] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-90a16fcc] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-90a16fcc]{\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-90a16fcc] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-90a16fcc] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 70px;\n\tfont-size: 12px;\n}\n.demo-snackbar-button[data-v-90a16fcc] {\n\tmargin: 12px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/routes/register.vue?415f7fd6"],"names":[],"mappings":";AAmHA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AACA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA,gBAAA;CACA;AACA;CACA,aAAA;CACA","file":"register.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<h2>注册艺龙会员</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='注册成功'?'注册成功':'用户名已被注册'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<mu-raised-button @click=\"register()\" label=\"注册并登录\" class=\"demo-raised-button\" :disabled=\"!isChecking\" primary/>\r\n\t\t<a href=\"#/login\" class=\"register\">  <mu-flat-button label=\"登录\" class=\"demo-flat-button\" primary/></a>\r\n\t\t\r\n\t\t<p class=\"bottom\">\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" v-model=\"isChecking\" :value=\"!isChecking\"> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">同意艺龙旅行网服务条款</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" checked> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">授权艺龙发送优惠促销短信</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\r\n\t\t\t\r\n\t\t</p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from\"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tisChecking: true,\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tregister() {\r\n\t\t\t\tconsole.log(this.username, this.password, this.$ajax)\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/register\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tthis.data=res.data\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\tif(res.data == \"注册成功\") {\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t//用户信息\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tisLogin(){\r\n\t\t\t\treturn this.$store.state.isLogin\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomponents:{\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t.register{\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 70px;\r\n\t\tfont-size: 12px;\r\n\t}\r\n\t.demo-snackbar-button {\r\n\t\tmargin: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.content[data-v-961fa874] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-961fa874] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-961fa874]{\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-961fa874] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-961fa874] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 70px;\n\tfont-size: 12px;\n}\n.demo-snackbar-button[data-v-961fa874] {\n\tmargin: 12px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/register.vue?415f7fd6"],"names":[],"mappings":";AAmHA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AACA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA,gBAAA;CACA;AACA;CACA,aAAA;CACA","file":"register.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<h2>注册艺龙会员</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='注册成功'?'注册成功':'用户名已被注册'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<mu-raised-button @click=\"register()\" label=\"注册并登录\" class=\"demo-raised-button\" :disabled=\"!isChecking\" primary/>\r\n\t\t<a href=\"#/login\" class=\"register\">  <mu-flat-button label=\"登录\" class=\"demo-flat-button\" primary/></a>\r\n\t\t\r\n\t\t<p class=\"bottom\">\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" v-model=\"isChecking\" :value=\"!isChecking\"> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">同意艺龙旅行网服务条款</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\t\t\t<label data-v-90a16fcc=\"\" class=\"mu-checkbox demo-checkbox\" value=\"true\">\r\n\t\t\t\t<input type=\"checkbox\" checked> \r\n\t\t\t\t<div class=\"mu-checkbox-wrapper\">\r\n\t\t\t\t\t<div class=\"mu-ripple-wrapper mu-checkbox-ripple-wrapper\"></div> \r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<!----> <div class=\"mu-checkbox-icon\">\r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-uncheck mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\"></path>\r\n\t\t\t\t\t\t</svg> \r\n\t\t\t\t\t\t<svg viewBox=\"0 0 24 24\" class=\"mu-checkbox-icon-checked mu-checkbox-svg-icon\">\r\n\t\t\t\t\t\t\t<path d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\"></path>\r\n\t\t\t\t\t\t</svg> <!----> <!----></div> \r\n\t\t\t\t\t\t<div class=\"mu-checkbox-label\">授权艺龙发送优惠促销短信</div></div> <!---->\r\n\t\t\t</label> <br/>\r\n\r\n\t\t\t\r\n\t\t</p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from\"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tisChecking: true,\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tregister() {\r\n\t\t\t\tconsole.log(this.username, this.password, this.$ajax)\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/register\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tthis.data=res.data\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\tif(res.data == \"注册成功\") {\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t//用户信息\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomputed:{\r\n\t\t\tisLogin(){\r\n\t\t\t\treturn this.$store.state.isLogin\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomponents:{\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t.register{\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 70px;\r\n\t\tfont-size: 12px;\r\n\t}\r\n\t.demo-snackbar-button {\r\n\t\tmargin: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -39674,7 +39676,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xback = __webpack_require__(8);
+var _xback = __webpack_require__(5);
 
 var _xback2 = _interopRequireDefault(_xback);
 
@@ -39803,13 +39805,13 @@ var content = __webpack_require__(118);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6ab1aed8", content, false);
+var update = __webpack_require__(2)("3c9adf27", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-71ad22b1\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xback.vue", function() {
-     var newContent = require("!!../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-71ad22b1\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xback.vue");
+   module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-444b2546\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xback.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-444b2546\",\"scoped\":false,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xback.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -39827,7 +39829,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.back {\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n\tz-index: 99999;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/xback.vue?1f69e3ee"],"names":[],"mappings":";AAsBA;CACA,gBAAA;CACA,SAAA;CACA,UAAA;CACA,eAAA;CACA","file":"xback.vue","sourcesContent":["<template>\r\n\t<div class=\"back\">\r\n\t\t<mu-icon-button @click=\"back()\" icon=\"keyboard_arrow_left\" />\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmethods: {\r\n\t\t\tback() {\r\n\t\t\t\tsetTimeout(()=>{\r\n\t\t\t\t\tconsole.log('返回')\r\n\t\t\t\t\twindow.history.back()\r\n\t\t\t\t\t\r\n\t\t\t\t},300)\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\r\n\t.back {\r\n\t\tposition: fixed;\r\n\t\ttop: 0px;\r\n\t\tleft: 0px;\r\n\t\tz-index: 99999;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.back {\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n\tz-index: 99999;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/xback.vue?1f69e3ee"],"names":[],"mappings":";AAsBA;CACA,gBAAA;CACA,SAAA;CACA,UAAA;CACA,eAAA;CACA","file":"xback.vue","sourcesContent":["<template>\r\n\t<div class=\"back\">\r\n\t\t<mu-icon-button @click=\"back()\" icon=\"keyboard_arrow_left\" />\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmethods: {\r\n\t\t\tback() {\r\n\t\t\t\tsetTimeout(()=>{\r\n\t\t\t\t\tconsole.log('返回')\r\n\t\t\t\t\twindow.history.back()\r\n\t\t\t\t\t\r\n\t\t\t\t},300)\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\r\n\t.back {\r\n\t\tposition: fixed;\r\n\t\ttop: 0px;\r\n\t\tleft: 0px;\r\n\t\tz-index: 99999;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -39882,7 +39884,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-71ad22b1", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-444b2546", module.exports)
   }
 }
 
@@ -40060,7 +40062,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-90a16fcc", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-961fa874", module.exports)
   }
 }
 
@@ -40081,11 +40083,11 @@ var Component = __webpack_require__(0)(
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-4c8c4982",
+  "data-v-2601e556",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\login.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40096,9 +40098,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4c8c4982", Component.options)
+    hotAPI.createRecord("data-v-2601e556", Component.options)
   } else {
-    hotAPI.reload("data-v-4c8c4982", Component.options)
+    hotAPI.reload("data-v-2601e556", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -40119,13 +40121,13 @@ var content = __webpack_require__(124);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("7eb801f3", content, false);
+var update = __webpack_require__(2)("1a89fef0", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4c8c4982\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4c8c4982\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2601e556\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40143,7 +40145,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.content[data-v-4c8c4982] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-4c8c4982] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-4c8c4982] {\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-4c8c4982] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-4c8c4982] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 40px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/routes/login.vue?2d6c5c85"],"names":[],"mappings":";AA8EA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AAEA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA","file":"login.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<a href=\"#/register\" class=\"register\">\r\n\t\t\t<mu-flat-button label=\"注册\" class=\"demo-flat-button\" primary/>\r\n\t\t</a>\r\n\t\t<h2>欢迎来到艺龙旅行</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-raised-button @click=\"login()\" label=\"登录\" class=\"demo-raised-button\" primary/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='登录成功'?'登录成功':'登录失败'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<p class=\"bottom\">注册登录代表你已同意 <span class=\"col\">《艺龙旅行网服务条款》</span></p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from \"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tlogin() {\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/login\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.data= res.data\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\t\r\n\t\t\t\t\tif(res.data == \"登录成功\") {\r\n\t\t\t\t\t\t//用户信息，存进cookies,其他路由以isLogin作为判断是否已登录的\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomponents: {\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\t\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t\r\n\t.register {\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 40px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.content[data-v-2601e556] {\n\tposition: relative;\n\tpadding-top: 100px;\n\ttext-align: center;\n}\nh2[data-v-2601e556] {\n\tcolor: #7e57c2;\n\tletter-spacing: 5px;\n}\n.register[data-v-2601e556] {\n\tposition: absolute;\n\tright: 5px;\n\ttop: 5px;\n}\n.col[data-v-2601e556] {\n\tcolor: #7e57c2;\n}\n.bottom[data-v-2601e556] {\n\tposition: fixed;\n\tbottom: 0;\n\tmargin-left: 40px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/routes/login.vue?2d6c5c85"],"names":[],"mappings":";AA8EA;CACA,mBAAA;CACA,mBAAA;CACA,mBAAA;CACA;AAEA;CACA,eAAA;CACA,oBAAA;CACA;AAEA;CACA,mBAAA;CACA,WAAA;CACA,SAAA;CACA;AAEA;CACA,eAAA;CACA;AAEA;CACA,gBAAA;CACA,UAAA;CACA,kBAAA;CACA","file":"login.vue","sourcesContent":["<template>\r\n\t<div class=\"content\">\r\n\t\t<xback></xback>\r\n\t\t<a href=\"#/register\" class=\"register\">\r\n\t\t\t<mu-flat-button label=\"注册\" class=\"demo-flat-button\" primary/>\r\n\t\t</a>\r\n\t\t<h2>欢迎来到艺龙旅行</h2>\r\n\t\t<mu-text-field v-model=\"username\" label=\"帐号\" labelFloat/><br/>\r\n\t\t<mu-text-field v-model=\"password\" label=\"密码\" hintText=\"请输入密码\" type=\"password\" labelFloat/><br/>\r\n\t\t<mu-raised-button @click=\"login()\" label=\"登录\" class=\"demo-raised-button\" primary/>\r\n\t\t<mu-snackbar v-if=\"snackbar\" :message=\"data=='登录成功'?'登录成功':'登录失败'\" action=\"关闭\" @actionClick=\"hideSnackbar\" @close=\"hideSnackbar\" />\r\n\t\t<p class=\"bottom\">注册登录代表你已同意 <span class=\"col\">《艺龙旅行网服务条款》</span></p>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\timport xback from \"../xback.vue\"\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tusername: \"\",\r\n\t\t\t\tpassword: \"\",\r\n\t\t\t\tvalue: '默认文字',\r\n\t\t\t\tsnackbar: false,\r\n\t\t\t\ttoast: false,\r\n\t\t\t\tdata:''\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tlogin() {\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/login\",\r\n\t\t\t\t\tparams: {\r\n\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t}\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.data= res.data\r\n\t\t\t\t\tthis.showSnackbar()\r\n\t\t\t\t\t\r\n\t\t\t\t\tif(res.data == \"登录成功\") {\r\n\t\t\t\t\t\t//用户信息，存进cookies,其他路由以isLogin作为判断是否已登录的\r\n\t\t\t\t\t\tvar userMess = {\r\n\t\t\t\t\t\t\tusername: this.username,\r\n\t\t\t\t\t\t\tpassword: this.password\r\n\t\t\t\t\t\t}\r\n\r\n\t\t\t\t\t\tcom.setCookie('user', JSON.stringify(userMess))\r\n\t\t\t\t\t\tthis.$store.state.isLogin = true;\r\n\t\t\t\t\t\tlocation.href=\"#/mySelf\"\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tthis.$store.state.isLogin = false;\r\n\t\t\t\t\t}\r\n\r\n\t\t\t\t}.bind(this))\r\n\t\t\t},\r\n\r\n\t\t\tshowSnackbar() {\r\n\t\t\t\tthis.snackbar = true\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t\tthis.snackTimer = setTimeout(() => {\r\n\t\t\t\t\tthis.snackbar = false\r\n\t\t\t\t}, 2000)\r\n\t\t\t},\r\n\t\t\thideSnackbar() {\r\n\t\t\t\tthis.snackbar = false\r\n\t\t\t\tif(this.snackTimer) clearTimeout(this.snackTimer)\r\n\t\t\t},\r\n\t\t},\r\n\t\tcomponents: {\r\n\t\t\txback\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.content {\r\n\t\tposition: relative;\r\n\t\tpadding-top: 100px;\r\n\t\ttext-align: center;\r\n\t}\r\n\t\r\n\th2 {\r\n\t\tcolor: #7e57c2;\r\n\t\tletter-spacing: 5px;\r\n\t}\r\n\t\r\n\t.register {\r\n\t\tposition: absolute;\r\n\t\tright: 5px;\r\n\t\ttop: 5px;\r\n\t}\r\n\t\r\n\t.col {\r\n\t\tcolor: #7e57c2;\r\n\t}\r\n\t\r\n\t.bottom {\r\n\t\tposition: fixed;\r\n\t\tbottom: 0;\r\n\t\tmargin-left: 40px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -40159,7 +40161,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xback = __webpack_require__(8);
+var _xback = __webpack_require__(5);
 
 var _xback2 = _interopRequireDefault(_xback);
 
@@ -40315,7 +40317,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4c8c4982", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2601e556", module.exports)
   }
 }
 
@@ -40328,7 +40330,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(128),
   /* template */
-  __webpack_require__(191),
+  __webpack_require__(202),
   /* styles */
   null,
   /* scopeId */
@@ -40336,7 +40338,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\buyCar.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\buyCar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] buyCar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40347,9 +40349,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d66009b6", Component.options)
+    hotAPI.createRecord("data-v-2be44c5e", Component.options)
   } else {
-    hotAPI.reload("data-v-d66009b6", Component.options)
+    hotAPI.reload("data-v-2be44c5e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -40374,59 +40376,63 @@ var _xheader = __webpack_require__(129);
 
 var _xheader2 = _interopRequireDefault(_xheader);
 
-var _xorderInfo = __webpack_require__(134);
+var _xorderInfo = __webpack_require__(139);
 
 var _xorderInfo2 = _interopRequireDefault(_xorderInfo);
 
-var _xoccupancy = __webpack_require__(139);
+var _xoccupancy = __webpack_require__(144);
 
 var _xoccupancy2 = _interopRequireDefault(_xoccupancy);
 
-var _xorderContact = __webpack_require__(144);
+var _xorderContact = __webpack_require__(149);
 
 var _xorderContact2 = _interopRequireDefault(_xorderContact);
 
-var _xorderRebackMoney = __webpack_require__(149);
+var _xorderRebackMoney = __webpack_require__(154);
 
 var _xorderRebackMoney2 = _interopRequireDefault(_xorderRebackMoney);
 
-var _xfooterBar = __webpack_require__(154);
+var _xfooterBar = __webpack_require__(159);
 
 var _xfooterBar2 = _interopRequireDefault(_xfooterBar);
 
-var _xreBackMoneyHelp = __webpack_require__(159);
+var _xreBackMoneyHelp = __webpack_require__(164);
 
 var _xreBackMoneyHelp2 = _interopRequireDefault(_xreBackMoneyHelp);
 
-var _xreBackMoneyDirective = __webpack_require__(164);
+var _xreBackMoneyDirective = __webpack_require__(169);
 
 var _xreBackMoneyDirective2 = _interopRequireDefault(_xreBackMoneyDirective);
 
-var _xmask = __webpack_require__(169);
+var _xmask = __webpack_require__(174);
 
 var _xmask2 = _interopRequireDefault(_xmask);
 
-var _xuseHongBao = __webpack_require__(174);
+var _xuseHongBao = __webpack_require__(179);
 
 var _xuseHongBao2 = _interopRequireDefault(_xuseHongBao);
 
-var _xroomNum = __webpack_require__(179);
+var _xroomNum = __webpack_require__(184);
 
 var _xroomNum2 = _interopRequireDefault(_xroomNum);
 
-var _xtimeNum = __webpack_require__(182);
+var _xtimeNum = __webpack_require__(187);
 
 var _xtimeNum2 = _interopRequireDefault(_xtimeNum);
 
-var _xinTime = __webpack_require__(185);
+var _xtelNum = __webpack_require__(190);
+
+var _xtelNum2 = _interopRequireDefault(_xtelNum);
+
+var _xinTime = __webpack_require__(193);
 
 var _xinTime2 = _interopRequireDefault(_xinTime);
 
-var _xconnection = __webpack_require__(187);
+var _xconnection = __webpack_require__(195);
 
 var _xconnection2 = _interopRequireDefault(_xconnection);
 
-var _xperson = __webpack_require__(189);
+var _xperson = __webpack_require__(197);
 
 var _xperson2 = _interopRequireDefault(_xperson);
 
@@ -40434,49 +40440,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //填写个人联系方式
 
-//选择保留时间
-
-//选择使用那个红包
-
-//返现立减指南具体内容
-
-//脚步Nav
-
-//订房人，手机号
-
-//房间基本信息
-exports.default = {
-	data: function data() {
-		return {};
-	},
-
-	methods: {},
-	mounted: function mounted() {
-		console.log(111);
-	},
-
-	components: {
-		xheader: _xheader2.default,
-		xorderInfo: _xorderInfo2.default,
-		xoccupancy: _xoccupancy2.default,
-		orderContact: _xorderContact2.default,
-		xorderRebackMoney: _xorderRebackMoney2.default,
-		xfooterBar: _xfooterBar2.default,
-		xreBackMoneyHelp: _xreBackMoneyHelp2.default,
-		xreBackMoneyDirective: _xreBackMoneyDirective2.default,
-		xmask: _xmask2.default,
-		xuseHongBao: _xuseHongBao2.default,
-		xroomNum: _xroomNum2.default,
-		xtimeNum: _xtimeNum2.default,
-		xinTime: _xinTime2.default,
-		xconnection: _xconnection2.default,
-		xperson: _xperson2.default
-
-	}
-};
-//填写入住者个人信息
-
-//选择最晚到店时间
+//选择手机号属地
 
 //选择房间数量
 
@@ -40555,9 +40519,72 @@ exports.default = {
 //
 //
 //
-//
 
 //头部
+exports.default = {
+	data: function data() {
+		return {
+			roomType: ''
+		};
+	},
+
+	methods: {},
+	mounted: function mounted() {
+		console.log(this.$route.params.id);
+
+		//进入页面，请求房间数据
+		this.$ajax({
+			url: "./json/roomType.json"
+		}).then(function (res) {
+			this.roomType = res.data[0];
+			//					console.log(this.roomType)
+
+		}.bind(this));
+
+		this.$ajax({
+			url: "http://localhost:3000/test"
+		}).then(function (res) {
+			console.log(res);
+			//					console.log(this.roomType)
+
+		}.bind(this));
+	},
+
+	components: {
+		xheader: _xheader2.default,
+		xorderInfo: _xorderInfo2.default,
+		xoccupancy: _xoccupancy2.default,
+		orderContact: _xorderContact2.default,
+		xorderRebackMoney: _xorderRebackMoney2.default,
+		xfooterBar: _xfooterBar2.default,
+		xreBackMoneyHelp: _xreBackMoneyHelp2.default,
+		xreBackMoneyDirective: _xreBackMoneyDirective2.default,
+		xmask: _xmask2.default,
+		xuseHongBao: _xuseHongBao2.default,
+		xroomNum: _xroomNum2.default,
+		xtimeNum: _xtimeNum2.default,
+		xtelNum: _xtelNum2.default,
+		xinTime: _xinTime2.default,
+		xconnection: _xconnection2.default,
+		xperson: _xperson2.default
+
+	}
+};
+//填写入住者个人信息
+
+//选择最晚到店时间
+
+//选择保留时间
+
+//选择使用那个红包
+
+//返现立减指南具体内容
+
+//脚步Nav
+
+//订房人，手机号
+
+//房间基本信息
 
 /***/ }),
 /* 129 */
@@ -40572,15 +40599,15 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(132),
   /* template */
-  __webpack_require__(133),
+  __webpack_require__(138),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-1c353018",
+  "data-v-479badec",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xheader.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -40591,9 +40618,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1c353018", Component.options)
+    hotAPI.createRecord("data-v-479badec", Component.options)
   } else {
-    hotAPI.reload("data-v-1c353018", Component.options)
+    hotAPI.reload("data-v-479badec", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -40614,13 +40641,13 @@ var content = __webpack_require__(131);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("f20dc414", content, false);
+var update = __webpack_require__(2)("686b5255", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c353018\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c353018\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-479badec\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-479badec\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40638,7 +40665,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n*[data-v-1c353018] {\n\tmargin: 0;\n\tpadding: 0;\n}\nheader[data-v-1c353018] {\n\tposition: fixed;\n\theight: 48px;\n\tline-height: 48px;\n\tbackground-color: #f4f4f4;\n\tcolor: #555;\n\tbox-shadow: 0px 1px 2px #ddd;\n\ttext-align: center;\n\tfont-size: 14px;\n}\nh1[data-v-1c353018] {\n\tfont-size: 20px;\n\tline-height: 48px;\n}\n.bar[data-v-1c353018]{\n\theight: 48px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xheader.vue?7e230858"],"names":[],"mappings":";AAoBA;CACA,UAAA;CACA,WAAA;CACA;AAEA;CACA,gBAAA;CACA,aAAA;CACA,kBAAA;CACA,0BAAA;CACA,YAAA;CACA,6BAAA;CACA,mBAAA;CACA,gBAAA;CACA;AAEA;CACA,gBAAA;CACA,kBAAA;CACA;AACA;CACA,aAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<header class=\"bar bar-nav flight-order-head none_backg\">\r\n\t\t\t<a class=\"icon icon-left-nav pull-left icon-back tjclick\" data-rel=\"back\" href=\"/hotel/0101/nlist/\" data-tj=\"{&quot;cspot&quot;:&quot;back&quot;}\"></a>\r\n\t\t\t<a class=\"icon    icon-collect  collect  pull-right tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\r\n\t\t\t<h1 class=\"title\">酒店详情</h1>\r\n\t\t</header>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\r\n\texport default {\r\n\t\tcomponents: {\r\n\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t* {\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t}\r\n\t\r\n\theader {\r\n\t\tposition: fixed;\r\n\t\theight: 48px;\r\n\t\tline-height: 48px;\r\n\t\tbackground-color: #f4f4f4;\r\n\t\tcolor: #555;\r\n\t\tbox-shadow: 0px 1px 2px #ddd;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 14px;\r\n\t}\r\n\t\r\n\th1 {\r\n\t\tfont-size: 20px;\r\n\t\tline-height: 48px;\r\n\t}\r\n\t.bar{\r\n\t\theight: 48px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n*[data-v-479badec] {\n\tmargin: 0;\n\tpadding: 0;\n}\n\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xheader.vue?2252bf02"],"names":[],"mappings":";AAuBA;CACA,UAAA;CACA,WAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\n\t<div>\n\t\t <!--createorder-header-->\n\t\t<header class=\"bar bar-nav\">\n\t\t\t<xback></xback>\n\t\t\t<h1 class=\"title\">订单填写</h1>\n\t\t\t<toHome></toHome>\n\t\t</header>\n\t</div>\n</template>\n\n<script>\nimport xback from \"../xback.vue\"\nimport toHome from \"../toHome.vue\"\n\texport default {\n\t\tcomponents: {\n\t\t\txback,\n\t\t\ttoHome,\n\t\t}\n\t}\n</script>\n\n<style scoped>\n\t* {\n\t\tmargin: 0;\n\t\tpadding: 0;\n\t}\n\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -40653,79 +40680,60 @@ exports.push([module.i, "\n*[data-v-1c353018] {\n\tmargin: 0;\n\tpadding: 0;\n}\
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
+var _xback = __webpack_require__(5);
+
+var _xback2 = _interopRequireDefault(_xback);
+
+var _toHome = __webpack_require__(133);
+
+var _toHome2 = _interopRequireDefault(_toHome);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
-	components: {}
+	components: {
+		xback: _xback2.default,
+		toHome: _toHome2.default
+	}
 };
 
 /***/ }),
 /* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('header', {
-    staticClass: "bar bar-nav flight-order-head none_backg"
-  }, [_c('a', {
-    staticClass: "icon icon-left-nav pull-left icon-back tjclick",
-    attrs: {
-      "data-rel": "back",
-      "href": "/hotel/0101/nlist/",
-      "data-tj": "{\"cspot\":\"back\"}"
-    }
-  }), _vm._v(" "), _c('a', {
-    staticClass: "icon    icon-collect  collect  pull-right tjclick",
-    attrs: {
-      "data-tj": "{\"cspot\":\"mycollection\"}"
-    }
-  }), _vm._v(" "), _c('h1', {
-    staticClass: "title"
-  }, [_vm._v("酒店详情")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1c353018", module.exports)
-  }
-}
-
-/***/ }),
-/* 134 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(135)
+  __webpack_require__(134)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(137),
+  __webpack_require__(136),
   /* template */
-  __webpack_require__(138),
+  __webpack_require__(137),
   /* styles */
   injectStyle,
   /* scopeId */
-  null,
+  "data-v-2036e928",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xorderInfo.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\toHome.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xorderInfo.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] toHome.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -40734,9 +40742,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3058cb61", Component.options)
+    hotAPI.createRecord("data-v-2036e928", Component.options)
   } else {
-    hotAPI.reload("data-v-3058cb61", Component.options)
+    hotAPI.reload("data-v-2036e928", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -40747,23 +40755,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 135 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(136);
+var content = __webpack_require__(135);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("93f26170", content, false);
+var update = __webpack_require__(2)("48a44809", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3058cb61\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3058cb61\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue");
+   module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2036e928\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./toHome.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2036e928\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./toHome.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40773,7 +40781,7 @@ if(false) {
 }
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -40781,52 +40789,21 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xorderInfo.vue","sourceRoot":""}]);
+exports.push([module.i, "\n.toHome[data-v-2036e928] {\n\tposition: fixed;\n\ttop: 0px;\n\tright: 0px;\n\tz-index: 99999;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/toHome.vue?69ffc515"],"names":[],"mappings":";AAqBA;CACA,gBAAA;CACA,SAAA;CACA,WAAA;CACA,eAAA;CACA","file":"toHome.vue","sourcesContent":["<template>\r\n\t<div class=\"toHome\">\r\n\t\t<mu-icon-button @click=\"toHome()\" icon=\"home\" />\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tmethods: {\r\n\t\t\ttoHome() {\r\n\t\t\t\tsetTimeout(()=>{\r\n\t\t\t\t\tconsole.log('toHome')\r\n\t\t\t\t\twindow.location.href=\"#/index\"\r\n\t\t\t\t\t\r\n\t\t\t\t},300)\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\t\r\n\t.toHome {\r\n\t\tposition: fixed;\r\n\t\ttop: 0px;\r\n\t\tright: 0px;\r\n\t\tz-index: 99999;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 137 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 //
 //
 //
@@ -40834,88 +40811,59 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 //
 //
 
+exports.default = {
+	methods: {
+		toHome: function toHome() {
+			setTimeout(function () {
+				console.log('toHome');
+				window.location.href = "#/index";
+			}, 300);
+		}
+	}
+};
+
+/***/ }),
+/* 137 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "toHome"
+  }, [_c('mu-icon-button', {
+    attrs: {
+      "icon": "home"
+    },
+    on: {
+      "click": function($event) {
+        _vm.toHome()
+      }
+    }
+  })], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2036e928", module.exports)
+  }
+}
 
 /***/ }),
 /* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('section', {
-    staticClass: "order-info"
-  }, [_c('h1', [_vm._v("酒店详情\n\t\t\t\t    "), _c('span', [_vm._v("\n恭喜，这是该房型"), _c('b', [_vm._v("最优惠")]), _vm._v("的价格。请别错过！\t\t\t\t    ")])]), _vm._v(" "), _c('div', {
-    staticClass: "d-info"
-  }, [_c('div', {
-    staticClass: "pic"
-  }, [_c('img', {
-    attrs: {
-      "id": "hotelcoverimg",
-      "data-src": "//pavo.elongstatic.com/i/Hotel70_70/0005PpTb.jpg",
-      "width": "100%",
-      "height": "150",
-      "src": "//pavo.elongstatic.com/i/mobp750_1500/0005PpTb.jpg"
-    }
-  }), _vm._v(" "), _c('i', {
-    staticClass: "star"
-  }, [_c('b', {
-    staticStyle: {
-      "width": "20%"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "bwrap na"
-  }, [_c('p', {
-    staticClass: "name"
-  }, [_vm._v("空客酒店AIRBUSHOTEL(广州白云机场人和店)")]), _vm._v(" "), _c('p', {
-    staticClass: "addr"
-  }, [_vm._v("地址：机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)")])]), _vm._v(" "), _c('div', {
-    staticClass: "bwrap date"
-  }, [_c('p', [_vm._v("入住日期：2017年7月26日(周三)")])]), _vm._v(" "), _c('dl', {
-    staticClass: "type"
-  }, [_c('dt', [_vm._v("房间类型：特惠大床房")]), _vm._v(" "), _c('dd', [_c('i', {
-    staticClass: "icon-wifi"
-  }), _vm._v("免费无线")]), _vm._v(" "), _c('dd', [_c('i', {
-    staticClass: "icon-apus"
-  }), _vm._v("接送机")]), _vm._v(" "), _c('dd', [_c('i', {
-    staticClass: "icon-net"
-  }), _vm._v("互联网")])]), _vm._v(" "), _c('div', {
-    staticClass: "total"
-  }, [_c('div', {
-    staticClass: "left"
-  }, [_vm._v("房间总价：")]), _vm._v(" "), _c('div', {
-    staticClass: "right"
-  }, [_c('p', {
-    staticClass: "price"
-  }, [_vm._v("¥"), _c('span', {
-    attrs: {
-      "id": "wborderpricepad"
-    }
-  }, [_vm._v("90"), _c('b', {
-    staticStyle: {
-      "font-size": "14px",
-      "display": "none"
-    }
-  }, [_vm._v("RMB90")])])]), _vm._v(" "), _c('div', {
-    staticClass: "returnprice"
-  }, [_c('div', {
-    staticClass: "coupontext"
-  }, [_vm._v("\n\t\t\t\t\t\t\t返￥5\n\t\t\t\t\t\t")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "p-info"
-  }, [_c('p', {
-    staticClass: "name"
-  }, [_vm._v("空客酒店AIRBUSHOTEL(广州白云机场人和店)")]), _vm._v(" "), _c('p', {
-    staticClass: "type"
-  }, [_vm._v("特惠大床房\n\t\t\t")]), _vm._v(" "), _c('p', {
-    staticClass: "date"
-  }, [_vm._v("7月26日(周三)")]), _vm._v(" "), _c('p', {
-    staticClass: "tip"
-  }, [_vm._v("\n\t\t\t\t恭喜，这是该房型"), _c('span', [_vm._v("最优惠")]), _vm._v("的价格。请别错过！ ")])])])
-}]}
+  return _c('div', [_c('header', {
+    staticClass: "bar bar-nav"
+  }, [_c('xback'), _vm._v(" "), _c('h1', {
+    staticClass: "title"
+  }, [_vm._v("订单填写")]), _vm._v(" "), _c('toHome')], 1)])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3058cb61", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-479badec", module.exports)
   }
 }
 
@@ -40936,13 +40884,13 @@ var Component = __webpack_require__(0)(
   /* styles */
   injectStyle,
   /* scopeId */
-  null,
+  "data-v-8734e5e6",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xoccupancy.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xorderInfo.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xoccupancy.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] xorderInfo.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -40951,9 +40899,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-06b79bdc", Component.options)
+    hotAPI.createRecord("data-v-8734e5e6", Component.options)
   } else {
-    hotAPI.reload("data-v-06b79bdc", Component.options)
+    hotAPI.reload("data-v-8734e5e6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -40974,13 +40922,13 @@ var content = __webpack_require__(141);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("3294a980", content, false);
+var update = __webpack_require__(2)("0ea0472a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-06b79bdc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-06b79bdc\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8734e5e6\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8734e5e6\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderInfo.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -40998,7 +40946,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xoccupancy.vue","sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xorderInfo.vue","sourceRoot":""}]);
 
 // exports
 
@@ -41018,6 +40966,164 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	computed: {
+		roomInfoName: function roomInfoName() {
+			return scope.roomInfoName;
+		}
+	}
+};
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', {
+    staticClass: "order-info"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "p-info   p-info-top  "
+  }, [_c('p', {
+    staticClass: "name",
+    staticStyle: {
+      "margin-top": "50px"
+    }
+  }, [_vm._v(_vm._s(_vm.roomInfoName))]), _vm._v(" "), _c('p', {
+    staticClass: "type"
+  }, [_vm._v("普通间（大床/双床）地下室\n\t\t")]), _vm._v(" "), _c('p', {
+    staticClass: "type"
+  }, [_vm._v("不含早")]), _vm._v(" "), _c('p'), _vm._v(" "), _c('p', {
+    staticClass: "date"
+  }, [_vm._v("7月31日(周一)— 8月1日(周二) 共1晚")]), _vm._v(" "), _c('div', {
+    staticClass: "preferential-price"
+  }, [_vm._v("恭喜，您找到的是该房型最优惠的价格。")]), _vm._v(" "), _c('div', {
+    staticClass: "immediatelyConfirm-enough"
+  }, [_vm._v("订单提交后，酒店将第一时间确认您的订单。")])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('h1', [_vm._v("酒店详情\n\t\t\t    "), _c('span', [_c('div', {
+    staticClass: "preferential-price"
+  }, [_vm._v("恭喜，您找到的是该房型最优惠的价格。")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8734e5e6", module.exports)
+  }
+}
+
+/***/ }),
+/* 144 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(145)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(147),
+  /* template */
+  __webpack_require__(148),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xoccupancy.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xoccupancy.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-ee9e1884", Component.options)
+  } else {
+    hotAPI.reload("data-v-ee9e1884", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(146);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("faf1a1f8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ee9e1884\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-ee9e1884\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoccupancy.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xoccupancy.vue","sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 //
 //
 //
@@ -41085,7 +41191,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 143 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41168,24 +41274,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-06b79bdc", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-ee9e1884", module.exports)
   }
 }
 
 /***/ }),
-/* 144 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(145)
+  __webpack_require__(150)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(147),
+  __webpack_require__(152),
   /* template */
-  __webpack_require__(148),
+  __webpack_require__(153),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -41193,7 +41299,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xorderContact.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xorderContact.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xorderContact.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -41204,9 +41310,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-92431c86", Component.options)
+    hotAPI.createRecord("data-v-775c4091", Component.options)
   } else {
-    hotAPI.reload("data-v-92431c86", Component.options)
+    hotAPI.reload("data-v-775c4091", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -41217,23 +41323,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 145 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(146);
+var content = __webpack_require__(151);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("cb7bdb20", content, false);
+var update = __webpack_require__(2)("772e4078", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-92431c86\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-92431c86\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-775c4091\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-775c4091\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderContact.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -41243,7 +41349,7 @@ if(false) {
 }
 
 /***/ }),
-/* 146 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -41251,13 +41357,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xorderContact.vue","sourceRoot":""}]);
+exports.push([module.i, "\n#cusname1{\n\tpadding-right: 0;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xorderContact.vue?38046efd"],"names":[],"mappings":";AA+EA;CACA,iBAAA;CACA","file":"xorderContact.vue","sourcesContent":["<template>\n\t<div class=\"order-contact\">\n\t\t<h1>联系资料</h1>\n\t\t<div class=\"contact-person\">\n\t\t\t<ul>\n\t\t\t\t<li v-for='(n,index) in aaaa'>\n\t\t\t\t\t<label for=\"cusname1\"></label>\n\t\t\t\t\t<div class=\"label\">入住人(房间{{n}})</div>\n\t\t\t\t\t<div class=\"content list-input\">\n\t\t\t\t\t\t<input type=\"text\" class=\"createorder\" name=\"customernames\" id=\"cusname1\" placeholder=\"姓名，每间填1人\" :value=\"Name[index]\">\n\t\t\t\t\t</div>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t<div class=\"add-person-button\" @click=\"person()\">\n\t\t\t\t<div class=\"person-choose\">\n\t\t\t\t\t<div class=\"icon-person-choose\"></div>选择入住人\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"contact-tel\">\n\t\t\t<div class=\"tel-text\">\n\t\t\t\t<span class=\"tel-person\">联系人手机：</span>\n\t\t\t\t<div class=\"area-address\" @click=\"telphoneNum(true)\">\n\t\t\t\t\t<label for=\"area-code\"></label>\n\t\t\t\t\t<input type=\"text\" readonly=\"readonly\" id=\"area-code\" class=\"area-code createorder\" name=\"areacodeconnect\" :value=\"telAddress\" :title=\"telAddress\" data-value=\"\">\n\t\t\t\t\t<span><i class=\"icon-bottom\"></i></span>\n\t\t\t\t</div>\n\t\t\t\t<input type=\"tel\" maxlength=\"20\" class=\"area-number createorder\" name=\"connectormobile\" placeholder=\"用于客服\" id=\"contactormobile\" value=\"13172386158\">\n\t\t\t</div>\n\t\t\t<div class=\"tel-choose\" style=\"color: rgb(220, 220, 220);\">\n\t\t\t\t<div class=\"icon-choose\">\n\t\t\t\t\t<div class=\"icon-tel-choose\" style=\"color: rgb(220, 220, 220);\"></div>选择手机号</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</template>\n\n<script>\n\texport default {\n\t\tdata() {\n\t\t\t\treturn {\n\t\t\t\t\tRoomsNum: [1],\n\t\t\t\t}\n\n\t\t\t},\n\t\t\tcomputed: {\n\t\t\t\taaaa() {\n\t\t\t\t\treturn this.$store.state.roomsNum\n\t\t\t\t},\n\t\t\t\ttelAddress(){\n\t\t\t\t\treturn this.$store.state.telNum.slice(5)\n\t\t\t\t},\n\t\t\t\tName(){\n\t\t\t\t\treturn this.$store.state.nameNum\n\t\t\t\t}\n\t\t\t},\n\t\t\tmethods: {\n\t\t\t\ttelphoneNum(bool) {\n\t\t\t\t\tthis.$store.state.isShowMask = bool;\n\t\t\t\t\t$('.advanced-mask-layer').css('display', 'block');\n\t\t\t\t\t//\t\t\t\tconsole.log('xoccupancy')\n\t\t\t\t\t//\t\t\t\tplugin-show selector-active添加这两个类显示并且高亮\n\t\t\t\t\t$('.telphone').addClass('plugin-show');\n\t\t\t\t\t$('.telphone').addClass('selector-active');\n\n\t\t\t\t},\n\t\t\t\tperson() {\n\t\t\t\t\t$('.select-people').addClass('plugin-show');\n\t\t\t\t\t$('.select-people').removeClass('page-on-right');\n\t\t\t\t\t$('.select-people').removeClass('page-on-center');\n\t\t\t\t},\n\t\t\t},\n\t\t\tmounted() {\n\t\t\t\tconsole.log(this.aaaa)\n\t\t\t}\n\t}\n</script>\n\n<style scop>\n#cusname1{\n\tpadding-right: 0;\n}\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 147 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41314,72 +41420,84 @@ exports.default = {
 	computed: {
 		aaaa: function aaaa() {
 			return this.$store.state.roomsNum;
+		},
+		telAddress: function telAddress() {
+			return this.$store.state.telNum.slice(5);
+		},
+		Name: function Name() {
+			return this.$store.state.nameNum;
 		}
 	},
 	methods: {
-		test: function test() {
-			console.log(1111111111);
-			console.log(this.$store.state);
+		telphoneNum: function telphoneNum(bool) {
+			this.$store.state.isShowMask = bool;
+			$('.advanced-mask-layer').css('display', 'block');
+			//				console.log('xoccupancy')
+			//				plugin-show selector-active添加这两个类显示并且高亮
+			$('.telphone').addClass('plugin-show');
+			$('.telphone').addClass('selector-active');
+		},
+		person: function person() {
+			$('.select-people').addClass('plugin-show');
+			$('.select-people').removeClass('page-on-right');
+			$('.select-people').removeClass('page-on-center');
 		}
 	},
 	mounted: function mounted() {
-		console.log(1111111111);
+		console.log(this.aaaa);
 	}
 };
 
 /***/ }),
-/* 148 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "order-contact",
-    on: {
-      "click": function($event) {
-        _vm.test()
-      }
-    }
+    staticClass: "order-contact"
   }, [_c('h1', [_vm._v("联系资料")]), _vm._v(" "), _c('div', {
     staticClass: "contact-person"
-  }, [_c('ul', _vm._l((_vm.aaaa), function(n) {
+  }, [_c('ul', _vm._l((_vm.aaaa), function(n, index) {
     return _c('li', [_c('label', {
       attrs: {
         "for": "cusname1"
       }
     }), _vm._v(" "), _c('div', {
       staticClass: "label"
-    }, [_vm._v("入住人(房间" + _vm._s(n) + ")")]), _vm._v(" "), _vm._m(0, true)])
-  })), _vm._v(" "), _vm._m(1)]), _vm._v(" "), _vm._m(2)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "content list-input"
-  }, [_c('input', {
-    staticClass: "createorder",
-    attrs: {
-      "type": "text",
-      "name": "customernames",
-      "id": "cusname1",
-      "placeholder": "姓名，每间填1人",
-      "value": ""
+    }, [_vm._v("入住人(房间" + _vm._s(n) + ")")]), _vm._v(" "), _c('div', {
+      staticClass: "content list-input"
+    }, [_c('input', {
+      staticClass: "createorder",
+      attrs: {
+        "type": "text",
+        "name": "customernames",
+        "id": "cusname1",
+        "placeholder": "姓名，每间填1人"
+      },
+      domProps: {
+        "value": _vm.Name[index]
+      }
+    })])])
+  })), _vm._v(" "), _c('div', {
+    staticClass: "add-person-button",
+    on: {
+      "click": function($event) {
+        _vm.person()
+      }
     }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "add-person-button"
-  }, [_c('div', {
-    staticClass: "person-choose"
-  }, [_c('div', {
-    staticClass: "icon-person-choose"
-  }), _vm._v("选择入住人\n\t\t\t")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_vm._m(0)])]), _vm._v(" "), _c('div', {
     staticClass: "contact-tel"
   }, [_c('div', {
     staticClass: "tel-text"
   }, [_c('span', {
     staticClass: "tel-person"
   }, [_vm._v("联系人手机：")]), _vm._v(" "), _c('div', {
-    staticClass: "area-address"
+    staticClass: "area-address",
+    on: {
+      "click": function($event) {
+        _vm.telphoneNum(true)
+      }
+    }
   }, [_c('label', {
     attrs: {
       "for": "area-code"
@@ -41391,13 +41509,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "readonly": "readonly",
       "id": "area-code",
       "name": "areacodeconnect",
-      "value": "1",
-      "title": "中国大陆+86",
+      "title": _vm.telAddress,
       "data-value": ""
+    },
+    domProps: {
+      "value": _vm.telAddress
     }
-  }), _vm._v(" "), _c('span', [_c('i', {
-    staticClass: "icon-bottom"
-  })])]), _vm._v(" "), _c('input', {
+  }), _vm._v(" "), _vm._m(1)]), _vm._v(" "), _c('input', {
     staticClass: "area-number createorder",
     attrs: {
       "type": "tel",
@@ -41407,7 +41525,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "id": "contactormobile",
       "value": "13172386158"
     }
-  })]), _vm._v(" "), _c('div', {
+  })]), _vm._v(" "), _vm._m(2)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "person-choose"
+  }, [_c('div', {
+    staticClass: "icon-person-choose"
+  }), _vm._v("选择入住人\n\t\t\t")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [_c('i', {
+    staticClass: "icon-bottom"
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "tel-choose",
     staticStyle: {
       "color": "rgb(220, 220, 220)"
@@ -41419,30 +41549,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "color": "rgb(220, 220, 220)"
     }
-  }), _vm._v("选择手机号")])])])
+  }), _vm._v("选择手机号")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-92431c86", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-775c4091", module.exports)
   }
 }
 
 /***/ }),
-/* 149 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(150)
+  __webpack_require__(155)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(152),
+  __webpack_require__(157),
   /* template */
-  __webpack_require__(153),
+  __webpack_require__(158),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -41450,7 +41580,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xorderRebackMoney.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xorderRebackMoney.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xorderRebackMoney.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -41461,9 +41591,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3feec13a", Component.options)
+    hotAPI.createRecord("data-v-7c9ae437", Component.options)
   } else {
-    hotAPI.reload("data-v-3feec13a", Component.options)
+    hotAPI.reload("data-v-7c9ae437", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -41474,23 +41604,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 150 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(151);
+var content = __webpack_require__(156);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("969ed9ba", content, false);
+var update = __webpack_require__(2)("01e94703", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3feec13a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3feec13a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c9ae437\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7c9ae437\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xorderRebackMoney.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -41500,7 +41630,7 @@ if(false) {
 }
 
 /***/ }),
-/* 151 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -41514,7 +41644,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""
 
 
 /***/ }),
-/* 152 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41541,7 +41671,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""
 
 
 /***/ }),
-/* 153 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41571,24 +41701,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3feec13a", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7c9ae437", module.exports)
   }
 }
 
 /***/ }),
-/* 154 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(155)
+  __webpack_require__(160)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(157),
+  __webpack_require__(162),
   /* template */
-  __webpack_require__(158),
+  __webpack_require__(163),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -41596,7 +41726,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xfooterBar.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xfooterBar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfooterBar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -41607,9 +41737,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-687058bd", Component.options)
+    hotAPI.createRecord("data-v-1705cb2e", Component.options)
   } else {
-    hotAPI.reload("data-v-687058bd", Component.options)
+    hotAPI.reload("data-v-1705cb2e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -41620,23 +41750,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 155 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(156);
+var content = __webpack_require__(161);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("1d415fdc", content, false);
+var update = __webpack_require__(2)("468158ea", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-687058bd\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-687058bd\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1705cb2e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1705cb2e\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xfooterBar.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -41646,7 +41776,7 @@ if(false) {
 }
 
 /***/ }),
-/* 156 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -41654,13 +41784,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.bar-tab .total .orderprice.return {\n\tmargin-top: 12px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xfooterBar.vue?ba57f27a"],"names":[],"mappings":";AAuBA;CACA,iBAAA;CACA","file":"xfooterBar.vue","sourcesContent":["<template>\r\n\t<nav class=\"bar bar-tab\">\r\n\t\t<div class=\"total\">\r\n\t\t\t<div class=\"orderprice return\">¥<span id=\"wborderprice\">90<b style=\"font-size:14px;display:none;\">RMB90</b></span>\r\n\t\t\t\t<span class=\"roomschip\">1间/4小时</span></div>\r\n\t\t\t<div class=\"returnprice\">\r\n\t\t\t\t<div class=\"coupontext\">\r\n\t\t\t\t\t返￥5\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div id=\"mobilesubmit\" class=\"next commit\">\r\n\t\t\t<span>\r\n提交订单                    </span>\r\n\t\t\t<span class=\"preloader preloader-white button-loader\"></span>\r\n\t\t</div>\r\n\t</nav>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.bar-tab .total .orderprice.return {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.bar-tab .total .orderprice.return {\n\tmargin-top: 12px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xfooterBar.vue?ba57f27a"],"names":[],"mappings":";AAuBA;CACA,iBAAA;CACA","file":"xfooterBar.vue","sourcesContent":["<template>\r\n\t<nav class=\"bar bar-tab\">\r\n\t\t<div class=\"total\">\r\n\t\t\t<div class=\"orderprice return\">¥<span id=\"wborderprice\">90<b style=\"font-size:14px;display:none;\">RMB90</b></span>\r\n\t\t\t\t<span class=\"roomschip\">1间/4小时</span></div>\r\n\t\t\t<div class=\"returnprice\">\r\n\t\t\t\t<div class=\"coupontext\">\r\n\t\t\t\t\t返￥5\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div id=\"mobilesubmit\" class=\"next commit\">\r\n\t\t\t<span>\r\n提交订单                    </span>\r\n\t\t\t<span class=\"preloader preloader-white button-loader\"></span>\r\n\t\t</div>\r\n\t</nav>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.bar-tab .total .orderprice.return {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 157 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41686,7 +41816,7 @@ exports.push([module.i, "\n.bar-tab .total .orderprice.return {\n\tmargin-top: 1
 
 
 /***/ }),
-/* 158 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41726,136 +41856,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-687058bd", module.exports)
-  }
-}
-
-/***/ }),
-/* 159 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(160)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(162),
-  /* template */
-  __webpack_require__(163),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xreBackMoneyHelp.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xreBackMoneyHelp.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8626c2e8", Component.options)
-  } else {
-    hotAPI.reload("data-v-8626c2e8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 160 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(161);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("a5c63172", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8626c2e8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8626c2e8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 161 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(true);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xreBackMoneyHelp.vue","sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-/* 162 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-	mounted: function mounted() {}
-};
-
-/***/ }),
-/* 163 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "login-help"
-  }, [_c('a', {
-    attrs: {
-      "href": "javascript:void(0);"
-    }
-  }, [_vm._v("返现立减指南")])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8626c2e8", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1705cb2e", module.exports)
   }
 }
 
@@ -41880,9 +41881,9 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xreBackMoneyDirective.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xreBackMoneyHelp.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xreBackMoneyDirective.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] xreBackMoneyHelp.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -41891,9 +41892,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1f3cc3d8", Component.options)
+    hotAPI.createRecord("data-v-2d546f38", Component.options)
   } else {
-    hotAPI.reload("data-v-1f3cc3d8", Component.options)
+    hotAPI.reload("data-v-2d546f38", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -41914,13 +41915,13 @@ var content = __webpack_require__(166);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("0ceff0d8", content, false);
+var update = __webpack_require__(2)("a93b3b5a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1f3cc3d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1f3cc3d8\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2d546f38\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2d546f38\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyHelp.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -41938,13 +41939,142 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xreBackMoneyDirective.vue","sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xreBackMoneyHelp.vue","sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
 /* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	mounted: function mounted() {}
+};
+
+/***/ }),
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "login-help"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0);"
+    }
+  }, [_vm._v("返现立减指南")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2d546f38", module.exports)
+  }
+}
+
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(170)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(172),
+  /* template */
+  __webpack_require__(173),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xreBackMoneyDirective.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xreBackMoneyDirective.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-84454e30", Component.options)
+  } else {
+    hotAPI.reload("data-v-84454e30", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 170 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(171);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("602b7cd6", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-84454e30\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-84454e30\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xreBackMoneyDirective.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"xreBackMoneyDirective.vue","sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41990,7 +42120,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 168 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -42014,139 +42144,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1f3cc3d8", module.exports)
-  }
-}
-
-/***/ }),
-/* 169 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(170)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(172),
-  /* template */
-  __webpack_require__(173),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xmask.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xmask.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-176dcdb7", Component.options)
-  } else {
-    hotAPI.reload("data-v-176dcdb7", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 170 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(171);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("715dc3d4", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-176dcdb7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-176dcdb7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 171 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(true);
-// imports
-
-
-// module
-exports.push([module.i, "\n.advanced-mask-layer{\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xmask.vue?7ed07388"],"names":[],"mappings":";AAkBA;CACA,cAAA;CACA","file":"xmask.vue","sourcesContent":["<template>\r\n\t<div class=\"advanced-mask-layer\" @click=\"closeMask(false)\"></div>\r\n</template>\r\n\r\n<script>\r\nexport default{\r\n\tmethods:{\r\n\t\tcloseMask(bool){\r\n\t\t\tthis.$store.state.isShowMask = bool;\r\n\t\t\t$('.advanced-mask-layer').css('display','none');\r\n\t\t\t$('.plugin-inited').removeClass('plugin-show');\r\n\t\t\t$('.plugin-inited').removeClass('selector-active');\r\n\t\t}\r\n\t}\r\n}\r\n</script>\r\n\r\n<style>\r\n\t.advanced-mask-layer{\r\n\t\tdisplay: none;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-/* 172 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-//
-//
-//
-//
-
-exports.default = {
-	methods: {
-		closeMask: function closeMask(bool) {
-			this.$store.state.isShowMask = bool;
-			$('.advanced-mask-layer').css('display', 'none');
-			$('.plugin-inited').removeClass('plugin-show');
-			$('.plugin-inited').removeClass('selector-active');
-		}
-	}
-};
-
-/***/ }),
-/* 173 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "advanced-mask-layer",
-    on: {
-      "click": function($event) {
-        _vm.closeMask(false)
-      }
-    }
-  })
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-176dcdb7", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-84454e30", module.exports)
   }
 }
 
@@ -42171,9 +42169,9 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xuseHongBao.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xmask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xuseHongBao.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] xmask.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -42182,9 +42180,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-734e5974", Component.options)
+    hotAPI.createRecord("data-v-2841b08b", Component.options)
   } else {
-    hotAPI.reload("data-v-734e5974", Component.options)
+    hotAPI.reload("data-v-2841b08b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -42205,13 +42203,13 @@ var content = __webpack_require__(176);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("432eda9a", content, false);
+var update = __webpack_require__(2)("123d137a", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-734e5974\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-734e5974\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2841b08b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2841b08b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xmask.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -42229,13 +42227,148 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.page .usehb{\n\tpadding-top: 0 !important;\n}\n.unhb{\n\tmargin-left: -4px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/buyCarcomponents/xuseHongBao.vue?2b4fe816"],"names":[],"mappings":";AAsEA;CACA,0BAAA;CACA;AACA;CACA,kBAAA;CACA","file":"xuseHongBao.vue","sourcesContent":["<template>\r\n\t<div class=\"plugin-inited page-plugin page-on-center\">\r\n\t\t<div class=\"page-content usehb\" style=\"\">\r\n\t\t\t<section>\r\n\t\t\t\t<div class=\"hb_expl\">\r\n\t\t\t\t\t<p><span class=\"unhb\" data-incomeid=\"\"><i class=\"chkbox\"><em></em></i>暂不使用红包</span>\r\n\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"hbsrc\"><i></i>使用说明</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"hb_container\">\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1369786069\" data-trueuseamount=\"10\" data-facevalue=\"50\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox on\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期出游红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-07-27</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>50</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1407828651\" data-trueuseamount=\"10\" data-facevalue=\"66\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期酒店特惠红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-08-09</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>66</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.page .usehb{\r\n\t\tpadding-top: 0 !important;\r\n\t}\r\n\t.unhb{\r\n\t\tmargin-left: -4px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.advanced-mask-layer{\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xmask.vue?3c7d190e"],"names":[],"mappings":";AAsBA;CACA,cAAA;CACA","file":"xmask.vue","sourcesContent":["<template>\r\n\t<div class=\"advanced-mask-layer animate bouncelnUP\" @click=\"closeMask()\"></div>\r\n</template>\r\n\r\n<script>\r\nexport default{\r\n\tmethods:{\r\n\t\tcloseMask(){\r\n\t\t\tthis.$store.state.isShowMask = false;\r\n\t\t\t\t\r\n\t\t\t\t$('.advanced-mask-layer').css('display','none');\r\n\t\t\t\t$('.slide-selector').removeClass('plugin-show');\r\n\t\t\t\t$('.slide-selector').removeClass('selector-active');\r\n\t\t\t\t$('.sure').removeClass('plugin-show');\r\n//\t\t\t}\r\n\t\t},\r\n\t\t\r\n\t}\r\n}\r\n</script>\r\n \r\n<style>\r\n\t.advanced-mask-layer{\r\n\t\tdisplay: none;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
 /* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+
+exports.default = {
+	methods: {
+		closeMask: function closeMask() {
+			this.$store.state.isShowMask = false;
+
+			$('.advanced-mask-layer').css('display', 'none');
+			$('.slide-selector').removeClass('plugin-show');
+			$('.slide-selector').removeClass('selector-active');
+			$('.sure').removeClass('plugin-show');
+			//			}
+		}
+	}
+};
+
+/***/ }),
+/* 178 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "advanced-mask-layer animate bouncelnUP",
+    on: {
+      "click": function($event) {
+        _vm.closeMask()
+      }
+    }
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2841b08b", module.exports)
+  }
+}
+
+/***/ }),
+/* 179 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(180)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(182),
+  /* template */
+  __webpack_require__(183),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xuseHongBao.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xuseHongBao.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-68d9cd48", Component.options)
+  } else {
+    hotAPI.reload("data-v-68d9cd48", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(181);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("8249f0b2", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-68d9cd48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-68d9cd48\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xuseHongBao.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 181 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.page .usehb{\n\tpadding-top: 0 !important;\n}\n.unhb{\n\tmargin-left: -4px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xuseHongBao.vue?2b4fe816"],"names":[],"mappings":";AAsEA;CACA,0BAAA;CACA;AACA;CACA,kBAAA;CACA","file":"xuseHongBao.vue","sourcesContent":["<template>\r\n\t<div class=\"plugin-inited page-plugin page-on-center\">\r\n\t\t<div class=\"page-content usehb\" style=\"\">\r\n\t\t\t<section>\r\n\t\t\t\t<div class=\"hb_expl\">\r\n\t\t\t\t\t<p><span class=\"unhb\" data-incomeid=\"\"><i class=\"chkbox\"><em></em></i>暂不使用红包</span>\r\n\t\t\t\t\t\t<a href=\"javascript:void(0)\" class=\"hbsrc\"><i></i>使用说明</a>\r\n\t\t\t\t\t</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"hb_container\">\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1369786069\" data-trueuseamount=\"10\" data-facevalue=\"50\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox on\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期出游红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-07-27</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>50</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"hb_content\" data-incomeid=\"1407828651\" data-trueuseamount=\"10\" data-facevalue=\"66\">\r\n\t\t\t\t\t\t<div class=\"list\">\r\n\t\t\t\t\t\t\t<div class=\"choose\">\r\n\t\t\t\t\t\t\t\t<div class=\"chkbox\"><i></i></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"list_c\">\r\n\t\t\t\t\t\t\t\t<div class=\"list_title\">\r\n\t\t\t\t\t\t\t\t\t<p>国内酒店</p>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"hb_text\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"text1\">\r\n\t\t\t\t\t\t\t\t\t\t<h1>暑期酒店特惠红包</h1>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"ex_text\">有效期至 2017-08-09</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"last\">此红包本单可优惠￥10</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"text2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"text2_content\">\r\n\t\t\t\t\t\t\t\t\t\t\t<p></p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>￥<span>66</span></p>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</section>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n</script>\r\n\r\n<style>\r\n\t.page .usehb{\r\n\t\tpadding-top: 0 !important;\r\n\t}\r\n\t.unhb{\r\n\t\tmargin-left: -4px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42308,7 +42441,7 @@ exports.push([module.i, "\n.page .usehb{\n\tpadding-top: 0 !important;\n}\n.unhb
 
 
 /***/ }),
-/* 178 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -42398,20 +42531,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-734e5974", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-68d9cd48", module.exports)
   }
 }
 
 /***/ }),
-/* 179 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(180),
+  __webpack_require__(185),
   /* template */
-  __webpack_require__(181),
+  __webpack_require__(186),
   /* styles */
   null,
   /* scopeId */
@@ -42419,7 +42552,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xroomNum.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xroomNum.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xroomNum.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -42430,9 +42563,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5ea5aaa0", Component.options)
+    hotAPI.createRecord("data-v-1216675c", Component.options)
   } else {
-    hotAPI.reload("data-v-5ea5aaa0", Component.options)
+    hotAPI.reload("data-v-1216675c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -42443,7 +42576,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 180 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42493,7 +42626,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 181 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -42554,20 +42687,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5ea5aaa0", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1216675c", module.exports)
   }
 }
 
 /***/ }),
-/* 182 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(183),
+  __webpack_require__(188),
   /* template */
-  __webpack_require__(184),
+  __webpack_require__(189),
   /* styles */
   null,
   /* scopeId */
@@ -42575,7 +42708,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xtimeNum.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xtimeNum.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xtimeNum.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -42586,9 +42719,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4da8b704", Component.options)
+    hotAPI.createRecord("data-v-1a94e12a", Component.options)
   } else {
-    hotAPI.reload("data-v-4da8b704", Component.options)
+    hotAPI.reload("data-v-1a94e12a", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -42599,7 +42732,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 183 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42659,7 +42792,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 184 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -42723,20 +42856,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4da8b704", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1a94e12a", module.exports)
   }
 }
 
 /***/ }),
-/* 185 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  null,
+  __webpack_require__(191),
   /* template */
-  __webpack_require__(186),
+  __webpack_require__(192),
   /* styles */
   null,
   /* scopeId */
@@ -42744,9 +42877,9 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xinTime.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xtelNum.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] xinTime.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] xtelNum.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -42755,9 +42888,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-15e5fc9d", Component.options)
+    hotAPI.createRecord("data-v-7e10346c", Component.options)
   } else {
-    hotAPI.reload("data-v-15e5fc9d", Component.options)
+    hotAPI.reload("data-v-7e10346c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -42768,13 +42901,180 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 186 */
+/* 191 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	data: function data() {
+		return {
+			telArr: ["中国大陆：+86", "中国香港：+852", "中国澳门：+853", "中国台湾：+886"],
+			tab: 0
+
+		};
+	},
+
+	methods: {
+		del: function del(bool) {
+			this.$store.state.isShowMask = bool;
+			$('.advanced-mask-layer').css('display', 'none');
+			$('.plugin-inited').removeClass('plugin-show');
+			$('.plugin-inited').removeClass('selector-active');
+		},
+		choseTel: function choseTel(index) {
+			this.tab = index || 0;
+			var str = this.telArr[index];
+			this.$store.state.telNum = this.telArr[index];
+			this.del(false);
+			console.log(this.$store.state.telNum);
+		}
+	},
+	mounted: function mounted() {}
+};
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "slide-selector plugin-inited telphone"
+  }, [_c('header', {
+    staticClass: "bar-nav"
+  }, [_c('div', {
+    staticClass: "radio-title"
+  }, [_c('span', {
+    staticClass: "title"
+  }, [_vm._v("选择手机号地区")]), _vm._v(" "), _c('span', {
+    staticClass: "cancel",
+    on: {
+      "click": function($event) {
+        _vm.del(false)
+      }
+    }
+  }, [_vm._v("取消")])])]), _vm._v(" "), _c('ul', {
+    staticClass: "page-content",
+    staticStyle: {
+      "margin-top": "1px"
+    }
+  }, _vm._l((_vm.telArr), function(n, index) {
+    return _c('li', {
+      staticClass: "radio-item  ",
+      class: {
+        'selected': _vm.tab === index
+      },
+      attrs: {
+        "value": "index"
+      },
+      on: {
+        "click": function($event) {
+          _vm.choseTel(index)
+        }
+      }
+    }, [_c('label', {
+      staticClass: "label-radio clearfix"
+    }, [_vm._m(0, true), _c('div', {
+      staticClass: "radio-text"
+    }, [_vm._v(_vm._s(n))]), _c('div', {
+      staticClass: "check"
+    })])])
+  })), _vm._v(" "), _c('div', {
+    staticClass: "arrow up left"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "describe",
+    staticStyle: {
+      "display": "none"
+    }
+  })])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "radio-icon"
+  }, [_c('span', {
+    staticClass: "radio selected"
+  })])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7e10346c", module.exports)
+  }
+}
+
+/***/ }),
+/* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__(194),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xinTime.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] xinTime.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-414c7a71", Component.options)
+  } else {
+    hotAPI.reload("data-v-414c7a71", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('header', {
+  return _c('div', [_c('div', {
+    staticClass: "slide-selector plugin-inited"
+  }, [_c('header', {
     staticClass: "bar-nav"
   }, [_c('div', {
     staticClass: "radio-title"
@@ -42836,18 +43136,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "display": "none"
     }
-  })])
+  })])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-15e5fc9d", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-414c7a71", module.exports)
   }
 }
 
 /***/ }),
-/* 187 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -42855,7 +43155,7 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(188),
+  __webpack_require__(196),
   /* styles */
   null,
   /* scopeId */
@@ -42863,7 +43163,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xconnection.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xconnection.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xconnection.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -42874,9 +43174,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8b376b2e", Component.options)
+    hotAPI.createRecord("data-v-a0208386", Component.options)
   } else {
-    hotAPI.reload("data-v-8b376b2e", Component.options)
+    hotAPI.reload("data-v-a0208386", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -42887,13 +43187,15 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 188 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('header', {
+  return _c('div', [_c('div', {
+    staticClass: "slide-selector plugin-inited"
+  }, [_c('header', {
     staticClass: "bar-nav"
   }, [_c('div', {
     staticClass: "radio-title"
@@ -42970,34 +43272,38 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "display": "none"
     }
-  })])
+  })])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8b376b2e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-a0208386", module.exports)
   }
 }
 
 /***/ }),
-/* 189 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(198)
+}
 var Component = __webpack_require__(0)(
   /* script */
-  null,
+  __webpack_require__(200),
   /* template */
-  __webpack_require__(190),
+  __webpack_require__(201),
   /* styles */
-  null,
+  injectStyle,
   /* scopeId */
-  null,
+  "data-v-0b9e7a98",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\buyCarcomponents\\xperson.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\buyCarcomponents\\xperson.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xperson.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43008,9 +43314,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-626b7640", Component.options)
+    hotAPI.createRecord("data-v-0b9e7a98", Component.options)
   } else {
-    hotAPI.reload("data-v-626b7640", Component.options)
+    hotAPI.reload("data-v-0b9e7a98", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43021,29 +43327,223 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 190 */
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(199);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("e0d4299a", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0b9e7a98\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xperson.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0b9e7a98\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xperson.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.sure[data-v-0b9e7a98] {\n\tfloat: right;\n\tfont-size: 15px;\n\tmargin-top: 13px;\n\tcolor: #49f;\n}\n.advanced-mask-layer[data-v-0b9e7a98] {\n\tdisplay: none;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/buyCarcomponents/xperson.vue?45a044ad"],"names":[],"mappings":";AAwHA;CACA,aAAA;CACA,gBAAA;CACA,iBAAA;CACA,YAAA;CACA;AAEA;CACA,cAAA;CACA","file":"xperson.vue","sourcesContent":["<template>\n\t<div>\n\t\t<div class=\"select-people page-plugin  page-on-right plugin-inited\">\n\t\t\t<!--select-people page-plugin plugin-inited page-on-center plugin-show出现后显示的类名-->\n\t\t\t<header class=\"bar bar-nav\">\n\t\t\t\t<a class=\"icon pull-left\" @click=\"goBack()\" style=\"font-size: 15px;color: #49f;\">取消</a>\n\t\t\t\t<h1 class=\"title\">选择入住人</h1>\n\t\t\t\t<a class=\"sure\" @click=\"Sure()\" style=\"position: relative; z-index: 30;\">确定</a>\n\t\t\t</header>\n\t\t\t<div class=\"page-content\" style=\"\">\n\t\t\t\t<div class=\"person-box\">\n\t\t\t\t\t<p class=\"tip\">请选择真实入住人，以保证后续正常审核、返现。</p>\n\t\t\t\t\t<div class=\"add\" @click=\"addinfo()\"><b>+</b> 新增常用入住人<span><i class=\"cert\"></i></span></div>\n\t\t\t\t\t<!--点击新增入住人时，新增入住人隐藏 to-input显示 -->\n\t\t\t\t\t<div class=\"to-input\"><input id=\"inputaddcusname\" name=\"addcusname\" type=\"text\" placeholder=\"请输入入住人姓名\" maxlength=\"30\" data-validate=\"{&quot;rq&quot;:true,&quot;regex&quot;:&quot;^([一-龥/ ]{2,50}|[a-zA-Z][a-zA-Z/ ]+[a-zA-Z])$&quot;,&quot;msg&quot;:&quot;请输入正确的入住人姓名&quot;}\">\n\t\t\t\t\t\t<div class=\"confirm\" @click=\"conFirm()\">增加</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"error\">每个房间只需选择一位入住人</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<ul class=\"per-list\">\n\t\t\t\t<li v-for=\"(n,index) in names\">\n\t\t\t\t\t<input type=\"checkbox\" class=\"checkbox\"/><span>{{n}}<span></span></span>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t\t<!--填写完个人信息后的样式-->\n\t\t<div>\n\t\t\t<!--dialog-active plugin-show-->\n\t\t\t<div class=\"dialog plugin-inited dialog-active sure\">\n\t\t\t\t<div class=\"content\">请输入正确的入住人姓名</div>\n\t\t\t\t<div class=\"item-btn\" style=\"background: rgb(68, 153, 255);\" @click=\"hide()\">确 定</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</template>\n<script>\n\t//\timport xback from \"../xback.vue\"\n\texport default {\n\t\tdata() {\n\t\t\t\t//定义变量\n\t\t\t\treturn {\n\t\t\t\t\tnames: [],\n\t\t\t\t\ttab: 0,\n\t\t\t\t\tchec:false,\n\t\t\t\t\ttxtArr:[],\n\t\t\t\t}\n\t\t\t},\n\t\t\tmethods: {\n\t\t\t\t//封装函数方法\n\t\t\t\tgoBack() {\n\t\t\t\t\t$('.select-people').removeClass('plugin-show');\n\t\t\t\t\t$('.select-people').addClass('page-on-right');\n\t\t\t\t\t$('.select-people').addClass('page-on-center');\n\t\t\t\t\tconsole.log(this.$store.state.nameNum)\n\t\t\t\t},\n\t\t\t\t//添加姓名\n\t\t\t\taddinfo() {\n\t\t\t\t\t$('.add').css('display', 'none');\n\t\t\t\t\t$('.to-input').css('display', 'block');\n\t\t\t\t\t$('#inputaddcusname').focus();\n\t\t\t\t},\n\t\t\t\t//在增加下面动态生成姓名列表\n\t\t\t\tconFirm() {\n\t\t\t\t\tvar name = $('#inputaddcusname');\n\t\t\t\t\t//\t\t\t\t\tconsole.log(name)\n\t\t\t\t\tif(name.val() == '') {\n\t\t\t\t\t\t$('.sure').addClass('plugin-show');\n//\t\t\t\t\t\t$('.sure').addClass('animate bouncelnUP');\n\t\t\t\t\t\t$('.advanced-mask-layer').css('display', 'block');\n//\t\t\t\t\t\t$('.advanced-mask-layer').addClass('animate bouncelnUP');\n\t\t\t\t\t\t$('.add').css('display', 'none');\n\t\t\t\t\t\t$('.to-input').css('display', 'block');\n\t\t\t\t\t\t$('.page-content').attr('overflow', 'hidden !important');\n\t\t\t\t\t} else {\n\n\t\t\t\t\t\tthis.names.push(name.val());\n//\t\t\t\t\t\tthis.$store.state.nameNum = this.names\n\t\t\t\t\t\t//console.log(this.names)\n\t\t\t\t\t\t$('.add').css('display', 'block');\n\t\t\t\t\t\t$('.to-input').css('display', 'none');\n//\t\t\t\t\t\tname.focus;\n\t\t\t\t\t\t$(\"#inputaddcusname\").val(\"\")\n\n\t\t\t\t\t}\n\n\t\t\t\t},\n\t\t\t\t//选中房间入住人姓名\n\t\t\t\tSure(){\t\t\t\t\t\n\t\t\t\t\tthis.txtArr=[]\n\t\t\t\t\t//遍历有checked属性的元素，获取值插入数组\n\t\t\t\t\t$.map($(':checked'),function(items){\n\t\t\t\t\t\tvar text = $(items).next().text()\n\t\t\t\t\t\tthis.txtArr.push(text)\n\t\t\t\t\t}.bind(this))\n//\t\t\t\t\tconsole.log(this.txtArr)\n\t\t\t\t\t$('.select-people').removeClass('plugin-show');\n\t\t\t\t\t$('.select-people').addClass('page-on-right');\n\t\t\t\t\t$('.select-people').addClass('page-on-center');\n\t\t\t\t\tthis.$store.state.nameNum = this.txtArr;\n\t\t\t\t\tconsole.log(this.$store.state.nameNum)\n\t\t\t\t},\n\t\t\t\t//隐藏为输入姓名的提示框\n\t\t\t\thide() {\n\t\t\t\t\t$('#inputaddcusname').focus;\n\t\t\t\t\t//console.log(this.$store.state.nameNum)\n\t\t\t\t\t$('.sure').removeClass('plugin-show');\n\t\t\t\t\t$('.advanced-mask-layer').css('display', 'none');\n\t\t\t\t\t$('#inputaddcusname').focus();\n\t\t\t\t},\n\n\t\t\t},\n\n\t\t\tcomponents: {\n\t\t\t\t//注册组件\n\t\t\t\t//\t\t\t\txback,\n\t\t\t}\n\t}\n</script>\n<style scoped>\n\t.sure {\n\t\tfloat: right;\n\t\tfont-size: 15px;\n\t\tmargin-top: 13px;\n\t\tcolor: #49f;\n\t}\n\t\n\t.advanced-mask-layer {\n\t\tdisplay: none;\n\t}\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//	import xback from "../xback.vue"
+exports.default = {
+	data: function data() {
+		//定义变量
+		return {
+			names: [],
+			tab: 0,
+			chec: false,
+			txtArr: []
+		};
+	},
+
+	methods: {
+		//封装函数方法
+		goBack: function goBack() {
+			$('.select-people').removeClass('plugin-show');
+			$('.select-people').addClass('page-on-right');
+			$('.select-people').addClass('page-on-center');
+			console.log(this.$store.state.nameNum);
+		},
+
+		//添加姓名
+		addinfo: function addinfo() {
+			$('.add').css('display', 'none');
+			$('.to-input').css('display', 'block');
+			$('#inputaddcusname').focus();
+		},
+
+		//在增加下面动态生成姓名列表
+		conFirm: function conFirm() {
+			var name = $('#inputaddcusname');
+			//					console.log(name)
+			if (name.val() == '') {
+				$('.sure').addClass('plugin-show');
+				//						$('.sure').addClass('animate bouncelnUP');
+				$('.advanced-mask-layer').css('display', 'block');
+				//						$('.advanced-mask-layer').addClass('animate bouncelnUP');
+				$('.add').css('display', 'none');
+				$('.to-input').css('display', 'block');
+				$('.page-content').attr('overflow', 'hidden !important');
+			} else {
+
+				this.names.push(name.val());
+				//						this.$store.state.nameNum = this.names
+				//console.log(this.names)
+				$('.add').css('display', 'block');
+				$('.to-input').css('display', 'none');
+				//						name.focus;
+				$("#inputaddcusname").val("");
+			}
+		},
+
+		//选中房间入住人姓名
+		Sure: function Sure() {
+			this.txtArr = [];
+			//遍历有checked属性的元素，获取值插入数组
+			$.map($(':checked'), function (items) {
+				var text = $(items).next().text();
+				this.txtArr.push(text);
+			}.bind(this));
+			//					console.log(this.txtArr)
+			$('.select-people').removeClass('plugin-show');
+			$('.select-people').addClass('page-on-right');
+			$('.select-people').addClass('page-on-center');
+			this.$store.state.nameNum = this.txtArr;
+			console.log(this.$store.state.nameNum);
+		},
+
+		//隐藏为输入姓名的提示框
+		hide: function hide() {
+			$('#inputaddcusname').focus;
+			//console.log(this.$store.state.nameNum)
+			$('.sure').removeClass('plugin-show');
+			$('.advanced-mask-layer').css('display', 'none');
+			$('#inputaddcusname').focus();
+		}
+	},
+
+	components: {
+		//注册组件
+		//				xback,
+	}
+};
+
+/***/ }),
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('header', {
+  return _c('div', [_c('div', {
+    staticClass: "select-people page-plugin  page-on-right plugin-inited"
+  }, [_c('header', {
     staticClass: "bar bar-nav"
   }, [_c('a', {
-    staticClass: "icon icon-back pull-left"
-  }), _vm._v(" "), _c('h1', {
+    staticClass: "icon pull-left",
+    staticStyle: {
+      "font-size": "15px",
+      "color": "#49f"
+    },
+    on: {
+      "click": function($event) {
+        _vm.goBack()
+      }
+    }
+  }, [_vm._v("取消")]), _vm._v(" "), _c('h1', {
     staticClass: "title"
-  }, [_vm._v("选择入住人")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("选择入住人")]), _vm._v(" "), _c('a', {
+    staticClass: "sure",
+    staticStyle: {
+      "position": "relative",
+      "z-index": "30"
+    },
+    on: {
+      "click": function($event) {
+        _vm.Sure()
+      }
+    }
+  }, [_vm._v("确定")])]), _vm._v(" "), _c('div', {
     staticClass: "page-content"
   }, [_c('div', {
     staticClass: "person-box"
   }, [_c('p', {
     staticClass: "tip"
   }, [_vm._v("请选择真实入住人，以保证后续正常审核、返现。")]), _vm._v(" "), _c('div', {
-    staticClass: "add"
-  }, [_c('b', [_vm._v("+")]), _vm._v(" 新增常用入住人"), _c('span', [_c('i', {
-    staticClass: "cert"
-  })])]), _vm._v(" "), _c('div', {
+    staticClass: "add",
+    on: {
+      "click": function($event) {
+        _vm.addinfo()
+      }
+    }
+  }, [_c('b', [_vm._v("+")]), _vm._v(" 新增常用入住人"), _vm._m(0)]), _vm._v(" "), _c('div', {
     staticClass: "to-input"
   }, [_c('input', {
     attrs: {
@@ -43052,38 +43552,56 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "text",
       "placeholder": "请输入入住人姓名",
       "maxlength": "30",
-      "data-validate": "{\"rq\":true,\"regex\":\"^[一-龥]{2,50}|[a-zA-Z][a-zA-Z/]+[a-zA-Z]$\",\"msg\":\"姓名格式有误\"}"
+      "data-validate": "{\"rq\":true,\"regex\":\"^([一-龥/ ]{2,50}|[a-zA-Z][a-zA-Z/ ]+[a-zA-Z])$\",\"msg\":\"请输入正确的入住人姓名\"}"
     }
   }), _vm._v(" "), _c('div', {
-    staticClass: "confirm"
+    staticClass: "confirm",
+    on: {
+      "click": function($event) {
+        _vm.conFirm()
+      }
+    }
   }, [_vm._v("增加")])]), _vm._v(" "), _c('div', {
     staticClass: "error"
-  }, [_vm._v("每个房间只需选择一位入住人")]), _vm._v(" "), _c('div', {
-    staticClass: "still"
-  }, [_c('span', {
-    staticClass: "t2"
-  }, [_vm._v("每个房间只需选择一位入住人")])]), _vm._v(" "), _c('div', {
-    staticClass: "btnwrap"
-  }, [_c('button', {
-    staticClass: "cancel"
-  }, [_vm._v("取消")]), _c('button', {
-    staticClass: "submit"
-  }, [_vm._v("确定")])])])]), _vm._v(" "), _c('ul', {
+  }, [_vm._v("每个房间只需选择一位入住人")])])]), _vm._v(" "), _c('ul', {
     staticClass: "per-list"
-  }, [_c('li', [_c('div', {
-    staticClass: "checkbox"
-  }), _c('span', [_vm._v("张君华"), _c('span')])])])])
+  }, _vm._l((_vm.names), function(n, index) {
+    return _c('li', [_c('input', {
+      staticClass: "checkbox",
+      attrs: {
+        "type": "checkbox"
+      }
+    }), _c('span', [_vm._v(_vm._s(n)), _c('span')])])
+  }))]), _vm._v(" "), _c('div', [_c('div', {
+    staticClass: "dialog plugin-inited dialog-active sure"
+  }, [_c('div', {
+    staticClass: "content"
+  }, [_vm._v("请输入正确的入住人姓名")]), _vm._v(" "), _c('div', {
+    staticClass: "item-btn",
+    staticStyle: {
+      "background": "rgb(68, 153, 255)"
+    },
+    on: {
+      "click": function($event) {
+        _vm.hide()
+      }
+    }
+  }, [_vm._v("确 定")])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [_c('i', {
+    staticClass: "cert"
+  })])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-626b7640", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0b9e7a98", module.exports)
   }
 }
 
 /***/ }),
-/* 191 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43114,7 +43632,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "order-fill"
   }, [_c('xoccupancy'), _vm._v(" "), _c('orderContact'), _vm._v(" "), _c('xreBackMoneyHelp'), _vm._v(" "), _c('xorderRebackMoney'), _vm._v(" "), _c('div', {
     staticClass: "invoice-elong"
-  }, [_vm._v("\n\t\t\t\t\t\t如需发票请到酒店前台咨询 \n\t\t\t\t\t")]), _vm._v(" "), _vm._m(0)], 1)])], 1), _vm._v(" "), _c('input', {
+  }, [_vm._v("\n\t\t\t\t\t\t如需发票请到酒店前台咨询\n\t\t\t\t\t")]), _vm._v(" "), _vm._m(0)], 1)])], 1), _vm._v(" "), _c('input', {
     staticClass: "createorder",
     attrs: {
       "type": "hidden",
@@ -43139,13 +43657,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "vlaue": "",
       "value": "4"
     }
-  }), _vm._v(" "), _c('xroomNum'), _vm._v(" "), _c('xtimeNum'), _vm._v(" "), _c('div', {
-    staticClass: "slide-selector plugin-inited"
-  }, [_c('xinTime')], 1), _vm._v(" "), _c('div', {
-    staticClass: "slide-selector plugin-inited"
-  }, [_c('xconnection')], 1), _vm._v(" "), _c('div', {
-    staticClass: "select-people page-plugin page-on-right plugin-inited"
-  }, [_c('xperson')], 1), _vm._v(" "), _c('xreBackMoneyDirective'), _vm._v(" "), _c('xmask'), _vm._v(" "), _c('xuseHongBao')], 1)])
+  }), _vm._v(" "), _c('xroomNum'), _vm._v(" "), _c('xtimeNum'), _vm._v(" "), _c('xtelNum'), _vm._v(" "), _c('xmask'), _vm._v(" "), _c('xinTime'), _vm._v(" "), _c('xconnection'), _vm._v(" "), _c('xperson')], 1), _vm._v(" "), _c('xreBackMoneyDirective'), _vm._v(" "), _c('xuseHongBao')], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "search"
@@ -43160,24 +43672,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-d66009b6", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2be44c5e", module.exports)
   }
 }
 
 /***/ }),
-/* 192 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(193)
+  __webpack_require__(204)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(195),
+  __webpack_require__(206),
   /* template */
-  __webpack_require__(196),
+  __webpack_require__(207),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -43185,7 +43697,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\routes\\mySelf.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\routes\\mySelf.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] mySelf.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43196,9 +43708,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-124cfdcf", Component.options)
+    hotAPI.createRecord("data-v-678adc7b", Component.options)
   } else {
-    hotAPI.reload("data-v-124cfdcf", Component.options)
+    hotAPI.reload("data-v-678adc7b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43209,23 +43721,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 193 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(194);
+var content = __webpack_require__(205);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("0ebb4ceb", content, false);
+var update = __webpack_require__(2)("a1cfacc8", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-124cfdcf\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-124cfdcf\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-678adc7b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./mySelf.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -43235,7 +43747,7 @@ if(false) {
 }
 
 /***/ }),
-/* 194 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -43249,7 +43761,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 195 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43259,7 +43771,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xback = __webpack_require__(8);
+var _xback = __webpack_require__(5);
 
 var _xback2 = _interopRequireDefault(_xback);
 
@@ -43346,7 +43858,7 @@ exports.default = {
 //
 
 /***/ }),
-/* 196 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43617,20 +44129,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-124cfdcf", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-678adc7b", module.exports)
   }
 }
 
 /***/ }),
-/* 197 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(198),
+  __webpack_require__(209),
   /* template */
-  __webpack_require__(229),
+  __webpack_require__(240),
   /* styles */
   null,
   /* scopeId */
@@ -43638,7 +44150,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\home.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43649,9 +44161,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c74d7b06", Component.options)
+    hotAPI.createRecord("data-v-4d41f251", Component.options)
   } else {
-    hotAPI.reload("data-v-c74d7b06", Component.options)
+    hotAPI.reload("data-v-4d41f251", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43662,7 +44174,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 198 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43672,27 +44184,27 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xheader = __webpack_require__(199);
+var _xheader = __webpack_require__(210);
 
 var _xheader2 = _interopRequireDefault(_xheader);
 
-var _xsearch = __webpack_require__(204);
+var _xsearch = __webpack_require__(215);
 
 var _xsearch2 = _interopRequireDefault(_xsearch);
 
-var _xoption = __webpack_require__(209);
+var _xoption = __webpack_require__(220);
 
 var _xoption2 = _interopRequireDefault(_xoption);
 
-var _xsidebar = __webpack_require__(214);
+var _xsidebar = __webpack_require__(225);
 
 var _xsidebar2 = _interopRequireDefault(_xsidebar);
 
-var _xtool = __webpack_require__(219);
+var _xtool = __webpack_require__(230);
 
 var _xtool2 = _interopRequireDefault(_xtool);
 
-var _ximages = __webpack_require__(224);
+var _ximages = __webpack_require__(235);
 
 var _ximages2 = _interopRequireDefault(_ximages);
 
@@ -43728,27 +44240,27 @@ exports.default = {
 };
 
 /***/ }),
-/* 199 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(200)
+  __webpack_require__(211)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(202),
+  __webpack_require__(213),
   /* template */
-  __webpack_require__(203),
+  __webpack_require__(214),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-4ce01aa0",
+  "data-v-398f2b48",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xheader.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -43759,9 +44271,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4ce01aa0", Component.options)
+    hotAPI.createRecord("data-v-398f2b48", Component.options)
   } else {
-    hotAPI.reload("data-v-4ce01aa0", Component.options)
+    hotAPI.reload("data-v-398f2b48", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -43772,23 +44284,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 200 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(201);
+var content = __webpack_require__(212);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("27af2ed2", content, false);
+var update = __webpack_require__(2)("40e31dba", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4ce01aa0\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4ce01aa0\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-398f2b48\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xheader.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -43798,7 +44310,7 @@ if(false) {
 }
 
 /***/ }),
-/* 201 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -43806,13 +44318,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.swiper-slide img[data-v-4ce01aa0] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xheader.vue?6ad04517"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>-->\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.swiper-slide img[data-v-398f2b48] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/xheader.vue?6ad04517"],"names":[],"mappings":";AAkFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>-->\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/slideshow\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl, this.arr[3].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 202 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43900,7 +44412,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 203 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44010,32 +44522,32 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4ce01aa0", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-398f2b48", module.exports)
   }
 }
 
 /***/ }),
-/* 204 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(205)
+  __webpack_require__(216)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(207),
+  __webpack_require__(218),
   /* template */
-  __webpack_require__(208),
+  __webpack_require__(219),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-3958704b",
+  "data-v-4300e7f7",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xsearch.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xsearch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44046,9 +44558,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3958704b", Component.options)
+    hotAPI.createRecord("data-v-4300e7f7", Component.options)
   } else {
-    hotAPI.reload("data-v-3958704b", Component.options)
+    hotAPI.reload("data-v-4300e7f7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44059,23 +44571,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 205 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(206);
+var content = __webpack_require__(217);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("51c36293", content, false);
+var update = __webpack_require__(2)("653da805", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3958704b\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3958704b\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4300e7f7\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4300e7f7\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xsearch.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -44085,7 +44597,7 @@ if(false) {
 }
 
 /***/ }),
-/* 206 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -44093,13 +44605,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*@import \"css/header.css\";\n@import \"css/header2.css\";*/\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.validate-code-by-intercept {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 50%;\n\tmargin-top: -120px;\n\tmargin-left: -153px;\n\tpadding-top: 10px;\n\theight: 220px;\n\twidth: 306px;\n\tz-index: 15000;\n\tbackground-color: #fff;\n\ttext-align: center;\n\tfont-size: 16px;\n\tfont-weight: 700;\n\tcolor: #353535\n}\n\n.validate-code-by-intercept .form-li {\n\tclear: both;\n\theight: 44px;\n\tline-height: 44px;\n\tmargin: 3px 12px\n}\n\n.validate-code-by-intercept .form-li2 {\n\toverflow: hidden;\n\tborder-radius: 5px;\n\tborder: 1px solid #ddd;\n\tbackground-clip: padding-box;\n\tmargin-bottom: 10px\n}\n\n.validate-code-by-intercept input.txt {\n\twidth: 100%;\n\tpadding: 11px 10px 11px 13px;\n\tdisplay: block;\n\tmargin: 0;\n\tborder: 0;\n\tbackground: 0;\n\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\n}\n\n.validate-code-by-intercept .submit {\n\tfont-size: 1.1rem;\n\twidth: 100%;\n\theight: 40px;\n\tline-height: 40px;\n\ttext-align: center;\n\tcolor: #fff;\n\tborder-radius: 5px;\n\tborder-width: 0;\n\tbackground-color: #e65749;\n\tmargin: 0 0 10px\n}\n\n.search-wrap {\n\tmargin-bottom: 12px;\n\tborder: 1px solid #DDD;\n\tbackground: #FFF;\n}\n\n.search-wrap .search-list {\n\tpadding: 0 12px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-list li {\n\tpadding: 6px 0;\n\tborder-bottom: 1px solid #DDD;\n\tposition: relative;\n\tmin-height: 26px;\n}\n\n.search-wrap .search-list li.addr {\n\tmargin-top: 12px;\n}\n\n.search-wrap .search-list li.date {\n\tfont-size: .688rem;\n\tline-height: 16px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-btn {\n\twidth: 100%;\n\tmargin: 0 auto;\n\tbackground: #49f;\n\theight: 36px;\n\tline-height: 36px;\n\tfont-size: 10px;\n\tcolor: #FFF;\n\ttext-align: center;\n\tborder-radius: 4px;\n}\n\n.search-wrap .search-btn i {\n\tposition: relative;\n\ttop: 7px;\n\tleft: -6px;\n}\n\n.search-wrap .search-list li i:first-child {\n\twidth: 16px;\n\theight: 16px;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 50%;\n\tmargin-top: -10px;\n\tfont-size: .9rem;\n\tmargin-left: 8px;\n\tline-height: 21px;\n\tcolor: #999;\n}\n\n.search-wrap .search-list li.addr p {\n\tline-height: 21px;\n\toverflow: hidden;\n\tpadding-right: 20px;\n\tmargin-left: 30px;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\tfont-size: -0.937rem;\n}\n\n.search-wrap .search-list li.addr .right {\n\tposition: absolute;\n\tright: 10px;\n\ttext-align: center;\n\tcolor: #49f;\n\ttop: 50%;\n\tfont-size: .7rem;\n\tfont-weight: normal;\n\tline-height: 1;\n\tmargin-top: -8px;\n}\n\n.search-wrap .search-list li.addr .right i {\n\twidth: 14px;\n\theight: 16px;\n\tdisplay: inline-block;\n\tposition: relative;\n\tmargin: 0;\n\tvertical-align: -3px;\n}*/\nbody[data-v-3958704b],\nhtml[data-v-3958704b],\n#allmap[data-v-3958704b] {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n\tmargin: 0;\n\tbackground-color: #F2F2F2;\n\tfont-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xsearch.vue?032f0e61"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4GA;4BACA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4JA;AAEA;;;CAGA,YAAA;CACA,aAAA;CACA,iBAAA;CACA,UAAA;CACA,0BAAA;CACA,oCAAA;CACA","file":"xsearch.vue","sourcesContent":["<template>\r\n\r\n\t<div class=\"page-content page-search\" style=\"\">\r\n\t\t<div class=\"search-wrap\">\r\n\t\t\t<div class=\"search-lb\">\r\n\t\t\t\t<ul class=\"search-list\">\r\n\t\t\t\t\t<li class=\"addr\">\r\n\t\t\t\t\t\t<i class=\"addr\"></i>\r\n\t\t\t\t\t\t<div v-if=\"not==true\">\r\n\t\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"changetion()\">{{search}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div v-else>\r\n\t\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"changetion()\">{{aa}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\" style=\"right:92px\"></i>\r\n\t\t\t\t\t\t<b class=\"right isnearby tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}\" @click=\"baidu\"><i class=\"icon-nearby\" ></i><span>我的位置</span></b>\r\n\t\t\t\t\t\t<div id=\"allmap\"></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"date\">\r\n\t\t\t\t\t\t<i class=\"icon-time\"></i>\r\n\t\t\t\t\t\t<div class=\"d1 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">入住<span class=\"night\" style=\"display: none;\">深夜</span></p>\r\n\t\t\t\t\t\t\t<p><span class=\"indate\" data-value=\"2017-07-27\">07月27日</span><span class=\"startweek\">明天</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d2\"></div>\r\n\t\t\t\t\t\t<div class=\"d3 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkoutdate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">离店</p>\r\n\t\t\t\t\t\t\t<p><span class=\"outdate\" data-value=\"2017-07-30\">07月30日</span><span class=\"endweek\">周日</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d4 total\">3晚</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"name\">\r\n\t\t\t\t\t\t<!--输入内容添加on-->\r\n\t\t\t\t\t\t<div class=\"sea-box\">\r\n\t\t\t\t\t\t\t<i class=\"name\"></i>\r\n\t\t\t\t\t\t\t<input type=\"input\" value=\"\" placeholder=\"酒店名称/位置不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"pri\">\r\n\t\t\t\t\t\t<div class=\"price-star-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<i class=\"pri\"></i>\r\n\t\t\t\t\t\t\t<input class=\"title-phone\" type=\"input\" value=\"\" placeholder=\"价格星级不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"search-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\"><i></i>搜索</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tbottomNav: 'recents',\r\n\t\t\t\taa: '广州市',\r\n\t\t\t\topen: false,\r\n\t\t\t\tdocked: true,\r\n\t\t\t\tnot: false\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\thandleChange(val) {\r\n\t\t\t\tthis.bottomNav = val\r\n\t\t\t},\r\n\t\t\tbaidu() {\r\n\t\t\t\t// 百度地图API功能\r\n\t\t\t\tthis.not = false\r\n\t\t\t\tvar baidis = this\r\n\t\t\t\tvar map = new BMap.Map(\"allmap\");\r\n\t\t\t\tvar point = new BMap.Point(116.331398, 39.897445);\r\n\t\t\t\tmap.centerAndZoom(point, 12);\r\n\r\n\t\t\t\tfunction myFun(result) {\r\n\t\t\t\t\tvar cityName = result.name;\r\n\t\t\t\t\tmap.setCenter(cityName);\r\n\t\t\t\t\tconsole.log(baidis)\r\n\t\t\t\t\t//\t\t\t\t \talert(\"当前定位城市:\" + cityName);\r\n\t\t\t\t\tbaidis.aa = cityName\r\n\r\n\t\t\t\t}\r\n\t\t\t\tvar myCity = new BMap.LocalCity();\r\n\t\t\t\tmyCity.get(myFun);\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t\tthis.not = true\r\n\r\n\t\t\t},\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//\t\t\t\t\tthis.baidu()\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tsearch() {\r\n\t\t\t\treturn this.$store.state.aaa\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped=\"\">\r\n\t/*@import \"css/header.css\";\r\n\t@import \"css/header2.css\";*/\r\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept {\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\tmargin-top: -120px;\r\n\t\tmargin-left: -153px;\r\n\t\tpadding-top: 10px;\r\n\t\theight: 220px;\r\n\t\twidth: 306px;\r\n\t\tz-index: 15000;\r\n\t\tbackground-color: #fff;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 16px;\r\n\t\tfont-weight: 700;\r\n\t\tcolor: #353535\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li {\r\n\t\tclear: both;\r\n\t\theight: 44px;\r\n\t\tline-height: 44px;\r\n\t\tmargin: 3px 12px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li2 {\r\n\t\toverflow: hidden;\r\n\t\tborder-radius: 5px;\r\n\t\tborder: 1px solid #ddd;\r\n\t\tbackground-clip: padding-box;\r\n\t\tmargin-bottom: 10px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept input.txt {\r\n\t\twidth: 100%;\r\n\t\tpadding: 11px 10px 11px 13px;\r\n\t\tdisplay: block;\r\n\t\tmargin: 0;\r\n\t\tborder: 0;\r\n\t\tbackground: 0;\r\n\t\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .submit {\r\n\t\tfont-size: 1.1rem;\r\n\t\twidth: 100%;\r\n\t\theight: 40px;\r\n\t\tline-height: 40px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #fff;\r\n\t\tborder-radius: 5px;\r\n\t\tborder-width: 0;\r\n\t\tbackground-color: #e65749;\r\n\t\tmargin: 0 0 10px\r\n\t}\r\n\t\r\n\t.search-wrap {\r\n\t\tmargin-bottom: 12px;\r\n\t\tborder: 1px solid #DDD;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list {\r\n\t\tpadding: 0 12px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li {\r\n\t\tpadding: 6px 0;\r\n\t\tborder-bottom: 1px solid #DDD;\r\n\t\tposition: relative;\r\n\t\tmin-height: 26px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.date {\r\n\t\tfont-size: .688rem;\r\n\t\tline-height: 16px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn {\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t\tbackground: #49f;\r\n\t\theight: 36px;\r\n\t\tline-height: 36px;\r\n\t\tfont-size: 10px;\r\n\t\tcolor: #FFF;\r\n\t\ttext-align: center;\r\n\t\tborder-radius: 4px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn i {\r\n\t\tposition: relative;\r\n\t\ttop: 7px;\r\n\t\tleft: -6px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li i:first-child {\r\n\t\twidth: 16px;\r\n\t\theight: 16px;\r\n\t\tdisplay: block;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tmargin-top: -10px;\r\n\t\tfont-size: .9rem;\r\n\t\tmargin-left: 8px;\r\n\t\tline-height: 21px;\r\n\t\tcolor: #999;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr p {\r\n\t\tline-height: 21px;\r\n\t\toverflow: hidden;\r\n\t\tpadding-right: 20px;\r\n\t\tmargin-left: 30px;\r\n\t\twhite-space: nowrap;\r\n\t\ttext-overflow: ellipsis;\r\n\t\tfont-size: -0.937rem;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right {\r\n\t\tposition: absolute;\r\n\t\tright: 10px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #49f;\r\n\t\ttop: 50%;\r\n\t\tfont-size: .7rem;\r\n\t\tfont-weight: normal;\r\n\t\tline-height: 1;\r\n\t\tmargin-top: -8px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right i {\r\n\t\twidth: 14px;\r\n\t\theight: 16px;\r\n\t\tdisplay: inline-block;\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tvertical-align: -3px;\r\n\t}*/\r\n\t\r\n\tbody,\r\n\thtml,\r\n\t#allmap {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\toverflow: hidden;\r\n\t\tmargin: 0;\r\n\t\tbackground-color: #F2F2F2;\r\n\t\tfont-family: \"微软雅黑\";\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*@import \"css/header.css\";\n@import \"css/header2.css\";*/\n/** {\n\tpadding: 0;\n\tmargin: 0;\n}\n\nul li {\n\tlist-style: none;\n}\n\na {\n\ttext-decoration: none;\n}\n\n.validate-code-by-intercept {\n\tposition: absolute;\n\ttop: 50%;\n\tleft: 50%;\n\tmargin-top: -120px;\n\tmargin-left: -153px;\n\tpadding-top: 10px;\n\theight: 220px;\n\twidth: 306px;\n\tz-index: 15000;\n\tbackground-color: #fff;\n\ttext-align: center;\n\tfont-size: 16px;\n\tfont-weight: 700;\n\tcolor: #353535\n}\n\n.validate-code-by-intercept .form-li {\n\tclear: both;\n\theight: 44px;\n\tline-height: 44px;\n\tmargin: 3px 12px\n}\n\n.validate-code-by-intercept .form-li2 {\n\toverflow: hidden;\n\tborder-radius: 5px;\n\tborder: 1px solid #ddd;\n\tbackground-clip: padding-box;\n\tmargin-bottom: 10px\n}\n\n.validate-code-by-intercept input.txt {\n\twidth: 100%;\n\tpadding: 11px 10px 11px 13px;\n\tdisplay: block;\n\tmargin: 0;\n\tborder: 0;\n\tbackground: 0;\n\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\n}\n\n.validate-code-by-intercept .submit {\n\tfont-size: 1.1rem;\n\twidth: 100%;\n\theight: 40px;\n\tline-height: 40px;\n\ttext-align: center;\n\tcolor: #fff;\n\tborder-radius: 5px;\n\tborder-width: 0;\n\tbackground-color: #e65749;\n\tmargin: 0 0 10px\n}\n\n.search-wrap {\n\tmargin-bottom: 12px;\n\tborder: 1px solid #DDD;\n\tbackground: #FFF;\n}\n\n.search-wrap .search-list {\n\tpadding: 0 12px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-list li {\n\tpadding: 6px 0;\n\tborder-bottom: 1px solid #DDD;\n\tposition: relative;\n\tmin-height: 26px;\n}\n\n.search-wrap .search-list li.addr {\n\tmargin-top: 12px;\n}\n\n.search-wrap .search-list li.date {\n\tfont-size: .688rem;\n\tline-height: 16px;\n\toverflow: hidden;\n}\n\n.search-wrap .search-btn {\n\twidth: 100%;\n\tmargin: 0 auto;\n\tbackground: #49f;\n\theight: 36px;\n\tline-height: 36px;\n\tfont-size: 10px;\n\tcolor: #FFF;\n\ttext-align: center;\n\tborder-radius: 4px;\n}\n\n.search-wrap .search-btn i {\n\tposition: relative;\n\ttop: 7px;\n\tleft: -6px;\n}\n\n.search-wrap .search-list li i:first-child {\n\twidth: 16px;\n\theight: 16px;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 50%;\n\tmargin-top: -10px;\n\tfont-size: .9rem;\n\tmargin-left: 8px;\n\tline-height: 21px;\n\tcolor: #999;\n}\n\n.search-wrap .search-list li.addr p {\n\tline-height: 21px;\n\toverflow: hidden;\n\tpadding-right: 20px;\n\tmargin-left: 30px;\n\twhite-space: nowrap;\n\ttext-overflow: ellipsis;\n\tfont-size: -0.937rem;\n}\n\n.search-wrap .search-list li.addr .right {\n\tposition: absolute;\n\tright: 10px;\n\ttext-align: center;\n\tcolor: #49f;\n\ttop: 50%;\n\tfont-size: .7rem;\n\tfont-weight: normal;\n\tline-height: 1;\n\tmargin-top: -8px;\n}\n\n.search-wrap .search-list li.addr .right i {\n\twidth: 14px;\n\theight: 16px;\n\tdisplay: inline-block;\n\tposition: relative;\n\tmargin: 0;\n\tvertical-align: -3px;\n}*/\nbody[data-v-4300e7f7],\nhtml[data-v-4300e7f7],\n#allmap[data-v-4300e7f7] {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n\tmargin: 0;\n\tbackground-color: #F2F2F2;\n\tfont-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/xsearch.vue?032f0e61"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4GA;4BACA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4JA;AAEA;;;CAGA,YAAA;CACA,aAAA;CACA,iBAAA;CACA,UAAA;CACA,0BAAA;CACA,oCAAA;CACA","file":"xsearch.vue","sourcesContent":["<template>\r\n\r\n\t<div class=\"page-content page-search\" style=\"\">\r\n\t\t<div class=\"search-wrap\">\r\n\t\t\t<div class=\"search-lb\">\r\n\t\t\t\t<ul class=\"search-list\">\r\n\t\t\t\t\t<li class=\"addr\">\r\n\t\t\t\t\t\t<i class=\"addr\"></i>\r\n\t\t\t\t\t\t<div v-if=\"not==true\">\r\n\t\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"changetion()\">{{search}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div v-else>\r\n\t\t\t\t\t\t\t<p class=\"cityname tjclick\" city-id=\"0539\" @click=\"changetion()\">{{aa}}</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\" style=\"right:92px\"></i>\r\n\t\t\t\t\t\t<b class=\"right isnearby tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}\" @click=\"baidu\"><i class=\"icon-nearby\" ></i><span>我的位置</span></b>\r\n\t\t\t\t\t\t<div id=\"allmap\"></div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"date\">\r\n\t\t\t\t\t\t<i class=\"icon-time\"></i>\r\n\t\t\t\t\t\t<div class=\"d1 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkindate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">入住<span class=\"night\" style=\"display: none;\">深夜</span></p>\r\n\t\t\t\t\t\t\t<p><span class=\"indate\" data-value=\"2017-07-27\">07月27日</span><span class=\"startweek\">明天</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d2\"></div>\r\n\t\t\t\t\t\t<div class=\"d3 tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;checkoutdate&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<p class=\"type\">离店</p>\r\n\t\t\t\t\t\t\t<p><span class=\"outdate\" data-value=\"2017-07-30\">07月30日</span><span class=\"endweek\">周日</span></p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"d4 total\">3晚</div>\r\n\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"name\">\r\n\t\t\t\t\t\t<!--输入内容添加on-->\r\n\t\t\t\t\t\t<div class=\"sea-box\">\r\n\t\t\t\t\t\t\t<i class=\"name\"></i>\r\n\t\t\t\t\t\t\t<input type=\"input\" value=\"\" placeholder=\"酒店名称/位置不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li class=\"pri\">\r\n\t\t\t\t\t\t<div class=\"price-star-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;priceandstar&quot;,&quot;if&quot;:&quot;110000&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\">\r\n\t\t\t\t\t\t\t<i class=\"pri\"></i>\r\n\t\t\t\t\t\t\t<input class=\"title-phone\" type=\"input\" value=\"\" placeholder=\"价格星级不限\" readonly=\"readonly\">\r\n\t\t\t\t\t\t\t<i class=\"icon-left\"></i>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<span class=\"close\"><i class=\"icon-cross\"></i></span></li>\r\n\t\t\t\t</ul>\r\n\t\t\t\t<div class=\"search-btn tjclick\" data-tj=\"{&quot;cspot&quot;:&quot;search&quot;,&quot;if&quot;:&quot;110018&quot;,&quot;ch&quot;:&quot;h5hotelgeneral&quot;}\"><i></i>搜索</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {\r\n\t\t\t\tbottomNav: 'recents',\r\n\t\t\t\taa: '广州市',\r\n\t\t\t\topen: false,\r\n\t\t\t\tdocked: true,\r\n\t\t\t\tnot: false\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\thandleChange(val) {\r\n\t\t\t\tthis.bottomNav = val\r\n\t\t\t},\r\n\t\t\tbaidu() {\r\n\t\t\t\t// 百度地图API功能\r\n\t\t\t\tthis.not = false\r\n\t\t\t\tvar baidis = this\r\n\t\t\t\tvar map = new BMap.Map(\"allmap\");\r\n\t\t\t\tvar point = new BMap.Point(116.331398, 39.897445);\r\n\t\t\t\tmap.centerAndZoom(point, 12);\r\n\r\n\t\t\t\tfunction myFun(result) {\r\n\t\t\t\t\tvar cityName = result.name;\r\n\t\t\t\t\tmap.setCenter(cityName);\r\n\t\t\t\t\tconsole.log(baidis)\r\n\t\t\t\t\t//\t\t\t\t \talert(\"当前定位城市:\" + cityName);\r\n\t\t\t\t\tbaidis.aa = cityName\r\n\r\n\t\t\t\t}\r\n\t\t\t\tvar myCity = new BMap.LocalCity();\r\n\t\t\t\tmyCity.get(myFun);\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t\tthis.not = true\r\n\r\n\t\t\t},\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//\t\t\t\t\tthis.baidu()\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tsearch() {\r\n\t\t\t\treturn this.$store.state.aaa\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped=\"\">\r\n\t/*@import \"css/header.css\";\r\n\t@import \"css/header2.css\";*/\r\n\t/** {\r\n\t\tpadding: 0;\r\n\t\tmargin: 0;\r\n\t}\r\n\t\r\n\tul li {\r\n\t\tlist-style: none;\r\n\t}\r\n\t\r\n\ta {\r\n\t\ttext-decoration: none;\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept {\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\tmargin-top: -120px;\r\n\t\tmargin-left: -153px;\r\n\t\tpadding-top: 10px;\r\n\t\theight: 220px;\r\n\t\twidth: 306px;\r\n\t\tz-index: 15000;\r\n\t\tbackground-color: #fff;\r\n\t\ttext-align: center;\r\n\t\tfont-size: 16px;\r\n\t\tfont-weight: 700;\r\n\t\tcolor: #353535\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li {\r\n\t\tclear: both;\r\n\t\theight: 44px;\r\n\t\tline-height: 44px;\r\n\t\tmargin: 3px 12px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .form-li2 {\r\n\t\toverflow: hidden;\r\n\t\tborder-radius: 5px;\r\n\t\tborder: 1px solid #ddd;\r\n\t\tbackground-clip: padding-box;\r\n\t\tmargin-bottom: 10px\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept input.txt {\r\n\t\twidth: 100%;\r\n\t\tpadding: 11px 10px 11px 13px;\r\n\t\tdisplay: block;\r\n\t\tmargin: 0;\r\n\t\tborder: 0;\r\n\t\tbackground: 0;\r\n\t\tfont: 16px/1.4 Helvetica Neue, HelveticaNeue, Helvetica, Arial, sans-serif\r\n\t}\r\n\t\r\n\t.validate-code-by-intercept .submit {\r\n\t\tfont-size: 1.1rem;\r\n\t\twidth: 100%;\r\n\t\theight: 40px;\r\n\t\tline-height: 40px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #fff;\r\n\t\tborder-radius: 5px;\r\n\t\tborder-width: 0;\r\n\t\tbackground-color: #e65749;\r\n\t\tmargin: 0 0 10px\r\n\t}\r\n\t\r\n\t.search-wrap {\r\n\t\tmargin-bottom: 12px;\r\n\t\tborder: 1px solid #DDD;\r\n\t\tbackground: #FFF;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list {\r\n\t\tpadding: 0 12px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li {\r\n\t\tpadding: 6px 0;\r\n\t\tborder-bottom: 1px solid #DDD;\r\n\t\tposition: relative;\r\n\t\tmin-height: 26px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr {\r\n\t\tmargin-top: 12px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.date {\r\n\t\tfont-size: .688rem;\r\n\t\tline-height: 16px;\r\n\t\toverflow: hidden;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn {\r\n\t\twidth: 100%;\r\n\t\tmargin: 0 auto;\r\n\t\tbackground: #49f;\r\n\t\theight: 36px;\r\n\t\tline-height: 36px;\r\n\t\tfont-size: 10px;\r\n\t\tcolor: #FFF;\r\n\t\ttext-align: center;\r\n\t\tborder-radius: 4px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-btn i {\r\n\t\tposition: relative;\r\n\t\ttop: 7px;\r\n\t\tleft: -6px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li i:first-child {\r\n\t\twidth: 16px;\r\n\t\theight: 16px;\r\n\t\tdisplay: block;\r\n\t\tposition: absolute;\r\n\t\ttop: 50%;\r\n\t\tmargin-top: -10px;\r\n\t\tfont-size: .9rem;\r\n\t\tmargin-left: 8px;\r\n\t\tline-height: 21px;\r\n\t\tcolor: #999;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr p {\r\n\t\tline-height: 21px;\r\n\t\toverflow: hidden;\r\n\t\tpadding-right: 20px;\r\n\t\tmargin-left: 30px;\r\n\t\twhite-space: nowrap;\r\n\t\ttext-overflow: ellipsis;\r\n\t\tfont-size: -0.937rem;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right {\r\n\t\tposition: absolute;\r\n\t\tright: 10px;\r\n\t\ttext-align: center;\r\n\t\tcolor: #49f;\r\n\t\ttop: 50%;\r\n\t\tfont-size: .7rem;\r\n\t\tfont-weight: normal;\r\n\t\tline-height: 1;\r\n\t\tmargin-top: -8px;\r\n\t}\r\n\t\r\n\t.search-wrap .search-list li.addr .right i {\r\n\t\twidth: 14px;\r\n\t\theight: 16px;\r\n\t\tdisplay: inline-block;\r\n\t\tposition: relative;\r\n\t\tmargin: 0;\r\n\t\tvertical-align: -3px;\r\n\t}*/\r\n\t\r\n\tbody,\r\n\thtml,\r\n\t#allmap {\r\n\t\twidth: 100%;\r\n\t\theight: 100%;\r\n\t\toverflow: hidden;\r\n\t\tmargin: 0;\r\n\t\tbackground-color: #F2F2F2;\r\n\t\tfont-family: \"微软雅黑\";\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 207 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44214,7 +44726,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 208 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44373,24 +44885,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3958704b", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4300e7f7", module.exports)
   }
 }
 
 /***/ }),
-/* 209 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(210)
+  __webpack_require__(221)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(212),
+  __webpack_require__(223),
   /* template */
-  __webpack_require__(213),
+  __webpack_require__(224),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -44398,7 +44910,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xoption.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xoption.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xoption.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44409,9 +44921,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-94df36d0", Component.options)
+    hotAPI.createRecord("data-v-818e4778", Component.options)
   } else {
-    hotAPI.reload("data-v-94df36d0", Component.options)
+    hotAPI.reload("data-v-818e4778", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44422,23 +44934,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 210 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(211);
+var content = __webpack_require__(222);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("54cecd29", content, false);
+var update = __webpack_require__(2)("13d5dd69", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-94df36d0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-94df36d0\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-818e4778\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-818e4778\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xoption.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -44448,7 +44960,7 @@ if(false) {
 }
 
 /***/ }),
-/* 211 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -44462,7 +44974,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 212 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44543,7 +45055,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 213 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44693,32 +45205,32 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-94df36d0", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-818e4778", module.exports)
   }
 }
 
 /***/ }),
-/* 214 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(215)
+  __webpack_require__(226)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(217),
+  __webpack_require__(228),
   /* template */
-  __webpack_require__(218),
+  __webpack_require__(229),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-0802756e",
+  "data-v-2765431d",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xsidebar.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xsidebar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xsidebar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -44729,9 +45241,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0802756e", Component.options)
+    hotAPI.createRecord("data-v-2765431d", Component.options)
   } else {
-    hotAPI.reload("data-v-0802756e", Component.options)
+    hotAPI.reload("data-v-2765431d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -44742,23 +45254,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 215 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(216);
+var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("7c64e776", content, false);
+var update = __webpack_require__(2)("e0538a02", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0802756e\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsidebar.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0802756e\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xsidebar.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2765431d\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xsidebar.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-2765431d\",\"scoped\":true,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xsidebar.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -44768,7 +45280,7 @@ if(false) {
 }
 
 /***/ }),
-/* 216 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -44776,13 +45288,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*全局样式*/\n*[data-v-0802756e] {\n\tmargin: 0;\n\tpadding: 0;\n}\n.left-button[data-v-0802756e] {\n\tfloat: right;\n}\n/*组件的样式*/\n/*向左滑动的动画*/\n@keyframes moveLeft-data-v-0802756e {\nfrom {\n\t\ttransform: translateX(320px);\n}\nto {\n}\n}\n.sidebar-move-left[data-v-0802756e] {\n\tanimation: moveLeft-data-v-0802756e;\n\t/*持续时间*/\n\tanimation-duration: 0.5s;\n\t/*动画播放次数*/\n\tanimation-iteration-count: 1;\n\t/*执行方向，动画执行结束时保持在它结束时的状态*/\n\tanimation-fill-mode: forwards;\n}\n/*向右边滑动的动画*/\n@keyframes moveRight-data-v-0802756e {\nfrom {\n}\nto {\n\t\ttransform: translateX(320px);\n}\n}\n.sidebar-move-right[data-v-0802756e] {\n\tanimation: moveRight-data-v-0802756e;\n\t/*持续时间*/\n\tanimation-duration: 0.5s;\n\t/*动画播放次数*/\n\tanimation-iteration-count: 1;\n\t/*执行方向，动画执行结束时保持在它结束时的状态*/\n\tanimation-fill-mode: forwards;\n}\n.nav-content[data-v-0802756e] {\n\twidth: 320px;\n\tposition: fixed;\n\tmin-height: 100%;\n\ttop: 0;\n\tleft: -320px;\n\tbackground-color: #e1e1e1;\n\t/*调试代码时经常使用border，帮我们定位到div的一个区域*/\n\t/*border: 1px solid black;*/\n\tz-index: 10000;\n\t/*使用透明度为0来隐藏元素*/\n\topacity: 1;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xsidebar.vue?4c3f8bbf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAwHA,QAAA;AAEA;CACA,UAAA;CACA,WAAA;CACA;AAEA;CACA,aAAA;CACA;AACA,SAAA;AACA,WAAA;AAEA;AACA;EACA,6BAAA;CACA;AACA;CAAA;CACA;AAEA;CACA,oCAAA;CACA,QAAA;CACA,yBAAA;CACA,UAAA;CACA,6BAAA;CACA,0BAAA;CACA,8BAAA;CACA;AACA,YAAA;AAEA;AACA;CAAA;AACA;EACA,6BAAA;CACA;CACA;AAEA;CACA,qCAAA;CACA,QAAA;CACA,yBAAA;CACA,UAAA;CACA,6BAAA;CACA,0BAAA;CACA,8BAAA;CACA;AAEA;CACA,aAAA;CACA,gBAAA;CACA,iBAAA;CACA,OAAA;CACA,aAAA;CACA,0BAAA;CACA,kCAAA;CACA,4BAAA;CACA,eAAA;CACA,gBAAA;CACA,WAAA;CACA","file":"xsidebar.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<div :class=\"{'silde-right':direction=='right','silde-left':direction=='left'}\">\r\n\t\t\t<div ng-transclude class=\"nav-content\" :class=\"{'sidebar-move-left':direction=='left','sidebar-move-right':direction=='right'}\">\r\n\t\t\t\t<!--<button class=\"left-button\" ng-click=\"directionTo('left')\">left</button>-->\r\n\t\t\t\t<div class=\"advance-city plugin-inited page-plugin plugin-show page-on-center\">\r\n\t\t\t\t\t<header class=\"bar bar-nav flight-order-head\">\r\n\r\n\t\t\t\t\t\t<a @click=\"changetion()\" class=\" pull-left\" style=\"margin-top: 7px\"><i class=\"material-icons\" style=\"font-size: 32px;\">&#xE314;</i></a>\r\n\r\n\t\t\t\t\t\t<div class=\"search-input\" style=\"margin-right:4px ;\"><i class=\"icon-search\"></i><input type=\"input\" value=\"\" placeholder=\"请输入城市名、行政区或景区\"></div>\r\n\t\t\t\t\t</header>\r\n\t\t\t\t\t<div class=\"page-content page-select\" style=\"\">\r\n\t\t\t\t\t\t<div class=\"hot-city\">\r\n\t\t\t\t\t\t\t<div class=\"page-title\">热门城市</div>\r\n\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t<!--class加个on高亮-->\r\n\t\t\t\t\t\t\t\t\t<li @click=\"changetion()\" v-for=\"(item,index) in newArr\" city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" v-on:click=\"addClassFun(index)\" v-bind:class='{on:index==idx}'>\r\n\t\t\t\t\t\t\t\t\t\t<span @click=\"test($event)\">{{item.cityName}}</span>\r\n\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"all-city\">\r\n\t\t\t\t\t\t\t<div class=\"page-title\">全部城市</div>\r\n\t\t\t\t\t\t\t<div class=\"letter-list\">\r\n\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t<li v-for=\"(a,index) in letter\" v-on:click=\"addClassletter(a,index)\" v-bind:class='{on:index==idxs}'>{{a}}</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t<ul class=\"city-list-ul\">\r\n\t\t\t\t\t\t\t\t\t<li city-id=\"1988\" area-type=\"\" area-id=\"\" sug-origin=\"\" v-for=\"(a,index) in Arrs\" @click=\"test($event)\"><span @click=\"test($event)\">{{a.cityName}}</span></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tnewArr: [],\r\n\t\t\t\tidx: 0,\r\n\t\t\t\tidxs:0,\r\n\t\t\t\tArrs:[],\r\n\t\t\t\tletter: [\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tdirection() {\r\n\t\t\t\treturn this.$store.state.direction;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\ttest(e){\r\n\t\t\t\tconsole.log(11111)\r\n\t\t\t\tconsole.log(e.target.innerHTML)\r\n\t\t\t\tthis.$store.state.aaa=e.target.innerHTML\r\n\t\t\t\tthis.changetion()\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'left'\r\n\t\t\t},\r\n\t\t\tleftfence: function() {\r\n//\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/leftfence\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\t//\t\t\t\t\tconsole.log(JSON.parse(res))\r\n\t\t\t\t\tthis.newArr = JSON.parse(res.data.hotCitys)\r\n\t\t\t\t\tconsole.log(this.newArr)\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\t\t\tletterfence: function(letter) {\r\n\t\t\t\tconsole.log(\"bbb\")\r\n\t\t\t\t\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/letterfence\",\r\n\t\t\t\t\tparams:{\r\n\t\t\t\t\t\tletter:letter\r\n\t\t\t\t\t},\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.Arrs = res.data\r\n\t\t\t\t\tconsole.log(this.Arrs)\r\n\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\r\n\t\t\taddClassFun: function(index) {\r\n\t\t\t\tthis.idx = index;\r\n\t\t\t},\r\n\t\t\taddClassletter: function(letter,index) {\r\n\t\t\t\tthis.idxs = index;\r\n   \t\t\t\tthis.letterfence(letter)\r\n\t\t\t\t\r\n\t\t\t},\r\n\t\t\t\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.leftfence()\r\n//\t\t\tthis.letterfence()\r\n\t\t\t\r\n\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t/*全局样式*/\r\n\t\r\n\t* {\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t}\r\n\t\r\n\t.left-button {\r\n\t\tfloat: right;\r\n\t}\r\n\t/*组件的样式*/\r\n\t/*向左滑动的动画*/\r\n\t\r\n\t@keyframes moveLeft {\r\n\t\tfrom {\r\n\t\t\ttransform: translateX(320px);\r\n\t\t}\r\n\t\tto {}\r\n\t}\r\n\t\r\n\t.sidebar-move-left {\r\n\t\tanimation: moveLeft;\r\n\t\t/*持续时间*/\r\n\t\tanimation-duration: 0.5s;\r\n\t\t/*动画播放次数*/\r\n\t\tanimation-iteration-count: 1;\r\n\t\t/*执行方向，动画执行结束时保持在它结束时的状态*/\r\n\t\tanimation-fill-mode: forwards;\r\n\t}\r\n\t/*向右边滑动的动画*/\r\n\t\r\n\t@keyframes moveRight {\r\n\t\tfrom {}\r\n\t\tto {\r\n\t\t\ttransform: translateX(320px);\r\n\t\t}\r\n\t}\r\n\t\r\n\t.sidebar-move-right {\r\n\t\tanimation: moveRight;\r\n\t\t/*持续时间*/\r\n\t\tanimation-duration: 0.5s;\r\n\t\t/*动画播放次数*/\r\n\t\tanimation-iteration-count: 1;\r\n\t\t/*执行方向，动画执行结束时保持在它结束时的状态*/\r\n\t\tanimation-fill-mode: forwards;\r\n\t}\r\n\t\r\n\t.nav-content {\r\n\t\twidth: 320px;\r\n\t\tposition: fixed;\r\n\t\tmin-height: 100%;\r\n\t\ttop: 0;\r\n\t\tleft: -320px;\r\n\t\tbackground-color: #e1e1e1;\r\n\t\t/*调试代码时经常使用border，帮我们定位到div的一个区域*/\r\n\t\t/*border: 1px solid black;*/\r\n\t\tz-index: 10000;\r\n\t\t/*使用透明度为0来隐藏元素*/\r\n\t\topacity: 1;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*全局样式*/\n*[data-v-2765431d] {\n\tmargin: 0;\n\tpadding: 0;\n}\n.left-button[data-v-2765431d] {\n\tfloat: right;\n}\n/*组件的样式*/\n/*向左滑动的动画*/\n@keyframes moveLeft-data-v-2765431d {\nfrom {\n\t\ttransform: translateX(320px);\n}\nto {\n}\n}\n.sidebar-move-left[data-v-2765431d] {\n\tanimation: moveLeft-data-v-2765431d;\n\t/*持续时间*/\n\tanimation-duration: 0.5s;\n\t/*动画播放次数*/\n\tanimation-iteration-count: 1;\n\t/*执行方向，动画执行结束时保持在它结束时的状态*/\n\tanimation-fill-mode: forwards;\n}\n/*向右边滑动的动画*/\n@keyframes moveRight-data-v-2765431d {\nfrom {\n}\nto {\n\t\ttransform: translateX(320px);\n}\n}\n.sidebar-move-right[data-v-2765431d] {\n\tanimation: moveRight-data-v-2765431d;\n\t/*持续时间*/\n\tanimation-duration: 0.5s;\n\t/*动画播放次数*/\n\tanimation-iteration-count: 1;\n\t/*执行方向，动画执行结束时保持在它结束时的状态*/\n\tanimation-fill-mode: forwards;\n}\n.nav-content[data-v-2765431d] {\n\twidth: 320px;\n\tposition: fixed;\n\tmin-height: 100%;\n\ttop: 0;\n\tleft: -320px;\n\tbackground-color: #e1e1e1;\n\t/*调试代码时经常使用border，帮我们定位到div的一个区域*/\n\t/*border: 1px solid black;*/\n\tz-index: 10000;\n\t/*使用透明度为0来隐藏元素*/\n\topacity: 1;\n}\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/xsidebar.vue?4c3f8bbf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAwHA,QAAA;AAEA;CACA,UAAA;CACA,WAAA;CACA;AAEA;CACA,aAAA;CACA;AACA,SAAA;AACA,WAAA;AAEA;AACA;EACA,6BAAA;CACA;AACA;CAAA;CACA;AAEA;CACA,oCAAA;CACA,QAAA;CACA,yBAAA;CACA,UAAA;CACA,6BAAA;CACA,0BAAA;CACA,8BAAA;CACA;AACA,YAAA;AAEA;AACA;CAAA;AACA;EACA,6BAAA;CACA;CACA;AAEA;CACA,qCAAA;CACA,QAAA;CACA,yBAAA;CACA,UAAA;CACA,6BAAA;CACA,0BAAA;CACA,8BAAA;CACA;AAEA;CACA,aAAA;CACA,gBAAA;CACA,iBAAA;CACA,OAAA;CACA,aAAA;CACA,0BAAA;CACA,kCAAA;CACA,4BAAA;CACA,eAAA;CACA,gBAAA;CACA,WAAA;CACA","file":"xsidebar.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<div :class=\"{'silde-right':direction=='right','silde-left':direction=='left'}\">\r\n\t\t\t<div ng-transclude class=\"nav-content\" :class=\"{'sidebar-move-left':direction=='left','sidebar-move-right':direction=='right'}\">\r\n\t\t\t\t<!--<button class=\"left-button\" ng-click=\"directionTo('left')\">left</button>-->\r\n\t\t\t\t<div class=\"advance-city plugin-inited page-plugin plugin-show page-on-center\">\r\n\t\t\t\t\t<header class=\"bar bar-nav flight-order-head\">\r\n\r\n\t\t\t\t\t\t<a @click=\"changetion()\" class=\" pull-left\" style=\"margin-top: 7px\"><i class=\"material-icons\" style=\"font-size: 32px;\">&#xE314;</i></a>\r\n\r\n\t\t\t\t\t\t<div class=\"search-input\" style=\"margin-right:4px ;\"><i class=\"icon-search\"></i><input type=\"input\" value=\"\" placeholder=\"请输入城市名、行政区或景区\"></div>\r\n\t\t\t\t\t</header>\r\n\t\t\t\t\t<div class=\"page-content page-select\" style=\"\">\r\n\t\t\t\t\t\t<div class=\"hot-city\">\r\n\t\t\t\t\t\t\t<div class=\"page-title\">热门城市</div>\r\n\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t<!--class加个on高亮-->\r\n\t\t\t\t\t\t\t\t\t<li @click=\"changetion()\" v-for=\"(item,index) in newArr\" city-id=\"0101\" area-type=\"\" area-id=\"\" sug-origin=\"\" v-on:click=\"addClassFun(index)\" v-bind:class='{on:index==idx}'>\r\n\t\t\t\t\t\t\t\t\t\t<span @click=\"test($event)\">{{item.cityName}}</span>\r\n\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"all-city\">\r\n\t\t\t\t\t\t\t<div class=\"page-title\">全部城市</div>\r\n\t\t\t\t\t\t\t<div class=\"letter-list\">\r\n\t\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t\t<li v-for=\"(a,index) in letter\" v-on:click=\"addClassletter(a,index)\" v-bind:class='{on:index==idxs}'>{{a}}</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"city-list\">\r\n\t\t\t\t\t\t\t\t<ul class=\"city-list-ul\">\r\n\t\t\t\t\t\t\t\t\t<li city-id=\"1988\" area-type=\"\" area-id=\"\" sug-origin=\"\" v-for=\"(a,index) in Arrs\" @click=\"test($event)\"><span @click=\"test($event)\">{{a.cityName}}</span></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tnewArr: [],\r\n\t\t\t\tidx: 0,\r\n\t\t\t\tidxs:0,\r\n\t\t\t\tArrs:[],\r\n\t\t\t\tletter: [\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]\r\n\t\t\t}\r\n\t\t},\r\n\t\tcomputed: {\r\n\t\t\tdirection() {\r\n\t\t\t\treturn this.$store.state.direction;\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\ttest(e){\r\n\t\t\t\tconsole.log(11111)\r\n\t\t\t\tconsole.log(e.target.innerHTML)\r\n\t\t\t\tthis.$store.state.aaa=e.target.innerHTML\r\n\t\t\t\tthis.changetion()\r\n\t\t\t},\r\n\t\t\tchangetion() {\r\n\t\t\t\tthis.$store.state.direction = 'left'\r\n\t\t\t},\r\n\t\t\tleftfence: function() {\r\n//\t\t\t\tconsole.log(\"aaa\")\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/leftfence\",\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\t//\t\t\t\t\tconsole.log(JSON.parse(res))\r\n\t\t\t\t\tthis.newArr = JSON.parse(res.data.hotCitys)\r\n\t\t\t\t\tconsole.log(this.newArr)\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\t\t\tletterfence: function(letter) {\r\n\t\t\t\tconsole.log(\"bbb\")\r\n\t\t\t\t\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: \"http://localhost:3000/letterfence\",\r\n\t\t\t\t\tparams:{\r\n\t\t\t\t\t\tletter:letter\r\n\t\t\t\t\t},\r\n\t\t\t\t}).then(function(res) {\r\n\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.Arrs = res.data\r\n\t\t\t\t\tconsole.log(this.Arrs)\r\n\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t},\r\n\r\n\t\t\taddClassFun: function(index) {\r\n\t\t\t\tthis.idx = index;\r\n\t\t\t},\r\n\t\t\taddClassletter: function(letter,index) {\r\n\t\t\t\tthis.idxs = index;\r\n   \t\t\t\tthis.letterfence(letter)\r\n\t\t\t\t\r\n\t\t\t},\r\n\t\t\t\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.leftfence()\r\n//\t\t\tthis.letterfence()\r\n\t\t\t\r\n\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t/*全局样式*/\r\n\t\r\n\t* {\r\n\t\tmargin: 0;\r\n\t\tpadding: 0;\r\n\t}\r\n\t\r\n\t.left-button {\r\n\t\tfloat: right;\r\n\t}\r\n\t/*组件的样式*/\r\n\t/*向左滑动的动画*/\r\n\t\r\n\t@keyframes moveLeft {\r\n\t\tfrom {\r\n\t\t\ttransform: translateX(320px);\r\n\t\t}\r\n\t\tto {}\r\n\t}\r\n\t\r\n\t.sidebar-move-left {\r\n\t\tanimation: moveLeft;\r\n\t\t/*持续时间*/\r\n\t\tanimation-duration: 0.5s;\r\n\t\t/*动画播放次数*/\r\n\t\tanimation-iteration-count: 1;\r\n\t\t/*执行方向，动画执行结束时保持在它结束时的状态*/\r\n\t\tanimation-fill-mode: forwards;\r\n\t}\r\n\t/*向右边滑动的动画*/\r\n\t\r\n\t@keyframes moveRight {\r\n\t\tfrom {}\r\n\t\tto {\r\n\t\t\ttransform: translateX(320px);\r\n\t\t}\r\n\t}\r\n\t\r\n\t.sidebar-move-right {\r\n\t\tanimation: moveRight;\r\n\t\t/*持续时间*/\r\n\t\tanimation-duration: 0.5s;\r\n\t\t/*动画播放次数*/\r\n\t\tanimation-iteration-count: 1;\r\n\t\t/*执行方向，动画执行结束时保持在它结束时的状态*/\r\n\t\tanimation-fill-mode: forwards;\r\n\t}\r\n\t\r\n\t.nav-content {\r\n\t\twidth: 320px;\r\n\t\tposition: fixed;\r\n\t\tmin-height: 100%;\r\n\t\ttop: 0;\r\n\t\tleft: -320px;\r\n\t\tbackground-color: #e1e1e1;\r\n\t\t/*调试代码时经常使用border，帮我们定位到div的一个区域*/\r\n\t\t/*border: 1px solid black;*/\r\n\t\tz-index: 10000;\r\n\t\t/*使用透明度为0来隐藏元素*/\r\n\t\topacity: 1;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 217 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44906,7 +45418,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 218 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45036,24 +45548,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0802756e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2765431d", module.exports)
   }
 }
 
 /***/ }),
-/* 219 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(220)
+  __webpack_require__(231)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(222),
+  __webpack_require__(233),
   /* template */
-  __webpack_require__(223),
+  __webpack_require__(234),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45061,7 +45573,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\xtool.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\xtool.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xtool.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45072,9 +45584,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d37afa0a", Component.options)
+    hotAPI.createRecord("data-v-54bcf5a7", Component.options)
   } else {
-    hotAPI.reload("data-v-d37afa0a", Component.options)
+    hotAPI.reload("data-v-54bcf5a7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45085,23 +45597,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 220 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(221);
+var content = __webpack_require__(232);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("19775b4d", content, false);
+var update = __webpack_require__(2)("c5af74fe", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d37afa0a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xtool.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-d37afa0a\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./xtool.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-54bcf5a7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xtool.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-54bcf5a7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./xtool.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45111,7 +45623,7 @@ if(false) {
 }
 
 /***/ }),
-/* 221 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45125,7 +45637,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", 
 
 
 /***/ }),
-/* 222 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45151,7 +45663,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", 
 
 
 /***/ }),
-/* 223 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45206,24 +45718,24 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-d37afa0a", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-54bcf5a7", module.exports)
   }
 }
 
 /***/ }),
-/* 224 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(225)
+  __webpack_require__(236)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(227),
+  __webpack_require__(238),
   /* template */
-  __webpack_require__(228),
+  __webpack_require__(239),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45231,7 +45743,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\indexcomponents\\ximages.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\indexcomponents\\ximages.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ximages.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45242,9 +45754,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0ebda51b", Component.options)
+    hotAPI.createRecord("data-v-18661cc7", Component.options)
   } else {
-    hotAPI.reload("data-v-0ebda51b", Component.options)
+    hotAPI.reload("data-v-18661cc7", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45255,23 +45767,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 225 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(226);
+var content = __webpack_require__(237);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("93e72f54", content, false);
+var update = __webpack_require__(2)("642eb0a9", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0ebda51b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./ximages.vue", function() {
-     var newContent = require("!!../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0ebda51b\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./ximages.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18661cc7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ximages.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js?sourceMap!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-18661cc7\",\"scoped\":false,\"hasInlineConfig\":false}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ximages.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45281,7 +45793,7 @@ if(false) {
 }
 
 /***/ }),
-/* 226 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45289,13 +45801,13 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.gridlist-demo-container{\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\n}\n.gridlist-inline-demo{\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  overflow-x: auto;\n}\n.mu-grid-tile {\r\n\theight: 80%;\n}\r\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/ximages.vue?50e069b6"],"names":[],"mappings":";AA0CA;EACA,cAAA;EACA,gBAAA;EACA,8BAAA;CACA;AAEA;EACA,cAAA;EACA,kBAAA;EACA,iBAAA;CACA;AACA;CACA,YAAA;CACA","file":"ximages.vue","sourcesContent":["<template>\r\n  <div class=\"gridlist-demo-container\">\r\n    <mu-grid-list class=\"gridlist-inline-demo\">\r\n      <mu-grid-tile v-for=\"tile, index in list\" :key=\"index\">\r\n        <img :src=\"tile.image\"/>\r\n        <span slot=\"title\">{{tile.title}}</span>\r\n        <span slot=\"subTitle\">by <b>{{tile.author}}</b></span>\r\n        <mu-icon-button icon=\"star_border\" slot=\"action\"/>\r\n      </mu-grid-tile>\r\n    </mu-grid-list>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  data () {\r\n    return {\r\n      list: [{\r\n        image: 'img/008.jpg',\r\n        title: 'Breakfast',\r\n        author: 'Myron',\r\n        featured: true\r\n      }, {\r\n        image: 'img/1.jpg',\r\n        title: 'Morning',\r\n        author: 'mokayi',\r\n        featured: true\r\n      }, {\r\n        image: 'img/1.jpg',\r\n        title: 'Vegetables',\r\n        author: 'NUyyyyyyy'\r\n      }, {\r\n        image: 'img/1.jpg',\r\n        title: 'water',\r\n        author: 'TDDyyyyyyy'\r\n      }]\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style>\r\n.gridlist-demo-container{\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n}\r\n\r\n.gridlist-inline-demo{\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  overflow-x: auto;\r\n}\r\n.mu-grid-tile {\r\n\theight: 80%;\r\n}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.gridlist-demo-container{\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\n}\n.gridlist-inline-demo{\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  overflow-x: auto;\n}\n.mu-grid-tile {\r\n\theight: 80%;\n}\r\n", "", {"version":3,"sources":["D:/Hotel/hotel/app/components/indexcomponents/ximages.vue?50e069b6"],"names":[],"mappings":";AA0CA;EACA,cAAA;EACA,gBAAA;EACA,8BAAA;CACA;AAEA;EACA,cAAA;EACA,kBAAA;EACA,iBAAA;CACA;AACA;CACA,YAAA;CACA","file":"ximages.vue","sourcesContent":["<template>\r\n  <div class=\"gridlist-demo-container\">\r\n    <mu-grid-list class=\"gridlist-inline-demo\">\r\n      <mu-grid-tile v-for=\"tile, index in list\" :key=\"index\">\r\n        <img :src=\"tile.image\"/>\r\n        <span slot=\"title\">{{tile.title}}</span>\r\n        <span slot=\"subTitle\">by <b>{{tile.author}}</b></span>\r\n        <mu-icon-button icon=\"star_border\" slot=\"action\"/>\r\n      </mu-grid-tile>\r\n    </mu-grid-list>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nexport default {\r\n  data () {\r\n    return {\r\n      list: [{\r\n        image: 'img/008.jpg',\r\n        title: 'Breakfast',\r\n        author: 'Myron',\r\n        featured: true\r\n      }, {\r\n        image: 'img/1.jpg',\r\n        title: 'Morning',\r\n        author: 'mokayi',\r\n        featured: true\r\n      }, {\r\n        image: 'img/1.jpg',\r\n        title: 'Vegetables',\r\n        author: 'NUyyyyyyy'\r\n      }, {\r\n        image: 'img/1.jpg',\r\n        title: 'water',\r\n        author: 'TDDyyyyyyy'\r\n      }]\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style>\r\n.gridlist-demo-container{\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n}\r\n\r\n.gridlist-inline-demo{\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  overflow-x: auto;\r\n}\r\n.mu-grid-tile {\r\n\theight: 80%;\r\n}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 227 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45345,7 +45857,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 228 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45376,12 +45888,12 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0ebda51b", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-18661cc7", module.exports)
   }
 }
 
 /***/ }),
-/* 229 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45391,32 +45903,32 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c74d7b06", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4d41f251", module.exports)
   }
 }
 
 /***/ }),
-/* 230 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(231)
+  __webpack_require__(242)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(233),
+  __webpack_require__(244),
   /* template */
-  __webpack_require__(269),
+  __webpack_require__(280),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-3ca66b5e",
+  "data-v-e6ef47b6",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\router\\list.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\router\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45427,9 +45939,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3ca66b5e", Component.options)
+    hotAPI.createRecord("data-v-e6ef47b6", Component.options)
   } else {
-    hotAPI.reload("data-v-3ca66b5e", Component.options)
+    hotAPI.reload("data-v-e6ef47b6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45440,23 +45952,23 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 231 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(232);
+var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6c2d24f9", content, false);
+var update = __webpack_require__(2)("41652692", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ca66b5e\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./list.vue", function() {
-     var newContent = require("!!../../../../node_modules/_css-loader@0.28.4@css-loader/index.js?sourceMap!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ca66b5e\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/_vue-loader@12.2.2@vue-loader/lib/selector.js?type=styles&index=0!./list.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e6ef47b6\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./list.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js?sourceMap!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e6ef47b6\",\"scoped\":true,\"hasInlineConfig\":false}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./list.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -45466,7 +45978,7 @@ if(false) {
 }
 
 /***/ }),
-/* 232 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(true);
@@ -45480,7 +45992,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 233 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45490,51 +46002,51 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _xheader = __webpack_require__(234);
+var _xheader = __webpack_require__(245);
 
 var _xheader2 = _interopRequireDefault(_xheader);
 
-var _xsearch = __webpack_require__(237);
+var _xsearch = __webpack_require__(248);
 
 var _xsearch2 = _interopRequireDefault(_xsearch);
 
-var _xpagecontent = __webpack_require__(240);
+var _xpagecontent = __webpack_require__(251);
 
 var _xpagecontent2 = _interopRequireDefault(_xpagecontent);
 
-var _xfooter = __webpack_require__(243);
+var _xfooter = __webpack_require__(254);
 
 var _xfooter2 = _interopRequireDefault(_xfooter);
 
-var _xdiscount = __webpack_require__(246);
+var _xdiscount = __webpack_require__(257);
 
 var _xdiscount2 = _interopRequireDefault(_xdiscount);
 
-var _xhousetype = __webpack_require__(249);
+var _xhousetype = __webpack_require__(260);
 
 var _xhousetype2 = _interopRequireDefault(_xhousetype);
 
-var _xfiltrate = __webpack_require__(252);
+var _xfiltrate = __webpack_require__(263);
 
 var _xfiltrate2 = _interopRequireDefault(_xfiltrate);
 
-var _xposition = __webpack_require__(255);
+var _xposition = __webpack_require__(266);
 
 var _xposition2 = _interopRequireDefault(_xposition);
 
-var _xpricestar = __webpack_require__(258);
+var _xpricestar = __webpack_require__(269);
 
 var _xpricestar2 = _interopRequireDefault(_xpricestar);
 
-var _xrank = __webpack_require__(261);
+var _xrank = __webpack_require__(272);
 
 var _xrank2 = _interopRequireDefault(_xrank);
 
-var _xweixinmask = __webpack_require__(264);
+var _xweixinmask = __webpack_require__(275);
 
 var _xweixinmask2 = _interopRequireDefault(_xweixinmask);
 
-var _xmasklayer = __webpack_require__(266);
+var _xmasklayer = __webpack_require__(277);
 
 var _xmasklayer2 = _interopRequireDefault(_xmasklayer);
 
@@ -45605,15 +46117,15 @@ exports.default = {
 //房型筛选组件
 
 /***/ }),
-/* 234 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(235),
+  __webpack_require__(246),
   /* template */
-  __webpack_require__(236),
+  __webpack_require__(247),
   /* styles */
   null,
   /* scopeId */
@@ -45621,7 +46133,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xheader.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xheader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xheader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45632,9 +46144,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-701c9db2", Component.options)
+    hotAPI.createRecord("data-v-49923986", Component.options)
   } else {
-    hotAPI.reload("data-v-701c9db2", Component.options)
+    hotAPI.reload("data-v-49923986", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45645,7 +46157,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 235 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45680,7 +46192,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 236 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45725,20 +46237,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-701c9db2", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-49923986", module.exports)
   }
 }
 
 /***/ }),
-/* 237 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(238),
+  __webpack_require__(249),
   /* template */
-  __webpack_require__(239),
+  __webpack_require__(250),
   /* styles */
   null,
   /* scopeId */
@@ -45746,7 +46258,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xsearch.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xsearch.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xsearch.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -45757,9 +46269,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6035c966", Component.options)
+    hotAPI.createRecord("data-v-ad4a91be", Component.options)
   } else {
-    hotAPI.reload("data-v-6035c966", Component.options)
+    hotAPI.reload("data-v-ad4a91be", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -45770,7 +46282,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 238 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45868,7 +46380,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 239 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45969,20 +46481,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6035c966", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-ad4a91be", module.exports)
   }
 }
 
 /***/ }),
-/* 240 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(241),
+  __webpack_require__(252),
   /* template */
-  __webpack_require__(242),
+  __webpack_require__(253),
   /* styles */
   null,
   /* scopeId */
@@ -45990,7 +46502,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xpagecontent.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xpagecontent.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xpagecontent.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46001,9 +46513,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-424909b5", Component.options)
+    hotAPI.createRecord("data-v-1a409b3e", Component.options)
   } else {
-    hotAPI.reload("data-v-424909b5", Component.options)
+    hotAPI.reload("data-v-1a409b3e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46014,7 +46526,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 241 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46156,7 +46668,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 242 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -46489,20 +47001,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-424909b5", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1a409b3e", module.exports)
   }
 }
 
 /***/ }),
-/* 243 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(244),
+  __webpack_require__(255),
   /* template */
-  __webpack_require__(245),
+  __webpack_require__(256),
   /* styles */
   null,
   /* scopeId */
@@ -46510,7 +47022,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xfooter.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xfooter.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfooter.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46521,9 +47033,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4eea39c0", Component.options)
+    hotAPI.createRecord("data-v-285fd594", Component.options)
   } else {
-    hotAPI.reload("data-v-4eea39c0", Component.options)
+    hotAPI.reload("data-v-285fd594", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46534,7 +47046,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 244 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46609,7 +47121,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 245 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -46712,20 +47224,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4eea39c0", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-285fd594", module.exports)
   }
 }
 
 /***/ }),
-/* 246 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(247),
+  __webpack_require__(258),
   /* template */
-  __webpack_require__(248),
+  __webpack_require__(259),
   /* styles */
   null,
   /* scopeId */
@@ -46733,7 +47245,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xdiscount.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xdiscount.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xdiscount.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46744,9 +47256,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-78d3b1b4", Component.options)
+    hotAPI.createRecord("data-v-16141dfa", Component.options)
   } else {
-    hotAPI.reload("data-v-78d3b1b4", Component.options)
+    hotAPI.reload("data-v-16141dfa", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46757,7 +47269,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 247 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46803,7 +47315,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 248 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -46863,20 +47375,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-78d3b1b4", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-16141dfa", module.exports)
   }
 }
 
 /***/ }),
-/* 249 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(250),
+  __webpack_require__(261),
   /* template */
-  __webpack_require__(251),
+  __webpack_require__(262),
   /* styles */
   null,
   /* scopeId */
@@ -46884,7 +47396,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xhousetype.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xhousetype.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xhousetype.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -46895,9 +47407,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-152f2dc5", Component.options)
+    hotAPI.createRecord("data-v-12701171", Component.options)
   } else {
-    hotAPI.reload("data-v-152f2dc5", Component.options)
+    hotAPI.reload("data-v-12701171", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -46908,7 +47420,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 250 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46971,7 +47483,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 251 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -47097,20 +47609,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-152f2dc5", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-12701171", module.exports)
   }
 }
 
 /***/ }),
-/* 252 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(253),
+  __webpack_require__(264),
   /* template */
-  __webpack_require__(254),
+  __webpack_require__(265),
   /* styles */
   null,
   /* scopeId */
@@ -47118,7 +47630,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xfiltrate.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xfiltrate.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xfiltrate.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -47129,9 +47641,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1c9351d0", Component.options)
+    hotAPI.createRecord("data-v-6f1148a4", Component.options)
   } else {
-    hotAPI.reload("data-v-1c9351d0", Component.options)
+    hotAPI.reload("data-v-6f1148a4", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47142,7 +47654,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 253 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47274,7 +47786,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 254 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -47636,20 +48148,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1c9351d0", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6f1148a4", module.exports)
   }
 }
 
 /***/ }),
-/* 255 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(256),
+  __webpack_require__(267),
   /* template */
-  __webpack_require__(257),
+  __webpack_require__(268),
   /* styles */
   null,
   /* scopeId */
@@ -47657,7 +48169,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xposition.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xposition.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xposition.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -47668,9 +48180,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-b647d1e4", Component.options)
+    hotAPI.createRecord("data-v-114be43c", Component.options)
   } else {
-    hotAPI.reload("data-v-b647d1e4", Component.options)
+    hotAPI.reload("data-v-114be43c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47681,7 +48193,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 256 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47842,7 +48354,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 257 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -48585,20 +49097,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b647d1e4", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-114be43c", module.exports)
   }
 }
 
 /***/ }),
-/* 258 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(259),
+  __webpack_require__(270),
   /* template */
-  __webpack_require__(260),
+  __webpack_require__(271),
   /* styles */
   null,
   /* scopeId */
@@ -48606,7 +49118,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xpricestar.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xpricestar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xpricestar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48617,9 +49129,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5069ebf4", Component.options)
+    hotAPI.createRecord("data-v-55e8249c", Component.options)
   } else {
-    hotAPI.reload("data-v-5069ebf4", Component.options)
+    hotAPI.reload("data-v-55e8249c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48630,7 +49142,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 259 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48688,7 +49200,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 260 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -48776,20 +49288,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5069ebf4", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-55e8249c", module.exports)
   }
 }
 
 /***/ }),
-/* 261 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(262),
+  __webpack_require__(273),
   /* template */
-  __webpack_require__(263),
+  __webpack_require__(274),
   /* styles */
   null,
   /* scopeId */
@@ -48797,7 +49309,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xrank.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xrank.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xrank.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -48808,9 +49320,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-10857f11", Component.options)
+    hotAPI.createRecord("data-v-b6d00036", Component.options)
   } else {
-    hotAPI.reload("data-v-10857f11", Component.options)
+    hotAPI.reload("data-v-b6d00036", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48821,7 +49333,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 262 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48913,7 +49425,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 263 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49047,12 +49559,12 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-10857f11", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b6d00036", module.exports)
   }
 }
 
 /***/ }),
-/* 264 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -49060,7 +49572,7 @@ var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(265),
+  __webpack_require__(276),
   /* styles */
   null,
   /* scopeId */
@@ -49068,7 +49580,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xweixinmask.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xweixinmask.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xweixinmask.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49079,9 +49591,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fb4da71a", Component.options)
+    hotAPI.createRecord("data-v-2d34be47", Component.options)
   } else {
-    hotAPI.reload("data-v-fb4da71a", Component.options)
+    hotAPI.reload("data-v-2d34be47", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49092,7 +49604,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 265 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49107,20 +49619,20 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-fb4da71a", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2d34be47", module.exports)
   }
 }
 
 /***/ }),
-/* 266 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(267),
+  __webpack_require__(278),
   /* template */
-  __webpack_require__(268),
+  __webpack_require__(279),
   /* styles */
   null,
   /* scopeId */
@@ -49128,7 +49640,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\feiQjieshoudewenjian\\第三阶段\\vue_Mysize\\vue_project\\app\\components\\list\\xmasklayer.vue"
+Component.options.__file = "D:\\Hotel\\hotel\\app\\components\\list\\xmasklayer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] xmasklayer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49139,9 +49651,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-67e62860", Component.options)
+    hotAPI.createRecord("data-v-6d646108", Component.options)
   } else {
-    hotAPI.reload("data-v-67e62860", Component.options)
+    hotAPI.reload("data-v-6d646108", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -49152,7 +49664,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 267 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49185,7 +49697,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 268 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49208,12 +49720,12 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-67e62860", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6d646108", module.exports)
   }
 }
 
 /***/ }),
-/* 269 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -49235,7 +49747,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3ca66b5e", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-e6ef47b6", module.exports)
   }
 }
 

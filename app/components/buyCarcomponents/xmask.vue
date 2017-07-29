@@ -1,5 +1,5 @@
 <template>
-	<div class="advanced-mask-layer" @click="closeMask()"></div>
+	<div class="advanced-mask-layer animate bouncelnUP" @click="closeMask()"></div>
 </template>
 
 <script>
