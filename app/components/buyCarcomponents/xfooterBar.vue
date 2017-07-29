@@ -18,6 +18,16 @@
 </template>
 
 <script>
+	export default{
+		computed:{
+			roomnum(){
+				return scope.roomsNum
+			}
+		},
+		mounted(){
+			console.log(scope.roomsNum)
+		}
+	}
 </script>
 
 <style>

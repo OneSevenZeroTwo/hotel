@@ -52,25 +52,30 @@
 					$('.select-people').removeClass('plugin-show');
 					$('.select-people').addClass('page-on-right');
 					$('.select-people').addClass('page-on-center');
+					console.log(this.$store.state.nameNum)
 				},
+				//添加姓名
 				addinfo() {
 					$('.add').css('display', 'none');
 					$('.to-input').css('display', 'block');
 					$('#inputaddcusname').focus();
 				},
+				//在增加下面动态生成姓名列表
 				conFirm() {
 					var name = $('#inputaddcusname');
 					//					console.log(name)
 					if(name.val() == '') {
 						$('.sure').addClass('plugin-show');
+//						$('.sure').addClass('animate bouncelnUP');
 						$('.advanced-mask-layer').css('display', 'block');
+//						$('.advanced-mask-layer').addClass('animate bouncelnUP');
 						$('.add').css('display', 'none');
 						$('.to-input').css('display', 'block');
 						$('.page-content').attr('overflow', 'hidden !important');
 					} else {
 
 						this.names.push(name.val());
-						this.$store.state.nameNum = this.names
+//						this.$store.state.nameNum = this.names
 						//console.log(this.names)
 						$('.add').css('display', 'block');
 						$('.to-input').css('display', 'none');
@@ -80,20 +85,25 @@
 					}
 
 				},
+				//选中房间入住人姓名
 				Sure(){					
 					this.txtArr=[]
+					//遍历有checked属性的元素，获取值插入数组
 					$.map($(':checked'),function(items){
 						var text = $(items).next().text()
 						this.txtArr.push(text)
 					}.bind(this))
-					console.log(this.txtArr)
-					
-					
-					
+//					console.log(this.txtArr)
+					$('.select-people').removeClass('plugin-show');
+					$('.select-people').addClass('page-on-right');
+					$('.select-people').addClass('page-on-center');
+					this.$store.state.nameNum = this.txtArr;
+					console.log(this.$store.state.nameNum)
 				},
+				//隐藏为输入姓名的提示框
 				hide() {
 					$('#inputaddcusname').focus;
-					//console.log(this.$store.state.isShowMask)
+					//console.log(this.$store.state.nameNum)
 					$('.sure').removeClass('plugin-show');
 					$('.advanced-mask-layer').css('display', 'none');
 					$('#inputaddcusname').focus();

@@ -19,10 +19,6 @@
 						<!-- 联络资料 -->
 						<orderContact></orderContact>
 
-						<xreBackMoneyHelp></xreBackMoneyHelp>
-
-						<xorderRebackMoney></xorderRebackMoney>
-
 						<div class="invoice-elong">
 							如需发票请到酒店前台咨询
 						</div>
@@ -57,10 +53,7 @@
 			<xperson></xperson>
 
 		</div>
-		
-		<xreBackMoneyDirective></xreBackMoneyDirective>
-		
-		<xuseHongBao></xuseHongBao>
+
 	</div>
 	</div>
 
@@ -75,18 +68,10 @@
 	import xoccupancy from "../buyCarcomponents/xoccupancy.vue"
 	//订房人，手机号
 	import orderContact from "../buyCarcomponents/xorderContact.vue"
-	//红包返现
-	import xorderRebackMoney from "../buyCarcomponents/xorderRebackMoney.vue"
 	//脚步Nav
 	import xfooterBar from "../buyCarcomponents/xfooterBar.vue"
-	//返现立减指南
-	import xreBackMoneyHelp from "../buyCarcomponents/xreBackMoneyHelp.vue"
-	//返现立减指南具体内容
-	import xreBackMoneyDirective from "../buyCarcomponents/xreBackMoneyDirective.vue"
 	//遮罩层
 	import xmask from "../buyCarcomponents/xmask.vue"
-	//选择使用那个红包
-	import xuseHongBao from "../buyCarcomponents/xuseHongBao.vue"
 	//选择房间数量
 	import xroomNum from "../buyCarcomponents/xroomNum.vue"
 	//选择保留时间
@@ -102,26 +87,30 @@
 	export default {
 		data() {
 				return {
-
+					roomType:''
 				}
 			},
 			methods: {
 
 			},
 			mounted() {
-				console.log(111)
+				console.log(this.$route.params.id)
+
+				//进入页面，请求房间数据
+				this.$ajax({
+					url: "./json/roomType.json"
+				}).then(function(res) {
+					this.roomType = res.data[0]
+//					console.log(this.roomType)
+				}.bind(this))
 			},
 			components: {
 				xheader,
 				xorderInfo,
 				xoccupancy,
 				orderContact,
-				xorderRebackMoney,
 				xfooterBar,
-				xreBackMoneyHelp,
-				xreBackMoneyDirective,
 				xmask,
-				xuseHongBao,
 				xroomNum,
 				xtimeNum,
 				xtelNum,

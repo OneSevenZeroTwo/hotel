@@ -2,6 +2,7 @@
 var express = require('express');
 var app = express();
 var http = require('http')
+
 //链接数据库模块
 var mysql = require("mysql");
 var cheerio = require('cheerio')
@@ -20,7 +21,13 @@ function createConnection() {
 app.get('/test', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter=J&_rt=1500966828847', function(content) {
+//	tag
+	//http://m.elong.com/minsu/suggest/searchsuggest/?req=%7B%22CityId%22%3A%2267157%22%7D
+	
+	//position
+//	http://m.elong.com/minsu/house/getlocationfilterlist/?req=%7B%22CityInfo%22%3A%7B%22ItemId%22%3A%2267157%22%2C%22Name%22%3A%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22%7D%7D
+	//city
+	http.get('http://m.elong.com/minsu/house/getlocationfilterlist/?req=%7B%22CityInfo%22%3A%7B%22ItemId%22%3A%2267157%22%2C%22Name%22%3A%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22%7D%7D', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -34,6 +41,8 @@ app.get('/test', function(req, res) {
 	})
 
 })
+
+
 
 //index部分...............................................chenjiangchuan
 
@@ -80,6 +89,24 @@ app.get('/letterfence', function(req, res) {
 	console.log(req.query.letter)
 	var letter = req.query.letter
 	http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter='+letter, function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+
+		})
+	})
+
+})
+//首页列表
+app.get('/indexlist', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/list/', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -164,6 +191,7 @@ app.get('/listFilter', function(req, res) {
 	})
 
 })
+
 
 //detail部分..............................................tangqiuping
 //轮播图
