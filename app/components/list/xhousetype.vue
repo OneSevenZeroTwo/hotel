@@ -1,6 +1,6 @@
 //房型帅选
 <template>
-	<div class="filter-sp plugin-inited ks_show room-filter" style="display: none;">
+	<div v-show="roomtitle" class="filter-sp plugin-inited ks_show room-filter">
 		<div class="sp-content">
 			<div class="price">
 				<div class="sp-tit room-tit">早餐</div>
@@ -36,3 +36,27 @@
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	data:function(){
+		return {
+			
+		}
+	},
+	methods:{
+		
+		
+		
+	},
+	computed:{
+		roomtitle:function(){
+			return this.$store.state.roomtitle
+		}
+	},
+	mounted:function(){
+
+	}
+}
+	
+</script>

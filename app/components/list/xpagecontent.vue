@@ -1,5 +1,5 @@
 <template>
-	<div class="page-content page-list mvt_191" style="">
+	<div :class="{'weixin-overflowhidden':roomtitle}" class="page-content page-list mvt_191">
 		<section class="page-list-con">
 			<div class="list-main">
 				<ul class="hotel-list">
@@ -117,3 +117,18 @@
 		</section>
 	</div>
 </template>
+
+<script>
+	export default {
+		data:function(){
+			return {
+
+			}
+		},
+		computed:{
+			roomtitle:function(){
+				return this.$store.state.roomtitle
+			},
+		}
+	}
+</script>

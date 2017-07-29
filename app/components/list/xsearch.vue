@@ -15,8 +15,8 @@
 		<div class="quick-search-box">
 			<div class="quick-search">
 				<div class="kslist">
-					<div class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">房型筛选</div>
-					<div class="commons sale-title tjclick unon" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">优惠</div>
+					<div @click="roomtitleclick()" class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">房型筛选</div>
+					<div @click="saletitleclick()" class="commons sale-title tjclick unon" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">优惠</div>
 				</div>
 				<ul class="quick-search-list">
 					<li class="quick-search-item tjclick " data-id="100000002" data-tid="1100" data-uid="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}" data-keyword="到店付">到店付</li>
@@ -29,16 +29,21 @@
 </template>
 
 <script>
+	
 	export default {
 		data:function(){
 			return {
-
+				// roomtitle:this.$store.state.roomtitle
 			}
+		},
+		components:{
+			
 		},
 		computed:{
 
 		},
-		mothods:{
+		methods:{
+			// 一进页面获取数据
 			automaticrequest:function(){
 				this.$ajax({
 					url:"http://localhost:3000/list",
@@ -51,12 +56,41 @@
 					console.log(res)
 					// this.arr = this.arr.concat(res.data.data)
 					// this.isLoading = true
-				}).bind(this)
+				}.bind(this))
 
+			},
+			// 点击房型筛选
+			roomtitleclick:function(ele){
+				if(this.$store.state.roomtitle){
+					console.log(666)
+					this.$store.state.roomtitle= false
+				}else if(!this.$store.state.roomtitle){
+					
+					this.$store.state.roomtitle= true
+					console.log(888)
+				}
+				
+			},
+			//点击优惠
+			saletitleclick:function(){
+				if(this.$store.state.saletitle){
+					console.log(666)
+					this.$store.state.saletitle= false
+				}else if(!this.$store.state.saletitle){
+					
+					this.$store.state.saletitle= true
+					console.log(888)
+				}
+			},
+			//点击切换到店付，免费取消
+			quicksearchlist:function(){
+				
 			}
 		},
 		mounted:function(){
-			// this.automaticrequest()
+			// console.log(this)
+			this.automaticrequest()
+			// this.roomtitleclick()
 		}
 	}
 </script>

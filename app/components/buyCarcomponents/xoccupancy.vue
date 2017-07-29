@@ -21,11 +21,6 @@
 			<li @click="timeNum(true)">
 				<label for="room-reservation" ></label>
 				<div class="label" >房间保留至</div>
-				<!--<div class="content list-input">
-					<input type="text" readonly="readonly" class="cert-type" id="room-reservation" value="" style="width: 60px;">
-					<span><i class="icon-left"></i></span>
-					<p class="text_ex">您可入住3小时，最晚{{timesNum}}离店</p>
-				</div>-->
 				<div class="content list-input">
 					<input type="text" readonly="readonly" class="cert-type createorder" id="room-number" name="roomcount" :value="timesNum" style="width: 30px;">
 					<span><i class="icon-left"></i></span>
@@ -64,6 +59,7 @@
 				$('.time').addClass('selector-active');
 			
 			},
+			
 		},
 		mounted(){
 			this.$store.state.roomsNum = 1;

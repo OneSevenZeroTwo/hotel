@@ -15,6 +15,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
 import $ from "jquery";
 window.$ = window.jQuery = $
+
 import com from "./js/common.js"
 window.com = com
 console.log(com.randomNum(1, 10))
@@ -84,7 +85,7 @@ var routes = [{
 		component: xlogin
 	}, {
 		//路由名
-		path: '/buyCar',
+		path: '/buyCar/:id',
 		//上面定义好的路由扔进来
 		component: xbuyCar
 	}, {
@@ -114,6 +115,16 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
+		//列表页数据开始
+		roomtitle:false,
+		saletitle:false,
+		tit:false,
+		areabtn:false,
+		pricestarbtn:false,
+		defaultbtn:false,
+		//遮罩层
+		masklayer:false,
+		//列表页数据结束
 		imgUrl: null,
 		aaa: '广州市',
 		galleryIsShow: false,
@@ -131,9 +142,17 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
-		isShowMask: false,
-		roomsNum: null,
-		timesNum: null,
+
+		isShowMask:false,
+		nameNum:["姓名，每间填1人"],
+		roomsNum:null,
+		timesNum:null,
+		telNum:"中国大陆：+86",
+		showBuy:false,
+		Mask:false,
+		buyContent:{},
+		roomInfoName:'',
+
 
 	},
 	getters: {
@@ -164,10 +183,11 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
-		},
+		}, 
 
 	}
 })
+
 
 //新建一个实例，把定义好的router和store放进来注册...................................
 new Vue({
@@ -179,4 +199,9 @@ new Vue({
 	`,
 	router,
 	store,
+	created(){
+		window.scope=this.$store.state
+	}
+
+
 })
