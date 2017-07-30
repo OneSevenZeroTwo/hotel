@@ -158,14 +158,16 @@ var store = new Vuex.Store({
 		nameNum:[],
 		//定的房间数量
 		roomsNum:null,
-		//房间单价
-		roomMoney:200,
+		//房间单价是详情页传过来的orderList中的price值
+		//roomMoney:200,
 		//订房总价
 		totalMoney:null,
 		//房间保留时间
 		timesNum:null,
 		//下订单人的联系电话
 		telNum:"中国大陆：+86",
+		/*//电话号码
+		phone:"",*/
 		//detail的buy组件显示隐藏
 		showBuy:false,
 		//detail的mask组件显示隐藏
@@ -208,6 +210,7 @@ var store = new Vuex.Store({
 				success:function(res){
 					console.log(res)
 					state.orderList.hotelId = res.hotelId
+					state.orderList.hotelName = res.hotelId
 				}
 			})
 		}
