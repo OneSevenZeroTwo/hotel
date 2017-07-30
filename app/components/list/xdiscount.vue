@@ -5,10 +5,7 @@
 			<div class="price">
 				<div class="sp-tit sale-tit">特价优惠(可多选)</div>
 				<ul class="price-list room-list">
-					<li class="" data-keyword="新客专享">新客专享</li>
-					<li class="" data-keyword="返现">返现</li>
-					<li class="" data-keyword="促销">促销</li>
-					<li class="" data-keyword="今夜甩卖">今夜甩卖</li>
+					<li v-for="p in kslist" class="" :data-keyword="p.keyWord_cn">{{p.keyWord_cn}}</li>
 				</ul>
 			</div>
 		</div>
@@ -28,12 +25,21 @@
 				
 			}
 		},
+	
 		methods:{
 
 		},
 		computed:{
 			saletitle:function(){
 				return this.$store.state.saletitle
+			},
+			kslist:function(){
+				 if(this.$store.state.kslist[0]){
+					return this.$store.state.kslist[0].subFastFilterIns
+				}else{
+					return ''
+				}	
+
 			}
 		},
 	}

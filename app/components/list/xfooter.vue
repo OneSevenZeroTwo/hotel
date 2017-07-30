@@ -45,20 +45,27 @@
 			//点击footer筛选
 			titclick:function(){
 				this.$store.state.tit= true
+				$('.page-list').addClass('page-list-content')
+				$('.page-on-center').addClass('fixed')
 			},
 			//点击区域设置
 			areabtnclick:function(){
 				this.$store.state.areabtn= true
+				$('.page-list').addClass('page-list-content')
+				$('.page-on-center').addClass('fixed')
 			},
 			//星级价格
 			pricestarbtnclick:function(){
 				this.$store.state.pricestarbtn= true;
 				this.$store.state.masklayer= true;
+				$('.page-list').addClass('page-list-content')
+				$('.page-on-center').addClass('fixed')
 			},
 			//点击排序
 			defaultbtnclick:function(){
 				this.$store.state.defaultbtn= true;
 				this.$store.state.masklayer= true;
+				$('.page-on-center').addClass('fixed')
 			}
 		},
 		computed:{
@@ -69,3 +76,9 @@
 		}
 	}
 </script>
+
+<style scoped>
+	.page-list-content{
+		overflow: hidden !important;
+	}
+</style>

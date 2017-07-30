@@ -26,8 +26,8 @@
 			</div>
 		</div>
 		<div class="sp-title">
-			<span class="left">取消</span> 
-			<span class="right">确定</span>
+			<span @click="leftclick()" class="left">取消</span> 
+			<span @click="rightclick()" class="right">确定</span>
 		</div>
 	</div>
 </template>
@@ -40,7 +40,20 @@
 			}
 		},
 		methods:{
-
+			//点击取消
+			leftclick:function(){
+				this.$store.state.masklayer = false;
+				this.$store.state.pricestarbtn= false;
+				$('.page-list').removeClass('page-list-content')
+				$('.page-on-center').removeClass('fixed')
+			},
+			//点击确定
+			rightclick:function(){
+				this.$store.state.masklayer = false;
+				this.$store.state.pricestarbtn= false;
+				$('.page-list').removeClass('page-list-content')
+				$('.page-on-center').removeClass('fixed')
+			}
 		},
 		computed:{
 			pricestarbtn:function(){
@@ -52,3 +65,4 @@
 		}
 	}
 </script>
+

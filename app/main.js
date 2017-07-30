@@ -58,8 +58,8 @@ import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
 import home from "./components/home.vue"
-//详情页路由
-import list from "./components/list/router/list.vue"
+//列表页路由
+import hotlist from "./components/list/router/hotlist.vue"
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -97,8 +97,11 @@ var routes = [{
 	},
 	//列表页开始
 	{
-		path: '/list/:id',
-		component: list
+
+		path: '/hotlist',
+		component: hotlist
+
+
 	},
 	//列表页结束
 	{
@@ -125,6 +128,9 @@ var store = new Vuex.Store({
 		areabtn:false,
 		pricestarbtn:false,
 		defaultbtn:false,
+		arr:null,
+		kslist:[],
+		show:true,
 		//遮罩层
 		masklayer:false,
 		//列表页数据结束
@@ -145,11 +151,20 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
-
+		
+		//订单页
 		isShowMask:false,
+		//房间对应的住房人
 		nameNum:[],
+		//定的房间数量
 		roomsNum:null,
+		//房间单价
+		roomMoney:200,
+		//订房总价
+		totalMoney:null,
+		//房间保留时间
 		timesNum:null,
+		//下订单人的联系电话
 		telNum:"中国大陆：+86",
 		//detail的buy组件显示隐藏
 		showBuy:false,
