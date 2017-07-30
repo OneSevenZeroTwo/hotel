@@ -22,7 +22,7 @@
 				<label for="room-reservation" ></label>
 				<div class="label" >房间保留至</div>
 				<div class="content list-input">
-					<input type="text" readonly="readonly" class="cert-type createorder" id="room-number" name="roomcount" :value="timesNum" style="width: 30px;">
+					<input type="text" readonly="readonly" class="cert-type saveuntil createorder" id="room-number" name="roomcount" :value="timesNum" style="width: 30px;">
 					<span><i class="icon-left"></i></span>
 				</div>
 			</li>

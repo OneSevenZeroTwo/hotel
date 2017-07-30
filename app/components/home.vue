@@ -1,5 +1,6 @@
 <template>
 	<div style="position: relative;">
+		<xtrading></xtrading>
 		<xheader></xheader>
 		<shijian></shijian>
 		<xsearch></xsearch>
@@ -8,6 +9,7 @@
 		<xtool></xtool>
 		<ximages></ximages>
 		<xlists></xlists>
+		<xstars></xstars>
 		<!--<baidu></baidu>-->
 	</div>
 </template>
@@ -22,6 +24,10 @@
 	import xlists from "./indexcomponents/xlists.vue";
 	import xstars from "./indexcomponents/xstars.vue";
 	import shijian from "./indexcomponents/shijian.vue";
+	import xtrading from "./indexcomponents/xtrading.vue";
+
+	
+	
 	
 	
 	
@@ -43,7 +49,8 @@
 			ximages,
 			xlists,
 			xstars,
-			shijian
+			shijian,
+			xtrading,
 //			baidu
 		}
 		
