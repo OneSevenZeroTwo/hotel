@@ -58,8 +58,8 @@ import xbuyCar from "./components/routes/buyCar.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
 import home from "./components/home.vue"
-//详情页路由
-import list from "./components/list/router/list.vue"
+//列表页路由
+import hotlist from "./components/list/router/hotlist.vue"
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -70,7 +70,7 @@ var routes = [{
 		component: home,
 	}, {
 		//路由名
-		path: '/detail',
+		path: '/detail/:id',
 		//上面定义好的路由扔进来
 		component: detail
 	}, {
@@ -97,14 +97,19 @@ var routes = [{
 	},
 	//列表页开始
 	{
+<<<<<<< HEAD
+		path: '/hotlist',
+		component: hotlist
+=======
 		path: '/list/:id',
 		component: list
+>>>>>>> ef86fbf657fa170ddd5746b1e9347dbb03b2792b
 	},
 	//列表页结束
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/detail/'
+		redirect: '/detail/90702017'
 	}
 ]
 
@@ -123,6 +128,9 @@ var store = new Vuex.Store({
 		areabtn:false,
 		pricestarbtn:false,
 		defaultbtn:false,
+		arr:null,
+		kslist:[],
+		show:true,
 		//遮罩层
 		masklayer:false,
 		//列表页数据结束
@@ -153,9 +161,9 @@ var store = new Vuex.Store({
 		showBuy:false,
 		Mask:false,
 		buyContent:{},
+		showCommom:false,
+		listParams:{},
 		roomInfoName:'7天连锁酒店(广州天河客运站二店)',
-
-
 	},
 	getters: {
 		getCount(state) {

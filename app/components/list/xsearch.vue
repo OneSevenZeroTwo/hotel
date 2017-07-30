@@ -1,5 +1,5 @@
 <template>
-	<div class="search-field showout">
+	<div :class="['search-field',{'showout':show},{'hidein':!show}]">
 		<div class="header-search">
 			<div class="sea-date">
 				<p>入<span>店</span>：<b class="indate" data-value="2017-07-26">07-26</b></p>
@@ -15,8 +15,8 @@
 		<div class="quick-search-box">
 			<div class="quick-search">
 				<div class="kslist">
-					<div @click="roomtitleclick()" class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">房型筛选</div>
-					<div @click="saletitleclick()" class="commons sale-title tjclick unon" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">优惠</div>
+					<div @click="roomtitleclick()" class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">{{kslist[0]?kslist[0].keyWord_cn:''}}</div>
+					<div @click="saletitleclick()" class="commons sale-title tjclick unon" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">{{kslist[1]?kslist[1].keyWord_cn:''}}</div>
 				</div>
 				<ul class="quick-search-list">
 					<li class="quick-search-item tjclick " data-id="100000002" data-tid="1100" data-uid="30" data-tj="{&quot;cspot&quot;:&quot;paymentInHotel&quot;}" data-keyword="到店付">到店付</li>
@@ -34,13 +34,19 @@
 		data:function(){
 			return {
 				// roomtitle:this.$store.state.roomtitle
+				page:0
 			}
 		},
 		components:{
 			
 		},
 		computed:{
-
+			kslist:function(){
+				return this.$store.state.kslist
+			},
+			show:function(){
+				return this.$store.state.show
+			}
 		},
 		methods:{
 			// 一进页面获取数据
@@ -50,11 +56,13 @@
 					params: {
 						// tab: this.message,
 						// limit: 10,
-						// page: this.page++
+						page: this.page++
 					}
 				}).then(function(res) {
 					console.log(res)
-					// this.arr = this.arr.concat(res.data.data)
+					this.$store.state.kslist = res.data.newFastFilter
+					this.$store.state.arr = JSON.parse(res.request.responseText).hotelList
+					console.log(this.$store.state.arr)
 					// this.isLoading = true
 				}.bind(this))
 

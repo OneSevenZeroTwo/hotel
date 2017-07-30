@@ -143,13 +143,13 @@
 			this.$ajax({
 				url: "./json/roomType.json"
 			}).then(function(res) {
-				console.log(res)
+//				console.log(res)
 				var arrFive = [];
 				for(var i = 1; i <= 7; i++) {
 					var randomNum = com.randomNum(0, res.data.length - 1)
 					arrFive.push(res.data[randomNum])
 				}
-				console.log(arrFive)
+//				console.log(arrFive)
 				this.roomType = arrFive;
 				
 			}.bind(this))

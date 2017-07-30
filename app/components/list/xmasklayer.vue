@@ -14,6 +14,8 @@
 				this.$store.state.pricestarbtn = false;
 				this.$store.state.masklayer = false;
 				this.$store.state.defaultbtn= false;
+				$('.page-list').removeClass('.page-list-content')
+				$('.page-on-center').removeClass('fixed')
 			}
 		},
 		computed:{

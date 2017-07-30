@@ -9,6 +9,20 @@
 </template>
 
 <script>
+	export default {
+		mounted() {
+			
+		
+		this.$ajax({
+			url: "http://localhost:3000/listFilter",
+			params:{
+				cityId:"2001"
+			}
+		}).then(function(res) {
+			console.log(res)
+		})
+	}
+	}
 </script>
 
 <style>

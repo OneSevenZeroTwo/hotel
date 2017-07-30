@@ -121,7 +121,7 @@
 					<div class="bot-btn bar">
 						<ul>
 							<li id="filter-reset">重置</li>
-							<li class="on" id="filter-submit">确定</li>
+							<li @click="filtersubmitclick()" class="on" id="filter-submit">确定</li>
 						</ul>
 					</div>
 				</div>
@@ -141,6 +141,14 @@
 			//点击返回
 			iconback:function(){
 				this.$store.state.areabtn = false;
+				$('.page-list').removeClass('page-list-content')
+				$('.page-on-center').removeClass('fixed')
+			},
+			//点击确定
+			filtersubmitclick:function(){
+				this.$store.state.areabtn = false;
+				$('.page-list').removeClass('page-list-content')
+				$('.page-on-center').removeClass('fixed')
 			}
 		},
 		computed:{
@@ -149,7 +157,16 @@
 			}
 		},
 		mounted:function(){
-
+			var pagecont = {
+				init:function{
+					//点击切换
+					$('').find('li').on('click',function(){
+						$(this).addClass('on').siblings().removeClass('on')
+						var index = $(this).index()
+					})
+				},
+			}
+			pagecont.init()
 		}
 	}
 </script>

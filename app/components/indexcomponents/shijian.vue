@@ -17,36 +17,12 @@
 		},
 		methods: {
 			aaa: function() {
-//				console.log(this.qqq[0], this.qqq[1])
-console.log(this.qqq)
-//				this.function()
-			},
-//			format:function(time, format){
-//				var t = new Date(time);
-//				var tf = function(i) { return(i < 10 ? ‘0’ : ”) + i };
-//				return format.replace(/yyyy|MM|dd|HH|mm|ss/g, function(a) {
-//					switch(a) {
-//						case‘ yyyy ':
-//						return tf(t.getFullYear());
-//						break;
-//						case‘ MM ':
-//						return tf(t.getMonth() + 1);
-//						break;
-//						case‘ mm ':
-//						return tf(t.getMinutes());
-//						break;
-//						case‘ dd ':
-//						return tf(t.getDate());
-//						break;
-//						case‘ HH ':
-//						return tf(t.getHours());
-//						break;
-//						case‘ ss ':
-//						return tf(t.getSeconds());
-//						break;
-//					}
-//				})
-//			}
+				console.log(this.qqq[0].toLocaleDateString(), this.qqq[1].toLocaleDateString())
+				console.log(this.qqq)
+				scope.listParams.starTime=this.qqq[0].toLocaleDateString()
+				scope.listParams.endTime=this.qqq[1].toLocaleDateString()
+				
+			}
 
 		},
 		mounted() {

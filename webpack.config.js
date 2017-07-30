@@ -59,6 +59,6 @@ module.exports = {
 	devServer: {
 		contentBase: "./public", //服务器需要加载的文件夹目录
 		inline: true, //实时更新
-		port:3000,
+		port:8000,
 	}
 }

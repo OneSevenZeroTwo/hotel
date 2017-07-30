@@ -5,6 +5,7 @@ var http = require('http')
 
 //链接数据库模块
 var mysql = require("mysql");
+var cheerio = require('cheerio')
 //连接服务器配置.......................................................................
 function createConnection() {
 	var connection = mysql.createConnection({
@@ -123,8 +124,10 @@ app.get('/indexlist', function(req, res) {
 //
 app.get('/list', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
+	var page = req.query.page;
+	console.log(page)
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/list?_rt=1500994125828&indate=2017-07-25&outdate=2017-07-26&city=2001&pageindex=0&actionName=h5%3D%3Ebrand%3D%3EgetHotelList&esdnum=8957411', function(content) {
+	http.get('http://m.elong.com/hotel/api/list/?indate=2017-07-28&pageindex='+page+'&city=2001&esdnum=6782671', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -133,6 +136,58 @@ app.get('/list', function(req, res) {
 		content.on('end', function() {
 			//		数据返回前端
 			res.send(str)
+
+		})
+	})
+
+})
+
+app.get('/listFilter', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	var cityId = req.query.cityId
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/'+cityId+'/nlist/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			var $ = cheerio.load(str)
+			var arr = $('script')
+//			用于接受正则匹配的数据
+			var data = {};
+			
+			//根据命令行获取数据，缩小范围，获取第二个script标签
+			var result = arr[1].children[0].data
+			//转码成中文，替换转换失败的符号
+			var douhaoReg=/%2C/g
+			var maohaoReg = /%3A/g
+			var xieganReg = /%2/g
+			result = decodeURI(result).replace(douhaoReg,",")
+			result = result.replace(maohaoReg,":")
+			result = result.replace(xieganReg,"/")
+			//提取数据
+			var Filter2=/\[\{[\w\W]+\]/
+			
+			var regCity =/city:'\{\"cityId\"[\w\W]*?\}/			
+			var regFilterList1=/filterList\:\'\[\{[\w\W]+searchList/			
+			var regSearchList =/searchList:'\[\{[\W\w]+areaList/
+			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
+			var reghotCityList =/hotCityList\:\'[\w\W]+starList/
+			
+			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
+			data.city=JSON.parse(result.match(regCity)[0].slice(6))
+			data.FilterList=JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0])
+
+			data.searchList=JSON.parse(result.match(regSearchList)[0].match(Filter2)[0])	
+			
+			data.areaList=JSON.parse(result.match(regAreaList)[0].match(Filter2)[0])
+			data.hotCityList=JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0])
+
+			//返回前端
+			res.send(data)
 
 		})
 	})
@@ -141,13 +196,14 @@ app.get('/list', function(req, res) {
 
 
 //detail部分..............................................tangqiuping
-//详情页内容
-app.get('/detail', function(req, res) {
+//轮播图
+app.get('/getInfo', function(req, res) {
+	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	//	console.log(1111)
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/otherdetail/?cityId=0101&hotelid=00101543&lng=116.437257528000003503620973788201808929443359375&_rt=1500975501941&lat=39.9589810220000032359166652895510196685791015625', function(content) {
-		//		console.log(content)
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid=90702017', function(content) {
+//		console.log(content)
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -155,12 +211,13 @@ app.get('/detail', function(req, res) {
 		})
 		content.on('end', function() {
 			//		数据返回前端
-			//			console.log(str)
+//			console.log(str)
 			res.send(str)
 		})
 	})
 
 })
+
 
 
 //详情页   房间类型

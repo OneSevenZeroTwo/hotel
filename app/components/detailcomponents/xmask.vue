@@ -6,13 +6,13 @@
 	export default {
 		computed:{
 			Mask(){
-				console.log(scope.Mask)
+//				console.log(scope.Mask)
 				return scope.Mask
 			}
 		},
 		methods:{
 			close(){
-				console.log(1111)
+//				console.log(1111)
 				scope.Mask = false
 				scope.showBuy = false
 			}

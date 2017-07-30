@@ -1,0 +1,1858 @@
+{
+	"errorCode": null,
+	"errorMessage": null,
+	"errorArgs": null,
+	"pager": null,
+	"pageID": null,
+	"orderFrom": null,
+	"pageTile": null,
+	"pageKeywords": null,
+	"pageDescription": null,
+	"comments": [
+		{
+			"userName": "嘟嘟",
+			"userRank": 1,
+			"content": "一家人来广东来玩，提前订的酒店，今天一下飞机联系总台就有人来接，来到酒店客服很是热情，耐心解答。建议来广州中转能来这，便宜实惠，客服很是热情。有机会再来还选择这。",
+			"commentDateTime": "2017-07-15",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0009vtzE.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0009vuJk.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "您的满意是我们最大的责任与荣幸，百凯航空酒店致力于为客人提供卓越的服务；您的到来及肯定是我们不断进步的动力与方向，非常感谢您对酒店肯定及支持，我们真诚的期待您的再次光临",
+					"createTime": "2017-07-17"
+				}
+			],
+			"commentScoreTotal": 4.0,
+			"travelType": 1
+		}, {
+			"userName": "小顺溜",
+			"userRank": 1,
+			"content": "还不错，价格相当，免费接送。很方便",
+			"commentDateTime": "2017-06-20",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00097IGz.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临!",
+					"createTime": "2017-06-21"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "会员3532",
+			"userRank": 1,
+			"content": "服务不错，价格实惠！",
+			"commentDateTime": "2017-06-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/000931yD.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临!",
+					"createTime": "2017-06-13"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "厉女士",
+			"userRank": 2,
+			"content": "性价比高，免费机场接送",
+			"commentDateTime": "2017-06-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00091A9v.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临!",
+					"createTime": "2017-06-09"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "会员1729",
+			"userRank": 1,
+			"content": "有车接送很方便。早餐一般。",
+			"commentDateTime": "2017-05-13",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0008ttDB.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-05-14"
+				}
+			],
+			"commentScoreTotal": 4.4,
+			"travelType": 5
+		}, {
+			"userName": "会员7625",
+			"userRank": 1,
+			"content": "特此好，简直了，我是旅行狂，没想到这么点钱能有这么好的服务，前台服务也666",
+			"commentDateTime": "2017-04-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0008flSx.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临!",
+					"createTime": "2017-04-30"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "Mario",
+			"userRank": 1,
+			"content": "就是接送方便，适合过路客，不推荐旅游住。洗手盆的水时大时小，冲凉房下水道不够流畅，有积水现象，尤其影响深刻的是早餐，八点去大部分已经空空，只有馒头包子和稀饭，还全都冷冷，很失望一下。",
+			"commentDateTime": "2017-04-27",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0008eOxd.jpg"
+			],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店",
+					"createTime": "2017-04-28"
+				}
+			],
+			"commentScoreTotal": 3.4,
+			"travelType": 0
+		}, {
+			"userName": "大熊",
+			"userRank": 1,
+			"content": "有点味，但是总体蛮不错的。房间大，前台服务好。",
+			"commentDateTime": "2017-04-22",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0008cmyv.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2017-04-25"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "路过",
+			"userRank": 3,
+			"content": "挺好，接送周到，干净卫生，推荐大家入住",
+			"commentDateTime": "2017-04-22",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0008ccAM.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0008cf9q.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0008ccAG.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2017-04-22"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "蔷薇波波",
+			"userRank": 2,
+			"content": "这个价格还是可以的，酒店离机场开车大概10分钟",
+			"commentDateTime": "2017-04-20",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00088x1J.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-04-20"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "淡然",
+			"userRank": 1,
+			"content": "服务非常好，前台很热情的帮忙联系快递公司，因为东西很多，打扫卫生的工作人员看到以后也非常热情的帮忙，很感谢！",
+			"commentDateTime": "2017-04-17",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00085mOw.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00085mKd.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00085mOv.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00085mKe.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "小张",
+			"userRank": 1,
+			"content": "很好、飞机晚上12点到、酒店有专车免费接送！",
+			"commentDateTime": "2017-04-12",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00084npm.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "会员7874",
+			"userRank": 1,
+			"content": "服务很好，机场接送，挺好的，推荐",
+			"commentDateTime": "2017-04-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00083woN.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00083whx.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2017-04-11"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "桃子子",
+			"userRank": 3,
+			"content": "酒店并非图一艺龙上的位置，图二的车来接送，车程大概十二分钟，前台和接待美女以及接送机司机服务都不错，只是确实等接送车需要二十到三十分钟因为一趟车不是单单接送一个人，但是这个价钱配送接送机的车需要等时间长一些确实情有可原。建议如果想要自行打车去酒店的朋友，直接打车到百凯航空大厦不要看艺龙上的导航「因为差距太远」。",
+			"commentDateTime": "2017-03-30",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007RmLw.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.6,
+			"travelType": 2
+		}, {
+			"userName": "方",
+			"userRank": 1,
+			"content": "环境不错，免费帮我升了房间，下次出差再来",
+			"commentDateTime": "2017-03-30",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007RdOk.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007Rg1o.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "王先生",
+			"userRank": 3,
+			"content": "房间很好、位置也很好、很干净、前台热情服务好。",
+			"commentDateTime": "2017-03-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007R1M2.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "OK",
+			"userRank": 1,
+			"content": "挺好的………………………………………………………………",
+			"commentDateTime": "2017-03-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007QVT1.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.0,
+			"travelType": 4
+		}, {
+			"userName": "yaoziyan",
+			"userRank": 1,
+			"content": "凌晨入住，服务也很好！免费送机服务很到位，非常适合早上要赶飞机的同学，靠谱！放心",
+			"commentDateTime": "2017-03-27",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007QJPo.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007QHCZ.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "会员6417",
+			"userRank": 1,
+			"content": "我就想知道艺龙是凭什么推荐的。首先位置离机场车程五分钟。白云机场这么大，离机场最角落的地方五分钟没毛病，但是离旅客出来的地方要超过六公里！感觉已经到什么镇上了。一定一定要叫酒店接。自己是来不到这个地方的。其次，一进房间就一股浓浓的怪味，枕头矮得像没有，就几张桌子椅子，使用淋浴头的时候一直发出怪声，水压大到离谱，还有床垫，不算软，还好我喜欢睡硬床，不点评。再来隔音，酒店就在大马路旁，经过的全是大货车什么的，呼呼车来车往一晚上没消停过，房门就一个普通三合门，连个锁链都没有，外面经过的人轻声说话都能听得一清二楚，哎我去。我也算能吃苦的了，真心话火车站附近的私人小旅馆环境设施都比这好。住那么多酒店很少评论这个我是真无力吐槽",
+			"commentDateTime": "2017-03-21",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007N4VR.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007N7at.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 2
+		}, {
+			"userName": "修心",
+			"userRank": 1,
+			"content": "对得起这个价格，机场接送方便",
+			"commentDateTime": "2017-03-15",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007LOer.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2017-03-15"
+				}
+			],
+			"commentScoreTotal": 4.0,
+			"travelType": 5
+		}, {
+			"userName": "小阳",
+			"userRank": 1,
+			"content": "接送机服务很不错啊…",
+			"commentDateTime": "2017-03-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007Ic1D.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "星仔",
+			"userRank": 1,
+			"content": "非常好，好清潔，好專業，有礼貌",
+			"commentDateTime": "2017-02-27",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007pOzK.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2017-03-06"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "烽哥",
+			"userRank": 1,
+			"content": "还不错。下次还会再来。",
+			"commentDateTime": "2017-02-26",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007p0bu.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007p2qu.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "良心评价",
+			"userRank": 3,
+			"content": "这是我住过的酒店最差的，明明网上写的酒店，实际写的大厦，让找好久才找到1、位置根本不是网上说的五分钟，至少开车15分钟；2、设施设备一般般，墙上发霉了，味道很大；3、周边环境就是农村，飞机噪音凌晨三点还有；4、服务态度很不好，订的豪华双人房，就是一般双人间，和图片严重不符，问为什么，回答就这样！太恶劣。总之不能看宣传，我都怀疑里边的很多好评是拖。不会住第二次",
+			"commentDateTime": "2017-02-25",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007oUAP.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007oWPe.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007oWPb.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007oUAS.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，我们将不断完善和升级酒店设备设施，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，期待您下次光临百凯航空酒店！",
+					"createTime": "2017-02-27"
+				}
+			],
+			"commentScoreTotal": 1.8,
+			"travelType": 4
+		}, {
+			"userName": "如是这般",
+			"userRank": 3,
+			"content": "在机场等了二十分钟终于接到了，订的最便宜的房间，公共卫生间，早上送机只有5:10或5:50的，没有5点半的。",
+			"commentDateTime": "2017-02-11",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007aWxZ.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.0,
+			"travelType": 4
+		}, {
+			"userName": "肥仔",
+			"userRank": 1,
+			"content": "快捷、卫生、安静、舒适，已经订好下次的！！！",
+			"commentDateTime": "2017-02-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007atKn.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "会员5091",
+			"userRank": 1,
+			"content": "还好吧，一个人入住，空调好像坏了，一直响就没开了，冷的哆嗦，赶明天的飞机，还算很合算拉～性价比也不错的！",
+			"commentDateTime": "2017-02-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0007a1iO.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007a1iX.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00079Zax.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007a1iH.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.2,
+			"travelType": 5
+		}, {
+			"userName": "洁",
+			"userRank": 1,
+			"content": "非常好，接送及时，前台小妹免费帮忙升级房间，房间干净整洁，这个价钱值了，非常谢谢!",
+			"commentDateTime": "2017-02-07",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00079eKZ.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "吕莫",
+			"userRank": 3,
+			"content": "白云机场有接送车，挺方便。周边也有吃饭的。性价比不错，已经住过两次了",
+			"commentDateTime": "2017-02-05",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/000791lX.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.6,
+			"travelType": 5
+		}, {
+			"userName": "啊乖",
+			"userRank": 1,
+			"content": "订的是豪华版大床，结果是1.5米，床有些硬。花洒是固定在上面的，热水超级不稳定，洗澡水忽冷忽热，忽大忽小。前台和楼层服务还是可以的。",
+			"commentDateTime": "2017-02-04",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00078Iba.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.2,
+			"travelType": 2
+		}, {
+			"userName": "LamChiWai",
+			"userRank": 1,
+			"content": "环境不错，客服很好，提前叫醒～按时接送～",
+			"commentDateTime": "2017-02-04",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00078Cqb.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00078CQP.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.8,
+			"travelType": 5
+		}, {
+			"userName": "会员8268",
+			"userRank": 1,
+			"content": "环境卫生干净，接送服务好",
+			"commentDateTime": "2017-02-02",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00078eZ7.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "Cono",
+			"userRank": 3,
+			"content": "有机场接送还是比较方便，不过必须要酒店接送，自己估计很难找到。",
+			"commentDateTime": "2017-02-01",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00077ZgW.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.8,
+			"travelType": 2
+		}, {
+			"userName": "夜色",
+			"userRank": 1,
+			"content": "酒店接送车很快，酒店设施有些陈旧！空调不热，噪音太大！但还是很方便，很适合过度",
+			"commentDateTime": "2017-02-01",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00077XW9.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00077XW8.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0007805l.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.8,
+			"travelType": 1
+		}, {
+			"userName": "霖天",
+			"userRank": 2,
+			"content": "好吧哈哈哈哈哈哈哈哈",
+			"commentDateTime": "2017-01-30",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00077IW4.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "会员4095",
+			"userRank": 1,
+			"content": "离机场5.2公里 艺龙地图有问题 8点不到去吃早饭 只有一点粥了 也没有在做的意思 \uD83D\uDE02\uD83D\uDE02\uD83D\uDE02再也不想来了",
+			"commentDateTime": "2017-01-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00077uR0.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.6,
+			"travelType": 5
+		}, {
+			"userName": "英雄所见略痛",
+			"userRank": 3,
+			"content": "离机场不算近，好在有车接车送，适合下机过个夜",
+			"commentDateTime": "2017-01-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00077m0i.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.2,
+			"travelType": 1
+		}, {
+			"userName": "哎哟喂",
+			"userRank": 2,
+			"content": "不错啊，性价比高服务好",
+			"commentDateTime": "2017-01-26",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00076VrS.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "我是水果大王",
+			"userRank": 1,
+			"content": "总体上性价比高，服务态度不冷，应有的服务都有，入住的那一晚上接的人挺多的，而且大家都不排队，入住等人拍等了好久，有人对定的房间不满（网上没说明有无独立卫生间），双方互相说了几句，最后前台给换了，酒店离机场没想象中的近，但往来都有车接送，至于周围有没吃的，我看到有人提着早点进来了。如果想78块钱住这样的酒店，还是非常值的.这是早上送去机场的车",
+			"commentDateTime": "2017-01-26",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00076TjX.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.8,
+			"travelType": 0
+		}, {
+			"userName": "无忧",
+			"userRank": 3,
+			"content": "还可以，326房间空调好像不太好用，其他的还行。戴眼镜的接送机大叔很赞",
+			"commentDateTime": "2017-01-24",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00074Avv.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00074B0W.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00074At0.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00074AtU.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.0,
+			"travelType": 4
+		}, {
+			"userName": "笑着回忆",
+			"userRank": 2,
+			"content": "有车免费接送，服务挺好，前台接待也很好，设施一般，唯一缺点酒店附近无吃饭的地方，要走点路才能找到，总体还行吧，经济实惠。",
+			"commentDateTime": "2017-01-23",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00073MS6.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00073OYP.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00073OYO.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00073MS7.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00073MSa.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.6,
+			"travelType": 5
+		}, {
+			"userName": "老麦",
+			"userRank": 1,
+			"content": "服务态度特别亲切！从大门口的迎宾员、柜台办理入住的服务员，都笑容可鞠、亲切地就像在接待自家人一样；还主动为我房间升级(不带卫生间的单人间升级为更大且带卫生间的双人房)！(还不加价的哦！赞\uD83D\uDC4D\uD83C\uDFFB)",
+			"commentDateTime": "2017-01-21",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00071Pc6.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "球球",
+			"userRank": 3,
+			"content": "如果你只是为了接送机的方便，那这家的性价比绝对够高了！简单，干净，接送服务好",
+			"commentDateTime": "2017-01-18",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006YMag.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.4,
+			"travelType": 1
+		}, {
+			"userName": "水晶",
+			"userRank": 1,
+			"content": "非常好得酒店，比较方便快捷",
+			"commentDateTime": "2017-01-17",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006YeUW.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "QQWWEE",
+			"userRank": 3,
+			"content": "早上航班，所以入住，比较方便，带接送机服务",
+			"commentDateTime": "2017-01-14",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006WfQR.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006WdHz.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006WdHI.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 1
+		}, {
+			"userName": "雷子",
+			"userRank": 1,
+			"content": "离机场不是一太远，接机司机热情到宾馆已经2点了，对面有一餐馆味道不错。",
+			"commentDateTime": "2017-01-13",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006VGGi.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006VEwz.jpg"
+			],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 1
+		}, {
+			"userName": "迷迷糊糊",
+			"userRank": 1,
+			"content": "百度地图地址是假的，离机场有十分钟车程，公路边的民宿，床单都烂了，还没水，不推荐！",
+			"commentDateTime": "2017-01-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006TBCV.jpg"
+			],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 1
+		}, {
+			"userName": "静默的松子",
+			"userRank": 1,
+			"content": "距离机场很近，因为第二天早班飞机所以尽量选择了入住，专车直接从14号出发厅接到酒店，第二天早上前台还有叫醒服务，准时送达机场，挺好的",
+			"commentDateTime": "2017-01-08",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006S6Oi.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "小小",
+			"userRank": 1,
+			"content": "酒店环境不错，前台的服务各方面都很好，离机场也是比较近的，值得推荐",
+			"commentDateTime": "2017-01-04",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006O8Mp.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006O9cM.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006O6Bj.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "会员5090",
+			"userRank": 3,
+			"content": "很意外 这个价位 推荐",
+			"commentDateTime": "2016-12-30",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006M1D6.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "谭小姐",
+			"userRank": 1,
+			"content": "真的感觉不错哦，赞一个啦！，挺好的",
+			"commentDateTime": "2016-12-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006KDZq.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-12-28"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "kim",
+			"userRank": 1,
+			"content": "机场边不远，性价比很高，接机、前台都很漂亮，声音好听，服务热情、周到、温柔。",
+			"commentDateTime": "2016-12-26",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006JRpB.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006JRpA.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006JP8H.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-12-28"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "吉吉",
+			"userRank": 1,
+			"content": "还不错，有美女借，有专车接送",
+			"commentDateTime": "2016-12-26",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006JPxD.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，酒店提供24小时免费机场接送服务，期待您下次光临百凯航空酒店！",
+					"createTime": "2016-12-28"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 3
+		}, {
+			"userName": "海岛奇兵^_^",
+			"userRank": 3,
+			"content": "太远了，不在原地导航，商量一下吧别瞎说了！",
+			"commentDateTime": "2016-12-25",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006JPrw.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "非常感谢您花费珍贵的时间给我们宝贵的意见，给您带来的不便深感抱歉，我们将不断完善和升级酒店设备设施，全力为顾客打造舒适的居住环境，期待您下次光临百凯航空酒店，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约7分钟，酒店提供24小时免费机场接送服务，期待您下次光临百凯航空酒店！",
+					"createTime": "2016-12-28"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "molly",
+			"userRank": 1,
+			"content": "挺不错的，还有免费接送机服务，还能免费升级房间",
+			"commentDateTime": "2016-12-23",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006IaSx.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-12-28"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "天天",
+			"userRank": 2,
+			"content": "环境还行，还有专车接送，不错",
+			"commentDateTime": "2016-12-17",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006wYWZ.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006x0z7.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006wYWY.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "无忧",
+			"userRank": 3,
+			"content": "不错，值得推荐！订的房间前台说没独卫，订单里有备注，我翻了半天也没看到，后给我换的豪华标间，在机场周围条件算很好了……性价比也高",
+			"commentDateTime": "2016-12-16",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006wOQe.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006wOQp.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006wNed.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006wNek.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006wOQo.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-12-20"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "Lowry",
+			"userRank": 1,
+			"content": "地方比较偏，没什么吃的，酒店本身还行，这价位还包接送，还要求什么呢，免费升级了房间，性价比那是没说的，值得推荐",
+			"commentDateTime": "2016-12-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006qA8S.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-12-13"
+				}
+			],
+			"commentScoreTotal": 4.4,
+			"travelType": 5
+		}, {
+			"userName": "大本",
+			"userRank": 1,
+			"content": "司机师傅很随和，驾驶平稳。\n前台小哥办事利索。\n房间那是相当得可以。\n是您居家旅行的不二选则。",
+			"commentDateTime": "2016-12-03",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006p2qn.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006p2qm.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006p0Pe.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006p2ql.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006p0Pf.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-12-05"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "平凡之路923",
+			"userRank": 1,
+			"content": "前台免费帮我升级了住房，非常感谢~离机场车十几分钟很方便，吃饭买东西的地方有点距离，走路十多分钟，总体来说服务性价比都可以",
+			"commentDateTime": "2016-11-30",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006o4ZP.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006o6C6.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006o4ZS.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店，感谢您对酒店的支持与肯定，酒店致力为每一位宾客营造一个舒适、卫生的入住环境，期待您的下次光临！",
+					"createTime": "2016-11-30"
+				}
+			],
+			"commentScoreTotal": 4.6,
+			"travelType": 5
+		}, {
+			"userName": "黄政雄",
+			"userRank": 3,
+			"content": "很好！\n又有專車接送......\n\n\n服务员态度还可以！  ！ ..........",
+			"commentDateTime": "2016-11-23",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006mAVs.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006myk1.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006myk6.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.4,
+			"travelType": 2
+		}, {
+			"userName": "会员7751",
+			"userRank": 2,
+			"content": "太棒了！老板一早就打电话跟我说网上来到就联系 他们接机，房间很新很干净，很多温馨的小细节，第一次在艺龙评价还带图，这间宾馆令我对南京的印象很好，",
+			"commentDateTime": "2016-11-20",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006ltx9.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006lw83.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006ltx3.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006lw85.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006lw7W.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006lw82.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "没有温度的心",
+			"userRank": 1,
+			"content": "服务态度非常好，房间很大也很干净。下次还来。",
+			"commentDateTime": "2016-11-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006eRF0.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006ePKQ.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "琪瑀",
+			"userRank": 1,
+			"content": "酒店很干净，有早餐，而且还有免费接送真的很方便。每间房都有免费的Wifi。服务到目前为止还算是很满意的。",
+			"commentDateTime": "2016-11-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006eyfM.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006ewmS.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006eyfG.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "会员1312",
+			"userRank": 1,
+			"content": "卫生整洁干净！服务态度好！下次还来！",
+			"commentDateTime": "2016-11-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006dUHo.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006dWBK.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006dUHx.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0006dWBU.jpg"
+			],
+			"roomTypeName": "豪华三人房（含机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "会员7364",
+			"userRank": 1,
+			"content": "态度好，服务也周到，感觉Ok",
+			"commentDateTime": "2016-11-05",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0006a80U.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "咸咸1234567",
+			"userRank": 1,
+			"content": "服务很不错！有专车接送，很方便！",
+			"commentDateTime": "2016-11-03",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00068sGj.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00068uwY.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "4567",
+			"userRank": 1,
+			"content": "非常好，环境各方面都不错，下次还来住",
+			"commentDateTime": "2016-11-03",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00066MRr.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00066MRE.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00066OK5.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 1
+		}, {
+			"userName": "会员7996",
+			"userRank": 2,
+			"content": "不错，性价比高，下次到这还来。",
+			"commentDateTime": "2016-10-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00064fm4.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店.感谢您对酒店的支持与肯定.酒店致力为每一位宾客营造一个舒适、卫生的入住环境.我们一定会努力做的更好.期待您的下次光临！",
+					"createTime": "2016-11-01"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "雷雨",
+			"userRank": 2,
+			"content": "酒店条件不错，就是偏了点，卫生条件很好。",
+			"commentDateTime": "2016-10-23",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00061wwd.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "尊敬的宾客，非常感谢您花费珍贵的时间给我们宝贵的意见，百凯航空酒店位于广州白云国际机场北出口，距离机场候机厅车程约10分钟，期待您下次光临百凯航空酒店",
+					"createTime": "2016-10-24"
+				}
+			],
+			"commentScoreTotal": 3.4,
+			"travelType": 4
+		}, {
+			"userName": "雷雨",
+			"userRank": 2,
+			"content": "酒店虽说不是新酒店但房间卫生很清洁，服务员热情有礼貌，机场很方便。",
+			"commentDateTime": "2016-10-22",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00061nhF.jpg"
+			],
+			"roomTypeName": "",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店.感谢您对酒店的支持与肯定.酒店致力为每一位宾客营造一个舒适、卫生的入住环境.我们一定会努力做的更好.期待您的下次光临！",
+					"createTime": "2016-10-24"
+				}
+			],
+			"commentScoreTotal": 3.4,
+			"travelType": 4
+		}, {
+			"userName": "曹先生",
+			"userRank": 1,
+			"content": "第一感觉棒，我在机场附近住的最好的一次价钱也行76免费车接车送，以后这样的活动要一直做下去给外地出差的，打工的带来福利，",
+			"commentDateTime": "2016-10-22",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00061poL.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061poP.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061poU.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061poR.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061poM.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061poK.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061n8U.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00061n8T.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店.感谢您对酒店的支持与肯定.酒店致力为每一位宾客营造一个舒适、卫生的入住环境.我们一定会努力做的更好.期待您的下次光临！",
+					"createTime": "2016-10-24"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "超婕",
+			"userRank": 1,
+			"content": "墙纸倒是还蛮温馨的，就是没有独立卫浴不是很方便，以后知道这个房型是没有独立卫生间的了，以后不会考虑订，太不方便了。",
+			"commentDateTime": "2016-10-15",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005YMmw.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005YMmz.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 3.0,
+			"travelType": 5
+		}, {
+			"userName": "会员6870",
+			"userRank": 1,
+			"content": "比想象中好，跟图片描述的一样！对于赶飞机的人来说24小时接送棒棒哒，下次还会继续选择这里…",
+			"commentDateTime": "2016-10-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005WXbT.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店.感谢您对酒店的支持与肯定.酒店致力为每一位宾客营造一个舒适、卫生的入住环境.我们一定会努力做的更好.期待您的下次光临！",
+					"createTime": "2016-10-10"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 0
+		}, {
+			"userName": "chen.susu",
+			"userRank": 1,
+			"content": "总体还可以 坐车也方便 就是周边吃的少",
+			"commentDateTime": "2016-10-03",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005WGmI.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.0,
+			"travelType": 0
+		}, {
+			"userName": "啊杰",
+			"userRank": 1,
+			"content": "总体是好的，我刚刚入住，感觉还是不错的，免费接送是亮点",
+			"commentDateTime": "2016-09-24",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005Vl3w.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢选择入住百凯航空酒店.感谢您对酒店的支持与肯定.酒店位于广州新白云机场北出口，距离机场候机大厅约8分钟车程，酒店提供24小时机场免费接送服务，期待您的下次光临！",
+					"createTime": "2016-09-27"
+				}
+			],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "会员8517",
+			"userRank": 1,
+			"content": "性价比还不错，前台接待员很nice，还主动帮忙升级~很赞\uD83D\uDC4D",
+			"commentDateTime": "2016-09-21",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005UF0z.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 4.2,
+			"travelType": 4
+		}, {
+			"userName": "55555",
+			"userRank": 2,
+			"content": "这里很干净很卫生。服务也很好。下次有机会的话，还是选择这里",
+			"commentDateTime": "2016-09-14",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005Sbe9.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005ScaI.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "会员9198",
+			"userRank": 3,
+			"content": "超级无敌差差差差，竟然没有独立卫生间，厕所，冲凉房都在外面，这么重要的信息为什么没有前面的人说过\uD83D\uDE30而且味道非常重！接送过程是大车接送，要等一定时间。前台服务还行！",
+			"commentDateTime": "2016-09-10",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005QzVW.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005QzVp.jpg"
+			],
+			"roomTypeName": "经济公寓双床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.0,
+			"travelType": 4
+		}, {
+			"userName": "卷卷",
+			"userRank": 1,
+			"content": "酒店距离机场车程10分钟左右，有车接送，而且几十块钱订的单人间，酒店居然免费升级到大床房，房间空间挺大的，厕所浴室也不错，这个价钱真的没的说了，比我在上海机场住的200的都要好！！！绝对好评！！还有哦，前台的服务态度真的很好，感觉很舒服呢～～！",
+			"commentDateTime": "2016-09-03",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005NTy2.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "会员4237",
+			"userRank": 1,
+			"content": "虽然处理订单时有些小问题，但是酒店还是以顾客的需求为首要，首先安排了我们入住，在此非常感谢酒店。但是艺龙后台处理订单太不仔细，通过艺龙代理入住比较麻烦。",
+			"commentDateTime": "2016-09-01",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005Nkhc.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005NmM7.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005NmM8.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "感谢您与我们分享入住经历。得到您对我们的满意评价，非常高兴。这是我们为客人提供优质服务的强大动力，期待您的下次入住。",
+					"createTime": "2016-09-03"
+				}
+			],
+			"commentScoreTotal": 4.2,
+			"travelType": 0
+		}, {
+			"userName": "007",
+			"userRank": 1,
+			"content": "前台服务很好，车接车送方便，以后还会来。",
+			"commentDateTime": "2016-08-12",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005v6vI.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005v6vZ.jpg"
+			],
+			"roomTypeName": "豪华双床房-钟点房4小时",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "001",
+			"userRank": 1,
+			"content": "飞机晚点就订了这家酒店，服务好，住了几个小时酒店车接车送。",
+			"commentDateTime": "2016-08-12",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005v8Tg.jpg"
+			],
+			"roomTypeName": "豪华双床房-钟点房4小时",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 5
+		}, {
+			"userName": "K",
+			"userRank": 1,
+			"content": "出来办完事，刚好住几个小时赶飞机，酒店有车接送很方便，下次还来。",
+			"commentDateTime": "2016-08-11",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005uEIv.jpg"
+			],
+			"roomTypeName": "豪华双床房-钟点房4小时",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "zhoucheng",
+			"userRank": 1,
+			"content": "服务好，就住几个小时还有车机场接送很方便。",
+			"commentDateTime": "2016-08-11",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005uEDy.jpg"
+			],
+			"roomTypeName": "豪华双床房-钟点房4小时",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "会员4298",
+			"userRank": 1,
+			"content": "服务还可以 卫生不想说什么 浴巾 毛巾都是用过的 卫生纸不提供 位置有点偏，看图吧",
+			"commentDateTime": "2016-08-08",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005qYH4.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005qWau.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005qWaa.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005qWa3.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005qWaf.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.8,
+			"travelType": 5
+		}, {
+			"userName": "123",
+			"userRank": 3,
+			"content": "还可以，在寸土寸金的广州，免费机场接送",
+			"commentDateTime": "2016-08-05",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005n4qC.jpg"
+			],
+			"roomTypeName": "豪华大床房免费升级至豪华双人房",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "Lili",
+			"userRank": 1,
+			"content": "酒店服务很好，前台耐心登记飞机起飞时间安排车送机，下次还会来住。",
+			"commentDateTime": "2016-08-02",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005l3XH.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005l6yz.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "Lisha",
+			"userRank": 1,
+			"content": "车接车送很方便，价格实惠，下次还会再来住的，很不错的一次出行",
+			"commentDateTime": "2016-07-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005i0KY.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005i0L6.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "Jack",
+			"userRank": 1,
+			"content": "有车接送，离机场近价格也不贵，服务好，下次还会来住。",
+			"commentDateTime": "2016-07-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005h9IE.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 4
+		}, {
+			"userName": "Jack",
+			"userRank": 1,
+			"content": "机场接待很热情，坐在车上与司机叫了几句就到酒店了，前台服务好，有车接车送很方便。",
+			"commentDateTime": "2016-07-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005gyUP.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0005gxvo.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 5.0,
+			"travelType": 2
+		}, {
+			"userName": "会员8026",
+			"userRank": 3,
+			"content": "没有网上说的那么好啊，房间水还得投诉才能给，奶更没有，早餐是馒头咸菜鸡蛋大米粥就这四样。房间要个火还得掏钱买。就这条件价格忒贵啦。",
+			"commentDateTime": "2016-07-14",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0005aATo.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 2.6,
+			"travelType": 5
+		}, {
+			"userName": "刘先生",
+			"userRank": 3,
+			"content": "经济适用，利于登机，接送机服务很到位，尤其是车子，我们三个人坐，都觉得有点浪费。",
+			"commentDateTime": "2016-07-06",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00057d2y.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/00057bTz.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 1
+		}, {
+			"userName": "会员5592",
+			"userRank": 1,
+			"content": "位置就在机场几公里之外的偏僻城中村，预定前看到总体评价不错，只看到少数差评，还是入住才知道，没有最差只有更差！提前5天就在艺龙付费预定了，半夜三更下飞机，接送到店之后，竟然被告知由于其他航班延误来了一批客人住满了，没房了！然后等前台打了半小时电话才申请安排到马路对面一家外墙挂着“住宿”的民房！验证了楼上有会员说的“歧视网上付款，觉得我们交了钱了，爱住不住”是真的！反正你已经付费，要取消必须入住前一天的凌晨24点前取消才生效，一旦你过了时间，它就是上帝了，给你楼梯底住也可以，无需道歉更不用赔偿或返差价，最多就收个差评！无伤大雅！我想问：为什么他们安排给其他人住的时候，不会事前致电过来征询一下我意见，问我几点到？是否到？或者提前就说突发情况没房了，退钱给你住别的地方吧…再说说所谓的那间“住宿”，设施简陋有蚊子，最重要的是门都是不能反锁的，一晚上都觉得不安全，通道的走路声音很响！凌晨还有人敲门，还有直接就开了说进错门的，大早上六点多就听到旁边房间吵闹的装修声，摆明在赶客，说好的6:20有车接送到机场，拖到6:40。这就是他们的服务！如果你还有怨言，估计他们还会用“118元还想住多好”来回应之",
+			"commentDateTime": "2016-07-01",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/00055dMW.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 1.6,
+			"travelType": 0
+		}, {
+			"userName": "燕子",
+			"userRank": 1,
+			"content": "接送服务好房间干净好好",
+			"commentDateTime": "2016-06-15",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004WbAl.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004Wbrh.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 5
+		}, {
+			"userName": "会员0149",
+			"userRank": 1,
+			"content": "理性的推荐大家不要预定该宾馆。该宾馆从接机到住宿都存在着不少管理问题。因为到达广州的时间比较晚预定了该宾馆。当晚广州大雨，依据宾馆指示在指定地点等待接机。等了差不多一个小时，与我一同等候接送的客人全都走完20分钟后，接机车才到达。另有乘客不在等候区候车，接送车上到楼上出口接机，乘客不熟悉路程，接机人员在车上玩了大概10分钟手机才说下去找客人。住宿的问题，宾馆客服告知由于当晚大雨，宾馆已被临时安排的客人住满，要换到该宾馆的旗舰店入住。本人已于入住一周之前预定了宾馆，结果因为这个原因要换宾馆。但是该宾馆声称的旗舰店实为一家机场旅社，不夸张的说2楼前台得压着身子走。房间没有热水，房门锁陈旧生锈（下图）。在网上查了预定价格和实际入住宾馆房价差距达到50元，之后联系客服问解决方案，客服说联系解决，至今日仍无消息。唯一合格的就是准点叫醒和接送机。以上。",
+			"commentDateTime": "2016-05-28",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004RGGl.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 5
+		}, {
+			"userName": "会员0338",
+			"userRank": 1,
+			"content": "出乎意料，干净，安静，而且服务态度也很好！楼下就是便利店，再往里走还有各种店，方便得很！强烈推荐。",
+			"commentDateTime": "2016-05-18",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004MQMn.jpg"
+			],
+			"roomTypeName": "豪华双人房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 5
+		}, {
+			"userName": "会员5068",
+			"userRank": 1,
+			"content": "有专车接送不错，特别感谢司机，就我们俩也送，就是蚊蚊有点凶猛呢",
+			"commentDateTime": "2016-05-17",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004MO19.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "晓龙",
+			"userRank": 3,
+			"content": "服务接送周到，环境还可以，房间蛮大！",
+			"commentDateTime": "2016-05-09",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004KOhx.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004KOho.jpg"
+			],
+			"roomTypeName": "豪华大床房（含机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "smileswz",
+			"userRank": 3,
+			"content": "干净整齐，服务好，价格实惠，车接车送。",
+			"commentDateTime": "2016-05-03",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004INlX.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004INlZ.jpg"
+			],
+			"roomTypeName": "豪华大床房（免费机场接送）",
+			"isMarrow": 1,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "张千万",
+			"userRank": 3,
+			"content": "到机场很快有人接送。洗澡的水太小了 要增大水压",
+			"commentDateTime": "2016-04-21",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004xxO0.jpg"
+			],
+			"roomTypeName": "豪华大床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 3
+		}, {
+			"userName": "迷失中的孩子",
+			"userRank": 1,
+			"content": "这个酒店主要是给航空公司给航延旅客休息的地方，离机场坐车要半个小时，环境不说了，房间简陋，一分钱一分货，有真相。好在是有车免费接送。\n我唯一特别不习惯的就是周围的环境，城乡结合，连个吃饭买东西的地方都没有，马路上没有人行道，车速特别快，特不方便！！",
+			"commentDateTime": "2016-04-13",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004tRE3.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004tQWA.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004tRE1.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004tRE6.jpg"
+			],
+			"roomTypeName": "豪华大床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 5
+		}, {
+			"userName": "晴",
+			"userRank": 1,
+			"content": "环境还可以，就是在路边的房间太吵了",
+			"commentDateTime": "2016-04-05",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004s24p.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004rYoZ.jpg"
+			],
+			"roomTypeName": "豪华大床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "爱旅行",
+			"userRank": 1,
+			"content": "免费接送到白云机场，离机场约十五分钟车程，在三凤村附近，飞机的轰鸣声及震撼比较明显，订的是含双早，结果只给了两支蒙牛纯牛奶，床单较旧，上有沾有头发，把算重换，还是有毛发，服务员服务态度好。步行十多分钟即有食街超市农贸市场，方便饮食购买。",
+			"commentDateTime": "2016-03-29",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004qGN7.jpg"
+			],
+			"roomTypeName": "豪华双人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 1
+		}, {
+			"userName": "会员4925",
+			"userRank": 1,
+			"content": "零晨一点才到的飞机，本来就是将就一下的。我这人要求不高，干净就行。其他还行吧，就是马桶是坏的，空调太冷了，只吹凉风。不管你们在客人来之前检查房间吧，也至少应该知道哪间房设施的好坏，又没其他人住就安排好的住呗。有待提高。",
+			"commentDateTime": "2016-03-14",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004o8p1.jpg"
+			],
+			"roomTypeName": "豪华双人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 1
+		}, {
+			"userName": "舒行",
+			"userRank": 1,
+			"content": "房间很干净，服务也挺好，物廉价美，值得推荐",
+			"commentDateTime": "2016-03-12",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004nNIr.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004nM04.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "那些年虚度的青春",
+			"userRank": 1,
+			"content": "坑爹的，免费班车，就是唱双簧，上车后就是一百块，然后酒店来电话说他们车来了，小车司机死命往前跑装没这事儿，只限于晚上啊，白天不知道，更荒缪的事，到酒店说您预订的房型没了，得加钱安排个豪华点儿的，不然没房了，我就纳闷了预订了钱支付了也没房？整个黑店经营呀，再加看到前台短头发那女服务员，一副奸诈相，只能摇摇头了，往后网上订房记住订连锁店的",
+			"commentDateTime": "2016-02-26",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004kHEs.jpg"
+			],
+			"roomTypeName": "经济公寓单人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [
+				{
+					"replayId": 0,
+					"content": "尊敬的顾客您好！我是百凯航空酒店前厅部负责人，刚好昨晚是我值班也了解事情的经过，我们前台接到您的电话，第一时间就通知了司机去接您，酒店到机场需要10分钟车程，司机到机场致电您说已经打的走了，到酒店前台一查您是预订了26号的公寓单人房（注：凌晨至06：00点前入住要订25号的房间的）。由于公寓房型经济实惠，当天是满房的状态，您又提前入住，所以前台工作人员按网上最低价格收取差价的，希望您能理解。酒店绝不会乱收取顾客一分钱的。酒店真诚的期待您的下次光临！",
+					"createTime": "2016-02-26"
+				}
+			],
+			"commentScoreTotal": 0.0,
+			"travelType": 5
+		}, {
+			"userName": "会员9228",
+			"userRank": 1,
+			"content": "环境不错值得入住。还有免费接送",
+			"commentDateTime": "2016-02-25",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004kzwP.jpg"
+			],
+			"roomTypeName": "豪华双人房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "会员6398",
+			"userRank": 2,
+			"content": "住的豪華單間，比較滿意，下次還會選擇",
+			"commentDateTime": "2016-02-19",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004jmsg.jpg",
+				"//pavo.elongstatic.com/i/Comment750_750/0004jk3W.jpg"
+			],
+			"roomTypeName": "豪华大床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 4
+		}, {
+			"userName": "会员9174",
+			"userRank": 3,
+			"content": "挨着马路特别吵，房间空调是坏的，附近没有吃饭的地方，想吃东西要走二十分钟的路程，不过价格很便宜，有免费接送",
+			"commentDateTime": "2016-02-15",
+			"largeImagePath": [
+				"//pavo.elongstatic.com/i/Comment750_750/0004fSgZ.jpg"
+			],
+			"roomTypeName": "豪华大床房（免费机场接送）",
+			"isMarrow": 0,
+			"commentFrom": "",
+			"replys": [],
+			"commentScoreTotal": 0.0,
+			"travelType": 5
+		}
+	],
+	"commentScore": null,
+	"commentTags": null,
+	"commentCount": 210,
+	"hotelId": null,
+	"commentType": null,
+	"goodCount": 0,
+	"badCount": 0,
+	"goodRate": null,
+	"channId": null,
+	"cardno": null,
+	"tjSwitch": 0,
+	"enableAjaxCall": null,
+	"orderNumber": 0,
+	"browseNumber": 0,
+	"customization": null,
+	"customizationStr": null,
+	"pageInfo": null,
+	"hiddenPhone": false,
+	"tsdScript": null,
+	"error": false
+}
