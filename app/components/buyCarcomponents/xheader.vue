@@ -1,41 +1,29 @@
 <template>
 	<div>
-		<header>
+		 <!--createorder-header-->
+		<header class="bar bar-nav">
 			<xback></xback>
-			<xtohome></xtohome>
-			<h1>订单详情</h1>
-
+			<h1 class="title">订单填写</h1>
+			<toHome></toHome>
 		</header>
 	</div>
 </template>
 
 <script>
-	import xback from '../xback.vue';
-	import xtohome from '../toHome.vue';
+import xback from "../xback.vue"
+import toHome from "../toHome.vue"
 	export default {
 		components: {
 			xback,
-			xtohome
+			toHome,
 		}
 	}
 </script>
 
 <style scoped>
-	*{
+	* {
 		margin: 0;
 		padding: 0;
 	}
-	header {
-		height: 48px;
-		line-height: 48px;
-		background-color: #f4f4f4;
-		color: #555;
-		box-shadow: 0px 1px 2px #ddd;
-		text-align: center;
-		font-size: 14px;
-	}
-	h1{
-		font-size: 20px;
-		line-height: 48px;
-	}
+
 </style>

@@ -62,7 +62,7 @@
 
 		},
 		mounted: function() {
-			this.interval()
+//			this.interval()
 		}
 	}
 </script>

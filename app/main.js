@@ -1,7 +1,6 @@
 import "../public/css/font_mdye6150zyyzaor/iconfont.css"
 import "../public/css/animate.css"
 
-
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
 //引入路由
@@ -10,18 +9,33 @@ import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 //axios的ajax封装库
 import axios from "axios";
-
+import "weui"
 //轮播图
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 //可以引入jquery，但是要把它设置为全局变量。
 import $ from "jquery";
 window.$ = window.jQuery = $
+
 import com from "./js/common.js"
 window.com = com
 console.log(com.randomNum(1, 10))
 
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
+
+
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
+//import zhLocale from 'iview/dist/locale/zh-CN';
+//import enLocale from 'iview/dist/locale/en-US';
+
+
+Vue.use(iView);
+
+//Vue.config.lang = 'zh-CN';
+//Vue.locale('zh-CN', zhLocale);
+//Vue.locale('en-US', enLocale);
+
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -56,7 +70,7 @@ var routes = [{
 		component: home,
 	}, {
 		//路由名
-		path: '/detail',
+		path: '/detail/:id',
 		//上面定义好的路由扔进来
 		component: detail
 	}, {
@@ -71,10 +85,11 @@ var routes = [{
 		component: xlogin
 	}, {
 		//路由名
-		path: '/buyCar',
+		path: '/buyCar/:id',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	}, {
+	},
+	{
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来
@@ -82,14 +97,19 @@ var routes = [{
 	},
 	//列表页开始
 	{
+<<<<<<< HEAD
 		path: '/hotlist',
 		component: hotlist
+=======
+		path: '/list/:id',
+		component: list
+>>>>>>> ef86fbf657fa170ddd5746b1e9347dbb03b2792b
 	},
 	//列表页结束
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/detail/'
+		redirect: '/detail/90702017'
 	}
 ]
 
@@ -122,6 +142,8 @@ var store = new Vuex.Store({
 		isLogin: false,
 		direction: 'left',
 		news: "",
+		cityId:"",
+		times:'',
 		detailNews: null,
 		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg",
@@ -129,10 +151,18 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
+
 		isShowMask:false,
+		nameNum:[],
 		roomsNum:null,
 		timesNum:null,
-
+		telNum:"中国大陆：+86",
+		showBuy:false,
+		Mask:false,
+		buyContent:{},
+		showCommom:false,
+		listParams:{},
+		roomInfoName:'7天连锁酒店(广州天河客运站二店)',
 	},
 	getters: {
 		getCount(state) {
@@ -167,14 +197,20 @@ var store = new Vuex.Store({
 	}
 })
 
+
 //新建一个实例，把定义好的router和store放进来注册...................................
 new Vue({
 	el: "#demo",
 	template: `
-		<div style="height:100%">
+		<div style="height:100%" id="bigbox">
 			<router-view></router-view>
 		</div>
 	`,
 	router,
 	store,
+	created(){
+		window.scope=this.$store.state
+	}
+
+
 })

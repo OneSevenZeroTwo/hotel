@@ -2,8 +2,10 @@
 var express = require('express');
 var app = express();
 var http = require('http')
+
 //链接数据库模块
 var mysql = require("mysql");
+var cheerio = require('cheerio')
 //连接服务器配置.......................................................................
 function createConnection() {
 	var connection = mysql.createConnection({
@@ -19,7 +21,13 @@ function createConnection() {
 app.get('/test', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter=J&_rt=1500966828847', function(content) {
+//	tag
+	//http://m.elong.com/minsu/suggest/searchsuggest/?req=%7B%22CityId%22%3A%2267157%22%7D
+	
+	//position
+//	http://m.elong.com/minsu/house/getlocationfilterlist/?req=%7B%22CityInfo%22%3A%7B%22ItemId%22%3A%2267157%22%2C%22Name%22%3A%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22%7D%7D
+	//city
+	http.get('http://m.elong.com/minsu/house/getlocationfilterlist/?req=%7B%22CityInfo%22%3A%7B%22ItemId%22%3A%2267157%22%2C%22Name%22%3A%22%E5%B9%BF%E5%B7%9E%E5%B8%82%22%7D%7D', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -33,6 +41,8 @@ app.get('/test', function(req, res) {
 	})
 
 })
+
+
 
 //index部分...............................................chenjiangchuan
 
@@ -92,6 +102,24 @@ app.get('/letterfence', function(req, res) {
 	})
 
 })
+//首页列表
+app.get('/indexlist', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/list/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+
+		})
+	})
+
+})
 //list部分..............................................lianglixiong
 //
 app.get('/list', function(req, res) {
@@ -114,14 +142,11 @@ app.get('/list', function(req, res) {
 
 })
 
-//detail部分..............................................tangqiuping
-//详情页内容
-app.get('/detail', function(req, res) {
+app.get('/listFilter', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
-	//	console.log(1111)
+	var cityId = req.query.cityId
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/otherdetail/?cityId=0101&hotelid=00101543&lng=116.437257528000003503620973788201808929443359375&_rt=1500975501941&lat=39.9589810220000032359166652895510196685791015625', function(content) {
-		//		console.log(content)
+	http.get('http://m.elong.com/clockhotel/'+cityId+'/nlist/', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -129,12 +154,80 @@ app.get('/detail', function(req, res) {
 		})
 		content.on('end', function() {
 			//		数据返回前端
-			//			console.log(str)
+			var $ = cheerio.load(str)
+			var arr = $('script')
+//			用于接受正则匹配的数据
+			var data = {};
+			
+			//根据命令行获取数据，缩小范围，获取第二个script标签
+			var result = arr[1].children[0].data
+			//转码成中文，替换转换失败的符号
+			var douhaoReg=/%2C/g
+			var maohaoReg = /%3A/g
+			var xieganReg = /%2/g
+			result = decodeURI(result).replace(douhaoReg,",")
+			result = result.replace(maohaoReg,":")
+			result = result.replace(xieganReg,"/")
+			//提取数据
+			var Filter2=/\[\{[\w\W]+\]/
+			
+			var regCity =/city:'\{\"cityId\"[\w\W]*?\}/			
+			var regFilterList1=/filterList\:\'\[\{[\w\W]+searchList/			
+			var regSearchList =/searchList:'\[\{[\W\w]+areaList/
+			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
+			var reghotCityList =/hotCityList\:\'[\w\W]+starList/
+			
+			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
+			data.city=JSON.parse(result.match(regCity)[0].slice(6))
+			data.FilterList=JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0])
+
+			data.searchList=JSON.parse(result.match(regSearchList)[0].match(Filter2)[0])	
+			
+			data.areaList=JSON.parse(result.match(regAreaList)[0].match(Filter2)[0])
+			data.hotCityList=JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0])
+
+			//返回前端
+			res.send(data)
+
+		})
+	})
+
+})
+
+
+//detail部分..............................................tangqiuping
+//轮播图
+app.get('/getInfo', function(req, res) {
+	console.log('getInfo')
+	res.append('Access-Control-Allow-Origin', '*');
+	//	console.log(1111)
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid=90702017', function(content) {
+//		console.log(content)
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+//			console.log(str)
 			res.send(str)
 		})
 	})
 
 })
+
+
+
+//详情页   房间类型
+app.get('/roomType', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+		console.log(33333)
+	
+
+})
+
 
 //buyCar部分..............................................zhangjunhua
 
