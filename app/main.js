@@ -147,6 +147,7 @@ var store = new Vuex.Store({
 		isShowMask:false,
 		nameNum:[],
 		roomsNum:null,
+		roomMoney:90,
 		timesNum:null,
 		telNum:"中国大陆：+86",
 		showBuy:false,
