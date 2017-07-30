@@ -15,8 +15,8 @@
 							<li data-id="n1961215974699955" class="tjclick" data-tj="{&quot;cspot&quot;:&quot;hotelTheme&quot;}">主题</li>
 						</ul>
 					</div>
-					<div class="filter-con page-content">
-						<ul class="filter-list-subway-l page-content">
+					<div style="background: white;" class="filter-con page-content">
+						<ul style="background: white;" class="filter-list-subway-l page-content">
 							<li data-id="n167033088745261_7468709921099261" data-type="n167033088745261">经济（可多选）
 								<p>
 									<span data-id="n167033088745261_7468709921099261_39502" data-type="n167033088745261">飘HOME</span> 
@@ -87,12 +87,64 @@
 								</p>
 							</li>
 						</ul>
+						<ul style="background: white;display: none;" class="filter-list-subway-l page-content">
+							<li>酒店服务（可多选）
+								<p>
+									<span data-id="n10841369801206587_100000010" data-type="n10841369801206587">叫醒服务</span>
+									<span data-id="n10841369801206587_100000017" data-type="n10841369801206587">行李寄存</span>
+									<span data-id="n10841369801206587_100000242" data-type="n10841369801206587">免费接机服务</span>
+									<span data-id="n10841369801206587_100000696" data-type="n10841369801206587">提供发票</span>
+								</p>
+							</li>
+							<li>酒店设施（可多选）
+								<p>
+									<span data-id="n10841369801206587_100000205" data-type="n10841369801206587">免费wifi</span>
+									<span data-id="n10841369801206587_100000208" data-type="n10841369801206587">会议设施</span>
+									<span data-id="n10841369801206587_100000197" data-type="n10841369801206587">免费停车</span>
+									<span data-id="n10841369801206587_100000225" data-type="n10841369801206587">餐厅</span>
+									<span data-id="n10841369801206587_100000268" data-type="n10841369801206587">室外游泳池</span>
+									<span data-id="n10841369801206587_100000160" data-type="n10841369801206587">健身中心</span>
+									<span data-id="n10841369801206587_100000163" data-type="n10841369801206587">室内游泳池</span>
+								</p>
+							</li>
+							<li>床型（可多选）
+								<p>
+									<span data-id="n10841369801206587_100000037" data-type="n10841369801206587">双床</span>
+									<span data-id="n10841369801206587_100000036" data-type="n10841369801206587">大床</span>
+								</p>
+							</li>
+						</ul>
+						<ul style="background: white;display: none;" class="filter-list-subway-l page-content">
+							<li>（可多选）
+								<p>
+								<span data-id="n1961215974699955_100000270" data-type="n1961215974699955">商旅之家</span>
+								<span data-id="n1961215974699955_100000278" data-type="n1961215974699955">聚会做饭</span>
+								<span data-id="n1961215974699955_100000682" data-type="n1961215974699955">农家乐</span>
+								<span data-id="n1961215974699955_100000279" data-type="n1961215974699955">休闲情调</span>
+								<span data-id="n1961215974699955_100000107" data-type="n1961215974699955">四合院</span>
+								<span data-id="n1961215974699955_100000099" data-type="n1961215974699955">青年旅社</span>
+								<span data-id="n1961215974699955_100000271" data-type="n1961215974699955">度假休闲</span>
+								<span data-id="n1961215974699955_100000272" data-type="n1961215974699955">看病就医</span>
+								<span data-id="n1961215974699955_100000273" data-type="n1961215974699955">培训学习</span>
+								<span data-id="n1961215974699955_100000274" data-type="n1961215974699955">聚会</span>
+								<span data-id="n1961215974699955_100000275" data-type="n1961215974699955">蜜月出行</span>
+								<span data-id="n1961215974699955_100000276" data-type="n1961215974699955">家庭旅馆</span>
+								<span data-id="n1961215974699955_100000277" data-type="n1961215974699955">别墅</span>
+								<span data-id="n1961215974699955_100000102" data-type="n1961215974699955">温泉酒店</span>
+								<span data-id="n1961215974699955_100000103" data-type="n1961215974699955">海景酒店</span>
+								<span data-id="n1961215974699955_100000100" data-type="n1961215974699955">精品酒店(设计师酒店)</span>
+								<span data-id="n1961215974699955_100000101" data-type="n1961215974699955">情侣酒店</span>
+								<span data-id="n1961215974699955_100000681" data-type="n1961215974699955">客栈//民宿</span><span data-id="n1961215974699955_100000680" data-type="n1961215974699955">公寓</span>
+								<span data-id="n1961215974699955_100000104" data-type="n1961215974699955">高尔夫酒店</span><span data-id="n1961215974699955_100000105" data-type="n1961215974699955">园林庭院</span>
+								</p>
+							</li>
+						</ul>
 						<ul class="filter-list-subway-r filter-list-check page-content"></ul>
 					</div>
 					<div class="bot-btn bar">
 						<ul>
 							<li class="tjclick" id="filter-reset" data-tj="{&quot;cspot&quot;:&quot;emptyFilter&quot;}">重置</li>
-							<li class="on tjclick" id="filter-submit" data-tj="{&quot;cspot&quot;:&quot;submitFilter&quot;}">确定</li>
+							<li @click="filtersubmitclick()" class="on tjclick" id="filter-submit" data-tj="{&quot;cspot&quot;:&quot;submitFilter&quot;}">确定</li>
 						</ul>
 					</div>
 				</div>
@@ -112,7 +164,16 @@
 			//点击header返回
 			iconbackclick:function(){
 				this.$store.state.tit = false;
-			}
+				$('.page-list').removeClass('page-list-content')
+				$('.page-on-center').removeClass('fixed')
+			},
+			//点击确定返回
+			filtersubmitclick:function(){
+				console.log(666)
+				this.$store.state.tit = false;
+				$('.page-list').removeClass('page-list-content')
+				$('.page-on-center').removeClass('fixed')
+			},
 		},
 		computed:{
 			tit:function(){
@@ -120,7 +181,36 @@
 			}
 		},
 		mounted:function(){
+			var filtrate = {
+				init:function(){
+					//点击切换
+					var index;
+					$('li.tjclick').on('click',function(){
+						console.log($(this))
+						var index = $(this).index();
+						$(this).addClass('on').siblings().removeClass('on')
+						$(this).parent().parent().next().children().eq(index).show().siblings().hide()
+					})
 
+					//点击高亮
+					$('.filter-con').find('span').on('click',function(){
+						var index = $(this).parent().parent().parent().index()
+						if($(this).hasClass('geton')){
+							$(this).removeClass('geton')
+							if($(this).parent().children().hasClass('geton')||$(this).parent().parent().siblings().children().find('span').hasClass('geton')){
+								$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
+							}else{
+								$(this).parent().parent().parent().parent().prev().children().children().eq(index).removeClass('have')
+							}
+						}else{
+							$(this).addClass('geton')
+							$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
+						}
+					})
+				},
+			}
+			filtrate.init();
 		}
 	}
 </script>
+

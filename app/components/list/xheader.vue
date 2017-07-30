@@ -1,6 +1,6 @@
 <template>
 	<header class="bar bar-nav hotel-list-header">
-        <a class="icon pull-left icon-back tjclick" data-rel="back" data-href="http://m.elong.com/?t=1501070002922" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
+        <a class="ion-chevron-left icon pull-left icon-back tjclick" data-rel="back" data-href="http://m.elong.com/?t=1501070002922" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
         <a class="icon icon-nearby pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;map&quot;}"></a>
         <a class="icon icon-collectlist  collect pull-right tjclick" href="//m.elong.com/my/hotel/favorites/" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
         <h1 class="title">
@@ -27,3 +27,8 @@
         }
     }
 </script>
+
+<style scoped>
+   
+
+</style>

@@ -96,8 +96,10 @@ app.get('/letterfence', function(req, res) {
 //
 app.get('/list', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
+	var page = req.query.page;
+	console.log(page)
 	//服务器代理
-	http.get('http://m.elong.com/hotel/api/list?_rt=1500994125828&indate=2017-07-25&outdate=2017-07-26&city=2001&pageindex=0&actionName=h5%3D%3Ebrand%3D%3EgetHotelList&esdnum=8957411', function(content) {
+	http.get('http://m.elong.com/hotel/api/list/?indate=2017-07-28&pageindex='+page+'&city=2001&esdnum=6782671', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
