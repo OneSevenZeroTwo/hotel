@@ -97,13 +97,8 @@ var routes = [{
 	},
 	//列表页开始
 	{
-<<<<<<< HEAD
-		path: '/hotlist',
+		path: '/hotlist/:id',
 		component: hotlist
-=======
-		path: '/list/:id',
-		component: list
->>>>>>> ef86fbf657fa170ddd5746b1e9347dbb03b2792b
 	},
 	//列表页结束
 	{
@@ -131,18 +126,29 @@ var store = new Vuex.Store({
 		arr:null,
 		kslist:[],
 		show:true,
+//		获取城市id
+		cityId:'',
 		//遮罩层
 		masklayer:false,
 		//列表页数据结束
 		imgUrl: null,
+//		定位城市的初始值
 		aaa: '广州市',
+//		默认的地点
+		bbb:'',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
 		isLogin: false,
 		direction: 'left',
+		direction1: 'left',
+		direction2: 'left',
+		
+//		数据传送
+		indexArr:"",
+		
 		news: "",
-		cityId:"",
+		indexCityId:"2001",
 		times:'',
 		detailNews: null,
 		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",

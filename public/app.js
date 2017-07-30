@@ -120,6 +120,58 @@ app.get('/indexlist', function(req, res) {
 	})
 
 })
+
+app.get('/indexFilter', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	var cityId = req.query.cityId
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/'+cityId+'/nlist/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			var $ = cheerio.load(str)
+			var arr = $('script')
+//			用于接受正则匹配的数据
+			var data = {};
+			
+			//根据命令行获取数据，缩小范围，获取第二个script标签
+			var result = arr[1].children[0].data
+			//转码成中文，替换转换失败的符号
+			var douhaoReg=/%2C/g
+			var maohaoReg = /%3A/g
+			var xieganReg = /%2/g
+			result = decodeURI(result).replace(douhaoReg,",")
+			result = result.replace(maohaoReg,":")
+			result = result.replace(xieganReg,"/")
+			//提取数据
+			var Filter2=/\[\{[\w\W]+\]/
+			
+			var regCity =/city:'\{\"cityId\"[\w\W]*?\}/			
+			var regFilterList1=/filterList\:\'\[\{[\w\W]+searchList/			
+			var regSearchList =/searchList:'\[\{[\W\w]+areaList/
+			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
+			var reghotCityList =/hotCityList\:\'[\w\W]+starList/
+			
+			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
+			data.city=JSON.parse(result.match(regCity)[0].slice(6))
+			data.FilterList=JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0])
+
+			data.searchList=JSON.parse(result.match(regSearchList)[0].match(Filter2)[0])	
+			
+			data.areaList=JSON.parse(result.match(regAreaList)[0].match(Filter2)[0])
+			data.hotCityList=JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0])
+
+			//返回前端
+			res.send(data)
+
+		})
+	})
+
+})
 //list部分..............................................lianglixiong
 //
 app.get('/list', function(req, res) {
