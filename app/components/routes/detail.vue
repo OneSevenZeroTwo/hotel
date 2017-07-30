@@ -60,6 +60,10 @@
 			showCommom(){
 				return scope.showCommom
 			}
+		},
+		mounted(){
+			//进入详情页根据酒店id请求轮播图、初始评论数据。
+			this.$store.dispatch("getHotelMess")
 		}
 	}
 </script>

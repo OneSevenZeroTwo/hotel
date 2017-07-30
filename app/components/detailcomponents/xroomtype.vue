@@ -134,7 +134,7 @@
 				
 				scope.buyContent = rpList
 				scope.roomInfoName = roomInfoName
-				console.log(scope.roomInfoName)
+				
 			}
 		},
 
