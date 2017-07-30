@@ -175,17 +175,17 @@ app.get('/listFilter', function(req, res) {
 			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
 			var reghotCityList =/hotCityList\:\'[\w\W]+starList/
 			
-			//处理数据，写进data
-			data.city=result.match(regCity)[0].slice(6)
-			data.FilterList=result.match(regFilterList1)[0].match(Filter2)[0]
-			//有问题
-			data.searchList=result.match(regSearchList)[0].match(Filter2)[0]	
-				console.log(data.searchList)		
-			data.areaList=result.match(regAreaList)[0].match(Filter2)[0]
-			data.hotCityList=result.match(reghotCityList)[0].match(Filter2)[0]
+			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
+			data.city=JSON.parse(result.match(regCity)[0].slice(6))
+			data.FilterList=JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0])
+
+			data.searchList=JSON.parse(result.match(regSearchList)[0].match(Filter2)[0])	
+			
+			data.areaList=JSON.parse(result.match(regAreaList)[0].match(Filter2)[0])
+			data.hotCityList=JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0])
 
 			//返回前端
-			res.send(JSON.stringify(data))
+			res.send(data)
 
 		})
 	})
