@@ -1,15 +1,15 @@
 <template>
 	<nav class="bar bar-tab">
 		<div class="total">
-			<div class="orderprice return">¥<span id="wborderprice">90<b style="font-size:14px;display:none;">RMB90</b></span>
-				<span class="roomschip">1间/4小时</span></div>
+			<div class="orderprice return">¥<span id="wborderprice">{{roomMoney}}<b style="font-size:14px;display:none;">RMB{{roomMoney}}</b></span>
+				<span class="roomschip">/{{roomnum}}间</span></div>
 			<div class="returnprice">
 				<div class="coupontext">
-					返￥5
+					<!--返￥5-->
 				</div>
 			</div>
 		</div>
-		<div id="mobilesubmit" class="next commit">
+		<div id="mobilesubmit" class="next commit" @click="Commit()">
 			<span>
 提交订单                    </span>
 			<span class="preloader preloader-white button-loader"></span>
@@ -18,14 +18,71 @@
 </template>
 
 <script>
-	export default{
-		computed:{
-			roomnum(){
-				return scope.roomsNum
+	export default {
+		computed: {
+			//订房数量
+			roomnum() {
+				return scope.roomsNum 
+			},
+			//房间单价
+			roomMoney() {
+				return scope.orderList.price
+			},
+			//订房总价
+			totalMoney() {
+				return scope.totalMoney
+			},
+			orderList() {
+				return scope.orderList
+			},
+			//房间入住人
+			nameNum() {
+				return scope.nameNum
+			},
+
+		},
+		methods: {
+			Commit() {
+				var nm = $(".qiu").children('input');
+				nm.map(function(index,item){
+					scope.nameNum.push(item.value);
+				})
+//				console.log($(".qiu").children('input'))
+				var phone = scope.telNum.slice(5) + $(".phonenum").val();
+//				console.log($(".phonenum").val())
+				console.log(phone)
+				//计算总价
+				scope.totalMoney = (scope.orderList.price * 1) * (scope.roomsNum * 1)
+//				console.log(scope.totalMoney)
+				var orderCode = com.randomNum(1,999999999);
+				console.log(orderCode)
+				//保存时间
+				var saveuntil = $(".saveuntil").val();
+				console.log(saveuntil)
+				var orderList = scope.orderList
+					this.$ajax({
+						url:"http://localhost:3000/buyCar",
+						params:{
+							orderList:this.orderList,
+							roomnum:this.roomnum,
+							roomInfo:this.roomInfo,
+							person:{
+								name:scope.nameNum,
+								phone:phone,
+								orderCode:orderCode,
+								saveUntil:saveuntil,
+								phonArea:scope.telNum.slice(5),
+								
+							},
+							totalMoney:this.totalMoney,
+						},
+					}).then(function(res){
+//						console.log(res)
+					}.bind(this))
 			}
 		},
-		mounted(){
-			console.log(scope.roomsNum)
+		mounted() {
+			
 		}
 	}
 </script>

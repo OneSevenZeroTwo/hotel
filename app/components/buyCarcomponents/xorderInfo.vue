@@ -7,10 +7,13 @@
 				    </h1>
 		
 		<div class="p-info   p-info-top  ">
+			<!--酒店名-->
 			<p class="name" style="margin-top: 50px;">{{roomInfoName}}</p>
-			<p class="type">普通间（大床/双床）地下室
+			<!--酒店房型-->
+			<p class="type">{{roomInfoName}}
 			</p>
-			<p class="type">不含早</p>
+			<!--提供服务-->
+			<p class="type">{{productName}}</p>
 			<p>
 			</p>
 			<p class="date">7月31日(周一)— 8月1日(周二) 共1晚</p>
@@ -25,6 +28,9 @@ export default{
 	computed:{
 		roomInfoName(){
 			return scope.roomInfoName
+		},
+		productName(){
+			return scope.orderList.productName
 		}
 	}
 }
