@@ -158,7 +158,7 @@
 		},
 		mounted:function(){
 			var pagecont = {
-				init:function{
+				init:function(){
 					//点击切换
 					$('').find('li').on('click',function(){
 						$(this).addClass('on').siblings().removeClass('on')

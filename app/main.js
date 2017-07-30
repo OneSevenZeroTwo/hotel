@@ -97,13 +97,11 @@ var routes = [{
 	},
 	//列表页开始
 	{
-<<<<<<< HEAD
+
 		path: '/hotlist',
 		component: hotlist
-=======
-		path: '/list/:id',
-		component: list
->>>>>>> ef86fbf657fa170ddd5746b1e9347dbb03b2792b
+
+
 	},
 	//列表页结束
 	{
@@ -151,51 +149,30 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
-
+		
+		//订单页
 		isShowMask:false,
+		//房间对应的住房人
 		nameNum:[],
+		//定的房间数量
 		roomsNum:null,
-		roomMoney:90,
+		//房间单价
+		roomMoney:200,
+		//订房总价
+		totalMoney:null,
+		//房间保留时间
 		timesNum:null,
+		//下订单人的联系电话
 		telNum:"中国大陆：+86",
 		showBuy:false,
 		Mask:false,
 		buyContent:{},
 		showCommom:false,
 		listParams:{},
+		//酒店名
 		roomInfoName:'7天连锁酒店(广州天河客运站二店)',
 	},
-	getters: {
-		getCount(state) {
-			//处理数据
-			return state.count + "ed"
-		}
-	},
-	mutations: {
-		settitle(state, data) {
-			state.title = data
-		},
-		detailNews(state, data) {
-			state.detailNews = data
-		},
-		searchVal(state, val) {
-			console.log('mutations执行')
-			state.val = val
-		}
-	},
-	actions: {
-		setChange(context, data) {
-			context.commit('settitle', data)
-		},
-		detailNews(context, data) {
-			context.commit('detailNews')
-		},
-		searchVal(context, val) {
-			console.log('actions执行')
-			context.commit('searchVal', val)
-		}, 
-
-	}
+	
 })
 
 

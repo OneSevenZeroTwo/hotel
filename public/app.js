@@ -230,6 +230,10 @@ app.get('/roomType', function(req, res) {
 
 
 //buyCar部分..............................................zhangjunhua
+app.get("/buyCar",function(req,res){
+	console.log("购物车")
+})
+
 
 //登录注册部分..............................................zhangjunhua
 //注册
