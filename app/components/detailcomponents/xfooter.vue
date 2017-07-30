@@ -20,12 +20,6 @@
 			}
 		}).then(function(res) {
 			console.log(res)
-			
-			console.log(JSON.parse(res.data.city))
-			console.log(JSON.parse(res.data.FilterList))
-			console.log(JSON.parse(res.data.searchList))
-			console.log(JSON.parse(res.data.areaList))
-			console.log(JSON.parse(res.data.hotCityList))
 		})
 	}
 	}
