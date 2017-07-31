@@ -424,6 +424,25 @@ app.get("/order",function(req,res){
 		})
 })
 
+
+app.get("/del",function(req,res){
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var orderId = req.query.orderId
+	console.log(orderId)
+	connection.query(`
+		DELETE from orders where orderCode = '${orderId}'
+		`,function(err,results,fields){
+
+//			console.log('The solution is: ', results);
+			var obj = results
+			
+			res.send(obj);
+			connection.end();
+		})
+})
+
 //登录注册部分..............................................zhangjunhua
 //注册
 app.get("/register", function(req, res) {
