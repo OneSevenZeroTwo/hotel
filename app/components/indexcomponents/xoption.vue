@@ -55,7 +55,7 @@
 			},
 			interval: function() {
 				setInterval(()=>{
-//					console.log(11)
+					console.log(11)
 					this.toggle()
 				}, 500)
 			},
