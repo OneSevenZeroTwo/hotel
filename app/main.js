@@ -56,6 +56,8 @@ import xmySelf from "./components/routes/mySelf.vue"
 import home from "./components/home.vue"
 //列表页路由
 import hotlist from "./components/list/router/hotlist.vue"
+// 列表页钟点房路由
+import clockhotel from "./components/list/router/clockhotel.vue"
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -95,6 +97,10 @@ var routes = [{
 	{
 		path: '/hotlist/:id',
 		component: hotlist
+	},
+	{
+		path: '/clockhotel/',
+		component: clockhotel
 
 	},
 	//列表页结束
@@ -125,19 +131,27 @@ var store = new Vuex.Store({
 		//主页传递去list组件的数据
 		listParams: {},
 		//列表页数据开始
-		roomtitle: false,
-		saletitle: false,
-		tit: false,
-		areabtn: false,
-		pricestarbtn: false,
-		defaultbtn: false,
-		arr: null,
-		kslist: [],
-		show: true,
-		//		获取城市id
-		cityId: '',
+		roomtitle:false,
+		saletitle:false,
+		// 筛选组件
+		tit:false,
+		areabtn:false,
+		pricestarbtn:false,
+		defaultbtn:false,
+		arr:null,
+		kslist:[],
+		show:true,
 		//遮罩层
-		masklayer: false,
+		masklayer:false,
+		// 钟点房排序组件
+		slideselector:false,
+		// 排序组件遮罩层
+		advancedmasklayer:false,
+		//钟点房价格组件
+		filtepricestar:false,
+		//价格组建遮罩层
+		pricemasklayer:false,
+		cityId: '',
 		//列表页数据结束
 		imgUrl: null,
 		//		定位城市的初始值
@@ -227,7 +241,11 @@ var store = new Vuex.Store({
 				},
 				success: function(res) {
 					console.log(res)
+					//把酒店id放进传进给购物车的数组中
 					state.orderList.hotelId = res.hotelId;
+					//把图片放进传进给购物车的数组中
+					state.orderList.imgUrl = res.pics[0];
+					//在各个组件中都可以获取
 					state.getHotelMess = res
 
 				}
