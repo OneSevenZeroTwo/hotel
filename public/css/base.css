@@ -6,3 +6,7 @@ input[type="password"]{
 	overflow-x: hidden;
 	overflow-y: auto;
 }
+
+.detail-main .type ul li .wrap .right{
+	right: 26px;
+}

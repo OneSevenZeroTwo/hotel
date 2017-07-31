@@ -1,61 +1,51 @@
 <template>
 	<div class="hotel-info">
-		<div class="pic-wrap tjclick swiper-container-horizontal" data-tj="{&quot;cspot&quot;:&quot;image&quot;}">
+		<div class="pic-wrap tjclick swiper-container-horizontal">
 			<a href="javascript:void(0)"></a>
 			<i class="picbg"></i>
-			<div class="swiper-wrapper focuspic" style="background: url(&quot;//m.elongstatic.com/static/webapp/hotel/2015/06/v2/img/defuat_room_pic.png&quot;) 0% 0% / cover no-repeat; transition-duration: 0ms; transform: translate3d(-1125px, 0px, 0px);">
-				<div class="swiper-slide" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005PpTb.jpg"></div>
-				<div class="swiper-slide" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OGBA.jpg"></div>
-				<div class="swiper-slide swiper-slide-prev" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OIf4.jpg"></div>
-				<div class="swiper-slide swiper-slide-active" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OGBe.jpg"></div>
-				<div class="swiper-slide swiper-slide-next" style="width: 375px;"><img src="//pavo.elongstatic.com/i/hotel750_360/0005OIgD.jpg"></div>
-			</div>
+
+			<!--轮播图-->
+			<xswiper></xswiper>
+
 			<h1 class="name">
                         <i class="grade grade1"></i>
-                <em>空客酒店AIRBUSHOTEL(广州白云机场人和店)</em>
+                <em>{{hotelInformation.hotelName}}</em>
             </h1>
 
 			<span class="hotel-type">
-				经济型
-                
-                
-                
-
-                
-                
-                
-								</span>
-			<div class="num"><i></i>102</div>
+				{{hotelInformation.hotelType}}</span>
+			<div class="num"><i></i>{{getHotelMess.imagesCount}}</div>
 		</div>
 		<div class="info">
-			<ul>
+			<ul id = "ulmap">
 				<!--地图-->
 				<xmap></xmap>
 
 				<!--住客评价-->
-				<li class="choose">
+				<li class="choose" style="background: #fff;">
 					<div class="titles">
 						<ul>
-							<li class=" active ">住客评价</li>
-							<li class="hoteldetail   tjclick" data-tj="{&quot;cspot&quot;:&quot;hoteldetailchange&quot;}">酒店详情</li>
+							<li id='detailLi' :class="{'active':showDetail}" @click="showDetail=true">住客评价</li>
+							
+							<li id='detailToll' :class="['hoteldetail',{'active':!showDetail}]" @click="showDetail=false">酒店详情</li>
 						</ul>
-						<span class="line "></span>
+						<span :class="['line',{'left':!showDetail}]"></span>
 					</div>
-					<div @click="showCommom()" class="text1 tabcomment all-com tjclick text_comments" data-tj="{&quot;cspot&quot;:&quot;comment&quot;}">
+					<div :style="{'display':showDetail?'block':'none'}" @click="showCommom()" class="text1 tabcomment all-com tjclick text_comments">
 						<div class="left_c">
 							<div class="praise_nbm">
-								<span class="u_nbm"><b class="s_nbm">4.2</b>分</span>
+								<span class="u_nbm"><b class="s_nbm">{{hotelInformation.hotelScore}}</b>分</span>
 								<span class="u_btn">挺好哒</span>
 							</div>
 						</div>
 						<div class="right_c">
-							<h1>云彩<span class="ping"><span class="level3">点评新人</span></span></h1>
-							<p>干净、卫生、整洁，服务超级好。还到地铁囗来接，大清早送到机场，全是免费。太让我们省心了。</p>
+							<h1>{{getHotelMess.comments?getHotelMess.comments[0].userName:""}}<span class="ping"><span class="level3">{{getHotelMess.comments?(getHotelMess.comments[0].userRank>=3?"点评专家":"点评新人"):""}}</span></span></h1>
+							<p>{{getHotelMess.comments?getHotelMess.comments[0].content:""}}</p>
 						</div>
-						<p class="more_p info-comments">查看2154条住客评价<i></i></p>
+						<p class="more_p info-comments">查看{{getHotelMess.totalCount}}条住客评价<i></i></p>
 					</div>
 
-					<div class="text1 tabdetails tjclick" style="display:none;" data-tj="{&quot;cspot&quot;:&quot;hoteldetail&quot;}">
+					<div @click="showFac()" class="text1 tabdetails tjclick" :style="{'display':!showDetail?'block':'none'}">
 						<div class="mid2">
 							<ul>
 								<li>
@@ -86,60 +76,64 @@
 
 <script>
 	import xmap from "./xmap.vue"
+	import xswiper from "./xswiper.vue"
 	export default {
 		data() {
 			return {
-				hotelId: ""
+				hotelId: "",
+				showDetail:true
 			}
 		},
 		methods: {
 			//获取列表页传过来的酒店id
 			getId() {
 				this.hotelId = this.$route.params.id
-				//				console.log(this.hotelId)
 			},
-			//加载轮播图图片
-			swiper() {
-				this.$ajax({
-					url: "http://localhost:3000/getInfo",
-					params: {
-						hotelId: this.hotelId
-					}
-				}).then(function(res) {
-					//					console.log(res)
-				})
-			},
-			//			common(){
-			//				this.$ajax({
-			//					url:"http://localhost:3000/commom",
-			//					
-			//				}).then(function(res){
-			//					console.log(res)
-			//				})
-			//			},
+			//显示评论
 			showCommom() {
 				scope.showCommom = !scope.showCommom
+			},
+			showFac(){
+				console.log(2222)
+				scope.showFac = true
 			}
 
 		},
 		mounted() {
+			//进入页面获取id
 			this.getId()
-			this.swiper()
-			//			this.common()
-			window.navigator.geolocation.getCurrentPosition(function(data) {
-				console.log(data)
-				
-			}, function(err) {
-
+			//进入详情页根据酒店id请求轮播图、初始评论数据。
+			this.$store.dispatch("getHotelMess",this.hotelId)
+			
+			window.navigator.geolocation.getCurrentPosition(function(res){
+				console.log(res)
 			})
-
+			
 		},
-		components:{
+		components: {
 			xmap,
+			xswiper
+		},
+
+		computed: {
+			//list传递过来的数据
+			hotelInformation() {
+				return scope.hotelInformation
+			},
+			//详情页初始化数据
+			getHotelMess() {
+				return scope.getHotelMess
+			}
 		}
 	}
 </script>
 
 <style>
-
+	#ulmap{
+		padding-left: 0;
+	}
+	
+	#detailLi,#detailToll{
+		background: #fff;
+	}
 </style>

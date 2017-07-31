@@ -251,9 +251,7 @@ app.get('/getInfo', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
-
-	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid=90702017', function(content) {
-		//		console.log(content)
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid='+hotelId, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -267,7 +265,6 @@ app.get('/getInfo', function(req, res) {
 	})
 
 })
-
 
 //详情页   房间类型
 app.get('/roomType', function(req, res) {

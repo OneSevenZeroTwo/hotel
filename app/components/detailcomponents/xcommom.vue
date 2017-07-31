@@ -11,15 +11,15 @@
 					<div class="s_bdb">
 						<div class="praise clearfix">
 							<div class="praise_nbm">
-								<span class="u_nbm"><b class="s_nbm">4.4</b>分</span>
+								<span class="u_nbm"><b class="s_nbm">{{hotelInformation.hotelScore}}</b>分</span>
 								<span class="u_btn">挺好哒</span>
 							</div>
 							<ul class="praise_nbm_txt s_bdl clearfix">
-								<li><span class="s_nbm">4.3</span><span class="s_tit">设施</span></li>
+								<li><span class="s_nbm">4.1</span><span class="s_tit">设施</span></li>
 								<li><span class="s_nbm">4.5</span><span class="s_tit">服务</span></li>
 								<li><span class="s_nbm">4.4</span><span class="s_tit">卫生</span></li>
-								<li><span class="s_nbm">4.3</span><span class="s_tit">位置</span></li>
-								<li><span class="s_nbm">4.4</span><span class="s_tit">性价比</span></li>
+								<li><span class="s_nbm">4.2</span><span class="s_tit">位置</span></li>
+								<li><span class="s_nbm">4.1</span><span class="s_tit">性价比</span></li>
 							</ul>
 						</div>
 					</div>
@@ -27,7 +27,7 @@
 						<div class="com_tag_h" style="max-height: 64px;">
 							<a v-for="(n,idx) in lab" data-mainid="0" :class="{on:idx==index}" @click="on(idx,n.value)">
 								<span class="s_c333">{{n.name}}</span>
-								<span class="s_c888">7813</span>
+								<span class="s_c888">{{getHotelMess.totalCount}}</span>
 							</a>
 
 						</div>
@@ -140,6 +140,13 @@
 		computed: {
 			showCommom() {
 				return scope.showCommom
+			},
+			hotelInformation() {
+
+				return scope.hotelInformation
+			},
+			getHotelMess() {
+				return scope.getHotelMess
 			}
 		},
 		methods: {
@@ -148,7 +155,7 @@
 			},
 			getCommom(val) {
 				var self = this
-
+				//http://localhost:3000/getCommon"有接口，但无法获取rt值，写接口比较麻烦
 				self.$ajax({
 					url: `./json/${val}.json`
 				}).then(function(res) {
