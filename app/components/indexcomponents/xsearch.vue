@@ -104,7 +104,9 @@
 				
 			},
 			changstop() {
-				this.$store.state.direction2 = 'right'
+				this.$store.state.direction2 = 'left'
+				this.$store.state.xian=true
+				
 				console.log('点击')
 				
 			},

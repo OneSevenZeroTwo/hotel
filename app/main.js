@@ -22,19 +22,16 @@ window.com = com
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
 
-
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 //import zhLocale from 'iview/dist/locale/zh-CN';
 //import enLocale from 'iview/dist/locale/en-US';
-
 
 Vue.use(iView);
 
 //Vue.config.lang = 'zh-CN';
 //Vue.locale('zh-CN', zhLocale);
 //Vue.locale('en-US', enLocale);
-
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -60,6 +57,8 @@ import xmySelf from "./components/routes/mySelf.vue"
 import home from "./components/home.vue"
 //列表页路由
 import hotlist from "./components/list/router/hotlist.vue"
+// 列表页钟点房路由
+import clockhotel from "./components/list/router/clockhotel.vue"
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -103,6 +102,10 @@ var routes = [{
 	{
 		path: '/hotlist/:id',
 		component: hotlist
+	},
+	{
+		path: '/clockhotel/',
+		component: clockhotel
 
 	},
 	//列表页结束
@@ -131,10 +134,11 @@ var store = new Vuex.Store({
 		},
 		
 		//主页传递去list组件的数据
-		listParams:{},
+		listParams: {},
 		//列表页数据开始
 		roomtitle:false,
 		saletitle:false,
+		// 筛选组件
 		tit:false,
 		areabtn:false,
 		pricestarbtn:false,
@@ -142,63 +146,75 @@ var store = new Vuex.Store({
 		arr:null,
 		kslist:[],
 		show:true,
-//		获取城市id
-		cityId:'',
 		//遮罩层
 		masklayer:false,
+		// 钟点房排序组件
+		slideselector:false,
+		// 排序组件遮罩层
+		advancedmasklayer:false,
+		//钟点房价格组件
+		filtepricestar:false,
+		//价格组建遮罩层
+		pricemasklayer:false,
+		cityId: '',
 		//列表页数据结束
 		imgUrl: null,
-//		定位城市的初始值
+		//		定位城市的初始值
 		aaa: '广州市',
-//		默认的地点
-		bbb:'',
+		//		默认的地点
+		bbb: '',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
 		isLogin: false,
+		//		下面全是侧边栏
 		direction: 'left',
 		direction1: 'left',
-		direction2: 'left',
-		
-//		数据传送
-		indexArr:"",
-		
+		direction2: 'right',
+		xian: false,
+
+		//		数据传送
+		indexArr: "",
 		news: "",
 		indexCityId:"2001",
 		times:'',
 		detailNews: null,		
 		//订单页
-		isShowMask:false,
+		isShowMask: false,
 		//房间对应的住房人
-		nameNum:[],
+		nameNum: [],
 		//定的房间数量
-		roomsNum:null,
+		roomsNum: null,
 		//房间单价是详情页传过来的orderList中的price值
 		//roomMoney:200,
 		//订房总价
-		totalMoney:null,
+		totalMoney: null,
 		//房间保留时间
-		timesNum:null,
+		timesNum: null,
 		//下订单人的联系电话
-		telNum:"中国大陆：+86",
+		telNum: "中国大陆：+86",
 		/*//电话号码
 		phone:"",*/
 		//detail的buy组件显示隐藏
-		showBuy:false,
+		showBuy: false,
 		//detail的mask组件显示隐藏
-		Mask:false,
+		Mask: false,
 		//detail的整个buy组件的数据
-		buyContent:{},
+		buyContent: {},
 		//detail的common组件显示隐藏
+
 		//detail的facilties组件显示隐藏
 		showCommom:false,
 		showFac:false,
+
 		//detail的buy组件的房间类型，例如商务标间
-		roomInfoName:'',
+		roomInfoName: '',
 		//detail的buy组件下单传去购物车的信息
+
 		orderList:{},
 		//详情页初始数据(轮播图，初始评论)
 		getHotelMess:"",
+
 	},
 	getters: {
 		getCount(state) {
@@ -218,6 +234,7 @@ var store = new Vuex.Store({
 			state.val = val
 		},
 		//
+
 		getHotelMess(state,hotelId){	
 			console.log(hotelId)
 			$.ajax({
@@ -227,9 +244,13 @@ var store = new Vuex.Store({
 					hotelId:hotelId
 								
 				},
-				success:function(res){
+				success: function(res) {
 					console.log(res)
+					//把酒店id放进传进给购物车的数组中
 					state.orderList.hotelId = res.hotelId;
+					//把图片放进传进给购物车的数组中
+					state.orderList.imgUrl = res.pics[0];
+					//在各个组件中都可以获取
 					state.getHotelMess = res
 
 				}
@@ -246,13 +267,14 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
+
 		}, 
 		getHotelMess(context,hotelId){
 			context.commit('getHotelMess',hotelId)
+
 		}
 	}
 })
-
 
 //新建一个实例，把定义好的router和store放进来注册...................................
 new Vue({
@@ -264,9 +286,8 @@ new Vue({
 	`,
 	router,
 	store,
-	created(){
-		window.scope=this.$store.state
+	created() {
+		window.scope = this.$store.state
 	}
-
 
 })

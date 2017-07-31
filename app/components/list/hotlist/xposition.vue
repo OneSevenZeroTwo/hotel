@@ -160,7 +160,7 @@
 			var pagecont = {
 				init:function(){
 					//点击切换
-					$('').find('li').on('click',function(){
+					$('.filter-tit').find('li').on('click',function(){
 						$(this).addClass('on').siblings().removeClass('on')
 						var index = $(this).index()
 					})

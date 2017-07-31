@@ -76,6 +76,10 @@
 				return scope.roomInfoName
 			}
 		},
+		mounted(){
+			console.log(this.$route)
+			this.hotelId = this.$route.params.id
+		},
 		methods: {
 			close() {
 				scope.Mask = false
@@ -85,9 +89,14 @@
 				//传递房间名称，产品名称，开始住房时间，离开时间到购物车
 				scope.orderList.roomInfoName = this.roomInfoName
 				scope.orderList.productName = this.buyContent.productName
-				scope.orderList.starTime = scope.listParams.starTime
-				scope.orderList.endTime = scope.listParams.endTime
+				scope.orderList.starTime = scope.hotelInformation.starTime
+				scope.orderList.endTime = scope.hotelInformation.leaveTime
+				//单价
 				scope.orderList.price = this.buyContent.averagePriceSubTotal
+				//酒店名称
+				scope.orderList.hotelName = scope.hotelInformation.hotelName
+				//酒店id
+				scope.orderList.hotelId = this.hotelId
 				location.href="#/buyCar/"+this.hotelId
 			}
 		},

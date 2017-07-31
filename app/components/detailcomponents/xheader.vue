@@ -1,17 +1,41 @@
 <template>
-	<header class="bar bar-nav flight-order-head none_backg">
-		<a class="icon icon-left-nav pull-left icon-back tjclick" data-rel="back" href="/hotel/2001/nlist/" data-tj="{&quot;cspot&quot;:&quot;back&quot;}"></a>
-		<a class="icon    icon-collect  collect  pull-right tjclick" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
+	<header :class="['bar','bar-nav','flight-order-head',{'none_backg':showHeader}]">
+
+		<a @click="xback" class=" icon icon-left-nav pull-left tjclick" data-rel="back"></a>
+		<a class="icon    icon-collect  collect  pull-right tjclick"></a>
+
 		<h1 class="title">酒店详情</h1>
 	</header>
 </template>
 
 <script>
 	export default {
+		data() {
+			return {
+				showHeader: true
+			}
+		},
 		components: {
 
+		},
+		methods: {
+			xback() {
+				location.href = history.back()
+			}
+		},
+		mounted() {
+			var self = this
+			$(".page-content").scroll(function() {
+				console.log(111)
+				if(this.scrollTop > 120) {
+					self.showHeader = false
+					console.log(self.showHeader)
+				} else {
+					console.log(self.showHeader)
+					self.showHeader = true
+				}
+			})
 		}
-
 	}
 </script>
 
