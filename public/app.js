@@ -371,35 +371,51 @@ app.get("/buyCar", function(req, res) {
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
-	console.log(order)
+//	console.log(order)
 	var orderList = JSON.parse(order.orderList)
 	var person = JSON.parse(order.person)
 
 	connection.query(`
-		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil,username)values('${person.orderCode}','${orderList.hotelName}','${orderList.roomInfoName}','${orderList.price}','${order.totalMoney}','${person.phonArea}','${person.name}','${person.phone}','${order.roomnum}','${orderList.starData}','${orderList.endData}','${person.saveUntil}','${person.username}')
+		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil,username,img)values('${person.orderCode}','${orderList.hotelName}','${orderList.roomInfoName}','${orderList.price}','${order.totalMoney}','${person.phonArea}','${person.name}','${person.phone}','${order.roomnum}','${orderList.starData}','${orderList.endData}','${person.saveUntil}','${person.username}','${orderList.imgUrl}')
 		`,function(err,results,fields){
 			res.send("插入成功");
 			connection.end();
 		})
 })
 
-
+//shoppingList部分..............................................tangqiuping
 app.get("/shoppingList", function(req, res) {
 
 	var connection = createConnection();
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var username = req.query.username
-//	console.log(orderList.roomInfoName)
 
 	connection.query(`
 		SELECT * from orders where username = '${username}'
 		`,function(err,results,fields){
 
 //			console.log('The solution is: ', results);
+			var obj = results
 
-			var obj = data:results
-			
+			res.send(obj);
+			connection.end();
+		})
+})
+
+
+app.get("/order",function(req,res){
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var orderCode = req.query.orderCode
+	connection.query(`
+		SELECT * from orders where orderCode = '${orderCode}'
+		`,function(err,results,fields){
+
+			console.log('The solution is: ', results);
+			var obj = results
+
 			res.send(obj);
 			connection.end();
 		})
