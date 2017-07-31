@@ -227,7 +227,11 @@ var store = new Vuex.Store({
 				},
 				success: function(res) {
 					console.log(res)
+					//把酒店id放进传进给购物车的数组中
 					state.orderList.hotelId = res.hotelId;
+					//把图片放进传进给购物车的数组中
+					state.orderList.imgUrl = res.pics[0];
+					//在各个组件中都可以获取
 					state.getHotelMess = res
 
 				}
