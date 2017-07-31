@@ -20,13 +20,6 @@
 					</a><span>￥<i class="num">368</i><i class="up">起</i></span></dd>
 			</dl>
 		</div>
-		<!--
-            <div class="near">
-                <dl class="list">
-                    <dt><i class="mark icon-nearby"></i>附近酒店</dt>
-                </dl>
-            </div>
-        -->
 	</section>
 </template>
 

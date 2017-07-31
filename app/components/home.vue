@@ -2,7 +2,7 @@
 	<div style="position: relative;">
 		<xtrading></xtrading>
 		<xheader></xheader>
-		<shijian></shijian>
+		<xdate></xdate>
 		<xsearch></xsearch>
 		<xoption></xoption>
 		<xsidebar></xsidebar>
@@ -23,7 +23,7 @@
 	import ximages from "./indexcomponents/ximages.vue";
 	import xlists from "./indexcomponents/xlists.vue";
 	import xstars from "./indexcomponents/xstars.vue";
-	import shijian from "./indexcomponents/shijian.vue";
+	import xdate from "./indexcomponents/xdate.vue";
 	import xtrading from "./indexcomponents/xtrading.vue";
 
 	
@@ -49,7 +49,7 @@
 			ximages,
 			xlists,
 			xstars,
-			shijian,
+			xdate,
 			xtrading,
 //			baidu
 		}
@@ -58,3 +58,6 @@
 
 </script>
 
+<style>
+	
+</style>

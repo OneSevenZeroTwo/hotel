@@ -27,3 +27,42 @@ input[type="password"] {
 .detail-main .hotel-info .pic-wrap a {
 	z-index: 0;
 }
+
+
+
+/*date时间范围插件修改样式适应手机*/
+
+#dataBox {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 99;
+	top:189px;
+}
+
+.ivu-date-picker-with-range .ivu-picker-panel-body {
+	min-width: 270px!important;
+}
+
+.ivu-date-picker .ivu-select-dropdown {
+	left: -40px!important;
+}
+
+.ivu-date-picker-cells span {
+	width: 30px!important;
+}
+
+span.ivu-date-picker-cells-cell {
+	width: 35px!important;
+}
+
+.ivu-date-picker-cells {
+	width: 250px!important;
+}
+/*隐藏第二个盒子*/
+
+.ivu-picker-panel-content-right{
+	display: none !important;
+}
+
+/*date结束*/

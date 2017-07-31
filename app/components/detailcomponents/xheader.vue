@@ -29,9 +29,7 @@
 				console.log(111)
 				if(this.scrollTop > 120) {
 					self.showHeader = false
-					console.log(self.showHeader)
 				} else {
-					console.log(self.showHeader)
 					self.showHeader = true
 				}
 			})
