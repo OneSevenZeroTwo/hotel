@@ -60,6 +60,8 @@ import xmySelf from "./components/routes/mySelf.vue"
 import home from "./components/home.vue"
 //列表页路由
 import hotlist from "./components/list/router/hotlist.vue"
+// 列表页钟点房路由
+import clockhotel from "./components/list/router/clockhotel.vue"
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -97,13 +99,12 @@ var routes = [{
 	},
 	//列表页开始
 	{
-<<<<<<< HEAD
-		path: '/hotlist',
+		path: '/hotlist/:id',
 		component: hotlist
-=======
-		path: '/list/:id',
-		component: list
->>>>>>> ef86fbf657fa170ddd5746b1e9347dbb03b2792b
+	},
+	{
+		path: '/clockhotel/',
+		component: clockhotel
 	},
 	//列表页结束
 	{
@@ -124,6 +125,7 @@ var store = new Vuex.Store({
 		//列表页数据开始
 		roomtitle:false,
 		saletitle:false,
+		// 筛选组件
 		tit:false,
 		areabtn:false,
 		pricestarbtn:false,
@@ -133,6 +135,14 @@ var store = new Vuex.Store({
 		show:true,
 		//遮罩层
 		masklayer:false,
+		// 钟点房排序组件
+		slideselector:false,
+		// 排序组件遮罩层
+		advancedmasklayer:false,
+		//钟点房价格组件
+		filtepricestar:false,
+		//价格组建遮罩层
+		pricemasklayer:false,
 		//列表页数据结束
 		imgUrl: null,
 		aaa: '广州市',

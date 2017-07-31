@@ -141,10 +141,56 @@ app.get('/list', function(req, res) {
 	})
 
 })
+// http://m.elong.com/clockhotel/api/list?indate=2017-07-30&lowprice=0&highprice=50&city=2001&pageindex=0
+//价格选择
+app.get('price', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	var page = req.query.page;
+	console.log(page)
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/list?indate=2017-07-30&lowprice=0&highprice=50&city=2001&pageindex=0', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+
+		})
+	})
+
+})
+//钟点房路由中间内容
+app.get('/clockhotelcontent', function(req, res) {
+	console.log(111111)
+	res.append('Access-Control-Allow-Origin', '*');
+	var city = req.query.cityId;
+	var page = req.query.page;
+	console.log(city,page)
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/list/?indate=2017-07-30&pageindex='+page+'&city='+city, function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+			console.log(str)
+
+		})
+	})
+
+})
+
 
 app.get('/listFilter', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	var cityId = req.query.cityId
+	console.log(cityId)
 	//服务器代理
 	http.get('http://m.elong.com/clockhotel/'+cityId+'/nlist/', function(content) {
 		var str = '';
@@ -194,6 +240,26 @@ app.get('/listFilter', function(req, res) {
 
 })
 
+// // http://m.elong.com/hotel/api/getlistfilter?cityid=2001
+// app.get('/abc', function(req, res) {
+// 	res.append('Access-Control-Allow-Origin', '*');
+// 	console.log('ABC')
+// 	//服务器代理
+// 	http.get('http://m.elong.com/hotel/api/getlistfilter?_rt=1501390983064&cityid=2001', function(content) {
+// 		var str = '';
+// 		//把流的形式转化为字符串
+// 		content.on('data', function(chunk) {
+// 			str += chunk
+// 		})
+// 		content.on('end', function() {
+// 			//		数据返回前端
+// 		console.log(str)
+// 			res.send(str)
+
+// 		})
+// 	})
+
+// })
 
 //detail部分..............................................tangqiuping
 //轮播图
