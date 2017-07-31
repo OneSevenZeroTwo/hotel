@@ -67,10 +67,8 @@
         		// console.log('距离顶部:'+.scrollTop())
         		// console.log('滚动:'+this.scroll)
         		if(this.p<=this.scroll){
-        			console.log('下滚')
         			this.$store.state.show = false;
         		}else{
-        			console.log('上滚')
         			this.$store.state.show = true;
         		}
         		setTimeout(function(){

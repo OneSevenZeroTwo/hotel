@@ -27,26 +27,26 @@
 </template>
 
 <script>
-	import xheader from "../xheader.vue";
-	import xsearch from "../xsearch.vue";
-	import xpagecontent from "../xpagecontent.vue";
-	import xfooter from "../xfooter.vue";
+	import xheader from "../hotlist/xheader.vue";
+	import xsearch from "../hotlist/xsearch.vue";
+	import xpagecontent from "../hotlist/xpagecontent.vue";
+	import xfooter from "../hotlist/xfooter.vue";
 	// 优惠组件
-	import xdiscount from "../xdiscount.vue";
+	import xdiscount from "../hotlist/xdiscount.vue";
 	//房型筛选组件
-	import xhousetype from "../xhousetype.vue";
+	import xhousetype from "../hotlist/xhousetype.vue";
 	// 筛选侧边栏组件
-	import xfiltrate from "../xfiltrate.vue";
+	import xfiltrate from "../hotlist/xfiltrate.vue";
 	// 区域位置组件
-	import xposition from "../xposition.vue";
+	import xposition from "../hotlist/xposition.vue";
 	// 星级价格组件
-	import xpricestar from "../xpricestar.vue";
+	import xpricestar from "../hotlist/xpricestar.vue";
 	// 排序组件
-	import xrank from "../xrank.vue";
+	import xrank from "../hotlist/xrank.vue";
 	//遮罩层
-	import xweixinmask from "../xweixinmask.vue";
+	import xweixinmask from "../hotlist/xweixinmask.vue";
 	//价格遮罩层
-	import xmasklayer from "../xmasklayer.vue";
+	import xmasklayer from "../hotlist/xmasklayer.vue";
 	export default {
 		data: function() {
 			return {
