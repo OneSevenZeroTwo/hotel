@@ -95,16 +95,21 @@
 			},
 			changetion() {
 				this.$store.state.direction = 'right'
+				this.$store.state.cshow2 = true				
 				this.not = true
 
 			},
 			changs() {
 				this.$store.state.direction1 = 'right'
+				this.$store.state.cshow1 = true				
+				
 				this.indexCityId()
 				
 			},
 			changstop() {
 				this.$store.state.direction2 = 'left'
+				this.$store.state.cshow3 = true				
+				
 				this.$store.state.xian=true
 				
 				console.log('点击')

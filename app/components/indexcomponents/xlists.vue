@@ -1,12 +1,12 @@
 <template>
 	<div class=".ej-css-y ">
-		<div class="recommendHouseItem       " style="margin: 10px;" v-for="(n,index) in vvv">
-			<div class="container ej-css-14" @click="listId(n.hotelId)">
-				<div class="house-img-cover  "><span alt="" class="house-img ej-tag-img" v-bind:style="{'backgroundImage':'url('+n.picUrl+')'}" style="background-image: url(&quot;//pavo.elongstatic.com/i/mobile570_372/0006vR4Y.jpg&quot;); background-size: cover; background-position: 50% 50%; opacity: 1; transition: opacity 0.5s linear;"><div class="market-tags-container    "><div class="market-tag     ">快速确认</div></div><div class="discount-icon" style="background-color: orangered;"><span class="    ">立减</span><span class="    ">优惠</span></div>
+		<div @click="test(n.hotelName,n.commentScore)" class="recommendHouseItem       " style="margin: 10px;" v-for="(n,index) in vvv">
+			<div class="container ej-css-14">
+				<div class="house-img-cover  "><span alt="" class="house-img ej-tag-img" @click="showGallery(n.picUrl)" v-bind:style="{'backgroundImage':'url('+n.picUrl+')'}" style="background-image: url(&quot;//pavo.elongstatic.com/i/mobile570_372/0006vR4Y.jpg&quot;); background-size: cover; background-position: 50% 50%; opacity: 1; transition: opacity 0.5s linear;"><div class="market-tags-container    "><div class="market-tag     ">快速确认</div></div><div class="discount-icon" style="background-color: orangered;"><span class="    ">立减</span><span class="    ">优惠</span></div>
 				</span>
 				<div class=""><i class="   "></i></div>
 			</div>
-			<div class="house-title">{{n.hotelName}}</div>
+			<div class="house-title"  @click="listId(n.hotelId)">{{n.hotelName}}</div>
 			<div class="house-des home-des">
 				<div class="house-des-left   ">
 					<div class="point-container    ">
@@ -58,6 +58,24 @@
 			}
 		},
 		methods: {
+			test(hotelName,hotelScore){
+				console.log('jiudianming')
+				console.log(hotelName,hotelScore)
+
+				scope.hotelInformation.hotelName=hotelName
+				scope.hotelInformation.hotelScore=hotelScore
+				
+
+//				scope.cityId=cityId
+				
+				
+//				this.changetion()
+			},
+			showGallery(indexImg) {
+					console.log(this.$store.state);
+					this.$store.state.indexImg = indexImg;
+					this.$store.state.isShowGallery = true;
+			},
 			submint: function() {
 				this.isLoadMore = true
 
@@ -82,6 +100,7 @@
 
 		},
 		mounted: function() {
+			
 			this.submint();
 			var self = this
 			$('#bigbox').on("scroll", function(e) {

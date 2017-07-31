@@ -39,7 +39,7 @@
 					this.$store.state.telNum = this.telArr[index];
 					this.del(false)
 					console.log(this.$store.state.telNum);
-
+					
 				},
 				
 			},

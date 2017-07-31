@@ -51,6 +51,7 @@ import detail from "./components/routes/detail.vue"
 import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
+import shoppingList from "./components/routes/shoppingList.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
 import home from "./components/home.vue"
@@ -83,11 +84,15 @@ var routes = [{
 		component: xlogin
 	}, {
 		//路由名
-		path: '/buyCar/:id',
+		path: '/buyCar',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	},
-	{
+	},, {
+		//显示所有订单的页面
+		path: '/shoppingList',
+		//上面定义好的路由扔进来
+		component: shoppingList
+	}, {
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来
@@ -190,8 +195,13 @@ var store = new Vuex.Store({
 		pricemasklayer:false,
 		cityId: '',
 		cityName:'',
+//		点击大图
+		indexImg:'',
+//		图片是否显示
+		isShowGallery:false,
 		//终点房内容数据数组
 		hotellist:[],
+
 		//列表页数据结束
 		imgUrl: null,
 		//		定位城市的初始值
@@ -207,7 +217,11 @@ var store = new Vuex.Store({
 		direction1: 'left',
 		direction2: 'right',
 		xian: false,
-
+//		隐藏侧边栏
+		cshow1:false,
+		cshow2:false,
+		cshow3:false,
+		
 		//		数据传送
 		indexArr: "",
 		news: "",
