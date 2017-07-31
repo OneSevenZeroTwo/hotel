@@ -54,6 +54,7 @@ import detail from "./components/routes/detail.vue"
 import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
+import shoppingList from "./components/routes/shoppingList.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
 import home from "./components/home.vue"
@@ -87,8 +88,12 @@ var routes = [{
 		path: '/buyCar/:id',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	},
-	{
+	},, {
+		//显示所有订单的页面
+		path: '/shoppingList',
+		//上面定义好的路由扔进来
+		component: shoppingList
+	}, {
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来

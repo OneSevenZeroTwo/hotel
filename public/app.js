@@ -298,23 +298,25 @@ app.get('/getCommon', function(req, res) {
 
 //buyCar部分..............................................zhangjunhua
 app.get("/buyCar", function(req, res) {
-//	console.log("购物车")
+
 	var connection = createConnection();
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
-	console.log(order)
-//	console.log(order.orderList)
-	console.log(order.orderList.hotelName)
-//	console.log(order.person)
-	console.log(order.person.name)
+	var orderList = JSON.parse(order.orderList)
+	var person = JSON.parse(order.person)
+	console.log(orderList.roomInfoName)
+
 	connection.query(`
-		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil)values('${order.person.orderCode}','${order.orderList.hotelName}','${order.orderList.roomInfoName}','${order.orderList.price}','${order.totalMoney}','${order.person.phonArea}','${order.person.name}','${order.person.phone}','${order.roomnum}','${order.orderList.starData}','${order.orderList.endData}','${order.person.saveUntil}')
-		`,function(err,data){
-			console.log(data)
-//			connection.end();
+		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil,username)values('${person.orderCode}','${orderList.hotelName}','${orderList.roomInfoName}','${orderList.price}','${order.totalMoney}','${person.phonArea}','${person.name}','${person.phone}','${order.roomnum}','${orderList.starData}','${orderList.endData}','${person.saveUntil}','${person.username}')
+		`,function(err,results,fields){
+
+			console.log('The solution is: ', results);
+			res.send("插入成功");
+			connection.end();
 		})
 })
+
 
 //登录注册部分..............................................zhangjunhua
 //注册
