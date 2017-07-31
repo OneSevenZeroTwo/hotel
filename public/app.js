@@ -218,9 +218,12 @@ app.get('/clockhotelcontent', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	var city = req.query.cityId;
 	var page = req.query.page;
-	console.log(city,page)
+	var sortmethod = req.query.sortmethod
+	var sortdirection = req.query.sortdirection
+	var indate = req.query.indate
+	console.log(city,page,sortmethod,sortdirection,indate)
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/list/?indate=2017-07-30&pageindex='+page+'&city='+city, function(content) {
+	http.get('http://m.elong.com/clockhotel/api/list/?indate='+indate+'&sortmethod='+sortmethod+'&sortdirection='+sortdirection+'&pageindex='+page+'&city='+city, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -229,7 +232,7 @@ app.get('/clockhotelcontent', function(req, res) {
 		content.on('end', function() {
 			//		数据返回前端
 			res.send(str)
-			console.log(str)
+			
 
 		})
 	})
