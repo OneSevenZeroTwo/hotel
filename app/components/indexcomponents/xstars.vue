@@ -8,7 +8,7 @@
 						<div class="star">
 							<div class="sp-tit">星级（可多选）</div>
 							<ul class="star-list">
-								<li sn="-1" class="on buxian">不限</li>
+								<li sn="-1" class=" buxian">不限</li>
 								<li sn="12" class="">经济/客栈</li>
 								<li sn="3" class="">三星/舒适</li>
 								<li sn="4" class="">四星/高档</li>
@@ -69,18 +69,20 @@
 			},
 		},
 		mounted: function() {
-			$('.buxian').click(function(){
-				if($(this).siblings().hasClass('on')){
-					$(this).removeClass('on')
-				}else{
-				 $(this).addClass("on").siblings().removeClass("on");
-					
-				}
-
-				
-			})
+//			$('.buxian').click(function(){
+//				if($(this).siblings().hasClass('on')){
+//					$(this).removeClass('on')
+//				}else{
+//				 $(this).addClass("on").siblings().removeClass("on");
+//					
+//				}				
+//			})
 			$('.star-list').find('li').on('click', function() {
 				if($(this).hasClass('on')) {
+					if( $('.buxian').hasClass('on')){
+   				       $('.buxian').siblings().removeClass("on");
+						
+					}
 
 					$(this).removeClass('on')
 

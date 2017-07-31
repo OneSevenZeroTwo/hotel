@@ -19,8 +19,8 @@
 			aaa: function() {
 				console.log(this.qqq[0].toLocaleDateString(), this.qqq[1].toLocaleDateString())
 				console.log(this.qqq)
-				scope.listParams.starTime=this.qqq[0].toLocaleDateString()
-				scope.listParams.endTime=this.qqq[1].toLocaleDateString()
+				scope.hotelInformation.starTime=this.qqq[0].toLocaleDateString()
+				scope.hotelInformation.leaveTime=this.qqq[1].toLocaleDateString()
 				
 			}
 
