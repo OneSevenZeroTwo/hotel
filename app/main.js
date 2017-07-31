@@ -152,6 +152,10 @@ var store = new Vuex.Store({
 		//价格组建遮罩层
 		pricemasklayer:false,
 		cityId: '',
+//		点击大图
+		indexImg:'',
+//		图片是否显示
+		isShowGallery:false,
 		//列表页数据结束
 		imgUrl: null,
 		//		定位城市的初始值
@@ -167,7 +171,11 @@ var store = new Vuex.Store({
 		direction1: 'left',
 		direction2: 'right',
 		xian: false,
-
+//		隐藏侧边栏
+		cshow1:false,
+		cshow2:false,
+		cshow3:false,
+		
 		//		数据传送
 		indexArr: "",
 		news: "",

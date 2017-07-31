@@ -1,7 +1,7 @@
 <template>
 	<div>
 
-		<div :class="{'silde-right':direction1=='right','silde-left':direction1=='left'}">
+		<div v-show="cshow1" :class="{'silde-right':direction1=='right','silde-left':direction1=='left'}">
 			<div ng-transclude class="nav-content" :class="{'sidebar-move-left':direction1=='left','sidebar-move-right':direction1=='right'}">
 				<!--<p @click='changs()'>123123</p>-->
 				<!--<a href="">{{indexArr[0]?indexArr[0].nameCn:""}}</a>-->
@@ -65,9 +65,14 @@
 			}
 		},
 		mounted: function() {
-
+			scope.cshow1=false
+			
 		},
 		computed: {
+			cshow1(){
+				return this.$store.state.cshow1;
+				
+			},
 			direction1() {
 				return this.$store.state.direction1;
 			},

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div :class="{'silde-right':direction=='right','silde-left':direction=='left'}">
+		<div v-show="cshow2" :class="{'silde-right':direction=='right','silde-left':direction=='left'}">
 			<div ng-transclude class="nav-content" :class="{'sidebar-move-left':direction=='left','sidebar-move-right':direction=='right'}">
 				<!--<button class="left-button" ng-click="directionTo('left')">left</button>-->
 				<div class="advance-city plugin-inited page-plugin plugin-show page-on-center">
@@ -55,6 +55,10 @@
 			}
 		},
 		computed: {
+			cshow2(){
+				return this.$store.state.cshow2;
+				
+			},
 			direction() {
 				return this.$store.state.direction;
 			}
@@ -73,6 +77,7 @@
 			},
 			changetion() {
 				this.$store.state.direction = 'left'
+				
 			},
 			leftfence: function() {
 //				console.log("aaa")
@@ -114,9 +119,10 @@
 			
 		},
 		mounted: function() {
+			
 			//后台请求数据动态生成列表
 			this.leftfence()
-//			this.letterfence()
+			scope.cshow2=false
 			
 
 		}
@@ -181,7 +187,7 @@
 		background-color: #e1e1e1;
 		/*调试代码时经常使用border，帮我们定位到div的一个区域*/
 		/*border: 1px solid black;*/
-		z-index: 10000;
+		z-index: 1000;
 		/*使用透明度为0来隐藏元素*/
 		opacity: 1;
 	}

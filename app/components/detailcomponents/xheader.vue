@@ -20,10 +20,17 @@
 		},
 		methods: {
 			xback() {
+				
 				location.href = history.back()
+//				this.$store.state.cshow1 = false				
+//				this.$store.state.cshow2 = false				
+//				this.$store.state.cshow3 = false				
+				
 			}
 		},
 		mounted() {
+
+			
 			var self = this
 			$(".page-content").scroll(function() {
 				console.log(111)
@@ -31,7 +38,7 @@
 					self.showHeader = false
 					console.log(self.showHeader)
 				} else {
-					console.log(self.showHeader)
+
 					self.showHeader = true
 				}
 			})

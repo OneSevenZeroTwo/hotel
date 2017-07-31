@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div :class="{'silde-right':direction2=='right','silde-left':direction2=='left'}">
+		<div v-show="cshow3" :class="{'silde-right':direction2=='right','silde-left':direction2=='left'}">
 			<div ng-transclude class="nav-content" :class="{'sidebar-move-left':direction2=='left','sidebar-move-right':direction2=='right'}">
 				<!--<p @click="changstop()">2222222222222222</p>-->
 				<div class="filter-sp plugin-inited filter-sp-active plugin-show" style=""><span class="arrow"></span>
@@ -56,8 +56,10 @@
 		methods: {
 
 			changstop() {
-				this.$store.state.direction2 = 'right',
+				this.$store.state.direction2 = 'right'
 					this.$store.state.xian = false
+
+					
 			},
 		},
 		computed: {
@@ -67,8 +69,14 @@
 			xian() {
 				return this.$store.state.xian;
 			},
+			cshow3(){
+				return this.$store.state.cshow3;
+				
+			}
 		},
 		mounted: function() {
+			scope.cshow3=false
+			
 //			$('.buxian').click(function(){
 //				if($(this).siblings().hasClass('on')){
 //					$(this).removeClass('on')
