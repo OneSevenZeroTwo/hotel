@@ -23,19 +23,16 @@ console.log(com.randomNum(1, 10))
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
 
-
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 //import zhLocale from 'iview/dist/locale/zh-CN';
 //import enLocale from 'iview/dist/locale/en-US';
-
 
 Vue.use(iView);
 
 //Vue.config.lang = 'zh-CN';
 //Vue.locale('zh-CN', zhLocale);
 //Vue.locale('en-US', enLocale);
-
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -118,41 +115,43 @@ var router = new VueRouter({
 var store = new Vuex.Store({
 	state: {
 		//主页传递去list组件的数据
-		listParams:{},
+		listParams: {},
 		//列表页数据开始
-		roomtitle:false,
-		saletitle:false,
-		tit:false,
-		areabtn:false,
-		pricestarbtn:false,
-		defaultbtn:false,
-		arr:null,
-		kslist:[],
-		show:true,
-//		获取城市id
-		cityId:'',
+		roomtitle: false,
+		saletitle: false,
+		tit: false,
+		areabtn: false,
+		pricestarbtn: false,
+		defaultbtn: false,
+		arr: null,
+		kslist: [],
+		show: true,
+		//		获取城市id
+		cityId: '',
 		//遮罩层
-		masklayer:false,
+		masklayer: false,
 		//列表页数据结束
 		imgUrl: null,
-//		定位城市的初始值
+		//		定位城市的初始值
 		aaa: '广州市',
-//		默认的地点
-		bbb:'',
+		//		默认的地点
+		bbb: '',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
 		isLogin: false,
+		//		下面全是侧边栏
 		direction: 'left',
 		direction1: 'left',
-		direction2: 'left',
-		
-//		数据传送
-		indexArr:"",
-		
+		direction2: 'right',
+		xian: false,
+
+		//		数据传送
+		indexArr: "",
+
 		news: "",
-		indexCityId:"2001",
-		times:'',
+		indexCityId: "2001",
+		times: '',
 		detailNews: null,
 		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg",
@@ -160,35 +159,35 @@ var store = new Vuex.Store({
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
 			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
 		],
-		
+
 		//订单页
-		isShowMask:false,
+		isShowMask: false,
 		//房间对应的住房人
-		nameNum:[],
+		nameNum: [],
 		//定的房间数量
-		roomsNum:null,
+		roomsNum: null,
 		//房间单价是详情页传过来的orderList中的price值
 		//roomMoney:200,
 		//订房总价
-		totalMoney:null,
+		totalMoney: null,
 		//房间保留时间
-		timesNum:null,
+		timesNum: null,
 		//下订单人的联系电话
-		telNum:"中国大陆：+86",
+		telNum: "中国大陆：+86",
 		/*//电话号码
 		phone:"",*/
 		//detail的buy组件显示隐藏
-		showBuy:false,
+		showBuy: false,
 		//detail的mask组件显示隐藏
-		Mask:false,
+		Mask: false,
 		//detail的整个buy组件的数据
-		buyContent:{},
+		buyContent: {},
 		//detail的common组件显示隐藏
-		showCommom:false,
+		showCommom: false,
 		//detail的buy组件的房间类型，例如商务标间
-		roomInfoName:'',
+		roomInfoName: '',
 		//detail的buy组件下单传去购物车的信息
-		orderList:{},
+		orderList: {},
 	},
 	getters: {
 		getCount(state) {
@@ -208,15 +207,15 @@ var store = new Vuex.Store({
 			state.val = val
 		},
 		//
-		getHotelMess(state){	
+		getHotelMess(state) {
 			$.ajax({
-				url:"http://localhost:3000/getInfo",
-				dataType:"json",
-				data:{
+				url: "http://localhost:3000/getInfo",
+				dataType: "json",
+				data: {
 					//hotelid:state.hotelid
-					hotelid:90702017				
+					hotelid: 90702017
 				},
-				success:function(res){
+				success: function(res) {
 					console.log(res)
 					state.orderList.hotelId = res.hotelId
 					state.orderList.hotelName = res.hotelId
@@ -234,13 +233,12 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
-		}, 
-		getHotelMess(context){
+		},
+		getHotelMess(context) {
 			context.commit('getHotelMess')
 		}
 	}
 })
-
 
 //新建一个实例，把定义好的router和store放进来注册...................................
 new Vue({
@@ -252,9 +250,8 @@ new Vue({
 	`,
 	router,
 	store,
-	created(){
-		window.scope=this.$store.state
+	created() {
+		window.scope = this.$store.state
 	}
-
 
 })
