@@ -1,12 +1,29 @@
-input[type="password"]{
-	border:none;
+input[type="password"] {
+	border: none;
 	margin-bottom: 0;
 }
-#bigbox{
+
+#bigbox {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-.detail-main .type ul li .wrap .right{
+.detail-main .type ul li .wrap .right {
 	right: 26px;
+}
+
+.pages .page .page-content {
+	background: #fff;
+}
+
+.newdetailhsize .toptitle {
+	border-bottom: none;
+}
+
+.roomDetailInfo .wrap .type-list {
+	border-bottom: none;
+}
+
+.detail-main .hotel-info .pic-wrap a {
+	z-index: 0;
 }

@@ -1,6 +1,6 @@
 <template>
 	<div class="back">
-		<mu-icon-button @click="back()" icon="keyboard_arrow_left" />
+		<mu-icon-button @click="back()" icon="keyboard_arrow_left" labelClass="qqq" iconClass="fontSize"/>
 	</div>
 </template>
 
@@ -26,4 +26,5 @@
 		left: 0px;
 		z-index: 99999;
 	}
+
 </style>

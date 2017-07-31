@@ -13,7 +13,8 @@
 			var swiper = new Swiper('.swiper-container', {
 				pagination: '.swiper-pagination',
 				paginationClickable: true,
-				observer:true,
+				observer:true,//修改swiper自己或子元素时，自动初始化swiper
+    			observeParents:true,//修改swiper的父元素时，自动初始化swiper
 				autoplay: 2500,
 				autoplayDisableOnInteraction: false
 			});
@@ -26,6 +27,9 @@
 			getHotelMess() {
 				return scope.getHotelMess
 			},
+		},
+		methods:{
+
 		}
 
 	}
@@ -66,4 +70,5 @@
 		margin-bottom: 58px;
 		background: #FFF;
 	}
+	
 </style>

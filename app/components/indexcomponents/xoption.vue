@@ -12,7 +12,7 @@
 					<a href="//m.elong.com/ihotel/?if=110004&amp;ch=globalhotel"><i class="icon-nav3"></i><span>国际</span></a>
 				</li>
 				<li class="tjclick">
-					<a href="//m.elong.com/clockhotel/0101/nlist/?if=110019&amp;ch=h5clockhotel&amp;neednear=1"><i class="icon-nav4"></i><span>钟点房</span></a>
+					<a href=""><i class="icon-nav4"></i><span>钟点房</span></a>
 				</li>
 				<li class="tjclick" data-tj="{&quot;cspot&quot;:&quot;globalhotel&quot;,&quot;if&quot;:&quot;110020&quot;,&quot;ch&quot;:&quot;h5bnb&quot;}">
 					<a href="//m.elong.com/minsu/?if=110020&amp;ch=h5bnb"><i class="icon-nav5"></i><span>民宿</span></a>
