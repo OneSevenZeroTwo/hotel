@@ -44,7 +44,7 @@
 			console.log(username)
 			this.$ajax({
 						url: "http://localhost:3000/shoppingList",
-						paraams:{
+						params:{
 							username:username,
 						},
 					}).then(function(res) {

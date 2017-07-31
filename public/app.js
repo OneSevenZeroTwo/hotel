@@ -371,20 +371,39 @@ app.get("/buyCar", function(req, res) {
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
+	console.log(order)
 	var orderList = JSON.parse(order.orderList)
 	var person = JSON.parse(order.person)
-	console.log(orderList.roomInfoName)
 
 	connection.query(`
 		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil,username)values('${person.orderCode}','${orderList.hotelName}','${orderList.roomInfoName}','${orderList.price}','${order.totalMoney}','${person.phonArea}','${person.name}','${person.phone}','${order.roomnum}','${orderList.starData}','${orderList.endData}','${person.saveUntil}','${person.username}')
 		`,function(err,results,fields){
-
-			console.log('The solution is: ', results);
 			res.send("插入成功");
 			connection.end();
 		})
 })
 
+
+app.get("/shoppingList", function(req, res) {
+
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var username = req.query.username
+//	console.log(orderList.roomInfoName)
+
+	connection.query(`
+		SELECT * from orders where username = '${username}'
+		`,function(err,results,fields){
+
+//			console.log('The solution is: ', results);
+
+			var obj = data:results
+			
+			res.send(obj);
+			connection.end();
+		})
+})
 
 //登录注册部分..............................................zhangjunhua
 //注册
