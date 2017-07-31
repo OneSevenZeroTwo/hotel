@@ -157,6 +157,8 @@ var store = new Vuex.Store({
 		//价格组建遮罩层
 		pricemasklayer:false,
 		cityId: '',
+		//终点房内容数据数组
+		hotellist:[],
 		//列表页数据结束
 		imgUrl: null,
 		//		定位城市的初始值
