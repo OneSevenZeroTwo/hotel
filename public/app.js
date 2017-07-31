@@ -247,7 +247,7 @@ app.get('/listFilter', function(req, res) {
 //detail部分..............................................tangqiuping
 //轮播图
 app.get('/getInfo', function(req, res) {
-	console.log('getInfo')
+//	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
@@ -272,13 +272,13 @@ app.get('/getInfo', function(req, res) {
 //详情页   房间类型
 app.get('/roomType', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
-	console.log(33333)
+//	console.log(33333)
 
 })
 
 
 app.get('/getCommon', function(req, res) {
-	console.log('getInfo')
+//	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
@@ -301,17 +301,21 @@ app.get('/getCommon', function(req, res) {
 
 //buyCar部分..............................................zhangjunhua
 app.get("/buyCar", function(req, res) {
-	console.log("购物车")
+//	console.log("购物车")
 	var connection = createConnection();
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
-	console.log(order.person.orderCode)
+	console.log(order)
+//	console.log(order.orderList)
+	console.log(order.orderList.hotelName)
+//	console.log(order.person)
+	console.log(order.person.name)
 	connection.query(`
 		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil)values('${order.person.orderCode}','${order.orderList.hotelName}','${order.orderList.roomInfoName}','${order.orderList.price}','${order.totalMoney}','${order.person.phonArea}','${order.person.name}','${order.person.phone}','${order.roomnum}','${order.orderList.starData}','${order.orderList.endData}','${order.person.saveUntil}')
 		`,function(err,data){
 			console.log(data)
-			connection.end();
+//			connection.end();
 		})
 })
 
