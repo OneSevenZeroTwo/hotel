@@ -18,24 +18,20 @@ window.$ = window.jQuery = $
 
 import com from "./js/common.js"
 window.com = com
-console.log(com.randomNum(1, 10))
 
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
-
 
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 //import zhLocale from 'iview/dist/locale/zh-CN';
 //import enLocale from 'iview/dist/locale/en-US';
 
-
 Vue.use(iView);
 
 //Vue.config.lang = 'zh-CN';
 //Vue.locale('zh-CN', zhLocale);
 //Vue.locale('en-US', enLocale);
-
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -105,6 +101,7 @@ var routes = [{
 	{
 		path: '/clockhotel/',
 		component: clockhotel
+
 	},
 	//列表页结束
 	{
@@ -122,6 +119,17 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
+		//index=>list=>detail=>buyCar
+		hotelInformation:{
+			hotelName:'空客酒店AIRBUSHOTEL(广州白云机场人和店)',
+			hotelScore:'4.2',
+			starTime:'2017/7/13',
+			leaveTime:'2017/7/13',
+			hotelType:"舒适型"
+		},
+		
+		//主页传递去list组件的数据
+		listParams: {},
 		//列表页数据开始
 		roomtitle:false,
 		saletitle:false,
@@ -143,36 +151,65 @@ var store = new Vuex.Store({
 		filtepricestar:false,
 		//价格组建遮罩层
 		pricemasklayer:false,
+		cityId: '',
 		//列表页数据结束
 		imgUrl: null,
+		//		定位城市的初始值
 		aaa: '广州市',
+		//		默认的地点
+		bbb: '',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
 		isLogin: false,
+		//		下面全是侧边栏
 		direction: 'left',
-		news: "",
-		cityId:"",
-		times:'',
-		detailNews: null,
-		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
-		],
+		direction1: 'left',
+		direction2: 'right',
+		xian: false,
 
-		isShowMask:false,
-		nameNum:[],
-		roomsNum:null,
-		timesNum:null,
-		telNum:"中国大陆：+86",
-		showBuy:false,
-		Mask:false,
-		buyContent:{},
+		//		数据传送
+		indexArr: "",
+		news: "",
+		indexCityId:"2001",
+		times:'',
+		detailNews: null,		
+		//订单页
+		isShowMask: false,
+		//房间对应的住房人
+		nameNum: [],
+		//定的房间数量
+		roomsNum: null,
+		//房间单价是详情页传过来的orderList中的price值
+		//roomMoney:200,
+		//订房总价
+		totalMoney: null,
+		//房间保留时间
+		timesNum: null,
+		//下订单人的联系电话
+		telNum: "中国大陆：+86",
+		/*//电话号码
+		phone:"",*/
+		//detail的buy组件显示隐藏
+		showBuy: false,
+		//detail的mask组件显示隐藏
+		Mask: false,
+		//detail的整个buy组件的数据
+		buyContent: {},
+		//detail的common组件显示隐藏
+
+		//detail的facilties组件显示隐藏
 		showCommom:false,
-		listParams:{},
-		roomInfoName:'7天连锁酒店(广州天河客运站二店)',
+		showFac:false,
+
+		//detail的buy组件的房间类型，例如商务标间
+		roomInfoName: '',
+		//detail的buy组件下单传去购物车的信息
+
+		orderList:{},
+		//详情页初始数据(轮播图，初始评论)
+		getHotelMess:"",
+
 	},
 	getters: {
 		getCount(state) {
@@ -190,6 +227,25 @@ var store = new Vuex.Store({
 		searchVal(state, val) {
 			console.log('mutations执行')
 			state.val = val
+		},
+		//
+
+		getHotelMess(state,hotelId){	
+			console.log(hotelId)
+			$.ajax({
+				url:"http://localhost:3000/getInfo",
+				dataType:"json",
+				data:{
+					hotelId:hotelId
+								
+				},
+				success: function(res) {
+					console.log(res)
+					state.orderList.hotelId = res.hotelId;
+					state.getHotelMess = res
+
+				}
+			})
 		}
 	},
 	actions: {
@@ -202,11 +258,14 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
-		}, 
 
+		}, 
+		getHotelMess(context,hotelId){
+			context.commit('getHotelMess',hotelId)
+
+		}
 	}
 })
-
 
 //新建一个实例，把定义好的router和store放进来注册...................................
 new Vue({
@@ -218,9 +277,8 @@ new Vue({
 	`,
 	router,
 	store,
-	created(){
-		window.scope=this.$store.state
+	created() {
+		window.scope = this.$store.state
 	}
-
 
 })

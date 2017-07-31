@@ -1,9 +1,9 @@
 <template>
 	<div class="pages">
-		<div data-blend="layer" :class="['page',{'page-on-center':!showCommom},{'page-on-left':showCommom}]"  style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
+		<div data-blend="layer" :class="['page',{'page-on-center':!showCommom},{'page-on-left':showCommom}]" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
 			<xheader></xheader>
 
-			<div class="page-content new_detailst mvt_161125">
+			<div :class="['page-content','new_detailst','mvt_161125',{'fixed':showFac}]" :style="{'overflow':!showFac?'visible':'hidden'}">
 				<section class="detail-main detail-mainNew" style="overflow: visible;">
 					<!--轮播，地图，评论-->
 					<xinfo></xinfo>
@@ -13,21 +13,21 @@
 					<xroomtype></xroomtype>
 					<!--酒店设施，隐藏的-->
 					<xfacilities></xfacilities>
-					
+
 				</section>
-				
+
 				<!--历史浏览记录-->
 				<xhistory></xhistory>
-				
+
 				<!--footer-->
 				<xfooter></xfooter>
 			</div>
-			
+
 			<xbuy></xbuy>
 			<xmask></xmask>
 		</div>
 		<xcommom></xcommom>
-	</div>				
+	</div>
 </template>
 
 <script>
@@ -40,7 +40,8 @@
 	import xfooter from "../detailcomponents/xfooter.vue"
 	import xbuy from "../detailcomponents/xbuy.vue"
 	import xmask from "../detailcomponents/xmask.vue"
-	import xcommom from "../detailcomponents/xcommom.vue"
+	import xcommom from "../detailcomponents/xcommom.vue";
+
 	export default {
 		components: {
 			xheader,
@@ -48,28 +49,33 @@
 			xdate,
 			xroomtype,
 			xfacilities,
-			xhistory,	
+			xhistory,
 			xfooter,
 			xbuy,
 			xmask,
 			xcommom,
-			
-			
+
 		},
-		computed:{
-			showCommom(){
+		computed: {
+			showCommom() {
 				return scope.showCommom
+			},
+			showFac() {
+				return scope.showFac
 			}
+		},
+		mounted() {
+
 		}
 	}
 </script>
 
-<style>
-	.pages .page .page-content{
+<style scoped>
+	.pages .page .page-content {
 		background: #fff;
 	}
-	..newdetailhsize .toptitle{
+	
+	.newdetailhsize .toptitle {
 		border-bottom: none;
 	}
-	
 </style>

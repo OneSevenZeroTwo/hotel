@@ -65,6 +65,9 @@
 				console.log(e.target.innerHTML,cityId)
 				this.$store.state.aaa=e.target.innerHTML
 				scope.listParams.cityId=cityId
+				scope.indexCityId=cityId
+				scope.cityId=cityId
+				
 				
 				this.changetion()
 			},
@@ -107,6 +110,7 @@
    				this.letterfence(letter)
 				
 			},
+			
 			
 		},
 		mounted: function() {

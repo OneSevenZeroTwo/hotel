@@ -8,7 +8,7 @@
 				</div>
 			</header>
 			<ul class="page-content" style="margin-top: 1px;">
-				<li v-for="(n,index) in timeArr" class="radio-item  " :class="{'selected':tab===index}" value="index" @click="choseNum(index)"><label class="label-radio clearfix"><div class="radio-icon"><span class="radio selected"></span></div><div class="radio-text">{{n}}</div><div class="check"></div></label></li>
+				<li v-for="(n,index) in timeArr" class="radio-item  " :class="{'selected':tab===index}" value="index" @click="choseNum(index)"><label class="label-radio clearfix "><div class="radio-icon"><span class="radio selected"></span></div><div class="radio-text">{{n}}</div><div class="check"></div></label></li>
 
 			</ul>
 			<div class="arrow up left"></div>

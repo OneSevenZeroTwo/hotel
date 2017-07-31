@@ -2,7 +2,7 @@
 	<div :class="['type-pop-box','roomDetailInfo','newdetailhsize','plugin-inited',{'box-active':showBuying},{'plugin-show':showBuying}]">
 		<div class="head"><span><i class="icon-cross"></i></span></div>
 		<div class="toptitle">
-			<p><span class="htitle">{{roomInfoName}}</span><em><span class="rpName">不含早</span><span class="rpSubName" style="display: inline-block;">含交通优惠</span></em></p>
+			<p><span class="htitle">{{roomInfoName}}</span><em><span class="rpName">{{buyContent.productName}}</span><span class="rpSubName" style="display: inline-block;">含交通优惠</span></em></p>
 			<div class="htclose"><i @click="close()"></i></div>
 		</div>
 		<div class="wrap page-content more" style="">
@@ -50,7 +50,7 @@
 					<div class="back"><span class="ce65 coupon" style="display: none;"></span> <span class="ce65 hongbao" style="display: none;"></span><span class="c999 officehours" style="display: none;"></span></div>
 				</div>
 			</div>
-			<div class="right book tjclick" @click="book()">立即预订</div>
+			<div  class="right book tjclick" @click="book()">立即预订</div>
 		</div>
 	</div>
 </template>
@@ -68,7 +68,8 @@
 				return scope.showBuy
 			},
 			buyContent(){
-//				console.log(scope.buyContent)
+				console.log(scope.buyContent)
+				//获取这个组件的数据
 				return scope.buyContent
 			},
 			roomInfoName(){
@@ -81,10 +82,16 @@
 				scope.showBuy = false
 			},
 			book(){
-				
+				//传递房间名称，产品名称，开始住房时间，离开时间到购物车
+				scope.orderList.roomInfoName = this.roomInfoName
+				scope.orderList.productName = this.buyContent.productName
+				scope.orderList.starTime = scope.listParams.starTime
+				scope.orderList.endTime = scope.listParams.endTime
+				scope.orderList.price = this.buyContent.averagePriceSubTotal
 				location.href="#/buyCar/"+this.hotelId
 			}
 		},
+		
 	
 	}
 </script>
