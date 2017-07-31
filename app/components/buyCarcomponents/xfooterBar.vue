@@ -18,30 +18,71 @@
 </template>
 
 <script>
-	export default{
-		computed:{
+	export default {
+		computed: {
 			//订房数量
-			roomnum(){
-				return scope.roomsNum
+			roomnum() {
+				return scope.roomsNum 
 			},
 			//房间单价
-			roomMoney(){
-				return scope.roomMoney
+			roomMoney() {
+				return scope.orderList.price
 			},
 			//订房总价
-			totalMoney(){
+			totalMoney() {
 				return scope.totalMoney
-			}
+			},
+			orderList() {
+				return scope.orderList
+			},
+			//房间入住人
+			nameNum() {
+				return scope.nameNum
+			},
+
 		},
-		methods:{
-			Commit(){
+		methods: {
+			Commit() {
+				var nm = $(".qiu").children('input');
+				nm.map(function(index,item){
+					scope.nameNum.push(item.value);
+				})
+//				console.log($(".qiu").children('input'))
+				var phone = scope.telNum.slice(5) + $(".phonenum").val();
+//				console.log($(".phonenum").val())
+				console.log(phone)
 				//计算总价
-				scope.totalMoney = (scope.roomMoney*1)*(scope.roomsNum*1)
-				console.log(scope.totalMoney)
+				scope.totalMoney = (scope.orderList.price * 1) * (scope.roomsNum * 1)
+//				console.log(scope.totalMoney)
+				var orderCode = com.randomNum(1,999999999);
+				console.log(orderCode)
+				//保存时间
+				var saveuntil = $(".saveuntil").val();
+				console.log(saveuntil)
+				var orderList = scope.orderList
+					this.$ajax({
+						url:"http://localhost:3000/buyCar",
+						params:{
+							orderList:this.orderList,
+							roomnum:this.roomnum,
+							roomInfo:this.roomInfo,
+							person:{
+								name:scope.nameNum,
+								phone:phone,
+								orderCode:orderCode,
+								saveUntil:saveuntil,
+								phonArea:scope.telNum.slice(5),
+								
+							},
+							totalMoney:this.totalMoney,
+						},
+					}).then(function(res){
+//						console.log(res)
+					}.bind(this))
 			}
 		},
-		mounted(){
-			console.log(scope.roomsNum)
+		mounted() {
+			
 		}
 	}
 </script>

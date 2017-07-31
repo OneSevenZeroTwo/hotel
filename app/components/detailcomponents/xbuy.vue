@@ -87,6 +87,7 @@
 				scope.orderList.productName = this.buyContent.productName
 				scope.orderList.starTime = scope.listParams.starTime
 				scope.orderList.endTime = scope.listParams.endTime
+				scope.orderList.price = this.buyContent.averagePriceSubTotal
 				location.href="#/buyCar/"+this.hotelId
 			}
 		},

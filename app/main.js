@@ -96,10 +96,8 @@ var routes = [{
 	},
 	//列表页开始
 	{
-
-		path: '/hotlist',
+		path: '/hotlist/:id',
 		component: hotlist
-
 
 	},
 	//列表页结束
@@ -139,18 +137,29 @@ var store = new Vuex.Store({
 		arr:null,
 		kslist:[],
 		show:true,
+//		获取城市id
+		cityId:'',
 		//遮罩层
 		masklayer:false,
 		//列表页数据结束
 		imgUrl: null,
+//		定位城市的初始值
 		aaa: '广州市',
+//		默认的地点
+		bbb:'',
 		galleryIsShow: false,
 		activingNav: 0,
 		val: "",
 		isLogin: false,
 		direction: 'left',
+		direction1: 'left',
+		direction2: 'left',
+		
+//		数据传送
+		indexArr:"",
+		
 		news: "",
-		cityId:"",
+		indexCityId:"2001",
 		times:'',
 		detailNews: null,		
 		//订单页
@@ -159,14 +168,16 @@ var store = new Vuex.Store({
 		nameNum:[],
 		//定的房间数量
 		roomsNum:null,
-		//房间单价
-		roomMoney:200,
+		//房间单价是详情页传过来的orderList中的price值
+		//roomMoney:200,
 		//订房总价
 		totalMoney:null,
 		//房间保留时间
 		timesNum:null,
 		//下订单人的联系电话
 		telNum:"中国大陆：+86",
+		/*//电话号码
+		phone:"",*/
 		//detail的buy组件显示隐藏
 		showBuy:false,
 		//detail的mask组件显示隐藏
@@ -215,6 +226,7 @@ var store = new Vuex.Store({
 					console.log(res)
 					state.orderList.hotelId = res.hotelId;
 					state.getHotelMess = res
+
 				}
 			})
 		}

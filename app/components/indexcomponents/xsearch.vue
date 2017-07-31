@@ -12,8 +12,8 @@
 						<div v-else>
 							<p class="cityname tjclick" city-id="0539" @click="changetion()">{{aa}}</p>
 						</div>
-							<i class="material-icons" id="material-icons">&#xE315;</i>
-						
+						<i class="material-icons" id="material-icons">&#xE315;</i>
+
 						<b class="right isnearby tjclick" data-tj="{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}" @click="baidu"><i class="icon-nearby" ></i><span>我的位置</span></b>
 						<div id="allmap"></div>
 					</li>
@@ -34,15 +34,15 @@
 					</li>
 					<li class="name">
 						<!--输入内容添加on-->
-						<div class="sea-box">
+						<div class="sea-box" @click="changs()">
 							<i class="name"></i>
-							<input type="input" value="" placeholder="酒店名称/位置不限" readonly="readonly">
+							<input type="input" :value="search1" placeholder="酒店名称/位置不限" readonly="readonly">
 							<i class="material-icons">&#xE315;</i>
 						</div>
 						<span class="close"><i class="icon-cross"></i></span>
 					</li>
 					<li class="pri">
-						<div class="price-star-btn tjclick">
+						<div class="price-star-btn tjclick" @click="changstop()">
 							<i class="pri"></i>
 							<input class="title-phone" type="input" value="" placeholder="价格星级不限" readonly="readonly">
 							<i class="material-icons">&#xE315;</i>
@@ -65,7 +65,9 @@
 				open: false,
 				docked: true,
 				not: false,
-				cId: ''
+				cId: '',
+				indexId: ""
+				
 			}
 		},
 		methods: {
@@ -96,10 +98,34 @@
 				this.not = true
 
 			},
+			changs() {
+				this.$store.state.direction1 = 'right'
+				this.indexCityId()
+				
+			},
+			changstop() {
+				this.$store.state.direction2 = 'right'
+				console.log('点击')
+				
+			},
 			cityId() {
 				this.cId = this.$store.state.cityId
 				console.log(this.cId)
-				location.href = "#/list/" + this.cId
+				location.href = "#/hotlist/" + this.cId
+			},
+			indexCityId() {
+				this.indexId = this.$store.state.indexCityId
+				console.log(this.indexId)
+				
+				this.$ajax({
+					url: "http://localhost:3000/indexFilter",
+					params:{
+						cityId:this.indexId
+					},
+				}).then(function(res) {
+//					console.log(res)
+					this.$store.state.indexArr=res.data.searchList
+				}.bind(this))
 			}
 		},
 		mounted: function() {
@@ -108,6 +134,9 @@
 		computed: {
 			search() {
 				return this.$store.state.aaa
+			},
+			search1() {
+				return this.$store.state.bbb
 			}
 		}
 	}
@@ -119,14 +148,14 @@
 		left: 300px;
 		font-size: 30px;
 	}
+	
 	#material-icons {
 		position: absolute;
 		left: 200px;
 		font-size: 30px;
 	}
-	.page-search .search-wrap .search-list li i{
-		
-	}
+	
+	.page-search .search-wrap .search-list li i {}
 	/*@import "css/header.css";
 	@import "css/header2.css";*/
 	/** {
