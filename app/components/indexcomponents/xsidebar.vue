@@ -64,7 +64,7 @@
 				console.log(11111)
 				console.log(e.target.innerHTML,cityId)
 				this.$store.state.aaa=e.target.innerHTML
-				scope.listParams.cityId=cityId
+				scope.hotelInformation.cityId=cityId
 				scope.indexCityId=cityId
 				scope.cityId=cityId
 				

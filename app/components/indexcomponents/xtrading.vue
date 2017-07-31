@@ -7,16 +7,16 @@
 				<!--<a href="">{{indexArr[0]?indexArr[0].nameCn:""}}</a>-->
 				<div class="list-pop-city list-pop-search plugin-inited page-plugin plugin-show page-on-center">
 					<header class="bar bar-nav flight-order-head">
-						<a class="icon pull-left icon-back" @click='changs()'></a>
+						<i @click='changs()' class="material-icons" style="font-size: 32px; position: absolute;top: 7px;">&#xE314;</i>
 						<div class="search-input"><i></i><input type="input" value="" placeholder="输入酒店名、地址等"></div>
-						<div class="search-btn">搜索</div>
+						<div class="search-btn" style="right: 0; color:#49f;">搜索</div>
 					</header>
 					<div class="page-select page-content" style="">
 						<div class="keyword-group">
 							<div class="page-title">{{indexArr[0]?indexArr[0].nameCn:""}}</div>
 							<div class="keyword-list">
 								<ul>
-									<li keyword-id="n668512291742670_100756272" v-for="n in indexArr[0]?indexArr[0].subFilterInfoEntities:''" city-id="2001" iskeyword="" name-cn="长隆旅游景区" lat="" lng="" hotelname="" placename="n.nameCn" type-id="n.typeId" hotel-brand-id="" brandname="" class=""><span @click="test($event)">{{n.nameCn}}</span></li>
+									<li keyword-id="n668512291742670_100756272" v-for="n in indexArr[0]?indexArr[0].subFilterInfoEntities:''" city-id="2001" iskeyword="" name-cn="长隆旅游景区" lat="" lng="" hotelname="" placename="n.nameCn" type-id="n.typeId" hotel-brand-id="" brandname="" class=""><span @click="test($event,n.sn)">{{n.nameCn}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -24,7 +24,7 @@
 							<div class="page-title">{{indexArr[1]?indexArr[1].nameCn:""}}</div>
 							<div class="keyword-list">
 								<ul>
-									<li v-for="n in indexArr[1]?indexArr[1].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event)">{{n.nameCn}}</span></li>
+									<li v-for="n in indexArr[1]?indexArr[1].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event,n.sn)">{{n.nameCn}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -32,7 +32,7 @@
 							<div class="page-title">{{indexArr[2]?indexArr[2].nameCn:""}}</div>
 							<div class="keyword-list">
 								<ul>
-									<li v-for="n in indexArr[2]?indexArr[2].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event)">{{n.nameCn}}</span></li>
+									<li v-for="n in indexArr[2]?indexArr[2].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event,n.sn)">{{n.nameCn}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -56,10 +56,11 @@
 			changs() {
 				this.$store.state.direction1 = 'left'
 			},
-			test(e){
+			test(e,serialNo) {
 				console.log(11111)
-				console.log(e.target.innerHTML)
-				this.$store.state.bbb=e.target.innerHTML				
+				console.log(serialNo)
+				this.$store.state.bbb = e.target.innerHTML
+				scope.hotelInformation.serialNo=serialNo
 				this.changs()
 			}
 		},
@@ -133,7 +134,7 @@
 		position: fixed;
 		min-height: 100%;
 		top: 0;
-		left: 320px;
+		left: 100%;
 		background-color: #C0C0C0;
 		/*调试代码时经常使用border，帮我们定位到div的一个区域*/
 		/*border: 1px solid black;*/
