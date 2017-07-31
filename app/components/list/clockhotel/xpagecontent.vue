@@ -102,15 +102,31 @@
 	export default {
 		data:function(){
 			return {
+				// 判断是否是下拉刷新
+				srcollResh:true,
 				hotellist:[],
+				// 是否经过筛选得出数据
+				datafrom:"filter",
+				// 酒店品牌对应的sn，用逗号隔开。
+				hotelbrandids:"",
+
+
 				show:true,
 				scroll:0,
 				p:0,
 				page:0,
 				lowprice:null,
 				highprice:null,
-				sortmethod:null,
-				sortdirection:null,
+				sortmethod:"",
+				sortdirection:"",
+				// 入住时间
+				indate:"",
+				// 离开时间
+				outdate:"",
+				endTime:"",
+				cityId:"2001",
+				// sortmethod:null,
+				// sortdirection:null,
 			}
 		},
 		methods:{
@@ -119,21 +135,36 @@
 				this.$ajax({
 					url:"http://localhost:3000/clockhotelcontent",
 					params: {
-						// tab: this.message,
-						// limit: 10,
-						cityId: 2001,
+						// 城市id
+						cityId: this.cityId,
+						// 分页
 						page:this.page++,
-						lowprice:this.lowprice,
-						highprice:this.highprice,
+						// 最低价
+						sortmethod:this.sortmethod,
+						// 最高价
+						sortdirection:this.sortdirection,
+						// 是否经过筛选得出数据
+						datafrom:this.datafrom,
+						// 酒店品牌对应的sn，用逗号隔开。
+						hotelbrandids:this.hotelbrandids,
+						// 入住时间
+						indate:this.indate,
+						// 离开时间
+						outdate:this.outdate,
+						// lowprice:this.lowprice,
+						// highprice:this.highprice,
 					}
 				}).then(function(res) {
-					console.log(res.data.hotelList)
-					this.hotellist=this.hotellist.concat(res.data.hotelList) 
-					console.log(this.hotellist)
-					// this.$store.state.kslist = res.data.newFastFilter
-					// this.$store.state.arr = JSON.parse(res.request.responseText).hotelList
-					// console.log(this.$store.state.arr)
-					// this.isLoading = true
+					if(this.srcollResh){
+						this.hotellist=this.hotellist.concat(res.data.hotelList) 	
+					}else{
+						this.hotellist = res.data.hotelList
+					}
+					
+					this.$store.state.slideselector = false;
+					this.$store.state.advancedmasklayer = false;
+
+
 				}.bind(this))
 
 			},
@@ -141,8 +172,6 @@
 			menu() { 
         		this.scroll = this.$refs.viewbox.scrollTop;
 
-        		// console.log('距离顶部:'+.scrollTop())
-        		// console.log('滚动:'+this.scroll)
         		if(this.p<=this.scroll){
         			this.show = false;
         		}else{
@@ -168,9 +197,11 @@
 			var self = this
 			console.log($('.page-list'))
 			$('.page-list').on("scroll", function(e) {
-				console.log(11111)
+				console.log("下拉")
+
 				if(this.offsetHeight + this.scrollTop >= this.scrollHeight) {
 					console.log("到底部了")
+					self.srcollResh=true
 					self.automaticrequest();
 				}
 
@@ -178,9 +209,16 @@
 			$('li.radio-item').on('click',function(){
 				$(this).addClass('selected').siblings().removeClass('selected')
 				console.log($(this).attr('value'))
-				var str = $(this).attr('value')
+				var str = $(this).attr('value').split(',')
 				// str = str.join(',')
-				console.log(str)
+				console.log(str[0],str[1])
+				// 价格高低参数。
+				self.sortmethod = str[0]
+				self.sortdirection = str[1]
+				// 点击时清空列表数组hotellist
+				self.hotellist = []
+				self.srcollResh=true
+				self.automaticrequest()
 			})
 			pagecontent.init()
 		}

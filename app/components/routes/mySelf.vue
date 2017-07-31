@@ -48,7 +48,7 @@
 				<ul class="sub-list">
 					<li id="member" class="tjclick" data-tj="{&quot;cspot&quot;:&quot;memberclub&quot;}"><i class="member"></i>会员俱乐部<span>想升级点这里</span><i class="cor icon-left"></i></li>
 					<li id="wxactivity" class="tjclick" data-tj="{&quot;cspot&quot;:&quot;elongactivty_entry_wxqb&quot;}">
-						<a><i class="licash"></i>{{title}}<em></em><span></span><i class="cor icon-left"></i></a>
+						<a><i class="licash"></i><em></em><span></span><i class="cor icon-left"></i></a>
 					</li>
 					<li id="comment" class="tjclick" data-tj="{&quot;cspot&quot;:&quot;comment&quot;}"><i class="comment1s"></i>我的点评<em></em><span></span><i class="cor icon-left"></i></li>
 					<li id="collect" class="tjclick" data-tj="{&quot;cspot&quot;:&quot;collection&quot;}"><i class="collect"></i>我的收藏<i class="cor icon-left"></i></li>
