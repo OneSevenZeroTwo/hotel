@@ -249,10 +249,9 @@ app.get('/listFilter', function(req, res) {
 app.get('/getInfo', function(req, res) {
 	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
-	//	console.log(1111)
+	var hotelId = req.query.hotelId
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid=90702017', function(content) {
-		//		console.log(content)
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid='+hotelId, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -260,7 +259,7 @@ app.get('/getInfo', function(req, res) {
 		})
 		content.on('end', function() {
 			//		数据返回前端
-			//			console.log(str)
+
 			res.send(str)
 		})
 	})
@@ -273,6 +272,29 @@ app.get('/roomType', function(req, res) {
 	console.log(33333)
 
 })
+
+
+app.get('/getCommon', function(req, res) {
+	console.log('getInfo')
+	res.append('Access-Control-Allow-Origin', '*');
+	var hotelId = req.query.hotelId
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid='+hotelId, function(content) {
+//		console.log(content)
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
+		})
+		content.on('end', function() {
+			//		数据返回前端
+			console.log(str)
+			res.send(str)
+		})
+	})
+
+})
+
 
 //buyCar部分..............................................zhangjunhua
 app.get("/buyCar", function(req, res) {

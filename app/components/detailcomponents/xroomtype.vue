@@ -140,6 +140,7 @@
 
 		mounted() {
 			//进入页面，请求房间数据
+			console.log("roomType")
 			this.$ajax({
 				url: "./json/roomType.json"
 			}).then(function(res) {

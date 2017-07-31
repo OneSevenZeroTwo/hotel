@@ -18,7 +18,6 @@ window.$ = window.jQuery = $
 
 import com from "./js/common.js"
 window.com = com
-console.log(com.randomNum(1, 10))
 
 //使用..................................................................
 //通过 Vue.use()明确地安装路由功能
@@ -114,6 +113,15 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
+		//index=>list=>detail=>buyCar
+		hotelInformation:{
+			hotelName:'空客酒店AIRBUSHOTEL(广州白云机场人和店)',
+			hotelScore:'4.2',
+			starTime:'2017/7/13',
+			leaveTime:'2017/7/13',
+			hotelType:"舒适型"
+		},
+		
 		//主页传递去list组件的数据
 		listParams: {},
 		//列表页数据开始
@@ -148,18 +156,10 @@ var store = new Vuex.Store({
 
 		//		数据传送
 		indexArr: "",
-
 		news: "",
-		indexCityId: "2001",
-		times: '',
-		detailNews: null,
-		imgArr: ["//pavo.elongstatic.com/i/mobile220_220/00050lJq.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDnN.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDnM.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDhO.jpg",
-			"//pavo.elongstatic.com/i/mobile220_220/0000aDhA.jpg"
-		],
-
+		indexCityId:"2001",
+		times:'',
+		detailNews: null,		
 		//订单页
 		isShowMask: false,
 		//房间对应的住房人
@@ -183,11 +183,19 @@ var store = new Vuex.Store({
 		//detail的整个buy组件的数据
 		buyContent: {},
 		//detail的common组件显示隐藏
-		showCommom: false,
+
+		//detail的facilties组件显示隐藏
+		showCommom:false,
+		showFac:false,
+
 		//detail的buy组件的房间类型，例如商务标间
 		roomInfoName: '',
 		//detail的buy组件下单传去购物车的信息
-		orderList: {},
+
+		orderList:{},
+		//详情页初始数据(轮播图，初始评论)
+		getHotelMess:"",
+
 	},
 	getters: {
 		getCount(state) {
@@ -207,18 +215,21 @@ var store = new Vuex.Store({
 			state.val = val
 		},
 		//
-		getHotelMess(state) {
+
+		getHotelMess(state,hotelId){	
+			console.log(hotelId)
 			$.ajax({
-				url: "http://localhost:3000/getInfo",
-				dataType: "json",
-				data: {
-					//hotelid:state.hotelid
-					hotelid: 90702017
+				url:"http://localhost:3000/getInfo",
+				dataType:"json",
+				data:{
+					hotelId:hotelId
+								
 				},
 				success: function(res) {
 					console.log(res)
-					state.orderList.hotelId = res.hotelId
-					state.orderList.hotelName = res.hotelId
+					state.orderList.hotelId = res.hotelId;
+					state.getHotelMess = res
+
 				}
 			})
 		}
@@ -233,9 +244,11 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
-		},
-		getHotelMess(context) {
-			context.commit('getHotelMess')
+
+		}, 
+		getHotelMess(context,hotelId){
+			context.commit('getHotelMess',hotelId)
+
 		}
 	}
 })
