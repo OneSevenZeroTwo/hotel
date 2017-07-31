@@ -4,24 +4,24 @@
 			<div style="position: fixed;" :class="['header-search',{'showout':show},{'hidein':!show}]">
 				<div class="time">
 					<div class="sea-date">
-						<p><span>住</span><b class="indate" data-value="2017-07-30">07-30</b></p>
+						<p><span>住</span><b class="indate" :data-value="starTime">{{starTime}}</b></p>
 		            </div>
-		            <div class="city-area cityname"><span>广州市</span></div>
+		            <div class="city-area cityname"><span>{{cityName}}</span></div>
 		            <div class="sea-box">
 		                <i></i>
 		                <input type="input" value="" placeholder="钟点房名称/位置不限" readonly="readonly">
 		            </div>
 		            <div class="dress ">
 	            		<i class="ads"></i>
-						<span>附近</span>
+						<span>{{hotelList?hotelList.lowestPrice:''}}附近</span>
 	            	</div>
 				</div>
 				
 				<div class="chose">
 					<ul>
-						<li class="fanxian tjclick" data-id="21820043_1013" data-type="645790419_1013" data-tj="{&quot;cspot&quot;:&quot;cashback&quot;}">有返现</li>
-						<li class="allhotel tjclick" data-tj="{&quot;cspot&quot;:&quot;chain&quot;}">连锁酒店</li>
-						<li class="lovers tjclick" data-tj="{&quot;cspot&quot;:&quot;couples&quot;}">情侣酒店</li>
+						<li class="fanxian tjclick" data-id="21820043_1013" data-type="645790419_1013">有返现</li>
+						<li class="allhotel tjclick" >连锁酒店</li>
+						<li class="lovers tjclick">情侣酒店</li>
 					</ul>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 
 			<div class="list-main">
 				<ul class="hotel-list" method="listmain"> 
-					<li v-for="n in hotellist" class="hotel-item"> 
+					<li v-for="n in hotelList" class="hotel-item"> 
 						<a :href="'#/detail/'+n.hotelId" class="hotel-link" data-url="//m.elong.com/clockhotel/42001501/#indate=2017-07-30"></a> 
 						<div class="pic"> 
 							<img alt="广州木棉花语酒店" :src="n.picUrl"> 
@@ -71,7 +71,7 @@
 						</div> 
 					</li>  
 				</ul>
-				<div @click="automaticrequest()" class="nomore">点击加载更多钟点房</div>
+				<div @click="clickmore()" class="nomore">点击加载更多钟点房</div>
                 <!--只有一家酒店时推荐-->
                 <div class="list-onlyone" style="display: none;">
                     <p>客官，下面的钟点房也不错呢</p>
@@ -102,73 +102,39 @@
 	export default {
 		data:function(){
 			return {
-				// 判断是否是下拉刷新
-				srcollResh:true,
-				hotellist:[],
-				// 是否经过筛选得出数据
-				datafrom:"filter",
-				// 酒店品牌对应的sn，用逗号隔开。
-				hotelbrandids:"",
+				// // 判断是否是下拉刷新
+				// srcollResh:true,
+				// hotellist:[],
+				// // 是否经过筛选得出数据
+				// datafrom:"filter",
+				// // 酒店品牌对应的sn，用逗号隔开。
+				// hotelbrandids:"",
 
 
 				show:true,
 				scroll:0,
 				p:0,
-				page:0,
-				lowprice:null,
-				highprice:null,
-				sortmethod:"",
-				sortdirection:"",
+				// page:0,
+				// lowprice:null,
+				// highprice:null,
+				// sortmethod:"",
+				// sortdirection:"",
 				// 入住时间
-				indate:"",
+				// indate:scope.hotelInformation.starTime,
 				// 离开时间
-				outdate:"",
+				// outdate:scope.hotelInformation.leaveTime,
 				endTime:"",
-				cityId:"2001",
+				// cityId:scope.hotelInformation.cityId,
 				// sortmethod:null,
 				// sortdirection:null,
 			}
 		},
 		methods:{
-			// 一进页面获取数据
-			automaticrequest:function(){
-				this.$ajax({
-					url:"http://localhost:3000/clockhotelcontent",
-					params: {
-						// 城市id
-						cityId: this.cityId,
-						// 分页
-						page:this.page++,
-						// 最低价
-						sortmethod:this.sortmethod,
-						// 最高价
-						sortdirection:this.sortdirection,
-						// 是否经过筛选得出数据
-						datafrom:this.datafrom,
-						// 酒店品牌对应的sn，用逗号隔开。
-						hotelbrandids:this.hotelbrandids,
-						// 入住时间
-						indate:this.indate,
-						// 离开时间
-						outdate:this.outdate,
-						// lowprice:this.lowprice,
-						// highprice:this.highprice,
-					}
-				}).then(function(res) {
-					if(this.srcollResh){
-						this.hotellist=this.hotellist.concat(res.data.hotelList) 	
-					}else{
-						this.hotellist = res.data.hotelList
-					}
-					
-					this.$store.state.slideselector = false;
-					this.$store.state.advancedmasklayer = false;
-
-
-				}.bind(this))
-
-			},
+		
 			// // vue监听滚动事件
+			clickmore(){
+				this.$store.commit('automaticrequest')
+			},
 			menu() { 
         		this.scroll = this.$refs.viewbox.scrollTop;
 
@@ -183,42 +149,65 @@
      		},
 		},
 		computed:{
-			
+			cityName:function(){
+				return this.$store.state.cityName
+			},
+			starTime:function(){
+				return scope.hotelInformation.starTime.slice(5)
+			},
+			hotelList:function(){
+				console.log(1111,scope.listFilterParams.hotellist)
+				return scope.listFilterParams.hotellist
+			}
 		},
 		mounted:function(){
 			//滚动监听
+			var self = this
 			this.$refs.viewbox.addEventListener('scroll', this.menu)
-			this.automaticrequest()
+			self.$store.commit('automaticrequest')
 			var pagecontent = {
 				init:function(){
 					
 				},
 			}
-			var self = this
-			console.log($('.page-list'))
+			// console.log($('.page-list'))
 			$('.page-list').on("scroll", function(e) {
 				console.log("下拉")
 
 				if(this.offsetHeight + this.scrollTop >= this.scrollHeight) {
 					console.log("到底部了")
-					self.srcollResh=true
-					self.automaticrequest();
+					scope.listFilterParams.srcollResh=true
+					self.$store.commit('automaticrequest')
 				}
 
 			})
 			$('li.radio-item').on('click',function(){
+				if($(this).index() == 0){
+					$('.filter-list').find('.default-btn').removeClass('rise')
+					$('.filter-list').find('.default-btn').removeClass('drop')
+				}
+				if($(this).index() == 1){
+					$('.filter-list').find('.default-btn').addClass('rise')
+				}
+				if($(this).index() == 2){
+					$('.filter-list').find('.default-btn').addClass('drop')
+				}
+				if($(this).index() == 3){
+					$('.filter-list').find('.default-btn').addClass('drop')
+				}
+				
 				$(this).addClass('selected').siblings().removeClass('selected')
 				console.log($(this).attr('value'))
 				var str = $(this).attr('value').split(',')
 				// str = str.join(',')
 				console.log(str[0],str[1])
 				// 价格高低参数。
-				self.sortmethod = str[0]
-				self.sortdirection = str[1]
+				scope.listFilterParams.sortmethod = str[0]
+				scope.listFilterParams.sortdirection = str[1]
 				// 点击时清空列表数组hotellist
-				self.hotellist = []
-				self.srcollResh=true
-				self.automaticrequest()
+				scope.listFilterParams.hotellist = []
+				scope.listFilterParams.srcollResh=false
+				self.$store.commit('automaticrequest')
 			})
 			pagecontent.init()
 		}
