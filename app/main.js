@@ -222,7 +222,9 @@ var store = new Vuex.Store({
 		cshow1:false,
 		cshow2:false,
 		cshow3:false,
-		
+//		获取星级里的值
+		xing1:'',
+		xing2:'',
 		//		数据传送
 		indexArr: "",
 		news: "",

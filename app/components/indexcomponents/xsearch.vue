@@ -44,7 +44,7 @@
 					<li class="pri">
 						<div class="price-star-btn tjclick" @click="changstop()">
 							<i class="pri"></i>
-							<input class="title-phone" type="input" value="" placeholder="价格星级不限" readonly="readonly">
+							<input class="title-phone" type="input" :value="stars" placeholder="价格星级不限" readonly="readonly">
 							<i class="material-icons">&#xE315;</i>
 						</div>
 						<span class="close"><i class="icon-cross"></i></span></li>
@@ -67,7 +67,7 @@
 				not: false,
 				cId: '2001',
 				indexId: ""
-				
+
 			}
 		},
 		methods: {
@@ -95,25 +95,25 @@
 			},
 			changetion() {
 				this.$store.state.direction = 'right'
-				this.$store.state.cshow2 = true				
+				this.$store.state.cshow2 = true
 				this.not = true
 
 			},
 			changs() {
 				this.$store.state.direction1 = 'right'
-				this.$store.state.cshow1 = true				
-				
+				this.$store.state.cshow1 = true
+
 				this.indexCityId()
-				
+
 			},
 			changstop() {
 				this.$store.state.direction2 = 'left'
-				this.$store.state.cshow3 = true				
-				
-				this.$store.state.xian=true
-				
+				this.$store.state.cshow3 = true
+
+				this.$store.state.xian = true
+
 				console.log('点击')
-				
+
 			},
 			cityId() {
 				this.cId = this.$store.state.cityId
@@ -123,15 +123,15 @@
 			indexCityId() {
 				this.indexId = this.$store.state.indexCityId
 				console.log(this.indexId)
-				
+
 				this.$ajax({
 					url: "http://localhost:3000/indexFilter",
-					params:{
-						cityId:this.indexId
+					params: {
+						cityId: this.indexId
 					},
 				}).then(function(res) {
-//					console.log(res)
-					this.$store.state.indexArr=res.data.searchList
+					//					console.log(res)
+					this.$store.state.indexArr = res.data.searchList
 				}.bind(this))
 			}
 		},
@@ -144,6 +144,12 @@
 			},
 			search1() {
 				return this.$store.state.bbb
+			},
+			stars() {
+				return this.$store.state.xing1
+			},
+			stars1() {
+				return this.$store.state.xing2
 			}
 		}
 	}
