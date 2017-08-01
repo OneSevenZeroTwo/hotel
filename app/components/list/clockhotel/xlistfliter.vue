@@ -18,7 +18,7 @@
 						</ul>
 					</div>
 					<!-- 有边filter -->
-					<div style="background: white" class="filter-con page-content">
+					<div style="background: white;overflow: auto !important;" class="filter-con page-content" >
 						<!-- 品牌 -->
 						<ul v-show="leftIdx==0" class="filter-list-check" style="padding-top: 0px;">
 							<li v-oning  v-for="(items,rightIdx) in listfliterresult[0].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="0">{{items.nameCn}}<i class="checkbox"></i>
@@ -57,7 +57,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="bot-btn bar">
+					<div v-botbtning class="bot-btn bar">
 						<ul>
 							<li id="filter-reset">重置</li>
 							<li class="on" id="filter-submit">确定</li>
@@ -88,12 +88,13 @@
 				this.$ajax({
 					url:"http://localhost:3000/listFilter",
 					params:{
-						cityId:2001
+						cityId:scope.hotelInformation.cityId,
 					}
 				}).then(function(res){
 					console.log(res)
 					console.log(res.data.FilterList)
 					this.listfliterresult = res.data.FilterList
+
 				}.bind(this))
 			},
 
@@ -115,6 +116,7 @@
 		},
 		mounted:function(){
 			this.listfliter()
+
 			// 这是还没有生成li节点
 			// var listfliter = {
 			// 	init:function(){
@@ -148,11 +150,27 @@
 					$(ele).click(function(){
 						$(ele).toggleClass("on")
 
-						var idx = $(ele).attr('data-ulIdx')
-						// console.log(idx,$(".leftNav"))
-						// if(idx==0){
-						// 	 $(ele).siblings().removeClass("on")
+						if($(ele).text() == '不限'){
+							console.log($(ele))
+							$(this).addClass('on').siblings().removeClass('on')
+						}else{
+							if(!$(ele).parent().hasClass('filter-list-radio')){
+								console.log(66)
+								if(!$(ele).first().siblings().hasClass('on')){
+									console.log(77)
+									$(ele).first().addClass('on')
+								}
+							}else{
+								console.log(888)
+								$(this).siblings().removeClass('on')
+							}
+						}
+						// if($(ele).parent().hasClass('filter-list-radio')){
+						// 	console.log(888)
+						// 	$(this).siblings().removeClass('on')
 						// }
+
+						var idx = $(ele).attr('data-ulIdx')
 						var ischecking =false
 						$.each($(ele).parent().children('li'),function(i,items){
 							if(i==0){
@@ -168,9 +186,6 @@
 						}else{
 							$(".leftNav").eq(idx).removeClass("on have")
 						}
-
-
-
 					})											
 				}
 			},
@@ -179,6 +194,62 @@
 					$(ele).click(function(){						
 						$(this).addClass("on").siblings().removeClass('on')
 					})											
+				}
+			},
+			botbtning:{
+				bind(ele){
+					$(ele).find('#filter-submit').on('click',function(){
+					console.log(this)
+						console.log(68)
+						var hotelbrandids = []
+						var personofroom = []
+						var facilityIds = []
+						var themeIds = []
+						var paytype = []
+						var saletype = []
+						$.each($('.on'),function(idx,items){
+							switch ($(items).attr("data-type")){
+								case '3':
+									hotelbrandids.push($(items).attr("data-id"))
+								break;
+								case '11':
+									personofroom.push($(items).attr("data-id"))
+								break;
+								case '1011':
+									facilityIds.push($(items).attr("data-id"))
+								break;
+								case '1012':
+									themeIds.push($(items).attr("data-id"))
+								break;
+								case '1007':
+									paytype.push($(items).attr("data-id"))
+								break;
+								case '1013':
+									saletype.push($(items).attr("data-id"))
+								break;	
+							}
+						})
+						console.log(hotelbrandids.join(','))
+						console.log(facilityIds.join(','))
+						console.log(themeIds.join(','))
+						console.log(paytype.join(','))
+						console.log(personofroom.join(','))
+						console.log(saletype.join(','))
+						scope.listFilterParams.hotelbrandids = hotelbrandids.join(',')
+						scope.listFilterParams.personofroom = personofroom.join(',')
+						scope.listFilterParams.facilityIds = facilityIds.join(',')
+						scope.listFilterParams.themeIds = themeIds.join(',')
+						scope.listFilterParams.paytype = paytype.join(',')
+						scope.listFilterParams.saletype = saletype.join(',')
+						console.log($store)
+						// 隐藏筛选框
+						scope.tit = false
+						// 筛选完重新请求数据。
+						scope.listFilterParams.hotellist = []
+						scope.listFilterParams.srcollResh=false
+						$store.commit('automaticrequest')
+						
+					})
 				}
 			}
 		}

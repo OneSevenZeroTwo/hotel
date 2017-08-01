@@ -68,7 +68,6 @@
 				return scope.showBuy
 			},
 			buyContent(){
-				console.log(scope.buyContent)
 				//获取这个组件的数据
 				return scope.buyContent
 			},
@@ -97,7 +96,7 @@
 				scope.orderList.hotelName = scope.hotelInformation.hotelName
 				//酒店id
 				scope.orderList.hotelId = this.hotelId
-				location.href="#/buyCar/"+this.hotelId
+				location.href="#/buyCar"
 			}
 		},
 		

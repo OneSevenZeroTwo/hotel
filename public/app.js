@@ -6,7 +6,7 @@ var http = require('http')
 //链接数据库模块
 var mysql = require("mysql");
 var cheerio = require('cheerio')
-	//连接服务器配置.......................................................................
+//连接服务器配置.......................................................................
 function createConnection() {
 	var connection = mysql.createConnection({
 		host: 'localhost',
@@ -46,76 +46,76 @@ app.get('/test', function(req, res) {
 
 //轮播图
 app.get('/slideshow', function(req, res) {
-		res.append('Access-Control-Allow-Origin', '*');
-		//服务器代理
-		http.get('http://m.elong.com/hotel/api/gethotelbanners/?_rt=1500963243924', function(content) {
-			var str = '';
-			//把流的形式转化为字符串
-			content.on('data', function(chunk) {
-				str += chunk
-			})
-			content.on('end', function() {
-				//		数据返回前端
-				res.send(str)
-
-			})
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/hotel/api/gethotelbanners/?_rt=1500963243924', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
 		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
 
+		})
 	})
-	//left侧边栏
+
+})
+//left侧边栏
 app.get('/leftfence', function(req, res) {
-		res.append('Access-Control-Allow-Origin', '*');
-		//服务器代理
-		http.get('http://m.elong.com/hotel/api/gethomehotcitys/', function(content) {
-			var str = '';
-			//把流的形式转化为字符串
-			content.on('data', function(chunk) {
-				str += chunk
-			})
-			content.on('end', function() {
-				//		数据返回前端
-				res.send(str)
-
-			})
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/hotel/api/gethomehotcitys/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
 		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
 
+		})
 	})
-	//字母侧边栏
+
+})
+//字母侧边栏
 app.get('/letterfence', function(req, res) {
-		res.append('Access-Control-Allow-Origin', '*');
-		//服务器代理
-		console.log(req.query.letter)
-		var letter = req.query.letter
-		http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter=' + letter, function(content) {
-			var str = '';
-			//把流的形式转化为字符串
-			content.on('data', function(chunk) {
-				str += chunk
-			})
-			content.on('end', function() {
-				//		数据返回前端
-				res.send(str)
-
-			})
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	console.log(req.query.letter)
+	var letter = req.query.letter
+	http.get('http://m.elong.com/hotel/api/gethotelcitysbyletter/?letter=' + letter, function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
 		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
 
+		})
 	})
-	//首页列表
-app.get('/indexlist', function(req, res) {
-		res.append('Access-Control-Allow-Origin', '*');
-		//服务器代理
-		http.get('http://m.elong.com/clockhotel/api/list/', function(content) {
-			var str = '';
-			//把流的形式转化为字符串
-			content.on('data', function(chunk) {
-				str += chunk
-			})
-			content.on('end', function() {
-				//		数据返回前端
-				res.send(str)
 
-			})
+})
+//首页列表
+app.get('/indexlist', function(req, res) {
+	res.append('Access-Control-Allow-Origin', '*');
+	//服务器代理
+	http.get('http://m.elong.com/clockhotel/api/list/', function(content) {
+		var str = '';
+		//把流的形式转化为字符串
+		content.on('data', function(chunk) {
+			str += chunk
 		})
+		content.on('end', function() {
+			//		数据返回前端
+			res.send(str)
+
+		})
+	})
 
 })
 
@@ -123,7 +123,7 @@ app.get('/indexFilter', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	var cityId = req.query.cityId
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/'+cityId+'/nlist/', function(content) {
+	http.get('http://m.elong.com/clockhotel/' + cityId + '/nlist/', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -133,35 +133,36 @@ app.get('/indexFilter', function(req, res) {
 			//		数据返回前端
 			var $ = cheerio.load(str)
 			var arr = $('script')
-//			用于接受正则匹配的数据
+			//			用于接受正则匹配的数据
 			var data = {};
-			
+
 			//根据命令行获取数据，缩小范围，获取第二个script标签
 			var result = arr[1].children[0].data
 			//转码成中文，替换转换失败的符号
-			var douhaoReg=/%2C/g
+			var douhaoReg = /%2C/g
 			var maohaoReg = /%3A/g
 			var xieganReg = /%2/g
-			result = decodeURI(result).replace(douhaoReg,",")
-			result = result.replace(maohaoReg,":")
-			result = result.replace(xieganReg,"/")
+			result = decodeURI(result).replace(douhaoReg, ",")
+			result = result.replace(maohaoReg, ":")
+			result = result.replace(xieganReg, "/")
 			//提取数据
-			var Filter2=/\[\{[\w\W]+\]/
-			
-			var regCity =/city:'\{\"cityId\"[\w\W]*?\}/			
-			var regFilterList1=/filterList\:\'\[\{[\w\W]+searchList/			
-			var regSearchList =/searchList:'\[\{[\W\w]+areaList/
-			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
-			var reghotCityList =/hotCityList\:\'[\w\W]+starList/
-			
-			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
-			data.city=JSON.parse(result.match(regCity)[0].slice(6))
-			data.FilterList=JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0])
+			var Filter2 = /\[\{[\w\W]+\]/
 
-			data.searchList=JSON.parse(result.match(regSearchList)[0].match(Filter2)[0])	
+			var regCity = /city:'\{\"cityId\"[\w\W]*?\}/
+			var regFilterList1 = /filterList\:\'\[\{[\w\W]+searchList/
+			var regSearchList = /searchList:'\[\{[\W\w]+areaList/
+			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
+			var reghotCityList = /hotCityList\:\'[\w\W]+starList/
 			
-			data.areaList=JSON.parse(result.match(regAreaList)[0].match(Filter2)[0])
-			data.hotCityList=JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0])
+			console.log(result.match(regFilterList1))
+			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
+			data.city = result.match(regCity)?JSON.parse(result.match(regCity)[0].slice(6)):[]
+			data.FilterList = result.match(regFilterList1)?JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0]):[]
+
+			data.searchList = result.match(regSearchList)?JSON.parse(result.match(regSearchList)[0].match(Filter2)[0]):[]
+
+			data.areaList = result.match(regAreaList)?JSON.parse(result.match(regAreaList)[0].match(Filter2)[0]):[]
+			data.hotCityList = result.match(reghotCityList)?JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0]):[]
 
 			//返回前端
 			res.send(data)
@@ -176,7 +177,7 @@ app.get('/list', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	var page = req.query.page;
 	console.log(page)
-		//服务器代理
+	//服务器代理
 	http.get('http://m.elong.com/hotel/api/list/?indate=2017-07-28&pageindex=' + page + '&city=2001&esdnum=6782671', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
@@ -217,13 +218,47 @@ app.get('/clockhotelcontent', function(req, res) {
 	console.log(111111)
 	res.append('Access-Control-Allow-Origin', '*');
 	var city = req.query.cityId;
-	var page = req.query.page;
+	var pageindex = req.query.page;
 	var sortmethod = req.query.sortmethod
 	var sortdirection = req.query.sortdirection
+
+	// 筛选组件的参数
+	var hotelbrandids = req.query.hotelbrandids
+	var personofroom = req.query.personofroom
+	var facilityIds = req.query.facilityIds
+	var themeIds = req.query.themeIds
+	var paytype = req.query.paytype
+	var saletype = req.query.saletype
+
+	// 是否通过筛选获得
+	var datafrom = req.query.datafrom
+
+	// 价格
+	var lowprice = req.query.lowprice
+	var highprice = req.query.highprice
+
+	// 时间
+	var outdate = req.query.outdate
 	var indate = req.query.indate
-	console.log(city,page,sortmethod,sortdirection,indate)
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/list/?indate='+indate+'&sortmethod='+sortmethod+'&sortdirection='+sortdirection+'&pageindex='+page+'&city='+city, function(content) {
+	console.log(city)
+	console.log(pageindex)
+	console.log(sortmethod)
+	console.log(sortdirection)
+
+	console.log(hotelbrandids)
+	console.log(personofroom)
+	console.log(facilityIds)
+	console.log(themeIds)
+	console.log(paytype)
+	console.log(saletype)
+
+	console.log(lowprice)
+	console.log(highprice)
+
+	console.log(outdate)
+	console.log(indate)
+	http.get(`http://m.elong.com/clockhotel/api/list?indate=${indate}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&outdate=${outdate}&datafrom=${datafrom}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}&lowprice=${lowprice}&highprice=${highprice}&hotelbrandids=${hotelbrandids}&facilityIds=${facilityIds}&city=${city}&pageindex=${pageindex}`, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -232,18 +267,16 @@ app.get('/clockhotelcontent', function(req, res) {
 		content.on('end', function() {
 			//		数据返回前端
 			res.send(str)
-			
 
 		})
 	})
 
 })
 
-
 app.get('/listFilter', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
 	var cityId = req.query.cityId
-		//服务器代理
+	//服务器代理
 	http.get('http://m.elong.com/clockhotel/' + cityId + '/nlist/', function(content) {
 		var str = '';
 		//把流的形式转化为字符串
@@ -254,19 +287,19 @@ app.get('/listFilter', function(req, res) {
 			//		数据返回前端
 			var $ = cheerio.load(str)
 			var arr = $('script')
-				//			用于接受正则匹配的数据
+			//			用于接受正则匹配的数据
 			var data = {};
 
 			//根据命令行获取数据，缩小范围，获取第二个script标签
 			var result = arr[1].children[0].data
-				//转码成中文，替换转换失败的符号
+			//转码成中文，替换转换失败的符号
 			var douhaoReg = /%2C/g
 			var maohaoReg = /%3A/g
 			var xieganReg = /%2/g
 			result = decodeURI(result).replace(douhaoReg, ",")
 			result = result.replace(maohaoReg, ":")
 			result = result.replace(xieganReg, "/")
-				//提取数据
+			//提取数据
 			var Filter2 = /\[\{[\w\W]+\]/
 
 			var regCity = /city:'\{\"cityId\"[\w\W]*?\}/
@@ -276,13 +309,13 @@ app.get('/listFilter', function(req, res) {
 			var reghotCityList = /hotCityList\:\'[\w\W]+starList/
 
 			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
-			data.city = JSON.parse(result.match(regCity)[0].slice(6))
-			data.FilterList = JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0])
+			data.city = result.match(regCity)?JSON.parse(result.match(regCity)[0].slice(6)):[]
+			data.FilterList = result.match(regFilterList1)?JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0]):[]
 
-			data.searchList = JSON.parse(result.match(regSearchList)[0].match(Filter2)[0])
+			data.searchList = result.match(regSearchList)?JSON.parse(result.match(regSearchList)[0].match(Filter2)[0]):[]
 
-			data.areaList = JSON.parse(result.match(regAreaList)[0].match(Filter2)[0])
-			data.hotCityList = JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0])
+			data.areaList = result.match(regAreaList)?JSON.parse(result.match(regAreaList)[0].match(Filter2)[0]):[]
+			data.hotCityList = result.match(reghotCityList)?JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0]):[]
 
 			//返回前端
 			res.send(data)
@@ -291,7 +324,6 @@ app.get('/listFilter', function(req, res) {
 	})
 
 })
-
 
 // // http://m.elong.com/hotel/api/getlistfilter?cityid=2001
 // app.get('/abc', function(req, res) {
@@ -314,15 +346,14 @@ app.get('/listFilter', function(req, res) {
 
 // })
 
-
 //detail部分..............................................tangqiuping
 //轮播图
 app.get('/getInfo', function(req, res) {
-//	console.log('getInfo')
+	//	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid='+hotelId, function(content) {
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid=' + hotelId, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -340,18 +371,17 @@ app.get('/getInfo', function(req, res) {
 //详情页   房间类型
 app.get('/roomType', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
-//	console.log(33333)
+	//	console.log(33333)
 
 })
 
-
 app.get('/getCommon', function(req, res) {
-//	console.log('getInfo')
+	//	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid='+hotelId, function(content) {
-//		console.log(content)
+	http.get('http://m.elong.com/clockhotel/api/otherdetail/?hotelid=' + hotelId, function(content) {
+		//		console.log(content)
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -366,7 +396,6 @@ app.get('/getCommon', function(req, res) {
 
 })
 
-
 //buyCar部分..............................................zhangjunhua
 app.get("/buyCar", function(req, res) {
 
@@ -374,16 +403,16 @@ app.get("/buyCar", function(req, res) {
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
-//	console.log(order)
+	//	console.log(order)
 	var orderList = JSON.parse(order.orderList)
 	var person = JSON.parse(order.person)
 
 	connection.query(`
 		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil,username,img)values('${person.orderCode}','${orderList.hotelName}','${orderList.roomInfoName}','${orderList.price}','${order.totalMoney}','${person.phonArea}','${person.name}','${person.phone}','${order.roomnum}','${orderList.starData}','${orderList.endData}','${person.saveUntil}','${person.username}','${orderList.imgUrl}')
-		`,function(err,results,fields){
-			res.send("插入成功");
-			connection.end();
-		})
+		`, function(err, results, fields) {
+		res.send("插入成功");
+		connection.end();
+	})
 })
 
 //shoppingList部分..............................................tangqiuping
@@ -396,32 +425,49 @@ app.get("/shoppingList", function(req, res) {
 
 	connection.query(`
 		SELECT * from orders where username = '${username}'
-		`,function(err,results,fields){
+		`, function(err, results, fields) {
 
-//			console.log('The solution is: ', results);
-			var obj = results
+		//			console.log('The solution is: ', results);
+		var obj = results
 
-			res.send(obj);
-			connection.end();
-		})
+		res.send(obj);
+		connection.end();
+	})
 })
 
-
-app.get("/order",function(req,res){
+app.get("/order", function(req, res) {
 	var connection = createConnection();
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var orderCode = req.query.orderCode
 	connection.query(`
 		SELECT * from orders where orderCode = '${orderCode}'
-		`,function(err,results,fields){
+		`, function(err, results, fields) {
 
-			console.log('The solution is: ', results);
-			var obj = results
+		console.log('The solution is: ', results);
+		var obj = results
 
-			res.send(obj);
-			connection.end();
-		})
+		res.send(obj);
+		connection.end();
+	})
+})
+
+app.get("/del", function(req, res) {
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var orderId = req.query.orderId
+	console.log(orderId)
+	connection.query(`
+		DELETE from orders where orderCode = '${orderId}'
+		`, function(err, results, fields) {
+
+		//			console.log('The solution is: ', results);
+		var obj = results
+
+		res.send(obj);
+		connection.end();
+	})
 })
 
 //登录注册部分..............................................zhangjunhua
@@ -439,13 +485,13 @@ app.get("/register", function(req, res) {
 		if(data.length == 0) {
 			connection.query(`INSERT into register (username,password)values('${username}','${password}')`, function(err, data) {
 
-					res.send('注册成功')
-				})
-				//关闭数据库要写进判断里面
+				res.send('注册成功')
+			})
+			//关闭数据库要写进判断里面
 			connection.end();
 		} else {
 			res.send('该手机已注册')
-				//关闭数据库要写进判断里面
+			//关闭数据库要写进判断里面
 			connection.end();
 		}
 

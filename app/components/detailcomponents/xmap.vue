@@ -32,7 +32,7 @@
 		},
 		computed: {
 			getHotelMess() {
-				console.log(scope.getHotelMess)
+
 				return scope.getHotelMess
 			}
 		}

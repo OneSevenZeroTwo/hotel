@@ -8,11 +8,11 @@
 		<div class="weui-panel weui-panel_access">
 			<div class="weui-panel__hd">尊敬的&nbsp;&nbsp;<span class="spans">{{info?info[0].username:''}}</span>&nbsp;&nbsp;用户，您目前的所有订单</div>
 			<div class="weui-panel__bd" >
-				<a href="#/buyCar/90702017" v-for="msg in info" class="weui-media-box weui-media-box_appmsg">
+				<a v-for="msg in info" class="weui-media-box weui-media-box_appmsg" :value="msg.orderCode">
 					<div class="weui-media-box__hd">
 						<img class="weui-media-box__thumb" :src="msg.img" alt="">
 					</div>
-					<div class="weui-media-box__bd"  :id="msg.orderCode"  @click="order()">
+					<div class="weui-media-box__bd"  :id="msg.orderCode"  @click="order($event)">
 						<h4 class="weui-media-box__title" >{{msg.hotelName}}</h4>
 						<p class="weui-media-box__desc" >
 							<span>房型：{{msg.roomType}}</span>
@@ -23,18 +23,26 @@
 							<span>总价：￥{{msg.total}}</span>
 						</p>
 					</div>
-					<div id="del">
-						删除
+					<div id="del" @click="del($event)">
+						&times;
 					</div>
 				</a>
-				
 			</div>
+		</div>
+		<xmask></xmask>
+		<div>
+			<ul class="fix">
+				<li>确定</li>
+				<li>取消</li>
+			</ul>
 		</div>
 	</div>
 </template>
 <script>
 	import xback from "../xback.vue"
 	import toHome from "../toHome.vue"
+	//遮罩层
+	import xmask from "../buyCarcomponents/xmask.vue"
 	export default {
 		data(){
 			return{
@@ -44,14 +52,14 @@
 		components: {
 			xback,
 			toHome,
+			xmask,
 		},
 		methods:{
-			order(){
-//				var orderCode = $(e.target).closest($('.weui-media-box__bd')).attr('id')
-				var orderCode = $('.weui-media-box__bd').attr('id');
-				console.log($('.weui-media-box__bd'))
-				console.log(orderCode)
-				/*this.$ajax({
+			order(e){
+				var orderCode = $(e.target).closest($('.weui-media-box__bd')).attr('id');
+//				console.log(orderCode)
+				console.log($(e.target).closest($('.weui-media-box__bd')).attr('id'))
+				this.$ajax({
 						url: "http://localhost:3000/order",
 						params:{
 							orderCode:orderCode,
@@ -59,6 +67,26 @@
 					}).then(function(res) {
 						console.log(res.data);
 						this.info = res.data;
+						location.href="#/buyCar"
+					}.bind(this))
+			},
+			del(e){
+				this.$store.state.isShowMask = true;
+				$('.advanced-mask-layer').css('display','block');
+				$('.slide-selector').addClass('plugin-show');
+				$('.slide-selector').addClass('selector-active');
+//				$('.sure').removeClass('plugin-show');
+				console.log(orderId)
+				//删除页面节点
+//				$(e.target).closest($('a')).remove();
+				//发送请求到后端删除数据
+				/*this.$ajax({
+						url: "http://localhost:3000/del",
+						params:{
+							orderId:orderId,
+						},
+					}).then(function(res) {
+						console.log(res)
 					}.bind(this))*/
 			},
 		},
@@ -94,12 +122,37 @@
 		border: 1px solid dashed #B8AEAE;
 	}
 	#del{
-	    width: 40px;
-	    background-color: red;
+	    width: 30px;
+	    height: 30px;
+	    background-color: #ccc;
 	    color: #fff;
 	    text-align: center;
-	    /*position: absolute;*/
-	    /*top: 100px;*/
-	    /*right: 20px;*/
+	    font-size: 20px;
+	    border-radius: 50%;
 	}
+	.weui-media-box__hd{
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	.fix{
+		width: 100%;
+		height: 70px;
+		position: fixed;
+		bottom: 0;
+		background-color: lightskyblue;
+		z-index: 99999;
+	}
+	.fix li{
+		display: block;
+		float: left;
+		width: 50%;
+		color: #fff;
+		line-height: 70px;
+		text-align: center;
+		border-right: 1px solid #fff;
+	}
+	.fix li:nth-child(2){
+		border-right: none;
+	}
+
 </style>

@@ -94,7 +94,7 @@
 				scope.showCommom = !scope.showCommom
 			},
 			showFac(){
-				console.log(2222)
+
 				scope.showFac = true
 			}
 
@@ -105,9 +105,7 @@
 			//进入详情页根据酒店id请求轮播图、初始评论数据。
 			this.$store.dispatch("getHotelMess",this.hotelId)
 			
-			window.navigator.geolocation.getCurrentPosition(function(res){
-				console.log(res)
-			})
+			
 			
 		},
 		components: {
