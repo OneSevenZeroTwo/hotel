@@ -37,7 +37,7 @@
 			<div class="list-main">
 				<ul class="hotel-list" method="listmain"> 
 					<li v-for="n in hotelList" class="hotel-item"> 
-						<a :href="'#/detail/'+n.hotelId" class="hotel-link" data-url="//m.elong.com/clockhotel/42001501/#indate=2017-07-30"></a> 
+						<a @click="toTetail(n.hotelName,n.commentScore,n.hotelId)" class="hotel-link" data-url="//m.elong.com/clockhotel/42001501/#indate=2017-07-30"></a> 
 						<div class="pic"> 
 							<img alt="广州木棉花语酒店" :src="n.picUrl"> 
 						</div> 
@@ -147,6 +147,11 @@
         			this.p = this.scroll
         		}.bind(this),0)
      		},
+     		toTetail(hotelName,commentScore,hotelId){
+     			location.href ="#/detail/"+ hotelId
+     			scope.hotelInformation.hotelName = hotelName
+     			scope.hotelInformation.hotelScore = commentScore
+     		}
 		},
 		computed:{
 			cityName:function(){

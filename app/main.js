@@ -104,7 +104,7 @@ var routes = [{
 		component: hotlist
 	},
 	{
-		path: '/clockhotel/',
+		path: '/clockhotel/:cityId',
 		component: clockhotel
 
 	},
@@ -112,7 +112,7 @@ var routes = [{
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/detail/90702017'
+		redirect: '/index'
 	}
 ]
 
@@ -129,8 +129,8 @@ var store = new Vuex.Store({
 			cityId:'2001',
 			hotelName:'空客酒店AIRBUSHOTEL(广州白云机场人和店)',
 			hotelScore:'4.2',
-			starTime:'2017-7-13',
-			leaveTime:'2017-7-13',
+			starTime:'2017-08-13',
+			leaveTime:'2017-08-14',
 			hotelType:"舒适型"
 		},
 		
@@ -194,7 +194,7 @@ var store = new Vuex.Store({
 		filtepricestar:false,
 		//价格组建遮罩层
 		pricemasklayer:false,
-		cityId: '',
+		cityId: '2001',
 		cityName:'',
 //		点击大图
 		indexImg:'',
