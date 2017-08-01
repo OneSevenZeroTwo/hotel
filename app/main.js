@@ -138,6 +138,10 @@ var store = new Vuex.Store({
 		listParams: {},
 		//列表页数据开始
 		listFilterParams:{
+			//区域类型
+			areatype:"",
+			//区域sn
+			areaid:"",
 			// 城市id
 			cityId:"2001",
 			// 品牌
@@ -309,6 +313,9 @@ var store = new Vuex.Store({
 					lowprice:state.listFilterParams.lowprice,
 					// 最高价
 					highprice:state.listFilterParams.highprice,
+					//
+					areatype:state.listFilterParams.areatype,
+					areaid:state.listFilterParams.areaid,
 				},
 				success:function(res){
 					console.log(res)

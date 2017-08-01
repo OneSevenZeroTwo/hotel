@@ -246,6 +246,7 @@
 						scope.tit = false
 						// 筛选完重新请求数据。
 						scope.listFilterParams.hotellist = []
+						scope.listFilterParams.page = 0
 						scope.listFilterParams.srcollResh=false
 						$store.commit('automaticrequest')
 						

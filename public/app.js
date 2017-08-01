@@ -217,7 +217,7 @@ app.get('price', function(req, res) {
 app.get('/clockhotelcontent', function(req, res) {
 	console.log(111111)
 	res.append('Access-Control-Allow-Origin', '*');
-	var city = req.query.cityId;
+	var cityId = req.query.cityId;
 	var pageindex = req.query.page;
 	var sortmethod = req.query.sortmethod
 	var sortdirection = req.query.sortdirection
@@ -241,7 +241,7 @@ app.get('/clockhotelcontent', function(req, res) {
 	var outdate = req.query.outdate
 	var indate = req.query.indate
 	//服务器代理
-	console.log(city)
+	console.log(cityId)
 	console.log(pageindex)
 	console.log(sortmethod)
 	console.log(sortdirection)
@@ -259,7 +259,7 @@ app.get('/clockhotelcontent', function(req, res) {
 	console.log(outdate)
 	console.log(indate)
 
-	http.get(`http://m.elong.com/clockhotel/api/list/?indate=${indate}&sourceType=1&datafrom=filter&pageindex=${pageindex}&city=${city}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&hotelbrandids=${hotelbrandids}&personofroom=${personofroom}&facilityIds=${facilityIds}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}`, function(content){
+	http.get(`http://m.elong.com/clockhotel/api/list/?indate=${indate}&sourceType=1&datafrom=filter&pageindex=${pageindex}&city=${cityId}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&hotelbrandids=${hotelbrandids}&personofroom=${personofroom}&facilityIds=${facilityIds}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}`, function(content){
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
