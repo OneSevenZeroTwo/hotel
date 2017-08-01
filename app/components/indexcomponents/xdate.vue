@@ -18,12 +18,21 @@
 		methods: {
 			getTime() {
 				//点击获取输入框的时间
-				console.log(this.datee)
+				
 				//把时间中的/变为-
-				var reg = /\//g
-				scope.hotelInformation.starTime = this.datee[0].toLocaleDateString().replace(reg, "-")
-				scope.hotelInformation.leaveTime = this.datee[1].toLocaleDateString().replace(reg, "-")
-
+				var Inyear = this.datee[0].getFullYear()
+				var INmonths = (''+this.datee[0].getMonth()).length<2?"0"+this.datee[0].getMonth():this.datee[0].getMonth()
+				var INday = (''+this.datee[0].getDate()).length<2?"0"+this.datee[0].getDate():this.datee[0].getDate()
+				scope.listFilterParams.indate = Inyear + "-"+INmonths+"-"+INday
+				
+				var Outyear = this.datee[1].getFullYear()
+				var Outmonths = (''+this.datee[1].getMonth()).length<2?"0"+this.datee[1].getMonth():this.datee[1].getMonth()
+				var Outday = (''+this.datee[1].getDate()).length<2?"0"+this.datee[1].getDate():this.datee[1].getDate()
+				scope.listFilterParams.outdate = Outyear + "-"+Outmonths+"-"+Outday
+				console.log(Inyear,INmonths,INday)
+				console.log(Outyear,Outmonths,Outday)
+				
+				console.log(scope.listFilterParams.indate,scope.listFilterParams.outdate)
 			},
 
 		},

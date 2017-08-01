@@ -1,5 +1,5 @@
 <template>
-	<div ref="viewbox" class="page-content page-list">
+	<div ref="viewbox" class="page-content page-list" style="padding-top: 0px!important;">
 		<section class="page-list-con">			
 			<div style="position: fixed;" :class="['header-search',{'showout':show},{'hidein':!show}]">
 				<div class="time">
@@ -37,12 +37,12 @@
 			<div class="list-main">
 				<ul class="hotel-list" method="listmain"> 
 					<li v-for="n in hotelList" class="hotel-item"> 
-						<a :href="'#/detail/'+n.hotelId" class="hotel-link" data-url="//m.elong.com/clockhotel/42001501/#indate=2017-07-30"></a> 
+						<a @click="toTetail(n.hotelName,n.commentScore,n.hotelId)" class="hotel-link" data-url="//m.elong.com/clockhotel/42001501/#indate=2017-07-30"></a> 
 						<div class="pic"> 
 							<img alt="广州木棉花语酒店" :src="n.picUrl"> 
 						</div> 
 						<div class="info"> 
-							<p class="name">{{n.hotelName}}</p> 
+							<p    style="height: 22px;"  class="name">{{n.hotelName}}</p> 
 							<p class="comt">  
 								<b>{{n.commentScore}}分</b>   
 								<span>{{n.totalCommentCount}}条点评</span>   
@@ -147,6 +147,11 @@
         			this.p = this.scroll
         		}.bind(this),0)
      		},
+     		toTetail(hotelName,commentScore,hotelId){
+     			location.href ="#/detail/"+ hotelId
+     			scope.hotelInformation.hotelName = hotelName
+     			scope.hotelInformation.hotelScore = commentScore
+     		}
 		},
 		computed:{
 			cityName:function(){
@@ -156,7 +161,7 @@
 				return scope.hotelInformation.starTime.slice(5)
 			},
 			hotelList:function(){
-				console.log(1111,scope.listFilterParams.hotellist)
+				console.log(scope.listFilterParams.hotellist)
 				return scope.listFilterParams.hotellist
 			}
 		},
@@ -204,6 +209,8 @@
 				// 价格高低参数。
 				scope.listFilterParams.sortmethod = str[0]
 				scope.listFilterParams.sortdirection = str[1]
+
+
 				// 点击时清空列表数组hotellist
 				scope.listFilterParams.hotellist = []
 				scope.listFilterParams.srcollResh=false
