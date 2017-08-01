@@ -16,7 +16,7 @@
 							<div class="page-title">{{indexArr[0]?indexArr[0].nameCn:""}}</div>
 							<div class="keyword-list">
 								<ul>
-									<li keyword-id="n668512291742670_100756272" v-for="n in indexArr[0]?indexArr[0].subFilterInfoEntities:''" city-id="2001" iskeyword="" name-cn="长隆旅游景区" lat="" lng="" hotelname="" placename="n.nameCn" type-id="n.typeId" hotel-brand-id="" brandname="" class=""><span @click="test($event,n.sn)">{{n.nameCn}}</span></li>
+									<li keyword-id="n668512291742670_100756272" v-for="n in indexArr[0]?indexArr[0].subFilterInfoEntities:''" city-id="2001" iskeyword="" name-cn="长隆旅游景区" lat="" lng="" hotelname="" placename="n.nameCn" type-id="n.typeId" hotel-brand-id="" brandname="" class=""><span @click="test($event,n.sn,n.typeId)">{{n.nameCn}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -56,11 +56,13 @@
 			changs() {
 				this.$store.state.direction1 = 'left'
 			},
-			test(e,serialNo) {
+			test(e,serialNo,typeId) {
 				console.log(11111)
 				console.log(serialNo)
 				this.$store.state.bbb = e.target.innerHTML
 				scope.hotelInformation.serialNo=serialNo
+				scope.listFilterParams.areaid=serialNo 
+				scope.listFilterParams.areatype=typeId
 				this.changs()
 			}
 		},
