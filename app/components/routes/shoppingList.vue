@@ -8,11 +8,11 @@
 		<div class="weui-panel weui-panel_access">
 			<div class="weui-panel__hd">尊敬的&nbsp;&nbsp;<span class="spans">{{info?info[0].username:''}}</span>&nbsp;&nbsp;用户，您目前的所有订单</div>
 			<div class="weui-panel__bd">
-				<a v-for="msg in info" class="weui-media-box weui-media-box_appmsg" :value="msg.orderCode">
+				<a v-for="msg in info":id="msg.orderCode" class="aaa weui-media-box weui-media-box_appmsg" :value="msg.orderCode">
 					<div class="weui-media-box__hd">
 						<img class="weui-media-box__thumb" :src="msg.img" alt="">
 					</div>
-					<div class="weui-media-box__bd" :id="msg.orderCode" @click="orders($event)">
+					<div class="weui-media-box__bd"  @click="orders($event)">
 						<h4 class="weui-media-box__title">{{msg.hotelName}}</h4>
 						<p class="weui-media-box__desc">
 							<span>房型：{{msg.roomType}}</span>
@@ -96,13 +96,18 @@
 					console.log(this.order);
 					//删除页面节点
 					this.dis();
-					var eleorderId =  $('.weui-media-box__bd').attr('id')
-					console.log($('.weui-media-box__bd'))
-					console.log(eleorderId)
-					if(orderId==eleorderId){
-//						$('.weui-media-box__bd').closest('a').remove();
-					console.log($('.weui-media-box__bd').closest('a'))
-					}
+					$.each($('.aaa'),function(idx,item){
+						if($(item).attr('id')==orderId){
+							$(item).remove()
+						}
+					})
+//					var eleorderId =  $('.weui-media-box__bd').attr('id')
+//					console.log($('.weui-media-box__bd'))
+//					console.log(eleorderId)
+//					if(orderId==eleorderId){
+////						$('.weui-media-box__bd').closest('a').remove();
+//						console.log($('.weui-media-box__bd').closest('a'))
+//					}
 					
 					
 					//发送请求到后端删除数据
