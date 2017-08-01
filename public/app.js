@@ -270,7 +270,7 @@ app.get('/clockhotelcontent', function(req, res) {
 	//four
 	console.log('sortmethod:'+sortmethod)
 	console.log('sortdirection:'+sortdirection)
-	http.get(`http://m.elong.com/clockhotel/api/list/?indate=${indate}&themeIds=${themeIds}&datafrom=filter&saletype=${saletype}&hotelbrandids=${hotelbrandids}&paytype=${paytype}&pageindex=${pageindex}&personofroom=${personofroom}&city=${cityId}`, function(content){
+	http.get(`http://m.elong.com/clockhotel/api/list/?indate=${indate}&themeIds=${themeIds}&datafrom=filter&saletype=${saletype}&hotelbrandids=${hotelbrandids}&paytype=${paytype}&pageindex=${pageindex}&personofroom=${personofroom}&city=${cityId}&sortmethod=${sortmethod}&sortdirection=${sortdirection}`, function(content){
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {

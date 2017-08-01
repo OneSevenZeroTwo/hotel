@@ -1,7 +1,7 @@
 <template>
 	<div data-blend="layer" data-blend-id="comments" id="uniq24" :class="['page', {'page-on-center':showCommom},{'page-on-right':!showCommom}]" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
 		<header class="bar bar-nav flight-order-head">
-			<a @click="todetail()" class="icon icon-left-nav pull-left icon-back"></a>
+			<a @click="todetail()" class="icon icon-left-nav pull-left "></a>
 			<a class="icon icon-phone pull-right" href="tel:4006661166"></a>
 			<h1 class="title">酒店点评</h1>
 		</header>
@@ -27,7 +27,7 @@
 						<div class="com_tag_h" style="max-height: 64px;">
 							<a v-for="(n,idx) in lab" data-mainid="0" :class="{on:idx==index}" @click="on(idx,n.value)">
 								<span class="s_c333">{{n.name}}</span>
-								<span class="s_c888">{{getHotelMess.totalCount}}</span>
+								<span class="s_c888">{{idx==0?getHotelMess.totalCount:""}}</span>
 							</a>
 
 						</div>

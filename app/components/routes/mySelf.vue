@@ -78,6 +78,12 @@
 	export default {
 		components: {
 			xback
+		},
+		mounted(){
+			$(".all-order").click(function(){
+				console.log(21111)
+				location.href = "#/shoppingList"
+			})
 		}
 	}
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<div :class="['hotel-info-fac','plugin-inited','page-plugin',{'plugin-show':showFac},{'page-on-center':showFac},{'page-on-right':!showFac}]">
 		<header class="bar bar-nav flight-order-head" style="z-index: 99999">
-			<a class="icon pull-left icon-back" @click="back()"></a>
+			<a class="icon pull-left " @click="back()"></a>
 			<a class="icon icon-phone pull-right" href="tel:4006661166"></a>
 			<div class="title">酒店信息</div>
 		</header>
