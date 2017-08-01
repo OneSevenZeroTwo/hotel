@@ -126,6 +126,7 @@ var store = new Vuex.Store({
 	state: {
 		//index=>list=>detail=>buyCar
 		hotelInformation:{
+			cityId:'2001',
 			hotelName:'空客酒店AIRBUSHOTEL(广州白云机场人和店)',
 			hotelScore:'4.2',
 			starTime:'2017-7-13',

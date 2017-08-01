@@ -1,5 +1,5 @@
 <template>
-	<div ref="viewbox" class="page-content page-list">
+	<div ref="viewbox" class="page-content page-list" style="padding-top: 0px!important;">
 		<section class="page-list-con">			
 			<div style="position: fixed;" :class="['header-search',{'showout':show},{'hidein':!show}]">
 				<div class="time">
