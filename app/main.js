@@ -260,9 +260,8 @@ var store = new Vuex.Store({
 		showFac:false,
 
 		//detail的buy组件的房间类型，例如商务标间
-		roomInfoName: '',
+		roomInfoName: '',	
 		//detail的buy组件下单传去购物车的信息
-
 		orderList:{},
 		//详情页初始数据(轮播图，初始评论)
 		getHotelMess:"",
