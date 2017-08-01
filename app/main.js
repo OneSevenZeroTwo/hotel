@@ -138,7 +138,7 @@ var store = new Vuex.Store({
 		//列表页数据开始
 		listFilterParams:{
 			// 城市id
-			cityId:"0101",
+			cityId:"2001",
 			// 品牌
 			hotelbrandids:"",
 			// 人数
@@ -167,9 +167,9 @@ var store = new Vuex.Store({
 			// 排序
 			sortdirection:"",
 			// 离开时间
-			outdate:"",
+			outdate:"2017-08-03",
 			// 入住时间
-			indate:"",
+			indate:"2017-08-02",
 
 
 		},

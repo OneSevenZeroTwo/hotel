@@ -42,7 +42,7 @@
 							<img alt="广州木棉花语酒店" :src="n.picUrl"> 
 						</div> 
 						<div class="info"> 
-							<p class="name">{{n.hotelName}}</p> 
+							<p    style="height: 22px;"  class="name">{{n.hotelName}}</p> 
 							<p class="comt">  
 								<b>{{n.commentScore}}分</b>   
 								<span>{{n.totalCommentCount}}条点评</span>   

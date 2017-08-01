@@ -20,9 +20,15 @@
 				//点击获取输入框的时间
 				console.log(this.datee)
 				//把时间中的/变为-
-				var reg =/\//g ;
-				scope.hotelInformation.starTime = this.datee[0].toLocaleDateString().replace(reg, "-");
-				scope.hotelInformation.leaveTime = this.datee[1].toLocaleDateString().replace(reg, "-")
+				var year = this.datee[0].getFullYear()
+				var months = this.datee[0].getMonth().length<2?"0"+this.datee[0].getMonth():this.datee[0].getMonth()
+				var day = this.datee[0].getDate().length<2?"0"+this.datee[0].getDate():this.datee[0].getDate()
+				scope.hotelInformation.starTime = year + "-"+months+"-"+day
+				var year = this.datee[1].getFullYear()
+				var months = this.datee[1].getMonth().length<2?"1"+this.datee[1].getMonth():this.datee[1].getMonth()
+				var day = this.datee[1].getDate().length<2?"1"+this.datee[1].getDate():this.datee[1].getDate()
+				scope.hotelInformation.starTime = year + "-"+months+"-"+day
+				 
 
 			},
 
