@@ -6,9 +6,9 @@
 				<div class="filter-sp plugin-inited filter-sp-active plugin-show" style=""><span class="arrow"></span>
 					<div class="sp-content">
 						<div class="star">
-							<div class="sp-tit">星级（可多选）</div>
+							<div class="sp-tit">星级</div>
 							<ul class="star-list">
-								<li sn="-1" class=" buxian">不限</li>
+								<li sn="-1" class=" on buxian">不限</li>
 								<li sn="12" class="">经济/客栈</li>
 								<li sn="3" class="">三星/舒适</li>
 								<li sn="4" class="">四星/高档</li>
@@ -57,9 +57,8 @@
 
 			changstop() {
 				this.$store.state.direction2 = 'right'
-					this.$store.state.xian = false
+				this.$store.state.xian = false
 
-					
 			},
 		},
 		computed: {
@@ -69,40 +68,53 @@
 			xian() {
 				return this.$store.state.xian;
 			},
-			cshow3(){
+			cshow3() {
 				return this.$store.state.cshow3;
-				
+
 			}
 		},
 		mounted: function() {
-			scope.cshow3=false
-			
-//			$('.buxian').click(function(){
-//				if($(this).siblings().hasClass('on')){
-//					$(this).removeClass('on')
-//				}else{
-//				 $(this).addClass("on").siblings().removeClass("on");
-//					
-//				}				
-//			})
+			scope.cshow3 = false
+
+			//			$('.buxian').click(function(){
+			//				if($(this).siblings().hasClass('on')){
+			//					$(this).removeClass('on')
+			//				}else{
+			//				 $(this).addClass("on").siblings().removeClass("on");
+			//					
+			//				}				
+			//			})
+			//			$('.star-list').find('li').on('click', function() {
+			//				if($(this).hasClass('on')) {
+			//					if($('.buxian').hasClass('on')) {
+			//						$('.buxian').siblings().removeClass("on");
+			//
+			//					}
+			//
+			//					$(this).removeClass('on')
+			//
+			//				} else {
+			//					$(this).addClass('on')
+			//										$(this).parent().children().first().removeClass('on')
+			//
+			//				}
+			//			})
+
 			$('.star-list').find('li').on('click', function() {
-				if($(this).hasClass('on')) {
-					if( $('.buxian').hasClass('on')){
-   				       $('.buxian').siblings().removeClass("on");
-						
-					}
-
-					$(this).removeClass('on')
-
-				} else {
-					$(this).addClass('on')
-					//					$(this).parent().children().first().removeClass('on')
-
-				}
-			})
-			
-			$('.price-list').find('li').on('click',function(){
 				$(this).addClass("on").siblings().removeClass("on");
+			})
+
+			$('.price-list').find('li').on('click', function() {
+				$(this).addClass("on").siblings().removeClass("on");
+			})
+
+			$('#starprice-submit').on('click', function() {
+				console.log($('.star-list').find('.on').html())
+				var xing=$('.star-list').find('.on').html()
+				scope.xing1=xing
+				
+				var xing1=$('.price-list').find('.on').html()
+				scope.xing2=xing1
 			})
 		}
 
