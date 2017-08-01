@@ -65,7 +65,7 @@
 				open: false,
 				docked: true,
 				not: false,
-				cId: '',
+				cId: '2001',
 				indexId: ""
 				
 			}
@@ -118,7 +118,7 @@
 			cityId() {
 				this.cId = this.$store.state.cityId
 				console.log(this.cId)
-				location.href = "#/hotlist/" + this.cId
+				location.href = "#/clockhotel/" + this.$store.state.cityId
 			},
 			indexCityId() {
 				this.indexId = this.$store.state.indexCityId
