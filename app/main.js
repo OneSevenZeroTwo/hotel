@@ -139,9 +139,9 @@ var store = new Vuex.Store({
 		//列表页数据开始
 		listFilterParams:{
 			//区域类型
-			areatype:"",
+			areatype:"5",
 			//区域sn
-			areaid:"",
+			areaid:"699010_5",
 			// 城市id
 			cityId:"2001",
 			// 品牌
@@ -297,33 +297,58 @@ var store = new Vuex.Store({
 					cityId: state.listFilterParams.cityId,
 					// 分页
 					page:state.listFilterParams.page++,
-					// 最低价
-					sortmethod:state.listFilterParams.sortmethod,
-					// 最高价
-					sortdirection:state.listFilterParams.sortdirection,
+					
 					// 是否经过筛选得出数据
 					datafrom:state.listFilterParams.datafrom,
-					// 酒店品牌对应的sn，用逗号隔开。
-					hotelbrandids:state.listFilterParams.hotelbrandids,
+					
 					// 入住时间
 					indate:state.listFilterParams.indate,
 					// 离开时间
 					outdate:state.listFilterParams.outdate,
+					
+					
+					//filterOne
+					// 酒店品牌对应的sn，用逗号隔开。
+					hotelbrandids:state.listFilterParams.hotelbrandids,
+					personofroom:state.listFilterParams.personofroom,
+					facilityIds:state.listFilterParams.facilityIds,
+					themeIds:state.listFilterParams.themeIds,
+					paytype:state.listFilterParams.paytype,
+					saletype:state.listFilterParams.saletype,
+
+					
+					//filterTwo
+					areatype:state.listFilterParams.areatype,
+					areaid:state.listFilterParams.areaid,
+					
+										
+					//filterThree
 					// 最低价
 					lowprice:state.listFilterParams.lowprice,
 					// 最高价
 					highprice:state.listFilterParams.highprice,
-					//
-					areatype:state.listFilterParams.areatype,
-					areaid:state.listFilterParams.areaid,
+					
+					
+					//filterFour
+					// 最低价
+					sortmethod:state.listFilterParams.sortmethod,
+					// 最高价
+					sortdirection:state.listFilterParams.sortdirection,
+					
+					
 				},
 				success:function(res){
 					console.log(res)
 					state.cityName = res.hotelListUrlParameter.city.cityEntity.cityName;
 					if(state.listFilterParams.srcollResh){
-						state.listFilterParams.hotellist=state.listFilterParams.hotellist.concat(res.hotelList) 	
+						state.listFilterParams.hotellist=state.listFilterParams.hotellist.concat(res.hotelList)
+
 					}else{
 						state.listFilterParams.hotellist = res.hotelList
+					}
+					//默认值
+					if(state.listFilterParams.hotellist.length==0){
+						state.listFilterParams.hotellist = res.recommendHotelList
 					}
 					
 					state.slideselector = false;
