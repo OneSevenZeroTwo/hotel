@@ -81,6 +81,7 @@
 				var map = new BMap.Map("allmap");
 				var point = new BMap.Point(116.331398, 39.897445);
 				map.centerAndZoom(point, 12);
+				scope.listFilterParams.cityId = "2001"
 
 				function myFun(result) {
 					var cityName = result.name;
@@ -116,6 +117,14 @@
 
 			},
 			cityId() {
+				//临时修bug
+				scope.listFilterParams.facilityIds = "";
+				scope.listFilterParams.themeIds = "";
+				scope.listFilterParams.paytype = "";
+				scope.listFilterParams.saletype = "";
+				scope.listFilterParams.personofroom = "";
+				scope.listFilterParams.srcollResh = false;
+				
 				this.cId = this.$store.state.cityId
 				console.log(this.cId)
 				location.href = "#/clockhotel/" + this.$store.state.cityId

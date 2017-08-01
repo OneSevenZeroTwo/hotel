@@ -14,21 +14,21 @@ export default {
   data () {
     return {
       list: [{
-        image: 'img/008.jpg',
+        image: '//pic4.40017.cn/zzy/rimage/2016/10/05/04/F90Ro6.jpg',
         title: 'Breakfast',
         author: 'Myron',
         featured: true
       }, {
-        image: 'img/1.jpg',
+        image: 'http://img01.tobosu.net/zz/Case/zz2012081985878.jpg',
         title: 'Morning',
         author: 'mokayi',
         featured: true
       }, {
-        image: 'img/1.jpg',
+        image: 'http://pic4.40017.cn/zzy/rimage/2016/10/10/17/Vh7KrL.jpg',
         title: 'Vegetables',
         author: 'NUyyyyyyy'
       }, {
-        image: 'img/1.jpg',
+        image: 'http://pic4.40017.cn/hotel/2016/08/20/13/12PVG7.jpg',
         title: 'water',
         author: 'TDDyyyyyyy'
       }]

@@ -1,7 +1,7 @@
 <template>
 	<div :class="['list-pop-fliter','shaixuan','plugin-inited','page-plugin',{'page-on-center':tit},{'page-on-right':!tit},{'plugin-show':tit}]">
 		<header class="bar bar-nav flight-order-head">
-			<a @click="iconback()" class="icon pull-left icon-back" data-href="/clockhotel/search#inDate=2017-07-30"></a>
+			<a @click="iconback()" class="icon pull-left" data-href="/clockhotel/search#inDate=2017-07-30"></a>
 			<div class="title">筛选</div>
 		</header>
 		<div class="page-cont">

@@ -338,17 +338,17 @@ var store = new Vuex.Store({
 					
 				},
 				success:function(res){
-					console.log(res)
+					console.log(state.listFilterParams.cityId)
 					state.cityName = res.hotelListUrlParameter.city.cityEntity.cityName;
 					if(state.listFilterParams.srcollResh){
 						state.listFilterParams.hotellist=state.listFilterParams.hotellist.concat(res.hotelList)
-
+	
 					}else{
 						state.listFilterParams.hotellist = res.hotelList
-					}
-					//默认值
-					if(state.listFilterParams.hotellist.length==0){
-						state.listFilterParams.hotellist = res.recommendHotelList
+						//默认值
+						if(state.listFilterParams.hotellist.length==0){
+							state.listFilterParams.hotellist = res.recommendHotelList
+						}
 					}
 					
 					state.slideselector = false;

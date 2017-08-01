@@ -1,7 +1,9 @@
 <template>
 	<div data-blend="layer" data-blend-id="comments" id="uniq24" :class="['page', {'page-on-center':showCommom},{'page-on-right':!showCommom}]" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
 		<header class="bar bar-nav flight-order-head">
+
 			<a @click="todetail()" class="icon icon-left-nav pull-left "></a>
+
 			<a class="icon icon-phone pull-right" href="tel:4006661166"></a>
 			<h1 class="title">酒店点评</h1>
 		</header>
