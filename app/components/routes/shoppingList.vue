@@ -8,7 +8,7 @@
 		<div class="weui-panel weui-panel_access">
 			<div class="weui-panel__hd">尊敬的&nbsp;&nbsp;<span class="spans">{{info?info[0].username:''}}</span>&nbsp;&nbsp;用户，您目前的所有订单</div>
 			<div class="weui-panel__bd">
-				<a v-for="msg in info":id="msg.orderCode" class="aaa weui-media-box weui-media-box_appmsg" :value="msg.orderCode">
+				<a v-for="msg in info" :id="msg.orderCode" class="aaa weui-media-box weui-media-box_appmsg" :value="msg.orderCode">
 					<div class="weui-media-box__hd">
 						<img class="weui-media-box__thumb" :src="msg.img" alt="">
 					</div>
@@ -57,9 +57,9 @@
 			methods: {
 				//点击查找订单号对应的订单
 				orders(e) {
-					var orderCode = $(e.target).closest($('.weui-media-box__bd')).attr('id');
+					var orderCode = $(e.target).closest($('a')).attr('id');
 					//				console.log(orderCode)
-					console.log($(e.target).closest($('.weui-media-box__bd')).attr('id'))
+					console.log($(e.target).closest($('a')).attr('id'))
 					this.$ajax({
 						url: "http://localhost:3000/order",
 						params: {
@@ -73,7 +73,7 @@
 				},
 				//点删除按钮的时候时显示遮罩
 				del(e) {
-					var orderId = $(e.target).prev().attr('id');
+					var orderId = $(e.target).closest($('a')).attr('id');
 					console.log(orderId);
 					this.order = orderId;
 					this.$store.state.isShowMask = true;
@@ -95,32 +95,25 @@
 					var orderId = this.order;
 					console.log(this.order);
 					//删除页面节点
-					this.dis();
+//					this.dis();
+					var self = this;
 					$.each($('.aaa'),function(idx,item){
 						if($(item).attr('id')==orderId){
-							$(item).remove()
-						}
-					})
-//					var eleorderId =  $('.weui-media-box__bd').attr('id')
-//					console.log($('.weui-media-box__bd'))
-//					console.log(eleorderId)
-//					if(orderId==eleorderId){
-////						$('.weui-media-box__bd').closest('a').remove();
-//						console.log($('.weui-media-box__bd').closest('a'))
-//					}
-					
-					
-					//发送请求到后端删除数据
-					/*this.$ajax({
-						url: "http://localhost:3000/del",
-						params: {
-							orderId: orderId,
-						},
-					}).then(function(res) {
-						console.log(res);
-						//请求完成后隐藏遮罩
-						this.dis();
-					}.bind(this))*/
+							$(item).remove();
+							console.log($(item));
+							//发送请求到后端删除数据
+							self.$ajax({
+								url: "http://localhost:3000/del",
+								params: {
+									orderId: orderId,
+								},
+							}).then(function(res) {
+								console.log(res);
+								//请求完成后隐藏遮罩
+								self.dis();
+							})
+						};
+					});					
 				},
 			},
 			mounted() {

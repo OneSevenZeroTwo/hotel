@@ -404,7 +404,7 @@ app.get("/buyCar", function(req, res) {
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
-	//	console.log(order)
+		console.log(order)
 	var orderList = JSON.parse(order.orderList)
 	var person = JSON.parse(order.person)
 
