@@ -153,16 +153,16 @@ app.get('/indexFilter', function(req, res) {
 			var regSearchList = /searchList:'\[\{[\W\w]+areaList/
 			var regAreaList = /areaList\:\'\[\{[\W\w]+hotCityList/
 			var reghotCityList = /hotCityList\:\'[\w\W]+starList/
-			
+
 			console.log(result.match(regFilterList1))
 			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
-			data.city = result.match(regCity)?JSON.parse(result.match(regCity)[0].slice(6)):[]
-			data.FilterList = result.match(regFilterList1)?JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0]):[]
+			data.city = result.match(regCity) ? JSON.parse(result.match(regCity)[0].slice(6)) : []
+			data.FilterList = result.match(regFilterList1) ? JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0]) : []
 
-			data.searchList = result.match(regSearchList)?JSON.parse(result.match(regSearchList)[0].match(Filter2)[0]):[]
+			data.searchList = result.match(regSearchList) ? JSON.parse(result.match(regSearchList)[0].match(Filter2)[0]) : []
 
-			data.areaList = result.match(regAreaList)?JSON.parse(result.match(regAreaList)[0].match(Filter2)[0]):[]
-			data.hotCityList = result.match(reghotCityList)?JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0]):[]
+			data.areaList = result.match(regAreaList) ? JSON.parse(result.match(regAreaList)[0].match(Filter2)[0]) : []
+			data.hotCityList = result.match(reghotCityList) ? JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0]) : []
 
 			//返回前端
 			res.send(data)
@@ -223,12 +223,12 @@ app.get('/clockhotelcontent', function(req, res) {
 	var sortdirection = req.query.sortdirection
 
 	// 筛选组件的参数
-	var hotelbrandids = req.query.hotelbrandids
-	var personofroom = req.query.personofroom
-	var facilityIds = req.query.facilityIds
-	var themeIds = req.query.themeIds
-	var paytype = req.query.paytype
-	var saletype = req.query.saletype
+	var hotelbrandids = req.query.hotelbrandids? req.query.hotelbrandids:''
+	var personofroom = req.query.personofroom? req.query.personofroom:''
+	var facilityIds = req.query.facilityIds? req.query.facilityIds:''
+	var themeIds = req.query.themeIds? req.query.themeIds:''
+	var paytype = req.query.paytype? req.query.paytype:''
+	var saletype = req.query.saletype? req.query.saletype:''
 
 	// 是否通过筛选获得
 	var datafrom = req.query.datafrom
@@ -258,7 +258,8 @@ app.get('/clockhotelcontent', function(req, res) {
 
 	console.log(outdate)
 	console.log(indate)
-	http.get(`http://m.elong.com/clockhotel/api/list?indate=${indate}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&outdate=${outdate}&datafrom=${datafrom}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}&lowprice=${lowprice}&highprice=${highprice}&hotelbrandids=${hotelbrandids}&facilityIds=${facilityIds}&city=${city}&pageindex=${pageindex}`, function(content) {
+
+	http.get(`http://m.elong.com/clockhotel/api/list/?indate=${indate}&sourceType=1&datafrom=filter&pageindex=${pageindex}&city=${city}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&hotelbrandids=${hotelbrandids}&personofroom=${personofroom}&facilityIds=${facilityIds}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}`, function(content){
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -309,13 +310,13 @@ app.get('/listFilter', function(req, res) {
 			var reghotCityList = /hotCityList\:\'[\w\W]+starList/
 
 			//处理数据，写进data,通过JSON.parse转换为数组或对象，在前端数据才能返回数组和对象(即前端不需要JSON.parse转换)。
-			data.city = result.match(regCity)?JSON.parse(result.match(regCity)[0].slice(6)):[]
-			data.FilterList = result.match(regFilterList1)?JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0]):[]
+			data.city = result.match(regCity) ? JSON.parse(result.match(regCity)[0].slice(6)) : []
+			data.FilterList = result.match(regFilterList1) ? JSON.parse(result.match(regFilterList1)[0].match(Filter2)[0]) : []
 
-			data.searchList = result.match(regSearchList)?JSON.parse(result.match(regSearchList)[0].match(Filter2)[0]):[]
+			data.searchList = result.match(regSearchList) ? JSON.parse(result.match(regSearchList)[0].match(Filter2)[0]) : []
 
-			data.areaList = result.match(regAreaList)?JSON.parse(result.match(regAreaList)[0].match(Filter2)[0]):[]
-			data.hotCityList = result.match(reghotCityList)?JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0]):[]
+			data.areaList = result.match(regAreaList) ? JSON.parse(result.match(regAreaList)[0].match(Filter2)[0]) : []
+			data.hotCityList = result.match(reghotCityList) ? JSON.parse(result.match(reghotCityList)[0].match(Filter2)[0]) : []
 
 			//返回前端
 			res.send(data)
