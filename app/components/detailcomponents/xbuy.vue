@@ -68,7 +68,6 @@
 				return scope.showBuy
 			},
 			buyContent(){
-				console.log(scope.buyContent)
 				//获取这个组件的数据
 				return scope.buyContent
 			},
