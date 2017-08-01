@@ -31,7 +31,7 @@
 					<div class="bot-btn bar">
 						<ul>
 							<li id="filter-reset">重置</li>
-							<li class="on" id="starprice-submit">确定</li>
+							<li class="on" id="starprice-submit"  @click="changstop()">确定</li>
 						</ul>
 					</div>
 					<!--e-->
