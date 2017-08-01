@@ -8,7 +8,7 @@
 		
 		<div class="p-info   p-info-top  ">
 			<!--酒店名-->
-			<p class="name" style="margin-top: 50px;">{{roomInfoName}}</p>
+			<p class="name" style="margin-top: 50px;">{{hotelName}}</p>
 			<!--酒店房型-->
 			<p class="type">{{roomInfoName}}
 			</p>
@@ -31,7 +31,10 @@ export default{
 		},
 		productName(){
 			return scope.orderList.productName
-		}
+		},
+		hotelName(){
+			return scope.hotelInformation.hotelName
+		},
 	}
 }
 </script>

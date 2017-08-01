@@ -96,7 +96,7 @@
 				scope.orderList.hotelName = scope.hotelInformation.hotelName
 				//酒店id
 				scope.orderList.hotelId = this.hotelId
-				location.href="#/buyCar/"+this.hotelId
+				location.href="#/buyCar"
 			}
 		},
 		

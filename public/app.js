@@ -217,13 +217,30 @@ app.get('/clockhotelcontent', function(req, res) {
 	console.log(111111)
 	res.append('Access-Control-Allow-Origin', '*');
 	var city = req.query.cityId;
-	var page = req.query.page;
+	var pageindex = req.query.page;
 	var sortmethod = req.query.sortmethod
 	var sortdirection = req.query.sortdirection
+
+	// 筛选组件的参数
+	var hotelbrandids = req.query.hotelbrandids
+	var personofroom = req.query.personofroom
+	var facilityIds = req.query.facilityIds
+	var themeIds = req.query.themeIds
+	var paytype = req.query.paytype
+	var saletype = req.query.saletype
+
+	// 是否通过筛选获得
+	var datafrom = req.query.datafrom
+
+	// 价格
+	var lowprice = req.query.lowprice
+	var highprice = req.query.highprice
+
+	// 时间
+	var outdate = req.query.outdate
 	var indate = req.query.indate
-	console.log(city,page,sortmethod,sortdirection,indate)
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/list/?indate='+indate+'&sortmethod='+sortmethod+'&sortdirection='+sortdirection+'&pageindex='+page+'&city='+city, function(content) {
+	http.get(`http://m.elong.com/clockhotel/api/list?indate=${indate}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&outdate=${outdate}&datafrom=${datafrom}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}&lowprice=${lowprice}&highprice=${highprice}&hotelbrandids=${hotelbrandids}&facilityIds=${facilityIds}&city=${city}&pageindex=${pageindex}`, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {
@@ -318,7 +335,7 @@ app.get('/listFilter', function(req, res) {
 //detail部分..............................................tangqiuping
 //轮播图
 app.get('/getInfo', function(req, res) {
-	console.log('getInfo')
+//	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
@@ -340,13 +357,13 @@ app.get('/getInfo', function(req, res) {
 //详情页   房间类型
 app.get('/roomType', function(req, res) {
 	res.append('Access-Control-Allow-Origin', '*');
-	console.log(33333)
+//	console.log(33333)
 
 })
 
 
 app.get('/getCommon', function(req, res) {
-	console.log('getInfo')
+//	console.log('getInfo')
 	res.append('Access-Control-Allow-Origin', '*');
 	var hotelId = req.query.hotelId
 	//服务器代理
@@ -369,16 +386,76 @@ app.get('/getCommon', function(req, res) {
 
 //buyCar部分..............................................zhangjunhua
 app.get("/buyCar", function(req, res) {
-	console.log("购物车")
+
 	var connection = createConnection();
 	connection.connect();
 	res.append('Access-Control-Allow-Origin', '*');
 	var order = req.query
-	console.log(order.person.orderCode)
+//	console.log(order)
+	var orderList = JSON.parse(order.orderList)
+	var person = JSON.parse(order.person)
+
 	connection.query(`
-		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil)values('${order.person.orderCode}','${order.orderList.hotelName}','${order.orderList.roomInfoName}','${order.orderList.price}','${order.totalMoney}','${order.person.phonArea}','${order.person.name}','${order.person.phone}','${order.roomnum}','${order.orderList.starData}','${order.orderList.endData}','${order.person.saveUntil}')
-		`,function(err,data){
-			console.log(data)
+		INSERT into orders (orderCode,hotelName,roomType,price,total,phoneArea,person,phone,roomNum,starData,endData,saveUntil,username,img)values('${person.orderCode}','${orderList.hotelName}','${orderList.roomInfoName}','${orderList.price}','${order.totalMoney}','${person.phonArea}','${person.name}','${person.phone}','${order.roomnum}','${orderList.starData}','${orderList.endData}','${person.saveUntil}','${person.username}','${orderList.imgUrl}')
+		`,function(err,results,fields){
+			res.send("插入成功");
+			connection.end();
+		})
+})
+
+//shoppingList部分..............................................tangqiuping
+app.get("/shoppingList", function(req, res) {
+
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var username = req.query.username
+
+	connection.query(`
+		SELECT * from orders where username = '${username}'
+		`,function(err,results,fields){
+
+//			console.log('The solution is: ', results);
+			var obj = results
+
+			res.send(obj);
+			connection.end();
+		})
+})
+
+
+app.get("/order",function(req,res){
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var orderCode = req.query.orderCode
+	connection.query(`
+		SELECT * from orders where orderCode = '${orderCode}'
+		`,function(err,results,fields){
+
+			console.log('The solution is: ', results);
+			var obj = results
+
+			res.send(obj);
+			connection.end();
+		})
+})
+
+
+app.get("/del",function(req,res){
+	var connection = createConnection();
+	connection.connect();
+	res.append('Access-Control-Allow-Origin', '*');
+	var orderId = req.query.orderId
+	console.log(orderId)
+	connection.query(`
+		DELETE from orders where orderCode = '${orderId}'
+		`,function(err,results,fields){
+
+//			console.log('The solution is: ', results);
+			var obj = results
+			
+			res.send(obj);
 			connection.end();
 		})
 })

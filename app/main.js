@@ -51,6 +51,7 @@ import detail from "./components/routes/detail.vue"
 import xregister from "./components/routes/register.vue"
 import xlogin from "./components/routes/login.vue"
 import xbuyCar from "./components/routes/buyCar.vue"
+import shoppingList from "./components/routes/shoppingList.vue"
 import xmySelf from "./components/routes/mySelf.vue"
 //首页路由 chuanye
 import home from "./components/home.vue"
@@ -83,11 +84,15 @@ var routes = [{
 		component: xlogin
 	}, {
 		//路由名
-		path: '/buyCar/:id',
+		path: '/buyCar',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	},
-	{
+	},, {
+		//显示所有订单的页面
+		path: '/shoppingList',
+		//上面定义好的路由扔进来
+		component: shoppingList
+	}, {
 		//路由名
 		path: '/mySelf',
 		//上面定义好的路由扔进来
@@ -123,14 +128,51 @@ var store = new Vuex.Store({
 		hotelInformation:{
 			hotelName:'空客酒店AIRBUSHOTEL(广州白云机场人和店)',
 			hotelScore:'4.2',
-			starTime:'2017/7/13',
-			leaveTime:'2017/7/13',
+			starTime:'2017-7-13',
+			leaveTime:'2017-7-13',
 			hotelType:"舒适型"
 		},
 		
 		//主页传递去list组件的数据
 		listParams: {},
 		//列表页数据开始
+		listFilterParams:{
+			// 城市id
+			cityId:"0101",
+			// 品牌
+			hotelbrandids:"",
+			// 人数
+			personofroom:"",
+			// 设施
+			facilityIds:"",
+			// 主题
+			themeIds:"",
+			// 支付方式
+			paytype:"",
+			// 促销方式
+			saletype:"",
+			// 判断是否是下拉刷新
+			srcollResh:true,
+			hotellist:[],
+			// 是否经过筛选得出数据
+			datafrom:"filter",
+			// 页码
+			page:0,
+			// 最低价
+			lowprice:"",
+			// 最高价
+			highprice:"",
+			// 排序
+			sortmethod:"",
+			// 排序
+			sortdirection:"",
+			// 离开时间
+			outdate:"",
+			// 入住时间
+			indate:"",
+
+
+		},
 		roomtitle:false,
 		saletitle:false,
 		// 筛选组件
@@ -152,8 +194,14 @@ var store = new Vuex.Store({
 		//价格组建遮罩层
 		pricemasklayer:false,
 		cityId: '',
+		cityName:'',
+//		点击大图
+		indexImg:'',
+//		图片是否显示
+		isShowGallery:false,
 		//终点房内容数据数组
 		hotellist:[],
+
 		//列表页数据结束
 		imgUrl: null,
 		//		定位城市的初始值
@@ -169,7 +217,11 @@ var store = new Vuex.Store({
 		direction1: 'left',
 		direction2: 'right',
 		xian: false,
-
+//		隐藏侧边栏
+		cshow1:false,
+		cshow2:false,
+		cshow3:false,
+		
 		//		数据传送
 		indexArr: "",
 		news: "",
@@ -230,7 +282,48 @@ var store = new Vuex.Store({
 			console.log('mutations执行')
 			state.val = val
 		},
-		//
+		// list筛选请求函数
+		automaticrequest:function(state){
+			$.ajax({
+				url:"http://localhost:3000/clockhotelcontent",
+				data: {
+					// 城市id
+					cityId: state.listFilterParams.cityId,
+					// 分页
+					page:state.listFilterParams.page++,
+					// 最低价
+					sortmethod:state.listFilterParams.sortmethod,
+					// 最高价
+					sortdirection:state.listFilterParams.sortdirection,
+					// 是否经过筛选得出数据
+					datafrom:state.listFilterParams.datafrom,
+					// 酒店品牌对应的sn，用逗号隔开。
+					hotelbrandids:state.listFilterParams.hotelbrandids,
+					// 入住时间
+					indate:state.listFilterParams.indate,
+					// 离开时间
+					outdate:state.listFilterParams.outdate,
+					// 最低价
+					lowprice:state.listFilterParams.lowprice,
+					// 最高价
+					highprice:state.listFilterParams.highprice,
+				},
+				success:function(res){
+					console.log(res)
+					state.cityName = res.hotelListUrlParameter.city.cityEntity.cityName;
+					if(state.listFilterParams.srcollResh){
+						state.listFilterParams.hotellist=state.listFilterParams.hotellist.concat(res.hotelList) 	
+					}else{
+						state.listFilterParams.hotellist = res.hotelList
+					}
+					
+					state.slideselector = false;
+					state.advancedmasklayer = false;
+				},
+				dataType:"json"
+			})
+
+		},	
 
 		getHotelMess(state,hotelId){	
 			console.log(hotelId)
@@ -285,6 +378,7 @@ new Vue({
 	store,
 	created() {
 		window.scope = this.$store.state
+		window.$store = this.$store
 	}
 
 })
