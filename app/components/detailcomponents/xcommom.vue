@@ -47,7 +47,7 @@
 										
 									</div>
 									<div class="dt"><span class="type">{{n.roomTypeName}}</span><span class="user_type">{{n.travelType|travelType}}</span>
-										<div v-showDetail v-show="n.replys.length>0" class="comments_more comments_more_show"><span class="more_txt">查看酒店回复</span><span class="more_icons"></span></div>
+										<div v-showDetail v-show="n.replys.length>0" class="comments_more comments_more_show"><span  class="more_txt">查看酒店回复</span><span class="more_icons"></span></div>
 									</div>
 									<div class="comments_txt" style="display:none">
 										<p><span class="user_name">酒店回复：</span>{{n.replys.length>0?n.replys[0].content:""}}</p>
@@ -152,6 +152,9 @@
 			}
 		},
 		methods: {
+//			showRep(){
+//				$('comments_txt').css('display','block')
+//			},
 			todetail() {
 				scope.showCommom = !scope.showCommom
 			},
@@ -197,9 +200,8 @@
 		directives: {
 			showDetail: {
 				//用简写会跑2次，等于没有变化
-				update(ele, binding, vnode) {
+				bind(ele, binding, vnode) {
 					$(ele).click(function() {
-						
 						if($(ele).closest(".dt").nextAll(".comments_txt").css('display') == 'none') {
 							$(ele).closest(".dt").nextAll(".comments_txt").css('display', 'block')
 

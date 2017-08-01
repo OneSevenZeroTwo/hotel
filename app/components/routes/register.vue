@@ -82,7 +82,8 @@
 						com.setCookie('user', JSON.stringify(userMess))
 						this.$store.state.isLogin = true;
 						
-						location.href="#/mySelf"
+						location.href="#/index"
+						
 					} else {
 						this.$store.state.isLogin = false;
 					}

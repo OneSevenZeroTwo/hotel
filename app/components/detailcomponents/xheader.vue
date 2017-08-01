@@ -22,6 +22,7 @@
 			xback() {
 				
 				location.href = history.back()
+				scope.listFilterParams.srcollResh = true
 //				this.$store.state.cshow1 = false				
 //				this.$store.state.cshow2 = false				
 //				this.$store.state.cshow3 = false				
