@@ -104,9 +104,9 @@
 			this.submint();
 			var self = this
 			$('#bigbox').on("scroll", function(e) {
-				console.log(11111)
+//				console.log(11111)
 				if(this.offsetHeight + this.scrollTop >= this.scrollHeight) {
-					console.log("到底部了")
+//					console.log("到底部了")
 					self.submint();
 				}
 
