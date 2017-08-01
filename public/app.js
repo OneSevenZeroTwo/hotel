@@ -217,13 +217,30 @@ app.get('/clockhotelcontent', function(req, res) {
 	console.log(111111)
 	res.append('Access-Control-Allow-Origin', '*');
 	var city = req.query.cityId;
-	var page = req.query.page;
+	var pageindex = req.query.page;
 	var sortmethod = req.query.sortmethod
 	var sortdirection = req.query.sortdirection
+
+	// 筛选组件的参数
+	var hotelbrandids = req.query.hotelbrandids
+	var personofroom = req.query.personofroom
+	var facilityIds = req.query.facilityIds
+	var themeIds = req.query.themeIds
+	var paytype = req.query.paytype
+	var saletype = req.query.saletype
+
+	// 是否通过筛选获得
+	var datafrom = req.query.datafrom
+
+	// 价格
+	var lowprice = req.query.lowprice
+	var highprice = req.query.highprice
+
+	// 时间
+	var outdate = req.query.outdate
 	var indate = req.query.indate
-	console.log(city,page,sortmethod,sortdirection,indate)
 	//服务器代理
-	http.get('http://m.elong.com/clockhotel/api/list/?indate='+indate+'&sortmethod='+sortmethod+'&sortdirection='+sortdirection+'&pageindex='+page+'&city='+city, function(content) {
+	http.get(`http://m.elong.com/clockhotel/api/list?indate=${indate}&sortmethod=${sortmethod}&sortdirection=${sortdirection}&outdate=${outdate}&datafrom=${datafrom}&themeIds=${themeIds}&paytype=${paytype}&saletype=${saletype}&lowprice=${lowprice}&highprice=${highprice}&hotelbrandids=${hotelbrandids}&facilityIds=${facilityIds}&city=${city}&pageindex=${pageindex}`, function(content) {
 		var str = '';
 		//把流的形式转化为字符串
 		content.on('data', function(chunk) {

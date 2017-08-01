@@ -138,7 +138,7 @@ var store = new Vuex.Store({
 		//列表页数据开始
 		listFilterParams:{
 			// 城市id
-			cityId:"",
+			cityId:"0101",
 			// 品牌
 			hotelbrandids:"",
 			// 人数
@@ -378,6 +378,7 @@ new Vue({
 	store,
 	created() {
 		window.scope = this.$store.state
+		window.$store = this.$store
 	}
 
 })

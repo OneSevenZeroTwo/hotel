@@ -23,7 +23,8 @@
 				var reg = /\//g
 				scope.hotelInformation.starTime = this.datee[0].toLocaleDateString().replace(reg, "-")
 				scope.hotelInformation.leaveTime = this.datee[1].toLocaleDateString().replace(reg, "-")
-
+				scope.listFilterParams.indate = this.datee[0].toLocaleDateString().replace(reg, "-")
+				scope.listFilterParams.outdate = this.datee[1].toLocaleDateString().replace(reg, "-")
 			},
 
 		},

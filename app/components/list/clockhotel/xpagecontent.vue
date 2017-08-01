@@ -156,7 +156,7 @@
 				return scope.hotelInformation.starTime.slice(5)
 			},
 			hotelList:function(){
-				console.log(1111,scope.listFilterParams.hotellist)
+				console.log(scope.listFilterParams.hotellist)
 				return scope.listFilterParams.hotellist
 			}
 		},
@@ -204,6 +204,8 @@
 				// 价格高低参数。
 				scope.listFilterParams.sortmethod = str[0]
 				scope.listFilterParams.sortdirection = str[1]
+
+
 				// 点击时清空列表数组hotellist
 				scope.listFilterParams.hotellist = []
 				scope.listFilterParams.srcollResh=false

@@ -199,6 +199,7 @@
 			botbtning:{
 				bind(ele){
 					$(ele).find('#filter-submit').on('click',function(){
+					console.log(this)
 						console.log(68)
 						var hotelbrandids = []
 						var personofroom = []
@@ -234,14 +235,20 @@
 						console.log(paytype.join(','))
 						console.log(personofroom.join(','))
 						console.log(saletype.join(','))
-						scope.hotelbrandids = hotelbrandids.join(',')
-						scope.personofroom = personofroom.join(',')
-						scope.facilityIds = facilityIds.join(',')
-						scope.themeIds = themeIds.join(',')
-						scope.paytype = paytype.join(',')
-						scope.saletype = saletype.join(',')
-
-					
+						scope.listFilterParams.hotelbrandids = hotelbrandids.join(',')
+						scope.listFilterParams.personofroom = personofroom.join(',')
+						scope.listFilterParams.facilityIds = facilityIds.join(',')
+						scope.listFilterParams.themeIds = themeIds.join(',')
+						scope.listFilterParams.paytype = paytype.join(',')
+						scope.listFilterParams.saletype = saletype.join(',')
+						console.log($store)
+						// 隐藏筛选框
+						scope.tit = false
+						// 筛选完重新请求数据。
+						scope.listFilterParams.hotellist = []
+						scope.listFilterParams.srcollResh=false
+						$store.commit('automaticrequest')
+						
 					})
 				}
 			}
