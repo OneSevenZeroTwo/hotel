@@ -83,7 +83,7 @@
 			leftfence: function() {
 //				console.log("aaa")
 				this.$ajax({
-					url: "http://localhost:3000/leftfence",
+					url: this.$store.state.base+"/hotel/api/gethomehotcitys/",
 				}).then(function(res) {
 					//					console.log(JSON.parse(res))
 					this.newArr = JSON.parse(res.data.hotCitys)
@@ -95,10 +95,7 @@
 				console.log("bbb")
 				
 				this.$ajax({
-					url: "http://localhost:3000/letterfence",
-					params:{
-						letter:letter
-					},
+					url: this.$store.state.base+"/hotel/api/gethotelcitysbyletter/?letter="+letter,
 				}).then(function(res) {
 					console.log(res)
 					this.Arrs = res.data
