@@ -80,7 +80,7 @@
 				this.isLoadMore = true
 
 				this.$ajax({
-					url: "http://localhost:3000/indexlist",
+					url:this.$store.state.base+"/clockhotel/api/list/",
 				}).then(function(res) {
 					console.log(res)
 					this.news = res.data.hotelList
