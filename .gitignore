@@ -3,5 +3,6 @@
 *.gz
 *.zip
 *.rar
-webpack.config.js
+
+
 

@@ -3,7 +3,7 @@
 		<section class="page-list-con">
 			<div class="list-main">
 				<ul class="hotel-list">
-					<li v-for="n in arr" class="hotel-item" data-url="http://m.elong.com/hotel/00101366/#indate=2017-07-26&amp;outdate=2017-07-27">
+					<li v-for="n in listContentArr" class="hotel-item" data-url="http://m.elong.com/hotel/00101366/#indate=2017-07-26&amp;outdate=2017-07-27">
 						<div class="pic"> <img :src="n.picUrl"> </div>
 						<div class="info">
 							<p class="name"> 
@@ -14,7 +14,7 @@
 								<span class="comt_no"><b></b>分</span> 
 								<span class="comt_nmb">{{n.totalCommentCount}}条点评</span> 
 							</p>
-							<p class="fac"> <span>经济型</span> </p>
+							<p class="fac"> <span>高档型</span> </p>
 							<p class="district"> <span class="d4">{{n.newRecallReason.content}}</span> </p>
 						</div>
 						<div class="right-wrap">
@@ -80,12 +80,17 @@
 			roomtitle:function(){
 				return this.$store.state.roomtitle
 			},
-			arr:function(){
-				return this.$store.state.arr
+			//zhang获取详情页中间部分数据
+			listContentArr:function(){
+				return this.$store.state.listContentArr
 			},
 		},
 		mounted:function(){
 			this.$refs.viewbox.addEventListener('scroll', this.menu)
-		}
+			
+			//zhang修改：
+			this.$store.commit('indexToList')
+		},
+
 	}
 </script>

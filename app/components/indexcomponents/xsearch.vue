@@ -127,7 +127,8 @@
 				
 				this.cId = this.$store.state.cityId
 				console.log(this.cId)
-				location.href = "#/clockhotel/" + this.$store.state.cityId
+//				location.href = "#/clockhotel/" + this.$store.state.cityId
+				location.href = "#/hotlist"
 			},
 			indexCityId() {
 				this.indexId = this.$store.state.indexCityId
