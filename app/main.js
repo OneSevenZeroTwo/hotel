@@ -86,7 +86,7 @@ var routes = [{
 		path: '/buyCar',
 		//上面定义好的路由扔进来
 		component: xbuyCar
-	},, {
+	}, , {
 		//显示所有订单的页面
 		path: '/shoppingList',
 		//上面定义好的路由扔进来
@@ -123,89 +123,109 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
-		base:"https://bird.ioliu.cn/v1?url=https://m.elong.com",
-		//index=>list=>detail=>buyCar
-		hotelInformation:{
-			cityId:'2001',
-			hotelName:'空客酒店AIRBUSHOTEL(广州白云机场人和店)',
-			hotelScore:'4.2',
-			starTime:'2017-08-13',
-			leaveTime:'2017-08-14',
-			hotelType:"舒适型"
+		base: "https://bird.ioliu.cn/v1?url=https://m.elong.com",
+		//主页传去list的搜索参数
+		trueListParams: {
+			//					城市id
+			city: 2001,
+			//					入住时间
+			indate: "",
+			outdate: "",
+			//酒店星级
+			starlevels: "",
+			//					酒店id ,隔开
+			hotelbrandids: "",
+			//地区
+			areaid:"",
+			areatype: "",
+			//					价格
+			highprice: "",
+			lowprice: "",
+			//					页码
+			pageindex: 0,
+
 		},
-		
+		//index=>list=>detail=>buyCar
+		hotelInformation: {
+			cityId: '2001',
+			hotelName: '空客酒店AIRBUSHOTEL(广州白云机场人和店)',
+			hotelScore: '4.2',
+			starTime: '2017-08-13',
+			leaveTime: '2017-08-14',
+			hotelType: "舒适型"
+		},
+
 		//主页传递去list组件的数据
 		listParams: {},
 		//列表页数据开始
-		listFilterParams:{
+		listFilterParams: {
 			//区域类型
-			areatype:"5",
+			areatype: "5",
 			//区域sn
-			areaid:"699010_5",
+			areaid: "699010_5",
 			// 城市id
-			cityId:"2001",
+			cityId: "2001",
 			// 品牌
-			hotelbrandids:"",
+			hotelbrandids: "",
 			// 人数
-			personofroom:"",
+			personofroom: "",
 			// 设施
-			facilityIds:"",
+			facilityIds: "",
 			// 主题
-			themeIds:"",
+			themeIds: "",
 			// 支付方式
-			paytype:"",
+			paytype: "",
 			// 促销方式
-			saletype:"",
+			saletype: "",
 			// 判断是否是下拉刷新
-			srcollResh:true,
-			hotellist:[],
+			srcollResh: true,
+			hotellist: [],
 			// 是否经过筛选得出数据
-			datafrom:"filter",
+			datafrom: "filter",
 			// 页码
-			page:0,
+			page: 0,
 			// 最低价
-			lowprice:"",
+			lowprice: "",
 			// 最高价
-			highprice:"",
+			highprice: "",
 			// 排序
-			sortmethod:"",
+			sortmethod: "",
 			// 排序
-			sortdirection:"",
+			sortdirection: "",
 			// 离开时间
-			outdate:"2017-08-03",
+			outdate: "2017-08-03",
 			// 入住时间
-			indate:"2017-08-02",
-
+			indate: "2017-08-02",
 
 		},
-		roomtitle:false,
-		saletitle:false,
+		roomtitle: false,
+		saletitle: false,
 		// 筛选组件
-		tit:false,
-		areabtn:false,
-		pricestarbtn:false,
-		defaultbtn:false,
-		arr:null,
-		kslist:[],
-		show:true,
+		tit: false,
+		areabtn: false,
+		pricestarbtn: false,
+		defaultbtn: false,
+		arr: null,
+		kslist: [],
+		show: true,
 		//遮罩层
-		masklayer:false,
+		masklayer: false,
 		// 钟点房排序组件
-		slideselector:false,
+		slideselector: false,
 		// 排序组件遮罩层
-		advancedmasklayer:false,
+		advancedmasklayer: false,
 		//钟点房价格组件
-		filtepricestar:false,
+		filtepricestar: false,
 		//价格组建遮罩层
-		pricemasklayer:false,
+		pricemasklayer: false,
 		cityId: '2001',
-		cityName:'',
-//		点击大图
-		indexImg:'',
-//		图片是否显示
-		isShowGallery:false,
+		cityName: '',
+		//		点击大图
+		indexImg: '',
+		//		图片是否显示
+		isShowGallery: false,
 		//终点房内容数据数组
-		hotellist:[],
+		hotellist: [],
 
 		//列表页数据结束
 		imgUrl: null,
@@ -222,19 +242,19 @@ var store = new Vuex.Store({
 		direction1: 'left',
 		direction2: 'right',
 		xian: false,
-//		隐藏侧边栏
-		cshow1:false,
-		cshow2:false,
-		cshow3:false,
-//		获取星级里的值
-		xing1:'',
-		xing2:'',
+		//		隐藏侧边栏
+		cshow1: false,
+		cshow2: false,
+		cshow3: false,
+		//		获取星级里的值
+		xing1: '',
+		xing2: '',
 		//		数据传送
 		indexArr: "",
 		news: "",
-		indexCityId:"2001",
-		times:'',
-		detailNews: null,		
+		indexCityId: "2001",
+		times: '',
+		detailNews: null,
 		//订单页
 		isShowMask: false,
 		//房间对应的住房人
@@ -260,15 +280,15 @@ var store = new Vuex.Store({
 		//detail的common组件显示隐藏
 
 		//detail的facilties组件显示隐藏
-		showCommom:false,
-		showFac:false,
+		showCommom: false,
+		showFac: false,
 
 		//detail的buy组件的房间类型，例如商务标间
-		roomInfoName: '',	
+		roomInfoName: '',
 		//detail的buy组件下单传去购物车的信息
-		orderList:{},
+		orderList: {},
 		//详情页初始数据(轮播图，初始评论)
-		getHotelMess:"",
+		getHotelMess: "",
 
 	},
 	getters: {
@@ -286,90 +306,85 @@ var store = new Vuex.Store({
 		},
 		searchVal(state, val) {
 			console.log(window.Vue)
-			console.log('mutations执行',this)
+			console.log('mutations执行', this)
 			state.val = val
 		},
 		// list筛选请求函数
-		automaticrequest:function(state){
+		automaticrequest: function(state) {
 
 			console.log(this)
 			$.ajax({
-				url:"http://localhost:3000/clockhotelcontent",
+				url: "http://localhost:3000/clockhotelcontent",
 				data: {
 					// 城市id
 					cityId: state.listFilterParams.cityId,
 					// 分页
-					page:state.listFilterParams.page++,
-					
+					page: state.listFilterParams.page++,
+
 					// 是否经过筛选得出数据
-					datafrom:state.listFilterParams.datafrom,
-					
+					datafrom: state.listFilterParams.datafrom,
+
 					// 入住时间
-					indate:state.listFilterParams.indate,
+					indate: state.listFilterParams.indate,
 					// 离开时间
-					outdate:state.listFilterParams.outdate,
-					
-					
+					outdate: state.listFilterParams.outdate,
+
 					//filterOne
 					// 酒店品牌对应的sn，用逗号隔开。
-					hotelbrandids:state.listFilterParams.hotelbrandids,
-					personofroom:state.listFilterParams.personofroom,
-					facilityIds:state.listFilterParams.facilityIds,
-					themeIds:state.listFilterParams.themeIds,
-					paytype:state.listFilterParams.paytype,
-					saletype:state.listFilterParams.saletype,
+					hotelbrandids: state.listFilterParams.hotelbrandids,
+					personofroom: state.listFilterParams.personofroom,
+					facilityIds: state.listFilterParams.facilityIds,
+					themeIds: state.listFilterParams.themeIds,
+					paytype: state.listFilterParams.paytype,
+					saletype: state.listFilterParams.saletype,
 
-					
 					//filterTwo
-					areatype:state.listFilterParams.areatype,
-					areaid:state.listFilterParams.areaid,
-					
-										
+					areatype: state.listFilterParams.areatype,
+					areaid: state.listFilterParams.areaid,
+
 					//filterThree
 					// 最低价
-					lowprice:state.listFilterParams.lowprice,
+					lowprice: state.listFilterParams.lowprice,
 					// 最高价
-					highprice:state.listFilterParams.highprice,
-					
-					
+					highprice: state.listFilterParams.highprice,
+
 					//filterFour
 					// 最低价
-					sortmethod:state.listFilterParams.sortmethod,
+					sortmethod: state.listFilterParams.sortmethod,
 					// 最高价
-					sortdirection:state.listFilterParams.sortdirection,
-					
-					
+					sortdirection: state.listFilterParams.sortdirection,
+
 				},
-				success:function(res){
+				success: function(res) {
 					console.log(state.listFilterParams.cityId)
 					state.cityName = res.hotelListUrlParameter.city.cityEntity.cityName;
-					if(state.listFilterParams.srcollResh){
-						state.listFilterParams.hotellist=state.listFilterParams.hotellist.concat(res.hotelList)
-	
-					}else{
+					if(state.listFilterParams.srcollResh) {
+						state.listFilterParams.hotellist = state.listFilterParams.hotellist.concat(res.hotelList)
+
+					} else {
 						state.listFilterParams.hotellist = res.hotelList
 						//默认值
-						if(state.listFilterParams.hotellist.length==0){
+						if(state.listFilterParams.hotellist.length == 0) {
 							state.listFilterParams.hotellist = res.recommendHotelList
 						}
 					}
-					
+
 					state.slideselector = false;
 					state.advancedmasklayer = false;
 				},
-				dataType:"json"
+				dataType: "json"
 			})
 
-		},	
+		},
 
-		getHotelMess(state,hotelId){	
+		getHotelMess(state, hotelId) {
 			console.log(hotelId)
 			$.ajax({
-				url:"http://localhost:3000/getInfo",
-				dataType:"json",
-				data:{
-					hotelId:hotelId
-								
+				url: "http://localhost:3000/getInfo",
+				dataType: "json",
+				data: {
+					hotelId: hotelId
+
 				},
 				success: function(res) {
 					console.log(res)
@@ -395,9 +410,9 @@ var store = new Vuex.Store({
 			console.log('actions执行')
 			context.commit('searchVal', val)
 
-		}, 
-		getHotelMess(context,hotelId){
-			context.commit('getHotelMess',hotelId)
+		},
+		getHotelMess(context, hotelId) {
+			context.commit('getHotelMess', hotelId)
 
 		}
 	}
