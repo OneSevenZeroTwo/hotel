@@ -123,6 +123,7 @@ var router = new VueRouter({
 //新建一个状态管理......................................................
 var store = new Vuex.Store({
 	state: {
+		base:"https://bird.ioliu.cn/v1?url=https://m.elong.com",
 		//index=>list=>detail=>buyCar
 		hotelInformation:{
 			cityId:'2001',
