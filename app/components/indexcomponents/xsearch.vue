@@ -134,13 +134,10 @@
 				console.log(this.indexId)
 
 				this.$ajax({
-					url: "http://localhost:3000/indexFilter",
-					params: {
-						cityId: this.indexId
-					},
+					url: this.$store.state.base+"/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city="+this.indexId,
 				}).then(function(res) {
-					//					console.log(res)
-					this.$store.state.indexArr = res.data.searchList
+									console.log(res)
+					this.$store.state.indexArr =JSON.parse(res.data.simpleFilterInfos) 
 				}.bind(this))
 			}
 		},

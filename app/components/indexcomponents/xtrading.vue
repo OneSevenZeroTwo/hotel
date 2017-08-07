@@ -79,7 +79,7 @@
 				return this.$store.state.direction1;
 			},
 			indexArr() {
-				console.log(this.$store.state.indexArr)
+//				console.log(this.$store.state.indexArr)
 				return this.$store.state.indexArr;
 
 			}
