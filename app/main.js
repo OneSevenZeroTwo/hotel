@@ -99,7 +99,7 @@ var routes = [{
 	},
 	//列表页开始
 	{
-		path: '/hotlist/:id',
+		path: '/hotlist',
 		component: hotlist
 	},
 	{
@@ -136,7 +136,7 @@ var store = new Vuex.Store({
 			//					酒店id ,隔开
 			hotelbrandids: "",
 			//地区
-			areaid:"",
+			areaid: "",
 			areatype: "",
 			//					价格
 			highprice: "",
@@ -205,7 +205,7 @@ var store = new Vuex.Store({
 		areabtn: false,
 		pricestarbtn: false,
 		defaultbtn: false,
-		arr: null,
+		listContentArr: [],
 		kslist: [],
 		show: true,
 		//遮罩层
@@ -298,6 +298,36 @@ var store = new Vuex.Store({
 		}
 	},
 	mutations: {
+		indexToList(state) {
+			console.log("list请求")
+			$.ajax({
+				url: scope.base + "/hotel/api/list",
+				data: {
+					//					城市id
+					city: 2001,
+					//					入住时间
+					indate: "",
+					outdate: "",
+					//酒店星级
+					starlevels: "",
+					//					酒店id ,隔开
+					hotelbrandids: "n167033088745261_7468709921099261_53",
+					//地区
+					areaid: "",
+					areatype: "",
+					//					价格
+					highprice: "",
+					lowprice: "",
+					//					页码
+					pageindex: 0,
+
+				},
+				success: function(res) {
+					
+					state.listContentArr = res.hotelList
+				}
+			})
+		},
 		settitle(state, data) {
 			state.title = data
 		},

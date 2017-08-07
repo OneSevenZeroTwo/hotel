@@ -49,24 +49,24 @@
 			}
 		},
 		methods:{
-			// 一进页面获取数据
-			automaticrequest:function(){
-				this.$ajax({
-					url:"http://localhost:3000/list",
-					params: {
-						// tab: this.message,
-						// limit: 10,
-						page: this.page++
-					}
-				}).then(function(res) {
-					console.log(res)
-					this.$store.state.kslist = res.data.newFastFilter
-					this.$store.state.arr = JSON.parse(res.request.responseText).hotelList
-					console.log(this.$store.state.arr)
-					// this.isLoading = true
-				}.bind(this))
-
-			},
+			// zhang修改： 注释    一进页面获取数据  
+//			automaticrequest:function(){
+//				this.$ajax({
+//					url:"http://localhost:3000/list",
+//					params: {
+//						// tab: this.message,
+//						// limit: 10,
+//						page: this.page++
+//					}
+//				}).then(function(res) {
+//					console.log(res)
+//					this.$store.state.kslist = res.data.newFastFilter
+//					this.$store.state.arr = JSON.parse(res.request.responseText).hotelList
+//					console.log(this.$store.state.arr)
+//					// this.isLoading = true
+//				}.bind(this))
+//
+//			},
 			// 点击房型筛选
 			roomtitleclick:function(ele){
 				if(this.$store.state.roomtitle){
@@ -97,7 +97,7 @@
 		},
 		mounted:function(){
 			// console.log(this)
-			this.automaticrequest()
+//			this.automaticrequest()
 			// this.roomtitleclick()
 		}
 	}
