@@ -48,9 +48,10 @@
 		},
 		methods: {
 			loadMore: function() {
+				var abc ="https://bird.ioliu.cn/v1?url=http://m.elong.com"
 				console.log("aaa")
 				this.$ajax({
-					url: "http://localhost:3000/slideshow",
+					url: abc+"/hotel/api/gethotelbanners/?_rt=1500963243924",
 				}).then(function(res) {
 					console.log(res)
 					this.arr = res.data.advList

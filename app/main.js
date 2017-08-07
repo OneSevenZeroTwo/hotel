@@ -1,4 +1,3 @@
-import "../public/css/font_mdye6150zyyzaor/iconfont.css"
 import "../public/css/animate.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
@@ -285,11 +284,14 @@ var store = new Vuex.Store({
 			state.detailNews = data
 		},
 		searchVal(state, val) {
-			console.log('mutations执行')
+			console.log(window.Vue)
+			console.log('mutations执行',this)
 			state.val = val
 		},
 		// list筛选请求函数
 		automaticrequest:function(state){
+
+			console.log(this)
 			$.ajax({
 				url:"http://localhost:3000/clockhotelcontent",
 				data: {

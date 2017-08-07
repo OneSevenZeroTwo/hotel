@@ -170,6 +170,7 @@
 			var self = this
 			this.$refs.viewbox.addEventListener('scroll', this.menu)
 			self.$store.commit('automaticrequest')
+			this.$store.commit("searchVal")
 			var pagecontent = {
 				init:function(){
 					

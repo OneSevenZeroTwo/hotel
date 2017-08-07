@@ -18,13 +18,12 @@
 						</ul>
 					</div>
 					<!-- 有边filter -->
-					<div style="background: white;overflow: auto !important;" class="filter-con page-content" >
+					<div style="background: white;overflow: auto !important;" class="filter-con page-content">
 						<!-- 品牌 -->
 						<ul v-show="leftIdx==0" class="filter-list-check" style="padding-top: 0px;">
-							<li v-oning  v-for="(items,rightIdx) in listfliterresult[0].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="0">{{items.nameCn}}<i class="checkbox"></i>
+							<li v-oning v-for="(items,rightIdx) in listfliterresult[0].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="0">{{items.nameCn}}<i class="checkbox"></i>
 							</li>
 						</ul>
-
 
 						<!-- 人数 -->
 						<ul v-show="leftIdx==1" class="filter-list-radio" style="padding-top: 0px;">
@@ -34,26 +33,25 @@
 
 						<!-- 设施 -->
 						<ul v-show="leftIdx==2" class="filter-list-check" style="padding-top: 0px;">
-							<li v-oning  v-for="(items,rightIdx) in listfliterresult[2].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="2">{{items.nameCn}}<i class="checkbox"></i>
+							<li v-oning v-for="(items,rightIdx) in listfliterresult[2].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="2">{{items.nameCn}}<i class="checkbox"></i>
 							</li>
 						</ul>
 
-
 						<!-- 主题-->
 						<ul v-show="leftIdx==3" class="filter-list-check" style="padding-top: 0px;">
-							<li v-oning  v-for="(items,rightIdx) in listfliterresult[3].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="3">{{items.nameCn}}<i class="checkbox"></i>
+							<li v-oning v-for="(items,rightIdx) in listfliterresult[3].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="3">{{items.nameCn}}<i class="checkbox"></i>
 							</li>
 						</ul>
 
 						<!-- "支付方式" -->
 						<ul v-show="leftIdx==4" class="filter-list-check" style="padding-top: 0px;">
-							<li v-oning  v-for="(items,rightIdx) in listfliterresult[4].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="4">{{items.nameCn}}<i class="checkbox"></i>
+							<li v-oning v-for="(items,rightIdx) in listfliterresult[4].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="4">{{items.nameCn}}<i class="checkbox"></i>
 							</li>
 						</ul>
-	
+
 						<!-- "促销方式" -->
 						<ul v-show="leftIdx==5" class="filter-list-check" style="padding-top: 0px;">
-							<li v-oning  v-for="(items,rightIdx) in listfliterresult[5].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="5">{{items.nameCn}}<i class="checkbox"></i>
+							<li v-oning v-for="(items,rightIdx) in listfliterresult[5].subFilterInfoEntities" :class="['rightNav',{'on':rightIdx==0},{'one':rightIdx==0}]" :data-id="items.sn" :data-type="items.typeId" data-ulIdx="5">{{items.nameCn}}<i class="checkbox"></i>
 							</li>
 						</ul>
 					</div>
@@ -71,26 +69,42 @@
 
 <script>
 	export default {
-		data:function(){
+		data: function() {
 			return {
-				listfliterresult:[{subFilterInfoEntities:""},{subFilterInfoEntities:""},{subFilterInfoEntities:""},{subFilterInfoEntities:""},{subFilterInfoEntities:""},{subFilterInfoEntities:""}],
-				leftIdx:0,
-				
+				listfliterresult: [{
+					subFilterInfoEntities: ""
+				}, {
+					subFilterInfoEntities: ""
+				}, {
+					subFilterInfoEntities: ""
+				}, {
+					subFilterInfoEntities: ""
+				}, {
+					subFilterInfoEntities: ""
+				}, {
+					subFilterInfoEntities: ""
+				}],
+				leftIdx: 0,
+
 			}
 		},
-		methods:{
-			iconback:function(){
+		methods: {
+			iconback: function() {
 				this.$store.state.tit = false
 				// console.log(666)
 			},
 			//获取筛选数据
-			listfliter:function(){
+			listfliter: function() {
 				this.$ajax({
-					url:"http://localhost:3000/listFilter",
-					params:{
-						cityId:scope.hotelInformation.cityId,
+					url: "http://localhost:3000/listFilter",
+					params: {
+						cityId: scope.hotelInformation.cityId,
 					}
-				}).then(function(res){
+				}).then(function(res) {
+					this.$nextTick(function() {
+						console.log($('li'))
+						//				console.log("ajax之后,有$nextTick的情况", $("li"));
+					})
 					console.log(res)
 					console.log(res.data.FilterList)
 					this.listfliterresult = res.data.FilterList
@@ -98,25 +112,21 @@
 				}.bind(this))
 			},
 
-
 			// 点击筛选切换
-			filterList:function(index){
-				this.leftIdx=index
+			filterList: function(index) {
+				this.leftIdx = index
 				// console.log(this.leftIdx)
 			}
 
-
-
-
 		},
-		computed:{
-			tit:function(){
+		computed: {
+			tit: function() {
 				return this.$store.state.tit
 			},
 		},
-		mounted:function(){
+		mounted: function() {
 			this.listfliter()
-
+			//			console.log($('.rightNav'))
 			// 这是还没有生成li节点
 			// var listfliter = {
 			// 	init:function(){
@@ -142,25 +152,25 @@
 			// }
 			// listfliter.init()
 		},
-	
-		directives:{
+
+		directives: {
 			// 右边ul点击高亮
-			oning:{
-				bind(ele){					
-					$(ele).click(function(){
+			oning: {
+				bind(ele, binding) {
+					$(ele).click(function() {
 						$(ele).toggleClass("on")
 
-						if($(ele).text() == '不限'){
+						if($(ele).text() == '不限') {
 							console.log($(ele))
 							$(this).addClass('on').siblings().removeClass('on')
-						}else{
-							if(!$(ele).parent().hasClass('filter-list-radio')){
+						} else {
+							if(!$(ele).parent().hasClass('filter-list-radio')) {
 								console.log(66)
-								if(!$(ele).first().siblings().hasClass('on')){
+								if(!$(ele).first().siblings().hasClass('on')) {
 									console.log(77)
 									$(ele).first().addClass('on')
 								}
-							}else{
+							} else {
 								console.log(888)
 								$(this).siblings().removeClass('on')
 							}
@@ -171,35 +181,35 @@
 						// }
 
 						var idx = $(ele).attr('data-ulIdx')
-						var ischecking =false
-						$.each($(ele).parent().children('li'),function(i,items){
-							if(i==0){
+						var ischecking = false
+						$.each($(ele).parent().children('li'), function(i, items) {
+							if(i == 0) {
 								return true
 							}
-							if($(items).is('.on')){								
+							if($(items).is('.on')) {
 								$(".one").removeClass('on')
 								ischecking = true
 							}
 						})
-						if(ischecking){
+						if(ischecking) {
 							$(".leftNav").eq(idx).addClass("have")
-						}else{
+						} else {
 							$(".leftNav").eq(idx).removeClass("on have")
 						}
-					})											
+					})
 				}
 			},
-			lefting:{
-				bind(ele){			
-					$(ele).click(function(){						
+			lefting: {
+				bind(ele) {
+					$(ele).click(function() {
 						$(this).addClass("on").siblings().removeClass('on')
-					})											
+					})
 				}
 			},
-			botbtning:{
-				bind(ele){
-					$(ele).find('#filter-submit').on('click',function(){
-					console.log(this)
+			botbtning: {
+				bind(ele) {
+					$(ele).find('#filter-submit').on('click', function() {
+						console.log(this)
 						console.log(68)
 						var hotelbrandids = []
 						var personofroom = []
@@ -207,26 +217,26 @@
 						var themeIds = []
 						var paytype = []
 						var saletype = []
-						$.each($('.on'),function(idx,items){
-							switch ($(items).attr("data-type")){
+						$.each($('.on'), function(idx, items) {
+							switch($(items).attr("data-type")) {
 								case '3':
 									hotelbrandids.push($(items).attr("data-id"))
-								break;
+									break;
 								case '11':
 									personofroom.push($(items).attr("data-id"))
-								break;
+									break;
 								case '1011':
 									facilityIds.push($(items).attr("data-id"))
-								break;
+									break;
 								case '1012':
 									themeIds.push($(items).attr("data-id"))
-								break;
+									break;
 								case '1007':
 									paytype.push($(items).attr("data-id"))
-								break;
+									break;
 								case '1013':
 									saletype.push($(items).attr("data-id"))
-								break;	
+									break;
 							}
 						})
 						console.log(hotelbrandids.join(','))
@@ -247,9 +257,9 @@
 						// 筛选完重新请求数据。
 						scope.listFilterParams.hotellist = []
 						scope.listFilterParams.page = 0
-						scope.listFilterParams.srcollResh=false
+						scope.listFilterParams.srcollResh = false
 						$store.commit('automaticrequest')
-						
+
 					})
 				}
 			}
