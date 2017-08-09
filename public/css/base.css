@@ -97,5 +97,8 @@ span.ivu-date-picker-cells-cell {
 }
 
 .filter-sp .sp-title .left,.filter-sp .sp-title .right{
-	
+	position: rel; 
+     padding: 12px; 
+     left: 0; 
+     top: 0; 
 }
