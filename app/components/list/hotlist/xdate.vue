@@ -1,5 +1,5 @@
 <template>
-	<div id='dataBox'>
+	<div id='dataBox2'>
 		<Row>
 			<Col span="12">
 			<Date-picker format="yyyy-MM-dd" :confirm="true" v-model="datee" @on-ok="getTime()" placement="bottom-start" type="daterange" placeholder="选择日期" style="width: 200px"></Date-picker>
@@ -48,5 +48,11 @@
 </script>
 
 <style scoped>
-
+	#dataBox2{
+		position: absolute;
+		top: 52px;
+		left: 9px;
+		z-index: 1000000;
+	}
+	
 </style>

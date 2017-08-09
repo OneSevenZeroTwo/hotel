@@ -4,7 +4,7 @@
         <a class="icon icon-nearby pull-right tjclick" ></a>
         <a class="icon icon-collectlist  collect pull-right tjclick" href="//m.elong.com/my/hotel/favorites/" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
         <h1 class="title">
-                <span class="city-area">
+                <span class="city-area" @click="changetion()">
                     <span class="city">
                         北京市
                     </span>
@@ -25,7 +25,12 @@
         methods:{
             back(){
             	history.back()
-            }
+            },
+            changetion() {
+				this.$store.state.direction = 'right'
+
+			},
+
         }
     }
 </script>

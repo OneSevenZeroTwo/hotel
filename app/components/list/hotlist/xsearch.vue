@@ -2,11 +2,11 @@
 	<div style="position: fixed;" :class="['search-field',{'showout':show},{'hidein':!show}]">
 		<div class="header-search">
 			<div class="sea-date">
-				<p>入<span>店</span>：<b class="indate" data-value="2017-07-26">07-26</b></p>
-				<p>离<span>店</span>：<b class="outdate" data-value="2017-07-27">07-27</b></p>
-				<span class="total">1晚<i></i></span>
+				<p>入<span>店</span>：<b class="indate">{{dateIndate}}</b></p>
+				<p>离<span>店</span>：<b class="outdate">{{dateOutdate}}</b></p>
+				<span class="total">{{day+"晚"}}<i></i></span>
 			</div>
-			<div class="sea-box tjclick" data-tj="{&quot;cspot&quot;:&quot;searchbar&quot;}">
+			<div class="sea-box tjclick">
 				<label class="sea-mask"></label>
 				<i></i>
 				<input type="input" value="" placeholder="酒店名称/位置不限" readonly="readonly">
@@ -15,8 +15,8 @@
 		<div class="quick-search-box">
 			<div class="quick-search">
 				<div class="kslist">
-					<div @click="roomtitleclick()" class="commons room-title tjclick" data-tj="{&quot;cspot&quot;:&quot;roomtypeFilter&quot;}">{{kslist[0]?kslist[0].keyWord_cn:''}}</div>
-					<div @click="saletitleclick()" class="commons sale-title tjclick unon" data-tj="{&quot;cspot&quot;:&quot;specialOffers&quot;}">{{kslist[1]?kslist[1].keyWord_cn:''}}</div>
+					<div @click="roomtitleclick()" class="commons room-title tjclick">{{kslist[0]?kslist[0].keyWord_cn:''}}</div>
+					<div @click="saletitleclick()" class="commons sale-title tjclick unon">{{kslist[1]?kslist[1].keyWord_cn:''}}</div>
 				</div>
 				<ul class="quick-search-list">
 					<li @click="newfilter($event)" class="quick-search-item tjclick " data-id="100000002_1100_30_到店付">到店付</li>
@@ -37,10 +37,25 @@
 				page:0
 			}
 		},
-		components:{
-			
-		},
 		computed:{
+			//处理入住时间格式，写进模版中
+			dateIndate(){
+				return scope.trueListParams.indate.slice(5)
+			},
+			//处理离开时间格式，写进模版中
+			dateOutdate(){
+				return scope.trueListParams.outdate.slice(5)
+			},
+			//时间差，
+			day(){
+				var a = scope.trueListParams.indate.slice(-2)
+				var b = scope.trueListParams.outdate.slice(-2)
+				var c = Number(b)-Number(a)
+				if(c<0){
+					c=c+30
+				}
+				return c
+			},
 			kslist:function(){
 				return this.$store.state.kslist
 			},
@@ -51,12 +66,13 @@
 		methods:{
 			//点击头部search
 			newfilter(e){
-				scope.trueListParams.newfastfilter = e.target.getAttribute("data-id")
-				this.$store.dispatch("indexToList")
+				//原生
 //				console.log(scope.trueListParams.newfastfilter)
 //				console.log(e.target.dataset.id	)
+				scope.trueListParams.newfastfilter = e.target.getAttribute("data-id")
+				this.$store.dispatch("indexToList")
 			},
-			// 点击房型筛选
+						// 点击房型筛选
 			roomtitleclick:function(ele){
 				if(this.$store.state.roomtitle){
 
@@ -79,6 +95,7 @@
 					console.log(888)
 				}
 			},
+			
 			//点击切换到店付，免费取消
 			quicksearchlist:function(){
 				

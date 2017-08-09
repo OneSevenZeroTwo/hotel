@@ -4,6 +4,7 @@
 		<xheader></xheader>
 		<xsearch></xsearch>
 		<xpagecontent></xpagecontent>
+		<xdate></xdate>
 		<xfooter></xfooter>
 		<!-- // 优惠组件 -->
 		<xdiscount></xdiscount>
@@ -47,6 +48,8 @@
 	import xweixinmask from "../hotlist/xweixinmask.vue";
 	//价格遮罩层
 	import xmasklayer from "../hotlist/xmasklayer.vue";
+	//时间插件
+	import xdate from "../hotlist/xdate.vue";
 	export default {
 		data: function() {
 			return {
@@ -65,7 +68,8 @@
 			xpricestar,
 			xrank,
 			xweixinmask,
-			xmasklayer
+			xmasklayer,
+			xdate,
 		},
 		methods: {
 
