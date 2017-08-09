@@ -145,6 +145,11 @@ var store = new Vuex.Store({
 			lowprice: "",
 			//					页码
 			pageindex: 0,
+			// 排序
+			sortmethod: "",			
+			sortdirection: "",
+			//头部筛选
+			newfastfilter:"",
 			
 
 		},
@@ -152,6 +157,10 @@ var store = new Vuex.Store({
 		scroll:true,
 		//list区域筛选
 		areaList:"",
+		//地铁
+		areaThreeSubway:[],
+		//机场
+		areaThreeFly:[],
 		//index=>list=>detail=>buyCar
 		hotelInformation: {
 			cityId: '2001',

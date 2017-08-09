@@ -86,3 +86,16 @@ span.ivu-date-picker-cells-cell {
 	margin-top: 0;
 }
 
+.list-pop-fliter .page-cont .list-fliter-box .filter-wrap .filter-con ul.filter-list-subway-l {
+	left: 0;
+}
+.search-field{
+	z-index: 9999;
+}
+.hotel-list-header{
+	z-index: 10000;
+}
+
+.filter-sp .sp-title .left,.filter-sp .sp-title .right{
+	
+}

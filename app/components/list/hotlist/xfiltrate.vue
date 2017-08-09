@@ -140,7 +140,20 @@
 					areaList = areaList.replace(maohaoReg, ":")
 					areaList = areaList.replace(xieganReg, "/")
 					areaList = JSON.parse(areaList)
+					//area主要筛选信息
 					scope.areaList = areaList
+					scope.areaList.forEach(function(items,i){
+						//地铁信息
+						if((items?items.sn:"")=='n137425165725594602'){
+							console.log(items.subFilterInfoEntities)
+							scope.areaThreeSubway = items.subFilterInfoEntities
+							//机场信息
+						}else if((items?items.sn:"")=='n8589076672078144546'){
+							console.log(items.subFilterInfoEntities)
+							scope.areaThreeFly = items.subFilterInfoEntities
+						}
+						
+					})
 					console.log(scope.areaList)
 					//jq绑定点击事件高亮效果，点击时改变状态管理中心中对应的值
 					this.$nextTick(function() {
@@ -211,9 +224,6 @@
 								$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
 							}
 						})
-						
-						//area筛选逻辑
-						console.log($(".aaa"),$(".bbb"))
 					})
 
 				}.bind(this))

@@ -26,8 +26,8 @@
 			</div>
 		</div>
 		<div class="sp-title">
-			<span @click="leftclick()" class="left">取消</span> 
-			<span @click="rightclick()" class="right">确定</span>
+			<span @click="leftclick()" class="left" style="position: relative;padding:0">取消</span> 
+			<span @click="rightclick()" class="right" style="position: relative;padding:0">确定</span>
 		</div>
 	</div>
 </template>
