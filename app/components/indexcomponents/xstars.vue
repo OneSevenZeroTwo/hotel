@@ -8,11 +8,11 @@
 						<div class="star">
 							<div class="sp-tit">星级</div>
 							<ul class="star-list">
-								<li sn="-1" class=" on buxian">不限</li>
-								<li sn="12" class="">经济/客栈</li>
-								<li sn="3" class="">三星/舒适</li>
-								<li sn="4" class="">四星/高档</li>
-								<li sn="5" class="">五星/豪华</li>
+								<li sn="-1" class=" on buxian"  @click="getData($event)">不限</li>
+								<li sn="12" class=""  @click="getData($event)">经济/客栈</li>
+								<li sn="3" class=""  @click="getData($event)">三星/舒适</li>
+								<li sn="4" class=""  @click="getData($event)">四星/高档</li>
+								<li sn="5" class=""  @click="getData($event)">五星/豪华</li>
 							</ul>
 						</div>
 						<div class="price">
@@ -31,7 +31,7 @@
 					<div class="bot-btn bar">
 						<ul>
 							<li id="filter-reset">重置</li>
-							<li class="on" id="starprice-submit"  @click="changstop()">确定</li>
+							<li class="on" id="starprice-submit" @click="changstop()">确定</li>
 						</ul>
 					</div>
 					<!--e-->
@@ -60,6 +60,11 @@
 				this.$store.state.xian = false
 
 			},
+			getData: function(e) {
+				console.log(e.target.getAttribute('sn'))
+				scope.trueListParams.starlevels=e.target.getAttribute('sn')
+				
+			}
 		},
 		computed: {
 			direction2() {
@@ -110,11 +115,17 @@
 
 			$('#starprice-submit').on('click', function() {
 				console.log($('.star-list').find('.on').html())
-				var xing=$('.star-list').find('.on').html()
-				scope.xing1=xing
+				var xing = $('.star-list').find('.on').html()
+				scope.xing1 = xing
+
+				var xing1 = $('.price-list').find('.on').html()
+				var value = xing1.replace(/[^0-9]/ig,"-"); 
+				console.log(value.split('-'))
+				scope.xing2 = xing1
+				scope.trueListParams.lowprice = value.split('-')[0]
+				scope.trueListParams.highprice = value.split('-')[1]
 				
-				var xing1=$('.price-list').find('.on').html()
-				scope.xing2=xing1
+				
 			})
 		}
 
