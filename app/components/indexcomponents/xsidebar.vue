@@ -69,9 +69,12 @@
 				console.log(e.target.innerHTML,cityId)
 				this.$store.state.aaa=e.target.innerHTML
 				scope.hotelInformation.cityId=cityId
-				scope.listFilterParams.cityId=cityId				
+				scope.listFilterParams.cityId=cityId
+				scope.trueListParams.city=cityId				
+				
 				scope.indexCityId=cityId
 				scope.cityId=cityId
+				this.indexCityId()
 				
 				
 				this.changetion()
@@ -111,9 +114,20 @@
 			addClassletter: function(letter,index) {
 				this.idxs = index;
    				this.letterfence(letter)
-				
+
 			},
-			
+			//点击热门城市时触发，酒店地点等
+			indexCityId() {
+				this.indexId = this.$store.state.indexCityId
+				console.log('aaaaaaaaaa')
+
+				this.$ajax({
+					url: this.$store.state.base+"/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city="+this.indexId,
+				}).then(function(res) {
+									console.log(JSON.parse(res.data.simpleFilterInfos))
+					this.$store.state.indexArr =JSON.parse(res.data.simpleFilterInfos) 
+				}.bind(this))
+			}
 			
 		},
 		mounted: function() {
@@ -143,7 +157,7 @@
 	
 	@keyframes moveLeft {
 		from {
-			transform: translateX(320px);
+			transform: translateX(100%);
 		}
 		to {}
 	}
@@ -162,7 +176,7 @@
 	@keyframes moveRight {
 		from {}
 		to {
-			transform: translateX(320px);
+			transform: translateX(100%);
 		}
 	}
 	
@@ -177,11 +191,11 @@
 	}
 	
 	.nav-content {
-		width: 320px;
+		width: 100%;
 		position: fixed;
 		min-height: 100%;
 		top: 0;
-		left: -320px;
+		left: -100%;
 		background-color: #e1e1e1;
 		/*调试代码时经常使用border，帮我们定位到div的一个区域*/
 		/*border: 1px solid black;*/

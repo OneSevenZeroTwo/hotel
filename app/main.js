@@ -131,14 +131,16 @@ var store = new Vuex.Store({
 			outdate: "",
 			//酒店星级
 			starlevels: "",
-			//					酒店id ,隔开
+			//					酒店sn ,隔开
 			hotelbrandids: "",
 			//设施id,在详情页修改
 			facilityids:"",
 			//主题id,在详情页修改
 			themeids:"",
 			//地区
+			//商圈sn
 			areaid: "",
+			//typeId
 			areatype: "",
 			//					价格
 			highprice: "",

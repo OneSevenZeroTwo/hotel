@@ -25,11 +25,15 @@
 				var INday = (''+this.datee[0].getDate()).length<2?"0"+this.datee[0].getDate():this.datee[0].getDate()
 				scope.listFilterParams.indate = Inyear + "-"+INmonths+"-"+INday
 				scope.hotelInformation.starTime = Inyear + "-"+INmonths+"-"+INday
+				scope.trueListParams.indate = Inyear + "-"+INmonths+"-"+INday
+				
 				var Outyear = this.datee[1].getFullYear()
 				var Outmonths = (''+this.datee[1].getMonth()).length<2?"0"+(this.datee[1].getMonth()+1):this.datee[1].getMonth()+1
 				var Outday = (''+this.datee[1].getDate()).length<2?"0"+this.datee[1].getDate():this.datee[1].getDate()
 				scope.listFilterParams.outdate = Outyear + "-"+Outmonths+"-"+Outday
 				scope.hotelInformation.leaveTime = Inyear + "-"+INmonths+"-"+INday
+				scope.trueListParams.outdate = Outyear + "-"+Outmonths+"-"+Outday
+				
 			},
 
 		},
