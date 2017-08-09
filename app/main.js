@@ -2,6 +2,7 @@ import "../public/css/animate.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
+window.Vue = Vue
 //引入路由
 import VueRouter from 'vue-router';
 //引入vuex状态管理
@@ -23,14 +24,11 @@ window.com = com
 
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-//import zhLocale from 'iview/dist/locale/zh-CN';
-//import enLocale from 'iview/dist/locale/en-US';
+
 
 Vue.use(iView);
 
-//Vue.config.lang = 'zh-CN';
-//Vue.locale('zh-CN', zhLocale);
-//Vue.locale('en-US', enLocale);
+
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -135,6 +133,10 @@ var store = new Vuex.Store({
 			starlevels: "",
 			//					酒店id ,隔开
 			hotelbrandids: "",
+			//设施id,在详情页修改
+			facilityids:"",
+			//主题id,在详情页修改
+			themeids:"",
 			//地区
 			areaid: "",
 			areatype: "",
@@ -143,8 +145,13 @@ var store = new Vuex.Store({
 			lowprice: "",
 			//					页码
 			pageindex: 0,
+			
 
 		},
+//		是否滚动刷新
+		scroll:true,
+		//list区域筛选
+		areaList:"",
 		//index=>list=>detail=>buyCar
 		hotelInformation: {
 			cityId: '2001',
@@ -298,33 +305,45 @@ var store = new Vuex.Store({
 		}
 	},
 	mutations: {
-		indexToList(state) {
-			console.log("list请求")
+		//主页与详情页筛选
+		indexToList(state,context) {
+
 			$.ajax({
 				url: scope.base + "/hotel/api/list",
-				data: {
-					//					城市id
-					city: 2001,
-					//					入住时间
-					indate: "",
-					outdate: "",
-					//酒店星级
-					starlevels: "",
-					//					酒店id ,隔开
-					hotelbrandids: "n167033088745261_7468709921099261_53",
-					//地区
-					areaid: "",
-					areatype: "",
-					//					价格
-					highprice: "",
-					lowprice: "",
-					//					页码
-					pageindex: 0,
-
-				},
+				data: state.trueListParams,
 				success: function(res) {
+					//筛选出酒店并且是下拉刷新的时候才合并数组
+					if(res.hotelList&&state.trueListParams.pageindex>0){
+						console.log("下拉刷新")
+						
+						state.listContentArr = state.listContentArr.concat(res.hotelList)
+						
+						
+						//筛选出酒店并且是不是下拉刷新的时候不要合并数组，注意：每次点击筛选要把state.trueListParams.pageindex设置为0
+						//否则会出现数据合并到下面
+					}else if(res.hotelList&&state.trueListParams.pageindex==0){
+						console.log("点击筛选")
+						state.listContentArr = res.hotelList
+						//				铺完数据后把把滚动开了.
+						window.Vue.nextTick(function(){
+							console.log(state.scroll)
+							$("#hotelBox").scrollTop(0)
+							state.scroll = true
+							
+						})
+						
+						//筛选没有结果时随机加载其他酒店
+					}else if(res.surroundRecomHotels){
+						console.log("筛选没有结果")
+						state.listContentArr = res.surroundRecomHotels
+						
+						//筛选没有结果并且默认推荐都没有时
+					}else{
+						console.log("筛选没有结果并且默认推荐都没有")
+						alert("筛选没有结果并且默认推荐都没有,以后加个提示")
+					}
 					
-					state.listContentArr = res.hotelList
+					console.log("当前分页:"+state.trueListParams.pageindex)
 				}
 			})
 		},
@@ -439,6 +458,10 @@ var store = new Vuex.Store({
 		searchVal(context, val) {
 			console.log('actions执行')
 			context.commit('searchVal', val)
+
+		},
+		indexToList(context, val) {
+			context.commit('indexToList', context)
 
 		},
 		getHotelMess(context, hotelId) {

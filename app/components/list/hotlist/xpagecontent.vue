@@ -1,5 +1,5 @@
 <template>
-	<div ref="viewbox" :class="{'weixin-overflowhidden':roomtitle}" class="page-content page-list mvt_191">
+	<div ref="viewbox" id = "hotelBox" :class="{'weixin-overflowhidden':roomtitle}" class="page-content page-list mvt_191">
 		<section class="page-list-con">
 			<div class="list-main">
 				<ul class="hotel-list">
@@ -82,14 +82,27 @@
 			},
 			//zhang获取详情页中间部分数据
 			listContentArr:function(){
+
 				return this.$store.state.listContentArr
+				//把滚动刷新功能重新开启
 			},
 		},
 		mounted:function(){
+			var self = this
 			this.$refs.viewbox.addEventListener('scroll', this.menu)
 			
 			//zhang修改：
-			this.$store.commit('indexToList')
+			this.$store.dispatch('indexToList')
+			
+			//下拉刷新
+			$("#hotelBox").scroll(function(){
+
+				if($(this).innerHeight()+$(this).scrollTop()>=this.scrollHeight&&scope.scroll){
+					console.log("触发滚动事件")
+					scope.trueListParams.pageindex++
+					self.$store.dispatch("indexToList")
+				}
+			})
 		},
 
 	}
