@@ -14,7 +14,7 @@
 						</div>
 						<i class="material-icons" id="material-icons">&#xE315;</i>
 
-						<b class="right isnearby tjclick" data-tj="{&quot;cspot&quot;:&quot;mylocation&quot;,&quot;if&quot;:&quot;110013&quot;,&quot;ch&quot;:&quot;mylocation&quot;}" @click="baidu"><i class="icon-nearby" ></i><span>我的位置</span></b>
+						<b class="right isnearby tjclick" @click="baidu"><i class="icon-nearby" ></i><span>我的位置</span></b>
 						<div id="allmap"></div>
 					</li>
 					<li class="date">
@@ -76,6 +76,7 @@
 			},
 			baidu() {
 				// 百度地图API功能
+				this.$store.state.bbb = ""
 				this.not = false
 				var baidis = this
 				var map = new BMap.Map("allmap");
@@ -89,10 +90,11 @@
 					console.log(baidis)
 					//				 	alert("当前定位城市:" + cityName);
 					baidis.aa = cityName
-
 				}
 				var myCity = new BMap.LocalCity();
 				myCity.get(myFun);
+				this.indexCityId()
+
 			},
 			changetion() {
 				this.$store.state.direction = 'right'
@@ -104,7 +106,7 @@
 				this.$store.state.direction1 = 'right'
 				this.$store.state.cshow1 = true
 
-//				this.indexCityId()
+				//							this.indexCityId()
 
 			},
 			changstop() {
@@ -124,26 +126,37 @@
 				scope.listFilterParams.saletype = "";
 				scope.listFilterParams.personofroom = "";
 				scope.listFilterParams.srcollResh = false;
-				
+
 				this.cId = this.$store.state.cityId
 				console.log(this.cId)
-//				location.href = "#/clockhotel/" + this.$store.state.cityId
+				//				location.href = "#/clockhotel/" + this.$store.state.cityId
 				location.href = "#/hotlist"
 			},
-//			indexCityId() {
-//				this.indexId = this.$store.state.indexCityId
-//				console.log(this.indexId)
-//
-//				this.$ajax({
-//					url: this.$store.state.base+"/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city="+this.indexId,
-//				}).then(function(res) {
-//									console.log(res)
-//					this.$store.state.indexArr =JSON.parse(res.data.simpleFilterInfos) 
-//				}.bind(this))
-//			}
+			//			indexCityId() {
+			//				this.indexId = this.$store.state.indexCityId
+			//				console.log(this.indexId)
+			//
+			//				this.$ajax({
+			//					url: this.$store.state.base+"/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city="+this.indexId,
+			//				}).then(function(res) {
+			//									console.log(res)
+			//					this.$store.state.indexArr =JSON.parse(res.data.simpleFilterInfos) 
+			//				}.bind(this))
+			//			}
+			//初始地点
+			indexCityId() {
+				this.$ajax({
+					url: this.$store.state.base + "/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city=2001",
+				}).then(function(res) {
+					console.log(JSON.parse(res.data.simpleFilterInfos))
+					this.$store.state.indexArr = JSON.parse(res.data.simpleFilterInfos)
+				}.bind(this))
+			}
+
 		},
 		mounted: function() {
 			//					this.baidu()
+			this.indexCityId()
 		},
 		computed: {
 			search() {
