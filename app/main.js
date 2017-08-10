@@ -106,7 +106,7 @@ var routes = [{
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/register'
+		redirect: '/index'
 	}
 ]
 
