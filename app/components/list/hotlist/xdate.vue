@@ -48,11 +48,5 @@
 </script>
 
 <style scoped>
-	#dataBox2{
-		position: absolute;
-		top: 52px;
-		left: 9px;
-		z-index: 1000000;
-	}
 	
 </style>

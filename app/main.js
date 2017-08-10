@@ -222,6 +222,8 @@ var store = new Vuex.Store({
 			outdate: "2017-08-03",
 			// 入住时间
 			indate: "2017-08-02",
+			//酒店等级
+			starlevels:"",
 
 		},
 		roomtitle: false,
@@ -514,6 +516,8 @@ var store = new Vuex.Store({
 				sortdirection: "",
 				//头部筛选
 				newfastfilter: "",
+				//酒店等级
+				starlevels:"",
 
 			}
 		},

@@ -3,11 +3,11 @@
 		<section class="page-list-con">
 			<div class="list-main">
 				<ul class="hotel-list">
-					<li v-for="n in listContentArr" class="hotel-item" data-url="http://m.elong.com/hotel/00101366/#indate=2017-07-26&amp;outdate=2017-07-27">
-						<div class="pic"> <img :src="n.picUrl"> </div>
+					<li v-for="n in listContentArr" class="hotel-item">
+						<div @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl)" class="pic"> <img :src="n.picUrl"> </div>
 						<div class="info">
 							<p class="name"> 
-								<em>{{n.hotelName}}</em> 
+								<em @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl)">{{n.hotelName}}</em> 
 								<i class="grade grade1"></i> 
 							</p>
 							<p class="comt">{{n.commentScore}} 
@@ -75,6 +75,16 @@
         			this.p = this.scroll
         		}.bind(this),0)
      		},
+//   		进入详情页
+     		todetail(hotelName,hotelScore,urll){
+				var reg = /[0-9]+/
+				var hotelId = urll.match(reg)
+				console.log(hotelName,hotelScore,hotelId[0])
+				location.href = "#/detail/"+hotelId[0]
+				scope.hotelInformation.hotelName = hotelName
+     			scope.hotelInformation.hotelScore = hotelScore
+				
+     		}
 		},
 		computed:{
 			roomtitle:function(){
