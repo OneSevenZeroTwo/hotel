@@ -15,7 +15,7 @@
 								<span class="comt_nmb">{{n.totalCommentCount}}条点评</span> 
 							</p>
 							<p class="fac"> <span>高档型</span> </p>
-							<p class="district"> <span class="d4">{{n.newRecallReason.content}}</span> </p>
+							<p class="district"> <span class="d4">{{n.newRecallReason?n.newRecallReason.content:""}}</span> </p>
 						</div>
 						<div class="right-wrap">
 							<div class="r-tab">

@@ -77,11 +77,6 @@
 	export default {
 		data: function() {
 			return {
-				//用于v-for
-				filterList: "",
-				brand: "",
-				facilityService: "",
-				hotelTheme: "",
 				//用于传递hotelbrandids参数去main.js
 				hotelbrandids:[],
 				//用于传递facilityids参数去main.js
@@ -110,134 +105,145 @@
 				this.$store.dispatch("indexToList")
 			},
 			//发送请求获取数据
-			request: function() {
-				var self = this
-				this.$ajax({
-					url: scope.base + "/hotel/api/getlistfilter",
-					params: {
-						cityid:2001
-					}
-				}).then(function(res) {
-					console.log(res)
-					//转码成中文，替换转换失败的符号
-					var douhaoReg = /%2C/g
-					var maohaoReg = /%3A/g
-					var xieganReg = /%2/g
-					var result = res.data.filterList
-					result = decodeURI(result).replace(douhaoReg, ",")
-					result = result.replace(maohaoReg, ":")
-					result = result.replace(xieganReg, "/")						
-					this.filterList = JSON.parse(result)
-					this.brand = this.filterList[0].subFilterInfoEntities
-					this.facilityService = this.filterList[2].subFilterInfoEntities
-					this.hotelTheme = this.filterList[3].subFilterInfoEntities
-//					console.log(this.filterList)
-//					console.log(this.facilityService, this.hotelTheme)
-					
-					//把其他数据也处理了存在state中
-					var areaList = res.data.areaList
-					areaList = decodeURI(areaList).replace(douhaoReg, ",")
-					areaList = areaList.replace(maohaoReg, ":")
-					areaList = areaList.replace(xieganReg, "/")
-					areaList = JSON.parse(areaList)
-					//area主要筛选信息
-					scope.areaList = areaList
-					scope.areaList.forEach(function(items,i){
-						//地铁信息
-						if((items?items.sn:"")=='n137425165725594602'){
-							console.log(items.subFilterInfoEntities)
-							scope.areaThreeSubway = items.subFilterInfoEntities
-							//机场信息
-						}else if((items?items.sn:"")=='n8589076672078144546'){
-							console.log(items.subFilterInfoEntities)
-							scope.areaThreeFly = items.subFilterInfoEntities
-						}
-						
-					})
-					console.log(scope.areaList)
-					//jq绑定点击事件高亮效果，点击时改变状态管理中心中对应的值
-					this.$nextTick(function() {
-						var index;
-						$('li.tjclick').on('click', function() {
-							var index = $(this).index();
-							$(this).addClass('on').siblings().removeClass('on')
-							$(this).parent().parent().next().children().eq(index).show().siblings().hide()
-						})
-
-						//点击高亮
-						$('.filter-con').find('span').on('click', function() {
-							//点击传递参数
-//							console.log($(this).attr("data-type"))
-							if($(this).attr("data-type")=="3"){
-								
-								//点击筛选栏的hotelbrandids并改变state中搜索的参数
-								//判断该id是否已存在,存在则删除，不存在则添加
-								var one = $.inArray($(this).attr("data-id"),self.hotelbrandids)
-								if(one<0){
-									self.hotelbrandids.push($(this).attr("data-id"))									
-								}else{
-									self.hotelbrandids.splice(one,1)
-								}
-								console.log(self.hotelbrandids)
-								scope.trueListParams.hotelbrandids = self.hotelbrandids.join(',')
-								
-							}else if($(this).attr("data-type")=="1011"){
-								
-								//点击筛选栏的facilityids改变state中搜索的参数
-								//判断该id是否已存在,存在则删除，不存在则添加
-								var two = $.inArray($(this).attr("data-id"),self.facilityids)
-								if(two<0){
-									self.facilityids.push($(this).attr("data-id"))									
-								}else{
-									self.facilityids.splice(two,1)
-								}
-								
-								console.log(self.facilityids)
-								scope.trueListParams.facilityids = self.facilityids.join(',')
-								
-							}else if($(this).attr("data-type")=="1012"){
-								
-								//点击筛选栏的themeids改变state中搜索的参数
-								//判断该id是否已存在,存在则删除，不存在则添加
-								var three = $.inArray($(this).attr("data-id"),self.themeids)
-								if(three<0){
-									self.themeids.push($(this).attr("data-id"))							
-								}else{
-									self.themeids.splice(three,1)
-								}
-								
-								console.log(self.themeids)
-								scope.trueListParams.themeids = self.themeids.join(',')
-							}
-							
-							
-							var index = $(this).parent().parent().parent().index()
-							if($(this).hasClass('geton')) {
-								$(this).removeClass('geton')
-								if($(this).parent().children().hasClass('geton') || $(this).parent().parent().siblings().children().find('span').hasClass('geton')) {
-									$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
-								} else {
-									$(this).parent().parent().parent().parent().prev().children().children().eq(index).removeClass('have')
-								}
-							} else {
-								$(this).addClass('geton')
-								$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
-							}
-						})
-					})
-
-				}.bind(this))
-			},
+//			request: function() {
+//				var self = this
+//				this.$ajax({
+//					url: scope.base + "/hotel/api/getlistfilter",
+//					params: {
+//						cityid:2001
+//					}
+//				}).then(function(res) {
+//					console.log(res)
+//					//转码成中文，替换转换失败的符号
+//					var douhaoReg = /%2C/g
+//					var maohaoReg = /%3A/g
+//					var xieganReg = /%2/g
+//					var result = res.data.filterList
+//					result = decodeURI(result).replace(douhaoReg, ",")
+//					result = result.replace(maohaoReg, ":")
+//					result = result.replace(xieganReg, "/")						
+//					this.filterList = JSON.parse(result)
+//					this.brand = this.filterList[0].subFilterInfoEntities
+//					this.facilityService = this.filterList[2].subFilterInfoEntities
+//					this.hotelTheme = this.filterList[3].subFilterInfoEntities
+////					console.log(this.filterList)
+////					console.log(this.facilityService, this.hotelTheme)
+//					
+//					//把其他数据也处理了存在state中
+//					var areaList = res.data.areaList
+//					areaList = decodeURI(areaList).replace(douhaoReg, ",")
+//					areaList = areaList.replace(maohaoReg, ":")
+//					areaList = areaList.replace(xieganReg, "/")
+//					areaList = JSON.parse(areaList)
+//					//area主要筛选信息
+//					scope.areaList = areaList
+//					scope.areaList.forEach(function(items,i){
+//						//地铁信息
+//						if((items?items.sn:"")=='n137425165725594602'){
+//							console.log(items.subFilterInfoEntities)
+//							scope.areaThreeSubway = items.subFilterInfoEntities
+//							//机场信息
+//						}else if((items?items.sn:"")=='n8589076672078144546'){
+//							console.log(items.subFilterInfoEntities)
+//							scope.areaThreeFly = items.subFilterInfoEntities
+//						}
+//						
+//					})
+//					console.log(scope.areaList)
+//					//jq绑定点击事件高亮效果，点击时改变状态管理中心中对应的值
+//					this.$nextTick(function() {
+//						var index;
+//						$('li.tjclick').on('click', function() {
+//							var index = $(this).index();
+//							$(this).addClass('on').siblings().removeClass('on')
+//							$(this).parent().parent().next().children().eq(index).show().siblings().hide()
+//						})
+//
+//						//点击高亮
+//						$('.filter-con').find('span').on('click', function() {
+//							//点击传递参数
+////							console.log($(this).attr("data-type"))
+//							if($(this).attr("data-type")=="3"){
+//								
+//								//点击筛选栏的hotelbrandids并改变state中搜索的参数
+//								//判断该id是否已存在,存在则删除，不存在则添加
+//								var one = $.inArray($(this).attr("data-id"),self.hotelbrandids)
+//								if(one<0){
+//									self.hotelbrandids.push($(this).attr("data-id"))									
+//								}else{
+//									self.hotelbrandids.splice(one,1)
+//								}
+//								console.log(self.hotelbrandids)
+//								scope.trueListParams.hotelbrandids = self.hotelbrandids.join(',')
+//								
+//							}else if($(this).attr("data-type")=="1011"){
+//								
+//								//点击筛选栏的facilityids改变state中搜索的参数
+//								//判断该id是否已存在,存在则删除，不存在则添加
+//								var two = $.inArray($(this).attr("data-id"),self.facilityids)
+//								if(two<0){
+//									self.facilityids.push($(this).attr("data-id"))									
+//								}else{
+//									self.facilityids.splice(two,1)
+//								}
+//								
+//								console.log(self.facilityids)
+//								scope.trueListParams.facilityids = self.facilityids.join(',')
+//								
+//							}else if($(this).attr("data-type")=="1012"){
+//								
+//								//点击筛选栏的themeids改变state中搜索的参数
+//								//判断该id是否已存在,存在则删除，不存在则添加
+//								var three = $.inArray($(this).attr("data-id"),self.themeids)
+//								if(three<0){
+//									self.themeids.push($(this).attr("data-id"))							
+//								}else{
+//									self.themeids.splice(three,1)
+//								}
+//								
+//								console.log(self.themeids)
+//								scope.trueListParams.themeids = self.themeids.join(',')
+//							}
+//							
+//							
+//							var index = $(this).parent().parent().parent().index()
+//							if($(this).hasClass('geton')) {
+//								$(this).removeClass('geton')
+//								if($(this).parent().children().hasClass('geton') || $(this).parent().parent().siblings().children().find('span').hasClass('geton')) {
+//									$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
+//								} else {
+//									$(this).parent().parent().parent().parent().prev().children().children().eq(index).removeClass('have')
+//								}
+//							} else {
+//								$(this).addClass('geton')
+//								$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
+//							}
+//						})
+//					})
+//
+//				}.bind(this))
+//			},
 		},
 		computed: {
 			tit: function() {
 				//侧边栏显示隐藏
 				return this.$store.state.tit
-			}
+			},
+			brand(){
+				return scope.filterList.brand
+			},
+			facilityService(){
+				return scope.filterList.facilityService
+			},
+			hotelTheme(){
+				return scope.filterList.hotelTheme
+			},
 		},
 		mounted: function() {
 			//点击切换
-			this.request()
+//			this.request()
+
+			this.$store.dispatch("request")
 			
 
 		}

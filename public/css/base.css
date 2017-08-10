@@ -127,3 +127,6 @@ span.ivu-date-picker-cells-cell {
 	left: 0;
 	top: 0;
 }
+.page-plugin {
+    z-index: 2222222!important;
+}
