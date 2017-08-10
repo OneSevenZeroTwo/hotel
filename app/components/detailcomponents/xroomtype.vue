@@ -50,7 +50,7 @@
 								</div>
 							</div>
 						</li>
-
+						<!--暂时没功能-->
 						<li v-show="items.rpList.length>3" @click="showMore($event)" class="more">
 							<a>查看更多报价<i class="icon-left icon-bottom"></i></a>
 						</li>
@@ -140,20 +140,34 @@
 
 		mounted() {
 			//进入页面，请求房间数据
-			console.log("roomType")
+			
+			console.log(this.$route)
 			this.$ajax({
-				url: "./json/roomType.json"
-			}).then(function(res) {
-//				console.log(res)
-				var arrFive = [];
-				for(var i = 1; i <= 7; i++) {
-					var randomNum = com.randomNum(0, res.data.length - 1)
-					arrFive.push(res.data[randomNum])
+				url: scope.base+"/hotel/api/hoteldetailroomlist",
+				params:{
+					hotelid:this.$route.params.id
 				}
-//				console.log(arrFive)
-				this.roomType = arrFive;
+			}).then(function(res) {
+				console.log(res)
+	
+				this.roomType = res.data.roomInfoList
 				
 			}.bind(this))
+			
+
+//			this.$ajax({
+//				url: "./json/roomType.json"
+//			}).then(function(res) {
+//				console.log(res)
+//				var arrFive = [];
+//				for(var i = 1; i <= 7; i++) {
+//					var randomNum = com.randomNum(0, res.data.length - 1)
+//					arrFive.push(res.data[randomNum])
+//				}
+////				console.log(arrFive)
+//				this.roomType = arrFive;
+//				
+//			}.bind(this))
 		},
 	}
 </script>

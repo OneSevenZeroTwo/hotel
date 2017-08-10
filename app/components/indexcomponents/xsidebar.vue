@@ -90,7 +90,7 @@
 				}).then(function(res) {
 					//					console.log(JSON.parse(res))
 					this.newArr = JSON.parse(res.data.hotCitys)
-					console.log(this.newArr)
+//					console.log(this.newArr)
 				}.bind(this))
 
 			},

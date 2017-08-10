@@ -375,7 +375,7 @@ var store = new Vuex.Store({
 					cityid: state.trueListParams.city
 				}
 			}).then(function(res) {
-				console.log(res)
+//				console.log(res)
 				//转码成中文，替换转换失败的符号
 				var douhaoReg = /%2C/g
 				var maohaoReg = /%3A/g
@@ -388,8 +388,8 @@ var store = new Vuex.Store({
 				state.filterList.brand = filterList[0].subFilterInfoEntities
 				state.filterList.facilityService = filterList[2].subFilterInfoEntities
 				state.filterList.hotelTheme = filterList[3].subFilterInfoEntities
-				console.log(filterList)
-				console.log(state.filterList.facilityService, state.filterList.hotelTheme)
+//				console.log(filterList)
+//				console.log(state.filterList.facilityService, state.filterList.hotelTheme)
 
 				//把其他数据也处理了存在state中
 				var areaList = res.data.areaList
@@ -402,16 +402,16 @@ var store = new Vuex.Store({
 				scope.areaList.forEach(function(items, i) {
 					//地铁信息
 					if((items ? items.sn : "") == 'n137425165725594602') {
-						console.log(items.subFilterInfoEntities)
+//						console.log(items.subFilterInfoEntities)
 						scope.areaThreeSubway = items.subFilterInfoEntities
 						//机场信息
 					} else if((items ? items.sn : "") == 'n8589076672078144546') {
-						console.log(items.subFilterInfoEntities)
+//						console.log(items.subFilterInfoEntities)
 						scope.areaThreeFly = items.subFilterInfoEntities
 					}
 
 				})
-				console.log(scope.areaList)
+//				console.log(scope.areaList)
 				//jq绑定点击事件高亮效果，点击时改变状态管理中心中对应的值 this
 				Vue.nextTick(function() {
 					var index;
@@ -435,7 +435,7 @@ var store = new Vuex.Store({
 							} else {
 								state.filterList.hotelbrandids.splice(one, 1)
 							}
-							console.log(state.filterList.hotelbrandids)
+//							console.log(state.filterList.hotelbrandids)
 							scope.trueListParams.hotelbrandids = state.filterList.hotelbrandids.join(',')
 
 						} else if($(this).attr("data-type") == "1011") {
@@ -449,7 +449,7 @@ var store = new Vuex.Store({
 								state.filterList.facilityids.splice(two, 1)
 							}
 
-							console.log(state.filterList.facilityids)
+//							console.log(state.filterList.facilityids)
 							scope.trueListParams.facilityids = state.filterList.facilityids.join(',')
 
 						} else if($(this).attr("data-type") == "1012") {
@@ -463,7 +463,7 @@ var store = new Vuex.Store({
 								state.filterList.themeids.splice(three, 1)
 							}
 
-							console.log(state.filterList.themeids)
+//							console.log(state.filterList.themeids)
 							scope.trueListParams.themeids = state.filterList.themeids.join(',')
 						}
 
@@ -520,6 +520,7 @@ var store = new Vuex.Store({
 				starlevels:"",
 
 			}
+			
 		},
 		settitle(state, data) {
 			state.title = data
@@ -603,10 +604,10 @@ var store = new Vuex.Store({
 		getHotelMess(state, hotelId) {
 			console.log(hotelId)
 			$.ajax({
-				url: "http://localhost:3000/getInfo",
+				url: state.base+"/hotel/api/otherdetail",
 				dataType: "json",
 				data: {
-					hotelId: hotelId
+					hotelid: hotelId
 
 				},
 				success: function(res) {
