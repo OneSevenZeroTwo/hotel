@@ -25,6 +25,7 @@
 
 			<xbuy></xbuy>
 			<xmask></xmask>
+			<xbaidumap></xbaidumap>
 		</div>
 		<xcommom></xcommom>
 	</div>
@@ -41,6 +42,7 @@
 	import xbuy from "../detailcomponents/xbuy.vue"
 	import xmask from "../detailcomponents/xmask.vue"
 	import xcommom from "../detailcomponents/xcommom.vue";
+	import xbaidumap from "../detailcomponents/xbaidumap.vue";
 
 	export default {
 		components: {
@@ -54,6 +56,7 @@
 			xbuy,
 			xmask,
 			xcommom,
+			xbaidumap,
 
 		},
 		computed: {

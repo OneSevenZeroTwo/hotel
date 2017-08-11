@@ -11,7 +11,7 @@
 		</div>
 		<div class="map_bg"></div>
 		<div class="right">
-			<div class="map_c">
+			<div class="map_c" @click="mapState()">
 				<img width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=23.385337,113.303861&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
 				<i class="map_icons"></i>
 			</div>
@@ -19,15 +19,16 @@
 	</li>
 </template>
 <script>
-	// 腾讯地图
+	// 百度地图
 	export default {
+		methods:{
+			mapState(){
+				document.querySelector(".daidumap").classList.remove("scrollin")
+				document.querySelector(".daidumap").classList.add("scrollout")
+			}
+		},
 		mounted() {
-			window.navigator.geolocation.getCurrentPosition(function(data) {
-				console.log(data)
-
-			}, function(err) {
-
-			})
+			
 
 		},
 		computed: {

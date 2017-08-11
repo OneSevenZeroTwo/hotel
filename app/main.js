@@ -220,7 +220,9 @@ var store = new Vuex.Store({
 			hotelScore: '4.2',
 			starTime: '2017-08-13',
 			leaveTime: '2017-08-14',
-			hotelType: "舒适型"
+			hotelType: "舒适型",
+			baiduLatitude:"23.349787",
+			baiduLongitude:"113.290568"
 		},
 
 		//主页传递去list组件的数据

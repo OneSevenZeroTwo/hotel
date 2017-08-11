@@ -76,7 +76,7 @@
 			}
 		},
 		mounted(){
-			console.log(this.$route)
+	
 			this.hotelId = this.$route.params.id
 		},
 		methods: {

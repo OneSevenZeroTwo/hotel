@@ -141,14 +141,13 @@
 		mounted() {
 			//进入页面，请求房间数据
 			
-			console.log(this.$route)
 			this.$ajax({
 				url: scope.base+"/hotel/api/hoteldetailroomlist",
 				params:{
 					hotelid:this.$route.params.id
 				}
 			}).then(function(res) {
-				console.log(res)
+//				console.log(res)
 	
 				this.roomType = res.data.roomInfoList
 				
