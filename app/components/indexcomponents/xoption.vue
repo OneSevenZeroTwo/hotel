@@ -18,7 +18,7 @@
 					<a href="//m.elong.com/minsu/?if=110020&amp;ch=h5bnb"><i class="icon-nav5"></i><span>民宿</span></a>
 				</li>
 				<li class="tjclick" data-tj="{&quot;cspot&quot;:&quot;local&quot;,&quot;if&quot;:&quot;11004&quot;,&quot;ch&quot;:&quot;h5local&quot;}">
-					<a href="//m.elong.com/trip/?from=elongh5&amp;if=11004&amp;ch=h5local"><i class="icon-nav6"></i><span>攻略</span></a>
+					<a href="#/strategy"><i class="icon-nav6"></i><span>攻略</span></a>
 				</li>
 				<li class="tjclick" data-tj="{&quot;cspot&quot;:&quot;spotticket&quot;,&quot;if&quot;:&quot;12774&quot;,&quot;ch&quot;:&quot;spotticketh5&quot;}">
 					<a class="search-nav-hi" href="//m.elong.com/scenery/?ch=spotticketh5&amp;if=12774#/homepage?cityIdN=0101"><i class="icon-nav11"></i><span>门票</span></a>

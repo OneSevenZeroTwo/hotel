@@ -58,6 +58,15 @@ import home from "./components/home.vue"
 import hotlist from "./components/list/router/hotlist.vue"
 // 列表页钟点房路由
 import clockhotel from "./components/list/router/clockhotel.vue"
+// 攻略页路由
+import strategy from "./components/strategy/strategy.vue"
+import goOut from "./components/strategy/goOut.vue"
+import daRen from "./components/strategy/daRen.vue"
+import surround from "./components/strategy/surround.vue"
+import month8 from "./components/strategy/month8.vue"
+import month9 from "./components/strategy/month9.vue"
+import month10 from "./components/strategy/month10.vue"
+
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -108,6 +117,38 @@ var routes = [{
 
 	},
 	//列表页结束
+	//攻略页开始
+	{
+		path: '/strategy',
+		component: strategy,
+		children:[{
+			path:'goout',
+			component:goOut,
+			children:[{
+				path:'month8',
+				component:month8
+			},{
+				path:'month9',
+				component:month9
+			},{
+				path:'month10',
+				component:month10
+			},{
+				path:'/strategy/goout',
+				redirect:'/strategy/goout/month8'
+			}]
+		},{
+			path:'daren',
+			component:daRen
+		},{
+			path:'surround',
+			component:surround
+		},{
+			path:'/strategy',
+			redirect:'/strategy/goout/month8'
+		}]
+	},
+	//攻略页结束
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',

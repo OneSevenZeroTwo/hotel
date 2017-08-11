@@ -12,7 +12,7 @@ function createConnection() {
 		host: 'localhost',
 		user: 'root',
 		password: '',
-		database: 'hotel'
+		database: 'test'
 	});
 	return connection
 }

@@ -2,7 +2,6 @@ input[type="password"] {
 	border: none;
 	margin-bottom: 0;
 }
-
 #bigbox {
 	overflow-x: hidden;
 	overflow-y: auto;
