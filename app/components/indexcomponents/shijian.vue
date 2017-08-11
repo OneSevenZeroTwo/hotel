@@ -21,7 +21,8 @@
 				console.log(this.qqq)
 				scope.hotelInformation.starTime=this.qqq[0].toLocaleDateString()
 				scope.hotelInformation.leaveTime=this.qqq[1].toLocaleDateString()
-				
+				scope.trueListParams.indate=this.qqq[0].toLocaleDateString()
+				scope.trueListParams.outdate=this.qqq[1].toLocaleDateString()
 			}
 
 		},

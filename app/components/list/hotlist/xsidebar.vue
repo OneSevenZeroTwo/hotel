@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="hotCity">
 		<div v-show="cshow2" :class="{'silde-right':direction=='right','silde-left':direction=='left'}">
 			<div ng-transclude class="nav-content" :class="{'sidebar-move-left':direction=='left','sidebar-move-right':direction=='right'}">
 				<!--<button class="left-button" ng-click="directionTo('left')">left</button>-->
@@ -10,13 +10,13 @@
 
 						<div class="search-input" style="margin-right:4px ;"><i class="icon-search"></i><input type="input" value="" placeholder="请输入城市名、行政区或景区"></div>
 					</header>
-					<div class="page-content page-select" style="">
+					<div class="page-content page-select" style="background:#F2F2F2;">
 						<div class="hot-city">
 							<div class="page-title">热门城市</div>
 							<div class="city-list">
 								<ul>
 									<!--class加个on高亮-->
-									<li @click="changetion()" v-for="(item,index) in newArr" city-id="0101" area-type="" area-id="" sug-origin="" v-on:click="addClassFun(index)" v-bind:class='{on:index==idx}'>
+									<li @click="changetionSearch()" v-for="(item,index) in newArr" city-id="0101" area-type="" area-id="" sug-origin="" v-on:click="addClassFun(index)" v-bind:class='{on:index==idx}'>
 										<span @click="test($event,item.cityId)">{{item.cityName}}</span>
 									</li>
 								</ul>
@@ -64,8 +64,11 @@
 			}
 		},
 		methods: {
+			//点击不热门城市时触发
 			test(e,cityId){
-				console.log(11111)
+//				先清空其他参数，切换不同城市，清空之前城市的地铁，商圈等信息
+				this.$store.dispatch("reflesh")
+
 				console.log(e.target.innerHTML,cityId)
 				this.$store.state.aaa=e.target.innerHTML
 				scope.hotelInformation.cityId=cityId
@@ -78,10 +81,17 @@
 				
 				
 				this.changetion()
+				//根据选择 的城市重新获筛选内容和取酒店信息
+				this.$store.dispatch("indexToList")
+				this.$store.dispatch("request")
 			},
 			changetion() {
 				this.$store.state.direction = 'left'
 				
+				
+			},
+			changetionSearch(){
+				this.$store.state.direction = 'left'
 			},
 			leftfence: function() {
 //				console.log("aaa")
@@ -203,4 +213,9 @@
 		/*使用透明度为0来隐藏元素*/
 		opacity: 1;
 	}
+	#hotCity{
+		position: relative;
+		z-index: 111111;
+	}
+
 </style>

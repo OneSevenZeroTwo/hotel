@@ -24,7 +24,7 @@
 							<div class="page-title">{{indexArr[1]?indexArr[1].nameCn:""}}</div>
 							<div class="keyword-list">
 								<ul>
-									<li v-for="n in indexArr[1]?indexArr[1].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event,n.sn)">{{n.nameCn}}</span></li>
+									<li v-for="n in indexArr[1]?indexArr[1].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test2($event,n.sn)">{{n.nameCn}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -32,7 +32,15 @@
 							<div class="page-title">{{indexArr[2]?indexArr[2].nameCn:""}}</div>
 							<div class="keyword-list">
 								<ul>
-									<li v-for="n in indexArr[2]?indexArr[2].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event,n.sn)">{{n.nameCn}}</span></li>
+									<li v-for="n in indexArr[2]?indexArr[2].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event,n.sn,n.typeId)">{{n.nameCn}}</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="keyword-group">
+							<div class="page-title">{{indexArr[3]?indexArr[3].nameCn:""}}</div>
+							<div class="keyword-list">
+								<ul>
+									<li v-for="n in indexArr[3]?indexArr[3].subFilterInfoEntities:''" keyword-id="" city-id="2001" iskeyword="" name-cn="7天" lat="" lng="" hotelname="" placename="" type-id="n.typeId" hotel-brand-id="n167033088745261_7468709921099261_53" brandname="n.nameCn" class=""><span @click="test($event,n.sn,n.typeId)">{{n.nameCn}}</span></li>
 								</ul>
 							</div>
 						</div>
@@ -56,30 +64,46 @@
 			changs() {
 				this.$store.state.direction1 = 'left'
 			},
-			test(e,serialNo,typeId) {
+			//			商圈sn id等
+			test(e, serialNo, typeId) {
 				console.log(11111)
 				console.log(serialNo)
 				this.$store.state.bbb = e.target.innerHTML
-				scope.hotelInformation.serialNo=serialNo
-				scope.listFilterParams.areaid=serialNo 
-				scope.listFilterParams.areatype=typeId
+				scope.hotelInformation.serialNo = serialNo
+				scope.listFilterParams.areaid = serialNo
+				scope.listFilterParams.areatype = typeId
+
+				scope.trueListParams.areaid = serialNo
+				scope.trueListParams.areatype = typeId
+
+				this.changs()
+			},
+			//			品牌sn
+			test2(e, serialNo) {
+				console.log(11111)
+				console.log(serialNo)
+
+				this.$store.state.bbb = e.target.innerHTML
+				scope.trueListParams.hotelbrandids = serialNo
+
 				this.changs()
 			}
+
 		},
 		mounted: function() {
-			scope.cshow1=false
-			
+			scope.cshow1 = false
+
 		},
 		computed: {
-			cshow1(){
+			cshow1() {
 				return this.$store.state.cshow1;
-				
+
 			},
 			direction1() {
 				return this.$store.state.direction1;
 			},
 			indexArr() {
-//				console.log(this.$store.state.indexArr)
+				//				console.log(this.$store.state.indexArr)
 				return this.$store.state.indexArr;
 
 			}
@@ -103,7 +127,7 @@
 	
 	@keyframes moveLeft {
 		from {
-			transform: translateX(-320px);
+			transform: translateX(-100%);
 		}
 		to {}
 	}
@@ -122,7 +146,7 @@
 	@keyframes moveRight {
 		from {}
 		to {
-			transform: translateX(-320px);
+			transform: translateX(-100%);
 		}
 	}
 	
@@ -137,7 +161,7 @@
 	}
 	
 	.nav-content {
-		width: 320px;
+		width: 100%;
 		position: fixed;
 		min-height: 100%;
 		top: 0;

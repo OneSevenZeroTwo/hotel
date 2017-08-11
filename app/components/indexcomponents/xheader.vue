@@ -18,7 +18,7 @@
 	<div>
 		<div class="swiper-container swiper-container-horizontal">
 			<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-				<div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="9" style="background-repeat:repeat-x; width: 320px; margin-right: 30px;"></div>
+				<div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="9" style="background-repeat:repeat-x; width: 320px; margin-right: 30px; background-repeat:no-repeat;"></div>
 		
 				<div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style=" background-repeat:repeat-x ;width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;"></div>
 				<!--<div class="swiper-slide" data-swiper-slide-index="1" style="width: 320px; margin-right: 30px;"><img :src="newArr[0]" alt="" /></div>-->
@@ -49,13 +49,12 @@
 		methods: {
 			loadMore: function() {
 
-				console.log("aaa")
 				this.$ajax({
 					url: this.$store.state.base+"/hotel/api/gethotelbanners/?_rt=1500963243924",
 				}).then(function(res) {
-					console.log(res)
+//					console.log(res)
 					this.arr = res.data.advList
-					console.log(this.arr)
+//					console.log(this.arr)
 					this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl]
 				}.bind(this))
 

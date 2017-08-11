@@ -93,13 +93,13 @@
 			}
 		},
 		mounted() {
-//				判断是否已登录
-				var user = com.getCookie("user")				
-				if(user){
-					this.username = JSON.parse(user).username		
-				}else{
-					location.href = "#/login"
-				}
+////				判断是否已登录
+//				var user = com.getCookie("user")				
+//				if(user){
+//					this.username = JSON.parse(user).username		
+//				}else{
+//					location.href = "#/login"
+//				}
 
 		}
 	}

@@ -82,7 +82,7 @@
 				this.$ajax({
 					url:this.$store.state.base+"/clockhotel/api/list/",
 				}).then(function(res) {
-					console.log(res)
+//					console.log(res)
 					this.news = res.data.hotelList
 					//					console.log(this.news)
 					this.vvv = this.vvv.concat(this.news)

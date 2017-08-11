@@ -104,7 +104,7 @@
 				this.$store.state.direction1 = 'right'
 				this.$store.state.cshow1 = true
 
-				this.indexCityId()
+//				this.indexCityId()
 
 			},
 			changstop() {
@@ -130,20 +130,24 @@
 //				location.href = "#/clockhotel/" + this.$store.state.cityId
 				location.href = "#/hotlist"
 			},
-			indexCityId() {
-				this.indexId = this.$store.state.indexCityId
-				console.log(this.indexId)
-
-				this.$ajax({
-					url: this.$store.state.base+"/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city="+this.indexId,
-				}).then(function(res) {
-									console.log(res)
-					this.$store.state.indexArr =JSON.parse(res.data.simpleFilterInfos) 
-				}.bind(this))
-			}
+//			indexCityId() {
+//				this.indexId = this.$store.state.indexCityId
+//				console.log(this.indexId)
+//
+//				this.$ajax({
+//					url: this.$store.state.base+"/hotel/api/gethotelsearchrecommendplace/?_rt=1502114763450&city="+this.indexId,
+//				}).then(function(res) {
+//									console.log(res)
+//					this.$store.state.indexArr =JSON.parse(res.data.simpleFilterInfos) 
+//				}.bind(this))
+//			}
 		},
 		mounted: function() {
 			//					this.baidu()
+			
+			
+			//先清空其他参数，切换不同城市，清空之前城市的地铁，商圈等信息
+			this.$store.dispatch("reflesh")
 		},
 		computed: {
 			search() {
