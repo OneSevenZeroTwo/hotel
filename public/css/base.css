@@ -29,7 +29,6 @@ input[type="password"] {
 }
 
 
-
 /*date时间范围插件修改样式适应手机*/
 
 #dataBox {
@@ -37,7 +36,7 @@ input[type="password"] {
 	left: 50%;
 	transform: translate(-50%);
 	z-index: 99;
-	top:189px;
+	top: 189px;
 }
 
 .ivu-date-picker-with-range .ivu-picker-panel-body {
@@ -59,20 +58,75 @@ span.ivu-date-picker-cells-cell {
 .ivu-date-picker-cells {
 	width: 250px!important;
 }
+
+
 /*隐藏第二个盒子*/
 
-.ivu-picker-panel-content-right{
+.ivu-picker-panel-content-right .ivu-date-picker-cells {
 	display: none !important;
 }
 
+
 /*date结束*/
 
-.bar .icon {
-	color:#555
+
+/*list的时间插件*/
+
+#dataBox2 {
+	position: absolute;
+	top: 52px;
+	left: 9px;
+	z-index: 1000000;
 }
 
+#dataBox2 .ivu-input-icon-normal+.ivu-input {
+	width: 60px !important;
+	opacity: 0;
+}
+#dataBox2 .ivu-input-icon{
+	display: none;
+}
+#dataBox2 .ivu-date-picker .ivu-select-dropdown {
+	left: 0px!important;
+}
+/*list date结束*/
+.bar .icon {
+	color: #555
+}
 
-.hotel-info-fac .info-pop-box .btn{
-	color:#49f !important;
-	border-color: #49f !important;;
+.hotel-info-fac .info-pop-box .btn {
+	color: #49f !important;
+	border-color: #49f !important;
+	;
+}
+
+.page-list .page-list-con .list-main .hotel-list .hotel-item .info .name {
+	line-height: 16px;
+}
+
+.nomore {
+	margin-top: 0;
+}
+
+.list-pop-fliter .page-cont .list-fliter-box .filter-wrap .filter-con ul.filter-list-subway-l {
+	left: 0;
+}
+
+.search-field {
+	z-index: 9999;
+}
+
+.hotel-list-header {
+	z-index: 10000;
+}
+
+.filter-sp .sp-title .left,
+.filter-sp .sp-title .right {
+	position: relative;
+	padding: 12px;
+	left: 0;
+	top: 0;
+}
+.page-plugin {
+    z-index: 2222222!important;
 }

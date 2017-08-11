@@ -1,13 +1,13 @@
 <template>
-	<div ref="viewbox" :class="{'weixin-overflowhidden':roomtitle}" class="page-content page-list mvt_191">
+	<div ref="viewbox" id = "hotelBox" :class="{'weixin-overflowhidden':roomtitle}" class="page-content page-list mvt_191">
 		<section class="page-list-con">
 			<div class="list-main">
 				<ul class="hotel-list">
-					<li v-for="n in listContentArr" class="hotel-item" data-url="http://m.elong.com/hotel/00101366/#indate=2017-07-26&amp;outdate=2017-07-27">
-						<div class="pic"> <img :src="n.picUrl"> </div>
+					<li v-for="n in listContentArr" class="hotel-item">
+						<div @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl)" class="pic"> <img :src="n.picUrl"> </div>
 						<div class="info">
 							<p class="name"> 
-								<em>{{n.hotelName}}</em> 
+								<em @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl)">{{n.hotelName}}</em> 
 								<i class="grade grade1"></i> 
 							</p>
 							<p class="comt">{{n.commentScore}} 
@@ -15,7 +15,7 @@
 								<span class="comt_nmb">{{n.totalCommentCount}}条点评</span> 
 							</p>
 							<p class="fac"> <span>高档型</span> </p>
-							<p class="district"> <span class="d4">{{n.newRecallReason.content}}</span> </p>
+							<p class="district"> <span class="d4">{{n.newRecallReason?n.newRecallReason.content:""}}</span> </p>
 						</div>
 						<div class="right-wrap">
 							<div class="r-tab">
@@ -75,6 +75,16 @@
         			this.p = this.scroll
         		}.bind(this),0)
      		},
+//   		进入详情页
+     		todetail(hotelName,hotelScore,urll){
+				var reg = /[0-9]+/
+				var hotelId = urll.match(reg)
+				console.log(hotelName,hotelScore,hotelId[0])
+				location.href = "#/detail/"+hotelId[0]
+				scope.hotelInformation.hotelName = hotelName
+     			scope.hotelInformation.hotelScore = hotelScore
+				
+     		}
 		},
 		computed:{
 			roomtitle:function(){
@@ -82,14 +92,27 @@
 			},
 			//zhang获取详情页中间部分数据
 			listContentArr:function(){
+
 				return this.$store.state.listContentArr
+				//把滚动刷新功能重新开启
 			},
 		},
 		mounted:function(){
+			var self = this
 			this.$refs.viewbox.addEventListener('scroll', this.menu)
 			
 			//zhang修改：
-			this.$store.commit('indexToList')
+			this.$store.dispatch('indexToList')
+			
+			//下拉刷新
+			$("#hotelBox").scroll(function(){
+
+				if($(this).innerHeight()+$(this).scrollTop()>=this.scrollHeight&&scope.scroll){
+					console.log("触发滚动事件")
+					scope.trueListParams.pageindex++
+					self.$store.dispatch("indexToList")
+				}
+			})
 		},
 
 	}

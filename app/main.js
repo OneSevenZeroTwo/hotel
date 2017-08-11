@@ -2,6 +2,7 @@ import "../public/css/animate.css"
 
 //引入js文件，jquery,Vue全家桶...............................................
 import Vue from "vue"
+window.Vue = Vue
 //引入路由
 import VueRouter from 'vue-router';
 //引入vuex状态管理
@@ -23,21 +24,15 @@ window.com = com
 
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
-//import zhLocale from 'iview/dist/locale/zh-CN';
-//import enLocale from 'iview/dist/locale/en-US';
 
 Vue.use(iView);
-
-//Vue.config.lang = 'zh-CN';
-//Vue.locale('zh-CN', zhLocale);
-//Vue.locale('en-US', enLocale);
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper)
 //挂载axios在Vue构造器下
 Vue.prototype.$ajax = axios;
-
+window.axios = axios;
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
@@ -111,7 +106,7 @@ var routes = [{
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
-		redirect: '/register'
+		redirect: '/index'
 	}
 ]
 
@@ -135,6 +130,10 @@ var store = new Vuex.Store({
 			starlevels: "",
 			//					酒店sn ,隔开
 			hotelbrandids: "",
+			//设施id,在详情页修改
+			facilityids: "",
+			//主题id,在详情页修改
+			themeids: "",
 			//地区
 			//商圈sn
 			areaid: "",
@@ -145,7 +144,33 @@ var store = new Vuex.Store({
 			lowprice: "",
 			//					页码
 			pageindex: 0,
+			// 排序
+			sortmethod: "",
+			sortdirection: "",
+			//头部筛选
+			newfastfilter: "",
 
+		},
+		not:false,
+		//		是否滚动刷新
+		scroll: true,
+		//list区域筛选
+		areaList: "",
+		//地铁
+		areaThreeSubway: [],
+		//机场
+		areaThreeFly: [],
+		//list的filter信息
+		filterList: {
+			brand: "",
+			facilityService: "",
+			hotelTheme: "",
+			//用于传递hotelbrandids参数
+			hotelbrandids: [],
+			//用于传递facilityids参数
+			facilityids: [],
+			//用于传递themeids参数
+			themeids: [],
 		},
 		//index=>list=>detail=>buyCar
 		hotelInformation: {
@@ -198,6 +223,8 @@ var store = new Vuex.Store({
 			outdate: "2017-08-03",
 			// 入住时间
 			indate: "2017-08-02",
+			//酒店等级
+			starlevels:"",
 
 		},
 		roomtitle: false,
@@ -300,35 +327,201 @@ var store = new Vuex.Store({
 		}
 	},
 	mutations: {
-		indexToList(state) {
-			console.log("list请求")
+		//主页与详情页筛选请求中间内容部分
+		indexToList(state, context) {
+
 			$.ajax({
 				url: scope.base + "/hotel/api/list",
-				data: {
-					//					城市id
-					city: 2001,
-					//					入住时间
-					indate: "",
-					outdate: "",
-					//酒店星级
-					starlevels: "",
-					//					酒店id ,隔开
-					hotelbrandids: "n167033088745261_7468709921099261_53",
-					//地区
-					areaid: "",
-					areatype: "",
-					//					价格
-					highprice: "",
-					lowprice: "",
-					//					页码
-					pageindex: 0,
-
-				},
+				data: state.trueListParams,
 				success: function(res) {
-					
-					state.listContentArr = res.hotelList
+					//筛选出酒店并且是下拉刷新的时候才合并数组
+					if(res.hotelList && state.trueListParams.pageindex > 0) {
+						console.log("下拉刷新")
+
+						state.listContentArr = state.listContentArr.concat(res.hotelList)
+
+						//筛选出酒店并且是不是下拉刷新的时候不要合并数组，注意：每次点击筛选要把state.trueListParams.pageindex设置为0
+						//否则会出现数据合并到下面
+					} else if(res.hotelList && state.trueListParams.pageindex == 0) {
+						console.log("点击筛选")
+						state.listContentArr = res.hotelList
+						//				铺完数据后把把滚动开了.
+						window.Vue.nextTick(function() {
+							console.log(state.scroll)
+							$("#hotelBox").scrollTop(0)
+							state.scroll = true
+
+						})
+
+						//筛选没有结果时随机加载其他酒店
+					} else if(res.surroundRecomHotels) {
+						console.log("筛选没有结果")
+						state.listContentArr = res.surroundRecomHotels
+
+						//筛选没有结果并且默认推荐都没有时
+					} else {
+						console.log("筛选没有结果并且默认推荐都没有")
+						alert("筛选没有结果并且默认推荐都没有,以后加个提示")
+					}
+
+					console.log("当前分页:" + state.trueListParams.pageindex)
 				}
 			})
+		},
+		//list的筛选、area筛选信息，依据城市id
+		request(state) {
+			axios({
+				url: scope.base + "/hotel/api/getlistfilter",
+				params: {
+					cityid: state.trueListParams.city
+				}
+			}).then(function(res) {
+				console.log(res)
+				//转码成中文，替换转换失败的符号
+				var douhaoReg = /%2C/g
+				var maohaoReg = /%3A/g
+				var xieganReg = /%2/g
+				var result = res.data.filterList
+				result = decodeURI(result).replace(douhaoReg, ",")
+				result = result.replace(maohaoReg, ":")
+				result = result.replace(xieganReg, "/")
+				var filterList = JSON.parse(result)
+				state.filterList.brand = filterList[0].subFilterInfoEntities
+				state.filterList.facilityService = filterList[2].subFilterInfoEntities
+				state.filterList.hotelTheme = filterList[3].subFilterInfoEntities
+				console.log(filterList)
+				console.log(state.filterList.facilityService, state.filterList.hotelTheme)
+
+				//把其他数据也处理了存在state中
+				var areaList = res.data.areaList
+				areaList = decodeURI(areaList).replace(douhaoReg, ",")
+				areaList = areaList.replace(maohaoReg, ":")
+				areaList = areaList.replace(xieganReg, "/")
+				areaList = JSON.parse(areaList)
+				//area主要筛选信息 
+				scope.areaList = areaList
+				scope.areaList.forEach(function(items, i) {
+					//地铁信息
+					if((items ? items.sn : "") == 'n137425165725594602') {
+						console.log(items.subFilterInfoEntities)
+						scope.areaThreeSubway = items.subFilterInfoEntities
+						//机场信息
+					} else if((items ? items.sn : "") == 'n8589076672078144546') {
+						console.log(items.subFilterInfoEntities)
+						scope.areaThreeFly = items.subFilterInfoEntities
+					}
+
+				})
+				console.log(scope.areaList)
+				//jq绑定点击事件高亮效果，点击时改变状态管理中心中对应的值 this
+				Vue.nextTick(function() {
+					var index;
+					$('li.tjclick').on('click', function() {
+						var index = $(this).index();
+						$(this).addClass('on').siblings().removeClass('on')
+						$(this).parent().parent().next().children().eq(index).show().siblings().hide()
+					})
+
+					//点击高亮
+					$('.filter-con').find('span').on('click', function() {
+						//点击传递参数
+						//							console.log($(this).attr("data-type"))
+						if($(this).attr("data-type") == "3") {
+
+							//点击筛选栏的hotelbrandids并改变state中搜索的参数
+							//判断该id是否已存在,存在则删除，不存在则添加
+							var one = $.inArray($(this).attr("data-id"), state.filterList.hotelbrandids)
+							if(one < 0) {
+								state.filterList.hotelbrandids.push($(this).attr("data-id"))
+							} else {
+								state.filterList.hotelbrandids.splice(one, 1)
+							}
+							console.log(state.filterList.hotelbrandids)
+							scope.trueListParams.hotelbrandids = state.filterList.hotelbrandids.join(',')
+
+						} else if($(this).attr("data-type") == "1011") {
+
+							//点击筛选栏的facilityids改变state中搜索的参数
+							//判断该id是否已存在,存在则删除，不存在则添加
+							var two = $.inArray($(this).attr("data-id"), state.filterList.facilityids)
+							if(two < 0) {
+								state.filterList.facilityids.push($(this).attr("data-id"))
+							} else {
+								state.filterList.facilityids.splice(two, 1)
+							}
+
+							console.log(state.filterList.facilityids)
+							scope.trueListParams.facilityids = state.filterList.facilityids.join(',')
+
+						} else if($(this).attr("data-type") == "1012") {
+
+							//点击筛选栏的themeids改变state中搜索的参数
+							//判断该id是否已存在,存在则删除，不存在则添加
+							var three = $.inArray($(this).attr("data-id"), state.filterList.themeids)
+							if(three < 0) {
+								state.filterList.themeids.push($(this).attr("data-id"))
+							} else {
+								state.filterList.themeids.splice(three, 1)
+							}
+
+							console.log(state.filterList.themeids)
+							scope.trueListParams.themeids = state.filterList.themeids.join(',')
+						}
+
+						var index = $(this).parent().parent().parent().index()
+						if($(this).hasClass('geton')) {
+							$(this).removeClass('geton')
+							if($(this).parent().children().hasClass('geton') || $(this).parent().parent().siblings().children().find('span').hasClass('geton')) {
+								$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
+							} else {
+								$(this).parent().parent().parent().parent().prev().children().children().eq(index).removeClass('have')
+							}
+						} else {
+							$(this).addClass('geton')
+							$(this).parent().parent().parent().parent().prev().children().children().eq(index).addClass('have')
+						}
+					})
+				})
+
+			})
+		},
+
+		//返回主页或者重新选择城市时要重置参数
+		reflesh(state) {
+			state.trueListParams = {
+				//					城市id
+				city:2001,
+				//					入住时间
+				indate: "",
+				outdate: "",
+				//酒店星级
+				starlevels: "",
+				//					酒店sn ,隔开
+				hotelbrandids: "",
+				//设施id,在详情页修改
+				facilityids: "",
+				//主题id,在详情页修改
+				themeids: "",
+				//地区
+				//商圈sn
+				areaid: "",
+				//typeId
+				areatype: "",
+				//					价格
+				highprice: "",
+				lowprice: "",
+				//					页码
+				pageindex: 0,
+				// 排序
+				sortmethod: "",
+				sortdirection: "",
+				//头部筛选
+				newfastfilter: "",
+				//酒店等级
+				starlevels:"",
+
+			}
+			state.bbb=""
 		},
 		settitle(state, data) {
 			state.title = data
@@ -442,6 +635,16 @@ var store = new Vuex.Store({
 			console.log('actions执行')
 			context.commit('searchVal', val)
 
+		},
+		indexToList(context, val) {
+			context.commit('indexToList', context)
+
+		},
+		request(context, val) {
+			context.commit('request', context)
+		},
+		reflesh(context, val){
+			context.commit('reflesh', context)
 		},
 		getHotelMess(context, hotelId) {
 			context.commit('getHotelMess', hotelId)

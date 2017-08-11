@@ -1,7 +1,9 @@
 <template>
 	<div class="pages">
-		<div class="page page-on-center" data-blend="layer" data-blend-id="h5_list" data-url="/hotel/beijing/" id="uniq22" data-title="【北京酒店】北京酒店宾馆预订_旅店住宿价格查询_艺龙网移动版" data-title-id="h5_list">
+		<div class=" page page-on-center" data-blend="layer" data-blend-id="h5_list" data-url="/hotel/beijing/" id="uniq22" data-title="【北京酒店】北京酒店宾馆预订_旅店住宿价格查询_艺龙网移动版" data-title-id="h5_list">
 		<xheader></xheader>
+		<xsidebar></xsidebar>
+		<xdate></xdate>
 		<xsearch></xsearch>
 		<xpagecontent></xpagecontent>
 		<xfooter></xfooter>
@@ -47,6 +49,10 @@
 	import xweixinmask from "../hotlist/xweixinmask.vue";
 	//价格遮罩层
 	import xmasklayer from "../hotlist/xmasklayer.vue";
+	//时间插件
+	import xdate from "../hotlist/xdate.vue";
+	//热门城市插件
+	import xsidebar from "../hotlist/xsidebar.vue";
 	export default {
 		data: function() {
 			return {
@@ -65,7 +71,10 @@
 			xpricestar,
 			xrank,
 			xweixinmask,
-			xmasklayer
+			xmasklayer,
+			xdate,
+			xsidebar,
+			
 		},
 		methods: {
 

@@ -72,7 +72,9 @@
 
 		},
 		mounted:function(){
-
+			$(".area-btn ").click(function(){
+				$(".list-pop-area").css("display","block")
+			})
 		}
 	}
 </script>

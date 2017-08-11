@@ -7,10 +7,10 @@
 					<li class="addr">
 						<i class="addr"></i>
 						<div v-if="not==true">
-							<p class="cityname tjclick" city-id="0539" @click="changetion()">{{search}}</p>
+							<p class="cityname tjclick search1" city-id="0539" @click="changetion()">{{search}}</p>
 						</div>
 						<div v-else>
-							<p class="cityname tjclick" city-id="0539" @click="changetion()">{{aa}}</p>
+							<p class="cityname tjclick search2" city-id="0539" @click="changetion()">{{aa}}</p>
 						</div>
 						<i class="material-icons" id="material-icons">&#xE315;</i>
 
@@ -64,7 +64,7 @@
 				aa: '广州市',
 				open: false,
 				docked: true,
-				not: false,
+//				not: false,
 				cId: '2001',
 				indexId: ""
 
@@ -77,13 +77,15 @@
 			baidu() {
 				// 百度地图API功能
 				this.$store.state.bbb = ""
-				this.not = false
+				this.$store.state.aaa = "广州"				
+				this.$store.state.not = false				
 				var baidis = this
 				var map = new BMap.Map("allmap");
 				var point = new BMap.Point(116.331398, 39.897445);
 				map.centerAndZoom(point, 12);
 				scope.listFilterParams.cityId = "2001"
-
+				scope.trueListParams.city="2001"				
+				
 				function myFun(result) {
 					var cityName = result.name;
 					map.setCenter(cityName);
@@ -98,8 +100,8 @@
 			},
 			changetion() {
 				this.$store.state.direction = 'right'
-				this.$store.state.cshow2 = true
-				this.not = true
+				this.$store.state.cshow2 = true				
+
 
 			},
 			changs() {
@@ -156,7 +158,10 @@
 		},
 		mounted: function() {
 			//					this.baidu()
-			this.indexCityId()
+			this.indexCityId()						
+			//先清空其他参数，切换不同城市，清空之前城市的地铁，商圈等信息
+			this.$store.dispatch("reflesh")
+
 		},
 		computed: {
 			search() {
@@ -170,6 +175,9 @@
 			},
 			stars1() {
 				return this.$store.state.xing2
+			},
+			not() {
+				return this.$store.state.not;
 			}
 		}
 	}
