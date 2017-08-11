@@ -14,11 +14,11 @@
 	export default {
 		computed: {
 			isShowGallery() {
-				console.log("1")
+
 				return this.$store.state.isShowGallery;
 			},
 			indexImg() {
-				console.log("2")
+
 				return this.$store.state.indexImg;
 			}
 		},

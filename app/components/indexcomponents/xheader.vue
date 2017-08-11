@@ -49,13 +49,12 @@
 		methods: {
 			loadMore: function() {
 
-				console.log("aaa")
 				this.$ajax({
 					url: this.$store.state.base+"/hotel/api/gethotelbanners/?_rt=1500963243924",
 				}).then(function(res) {
-					console.log(res)
+//					console.log(res)
 					this.arr = res.data.advList
-					console.log(this.arr)
+//					console.log(this.arr)
 					this.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl]
 				}.bind(this))
 

@@ -53,6 +53,15 @@ import home from "./components/home.vue"
 import hotlist from "./components/list/router/hotlist.vue"
 // 列表页钟点房路由
 import clockhotel from "./components/list/router/clockhotel.vue"
+// 攻略页路由
+import strategy from "./components/strategy/strategy.vue"
+import goOut from "./components/strategy/goOut.vue"
+import daRen from "./components/strategy/daRen.vue"
+import surround from "./components/strategy/surround.vue"
+import month8 from "./components/strategy/month8.vue"
+import month9 from "./components/strategy/month9.vue"
+import month10 from "./components/strategy/month10.vue"
+
 
 //把定义好的路由组件引进来放到component中，path为进入路由的名字，然后等待路由实例化(new VueRouter)。
 //children属性接受一个数组，里面为2级路由。注意父组件中要有<router-view></router-view>
@@ -103,6 +112,38 @@ var routes = [{
 
 	},
 	//列表页结束
+	//攻略页开始
+	{
+		path: '/strategy',
+		component: strategy,
+		children:[{
+			path:'goout',
+			component:goOut,
+			children:[{
+				path:'month8',
+				component:month8
+			},{
+				path:'month9',
+				component:month9
+			},{
+				path:'month10',
+				component:month10
+			},{
+				path:'/strategy/goout',
+				redirect:'/strategy/goout/month8'
+			}]
+		},{
+			path:'daren',
+			component:daRen
+		},{
+			path:'surround',
+			component:surround
+		},{
+			path:'/strategy',
+			redirect:'/strategy/goout/month8'
+		}]
+	},
+	//攻略页结束
 	{
 		//重定向，没有路由时页面默认加载/detail路由
 		path: '/',
@@ -376,7 +417,7 @@ var store = new Vuex.Store({
 					cityid: state.trueListParams.city
 				}
 			}).then(function(res) {
-				console.log(res)
+//				console.log(res)
 				//转码成中文，替换转换失败的符号
 				var douhaoReg = /%2C/g
 				var maohaoReg = /%3A/g
@@ -389,8 +430,8 @@ var store = new Vuex.Store({
 				state.filterList.brand = filterList[0].subFilterInfoEntities
 				state.filterList.facilityService = filterList[2].subFilterInfoEntities
 				state.filterList.hotelTheme = filterList[3].subFilterInfoEntities
-				console.log(filterList)
-				console.log(state.filterList.facilityService, state.filterList.hotelTheme)
+//				console.log(filterList)
+//				console.log(state.filterList.facilityService, state.filterList.hotelTheme)
 
 				//把其他数据也处理了存在state中
 				var areaList = res.data.areaList
@@ -403,16 +444,16 @@ var store = new Vuex.Store({
 				scope.areaList.forEach(function(items, i) {
 					//地铁信息
 					if((items ? items.sn : "") == 'n137425165725594602') {
-						console.log(items.subFilterInfoEntities)
+//						console.log(items.subFilterInfoEntities)
 						scope.areaThreeSubway = items.subFilterInfoEntities
 						//机场信息
 					} else if((items ? items.sn : "") == 'n8589076672078144546') {
-						console.log(items.subFilterInfoEntities)
+//						console.log(items.subFilterInfoEntities)
 						scope.areaThreeFly = items.subFilterInfoEntities
 					}
 
 				})
-				console.log(scope.areaList)
+//				console.log(scope.areaList)
 				//jq绑定点击事件高亮效果，点击时改变状态管理中心中对应的值 this
 				Vue.nextTick(function() {
 					var index;
@@ -436,7 +477,7 @@ var store = new Vuex.Store({
 							} else {
 								state.filterList.hotelbrandids.splice(one, 1)
 							}
-							console.log(state.filterList.hotelbrandids)
+//							console.log(state.filterList.hotelbrandids)
 							scope.trueListParams.hotelbrandids = state.filterList.hotelbrandids.join(',')
 
 						} else if($(this).attr("data-type") == "1011") {
@@ -450,7 +491,7 @@ var store = new Vuex.Store({
 								state.filterList.facilityids.splice(two, 1)
 							}
 
-							console.log(state.filterList.facilityids)
+//							console.log(state.filterList.facilityids)
 							scope.trueListParams.facilityids = state.filterList.facilityids.join(',')
 
 						} else if($(this).attr("data-type") == "1012") {
@@ -464,7 +505,7 @@ var store = new Vuex.Store({
 								state.filterList.themeids.splice(three, 1)
 							}
 
-							console.log(state.filterList.themeids)
+//							console.log(state.filterList.themeids)
 							scope.trueListParams.themeids = state.filterList.themeids.join(',')
 						}
 
@@ -521,7 +562,9 @@ var store = new Vuex.Store({
 				starlevels:"",
 
 			}
+
 			state.bbb=""
+
 		},
 		settitle(state, data) {
 			state.title = data
@@ -605,10 +648,10 @@ var store = new Vuex.Store({
 		getHotelMess(state, hotelId) {
 			console.log(hotelId)
 			$.ajax({
-				url: "http://localhost:3000/getInfo",
+				url: state.base+"/hotel/api/otherdetail",
 				dataType: "json",
 				data: {
-					hotelId: hotelId
+					hotelid: hotelId
 
 				},
 				success: function(res) {

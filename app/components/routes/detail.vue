@@ -4,7 +4,7 @@
 			<xheader></xheader>
 
 			<div :class="['page-content','new_detailst','mvt_161125',{'fixed':showFac}]" :style="{'overflow':!showFac?'visible':'hidden'}">
-				<section class="detail-main detail-mainNew" style="overflow: visible;">
+				<section class="detail-main detail-mainNew">
 					<!--轮播，地图，评论-->
 					<xinfo></xinfo>
 					<!--日期-->
@@ -61,6 +61,7 @@
 				return scope.showCommom
 			},
 			showFac() {
+				console.log(scope.showFac)
 				return scope.showFac
 			}
 		},
