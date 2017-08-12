@@ -42,15 +42,15 @@
 				console.log(hotelLatitude)
 				console.log(hotelLongitude)
 				//根据起点终点规划驾车路线,.....................
-				var p1 = new BMap.Point(mylongitude, mylatitude);
-				var p2 = new BMap.Point(hotelLongitude, hotelLatitude);
-
-				var transit = new BMap.DrivingRoute(map, {
-					renderOptions: {
-						map: map
-					},
-				});
-				transit.search(p1, p2);
+//				var p1 = new BMap.Point(mylongitude, mylatitude);
+//				var p2 = new BMap.Point(hotelLongitude, hotelLatitude);
+//
+//				var transit = new BMap.DrivingRoute(map, {
+//					renderOptions: {
+//						map: map
+//					},
+//				});
+//				transit.search(p1, p2);
 
 			})
 			//带检索功能的信息提示框.........................
