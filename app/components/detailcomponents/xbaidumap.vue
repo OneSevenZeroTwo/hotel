@@ -17,23 +17,6 @@
 		mounted() {
 
 			console.log("百度地图")
-			//进入页面获取经纬度
-			var mylatitude
-			var mylongitude
-			window.navigator.geolocation.getCurrentPosition(function(data) {
-				mylatitude = data.coords.latitude
-				mylongitude = data.coords.longitude
-				console.log(mylatitude)
-				console.log(mylongitude)
-
-			})
-			//			获取酒店的经纬度
-			var hotelLatitude = scope.hotelInformation.baiduLatitude
-			var hotelLongitude = scope.hotelInformation.baiduLongitude
-			var hotelName = scope.hotelInformation.hotelName
-			console.log(hotelLatitude)
-			console.log(hotelLongitude)
-			//			根据起点和终点查询路线
 
 			// 新建百度地图...........................点点之间为一个功能
 			var map = new BMap.Map('allmap');
@@ -42,6 +25,31 @@
 			map.centerAndZoom(poi, 17);
 			map.enableScrollWheelZoom();
 			
+			//进入页面获取经纬度
+			var mylatitude
+			var mylongitude
+			//			获取酒店的经纬度
+			var hotelLatitude = Number(scope.hotelInformation.baiduLatitude)
+			var hotelLongitude = Number(scope.hotelInformation.baiduLongitude)
+			var hotelName = scope.hotelInformation.hotelName
+			
+			window.navigator.geolocation.getCurrentPosition(function(data) {
+				mylatitude = data.coords.latitude
+				mylongitude = data.coords.longitude
+//				注意函数执行顺序，在外面获取不到当前的经纬度
+				console.log(mylatitude)
+				console.log(mylongitude)
+				console.log(hotelLatitude)
+				console.log(hotelLongitude)
+				//根据起点终点规划驾车路线,.....................
+				var p1 = new BMap.Point(mylongitude,mylatitude);
+				var p2 = new BMap.Point(hotelLongitude, hotelLatitude);
+				
+				var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+				driving.search(p1, p2);
+
+			})
+			//			根据起点和终点查询路线
 			
 			
 			//添加控件
@@ -50,13 +58,13 @@
 				anchor: BMAP_ANCHOR_TOP_LEFT
 			})
 			map.addControl(top_left_control);
-//			//右下角，添加默认缩放平移控件....................
-//			var top_left_navigation = new BMap.NavigationControl();
-//			map.addControl(top_left_navigation);
+			//右下角，添加默认缩放平移控件....................
+			var top_left_navigation = new BMap.NavigationControl();
+			map.addControl(top_left_navigation);
 			
 			//定位到当前位置控件,自带缩放控件，所以上面注释了比例尺控件..........................
 			var navigationControl = new BMap.NavigationControl({
-				// 靠左上角位置，可以用大写字母修改控件的位置
+				// 靠右下角位置，可以用大写字母修改控件的位置
 				anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
 				// LARGE类型
 				type: BMAP_NAVIGATION_CONTROL_LARGE,
@@ -82,15 +90,15 @@
 				alert(e.message);
 			});
 			map.addControl(geolocationControl);
+		
+			//实时路况........................................
+			var ctrl = new BMapLib.TrafficControl({
+				showPanel: false //是否显示路况提示面板
+			});      
+			map.addControl(ctrl);
+			ctrl.setAnchor(BMAP_ANCHOR_TOP_RIGHT);
 			
 			
-			
-			//根据起点终点规划驾车路线.....................
-			var p1 = new BMap.Point(mylongitude,mylatitude);
-			var p2 = new BMap.Point(hotelLongitude, hotelLatitude);
-			
-			var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
-			driving.search(p1, p2);
 
 		},
 
