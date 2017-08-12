@@ -41942,7 +41942,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.ssss[data-v-35cd5c0f] {\n\tposition: absolute;\n\tleft: 5px;\n\ttop: 16px;\n\twidth: 50px;\n\theight: 50px;\n\tz-index: 9999999;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/detailcomponents/xbaidumap.vue?965c2530"],"names":[],"mappings":";AAkHA;CACA,mBAAA;CACA,UAAA;CACA,UAAA;CACA,YAAA;CACA,aAAA;CACA,iBAAA;CACA","file":"xbaidumap.vue","sourcesContent":["<template>\r\n\t<div class=\"daidumap\">\r\n\t\t<a @click=\"mapState()\" class=\"ssss icon icon-left-nav pull-left \"></a>\r\n\r\n\t\t<div class=\"littleMap\" id=\"allmap\"><br />\r\n\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {}\r\n\t\t},\r\n\r\n\t\tmounted() {\r\n\r\n\t\t\tconsole.log(\"百度地图\")\r\n\r\n\t\t\t// 新建百度地图...........................点点之间为一个功能\r\n\t\t\tvar map = new BMap.Map('allmap');\r\n\t\t\t//中心点\r\n\t\t\tvar poi = new BMap.Point(hotelLongitude, hotelLatitude);\r\n\t\t\tmap.centerAndZoom(poi, 17);\r\n\t\t\tmap.enableScrollWheelZoom();\r\n\t\t\t\r\n\t\t\t//进入页面获取经纬度\r\n\t\t\tvar mylatitude\r\n\t\t\tvar mylongitude\r\n\t\t\t//\t\t\t获取酒店的经纬度\r\n\t\t\tvar hotelLatitude = Number(scope.hotelInformation.baiduLatitude)\r\n\t\t\tvar hotelLongitude = Number(scope.hotelInformation.baiduLongitude)\r\n\t\t\tvar hotelName = scope.hotelInformation.hotelName\r\n\t\t\t\r\n\t\t\twindow.navigator.geolocation.getCurrentPosition(function(data) {\r\n\t\t\t\tmylatitude = data.coords.latitude\r\n\t\t\t\tmylongitude = data.coords.longitude\r\n//\t\t\t\t注意函数执行顺序，在外面获取不到当前的经纬度\r\n\t\t\t\tconsole.log(mylatitude)\r\n\t\t\t\tconsole.log(mylongitude)\r\n\t\t\t\tconsole.log(hotelLatitude)\r\n\t\t\t\tconsole.log(hotelLongitude)\r\n\t\t\t\t//根据起点终点规划驾车路线,.....................\r\n\t\t\t\tvar p1 = new BMap.Point(mylongitude,mylatitude);\r\n\t\t\t\tvar p2 = new BMap.Point(hotelLongitude, hotelLatitude);\r\n\t\t\t\t\r\n\t\t\t\tvar driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});\r\n\t\t\t\tdriving.search(p1, p2);\r\n\r\n\t\t\t})\r\n\t\t\t//\t\t\t根据起点和终点查询路线\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t//添加控件\r\n\t\t\t//左上角，添加比例尺..........................\r\n\t\t\tvar top_left_control = new BMap.ScaleControl({\r\n\t\t\t\tanchor: BMAP_ANCHOR_TOP_LEFT\r\n\t\t\t})\r\n\t\t\tmap.addControl(top_left_control);\r\n\t\t\t//右下角，添加默认缩放平移控件....................\r\n\t\t\tvar top_left_navigation = new BMap.NavigationControl();\r\n\t\t\tmap.addControl(top_left_navigation);\r\n\t\t\t\r\n\t\t\t//定位到当前位置控件,自带缩放控件，所以上面注释了比例尺控件..........................\r\n\t\t\tvar navigationControl = new BMap.NavigationControl({\r\n\t\t\t\t// 靠右下角位置，可以用大写字母修改控件的位置\r\n\t\t\t\tanchor: BMAP_ANCHOR_BOTTOM_RIGHT,\r\n\t\t\t\t// LARGE类型\r\n\t\t\t\ttype: BMAP_NAVIGATION_CONTROL_LARGE,\r\n\t\t\t\t// 启用显示定位\r\n\t\t\t\tenableGeolocation: true\r\n\t\t\t});\r\n\t\t\t// 添加定位控件\r\n\t\t\tmap.addControl(navigationControl);\r\n\t\t\t\r\n\t\t\tvar geolocationControl = new BMap.GeolocationControl();\r\n\t\t\tgeolocationControl.addEventListener(\"locationSuccess\", function(e) {\r\n\t\t\t\t// 定位成功事件\r\n\t\t\t\tvar address = '';\r\n\t\t\t\taddress += e.addressComponent.province;\r\n\t\t\t\taddress += e.addressComponent.city;\r\n\t\t\t\taddress += e.addressComponent.district;\r\n\t\t\t\taddress += e.addressComponent.street;\r\n\t\t\t\taddress += e.addressComponent.streetNumber;\r\n\t\t\t\talert(\"当前定位地址为：\" + address);\r\n\t\t\t});\r\n\t\t\tgeolocationControl.addEventListener(\"locationError\", function(e) {\r\n\t\t\t\t// 定位失败事件\r\n\t\t\t\talert(e.message);\r\n\t\t\t});\r\n\t\t\tmap.addControl(geolocationControl);\r\n\t\t\r\n\t\t\t//实时路况........................................\r\n\t\t\tvar ctrl = new BMapLib.TrafficControl({\r\n\t\t\t\tshowPanel: false //是否显示路况提示面板\r\n\t\t\t});      \r\n\t\t\tmap.addControl(ctrl);\r\n\t\t\tctrl.setAnchor(BMAP_ANCHOR_TOP_RIGHT);\r\n\t\t\t\r\n\t\t\t\r\n\r\n\t\t},\r\n\r\n\t\tmethods: {\r\n\t\t\tmapState() {\r\n\t\t\t\tdocument.querySelector(\".daidumap\").classList.remove(\"scrollout\")\r\n\t\t\t\tdocument.querySelector(\".daidumap\").classList.add(\"scrollin\")\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.ssss {\r\n\t\tposition: absolute;\r\n\t\tleft: 5px;\r\n\t\ttop: 16px;\r\n\t\twidth: 50px;\r\n\t\theight: 50px;\r\n\t\tz-index: 9999999;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.ssss[data-v-35cd5c0f] {\n\tposition: absolute;\n\tleft: 5px;\n\ttop: 16px;\n\twidth: 50px;\n\theight: 50px;\n\tz-index: 9999999;\n}\n\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/detailcomponents/xbaidumap.vue?7fe33c33"],"names":[],"mappings":";AAuHA;CACA,mBAAA;CACA,UAAA;CACA,UAAA;CACA,YAAA;CACA,aAAA;CACA,iBAAA;CACA","file":"xbaidumap.vue","sourcesContent":["<template>\r\n\t<div class=\"daidumap\">\r\n\t\t<a @click=\"mapState()\" class=\"ssss icon icon-left-nav pull-left \"></a>\r\n\r\n\t\t<div class=\"littleMap\" id=\"l-map\"><br />\r\n\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata() {\r\n\t\t\treturn {}\r\n\t\t},\r\n\r\n\t\tmounted() {\r\n\r\n\t\t\tconsole.log(\"百度地图\")\r\n\r\n\t\t\t//\t\t\t获取酒店的经纬度\r\n\t\t\tvar hotelLatitude = Number(scope.hotelInformation.baiduLatitude)\r\n\t\t\tvar hotelLongitude = Number(scope.hotelInformation.baiduLongitude)\r\n\t\t\tvar hotelName = scope.hotelInformation.hotelName\r\n\t\t\t// 新建百度地图...........................点点之间为一个功能\r\n\t\t\tvar map = new BMap.Map('l-map');\r\n\t\t\t//中心点\r\n\t\t\tvar poi = new BMap.Point(hotelLongitude, hotelLatitude);\r\n\t\t\tmap.centerAndZoom(poi, 17);\r\n\t\t\tmap.enableScrollWheelZoom();\r\n\t\t\t\r\n\t\t\t//进入页面获取经纬度\r\n\t\t\tvar mylatitude\r\n\t\t\tvar mylongitude\r\n\t\t\t\r\n\t\t\twindow.navigator.geolocation.getCurrentPosition(function(data) {\r\n\t\t\t\tmylatitude = data.coords.latitude\r\n\t\t\t\tmylongitude = data.coords.longitude\r\n//\t\t\t\t注意函数执行顺序，在外面获取不到当前的经纬度\r\n\t\t\t\tconsole.log(mylatitude)\r\n\t\t\t\tconsole.log(mylongitude)\r\n\t\t\t\tconsole.log(hotelLatitude)\r\n\t\t\t\tconsole.log(hotelLongitude)\r\n\t\t\t\t//根据起点终点规划驾车路线,.....................\r\n\t\t\t\tvar p1 = new BMap.Point(mylongitude,mylatitude);\r\n\t\t\t\tvar p2 = new BMap.Point(hotelLongitude, hotelLatitude);\r\n\t\t\t\t\r\n\t\t\t\tvar transit = new BMap.DrivingRoute(map, {\r\n\t\t\t\t\trenderOptions: {\r\n\t\t\t\t\t\tmap: map\r\n\t\t\t\t\t},  \r\n\t\t\t\t});\r\n\t\t\t\ttransit.search(p1, p2);\r\n\t\t\t\t\r\n\r\n\t\t\t})\r\n\t\t\t//\t\t\t根据起点和终点查询路线\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t//添加控件\r\n\t\t\t//左上角，添加比例尺..........................\r\n\t\t\tvar top_left_control = new BMap.ScaleControl({\r\n\t\t\t\tanchor: BMAP_ANCHOR_TOP_LEFT\r\n\t\t\t})\r\n\t\t\tmap.addControl(top_left_control);\r\n\t\t\t//右下角，添加默认缩放平移控件....................\r\n\t\t\tvar top_left_navigation = new BMap.NavigationControl();\r\n\t\t\tmap.addControl(top_left_navigation);\r\n\t\t\t\r\n\t\t\t//定位到当前位置控件,自带缩放控件，所以上面注释了比例尺控件..........................\r\n\t\t\tvar navigationControl = new BMap.NavigationControl({\r\n\t\t\t\t// 靠右下角位置，可以用大写字母修改控件的位置\r\n\t\t\t\tanchor: BMAP_ANCHOR_BOTTOM_RIGHT,\r\n\t\t\t\t// LARGE类型\r\n\t\t\t\ttype: BMAP_NAVIGATION_CONTROL_LARGE,\r\n\t\t\t\t// 启用显示定位\r\n\t\t\t\tenableGeolocation: true\r\n\t\t\t});\r\n\t\t\t// 添加定位控件\r\n\t\t\tmap.addControl(navigationControl);\r\n\t\t\t\r\n\t\t\tvar geolocationControl = new BMap.GeolocationControl();\r\n\t\t\tgeolocationControl.addEventListener(\"locationSuccess\", function(e) {\r\n\t\t\t\t// 定位成功事件\r\n\t\t\t\tvar address = '';\r\n\t\t\t\taddress += e.addressComponent.province;\r\n\t\t\t\taddress += e.addressComponent.city;\r\n\t\t\t\taddress += e.addressComponent.district;\r\n\t\t\t\taddress += e.addressComponent.street;\r\n\t\t\t\taddress += e.addressComponent.streetNumber;\r\n\t\t\t\talert(\"当前定位地址为：\" + address);\r\n\t\t\t});\r\n\t\t\tgeolocationControl.addEventListener(\"locationError\", function(e) {\r\n\t\t\t\t// 定位失败事件\r\n\t\t\t\talert(e.message);\r\n\t\t\t});\r\n\t\t\tmap.addControl(geolocationControl);\r\n\t\t\r\n\t\t\t//实时路况........................................\r\n\t\t\tvar ctrl = new BMapLib.TrafficControl({\r\n\t\t\t\tshowPanel: false //是否显示路况提示面板\r\n\t\t\t});      \r\n\t\t\tmap.addControl(ctrl);\r\n\t\t\tctrl.setAnchor(BMAP_ANCHOR_TOP_RIGHT);\r\n\t\t\t\r\n\t\t\t\r\n\r\n\t\t},\r\n\r\n\t\tmethods: {\r\n\t\t\tmapState() {\r\n\t\t\t\tdocument.querySelector(\".daidumap\").classList.remove(\"scrollout\")\r\n\t\t\t\tdocument.querySelector(\".daidumap\").classList.add(\"scrollin\")\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.ssss {\r\n\t\tposition: absolute;\r\n\t\tleft: 5px;\r\n\t\ttop: 16px;\r\n\t\twidth: 50px;\r\n\t\theight: 50px;\r\n\t\tz-index: 9999999;\r\n\t}\r\n\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -41976,8 +41976,12 @@ exports.default = {
 
 		console.log("百度地图");
 
+		//			获取酒店的经纬度
+		var hotelLatitude = Number(scope.hotelInformation.baiduLatitude);
+		var hotelLongitude = Number(scope.hotelInformation.baiduLongitude);
+		var hotelName = scope.hotelInformation.hotelName;
 		// 新建百度地图...........................点点之间为一个功能
-		var map = new BMap.Map('allmap');
+		var map = new BMap.Map('l-map');
 		//中心点
 		var poi = new BMap.Point(hotelLongitude, hotelLatitude);
 		map.centerAndZoom(poi, 17);
@@ -41986,10 +41990,6 @@ exports.default = {
 		//进入页面获取经纬度
 		var mylatitude;
 		var mylongitude;
-		//			获取酒店的经纬度
-		var hotelLatitude = Number(scope.hotelInformation.baiduLatitude);
-		var hotelLongitude = Number(scope.hotelInformation.baiduLongitude);
-		var hotelName = scope.hotelInformation.hotelName;
 
 		window.navigator.geolocation.getCurrentPosition(function (data) {
 			mylatitude = data.coords.latitude;
@@ -42003,8 +42003,12 @@ exports.default = {
 			var p1 = new BMap.Point(mylongitude, mylatitude);
 			var p2 = new BMap.Point(hotelLongitude, hotelLatitude);
 
-			var driving = new BMap.DrivingRoute(map, { renderOptions: { map: map, autoViewport: true } });
-			driving.search(p1, p2);
+			var transit = new BMap.DrivingRoute(map, {
+				renderOptions: {
+					map: map
+				}
+			});
+			transit.search(p1, p2);
 		});
 		//			根据起点和终点查询路线
 
@@ -42084,7 +42088,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "littleMap",
     attrs: {
-      "id": "allmap"
+      "id": "l-map"
     }
   }, [_c('br')])
 }]}

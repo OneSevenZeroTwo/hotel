@@ -2,7 +2,7 @@
 	<div class="daidumap">
 		<a @click="mapState()" class="ssss icon icon-left-nav pull-left "></a>
 
-		<div class="littleMap" id="allmap"><br />
+		<div class="littleMap" id="l-map"><br />
 
 		</div>
 	</div>
@@ -18,8 +18,12 @@
 
 			console.log("百度地图")
 
+			//			获取酒店的经纬度
+			var hotelLatitude = Number(scope.hotelInformation.baiduLatitude)
+			var hotelLongitude = Number(scope.hotelInformation.baiduLongitude)
+			var hotelName = scope.hotelInformation.hotelName
 			// 新建百度地图...........................点点之间为一个功能
-			var map = new BMap.Map('allmap');
+			var map = new BMap.Map('l-map');
 			//中心点
 			var poi = new BMap.Point(hotelLongitude, hotelLatitude);
 			map.centerAndZoom(poi, 17);
@@ -28,10 +32,6 @@
 			//进入页面获取经纬度
 			var mylatitude
 			var mylongitude
-			//			获取酒店的经纬度
-			var hotelLatitude = Number(scope.hotelInformation.baiduLatitude)
-			var hotelLongitude = Number(scope.hotelInformation.baiduLongitude)
-			var hotelName = scope.hotelInformation.hotelName
 			
 			window.navigator.geolocation.getCurrentPosition(function(data) {
 				mylatitude = data.coords.latitude
@@ -45,8 +45,13 @@
 				var p1 = new BMap.Point(mylongitude,mylatitude);
 				var p2 = new BMap.Point(hotelLongitude, hotelLatitude);
 				
-				var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
-				driving.search(p1, p2);
+				var transit = new BMap.DrivingRoute(map, {
+					renderOptions: {
+						map: map
+					},  
+				});
+				transit.search(p1, p2);
+				
 
 			})
 			//			根据起点和终点查询路线
@@ -120,4 +125,5 @@
 		height: 50px;
 		z-index: 9999999;
 	}
+
 </style>
