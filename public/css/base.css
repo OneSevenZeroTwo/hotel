@@ -209,3 +209,23 @@ span.ivu-date-picker-cells-cell {
 /*.icon-left-nav:before, .icon-back:before {
     color: #444;
     }*/
+   
+dl,dt,dd,ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+dt{
+	font-size:14px !important;
+	font-family:"微软雅黑"!important;
+	font-weight:bold;
+	border-bottom:1px dotted #000 !important;
+	padding:5px 0 5px 5px !important;
+	margin:5px 0 !important;
+}
+dd{
+	padding:5px 0 0 5px;
+}
+li{
+	line-height:28px;
+}
