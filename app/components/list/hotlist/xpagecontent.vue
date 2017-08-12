@@ -4,10 +4,10 @@
 			<div class="list-main">
 				<ul class="hotel-list">
 					<li v-for="n in listContentArr" class="hotel-item">
-						<div @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl)" class="pic"> <img :src="n.picUrl"> </div>
+						<div @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl,n.baiduLatitude,n.baiduLongitude,n.trafficInfo)" class="pic"> <img :src="n.picUrl"> </div>
 						<div class="info">
 							<p class="name"> 
-								<em @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl,n.baiduLatitude,n.baiduLongitude)">{{n.hotelName}}</em> 
+								<em @click="todetail(n.hotelName,n.commentScore,n.detailPageUrl,n.baiduLatitude,n.baiduLongitude,n.trafficInfo)">{{n.hotelName}}</em> 
 								<i class="grade grade1"></i> 
 							</p>
 							<p class="comt">{{n.commentScore}} 
@@ -76,7 +76,7 @@
         		}.bind(this),0)
      		},
 //   		进入详情页
-     		todetail(hotelName,hotelScore,urll,baiduLatitude,baiduLongitude){
+     		todetail(hotelName,hotelScore,urll,baiduLatitude,baiduLongitude,trafficInfo){
 				var reg = /[0-9]+/
 				var hotelId = urll.match(reg)
 				console.log(hotelName,hotelScore,hotelId[0])
@@ -85,6 +85,7 @@
      			scope.hotelInformation.hotelScore = hotelScore
      			scope.hotelInformation.baiduLatitude = baiduLatitude
      			scope.hotelInformation.baiduLongitude = baiduLongitude
+     			scope.hotelInformation.trafficInfo = trafficInfo
 				
      		}
 		},

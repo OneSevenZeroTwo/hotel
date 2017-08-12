@@ -50,55 +50,7 @@
 								</div>
 							</div>
 						</li>
-						<!--暂时没功能-->
-						<li v-show="items.rpList.length>3" @click="showMore($event)" class="more">
-							<a>查看更多报价<i class="icon-left icon-bottom"></i></a>
-						</li>
-						<li class="roomdetail hide">
-							<div class="left tjclick" data-tj="{&quot;cspot&quot;:&quot;rateplandetail&quot;}">
-								<div class="bra clearfix"> 不含早 </div>
-								<div class="sale_txt"><span>含交通优惠</span></div>
-								<div class="xstm"> <span class="suppliername">艺龙</span> <span class="suppliername"> 付费取消 </span> </div>
-								<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
-							</div>
-							<div class="value">
-								<div class="price">￥<span>130</span></div>
-							</div>
-							<div class="book tjclick">
-								<div class="btn3 btn2_center">满</div>
-							</div>
-						</li>
-						<li class="roomdetail hide ">
-							<div class="left tjclick">
-								<div class="bra clearfix">含双早</div>
-								<!---->
-								<div class="xstm"><span class="suppliername">住哪</span> <span class="suppliername"> 不可取消 </span></div>
-								<!---->
-							</div>
-							<div class="value">
-								<div class="price">￥<span>273</span></div>
-								<!---->
-							</div>
-							<div class="book tjclick">
-								<div app-url="//mhuodong.elong.com/C/A.htm?b=true&amp;f=h5_5zxz&amp;r=0101,2017-07-28,2017-07-29,90893577" class="btn2 btn2_center"><span>订</span>
-									<p class="btn2_yf">预付</p>
-								</div>
-							</div>
-						</li>
-						<li class="roomdetail hide">
-							<div class="left tjclick">
-								<div class="bra clearfix"> 不含早 </div>
-								<div class="sale_txt"><span>含交通优惠</span></div>
-								<div class="xstm"> <span class="suppliername">艺龙</span> <span class="f_c49f"> 免费取消 </span> </div>
-								<div class="act"> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 促销 </span> <span class="tag" style="color:#4499ff;border: 1px solid #4499ff;"> 礼包 </span> </div>
-							</div>
-							<div class="value">
-								<div class="price">￥<span>148</span></div>
-							</div>
-							<div class="book tjclick">
-								<div class="btn3 btn2_center">满</div>
-							</div>
-						</li>
+						
 					</ul>
 				</div>
 

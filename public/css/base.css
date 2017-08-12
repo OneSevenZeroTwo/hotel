@@ -209,23 +209,32 @@ span.ivu-date-picker-cells-cell {
 /*.icon-left-nav:before, .icon-back:before {
     color: #444;
     }*/
-   
-dl,dt,dd,ul,li{
-	margin:0;
-	padding:0;
-	list-style:none;
+ 
+ 
+/*大地图信息提示框样式*/  
+#BMapLib_SearchInfoWindow0{
+	width: 253px !important;
 }
-dt{
-	font-size:14px !important;
-	font-family:"微软雅黑"!important;
-	font-weight:bold;
-	border-bottom:1px dotted #000 !important;
-	padding:5px 0 5px 5px !important;
-	margin:5px 0 !important;
+#BMapLib_tab_tohere0,#BMapLib_tab_search0{
+	height: 100%;
 }
-dd{
-	padding:5px 0 0 5px;
+
+#BMapLib_transBox0 td:last-child{
+	width: 111px;
 }
-li{
-	line-height:28px;
+
+#BMapLib_transBox0 input,#BMapLib_searchBox0 input{
+
+	height: 24px !important;
+	margin-bottom: 0px !important;
+	
+}
+.mvt_161125 .detail-main .hotel-info .info ul .info_mn .col_tb .posi {
+	min-height: 30px;
+	
+}
+
+.mvt_161125 .detail-main .hotel-info .info ul .info_mn .right{
+	top:30px !important;
+	height: 96px !important;
 }

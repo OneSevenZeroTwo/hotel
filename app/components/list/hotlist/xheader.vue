@@ -1,6 +1,6 @@
 <template>
 	<header class="bar bar-nav hotel-list-header">
-        <a class="icon icon-left-nav pull-left " data-rel="back" @click="back()"></a>
+        <a class="bbbb icon icon-left-nav pull-left " data-rel="back" @click="back()"></a>
         <a class="icon icon-nearby pull-right tjclick" ></a>
         <a class="icon icon-collectlist  collect pull-right tjclick" href="//m.elong.com/my/hotel/favorites/" data-tj="{&quot;cspot&quot;:&quot;mycollection&quot;}"></a>
         <h1 class="title">
@@ -43,6 +43,8 @@
 </script>
 
 <style scoped>
-   
+   .bbbb{
+   	color: #444;
+   }
 
 </style>

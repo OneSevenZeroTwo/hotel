@@ -56,7 +56,7 @@
 			//带检索功能的信息提示框.........................
 			//创建检索信息窗口对象
 			var searchInfoWindow = null;
-			var searchInfoWindow = new BMapLib.SearchInfoWindow(map, "信息框1内容", {
+			var searchInfoWindow = new BMapLib.SearchInfoWindow(map, "", {
 				title: hotelName, //标题
 				panel: "panel", //检索结果面板
 				enableAutoPan: true, //自动平移
@@ -67,6 +67,7 @@
 			});
 			var marker = new BMap.Marker(poi); //创建marker对象
 			marker.enableDragging(); //marker可拖拽
+			searchInfoWindow.open(marker);
 			marker.addEventListener("click", function(e) {
 				searchInfoWindow.open(marker);
 			})

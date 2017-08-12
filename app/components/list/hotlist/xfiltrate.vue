@@ -2,7 +2,7 @@
 <template>
 	<div :class="['list-pop-fliter','shaixuan','plugin-inited','page-plugin',{'page-on-center':tit},{'page-on-right':!tit},{'plugin-show':tit}]">
 		<header @click="iconbackclick()" class="bar bar-nav flight-order-head">
-			<a class="icon icon-left-nav pull-left "></a>
+			<a class="bbbb icon icon-left-nav pull-left "></a>
 			<div class="title">筛选</div>
 		</header>
 		<div class="page-cont">
@@ -249,3 +249,10 @@
 		}
 	}
 </script>
+
+<style scoped>
+.bbbb{
+   	color: #444;
+ }
+
+</style>
