@@ -26093,6 +26093,7 @@ _vue2.default.prototype.$ajax = _axios2.default;
 window.axios = _axios2.default;
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
 
+
 _vue2.default.use(_museUi2.default);
 
 //router路由部分.........................................................
@@ -46412,7 +46413,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.swiper-slide img[data-v-4ce01aa0] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xheader.vue?0b7ce867"],"names":[],"mappings":";AAmFA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<!--<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-prev\" data-swiper-slide-index=\"9\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-prev\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-active\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-next\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>\r\n\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\r\n\t\t<div class=\"swiper-button-next\"></div>\r\n\t\t<div class=\"swiper-button-prev\"></div>\r\n\t</div>-->\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n\t\t\t<div class=\"swiper-wrapper\" style=\"transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;\">\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev\" data-swiper-slide-index=\"9\" style=\"background-repeat:repeat-x; width: 320px; margin-right: 30px; background-repeat:no-repeat;\"></div>\r\n\t\t\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate-active\" data-swiper-slide-index=\"0\" style=\" background-repeat:repeat-x ;width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"1\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[0]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"2\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[1]\" alt=\"\" /></div>\r\n\t\t\t\t<div class=\"swiper-slide\" data-swiper-slide-index=\"3\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[2]\" alt=\"\" /></div>\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"4\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[3]\" alt=\"\" /></div>-->\r\n\t\t\t\t<!--<div class=\"swiper-slide\" data-swiper-slide-index=\"5\" style=\"width: 320px; margin-right: 30px;\"><img :src=\"newArr[4]\" alt=\"\" /></div>-->\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-prev swiper-slide-duplicate-next\" data-swiper-slide-index=\"9\" style=\"width:100%;background-repeat:repeat-x; background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;\"></div>\r\n\t\t\t\t<div class=\"swiper-slide swiper-slide-duplicate swiper-slide-active\" data-swiper-slide-index=\"0\" style=\"width: 320px;background-repeat:repeat-x; margin-right: 30px;\"></div>\r\n\t\t\t</div>\r\n\t\t\t<!-- Add Pagination -->\r\n\t\t\t<div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n\t\t\t<!-- Add Arrows -->\r\n\t\t\t<!--<div class=\"swiper-button-next\"></div>\r\n\t\t\t<div class=\"swiper-button-prev\"></div>-->\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: this.$store.state.base+\"/hotel/api/gethotelbanners/?_rt=1500963243924\",\r\n\t\t\t\t}).then(function(res) {\r\n//\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n//\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.swiper-slide img[data-v-4ce01aa0] {\n\twidth: 100%;\n\theight: 119px;\n}\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/indexcomponents/xheader.vue?3c783ede"],"names":[],"mappings":";AA2DA;CACA,YAAA;CACA,cAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<div>\r\n\t\t<div class=\"swiper-container swiper-container-horizontal\">\r\n        <div class=\"swiper-wrapper\">\r\n            <div class=\"swiper-slide swiper-slide-active\" ><img src=\"img/1.jpeg\" alt=\"\" /></div>\r\n            <div class=\"swiper-slide swiper-slide-next\" ><img src=\"img/2.jpeg\" alt=\"\" /></div>\r\n            <div class=\"swiper-slide\" ><img src=\"img/3.jpeg\" alt=\"\" /></div>\r\n            <div class=\"swiper-slide\" ><img src=\"img/4.jpeg\" alt=\"\" /></div>\r\n            <div class=\"swiper-slide\" ><img src=\"img/5.jpeg\" alt=\"\" /></div>\r\n        </div>\r\n        <!-- Add Pagination -->\r\n        <div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets\"><span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span><span class=\"swiper-pagination-bullet\"></span></div>\r\n    </div>\r\n\t</div>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n\t\tdata: function() {\r\n\t\t\treturn {\r\n\t\t\t\tarr: [],\r\n\t\t\t\tnewArr: []\r\n\t\t\t}\r\n\t\t},\r\n\t\tmethods: {\r\n\t\t\tloadMore: function() {\r\n\r\n\t\t\t\tthis.$ajax({\r\n\t\t\t\t\turl: this.$store.state.base+\"/hotel/api/gethotelbanners/?_rt=1500963243924\",\r\n\t\t\t\t}).then(function(res) {\r\n//\t\t\t\t\tconsole.log(res)\r\n\t\t\t\t\tthis.arr = res.data.advList\r\n//\t\t\t\t\tconsole.log(this.arr)\r\n\t\t\t\t\tthis.newArr = [this.arr[0].picUrl, this.arr[1].picUrl, this.arr[2].picUrl]\r\n\t\t\t\t}.bind(this))\r\n\r\n\t\t\t}\r\n\t\t},\r\n\t\tmounted: function() {\r\n\t\t\t//后台请求数据动态生成列表\r\n\t\t\tthis.loadMore()\r\n\r\n\t\t\tvar swiper = new Swiper('.swiper-container', {\r\n\t\t\t\tpagination: '.swiper-pagination',\r\n//\t\t\t\tnextButton: '.swiper-button-next',\r\n//\t\t\t\tprevButton: '.swiper-button-prev',\r\n\t\t\t\tslidesPerView: 1,\r\n\t\t\t\tautoplay: 1000,\r\n\t\t\t\tpaginationClickable: true,\r\n\t\t\t\tspaceBetween: 30,\r\n\t\t\t\tloop: true\r\n\t\t\t});\r\n\r\n\t\t}\r\n\r\n\t}\r\n</script>\r\n\r\n<style scoped>\r\n\t.swiper-slide img {\r\n\t\twidth: 100%;\r\n\t\theight: 119px;\r\n\t}\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -46427,30 +46428,6 @@ exports.push([module.i, "\n.swiper-slide img[data-v-4ce01aa0] {\n\twidth: 100%;\
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -46511,89 +46488,48 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
     staticClass: "swiper-container swiper-container-horizontal"
   }, [_c('div', {
-    staticClass: "swiper-wrapper",
-    staticStyle: {
-      "transform": "translate3d(0px, 0px, 0px)",
-      "transition-duration": "0ms"
-    }
+    staticClass: "swiper-wrapper"
   }, [_c('div', {
-    staticClass: "swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev",
-    staticStyle: {
-      "background-repeat": "no-repeat",
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "9"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide swiper-slide-duplicate-active",
-    staticStyle: {
-      "background-repeat": "repeat-x",
-      "width": "100%",
-      "background-image": "url('img/1.jpg')",
-      "margin-right": "30px",
-      "height": "119px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "0"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "2"
-    }
+    staticClass: "swiper-slide swiper-slide-active"
   }, [_c('img', {
     attrs: {
-      "src": _vm.newArr[1],
+      "src": "img/1.jpeg",
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide",
-    staticStyle: {
-      "width": "320px",
-      "margin-right": "30px"
-    },
-    attrs: {
-      "data-swiper-slide-index": "3"
-    }
+    staticClass: "swiper-slide swiper-slide-next"
   }, [_c('img', {
     attrs: {
-      "src": _vm.newArr[2],
+      "src": "img/2.jpeg",
       "alt": ""
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide swiper-slide-prev swiper-slide-duplicate-next",
-    staticStyle: {
-      "width": "100%",
-      "background-repeat": "repeat-x",
-      "background-image": "url('img/2.jpg')",
-      "margin-right": "30px",
-      "height": "119px"
-    },
+    staticClass: "swiper-slide"
+  }, [_c('img', {
     attrs: {
-      "data-swiper-slide-index": "9"
+      "src": "img/3.jpeg",
+      "alt": ""
     }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "swiper-slide swiper-slide-duplicate swiper-slide-active",
-    staticStyle: {
-      "width": "320px",
-      "background-repeat": "repeat-x",
-      "margin-right": "30px"
-    },
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide"
+  }, [_c('img', {
     attrs: {
-      "data-swiper-slide-index": "0"
+      "src": "img/4.jpeg",
+      "alt": ""
     }
-  })]), _vm._v(" "), _vm._m(0)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "swiper-slide"
+  }, [_c('img', {
+    attrs: {
+      "src": "img/5.jpeg",
+      "alt": ""
+    }
+  })])]), _vm._v(" "), _c('div', {
     staticClass: "swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
   }, [_c('span', {
     staticClass: "swiper-pagination-bullet swiper-pagination-bullet-active"
@@ -46615,7 +46551,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "swiper-pagination-bullet"
   }), _c('span', {
     staticClass: "swiper-pagination-bullet"
-  })])
+  })])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
