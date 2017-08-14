@@ -9,7 +9,7 @@
 				<span class="outdate">{{outdate}}</span>
 			</div>
 			<div class="getin_room_b">
-				<span class="count_day">共<span class="count_nmb">day</span>晚<i></i></span>
+				<span class="count_day">共<span class="count_nmb">{{day}}</span>晚<i></i></span>
 			</div>
 		</div>
 

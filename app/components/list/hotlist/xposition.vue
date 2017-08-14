@@ -1,7 +1,7 @@
 <template>
 	<div class="list-pop-fliter list-pop-area plugin-inited page-plugin page-on-center">
 		<header class="bar bar-nav flight-order-head">
-			<a @click="hideSideBar()" class="icon icon-left-nav pull-left "></a>
+			<a @click="hideSideBar()" class="bbbb icon icon-left-nav pull-left "></a>
 			<div class="title">区域位置</div>
 		</header>
 		<div class="page-cont">
@@ -115,3 +115,9 @@
 		}
 	}
 </script>
+
+<style scoped>
+.bbbb{
+   	color: #444;
+ }
+</style>

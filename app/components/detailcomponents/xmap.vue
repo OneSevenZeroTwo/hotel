@@ -3,41 +3,48 @@
 	<li class="info_mn">
 		<div class="col_tb">
 			<div class="posi">
-				<div class="addr">{{getHotelMess.badCount}}机场大道东自编138号(距新白云机场5分钟车程,24小时免费机场接送)</div>
-				<div class="dis">
-					<span class="disc">距离机场南地铁站0.2公里,步行至此0.7公里,约12分钟</span>
-				</div>
+				<div class="addr">{{trafficInfo}}</div>
 			</div>
 		</div>
 		<div class="map_bg"></div>
-		<div class="right">
-			<div class="map_c">
-				<img width="180" height="180" src="//apis.map.qq.com/ws/staticmap/v2/?center=23.385337,113.303861&amp;zoom=14&amp;key=4BCBZ-OGQWX-3PE4P-ZNP3C-EU77E-QGF3Z&amp;size=500*250&amp;scale=2">
+		<div id ="right" class="right">
+			<div id="littlemap" class="map_c">
+				<div width="180" height="180"></div>
 				<i class="map_icons"></i>
 			</div>
 		</div>
 	</li>
 </template>
 <script>
-	// 腾讯地图
+	// 百度地图
 	export default {
+		methods:{
+			mapState(){
+				document.querySelector(".daidumap").classList.remove("scrollin")
+				document.querySelector(".daidumap").classList.add("scrollout")
+			}
+		},
 		mounted() {
-			window.navigator.geolocation.getCurrentPosition(function(data) {
-				console.log(data)
-
-			}, function(err) {
-
-			})
+			var hotelLatitude = Number(scope.hotelInformation.baiduLatitude)
+			var hotelLongitude = Number(scope.hotelInformation.baiduLongitude)
+			var hotelName = scope.hotelInformation.hotelName
+			var map = new BMap.Map("littlemap");            // 创建Map实例
+			var point = new BMap.Point(hotelLongitude, hotelLatitude); // 创建点坐标
+			map.centerAndZoom(point,15);
+			map.addEventListener("click", this.mapState);
 
 		},
 		computed: {
 			getHotelMess() {
-
 				return scope.getHotelMess
+			},
+			trafficInfo(){
+				return scope.hotelInformation.trafficInfo
 			}
+			
 		}
 	}
 </script>
 <style scoped>
-	
+
 </style>

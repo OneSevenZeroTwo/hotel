@@ -34,7 +34,7 @@
 			
 			var self = this
 			$(".page-content").scroll(function() {
-				console.log(111)
+
 				if(this.scrollTop > 120) {
 					self.showHeader = false
 					$(".sss").css('color','#858585')
