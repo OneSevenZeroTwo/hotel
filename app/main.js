@@ -17,6 +17,7 @@ import $ from "jquery";
 window.$ = window.jQuery = $
 
 import com from "./js/common.js"
+
 window.com = com
 
 //使用..................................................................
@@ -36,6 +37,7 @@ window.axios = axios;
 //如果使用museui，安装或如下引入。新建了muse文件和路由测试。在index中引入2条字体css
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+
 Vue.use(MuseUI)
 
 //router路由部分.........................................................

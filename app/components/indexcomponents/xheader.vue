@@ -1,40 +1,16 @@
 <template>
-	<!--<div class="swiper-container swiper-container-horizontal">
-		<div class="swiper-wrapper" style="transform: translate3d(-1050px, 0px, 0px); transition-duration: 0ms;">
-			<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="9" style="width: 320px; margin-right: 30px;"><img :src="newArr[4]" alt="" /></div>
-			<div class="swiper-slide" data-swiper-slide-index="0" style="width: 320px; margin-right: 30px;"><img :src="newArr[0]" alt="" /></div>
-			<div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 320px; margin-right: 30px;"><img :src="newArr[1]" alt="" /></div>
-			<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 320px; margin-right: 30px;"><img :src="newArr[2]" alt="" /></div>
-			<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="3" style="width: 320px; margin-right: 30px;"><img :src="newArr[3]" alt="" /></div>
-			<div class="swiper-slide" data-swiper-slide-index="4" style="width: 320px; margin-right: 30px;"><img :src="newArr[4]" alt="" /></div>
-			<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 320px; margin-right: 30px;"><img :src="newArr[0]" alt="" /></div>
-		</div>
-
-		<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-	</div>-->
 	<div>
 		<div class="swiper-container swiper-container-horizontal">
-			<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-				<div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="9" style="background-repeat:repeat-x; width: 320px; margin-right: 30px; background-repeat:no-repeat;"></div>
-		
-				<div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style=" background-repeat:repeat-x ;width:100%;background-image: url('img/1.jpg'); margin-right: 30px;height: 119px;"></div>
-				<!--<div class="swiper-slide" data-swiper-slide-index="1" style="width: 320px; margin-right: 30px;"><img :src="newArr[0]" alt="" /></div>-->
-				<div class="swiper-slide" data-swiper-slide-index="2" style="width: 320px; margin-right: 30px;"><img :src="newArr[1]" alt="" /></div>
-				<div class="swiper-slide" data-swiper-slide-index="3" style="width: 320px; margin-right: 30px;"><img :src="newArr[2]" alt="" /></div>
-				<!--<div class="swiper-slide" data-swiper-slide-index="4" style="width: 320px; margin-right: 30px;"><img :src="newArr[3]" alt="" /></div>-->
-				<!--<div class="swiper-slide" data-swiper-slide-index="5" style="width: 320px; margin-right: 30px;"><img :src="newArr[4]" alt="" /></div>-->
-				<div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="9" style="width:100%;background-repeat:repeat-x; background-image: url('img/2.jpg'); margin-right: 30px;height: 119px;"></div>
-				<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 320px;background-repeat:repeat-x; margin-right: 30px;"></div>
-			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-			<!-- Add Arrows -->
-			<!--<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>-->
-		</div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" ><img src="img/1.jpeg" alt="" /></div>
+            <div class="swiper-slide swiper-slide-next" ><img src="img/2.jpeg" alt="" /></div>
+            <div class="swiper-slide" ><img src="img/3.jpeg" alt="" /></div>
+            <div class="swiper-slide" ><img src="img/4.jpeg" alt="" /></div>
+            <div class="swiper-slide" ><img src="img/5.jpeg" alt="" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+    </div>
 	</div>
 </template>
 
