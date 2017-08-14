@@ -217,7 +217,7 @@ var store = new Vuex.Store({
 			hotelName: '空客酒店AIRBUSHOTEL(广州白云机场人和店)',
 			hotelScore: '4.2',
 			starTime: '2017-08-13',
-			leaveTime: '2017-08-14',,
+			leaveTime: '2017-08-14',
 			baiduLongitude:"113.290568"
 		},
 

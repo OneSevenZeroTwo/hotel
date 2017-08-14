@@ -26203,11 +26203,8 @@ var router = new _vueRouter2.default({
 //新建一个状态管理......................................................
 var store = new _vuex2.default.Store({
 	state: {
-		base: "https://bird.ioliu.cn/v1?url=https://m.elong.com",
 		//主页传去list的搜索参数
 		trueListParams: {
-			//					城市id
-			city: 2001,
 			//					入住时间
 			indate: "",
 			outdate: "",
@@ -26248,7 +26245,6 @@ var store = new _vuex2.default.Store({
 		//list的filter信息
 		filterList: {
 			brand: "",
-			facilityService: "",
 			hotelTheme: "",
 			//用于传递hotelbrandids参数
 			hotelbrandids: [],
@@ -26264,8 +26260,6 @@ var store = new _vuex2.default.Store({
 			hotelScore: '4.2',
 			starTime: '2017-08-13',
 			leaveTime: '2017-08-14',
-			hotelType: "舒适型",
-			baiduLatitude: "23.349787",
 			baiduLongitude: "113.290568"
 		},
 
@@ -26418,7 +26412,7 @@ var store = new _vuex2.default.Store({
 		indexToList: function indexToList(state, context) {
 
 			_jquery2.default.ajax({
-				url: scope.base + "/hotel/api/list",
+				url: "http://localhost:3000/hotel/api/list",
 				data: state.trueListParams,
 				success: function success(res) {
 					//筛选出酒店并且是下拉刷新的时候才合并数组
@@ -26458,7 +26452,7 @@ var store = new _vuex2.default.Store({
 		//list的筛选、area筛选信息，依据城市id
 		request: function request(state) {
 			(0, _axios2.default)({
-				url: scope.base + "/hotel/api/getlistfilter",
+				url: "http://localhost:3000/hotel/api/getlistfilter",
 				params: {
 					cityid: state.trueListParams.city
 				}
@@ -26686,7 +26680,7 @@ var store = new _vuex2.default.Store({
 		getHotelMess: function getHotelMess(state, hotelId) {
 			console.log(hotelId);
 			_jquery2.default.ajax({
-				url: state.base + "/hotel/api/otherdetail",
+				url: "http://localhost:3000/hotel/api/otherdetail",
 				dataType: "json",
 				data: {
 					hotelid: hotelId
