@@ -212,29 +212,37 @@ span.ivu-date-picker-cells-cell {
  
  
 /*大地图信息提示框样式*/  
-#BMapLib_SearchInfoWindow0{
+.BMapLib_SearchInfoWindow{
 	width: 253px !important;
 }
-#BMapLib_tab_tohere0,#BMapLib_tab_search0{
-	height: 100%;
+.BMapLib_nav_tab>li{
+	height: 100% !important;
 }
 
-#BMapLib_transBox0 td:last-child{
-	width: 111px;
+.BMapLib_nav_tab_content li:last-child td:last-child{
+	width: 111px !important;
 }
 
-#BMapLib_transBox0 input,#BMapLib_searchBox0 input{
+.BMapLib_nav_tab_content input{
 
 	height: 24px !important;
 	margin-bottom: 0px !important;
 	
 }
 .mvt_161125 .detail-main .hotel-info .info ul .info_mn .col_tb .posi {
-	min-height: 30px;
+	min-height: 30px !important;
 	
 }
 
 .mvt_161125 .detail-main .hotel-info .info ul .info_mn .right{
 	top:30px !important;
 	height: 96px !important;
+}
+
+.BMapLib_ap{
+	width: 175px !important;
+}
+
+#l-map>div:last-child{
+	 width: 372px !important;
 }

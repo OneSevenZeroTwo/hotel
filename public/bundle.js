@@ -49880,7 +49880,7 @@ exports = module.exports = __webpack_require__(1)(true);
 
 
 // module
-exports.push([module.i, "\n.bbbb[data-v-0f7ca30e]{\n\tcolor: #444;\n}\n\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/list/hotlist/xheader.vue?bdb36fc6"],"names":[],"mappings":";AA6CA;CACA,YAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<header class=\"bar bar-nav hotel-list-header\">\r\n        <a class=\"bbbb icon icon-left-nav pull-left \" data-rel=\"back\" @click=\"back()\"></a>\r\n        <a class=\"icon icon-nearby pull-right tjclick\" ></a>\r\n        <a class=\"icon icon-collectlist  collect pull-right tjclick\" href=\"//m.elong.com/my/hotel/favorites/\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\r\n        <h1 class=\"title\">\r\n                <span class=\"city-area\" @click=\"changetion()\">\r\n                    <span class=\"city\" v-html=\"cityName\">\r\n                     \r\n                    </span>\r\n                    <span class=\"num\" style=\"display:none;\"></span>\r\n                    <i class=\"icon-bottom\"></i>\r\n                </span>\r\n            </h1>\r\n    </header>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n        data:function(){\r\n            return {\r\n            \r\n            }\r\n        },\r\n        methods:{\r\n            back(){\r\n            \thistory.back()\r\n            },\r\n            changetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t\tscope.cshow2=true\r\n\t\t\t\tconsole.log(111111111)\r\n\r\n\t\t\t},\r\n\r\n        },\r\n        computed:{\r\n        \tcityName(){\r\n        \t\treturn scope.aaa\r\n        \t}\r\n        }\r\n    }\r\n</script>\r\n\r\n<style scoped>\r\n   .bbbb{\r\n   \tcolor: #444;\r\n   }\r\n\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.bbbb[data-v-0f7ca30e]{\n\tcolor: #444;\n}\n\n", "", {"version":3,"sources":["D:/feiQjieshoudewenjian/第三阶段/vue_Mysize/vue_project/app/components/list/hotlist/xheader.vue?34b7136a"],"names":[],"mappings":";AA+CA;CACA,YAAA;CACA","file":"xheader.vue","sourcesContent":["<template>\r\n\t<header class=\"bar bar-nav hotel-list-header\">\r\n        <a class=\"bbbb icon icon-left-nav pull-left \" data-rel=\"back\" @click=\"back()\"></a>\r\n        <a class=\"icon icon-nearby pull-right tjclick\" ></a>\r\n        <a class=\"icon icon-collectlist  collect pull-right tjclick\" href=\"//m.elong.com/my/hotel/favorites/\" data-tj=\"{&quot;cspot&quot;:&quot;mycollection&quot;}\"></a>\r\n        <h1 class=\"title\">\r\n                <span class=\"city-area\" @click=\"changetion()\">\r\n                    <span class=\"city\" v-html=\"cityName\">\r\n                     \r\n                    </span>\r\n                    <span class=\"num\" style=\"display:none;\"></span>\r\n                    <i class=\"icon-bottom\"></i>\r\n                </span>\r\n            </h1>\r\n    </header>\r\n</template>\r\n\r\n<script>\r\n\texport default {\r\n        data:function(){\r\n            return {\r\n            \r\n            }\r\n        },\r\n        methods:{\r\n            back(){\r\n            \thistory.back()\r\n            },\r\n            changetion() {\r\n\t\t\t\tthis.$store.state.direction = 'right'\r\n\t\t\t\tscope.cshow2=true\r\n\r\n\t\t\t},\r\n\r\n        },\r\n        computed:{\r\n        \tcityName(){\r\n        \t\treturn scope.aaa\r\n        \t}\r\n        },\r\n        mounted(){\r\n        \t\r\n        }\r\n    }\r\n</script>\r\n\r\n<style scoped>\r\n   .bbbb{\r\n   \tcolor: #444;\r\n   }\r\n\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -49924,14 +49924,14 @@ exports.default = {
         changetion: function changetion() {
             this.$store.state.direction = 'right';
             scope.cshow2 = true;
-            console.log(111111111);
         }
     },
     computed: {
         cityName: function cityName() {
             return scope.aaa;
         }
-    }
+    },
+    mounted: function mounted() {}
 };
 
 /***/ }),
@@ -50359,6 +50359,7 @@ exports.default = {
 	methods: {
 		// vue监听滚动事件
 		menu: function menu() {
+
 			this.scroll = this.$refs.viewbox.scrollTop;
 
 			// console.log('距离顶部:'+.scrollTop())
@@ -50398,6 +50399,7 @@ exports.default = {
 		}
 	},
 	mounted: function mounted() {
+		this.$store.state.show = true;
 		var self = this;
 		this.$refs.viewbox.addEventListener('scroll', this.menu);
 

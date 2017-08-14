@@ -29,7 +29,6 @@
             changetion() {
 				this.$store.state.direction = 'right'
 				scope.cshow2=true
-				console.log(111111111)
 
 			},
 
@@ -38,6 +37,9 @@
         	cityName(){
         		return scope.aaa
         	}
+        },
+        mounted(){
+        	
         }
     }
 </script>

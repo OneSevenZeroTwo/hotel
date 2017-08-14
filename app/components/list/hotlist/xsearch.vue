@@ -102,7 +102,7 @@
 			}
 		},
 		mounted:function(){
-
+			
 		}
 	}
 </script>

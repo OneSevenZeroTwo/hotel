@@ -62,6 +62,7 @@
 		methods:{
 			// vue监听滚动事件
 			menu() { 
+				
         		this.scroll = this.$refs.viewbox.scrollTop;
 
         		// console.log('距离顶部:'+.scrollTop())
@@ -101,6 +102,7 @@
 			},
 		},
 		mounted:function(){
+			this.$store.state.show = true;
 			var self = this
 			this.$refs.viewbox.addEventListener('scroll', this.menu)
 			
